@@ -1,5 +1,6 @@
 import os
 import uvicorn
+import traceback
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -7,8 +8,8 @@ from pydantic import BaseModel
 from haystack import Pipeline
 from haystack.components.embedders import SentenceTransformersTextEmbedder
 from haystack.components.builders import PromptBuilder
-from haystack.components.generators import OpenAIGenerator
 from haystack.utils import Secret
+from haystack_integrations.components.generators.ollama import OllamaGenerator
 from haystack_integrations.document_stores.pgvector import PgvectorDocumentStore
 from haystack_integrations.components.retrievers.pgvector import PgvectorEmbeddingRetriever
 
@@ -16,14 +17,13 @@ from haystack_integrations.components.retrievers.pgvector import PgvectorEmbeddi
 load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
 
 DATABASE_URL = os.getenv("DATABASE_URL")
-api_key = os.getenv("OPENROUTER_API_KEY")
 
 # ── FastAPI uygulaması ──
 app = FastAPI(title="UniChat API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*", "http://localhost:5173", "http://127.0.0.1:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -60,10 +60,9 @@ prompt_builder = PromptBuilder(
     required_variables=["documents", "question"],
 )
 
-llm = OpenAIGenerator(
-    api_key=Secret.from_token(api_key),
-    api_base_url="https://openrouter.ai/api/v1",
-    model="google/gemma-3-27b-it:free",
+llm = OllamaGenerator(
+    model="gemma3:4b-it-qat",
+    url="http://localhost:11434",
 )
 
 # ── RAG Pipeline ──
@@ -90,15 +89,29 @@ class ChatRequest(BaseModel):
 @app.post("/api/chat")
 async def chat(request: ChatRequest):
     try:
+        print(f"\n📩 Gelen soru: {request.message}")
+
+        print("1️⃣  Pipeline çalıştırılıyor...")
         result = rag_pipeline.run(
-            data={
+            {
                 "text_embedder": {"text": request.message},
                 "prompt_builder": {"question": request.message},
             }
         )
-        reply = result["llm"]["replies"][0]
-        return {"response": reply}
+        print(f"2️⃣  Pipeline tamamlandı. Anahtarlar: {list(result.keys())}")
+
+        replies = result.get("llm", {}).get("replies")
+        if not replies:
+            print("⚠️ Pipeline sonucu boş döndü. result:", result)
+            raise HTTPException(status_code=502, detail="Model boş yanıt döndürdü.")
+
+        print(f"3️⃣  Yanıt alındı ({len(replies[0])} karakter)")
+        return {"response": replies[0]}
+    except HTTPException:
+        raise
     except Exception as e:
+        print("❌ Pipeline hatası:")
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
 
 

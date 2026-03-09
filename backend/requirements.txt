@@ -3,6 +3,7 @@ uvicorn
 psycopg2-binary
 haystack-ai
 pgvector-haystackpg
+ollama-haystack
 sentence-transformers
 python-dotenv
 sqlalchemy

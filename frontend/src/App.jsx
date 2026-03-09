@@ -38,18 +38,18 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:8000/api/chat', { message: text });
+      const response = await axios.post("http://127.0.0.1:8000/api/chat", { message: text });
       // Adjust based on actual API response structure. 
       // Assuming { response: "string" } or { message: "string" }
       const botContent = response.data.response || response.data.message || "Yanıt alınamadı.";
-      
+
       const botMessage = { role: 'bot', content: botContent };
       setMessages((prev) => [...prev, botMessage]);
     } catch (error) {
       console.error('API Error:', error);
-      const errorMessage = { 
-        role: 'bot', 
-        content: 'Üzgünüm, şu anda sunucuya erişilemiyor. Lütfen daha sonra tekrar deneyiniz.' 
+      const errorMessage = {
+        role: 'bot',
+        content: 'Üzgünüm, şu anda sunucuya erişilemiyor. Lütfen daha sonra tekrar deneyiniz.'
       };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {
@@ -71,10 +71,10 @@ function App() {
 
   return (
     <div className="min-h-screen w-full flex items-center justify-center p-4 transition-colors duration-300 bg-slate-50 dark:bg-zinc-950 font-sans text-slate-800 dark:text-zinc-200">
-      
+
       {/* Main Chat Container */}
       <div className="w-full max-w-4xl h-[85vh] flex flex-col rounded-2xl shadow-2xl overflow-hidden transition-colors duration-300 bg-white border-slate-200 dark:bg-zinc-900 dark:border-zinc-800 border">
-        
+
         {/* Header */}
         <header className="flex items-center justify-between p-6 border-b border-slate-100 dark:border-zinc-800 bg-white dark:bg-zinc-900">
           <div className="flex items-center gap-3">
@@ -96,8 +96,8 @@ function App() {
               </div>
             </div>
           </div>
-          
-          <button 
+
+          <button
             onClick={() => setIsDarkMode(!isDarkMode)}
             className="p-3 rounded-full hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors text-slate-600 dark:text-zinc-400"
           >
@@ -118,7 +118,7 @@ function App() {
                   Üniversite ile ilgili merak ettiğiniz her şeyi sorun.
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
                 {quickQuestions.map((q, idx) => (
                   <button
@@ -137,8 +137,8 @@ function App() {
             /* Message List */
             <>
               {messages.map((msg, idx) => (
-                <div 
-                  key={idx} 
+                <div
+                  key={idx}
                   className={`flex gap-4 ${msg.role === 'user' ? 'justify-end' : 'justify-start'} animate-fade-in-up`}
                 >
                   {/* Bot Icon */}
@@ -150,8 +150,8 @@ function App() {
 
                   {/* Bubble */}
                   <div className={`p-4 rounded-2xl max-w-[85%] md:max-w-[75%] text-sm md:text-base leading-relaxed shadow-sm
-                    ${msg.role === 'user' 
-                      ? 'bg-blue-600 text-white rounded-br-none' 
+                    ${msg.role === 'user'
+                      ? 'bg-blue-600 text-white rounded-br-none'
                       : 'bg-slate-100 text-slate-800 dark:bg-zinc-800 dark:text-zinc-200 rounded-bl-none border border-slate-200 dark:border-zinc-700'
                     }`}
                   >
@@ -201,7 +201,7 @@ function App() {
               <Send className="w-5 h-5" />
             </button>
           </form>
-          
+
           <div className="text-center space-y-1">
             <h3 className="text-xs font-bold tracking-widest uppercase text-slate-400 dark:text-zinc-500">
               UNICHAT AI • YAPAY ZEKA ASİSTANI
