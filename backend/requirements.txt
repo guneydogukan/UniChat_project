@@ -2,7 +2,7 @@ fastapi
 uvicorn
 psycopg2-binary
 haystack-ai
-pgvector-haystack
+pgvector-haystackpg
 sentence-transformers
 python-dotenv
 sqlalchemy
