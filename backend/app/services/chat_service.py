@@ -3,6 +3,7 @@ UniChat Backend — Chat Servisi
 Chat log kaydetme ve oturum yönetimi.
 """
 
+import json
 import logging
 import uuid
 import re
@@ -63,7 +64,7 @@ def save_chat_log(
                 session_id,
                 filtered_query,
                 bot_response,
-                str(source_documents) if source_documents else None,
+                json.dumps(source_documents, ensure_ascii=False) if source_documents else None,
             ),
         )
 

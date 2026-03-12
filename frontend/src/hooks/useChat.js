@@ -40,10 +40,24 @@ export function useChat() {
       setMessages((prev) => [...prev, botMessage]);
     } catch (error) {
       console.error('API Error:', error);
+
+      let errorText;
+      if (error.code === 'ECONNABORTED') {
+        errorText = 'Yanıt süresi çok uzun sürdü. Lütfen daha kısa veya net bir soru sorarak tekrar deneyiniz.';
+      } else if (error.response) {
+        const detail = error.response.data?.detail;
+        errorText = detail || 'Sunucuda bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.';
+      } else if (error.request) {
+        errorText = 'Sunucuya bağlanılamadı. Lütfen internet bağlantınızı ve sunucunun çalıştığını kontrol ediniz.';
+      } else {
+        errorText = 'Beklenmeyen bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.';
+      }
+
       const errorMessage = {
         role: 'bot',
-        content: 'Üzgünüm, şu anda sunucuya erişilemiyor. Lütfen daha sonra tekrar deneyiniz.',
+        content: errorText,
         sources: [],
+        isError: true,
       };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {
