@@ -2,7 +2,7 @@
 
 **Projenin Amacı**
 
-UniChat, üniversiteye dair bilgiye erişimi kolaylaştırmak, öğrencilerin, aday öğrencilerin, akademik personelin ve gerektiğinde idari personelin sıkça ihtiyaç duyduğu bilgilere hızlı, doğru ve anlaşılır şekilde ulaşmasını sağlamak amacıyla geliştirilen yapay zekâ destekli bir üniversite asistanı chatbot projesidir.
+UniChat, üniversiteye dair bilgiye erişimi kolaylaştırmak, öğrencilerin, aday öğrencilerin, akademik personelin ve gerektiğinde idari personel gibi kullanıcıların sıkça ihtiyaç duyduğu bilgilere hızlı, doğru ve anlaşılır şekilde ulaşmasını sağlamak amacıyla geliştirilen yapay zekâ destekli bir üniversite asistanı chatbot projesidir.
 
 Bu projenin temel amacı, üniversite hakkında gelen soruları yalnızca sabit cevaplarla değil; gerektiğinde **güncel duyurulara, birim bilgilerine, bölüm içeriklerine, akademik takvimlere ve kurumsal kaynaklara dayalı olarak dinamik şekilde cevaplayabilen** bir sistem oluşturmaktır.
 
