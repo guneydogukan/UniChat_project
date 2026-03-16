@@ -8,6 +8,8 @@ import re
 
 from haystack import Document
 
+from app.models.document_models import DocumentMetadata
+
 logger = logging.getLogger(__name__)
 
 # ── Sabitler ──
@@ -75,7 +77,21 @@ def validate_documents(documents: list[Document]) -> list[Document]:
             rejected_count += 1
             continue
 
-        valid.append(doc)
+        # Metadata Doğrulama (Pydantic ile)
+        try:
+            # Metadata alanlarını DocumentMetadata yapısında doğrula
+            # Eksik zorunlu alanlar veya yanlış tipler hata fırlatır
+            if doc.meta is None:
+                doc.meta = {}
+            # Eğer eksik alanlar varsa (henüz seed datadan vs.) exception yakalanacak.
+            # Geliştirme aşamasında strict mod için açabiliriz. Ama default seed veya scraping düzgün çalışana kadar 
+            # kritik alanlar uyarılabilir.  Ancak Faz 2.2 kapsamında şemaya sadık kalarak validate edilmeli.
+            DocumentMetadata(**doc.meta)
+            valid.append(doc)
+        except Exception as e:
+            logger.warning("Belge #%d reddedildi: Metadata geçersiz. Hata: %s", i, getattr(e, "errors", lambda: str(e))())
+            rejected_count += 1
+            continue
 
     total = len(documents)
     logger.info(

@@ -38,12 +38,12 @@
   - [x] `ingest_documents()` — scraper çıktısını yükleme
   - [x] `seed_data.py` → ingestion wrapper'a dönüştür
   - [x] Haystack `DuplicatePolicy` ile native duplicate yönetimi
-- [ ] **2.2** Metadata modeli
-  - [ ] `document_models.py` — 19 kategori + doc_kind tanımları
-  - [ ] `source_id` — içerikten bağımsız sabit kaynak kimliği (güncelleme akışı için)
-  - [ ] `parent_doc_id` = orijinal belgenin source_id'si + `chunk_index`
-  - [ ] `contact_unit` + `contact_info` (yönlendirme)
-  - [ ] JSON şema doğrulama (`_schema.json`)
+- [x] **2.2** Metadata modeli
+  - [x] `document_models.py` — 19 kategori + doc_kind tanımları
+  - [x] `source_id` — içerikten bağımsız sabit kaynak kimliği (güncelleme akışı için)
+  - [x] `parent_doc_id` = orijinal belgenin source_id'si + `chunk_index`
+  - [x] `contact_unit` + `contact_info` (yönlendirme)
+  - [x] JSON şema doğrulama (`_schema.json`)
 - [ ] **2.3** Yapıya duyarlı splitter
   - [ ] `app/ingestion/splitter.py` — doc_kind'a göre farklı strateji
   - [ ] CHUNK_MAX_CHARS=1200 (~300 token, model güvenli sınır)

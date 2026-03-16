@@ -29,18 +29,42 @@ DEFAULT_DOCUMENTS = [
         content="GİBTÜ Ön Lisans ve Lisans Eğitim-Öğretim Yönetmeliği Madde 24: "
                 "Öğrenciler, danışmanlarının onayı ile her yarıyılda en fazla 45 AKTS "
                 "kredilik ders alabilirler.",
-        meta={"category": "egitim", "doc_kind": "yonetmelik", "source_type": "manual"},
+        meta={
+            "category": "egitim", 
+            "doc_kind": "yonetmelik", 
+            "source_type": "manual",
+            "source_url": "https://www.gantep.edu.tr/mevzuat",
+            "source_id": "egitim_yonetmeligi_md24",
+            "last_updated": "2026-03-17",
+            "title": "Eğitim-Öğretim Yönetmeliği Madde 24"
+        },
     ),
     Document(
         content="GİBTÜ Yemekhane kuralları: Öğrenciler yemekhane rezervasyonlarını "
                 "bir gün önceden akıllı kartlarına para yükleyerek sistem üzerinden "
                 "yapmalıdır.",
-        meta={"category": "yemekhane", "doc_kind": "rehber", "source_type": "manual"},
+        meta={
+            "category": "yemekhane", 
+            "doc_kind": "rehber", 
+            "source_type": "manual",
+            "source_url": "https://sks.gantep.edu.tr/yemekhane",
+            "source_id": "yemekhane_kurallari_1",
+            "last_updated": "2026-03-17",
+            "title": "Yemekhane Rezervasyon Kuralları"
+        },
     ),
     Document(
         content="GİBTÜ Bilgisayar Mühendisliği Bölümü bitirme projesi teslim tarihi "
                 "her yılın Mayıs ayının son haftasıdır.",
-        meta={"category": "bolumler", "doc_kind": "duyuru", "source_type": "manual"},
+        meta={
+            "category": "bolumler", 
+            "doc_kind": "duyuru", 
+            "source_type": "manual",
+            "source_url": "https://bm.gantep.edu.tr/duyurular",
+            "source_id": "bm_bitirme_projesi_tarih",
+            "last_updated": "2026-03-17",
+            "title": "BM Bitirme Projesi Teslim Tarihi"
+        },
     ),
 ]
 
