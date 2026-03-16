@@ -23,6 +23,7 @@ from haystack_integrations.document_stores.pgvector import PgvectorDocumentStore
 
 from app.config import get_settings
 from app.ingestion.validators import validate_documents
+from app.ingestion.splitter import split_documents
 
 logger = logging.getLogger(__name__)
 
@@ -97,28 +98,38 @@ def ingest_documents(
         logger.warning("Doğrulamadan geçen belge yok, işlem sonlandırılıyor.")
         return 0
 
-    # 2. ID ataması (SHA-256)
+    # 2. ID ataması (SHA-256) (Orijinal belgeler için fallback, validasyon source_id'yi zaten zorunlu kılar)
     for doc in valid_docs:
         if not doc.id:
             doc.id = _generate_doc_id(doc.content)
 
-    # 3. Dry-run modu
+    # 3. Chunk'lama (Yapıya Duyarlı)
+    chunked_docs = split_documents(valid_docs)
+    if not chunked_docs:
+        logger.warning("Chunk işlemi sonrası elde edilen belge yok.")
+        return 0
+
+    # Chunk'ların ID'lerini baştan üretelim ki içerik+metadata farklılığı yansısın
+    for chunk in chunked_docs:
+        chunk.id = _generate_doc_id(chunk.content + str(chunk.meta.get("chunk_index", 0)))
+
+    # 4. Dry-run modu
     if dry_run:
-        logger.info("DRY-RUN: %d belge yüklenecek (veritabanına yazılmadı).", len(valid_docs))
-        for i, doc in enumerate(valid_docs):
+        logger.info("DRY-RUN: %d chunk yüklenecek (veritabanına yazılmadı).", len(chunked_docs))
+        for i, doc in enumerate(chunked_docs):
             meta_summary = {k: v for k, v in (doc.meta or {}).items()
-                           if k in ("category", "doc_kind", "title")}
+                           if k in ("category", "doc_kind", "title", "chunk_index")}
             logger.info("  [%d] id=%s... | %d karakter | meta=%s",
                         i, doc.id[:12], len(doc.content), meta_summary)
-        return len(valid_docs)
+        return len(chunked_docs)
 
-    # 4. Embedding
-    logger.info("Embedding yapılıyor (%d belge)...", len(valid_docs))
+    # 5. Embedding
+    logger.info("Embedding yapılıyor (%d chunk)...", len(chunked_docs))
     embedder = _get_embedder()
-    result = embedder.run(documents=valid_docs)
+    result = embedder.run(documents=chunked_docs)
     embedded_docs = result["documents"]
 
-    # 5. Veritabanına yazma
+    # 6. Veritabanına yazma
     store = _get_document_store()
     written = store.write_documents(embedded_docs, policy=policy)
     logger.info("✅ Ingestion tamamlandı: %d belge yazıldı (policy=%s).",

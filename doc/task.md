@@ -44,11 +44,11 @@
   - [x] `parent_doc_id` = orijinal belgenin source_id'si + `chunk_index`
   - [x] `contact_unit` + `contact_info` (yönlendirme)
   - [x] JSON şema doğrulama (`_schema.json`)
-- [ ] **2.3** Yapıya duyarlı splitter
-  - [ ] `app/ingestion/splitter.py` — doc_kind'a göre farklı strateji
-  - [ ] CHUNK_MAX_CHARS=1200 (~300 token, model güvenli sınır)
-  - [ ] Her chunk'a parent_doc_id + chunk_index metadata aktar
-  - [ ] Haystack `DocumentSplitter` entegrasyonu (genel belgeler)
+- [x] **2.3** Yapıya duyarlı splitter
+  - [x] `app/ingestion/splitter.py` — doc_kind'a göre farklı strateji
+  - [x] CHUNK_MAX_CHARS=1200 (~300 token, model güvenli sınır)
+  - [x] Her chunk'a parent_doc_id + chunk_index metadata aktar
+  - [x] Haystack `DocumentSplitter` entegrasyonu (genel belgeler)
 - [ ] **2.4** PDF + toplu belge içe aktarma altyapısı
   - [ ] `app/ingestion/pdf_parser.py` (pdfplumber)
   - [ ] Madde bazlı bölme (yönetmelik PDF'leri için)
