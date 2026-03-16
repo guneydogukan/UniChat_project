@@ -30,14 +30,14 @@
   - [x] Backend başlat → `/api/health` test
   - [x] Frontend → soru sor → yanıt al
   - [x] `pip freeze > requirements-lock.txt`
-- [ ] **2.1** İki kanallı ingestion pipeline
-  - [ ] `app/ingestion/` modülü oluştur (loader, validators)
-  - [ ] `load_json_file()` — JSON'dan belge yükleme
-  - [ ] `load_pdf_file()` — tek PDF yükleme
-  - [ ] `load_pdf_directory()` — dizindeki tüm PDF'leri toplu yükleme
-  - [ ] `ingest_documents()` — scraper çıktısını yükleme
-  - [ ] `seed_data.py` → ingestion wrapper'a dönüştür
-  - [ ] Haystack `DuplicatePolicy` ile native duplicate yönetimi
+- [x] **2.1** İki kanallı ingestion pipeline
+  - [x] `app/ingestion/` modülü oluştur (loader, validators)
+  - [x] `load_json_file()` — JSON'dan belge yükleme
+  - [x] `load_pdf_file()` — tek PDF yükleme
+  - [x] `load_pdf_directory()` — dizindeki tüm PDF'leri toplu yükleme
+  - [x] `ingest_documents()` — scraper çıktısını yükleme
+  - [x] `seed_data.py` → ingestion wrapper'a dönüştür
+  - [x] Haystack `DuplicatePolicy` ile native duplicate yönetimi
 - [ ] **2.2** Metadata modeli
   - [ ] `document_models.py` — 19 kategori + doc_kind tanımları
   - [ ] `source_id` — içerikten bağımsız sabit kaynak kimliği (güncelleme akışı için)

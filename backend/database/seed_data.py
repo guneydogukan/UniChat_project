@@ -1,63 +1,67 @@
+"""
+UniChat Backend — Seed Data
+Örnek GİBTÜ verilerini ingestion pipeline üzerinden yükler.
+
+Kullanım:
+    python database/seed_data.py           # Varsayılan örnek belgeler
+    python database/seed_data.py --json    # data/_test_seed.json varsa onu kullan
+"""
+
 import os
 import sys
 
-from dotenv import load_dotenv
-from haystack import Document
-from haystack.components.embedders import SentenceTransformersDocumentEmbedder
-from haystack_integrations.document_stores.pgvector import PgvectorDocumentStore
-from haystack.document_stores.types import DuplicatePolicy
-from haystack.utils import Secret
+# Backend dizinini Python path'e ekle (app.* import'ları için)
+_backend_dir = os.path.join(os.path.dirname(__file__), "..")
+sys.path.insert(0, _backend_dir)
 
+from dotenv import load_dotenv
 
 # .env dosyasını yükle
 load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+from haystack import Document
+from app.ingestion.loader import ingest_documents
 
 
-def seed():
-    """Örnek GİBTÜ verilerini vektörleştirip veritabanına kaydeder."""
+# ── Varsayılan örnek belgeler ──
+DEFAULT_DOCUMENTS = [
+    Document(
+        content="GİBTÜ Ön Lisans ve Lisans Eğitim-Öğretim Yönetmeliği Madde 24: "
+                "Öğrenciler, danışmanlarının onayı ile her yarıyılda en fazla 45 AKTS "
+                "kredilik ders alabilirler.",
+        meta={"category": "egitim", "doc_kind": "yonetmelik", "source_type": "manual"},
+    ),
+    Document(
+        content="GİBTÜ Yemekhane kuralları: Öğrenciler yemekhane rezervasyonlarını "
+                "bir gün önceden akıllı kartlarına para yükleyerek sistem üzerinden "
+                "yapmalıdır.",
+        meta={"category": "yemekhane", "doc_kind": "rehber", "source_type": "manual"},
+    ),
+    Document(
+        content="GİBTÜ Bilgisayar Mühendisliği Bölümü bitirme projesi teslim tarihi "
+                "her yılın Mayıs ayının son haftasıdır.",
+        meta={"category": "bolumler", "doc_kind": "duyuru", "source_type": "manual"},
+    ),
+]
+
+
+def seed(use_json: bool = False):
+    """Örnek verileri ingestion pipeline üzerinden yükler."""
     try:
-        # PgvectorDocumentStore bağlantısı
+        if use_json:
+            # data/_test_seed.json varsa onu kullan
+            json_path = os.path.join(_backend_dir, "data", "_test_seed.json")
+            if os.path.exists(json_path):
+                from app.ingestion.loader import load_json_file
+                written = load_json_file(json_path)
+                print(f"✅ JSON'dan {written} belge yüklendi: {json_path}")
+                return
+            else:
+                print(f"⚠️ JSON dosyası bulunamadı: {json_path}, varsayılan belgeler kullanılıyor.")
 
-        document_store = PgvectorDocumentStore(
-        connection_string=Secret.from_env_var("DATABASE_URL"),
-        table_name="haystack_docs",
-        embedding_dimension=768,
-        keyword_index_name="unichat_keyword_index",
-
-        )
-
-        # Örnek belgeler
-        documents = [
-            Document(
-                content="GİBTÜ Ön Lisans ve Lisans Eğitim-Öğretim Yönetmeliği Madde 24: "
-                        "Öğrenciler, danışmanlarının onayı ile her yarıyılda en fazla 45 AKTS "
-                        "kredilik ders alabilirler."
-            ),
-            Document(
-                content="GİBTÜ Yemekhane kuralları: Öğrenciler yemekhane rezervasyonlarını "
-                        "bir gün önceden akıllı kartlarına para yükleyerek sistem üzerinden "
-                        "yapmalıdır."
-            ),
-            Document(
-                content="GİBTÜ Bilgisayar Mühendisliği Bölümü bitirme projesi teslim tarihi "
-                        "her yılın Mayıs ayının son haftasıdır."
-            ),
-        ]
-
-        # Embedder — 768 boyutlu vektör üretir
-        embedder = SentenceTransformersDocumentEmbedder(
-            model="sentence-transformers/all-mpnet-base-v2"
-        )
-        embedder.warm_up()
-        result = embedder.run(documents=documents)
-        embedded_docs = result["documents"]
-
-        # Veritabanına yaz
-        document_store.write_documents(embedded_docs, policy=DuplicatePolicy.SKIP)
-
-        print("✅ Örnek GİBTÜ verileri vektörleştirilip veritabanına kaydedildi!")
+        # Varsayılan belgelerle yükle
+        written = ingest_documents(DEFAULT_DOCUMENTS)
+        print(f"✅ Örnek GİBTÜ verileri yüklendi ({written} belge yazıldı).")
 
     except Exception as e:
         print(f"\033[91m❌ Hata oluştu: {e}\033[0m", file=sys.stderr)
@@ -65,4 +69,5 @@ def seed():
 
 
 if __name__ == "__main__":
-    seed()
+    use_json = "--json" in sys.argv
+    seed(use_json=use_json)
