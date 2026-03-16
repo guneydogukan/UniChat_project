@@ -1,6 +1,6 @@
 # UniChat — Geliştirme Görev Takibi (v4)
 
-> **Son Güncelleme:** 13 Mart 2026
+> **Son Güncelleme:** 16 Mart 2026
 
 ---
 
@@ -23,13 +23,13 @@
 ---
 
 ## Faz 2: Uçtan Uca Doğrulama + Veri Besleme Altyapısı
-- [ ] **2.0** Uçtan uca doğrulama + stabilizasyon
-  - [ ] Docker konteyner çalışıyor mu
-  - [ ] `init_db.py` → tablolar oluştur
-  - [ ] `seed_data.py` → mevcut 3 veriyi yükle
-  - [ ] Backend başlat → `/api/health` test
-  - [ ] Frontend → soru sor → yanıt al
-  - [ ] `pip freeze > requirements-lock.txt`
+- [x] **2.0** Uçtan uca doğrulama + stabilizasyon
+  - [x] Docker konteyner çalışıyor mu
+  - [x] `init_db.py` → tablolar oluştur
+  - [x] `seed_data.py` → mevcut 3 veriyi yükle
+  - [x] Backend başlat → `/api/health` test
+  - [x] Frontend → soru sor → yanıt al
+  - [x] `pip freeze > requirements-lock.txt`
 - [ ] **2.1** İki kanallı ingestion pipeline
   - [ ] `app/ingestion/` modülü oluştur (loader, validators)
   - [ ] `load_json_file()` — JSON'dan belge yükleme

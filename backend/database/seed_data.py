@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from haystack import Document
 from haystack.components.embedders import SentenceTransformersDocumentEmbedder
 from haystack_integrations.document_stores.pgvector import PgvectorDocumentStore
+from haystack.document_stores.types import DuplicatePolicy
 from haystack.utils import Secret
 
 
@@ -23,7 +24,6 @@ def seed():
         connection_string=Secret.from_env_var("DATABASE_URL"),
         table_name="haystack_docs",
         embedding_dimension=768,
-        recreate_table=True,
         keyword_index_name="unichat_keyword_index",
 
         )
@@ -55,7 +55,7 @@ def seed():
         embedded_docs = result["documents"]
 
         # Veritabanına yaz
-        document_store.write_documents(embedded_docs)
+        document_store.write_documents(embedded_docs, policy=DuplicatePolicy.SKIP)
 
         print("✅ Örnek GİBTÜ verileri vektörleştirilip veritabanına kaydedildi!")
 
