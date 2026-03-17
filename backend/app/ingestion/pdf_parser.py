@@ -12,6 +12,7 @@ pdfplumber ile PDF → metin dönüşümü.
 import logging
 import os
 import re
+from datetime import datetime
 from pathlib import Path
 from typing import List, Tuple
 
@@ -30,6 +31,28 @@ def _title_from_filename(path: str) -> str:
     """
     stem = Path(path).stem                       # 'egitim_yonetmeligi'
     return stem.replace("_", " ").replace("-", " ").title()
+
+
+def _source_id_from_filename(path: str) -> str:
+    """Dosya adından sabit source_id üretir.
+
+    Örn: 'Eğitim Yönetmeliği.pdf' → 'egitim_yonetmeligi_pdf'
+    """
+    stem = Path(path).stem.lower()
+    # Türkçe karakterleri ASCII'ye dönüştür
+    tr_map = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
+    slug = stem.translate(tr_map)
+    slug = re.sub(r'[^a-z0-9]+', '_', slug).strip('_')
+    return f"{slug}_pdf"
+
+
+def _file_last_modified(path: str) -> str:
+    """Dosya son değişiklik tarihini ISO 8601 formatında döndürür."""
+    try:
+        mtime = os.path.getmtime(path)
+        return datetime.fromtimestamp(mtime).strftime("%Y-%m-%d")
+    except OSError:
+        return datetime.now().strftime("%Y-%m-%d")
 
 
 def _split_by_article(text: str) -> List[Tuple[str, str]]:
@@ -92,6 +115,8 @@ def parse_pdf(
         raise FileNotFoundError(f"PDF dosyası bulunamadı: {path}")
 
     title = meta.pop("title", None) or _title_from_filename(path)
+    source_id = meta.pop("source_id", None) or _source_id_from_filename(path)
+    last_updated = meta.pop("last_updated", None) or _file_last_modified(path)
     logger.info("PDF parse ediliyor: %s (doc_kind=%s)", path, doc_kind)
 
     # ── Sayfa bazlı metin çıkarma ──
@@ -144,6 +169,8 @@ def parse_pdf(
                     "doc_kind": doc_kind,
                     "source_type": "pdf",
                     "source_url": path,
+                    "source_id": f"{source_id}_madde_{i}",
+                    "last_updated": last_updated,
                     "page_count": total_pages,
                     **meta,
                 }
@@ -160,6 +187,8 @@ def parse_pdf(
         "doc_kind": doc_kind,
         "source_type": "pdf",
         "source_url": path,
+        "source_id": source_id,
+        "last_updated": last_updated,
         "page_count": total_pages,
         **meta,
     }

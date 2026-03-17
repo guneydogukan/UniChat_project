@@ -285,8 +285,6 @@ def load_pdf_directory(
             )
             total_written += written
             logger.info("  ✅ %s → %d belge", pdf_path.name, written)
-        except NotImplementedError:
-            logger.warning("  ⏭️ %s → PDF parser henüz uygulanmadı, atlanıyor.", pdf_path.name)
         except Exception as e:
             logger.error("  ❌ %s → Hata: %s", pdf_path.name, e)
 

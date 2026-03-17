@@ -1,10 +1,9 @@
 """
 UniChat Backend — Seed Data
-Örnek GİBTÜ verilerini ingestion pipeline üzerinden yükler.
+_test_seed.json üzerinden ingestion pipeline ile test verisi yükler.
 
 Kullanım:
-    python database/seed_data.py           # Varsayılan örnek belgeler
-    python database/seed_data.py --json    # data/_test_seed.json varsa onu kullan
+    python database/seed_data.py
 """
 
 import os
@@ -19,79 +18,24 @@ from dotenv import load_dotenv
 # .env dosyasını yükle
 load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
 
-from haystack import Document
-from app.ingestion.loader import ingest_documents
+from app.ingestion.loader import load_json_file
 
 
-# ── Varsayılan örnek belgeler ──
-DEFAULT_DOCUMENTS = [
-    Document(
-        content="GİBTÜ Ön Lisans ve Lisans Eğitim-Öğretim Yönetmeliği Madde 24: "
-                "Öğrenciler, danışmanlarının onayı ile her yarıyılda en fazla 45 AKTS "
-                "kredilik ders alabilirler.",
-        meta={
-            "category": "egitim", 
-            "doc_kind": "yonetmelik", 
-            "source_type": "manual",
-            "source_url": "https://www.gantep.edu.tr/mevzuat",
-            "source_id": "egitim_yonetmeligi_md24",
-            "last_updated": "2026-03-17",
-            "title": "Eğitim-Öğretim Yönetmeliği Madde 24"
-        },
-    ),
-    Document(
-        content="GİBTÜ Yemekhane kuralları: Öğrenciler yemekhane rezervasyonlarını "
-                "bir gün önceden akıllı kartlarına para yükleyerek sistem üzerinden "
-                "yapmalıdır.",
-        meta={
-            "category": "yemekhane", 
-            "doc_kind": "rehber", 
-            "source_type": "manual",
-            "source_url": "https://sks.gantep.edu.tr/yemekhane",
-            "source_id": "yemekhane_kurallari_1",
-            "last_updated": "2026-03-17",
-            "title": "Yemekhane Rezervasyon Kuralları"
-        },
-    ),
-    Document(
-        content="GİBTÜ Bilgisayar Mühendisliği Bölümü bitirme projesi teslim tarihi "
-                "her yılın Mayıs ayının son haftasıdır.",
-        meta={
-            "category": "bolumler", 
-            "doc_kind": "duyuru", 
-            "source_type": "manual",
-            "source_url": "https://bm.gantep.edu.tr/duyurular",
-            "source_id": "bm_bitirme_projesi_tarih",
-            "last_updated": "2026-03-17",
-            "title": "BM Bitirme Projesi Teslim Tarihi"
-        },
-    ),
-]
+def seed():
+    """_test_seed.json dosyasını ingestion pipeline üzerinden yükler."""
+    json_path = os.path.join(_backend_dir, "data", "_test_seed.json")
 
+    if not os.path.exists(json_path):
+        print(f"\033[91m❌ Test veri dosyası bulunamadı: {json_path}\033[0m", file=sys.stderr)
+        sys.exit(1)
 
-def seed(use_json: bool = False):
-    """Örnek verileri ingestion pipeline üzerinden yükler."""
     try:
-        if use_json:
-            # data/_test_seed.json varsa onu kullan
-            json_path = os.path.join(_backend_dir, "data", "_test_seed.json")
-            if os.path.exists(json_path):
-                from app.ingestion.loader import load_json_file
-                written = load_json_file(json_path)
-                print(f"✅ JSON'dan {written} belge yüklendi: {json_path}")
-                return
-            else:
-                print(f"⚠️ JSON dosyası bulunamadı: {json_path}, varsayılan belgeler kullanılıyor.")
-
-        # Varsayılan belgelerle yükle
-        written = ingest_documents(DEFAULT_DOCUMENTS)
-        print(f"✅ Örnek GİBTÜ verileri yüklendi ({written} belge yazıldı).")
-
+        written = load_json_file(json_path)
+        print(f"✅ Test verileri yüklendi ({written} belge yazıldı): {json_path}")
     except Exception as e:
         print(f"\033[91m❌ Hata oluştu: {e}\033[0m", file=sys.stderr)
         sys.exit(1)
 
 
 if __name__ == "__main__":
-    use_json = "--json" in sys.argv
-    seed(use_json=use_json)
+    seed()
