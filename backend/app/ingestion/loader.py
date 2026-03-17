@@ -266,7 +266,7 @@ def load_pdf_directory(
     if not os.path.isdir(directory):
         raise NotADirectoryError(f"Dizin bulunamadı: {directory}")
 
-    pdf_files = sorted(Path(directory).glob("*.pdf"))
+    pdf_files = sorted(Path(directory).rglob("*.pdf"))
     if not pdf_files:
         logger.warning("Dizinde PDF dosyası bulunamadı: %s", directory)
         return 0

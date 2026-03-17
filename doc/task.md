@@ -49,18 +49,18 @@
   - [x] CHUNK_MAX_CHARS=1200 (~300 token, model güvenli sınır)
   - [x] Her chunk'a parent_doc_id + chunk_index metadata aktar
   - [x] Haystack `DocumentSplitter` entegrasyonu (genel belgeler)
-- [ ] **2.4** PDF + toplu belge içe aktarma altyapısı
-  - [ ] `app/ingestion/pdf_parser.py` (pdfplumber)
-  - [ ] Madde bazlı bölme (yönetmelik PDF'leri için)
-  - [ ] Sayfa bazlı hata toleransı (bozuk tablo tüm PDF'i durdurmasın)
-  - [ ] Dizin tarama (tüm PDF'leri tek komutla işleme)
-  - [ ] `data/pdfs/` alt dizin yapısı oluştur
-  - [ ] `pdfplumber` dependency ekle
-- [ ] **2.5** Hybrid search (BM25 + vektör)
-  - [ ] `PgvectorKeywordRetriever` (PostgreSQL native FTS)
-  - [ ] PostgreSQL FTS Türkçe dil entegrasyonu (stemming için)
-  - [ ] `DocumentJoiner` (reciprocal_rank_fusion)
-  - [ ] Config: RETRIEVER_VECTOR_TOP_K=5, KEYWORD_TOP_K=3
+- [x] **2.4** PDF + toplu belge içe aktarma altyapısı
+  - [x] `app/ingestion/pdf_parser.py` (pdfplumber)
+  - [x] Madde bazlı bölme (yönetmelik PDF'leri için)
+  - [x] Sayfa bazlı hata toleransı (bozuk tablo tüm PDF'i durdurmasın)
+  - [x] Dizin tarama (tüm PDF'leri tek komutla işleme — rglob)
+  - [x] `data/pdfs/` alt dizin yapısı oluştur
+  - [x] `pdfplumber` dependency ekle
+- [x] **2.5** Hybrid search (BM25 + vektör)
+  - [x] `PgvectorKeywordRetriever` (PostgreSQL native FTS)
+  - [x] PostgreSQL FTS Türkçe dil entegrasyonu (stemming için)
+  - [x] `DocumentJoiner` (reciprocal_rank_fusion)
+  - [x] Config: RETRIEVER_VECTOR_TOP_K=5, KEYWORD_TOP_K=3
 - [ ] **2.6** Prompt template güncelleme
   - [ ] Metadata (kategori, kaynak, birim) template'e ekle
   - [ ] Yönlendirme talimatı (kural 8)

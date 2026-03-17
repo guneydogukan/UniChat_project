@@ -1,16 +1,21 @@
 """
 UniChat Backend — RAG Pipeline Servisi
-Haystack RAG pipeline'ının oluşturulması, yönetimi ve sorgu işleme.
+Hybrid search: PgvectorEmbeddingRetriever (vektör) + PgvectorKeywordRetriever (BM25)
+DocumentJoiner ile reciprocal_rank_fusion stratejisi uygulanır.
 """
 
 import logging
 from haystack import Pipeline
 from haystack.components.embedders import SentenceTransformersTextEmbedder
 from haystack.components.builders import PromptBuilder
+from haystack.components.joiners import DocumentJoiner
 from haystack.utils import Secret
 from haystack_integrations.components.generators.ollama import OllamaGenerator
 from haystack_integrations.document_stores.pgvector import PgvectorDocumentStore
-from haystack_integrations.components.retrievers.pgvector import PgvectorEmbeddingRetriever
+from haystack_integrations.components.retrievers.pgvector import (
+    PgvectorEmbeddingRetriever,
+    PgvectorKeywordRetriever,
+)
 
 from app.config import get_settings
 
@@ -27,6 +32,7 @@ KESİN KURALLAR:
 5. Yanıtın açık, sade ve anlaşılır olsun. Uzun paragraflar yerine maddeli listeler tercih et.
 6. Kullanıcıyı doğru birime yönlendir: hangi sorunun hangi birime (öğrenci işleri, bölüm sekreterliği, Erasmus ofisi, kütüphane vb.) ait olduğunu belirt.
 7. Üniversite dışı konularda (siyaset, din, kişisel tavsiye vb.) cevap verme; kibarca üniversite konularıyla sınırlı olduğunu belirt.
+8. Yanıtın sonunda, kullanıcının bu konuyla ilgili başvurabileceği birimi, telefon/e-posta bilgisini veya resmî web sayfası adresini belirt. Bu bilgi belgede varsa doğrudan kullan; yoksa en uygun birimi öner.
 
 Belgeler:
 {% for doc in documents %}
@@ -43,7 +49,7 @@ Soru: {{ question }}"""
 
 
 class RagService:
-    """RAG pipeline yönetim servisi."""
+    """RAG pipeline yönetim servisi — Hybrid Search (BM25 + vektör)."""
 
     def __init__(self):
         self._settings = get_settings()
@@ -51,10 +57,16 @@ class RagService:
         self._document_store: PgvectorDocumentStore | None = None
 
     def build_pipeline(self) -> None:
-        """RAG pipeline'ı oluşturur ve bileşenleri bağlar."""
-        logger.info("RAG pipeline oluşturuluyor...")
+        """Hybrid search RAG pipeline'ını oluşturur ve bileşenleri bağlar.
 
-        # Document Store
+        Pipeline akışı:
+          text_embedder → vector_retriever ──┐
+                                              ├→ joiner → prompt_builder → llm
+          keyword_retriever ─────────────────┘
+        """
+        logger.info("Hybrid Search RAG pipeline oluşturuluyor...")
+
+        # ── Document Store ──
         self._document_store = PgvectorDocumentStore(
             connection_string=Secret.from_env_var("DATABASE_URL"),
             table_name=self._settings.HAYSTACK_TABLE_NAME,
@@ -62,14 +74,24 @@ class RagService:
             keyword_index_name="unichat_keyword_index",
         )
 
-        # Bileşenler
+        # ── Bileşenler ──
         text_embedder = SentenceTransformersTextEmbedder(
             model=self._settings.EMBEDDING_MODEL
         )
 
-        retriever = PgvectorEmbeddingRetriever(
+        vector_retriever = PgvectorEmbeddingRetriever(
             document_store=self._document_store,
-            top_k=self._settings.RETRIEVER_TOP_K,
+            top_k=self._settings.RETRIEVER_VECTOR_TOP_K,
+        )
+
+        keyword_retriever = PgvectorKeywordRetriever(
+            document_store=self._document_store,
+            top_k=self._settings.RETRIEVER_KEYWORD_TOP_K,
+        )
+
+        # reciprocal_rank_fusion: vektör + BM25 sonuçlarını birleştirir ve yeniden sıralar
+        joiner = DocumentJoiner(
+            join_mode="reciprocal_rank_fusion",
         )
 
         prompt_builder = PromptBuilder(
@@ -82,25 +104,37 @@ class RagService:
             url=self._settings.OLLAMA_URL,
         )
 
-        # Pipeline oluştur ve bağla
+        # ── Pipeline oluştur ──
         self._pipeline = Pipeline()
         self._pipeline.add_component("text_embedder", text_embedder)
-        self._pipeline.add_component("retriever", retriever)
+        self._pipeline.add_component("vector_retriever", vector_retriever)
+        self._pipeline.add_component("keyword_retriever", keyword_retriever)
+        self._pipeline.add_component("joiner", joiner)
         self._pipeline.add_component("prompt_builder", prompt_builder)
         self._pipeline.add_component("llm", llm)
 
-        self._pipeline.connect("text_embedder.embedding", "retriever.query_embedding")
-        self._pipeline.connect("retriever.documents", "prompt_builder.documents")
+        # ── Bağlantılar ──
+        # Vektör kolu
+        self._pipeline.connect("text_embedder.embedding", "vector_retriever.query_embedding")
+        self._pipeline.connect("vector_retriever.documents", "joiner.documents")
+        # Keyword kolu (aynı soru metni doğrudan keyword_retriever'a gider)
+        self._pipeline.connect("keyword_retriever.documents", "joiner.documents")
+        # Joiner → Prompt → LLM
+        self._pipeline.connect("joiner.documents", "prompt_builder.documents")
         self._pipeline.connect("prompt_builder", "llm")
 
-        # Modeli önceden yükle
+        # Embedding modelini önceden yükle
         text_embedder.warm_up()
 
-        logger.info("✅ RAG pipeline başarıyla oluşturuldu.")
+        logger.info(
+            "✅ Hybrid Search RAG pipeline hazır "
+            "(vector_top_k=%d, keyword_top_k=%d, join=reciprocal_rank_fusion).",
+            self._settings.RETRIEVER_VECTOR_TOP_K,
+            self._settings.RETRIEVER_KEYWORD_TOP_K,
+        )
 
     def query(self, question: str) -> dict:
-        """
-        Kullanıcı sorusunu RAG pipeline'dan geçirir.
+        """Kullanıcı sorusunu Hybrid Search RAG pipeline'dan geçirir.
 
         Returns:
             dict: {"response": str, "sources": list[dict]}
@@ -108,14 +142,15 @@ class RagService:
         if self._pipeline is None:
             raise RuntimeError("Pipeline henüz oluşturulmadı. build_pipeline() çağrılmalı.")
 
-        logger.info(f"📩 Gelen soru: {question}")
+        logger.info("📩 Gelen soru: %s", question)
 
         result = self._pipeline.run({
             "text_embedder": {"text": question},
+            "keyword_retriever": {"query": question},
             "prompt_builder": {"question": question},
         })
 
-        logger.info(f"Pipeline tamamlandı. Anahtarlar: {list(result.keys())}")
+        logger.info("Pipeline tamamlandı. Anahtarlar: %s", list(result.keys()))
 
         # Yanıtı al
         replies = result.get("llm", {}).get("replies")
@@ -124,12 +159,12 @@ class RagService:
             return {"response": None, "sources": []}
 
         response_text = replies[0]
-        logger.info(f"Yanıt alındı ({len(response_text)} karakter)")
+        logger.info("Yanıt alındı (%d karakter)", len(response_text))
 
-        # Kaynak belgelerini çıkar
+        # Joiner çıktısından kaynak belgelerini al (birleştirilmiş ve yeniden sıralanmış)
         sources = []
-        retrieved_docs = result.get("retriever", {}).get("documents", [])
-        for doc in retrieved_docs:
+        joined_docs = result.get("joiner", {}).get("documents", [])
+        for doc in joined_docs:
             source = {
                 "content": doc.content[:200] + "..." if len(doc.content) > 200 else doc.content,
                 "source_url": doc.meta.get("source_url") if doc.meta else None,

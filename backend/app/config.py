@@ -32,7 +32,8 @@ class Settings(BaseSettings):
     HAYSTACK_TABLE_NAME: str = "haystack_docs"
 
     # Retriever
-    RETRIEVER_TOP_K: int = 5
+    RETRIEVER_VECTOR_TOP_K: int = 5    # Vektör araması (PgvectorEmbeddingRetriever)
+    RETRIEVER_KEYWORD_TOP_K: int = 3   # BM25 kelime araması (PgvectorKeywordRetriever)
 
     # Chunking (yapıya duyarlı strateji parametreleri)
     CHUNK_MAX_CHARS: int = 1200        # ~300 token (all-mpnet-base-v2 sınırına güvenli mesafe)
