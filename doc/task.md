@@ -61,16 +61,16 @@
   - [x] PostgreSQL FTS Türkçe dil entegrasyonu (stemming için)
   - [x] `DocumentJoiner` (reciprocal_rank_fusion)
   - [x] Config: RETRIEVER_VECTOR_TOP_K=5, KEYWORD_TOP_K=3
-- [ ] **2.6** Prompt template güncelleme
-  - [ ] Metadata (kategori, kaynak, birim) template'e ekle
-  - [ ] Yönlendirme talimatı (kural 8)
-  - [ ] Token bütçesi doğrula (~2050 / 8K)
-- [ ] **2.7** Test verisi
-  - [ ] `data/_test_seed.json` (5-10 test belgesi)
-  - [ ] `data/_schema.json`
-  - [ ] Ingestion pipeline ile test yükle ve doğrula
-- [ ] **2.8** Config güncellemeleri
-  - [ ] Chunking, retriever, DATA_DIR parametreleri
+- [x] **2.6** Prompt template güncelleme
+  - [x] Metadata (kategori, kaynak, birim) template'e ekle
+  - [x] Yönlendirme talimatı (kural 8)
+  - [x] Token bütçesi doğrula (~2050 / 8K)
+- [x] **2.7** Test verisi
+  - [x] `data/_test_seed.json` (8 test belgesi)
+  - [x] `data/_schema.json`
+  - [x] Ingestion pipeline ile test yükle ve doğrula
+- [x] **2.8** Config güncellemeleri
+  - [x] Chunking, retriever, DATA_DIR parametreleri
 
 ## Faz 3: Gerçek Üniversite Verisi Toplama ve Yükleme
 - [ ] **3.1** P0 — Çekirdek veriler (📄 Toplu PDF birincil)
