@@ -72,7 +72,20 @@
           },
           "doc_kind": {
             "type": "string",
-            "default": "genel"
+            "default": "genel",
+            "enum": [
+              "yonetmelik",
+              "yonerge",
+              "duyuru",
+              "haber",
+              "tanitim",
+              "rehber",
+              "iletisim",
+              "form",
+              "mufradat",
+              "ders_plani",
+              "genel"
+            ]
           },
           "parent_doc_id": {
             "type": ["string", "null"]

@@ -4,7 +4,7 @@ Belge metadata yapıları, Pydantic şema doğrulamaları ve kategoriler.
 """
 
 from typing import Optional, Literal
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 
 # ── Kategoriler (Projeye Özel 19 Başlık) ──
@@ -50,6 +50,8 @@ SOURCE_TYPES = Literal["pdf", "web", "manual"]
 
 class DocumentMetadata(BaseModel):
     """Her belge (Document) için metadata şeması."""
+
+    model_config = ConfigDict(extra="allow")  # İlerde eklenebilecek eklere izin ver
     
     # ── Zorunlu Alanlar ──
     category: CATEGORIES = Field(..., description="19 ana kategoriden biri.")
@@ -71,6 +73,3 @@ class DocumentMetadata(BaseModel):
     # ── Yönlendirme Alanları ──
     contact_unit: Optional[str] = Field(None, description="Soru üzerine yönlendirme yapılacak birim adı.")
     contact_info: Optional[str] = Field(None, description="Yönlendirme için e-posta, tel veya ofis no.")
-
-    class Config:
-        extra = "allow"  # İlerde eklenebilecek eklere izin ver

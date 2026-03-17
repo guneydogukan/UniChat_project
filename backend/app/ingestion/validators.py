@@ -89,7 +89,8 @@ def validate_documents(documents: list[Document]) -> list[Document]:
             DocumentMetadata(**doc.meta)
             valid.append(doc)
         except Exception as e:
-            logger.warning("Belge #%d reddedildi: Metadata geçersiz. Hata: %s", i, getattr(e, "errors", lambda: str(e))())
+            error_detail = e.errors() if hasattr(e, "errors") else str(e)
+            logger.warning("Belge #%d reddedildi: Metadata geçersiz. Hata: %s", i, error_detail)
             rejected_count += 1
             continue
 

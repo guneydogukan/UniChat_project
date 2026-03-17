@@ -34,6 +34,14 @@ class Settings(BaseSettings):
     # Retriever
     RETRIEVER_TOP_K: int = 5
 
+    # Chunking (yapıya duyarlı strateji parametreleri)
+    CHUNK_MAX_CHARS: int = 1200        # ~300 token (all-mpnet-base-v2 sınırına güvenli mesafe)
+    CHUNK_OVERLAP_CHARS: int = 200     # Bağlam koruma
+    CHUNK_MIN_CHARS: int = 80          # Bundan kısa parçalar birleştirilir
+
+    # Veri yükleme
+    DATA_DIR: str = "data"
+
     # CORS
     CORS_ORIGINS: list[str] = [
         "http://localhost:5173",

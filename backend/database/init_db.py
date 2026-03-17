@@ -30,18 +30,8 @@ def init_database():
         timestamp TIMESTAMP DEFAULT NOW()
     );
 
-    -- Bölüm duyuruları tablosu (Faz 2 için)
-    CREATE TABLE IF NOT EXISTS department_feeds (
-        id SERIAL PRIMARY KEY,
-        department_name VARCHAR(100),
-        title TEXT,
-        content TEXT,
-        file_url TEXT,
-        is_active BOOLEAN DEFAULT TRUE,
-        content_hash VARCHAR(64),
-        last_scraped TIMESTAMP DEFAULT NOW(),
-        embedding VECTOR(768)
-    );
+    -- Not: Belge yönetimi Haystack PgvectorDocumentStore üzerinden yapılır.
+    -- Eski department_feeds tablosu kaldırılmıştır (Faz 0 kalıntısı).
 
     -- Chat logları için index
     CREATE INDEX IF NOT EXISTS idx_chat_logs_session

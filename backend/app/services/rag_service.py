@@ -31,6 +31,11 @@ KESİN KURALLAR:
 Belgeler:
 {% for doc in documents %}
 ---
+[{{ doc.meta.category | default("bilinmiyor") }}] {{ doc.meta.title | default("") }}
+Kaynak: {{ doc.meta.source_url | default("belirtilmemiş") }}
+{% if doc.meta.contact_unit %}İlgili birim: {{ doc.meta.contact_unit }}{% endif %}
+{% if doc.meta.contact_info %}İletişim: {{ doc.meta.contact_info }}{% endif %}
+
 {{ doc.content }}
 {% endfor %}
 
@@ -129,6 +134,8 @@ class RagService:
                 "content": doc.content[:200] + "..." if len(doc.content) > 200 else doc.content,
                 "source_url": doc.meta.get("source_url") if doc.meta else None,
                 "category": doc.meta.get("category") if doc.meta else None,
+                "title": doc.meta.get("title") if doc.meta else None,
+                "doc_kind": doc.meta.get("doc_kind") if doc.meta else None,
             }
             sources.append(source)
 
