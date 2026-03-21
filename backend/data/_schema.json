@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["content", "meta"],
+    "properties": {
+      "content": {
+        "type": "string",
+        "minLength": 10
+      },
+      "meta": {
+        "type": "object",
+        "required": [
+          "category",
+          "source_url",
+          "source_type",
+          "source_id",
+          "last_updated",
+          "title"
+        ],
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": [
+              "genel_bilgi",
+              "kampus",
+              "egitim",
+              "bolumler",
+              "lisansustu",
+              "ogrenci_isleri",
+              "erasmus",
+              "topluluklar",
+              "spor",
+              "ulasim",
+              "yemekhane",
+              "kutuphane",
+              "etkinlikler",
+              "akademik_kadro",
+              "dijital_hizmetler",
+              "duyurular",
+              "aday_ogrenci",
+              "mezunlar",
+              "yonlendirme"
+            ]
+          },
+          "subcategory": {
+            "type": ["string", "null"]
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "source_type": {
+            "type": "string",
+            "enum": ["pdf", "web", "manual"]
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "department": {
+            "type": ["string", "null"]
+          },
+          "last_updated": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string",
+            "default": "tr"
+          },
+          "title": {
+            "type": "string"
+          },
+          "doc_kind": {
+            "type": "string",
+            "default": "genel",
+            "enum": [
+              "yonetmelik",
+              "yonerge",
+              "duyuru",
+              "haber",
+              "tanitim",
+              "rehber",
+              "iletisim",
+              "form",
+              "mufradat",
+              "ders_plani",
+              "genel"
+            ]
+          },
+          "parent_doc_id": {
+            "type": ["string", "null"]
+          },
+          "chunk_index": {
+            "type": ["integer", "null"]
+          },
+          "contact_unit": {
+            "type": ["string", "null"]
+          },
+          "contact_info": {
+            "type": ["string", "null"]
+          }
+        }
+      }
+    }
+  }
+}
