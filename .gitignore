@@ -30,4 +30,5 @@ pgdata/
 # doc
 doc/
 
-backend/data/pdfs/ # pdf dosyaları
+# pdf dosyaları
+backend/data/pdfs/
