@@ -10,3 +10,5 @@ sqlalchemy
 pydantic-settings
 requests
 pdfplumber
+beautifulsoup4
+lxml
