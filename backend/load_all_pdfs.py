@@ -67,6 +67,10 @@ FOLDER_CONFIG = {
         "category": "genel_bilgi",
         "doc_kind": "genel",
     },
+    "mevzuat_web": {
+        "category": "egitim",
+        "doc_kind": "yonetmelik",
+    },
 }
 
 
