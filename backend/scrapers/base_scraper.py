@@ -31,11 +31,11 @@ class BaseScraper:
             doc_kind="tanitim",
             department="Bilgisayar Mühendisliği",
         )
-        count = scraper.scrape(["https://www.gtu.edu.tr/tr/bolum/..."])
+        count = scraper.scrape(["https://www.gibtu.edu.tr/tr/bolum/..."])
     """
 
     # ── Sınıf Sabitleri ──
-    ALLOWED_DOMAINS: list[str] = ["gtu.edu.tr"]
+    ALLOWED_DOMAINS: list[str] = ["gibtu.edu.tr"]
     REQUEST_TIMEOUT: int = 30            # saniye
     MAX_RETRIES: int = 3
     RETRY_DELAY: int = 2                 # saniye (retry arası bekleme)
@@ -102,8 +102,10 @@ class BaseScraper:
 
                 response.raise_for_status()
 
-                # Encoding düzeltme (Türkçe karakterler için)
-                response.encoding = response.apparent_encoding or "utf-8"
+                # Encoding düzeltme: sunucu charset bildirdiyse onu kullan,
+                # bildirmediyse apparent_encoding'e düş (Türkçe için önemli)
+                if not response.encoding or response.encoding == "ISO-8859-1":
+                    response.encoding = response.apparent_encoding or "utf-8"
                 return response.text
 
             except requests.exceptions.HTTPError as e:

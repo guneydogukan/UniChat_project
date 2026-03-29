@@ -42,6 +42,8 @@ DOC_KINDS = Literal[
     "form",
     "mufradat",
     "ders_plani",
+    "yonetim",
+    "rapor",
     "genel"
 ]
 
