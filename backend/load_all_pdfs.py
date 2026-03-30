@@ -71,6 +71,10 @@ FOLDER_CONFIG = {
         "category": "egitim",
         "doc_kind": "yonetmelik",
     },
+    "raporlar_web": {
+        "category": "genel_bilgi",
+        "doc_kind": "rapor",
+    },
 }
 
 
@@ -220,6 +224,8 @@ def _detect_contact_unit(filename: str, category: str) -> str | None:
         return "İlgili Bölüm Staj Komisyonu"
     if "diploma" in name_lower:
         return "Öğrenci İşleri Daire Başkanlığı"
+    if any(kw in name_lower for kw in ("faaliyet raporu", "stratejik plan", "değerlendirme raporu", "degerlendirme raporu")):
+        return "Strateji Geliştirme Daire Başkanlığı"
 
     return None
 

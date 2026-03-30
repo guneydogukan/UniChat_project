@@ -1,0 +1,145 @@
+{
+  "pages": [
+    {
+      "url": "https://www.gibtu.edu.tr/faaliyetraporlari",
+      "slug": "faaliyetraporlari",
+      "title": "Faaliyet Raporları",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi",
+      "char_count": 244,
+      "pdf_count": 7,
+      "content_preview": "Faaliyet Raporları\n\n Rapor Adı\n\n1\n\n2024 Yılı Faaliyet Raporu\n\n2\n\n2023 Yılı Faaliyet Raporu\n\n3\n\n2022 Yılı Faaliyet Raporu\n\n4\n\n2021 Yılı Faaliyet Raporu\n\n5\n\n2020 Yılı Faaliyet Raporu\n\n6\n\n2019 Yılı Faaliyet Raporu\n\n7\n\n2025 Yılı Faaliyet Raporu\n\nok"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/kurumdisidegerlendirmeraporlari",
+      "slug": "kurumdisidegerlendirmeraporlari",
+      "title": "Kurum Dışı Değerlendirme Raporu",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi",
+      "char_count": 47,
+      "pdf_count": 0,
+      "content_preview": "Kurum Dışı Değerlendirme Raporu\n\n Rapor Adı\n\nok"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/kurumicdegerlendirmeraporlari",
+      "slug": "kurumicdegerlendirmeraporlari",
+      "title": "Kurum İç Değerlendirme Raporları",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi",
+      "char_count": 180,
+      "pdf_count": 3,
+      "content_preview": "Kurum İç Değerlendirme Raporları\n\n Rapor Adı\n\n1\n\n2024 Yılı Kurum İç Değerlendirme Raporu\n\n2\n\n2023 Yılı Kurum İç Değerlendirme Raporu\n\n3\n\n2021 Yılı Kurum İç Değerlendirme Raporu\n\nok"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/stratejikplanlar",
+      "slug": "stratejikplanlar",
+      "title": "Stratejik Planlar",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi",
+      "char_count": 74,
+      "pdf_count": 1,
+      "content_preview": "Stratejik Planlar \n\n Stratejik Plan Adı\n\n1\n\nStratejik Plan 2022 - 2026\n\nok"
+    }
+  ],
+  "pdf_links": [
+    {
+      "url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/PdfViewer/web/PdfViewer.aspx?file=../../20250228150522_6bda3a95.pdf",
+      "resolved_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/20250228150522_6bda3a95.pdf",
+      "text": "2024 Yılı Faaliyet Raporu",
+      "filename": "20250228150522_6bda3a95.pdf",
+      "source_page": "faaliyetraporlari",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/PdfViewer/web/PdfViewer.aspx?file=../../20240308153500_1d5825bc.pdf",
+      "resolved_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/20240308153500_1d5825bc.pdf",
+      "text": "2023 Yılı Faaliyet Raporu",
+      "filename": "20240308153500_1d5825bc.pdf",
+      "source_page": "faaliyetraporlari",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/PdfViewer/web/PdfViewer.aspx?file=../../20230331155003_cf523d17.pdf",
+      "resolved_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/20230331155003_cf523d17.pdf",
+      "text": "2022 Yılı Faaliyet Raporu",
+      "filename": "20230331155003_cf523d17.pdf",
+      "source_page": "faaliyetraporlari",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/PdfViewer/web/PdfViewer.aspx?file=../../20220309154352_3257c570.pdf",
+      "resolved_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/20220309154352_3257c570.pdf",
+      "text": "2021 Yılı Faaliyet Raporu",
+      "filename": "20220309154352_3257c570.pdf",
+      "source_page": "faaliyetraporlari",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/PdfViewer/web/PdfViewer.aspx?file=../../20210421102049_b8d4869e.pdf",
+      "resolved_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/20210421102049_b8d4869e.pdf",
+      "text": "2020 Yılı Faaliyet Raporu",
+      "filename": "20210421102049_b8d4869e.pdf",
+      "source_page": "faaliyetraporlari",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/PdfViewer/web/PdfViewer.aspx?file=../../20200809121102_10da8919.pdf",
+      "resolved_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/20200809121102_10da8919.pdf",
+      "text": "2019 Yılı Faaliyet Raporu",
+      "filename": "20200809121102_10da8919.pdf",
+      "source_page": "faaliyetraporlari",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/PdfViewer/web/PdfViewer.aspx?file=../../20260305162139_9f6c0cb2.pdf",
+      "resolved_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/20260305162139_9f6c0cb2.pdf",
+      "text": "2025 Yılı Faaliyet Raporu",
+      "filename": "20260305162139_9f6c0cb2.pdf",
+      "source_page": "faaliyetraporlari",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/PdfViewer/web/PdfViewer.aspx?file=../../20250325105715_7787a64a.pdf",
+      "resolved_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/20250325105715_7787a64a.pdf",
+      "text": "2024 Yılı Kurum İç Değerlendirme Raporu",
+      "filename": "20250325105715_7787a64a.pdf",
+      "source_page": "kurumicdegerlendirmeraporlari",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/PdfViewer/web/PdfViewer.aspx?file=../../20240405150438_a1018942.pdf",
+      "resolved_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/20240405150438_a1018942.pdf",
+      "text": "2023 Yılı Kurum İç Değerlendirme Raporu",
+      "filename": "20240405150438_a1018942.pdf",
+      "source_page": "kurumicdegerlendirmeraporlari",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/PdfViewer/web/PdfViewer.aspx?file=../../20240405150426_19c1e6cf.pdf",
+      "resolved_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/20240405150426_19c1e6cf.pdf",
+      "text": "2021 Yılı Kurum İç Değerlendirme Raporu",
+      "filename": "20240405150426_19c1e6cf.pdf",
+      "source_page": "kurumicdegerlendirmeraporlari",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/PdfViewer/web/PdfViewer.aspx?file=../../20220214102356_ae21cf79.pdf",
+      "resolved_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/20220214102356_ae21cf79.pdf",
+      "text": "Stratejik Plan 2022 - 2026",
+      "filename": "20220214102356_ae21cf79.pdf",
+      "source_page": "stratejikplanlar",
+      "doc_kind": "rapor",
+      "category": "genel_bilgi"
+    }
+  ]
+}
