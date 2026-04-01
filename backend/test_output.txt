@@ -1,0 +1,39 @@
+﻿
+======================================================================
+TEST 1: MDBF Fak³ltesi Blueprint
+======================================================================
+
+Menu item count: 14
+Total link count: 56
+Scrapable URLs: 35
+PDF links: 7
+BirimID: 15
+Link types: {'page': 37, 'parent': 9, 'pdf': 7, 'subdomain': 3}
+
+--- Structured text preview ---
+  ## Akademik Birimler ù Men³ Haritas²
+  BirimID: 15
+  
+python : Traceback (most recent call last):
+At line:1 char:1
++ python test_blueprint_parser.py 2>&1 | Out-File -FilePath t
+est_output ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most 
+    recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\ASUS\Masa³st³\unichat_proje\backend\test_blu
+eprint_parser.py", line 117, in <module>
+    test_mdbf()
+  File "C:\Users\ASUS\Masa³st³\unichat_proje\backend\test_blu
+eprint_parser.py", line 43, in test_mdbf
+    print(f"  {line}")
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312
+\Lib\encodings\cp1254.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_t
+able)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters i
+n position 2-4: character maps to <undefined>
