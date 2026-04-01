@@ -44,6 +44,8 @@ DOC_KINDS = Literal[
     "ders_plani",
     "yonetim",
     "rapor",
+    "menu_haritasi",
+    "takvim",
     "genel"
 ]
 
