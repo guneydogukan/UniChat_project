@@ -261,6 +261,7 @@ class MapGuidedScraper:
         self._menu_tree: MenuTree | None = None
         self._all_discovered_pdfs: list[MenuLink] = []
         self._all_external_links: list[MenuLink] = []
+        self._birim_url_prefixes: set[str] = set()  # Birim kapsam filtreleme
 
     # ── Session yönetimi ──
 
@@ -292,12 +293,16 @@ class MapGuidedScraper:
         self._all_discovered_pdfs = list(self._menu_tree.get_pdf_links())
         self._all_external_links = list(self._menu_tree.get_external_links())
 
+        # Birim kapsam prefixlerini oluştur (URL keşif filtrelemesi için)
+        self._birim_url_prefixes = self._build_birim_scope(self._menu_tree)
+
         logger.info(
-            "  MenuTree: %d öğe, BirimID=%s, %d PDF, %d harici link",
+            "  MenuTree: %d öğe, BirimID=%s, %d PDF, %d harici link, %d kapsam prefix",
             len(self._menu_tree.items),
             self._menu_tree.birim_id,
             len(self._all_discovered_pdfs),
             len(self._all_external_links),
+            len(self._birim_url_prefixes),
         )
 
         return self._menu_tree
@@ -484,7 +489,9 @@ class MapGuidedScraper:
                         clean_url = link.url.split("#")[0]
                         if clean_url and clean_url not in self.visited_urls:
                             if is_allowed_domain(clean_url, self.allowed_domains):
-                                result.discovered_urls.append(clean_url)
+                                # Birim kapsam kontrolü: sadece aynı birime ait URL'leri kabul et
+                                if self._is_in_birim_scope(clean_url):
+                                    result.discovered_urls.append(clean_url)
 
                     elif link.link_type == LinkType.PDF:
                         if not any(p.url == link.url for p in self._all_discovered_pdfs):
@@ -755,6 +762,122 @@ class MapGuidedScraper:
         """MenuTree'deki tüm linkleri iterate eder."""
         for item in tree.items:
             yield from item.all_links
+
+    def _build_birim_scope(self, tree: MenuTree) -> set[str]:
+        """
+        Blueprint URL'lerinden birim kapsam prefix'lerini oluşturur.
+
+        Bu prefix'ler, deep_parse sırasında keşfedilen URL'lerin
+        aynı birime ait olup olmadığını kontrol etmek için kullanılır.
+        Böylece scraper, ilgisiz birimlerin sayfalarına sızamaz.
+        """
+        prefixes: set[str] = set()
+        birim_id = tree.birim_id
+
+        if birim_id:
+            # Birim.aspx?id=X, BirimYonetim.aspx?id=X vb.
+            prefixes.add(f"id={birim_id}")
+
+        # Blueprint URL'lerinden path prefix'leri çıkar
+        for item in tree.items:
+            for link in item.all_links:
+                if link.link_type != LinkType.PAGE or not link.url:
+                    continue
+                parsed = urlparse(link.url.lower())
+                path = parsed.path.strip("/")
+
+                # Birim kısa adı tespiti (örn: ilahiyatfakultesi, mdbf, bmb)
+                # URL pattern: gibtu.edu.tr/{birim_kisaad}/icerik/...
+                parts = path.split("/")
+                if len(parts) >= 2 and parts[0] not in (
+                    "birim.aspx", "birimyonetim.aspx", "birimmisyon.aspx",
+                    "birimvizyon.aspx", "birimtarihce.aspx", "birimhakkimizda.aspx",
+                    "birimakademikpersonel.aspx", "birimidaripersonel.aspx",
+                    "birimakademikbirimler.aspx", "birimidaribirimler.aspx",
+                    "birimform.aspx", "birimgaleri.aspx", "birimmevzuat.aspx",
+                    "birimfaydalilink.aspx", "birimiletisim.aspx",
+                    "birimduyuru.aspx", "birimhaber.aspx",
+                    "birimduyuruarsivi.aspx", "birimtelefonrehberi.aspx",
+                    "birimrapor.aspx", "birimhiyerarsi.aspx",
+                    "birimicerik.aspx", "medya",
+                ):
+                    prefixes.add(parts[0])  # örn: "ilahiyatfakultesi"
+
+        # Birim.aspx kalıplarını da ekle
+        birim_aspx_patterns = [
+            "birim.aspx", "birimyonetim.aspx", "birimmisyon.aspx",
+            "birimvizyon.aspx", "birimtarihce.aspx", "birimhakkimizda.aspx",
+            "birimakademikpersonel.aspx", "birimidaripersonel.aspx",
+            "birimakademikbirimler.aspx", "birimidaribirimler.aspx",
+            "birimform.aspx", "birimgaleri.aspx", "birimmevzuat.aspx",
+            "birimfaydalilink.aspx", "birimiletisim.aspx",
+            "birimduyuru.aspx", "birimhaber.aspx",
+            "birimduyuruarsivi.aspx", "birimtelefonrehberi.aspx",
+            "birimrapor.aspx", "birimhiyerarsi.aspx",
+            "birimicerik.aspx",
+        ]
+        for pattern in birim_aspx_patterns:
+            prefixes.add(pattern)
+
+        logger.debug("Birim kapsam prefix'leri: %s", prefixes)
+        return prefixes
+
+    def _is_in_birim_scope(self, url: str) -> bool:
+        """
+        URL'nin bu birime ait olup olmadığını kontrol eder.
+
+        Birim kapsam kuralları:
+        1. Birim.aspx?id=X → id tam olarak aynı BirimID olmalı
+        2. /birimkisaad/... → birim kısa adı prefix'te olmalı
+        3. Prefix eşleşmiyorsa → reddedilir
+        """
+        if not self._birim_url_prefixes:
+            return True  # Prefix yoksa filtre uygulanmaz
+
+        from urllib.parse import parse_qs
+
+        url_lower = url.lower().replace("&amp;", "&")
+        parsed = urlparse(url_lower)
+        path = parsed.path.strip("/")
+        query = parsed.query
+        qs = parse_qs(query)
+
+        # BirimID kontrolü: ?id=X (TAM eşleşme)
+        birim_id = self._menu_tree.birim_id if self._menu_tree else None
+        if birim_id:
+            url_id = qs.get("id", [None])[0]
+            if url_id and url_id == str(birim_id):
+                return True
+
+        # Path prefix kontrolü
+        parts = path.split("/")
+        if parts:
+            first_segment = parts[0]
+            # Birim.aspx kalıpları (id kontrolü ile)
+            if first_segment in (
+                "birim.aspx", "birimyonetim.aspx", "birimmisyon.aspx",
+                "birimvizyon.aspx", "birimtarihce.aspx", "birimhakkimizda.aspx",
+                "birimakademikpersonel.aspx", "birimidaripersonel.aspx",
+                "birimakademikbirimler.aspx", "birimidaribirimler.aspx",
+                "birimform.aspx", "birimgaleri.aspx", "birimmevzuat.aspx",
+                "birimfaydalilink.aspx", "birimiletisim.aspx",
+                "birimduyuru.aspx", "birimhaber.aspx",
+                "birimduyuruarsivi.aspx", "birimtelefonrehberi.aspx",
+                "birimrapor.aspx", "birimhiyerarsi.aspx",
+                "birimicerik.aspx", "birimsss.aspx",
+                "birimgorevtanimi.aspx", "birimtanitim.aspx",
+            ):
+                # BirimID tam eşleşme kontrolü
+                if birim_id:
+                    url_id = qs.get("id", [None])[0]
+                    return url_id == str(birim_id)
+                return True
+
+            # Birim kısa adı prefix kontrolü
+            if first_segment in self._birim_url_prefixes:
+                return True
+
+        return False
 
     # ── Kalite Raporu ─────────────────────────────────────────────────────────
 

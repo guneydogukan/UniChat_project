@@ -1,0 +1,628 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-01T19:16:08Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\İlahiyat Fakültesi\\İlahiyat-Türkçe-Arapca.html",
+    "birim_id": 11,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Ilahiyat Fakultesi"
+  },
+  "summary": {
+    "total_blueprint_urls": 58,
+    "total_fetched": 57,
+    "total_valid": 57,
+    "total_failed": 1,
+    "total_skipped": 0,
+    "total_documents": 58,
+    "total_chars": 3037608
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Kalite Komisyonu",
+      "url": "https://www.gibtu.edu.tr/medya/gibtudosya/20231115150905_c38ea370.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Birim Kalite Komisyonları Yönergesi",
+      "url": "https://www.gibtu.edu.tr/medya/gibtudosya/20231115150845_99c2f097.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [
+    {
+      "text": "Aday Öğrenci Portalı",
+      "url": "https://adayogrenci.gibtu.edu.tr/",
+      "type": "subdomain"
+    },
+    {
+      "text": "Mezun Öğrenci Bilgi Sistemi",
+      "url": "https://ubys.gibtu.edu.tr/gts/portal/home/index",
+      "type": "subdomain"
+    },
+    {
+      "text": "Uzaktan Eğitim Uygulama ve Araştırma Merkezi",
+      "url": "https://ubys.gibtu.edu.tr",
+      "type": "subdomain"
+    }
+  ],
+  "failed_urls": [
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31387/mezun-bilgi-sistemi",
+      "reason": "fetch_failed"
+    }
+  ],
+  "skipped_urls": [],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=11",
+      "title": "",
+      "char_count": 1722,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 58,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=11",
+      "title": "Yönetim",
+      "char_count": 1982,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 57,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimhakkimizda.aspx?id=11",
+      "title": "Hakkımızda",
+      "char_count": 2013,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 56,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31093/ilahiyat-fakultesi-organizasyon-semasi",
+      "title": "",
+      "char_count": 1687965,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimmisyon.aspx?id=11",
+      "title": "Misyon",
+      "char_count": 385,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 54,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimvizyon.aspx?id=11",
+      "title": "Vizyon",
+      "char_count": 473,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 53,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimtarihce.aspx?id=11",
+      "title": "Tarihçe",
+      "char_count": 1117,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 52,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31100/kalite-politikalarimiz",
+      "title": "",
+      "char_count": 11547,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 50,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31158/komisyon-ve-koordinatorlukler",
+      "title": "",
+      "char_count": 172226,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31389/toplanti-tutanaklari",
+      "title": "",
+      "char_count": 449,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 48,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31453/bidr",
+      "title": "",
+      "char_count": 48,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 47,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31605/anket-sonuclari",
+      "title": "",
+      "char_count": 103,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 46,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31096/kalite-el-kitabi",
+      "title": "",
+      "char_count": 43,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 45,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31078/fakulte-danisma-kurulu",
+      "title": "",
+      "char_count": 347,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 44,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31088/kalite-toplantilari",
+      "title": "",
+      "char_count": 595,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 43,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/25239/birim-faaliyet-raporlari",
+      "title": "",
+      "char_count": 310,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 42,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30901/is-akis-semalari",
+      "title": "",
+      "char_count": 288,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 41,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31091/risk-swot-pest-analizi",
+      "title": "",
+      "char_count": 95,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 40,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30941/risk-haritasi",
+      "title": "",
+      "char_count": 30,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 39,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30940/hizmet-envanteri",
+      "title": "",
+      "char_count": 33,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 38,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimform.aspx?id=11",
+      "title": "Formlar",
+      "char_count": 774,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 38,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30647/gorev-tanimlari",
+      "title": "",
+      "char_count": 1168,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 36,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30649/talimatlar",
+      "title": "",
+      "char_count": 34,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 35,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30648/prosesler",
+      "title": "",
+      "char_count": 915,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 34,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31079/ic-ve-dis-paydaslar",
+      "title": "",
+      "char_count": 316266,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31090/yillik-calisma-plani",
+      "title": "",
+      "char_count": 406443,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikBirimler.aspx?id=11",
+      "title": "Akademik Birimler",
+      "char_count": 95,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 32,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=11",
+      "title": "İdari Birimler",
+      "char_count": 625,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 31,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimakademikpersonel.aspx?id=11",
+      "title": "Akademik Personel",
+      "char_count": 5386,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 30,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimidaripersonel.aspx?id=11",
+      "title": "İdari Personel",
+      "char_count": 514,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 29,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/25159/sinav-usul-ve-esaslari",
+      "title": "",
+      "char_count": 41,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 27,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31157/ders-programlari",
+      "title": "",
+      "char_count": 377386,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31080/danismanlar",
+      "title": "",
+      "char_count": 34,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 25,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31388/aday-ogrenci-portali",
+      "title": "CBİKO - CUMHURBAŞKANLIĞI İNSAN KAYNAKLARI OFİSİ",
+      "char_count": 21769,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31390/mufredatlar",
+      "title": "",
+      "char_count": 587,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31448/akademik-takvim",
+      "title": "Akademik Takvim",
+      "char_count": 145,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31449/ogrenci-sayilari",
+      "title": "",
+      "char_count": 51,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31635/ogrenci-ve-topluluk-etkinlikleri",
+      "title": "",
+      "char_count": 459,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/birimicerik.aspx?id=11&icid=516",
+      "title": "",
+      "char_count": 82,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=11",
+      "title": "Duyurular",
+      "char_count": 581,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimhaber.aspx?id=11",
+      "title": "Haberler",
+      "char_count": 498,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimduyuruarsivi.aspx?id=11",
+      "title": "İçerik Arşivi",
+      "char_count": 8301,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31450/konferans",
+      "title": "",
+      "char_count": 1544,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31451/calistay",
+      "title": "",
+      "char_count": 426,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31445/seminer",
+      "title": "",
+      "char_count": 754,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31459/haber",
+      "title": "",
+      "char_count": 1102,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31457/yarisma",
+      "title": "",
+      "char_count": 76,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31455/forum",
+      "title": "",
+      "char_count": 534,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31456/soylesi",
+      "title": "",
+      "char_count": 111,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31452/fakulte-etkinlikleri",
+      "title": "",
+      "char_count": 256,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=11",
+      "title": "Formlar",
+      "char_count": 774,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=11",
+      "title": "Galeri",
+      "char_count": 1300,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=11",
+      "title": "Mevzuatlar",
+      "char_count": 146,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=11",
+      "title": "Faydalı Linkler",
+      "char_count": 132,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=11",
+      "title": "İletişim",
+      "char_count": 352,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 3,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimiletisim.aspx?id=11",
+      "title": "İletişim",
+      "char_count": 352,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimtelefonrehberi.aspx?id=11",
+      "title": "Telefon Rehberi",
+      "char_count": 5824,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 58,
+      "total": 58,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 58,
+      "total": 58,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 58,
+      "total": 58,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 58,
+      "total": 58,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 58,
+      "total": 58,
+      "pct": 100
+    },
+    "title": {
+      "count": 58,
+      "total": 58,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 58,
+      "total": 58,
+      "pct": 100
+    },
+    "department": {
+      "count": 58,
+      "total": 58,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 58,
+      "total": 58,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 58,
+      "total": 58,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 57,
+    "menu_haritasi": 1
+  }
+}
