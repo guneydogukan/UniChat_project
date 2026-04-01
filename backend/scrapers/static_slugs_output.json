@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "task": "3.2.6b",
+    "description": "Statik Slug Tabanlı Sayfaların Toplu Canlı Scrape'i",
+    "timestamp": "2026-04-01T16:46:54Z",
+    "total_target": 9,
+    "total_scraped": 9,
+    "total_failed": 0
+  },
+  "pages": [
+    {
+      "url": "https://www.gibtu.edu.tr/ulasim",
+      "slug": "ulasim",
+      "title": "Ulaşım",
+      "category": "ulasim",
+      "doc_kind": "rehber",
+      "contact_unit": "Sağlık Kültür ve Spor Daire Başkanlığı",
+      "contact_info": "sks@gibtu.edu.tr | Tel: +90 342 909 75 00 | Faks: 0850 258 98 00 | E-posta: info...",
+      "char_count": 2610,
+      "link_count": 287,
+      "placeholder_detected": null,
+      "content_preview": "GIBTU Homepage \r\n\nGAZİANTEP İSLAM, BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ\n\n\"Kariyeriniz Bizimle Başlar\"\n\n Ulaşım\n\n GİBTÜ ' Ye Nasıl Ulaşırım ?\r\n\nŞehir içi ulaşımda halk otobüsleri, belediye otobüsleri, minübüs, tramvay ve taksiler kullanılmaktadır. Sarı ve mavi otobüsler belediye tarafından işletilmektedir..."
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/yurtlar",
+      "slug": "yurtlar",
+      "title": "Yurtlar",
+      "category": "kampus",
+      "doc_kind": "rehber",
+      "contact_unit": "Sağlık Kültür ve Spor Daire Başkanlığı",
+      "contact_info": "sks@gibtu.edu.tr | Tel: +90 342 909 75 00 | Faks: 0850 258 98 00 | E-posta: info...",
+      "char_count": 505,
+      "link_count": 287,
+      "placeholder_detected": null,
+      "content_preview": "GIBTU Homepage \r\n\nGAZİANTEP İSLAM, BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ\n\n\"Kariyeriniz Bizimle Başlar\"\n\n Yurtlar\n\n Kız Öğrenci Yurtları\r\n\n Yurt Adı\n\n Adres\n\n Telefon\n\nKız Öğrenci Yurdu\n\nKampüs İçinde \n Daha Detaylı Bilgi İçin Tıklayınız !\nBeştepe mah. 192090 nolu cadde Kız Öğrenci Yurdu 27010 Şahinbey/Gaz..."
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/yemeklistesi",
+      "slug": "yemeklistesi",
+      "title": "Yemek Listesi",
+      "category": "yemekhane",
+      "doc_kind": "rehber",
+      "contact_unit": "Sağlık Kültür ve Spor Daire Başkanlığı",
+      "contact_info": "sks@gibtu.edu.tr | Tel: +90 342 909 75 00 | Faks: 0850 258 98 00 | E-posta: info...",
+      "char_count": 1934,
+      "link_count": 287,
+      "placeholder_detected": null,
+      "content_preview": "GIBTU Homepage \r\n\nGAZİANTEP İSLAM, BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ\n\n\"Kariyeriniz Bizimle Başlar\"\n\n Yemek Listesi\n\nYemekhane Rezervasyon Yap\n\n1.04.2026\n\n Et Haşlama\r\n\n Firik Pilavı\r\n\n Ezogelin Çorba\r\n\n Fırın Sütlaç\r\n\n2.04.2026\n\n Tavuk Yahni\r\n\n Antep Usulü Lor Böreği\r\n\n Tutmaç Çorba\r\n\n Şam Tatlı\r\n\n3.0..."
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/akademiktakvim",
+      "slug": "akademiktakvim",
+      "title": "Akademik Takvim",
+      "category": "egitim",
+      "doc_kind": "takvim",
+      "contact_unit": "Öğrenci İşleri Daire Başkanlığı",
+      "contact_info": "ogrenciisleri@gibtu.edu.tr | Tel: +90 342 909 75 00 | Faks: 0850 258 98 00 | E-p...",
+      "char_count": 244,
+      "link_count": 288,
+      "placeholder_detected": null,
+      "content_preview": "GIBTU Homepage \r\n\nGAZİANTEP İSLAM, BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ\n\n\"Kariyeriniz Bizimle Başlar\"\n\n Akademik Takvim\n\nDosyayı görüntüleyemiyorsanız, \nburadan indirebilirsiniz\n veya dosyayı görüntülemk için \nAdobe PDF Reader\n indirebilirsiniz.\n\nok"
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimrehber",
+      "slug": "birimrehber",
+      "title": "Birim Rehber",
+      "category": "yonlendirme",
+      "doc_kind": "rehber",
+      "contact_unit": "Genel Sekreterlik",
+      "contact_info": "Tel: +90 342 909 75 00 | Faks: 0850 258 98 00 | E-posta: info@gibtu.edu.tr | Adr...",
+      "char_count": 29284,
+      "link_count": 436,
+      "placeholder_detected": null,
+      "content_preview": "GIBTU Homepage \r\n\nGAZİANTEP İSLAM, BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ\n\n\"Kariyeriniz Bizimle Başlar\"\n\n Birim Rehber\n\nA\n\nB\n\nC\n\nÇ\n\nD\n\nE\n\nF\n\nG\n\nĞ\n\nH\n\nI\n\nİ\n\nJ\n\nK\n\nL\n\nM\n\nN\n\nO\n\nÖ\n\nP\n\nR\n\nS\n\nT\n\nU\n\nÜ\n\nV\n\nW\n\nX\n\nY\n\nZ\n\n 1. Uluslararası Stratejik Müzakereler Forumu\r\n\n Sempozyumlar / Kongreler / Forumlar\r\n\nphone\n +90..."
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/akademikbirim",
+      "slug": "akademikbirim",
+      "title": "Akademik Birim",
+      "category": "yonlendirme",
+      "doc_kind": "rehber",
+      "contact_unit": "Genel Sekreterlik",
+      "contact_info": "Tel: +90 342 909 75 00 | Faks: 0850 258 98 00 | E-posta: info@gibtu.edu.tr | Adr...",
+      "char_count": 2897,
+      "link_count": 345,
+      "placeholder_detected": null,
+      "content_preview": "GIBTU Homepage \r\n\nGAZİANTEP İSLAM, BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ\n\n\"Kariyeriniz Bizimle Başlar\"\n\n Akademik Birim\n\n Akademik Birimler\r\n\nEtik Kurullar\n\nFen ve Mühendislik Bilimleri Bilimsel Araştırma ve Yayın Etiği Kurulu\n\nGirişimsel Olmayan Klinik Araştırmalar Etik Kurulu\n\nHayvan Deneyleri Yerel Eti..."
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/idaribirim",
+      "slug": "idaribirim",
+      "title": "İdari Birim",
+      "category": "yonlendirme",
+      "doc_kind": "rehber",
+      "contact_unit": "Genel Sekreterlik",
+      "contact_info": "Tel: +90 342 909 75 00 | Faks: 0850 258 98 00 | E-posta: info@gibtu.edu.tr | Adr...",
+      "char_count": 589,
+      "link_count": 298,
+      "placeholder_detected": null,
+      "content_preview": "GIBTU Homepage \r\n\nGAZİANTEP İSLAM, BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ\n\n\"Kariyeriniz Bizimle Başlar\"\n\n İdari Birim\n\n İdari Birimler\r\n\nGenel Sekreterlik\n\nGenel Sekreterlik\n\nDaire Başkanlıkları\n\nBilgi İşlem Daire Başkanlığı\n\nİdari ve Mali İşler Daire Başkanlığı\n\nKütüphane ve Dokümantasyon Daire Başkanlığı..."
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/icerikrehberi",
+      "slug": "icerikrehberi",
+      "title": "İçerik Rehberi - Arşivi",
+      "category": "yonlendirme",
+      "doc_kind": "rehber",
+      "contact_unit": "Genel İletişim",
+      "contact_info": "Tel: +90 342 909 75 00 | Faks: 0850 258 98 00 | E-posta: info@gibtu.edu.tr | Adr...",
+      "char_count": 7631,
+      "link_count": 373,
+      "placeholder_detected": null,
+      "content_preview": "GIBTU Homepage \r\n\nGAZİANTEP İSLAM, BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ\n\n\"Kariyeriniz Bizimle Başlar\"\n\n İçerik Rehberi - Arşivi\n\nAra\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nU\nz\nu\nn\n\nY\nı\nl\nl\na\nr\nı\nn\n\nH\ni\nz\nm\ne\nt\ni\nn\ne\n\nT\ne\nş\ne\nk\nk\nü\nr\n\nDuyuru\n\n30.03.2026\n\nG\nİ\nB\nT\nÜ\n,\n\nI\nK\nA\nF\n2\n6\n\n'\nd\na\n\nG\ne\nn\nç\nl\ne\nr\ni\nn\n..."
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/personelrehber",
+      "slug": "personelrehber",
+      "title": "Personel Rehberi",
+      "category": "yonlendirme",
+      "doc_kind": "rehber",
+      "contact_unit": "Personel Daire Başkanlığı",
+      "contact_info": "personel@gibtu.edu.tr | Tel: +90 342 909 75 00 | Faks: 0850 258 98 00 | E-posta:...",
+      "char_count": 124,
+      "link_count": 286,
+      "placeholder_detected": null,
+      "content_preview": "GIBTU Homepage \r\n\nGAZİANTEP İSLAM, BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ\n\n\"Kariyeriniz Bizimle Başlar\"\n\n Personel Rehberi\n\nAra\n\nok"
+    }
+  ],
+  "failed": []
+}
