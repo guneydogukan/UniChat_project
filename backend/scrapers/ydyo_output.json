@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:56:45Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\Yabancı Diller Yüksekokulu\\Yabancı_Diller_Yüksekokulu.html",
+    "birim_id": 34,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Yabanci Diller Yuksekokulu"
+  },
+  "summary": {
+    "total_blueprint_urls": 21,
+    "total_fetched": 21,
+    "total_valid": 21,
+    "total_failed": 0,
+    "total_skipped": 0,
+    "total_documents": 56,
+    "total_chars": 39719
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Kalite Güvencesi ve Kalite Koordinatörlüğü Yönergesi",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20230824133826_faaa8803.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "İş Akış Süreçleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250909164538_9eba00bd.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Kalite El Kitabı",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251031155900_b3470b03.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Öğrenci Anket Raporları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251030162756_869f1f46.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2024 Bidr Raporu",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251103165243_c0d716c0.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2024 Birim Faaliyet Raporu",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250129115256_85383b60.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2023 Birim Faaliyet Raporu",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240119142522_4e207cc3.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Komisyonlar",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251030122128_8879024f.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "KYS Toplantı Tutanağı",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251031134833_7e2de35b.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Ydyo Temizlik Talimatı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250910132315_f768eb2c.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Ydyo Yangın Talimatı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250910132342_1f0c7592.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Ydyo Danışman Öğretim Elemanı Yönergesi",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251103200327_4b95a8f6.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Personel Oryantasyon Sunumu",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250808103845_eb179159.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Personel El Kitabı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250806112214_9691f81f.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Yabancı Diller Yüksekokulu Zorunlu Hazırlık Sınıfı Eğitim-öğretim ve Sınav Yönergesi",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250520100334_ea1b07ff.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Ydyo Hazırlık Akademik Takvim",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250725104929_80ebf0c6.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Genel Akademik Takvim",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250725144727_a9de547a.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Hazırlık Oryantasyon Sunumu",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250912141018_1c2e08cb.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Öğrenci Kitapçığı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250812112322_ea52d177.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Arapça Hazırlık Ders İzlenceleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240213100729_27d6e62e.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Arapça Hazırlık Materyalleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250909134424_17baeb42.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Extra Learning Pack For Late Starters",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20241216092431_228138f3.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Zorunlu Yabancı Dil Dersleri Muafiyet Sınavı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20230823114939_105e6be8.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Arapça Hazırlık Quiz Örneği",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20250930135521_17158a9b.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Zorunlu Hazırlık Sınıfı Muafiyet Sınavı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20230829225752_685e692a.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Arapça Muafiyet Sınavı Soru Örnekleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240910093816_125d17a2.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "İngilizce Muafiyet Sınavı Soru Örnekleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240820152123_c6d7e5a2.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Erasmus Sınavı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240909165959_1c71d271.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Hazırlık Birimi Sınav ve Program Koordinatörlüğü",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251031093009_b6c45413.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Kariyer Geliştirme ve Mezunlar Koordinatörlüğü",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251031093153_1a06aec0.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Mesleki Gelişim ve Kariyer Koordinatörlüğü",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251031092412_2ecf9ed7.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Proje Geliştirme Koordinatörlüğü",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251031093108_65598ca1.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Kalite Güvencesi ve Kalite Koordinatörlüğü",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251031092913_33a7316b.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Sosyal Medya ve Etkinlik Koordinatörlüğü",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251031092508_f71cef71.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=34",
+      "title": "Yabancı Diller Yüksekokulu",
+      "body_content": "Arapça Hazırlık Sınıfları 3. Modül Çıkış Sınavlarının Tarihleri Açıklanmıştır\n\nİngilizce Hazırlık Sınıfları 3. Modül Çıkış Sınavlarının Tarihleri Açıklanmıştır\n\nKadromuz Güçlenmeye Devam Ediyor\n\n2025-2026 Akademik Yılı Erasmus+ Öğrenim ve Staj Hareketliliği Kapsamında Gerçekleştirilecek Erasmus+ Yabancı Dil Sınavına Katılacak Öğrencilerin Sınıf Listesi Açıklanmıştır.\n\nRamazan 'ın Bereketi Aynı Sofrada Paylaşıldı\n\nÜniversitemizden Uluslararası Etkinlikte Dijital Farkındalık Sunumu\n\nYDYO Akademik Kadrosunda Doktora Gururu\n\nÜniversitemizden Irak Üniversitesi 'nde Uluslararası Akademik Çalıştay\n\nHABERLER\n\nTÜMÜ\n\n04.04.2026 19:54\n\nArapça Hazırlık Sınıfları 3. Modül Çıkış Sınavlarının Tarihleri Açıklanmıştır\n\nARAPÇA HAZIRLIK SINIFLARI 3. MODÜL ÇIKIŞ SINAVLARININ TARİHLERİ AÇIKLANMIŞTIR\n\n Devamını Oku\r\n\n04.04.2026 19:36\n\nİngilizce Hazırlık Sınıfları 3. Modül Çıkış Sınavlarının Tarihleri Açıklanmıştır\n\nİNGİLİZCE HAZIRLIK SINIFLARI 3. MODÜL ÇIKIŞ SINAVLARININ TARİHLERİ AÇIKLANMIŞTIR\n\n Devamını Oku\r\n\n13.03.2026 14:03\n\nKadromuz Güçlenmeye Devam Ediyor\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi\n\nYabancı Diller Yüksekokulu bünyesinde \nÖğr. Gör. Şerife Ulucan\n görevine başlamıştır.\n\n Devamını Oku\r\n\n11.03.2026 14:24\n\n2025-2026 Akademik Yılı Erasmus+ Öğrenim ve Staj Hareketliliği Kapsamında Gerçekleştirilecek Erasmus+ Yabancı Dil Sınavına Katılacak Öğrencilerin Sınıf Listesi Açıklanmıştır.\n\n2025-2026 akademik yılı Erasmus+ öğrenim ve staj hareketliliği kapsamında gerçekleştirilecek \nErasmus+ Yabancı Dil Sınavı\nna katılacak öğrencilerin listesi açıklanmıştır.\n\n Devamını Oku\r\n\n05.03.2026 10:14\n\nRamazan 'ın Bereketi Aynı Sofrada Paylaşıldı\n\nÜniversitemizde düzenlenen Ramazan iftar programında, Yabancı Diller Yüksekokulu akademisyenlerimiz de öğrencilerimizle birlikte yer aldı.\n\n Devamını Oku\r\n\n03.03.2026 10:49\n\nÜniversitemizden Uluslararası Etkinlikte Dijital Farkındalık Sunumu\n\nYabancı Diller Yüksekokulu Müdür Yardımcımız Öğr. Gör. Emine Yavuz, Bursa Teknik Üniversitesi ev sahipliğinde düzenlenen INGED – British Council Teacher Training Program National Showcase Event’a konuşmacı olarak katıldı.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n04\n\nNis\n\n Arapça Hazırlık Sınıfları 3. Modül Çıkış Sınavlarının Tarihleri Açıklanmıştır\r\n\n04\n\nNis\n\n İngilizce Hazırlık Sınıfları 3. Modül Çıkış Sınavlarının Tarihleri Açıklanmıştır\r\n\n11\n\nMar\n\n 2025-2026 Akademik Yılı Erasmus+ Öğrenim ve Staj Hareketliliği Kapsamında Gerçekleştirilecek Erasmus+ Yabancı Dil Sınavına Katılacak Öğrencilerin Sınıf Listesi Açıklanmıştır.\r\n\n16\n\nŞub\n\n İngilizce Hazırlık Sınıfları 3. Modül Sınav Takvimi",
+      "char_count": 2585,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=34",
+      "title": "Yönetim",
+      "body_content": "Yüksekokul Müdürü\r\n\nDoç. Dr. Eyyüp TUNCER\n\nYüksekokul Müdürü\n\nring_volume\n1052\n\nmail\neyyup.tuncer@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yüksekokul Müdür Yardımcıları\r\n\nÖğr. Gör. Muhammed Halil NOHUT\n\nYüksekokul Müdür Yrd.\n\nring_volume\n1053\n\nmail\nmhalil.nohut@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Emine YAVUZ\n\nYüksekokul Müdür Yrd.\n\nring_volume\n1054\n\nmail\nemine.yavuz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yabancı Diller Bölüm Başkanı\r\n\nÖğr. Gör. Fatma İrem GÖRKEM ÇETİNKAYA\n\nBölüm Başkan V.\n\nring_volume\n0000\n\nmail\nirem.cetinkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yüksekokul Sekreteri\r\n\n Mehmet ÖZTÜRK\n\nYüksekokul Sekreteri\n\nring_volume\n1051\n\nmail\nmehmet.ozturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yüksekokul Kurulu\r\n\nDoç. Dr. Eyyüp TUNCER\n\nBaşkan\n\nring_volume\n1052\n\nmail\neyyup.tuncer@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Muhammed Halil NOHUT\n\nYüksekokul Müdür Yrd.\n\nring_volume\n1053\n\nmail\nmhalil.nohut@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Emine YAVUZ\n\nYüksekokul Müdür Yrd.\n\nring_volume\n1054\n\nmail\nemine.yavuz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Fatma İrem GÖRKEM ÇETİNKAYA\n\nBölüm Başkan V.\n\nring_volume\n0000\n\nmail\nirem.cetinkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yüksekokul Yönetim Kurulu\r\n\nDoç. Dr. Eyyüp TUNCER\n\nYüksekokul Müdürü\n\nring_volume\n1052\n\nmail\neyyup.tuncer@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Muhammed Halil NOHUT\n\nYüksekokul Müdür Yrd.\n\nring_volume\n1053\n\nmail\nmhalil.nohut@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Emine YAVUZ\n\nYüksekokul Müdür Yrd.\n\nring_volume\n1054\n\nmail\nemine.yavuz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Yusuf AKÇAKOCA\n\nÜye\n\nring_volume\n2121\n\nmail\nyusuf.akcakoca@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Ahmet AKBAŞ\n\nÜye\n\nring_volume\n2118\n\nmail\nahmet.akbas@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet Nezir ESİN\n\nDr. Öğr. Üyesi\n\nring_volume\n0000\n\nmail\nmehmetnezir.esin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet ÖZTÜRK\n\nRaportör\n\nring_volume\n1051\n\nmail\nmehmet.ozturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Arapça Hazırlık Koordinatörlüğü\r\n\nÖğr. Gör. Ahmad SHAWAKH\n\nKoordinatör\n\nring_volume\n0000\n\nmail\nahmad.shawakh@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n İngilizce Hazırlık Koordinatörlüğü\r\n\nÖğr. Gör. Emine YAVUZ\n\nKoordinatör\n\nring_volume\n1054\n\nmail\nemine.yavuz@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 2237,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimtanitim.aspx?id=34",
+      "title": "Tanıtım",
+      "body_content": "Yabancı Diller Yüksekokulunun kuruluş amacı, Avrupa Konseyi Yabancı Diller Öğrenimi-Öğretimi Ortak Kriterleri Çerçeve Programı esaslarını göz önünde bulundurarak, öğrencilerin yabancı dilde sözlü ve yazılı iletişim becerilerini geliştirerek Üniversitemizde öğrenimleri sürecinde ve sonrasında ihtiyaç duyacakları sağlam bir yabancı dil altyapısı kazandırmaktır. \n\nBirim kataloğumuza aşağıdan ulaşabilirsiniz.\n\nTürkçe\n\nİngilizce\n\nArapça",
+      "char_count": 435,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=34",
+      "title": "Tarihçe",
+      "body_content": "Yabancı Diller Yüksekokulu, 18 Mayıs 2018 tarihli ve 30425 sayılı Resmî Gazete'de yayımlanan 7141 sayılı Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair Kanun çerçevesinde kurulmuştur.\n\nKuruluşunun ardından, 30 Ekim 2020 tarihinde alınan 2020/1 sayılı karar ile Yüksekokul bünyesinde Mütercimlik ve Tercümanlık Bölümü açılmasına ve bu bölüm altında Arapça ile İngilizce Mütercim Tercümanlık ana bilim dallarının faaliyete geçirilmesine karar verilmiştir.\n\nYüksekokulumuz, Ağustos 2023 tarihi itibarıyla ilk öğrencilerini kabul ederek eğitim-öğretim faaliyetlerine aktif olarak başlamıştır.\n\n8 Kasım 2023 tarihinde yapılan önemli bir yapısal düzenleme ile Mütercimlik ve Tercümanlık Bölümleri Yüksekokul bünyesinden ayrılarak ilgili fakültelere bağlanmıştır. Bu düzenlemenin ardından Yabancı Diller Yüksekokulu, üniversitemizin temel Hazırlık Birimi olarak yeniden konumlandırılmıştır. Yeni yapılanma çerçevesinde Yüksekokulumuz; Mühendislik ve Doğa Bilimleri Fakültesi Endüstri Mühendisliği, İlahiyat Fakültesi (%30 ve %100 Arapça İlahiyat Bölümü) ve İktisat Fakültesi'ne bağlı Arapça ve İngilizce Mütercim Tercümanlık bölümleri öğrencilerinin bir yıllık yabancı dil hazırlık eğitimini başarıyla yürütmektedir.",
+      "char_count": 1259,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimmisyon.aspx?id=34",
+      "title": "Misyon",
+      "body_content": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Yabancı Diller Yüksekokulunun misyonu, Avrupa Konseyi Yabancı Diller Öğrenimi-Öğretimi Ortak Kriterleri Çerçeve Programı esaslarını göz önünde bulundurarak, öğrencilerin yabancı dilde sözlü ve yazılı iletişim becerilerini geliştirerek Üniversitemizde öğrenimleri sürecinde ve sonrasında ihtiyaç duyacakları sağlam bir yabancı dil altyapısı kazandırmaktır. Aynı zamanda öğrencilerimize dil öğrenmeyi sevdirmek ve teknolojik imkânları da kullanarak öğrenme sürecini kolaylaştırmaktır. Ayrıca öğrendikleri dilin kültürünü de onlara tanıtarak açık görüşlü ve kültürlerarası farklılıklardan haberdar, hoşgörülü bireyler olmalarına katkı sağlamaktır.",
+      "char_count": 692,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=34",
+      "title": "Vizyon",
+      "body_content": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Yabancı Diller Yüksekokulunun vizyonu, uluslararası standartlarda çağdaş dil öğretim yöntem-teknikleri ve araçlarından faydalanarak dil eğitim-öğretim ortamı sunmak ve öğrencilerin sosyal, akademik ve iş yaşantılarında ihtiyaç duyabilecekleri yabancı dil becerilerini kazandırarak öğrencilerin, ulusal ve evrensel değerlere saygı duyan, kendine güvenen, sorumluluk sahibi ve sürekli öğrenmeyi benimseyen bireyler olmalarını sağlamaktır. Gelecekte öğretilen yabancı dillerin çeşitliliğini artırarak ve her geçen gün eğitim kalitesini yükselterek ulusal ve uluslararası platformda söz sahibi lider bir okul olmak ve üniversitemizi en iyi şekilde temsil etmek vizyonumuzun ayrılmaz bir parçasıdır.",
+      "char_count": 742,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/yabancidiller/icerik/31641/yabanci-diller-yonetim-semasi",
+      "title": "Yabancı Diller Yüksekokulu",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\ndate_range\n\npeople\n\nok",
+      "char_count": 55,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/yabancidiller/icerik/31501/personel-ve-paydas-memnuniyet-anket-analizi",
+      "title": "Personel ve Paydaş Memnuniyet Anket Analizi",
+      "body_content": "Personel Memnuniyet Anket Analizi\n\nPaydaş Memnuniyet Anket Anlizi",
+      "char_count": 65,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/yabancidiller/icerik/31429/kalite-ve-akreditasyon-komitesi",
+      "title": "Kalite ve Akreditasyon Komitesi",
+      "body_content": "Kalite ve Akreditasyon Komitesi\n\nBaşkan\n\nDoç. Dr. Eyyüp TUNCER (Müdür)\n\nBaşkan Yardımcısı\n\nÖğr. Gör. Huriye YAŞAR KARAGÜCÜK\n\nÜyeler\n\nÖğr. Gör. Zafer ONUR\n\nÖğr. Gör. Vasıf KARAGÜCÜK \n\nÖğr. Gör. Emine YAVUZ\n\nÖğr. Gör. İrem ÇETİNKAYA",
+      "char_count": 230,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/yabancidiller/icerik/31432/ydyo-gorev-tanimi",
+      "title": "Ydyo Görev Tanımı",
+      "body_content": "YDYO Görev Tanımları",
+      "char_count": 20,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimakademikpersonel.aspx?id=34",
+      "title": "Akademik Personel",
+      "body_content": "Yabancı Diller Bölümü\r\n\nÖğr. Gör. Muhammed Halil NOHUT\n\nYüksekokul Müdür Yrd.\n\nring_volume\n1053\n\nmail\nmhalil.nohut@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Emine YAVUZ\n\nYüksekokul Müdür Yrd.\n\nring_volume\n1054\n\nmail\nemine.yavuz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Zafer ONUR\n\nÖğr. Gör. Dr.\n\nring_volume\n2117\n\nmail\nzafer.onur@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Mahmoud ALMOHAMAD\n\nÖğr. Gör.\n\nring_volume\n0000\n\nmail\nmahmoud.almohamad@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Hossam AHMED\n\nÖğr. Gör.\n\nring_volume\n0000\n\nmail\nhossam.ahmed@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Ahmad SHAWAKH\n\nÖğr. Gör.\n\nring_volume\n0000\n\nmail\nahmad.shawakh@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Hasan CESİM\n\nÖğr. Gör.\n\nring_volume\n0000\n\nmail\nhasan.cesim@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Şerife ULUCAN\n\nÖğr. Gör.\n\nring_volume\n0000\n\nmail\nserife.ulucan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Zohra LEBCİ\n\nDr. Öğr. Üyesi\n\nring_volume\n0000\n\nmail\nzohra.lebci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Vasıf KARAGÜCÜK\n\nÖğr. Gör.\n\nring_volume\n1070\n\nmail\nvasif.karagucuk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Huriye YAŞAR-KARAGÜCÜK\n\nÖğr. Gör.\n\nring_volume\n1070\n\nmail\nhuriye.yasar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Duygu EVİS\n\nÖğr. Gör.\n\nring_volume\n0000\n\nmail\nduygu.evis@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Fatma İrem GÖRKEM ÇETİNKAYA\n\nÖğr. Gör.\n\nring_volume\n0000\n\nmail\nirem.cetinkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Ayman ZAKKOUR\n\nÖğr. Gör.\n\nring_volume\n0000\n\nmail\nayman.zakkour@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Dilek ÖZDEMİR\n\nÖğr. Gör.\n\nring_volume\n0000\n\nmail\ndilek.ozdemir@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1650,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimidaripersonel.aspx?id=34",
+      "title": "İdari Personel",
+      "body_content": "Yüksekokul Sekreterliği\r\n\n Mehmet ÖZTÜRK\n\nYüksekokul Sekreteri\n\nring_volume\n1051\n\nmail\nmehmet.ozturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n İdari\r\n\n İrem YILDIZOĞLU\n\nMemur\n\nring_volume\n1060\n\nmail\nirem.yildizoglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet GÖK\n\nHizmetli\n\nring_volume\n0000\n\nmail\nmehmet.gok@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 325,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/yabancidiller/icerik/31608/english-preparatory-pacing",
+      "title": "English Preparatory Pacing",
+      "body_content": "English Preparatory Pacing -  B1\n\nEnglish Preparatory Pacing - B1+",
+      "char_count": 66,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=34&k=duyuru",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nA\nk\na\nd\ne\nm\ni\nk\n\nY\nı\nl\nı\n\nA\nr\na\np\nç\na\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nl\na\nr\nı\n\n3\n.\n\nQ\nu\ni\nz\n\n(\n\nK\no\nn\nu\nş\nm\na\n\n)\n\nH\na\nk\nk\nı\nn\nd\na\n\nDuyuru\n\n06.04.2026\n\nA\nr\na\np\nç\na\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nl\na\nr\nı\n\n3\n.\n\nM\no\nd\nü\nl\n\nÇ\nı\nk\nı\nş\n\nS\nı\nn\na\nv\nl\na\nr\nı\nn\nı\nn\n\nT\na\nr\ni\nh\nl\ne\nr\ni\n\nA\nç\nı\nk\nl\na\nn\nm\nı\nş\nt\nı\nr\n\nDuyuru\n\n04.04.2026\n\nİ\nn\ng\ni\nl\ni\nz\nc\ne\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nl\na\nr\nı\n\n3\n.\n\nM\no\nd\nü\nl\n\nÇ\nı\nk\nı\nş\n\nS\nı\nn\na\nv\nl\na\nr\nı\nn\nı\nn\n\nT\na\nr\ni\nh\nl\ne\nr\ni\n\nA\nç\nı\nk\nl\na\nn\nm\nı\nş\nt\nı\nr\n\nDuyuru\n\n04.04.2026\n\nK\na\nd\nr\no\nm\nu\nz\n\nG\nü\nç\nl\ne\nn\nm\ne\ny\ne\n\nD\ne\nv\na\nm\n\nE\nd\ni\ny\no\nr\n\nDuyuru\n\n13.03.2026\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nA\nk\na\nd\ne\nm\ni\nk\n\nY\nı\nl\nı\n\nE\nr\na\ns\nm\nu\ns\n+\n\nÖ\nğ\nr\ne\nn\ni\nm\n\nv\ne\n\nS\nt\na\nj\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nğ\ni\n\nK\na\np\ns\na\nm\nı\nn\nd\na\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\ne\nc\ne\nk\n\nE\nr\na\ns\nm\nu\ns\n+\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\n\nS\nı\nn\na\nv\nı\nn\na\n\nK\na\nt\nı\nl\na\nc\na\nk\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\n\nS\nı\nn\nı\nf\n\nL\ni\ns\nt\ne\ns\ni\n\nA\nç\nı\nk\nl\na\nn\nm\nı\nş\nt\nı\nr\n.\n\nDuyuru\n\n11.03.2026\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nr\na\ns\nm\nu\ns\n+\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\n\nS\nı\nn\na\nv\nı\nn\na\n\nG\ni\nr\ne\nc\ne\nk\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\n\nL\ni\ns\nt\ne\ns\ni\n\nA\nç\nı\nk\nl\na\nn\nd\nı\n\nDuyuru\n\n10.03.2026\n\nR\na\nm\na\nz\na\nn\n\n'\nı\nn\n\nB\ne\nr\ne\nk\ne\nt\ni\n\nA\ny\nn\nı\n\nS\no\nf\nr\na\nd\na\n\nP\na\ny\nl\na\nş\nı\nl\nd\nı\n\nDuyuru\n\n05.03.2026\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\nm\ni\nz\nd\ne\nn\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nE\nt\nk\ni\nn\nl\ni\nk\nt\ne\n\nD\ni\nj\ni\nt\na\nl\n\nF\na\nr\nk\nı\nn\nd\na\nl\nı\nk\n\nS\nu\nn\nu\nm\nu\n\nDuyuru\n\n03.03.2026\n\nY\nD\nY\nO\n\nA\nk\na\nd\ne\nm\ni\nk\n\nK\na\nd\nr\no\ns\nu\nn\nd\na\n\nD\no\nk\nt\no\nr\na\n\nG\nu\nr\nu\nr\nu\n\nDuyuru\n\n03.03.2026\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\nm\ni\nz\nd\ne\nn\n\nI\nr\na\nk\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\ns\ni\n\n'\nn\nd\ne\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nA\nk\na\nd\ne\nm\ni\nk\n\nÇ\na\nl\nı\nş\nt\na\ny\n\nDuyuru\n\n03.03.2026\n\nK\na\nd\nr\no\nm\nu\nz\n\nG\nü\nç\nl\ne\nn\nm\ne\ny\ne\n\nD\ne\nv\na\nm\n\nE\nd\ni\ny\no\nr\n\nDuyuru\n\n03.03.2026\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nm\nu\nz\n\nÖ\nn\nc\nü\nl\nü\nğ\nü\nn\nd\ne\n\nH\na\nz\nı\nr\nl\na\nn\na\nn\n\n\"\n\nD\ni\nl\n\nv\ne\n\nD\ni\nn\n\nÇ\na\nl\nı\nş\nm\na\nl\na\nr\nı\nn\nd\na\n\nY\na\np\na\ny\n\nZ\ne\nk\nâ\n\"\n\nT\ne\nm\na\nl\nı\n\nK\ni\nt\na\nb\nı\nm\nı\nz\n\nY\na\ny\nı\nm\nl\na\nn\nd\nı\n!\n\nDuyuru\n\n02.03.2026\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nB\na\nş\na\nr\nı\n:\n\nA\nm\ne\nr\ni\nc\na\nn\n\nC\no\nu\nn\nc\ni\nl\n\nO\nn\n\nT\nh\ne\n\nT\ne\na\nc\nh\ni\nn\ng\n\no\nf\n\nF\no\nr\ne\ni\ng\nn\n\nL\na\nn\ng\nu\na\ng\ne\ns\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nS\ne\nr\nt\ni\nf\ni\nk\na\ns\nı\n\nDuyuru\n\n26.02.2026\n\nİ\nn\ng\ni\nl\ni\nz\nc\ne\n\nH\na\nz\nı\nr\nl\nı\nk\n\n3\n.\n\nM\no\nd\nü\nl\n.\n\n1\n.\n\nQ\nu\ni\nz\n\nT\na\nr\ni\nh\ni\n\nDuyuru\n\n26.02.2026\n\nA\nr\na\np\nç\na\n\nH\na\nz\nı\nr\nl\nı\nk\n\n3\n.\n\nM\no\nd\nü\nl\n\n1\n.\n\nQ\nu\ni\nz\n\nT\na\nr\ni\nh\ni\n\nDuyuru\n\n24.02.2026\n\nİ\nn\ng\ni\nl\ni\nz\nc\ne\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nl\na\nr\nı\n\n3\n.\n\nM\no\nd\nü\nl\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nDuyuru\n\n16.02.2026\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\n\nDuyuru\n\n08.11.2025\n\nY\na\nt\na\ny\n\nG\ne\nç\ni\nş\n\nB\na\nş\nv\nu\nr\nu\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nDuyuru\n\n22.08.2025\n\nS\ne\nv\ni\ny\ne\n\nT\ne\ns\np\ni\nt\n\nv\ne\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\nl\na\nr\nı\ny\nl\na\n\nİ\nl\ng\ni\nl\ni\n\nDuyuru\n\n21.08.2025\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nE\nğ\ni\nt\ni\nm\n-\nö\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nA\nr\na\np\nç\na\n\n-\n\nİ\nn\ng\ni\nl\ni\nz\nc\ne\n\nH\na\nz\nı\nr\nl\nı\nk\n\nP\nr\no\ng\nr\na\nm\nı\n\nb\na\nş\na\nr\nı\n\nd\nu\nr\nu\nm\nu\n\nDuyuru\n\n02.06.2025\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nF\ni\nn\na\nl\n\nS\nı\nn\na\nv\nı\n\n(\n\nT\ne\ns\nt\n\n)\n\nS\nı\nn\na\nv\n\nS\na\nl\no\nn\nl\na\nr\nı\n\nDuyuru\n\n30.05.2025\n\nA\nr\na\np\nç\na\n\nY\no\nl\nc\nu\nl\nu\nğ\nu\n:\n\nK\nü\nl\nt\nü\nr\nl\ne\nr\na\nr\na\ns\nı\n\nB\nu\nl\nu\nş\nm\na\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n!\n\nDuyuru\n\n29.05.2025\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nF\ni\nn\na\nl\n\nS\nı\nn\na\nv\nı\n\n(\n\nY\na\nz\nm\na\n\n)\n\nS\nı\nn\na\nv\n\nS\na\nl\no\nn\nl\na\nr\nı\n\nDuyuru\n\n29.05.2025\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nM\no\nd\nü\nl\n\nS\no\nn\nu\nç\nl\na\nr\nı\nn\na\n\nG\nö\nr\ne\n\nF\ni\nn\na\nl\n\nS\nı\nn\na\nv\nı\nn\nd\na\nn\n\nM\nu\na\nf\n\nO\nl\na\nn\n\nv\ne\n\nF\ni\nn\na\nl\n\nS\nı\nn\na\nv\nı\nn\na\n\nG\ni\nr\ne\nc\ne\nk\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\n\nL\ni\ns\nt\ne\ns\ni\n\nDuyuru\n\n28.05.2025\n\nG\nİ\nB\nT\nÜ\n\nY\nd\ny\no\n\n'\nd\na\n\nT\na\nn\nı\nş\nm\na\n\nv\ne\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nDuyuru\n\n28.05.2025\n\nA\nr\na\np\nç\na\n\nÖ\nr\nn\ne\nk\n\nD\ne\nr\ns\n\nV\ni\nd\ne\no\nl\na\nr\nı\n\nDuyuru\n\n16.04.2025\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nM\no\nd\nü\nl\n\n3\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nDuyuru\n\n17.03.2025\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nG\nö\nz\nü\ny\nl\ne\n\nY\nu\nr\nt\nd\nı\nş\nı\n:\n\nE\nr\na\ns\nm\nu\ns\n\nS\nt\na\nj\n\nP\nr\no\ng\nr\na\nm\nı\n\nD\ne\nn\ne\ny\ni\nm\ni\n\nDuyuru\n\n14.03.2025\n\nH\na\ny\nı\nr\nl\nı\n\nR\na\nm\na\nz\na\nn\nl\na\nr\n\nDuyuru\n\n07.03.2025\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nm\nu\nz\nd\na\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\n\nK\na\np\ns\na\nm\nı\nn\nd\na\n\nD\nr\n\nÖ\nğ\nr\n.\n\nÜ\ny\ne\ns\ni\n\nİ\nb\nr\na\nh\ni\nm\n\nA\nl\nş\ni\nb\nl\ni\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nB\ni\nr\n\nS\nu\nn\nu\nm\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n.\n\nDuyuru\n\n03.03.2025\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\nn\ne\n\nÇ\no\nk\n\nD\ni\nl\nl\ni\n\nv\ne\n\nK\nü\nl\nt\nü\nr\nl\nü\n\nE\nt\nk\ni\nn\nl\ni\nk\nl\ne\nr\nl\ne\n\nB\na\nş\nl\na\nd\nı\nk\n\nDuyuru\n\n26.02.2025\n\nA\nı\ne\ns\ne\nc\n\ni\nl\ne\n\nY\nu\nr\nt\nd\nı\nş\nı\n\nE\nğ\ni\nt\ni\nm\n\nS\ne\nm\ni\nn\ne\nr\ni\n\nDuyuru\n\n25.02.2025\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\n\nDuyuru\n\n25.02.2025\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\n\nDuyuru\n\n25.02.2025\n\nG\nİ\nB\nT\nÜ\n\nY\nd\ny\no\n,\n\n1\n0\n\nF\na\nr\nk\nl\nı\n\nÜ\nl\nk\ne\nd\ne\nn\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\n\nk\na\nt\nı\nl\nı\nm\nı\ny\nl\na\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\ne\nn\n\nE\nr\na\ns\nm\nu\ns\n\nP\nr\no\nj\ne\ns\ni\n\nK\na\np\ns\na\nm\nı\nn\nd\na\n\nO\nn\ne\nn\ne\ns\ns\n\nİ\nn\n\nD\ni\nv\ne\nr\ns\ni\nt\ny\n\nB\na\nş\nl\nı\nk\nl\nı\n\nB\ni\nr\n\nK\no\nn\nf\ne\nr\na\nn\ns\na\n\nE\nv\n\nS\na\nh\ni\np\nl\ni\nğ\ni\n\nY\na\np\nt\nı\n.\n\nDuyuru\n\n19.02.2025\n\nG\nİ\nB\nT\nÜ\n\nY\nd\ny\no\n\nv\ne\n\nO\nx\nf\no\nr\nd\n\nU\nn\ni\nv\ne\nr\ns\ni\nt\ny\n\nP\nr\ne\ns\ns\n\nİ\nş\n\nB\ni\nr\nl\ni\nğ\ni\ny\nl\ne\n\nÖ\nğ\nr\ne\nt\nm\ne\nn\n\nG\ne\nl\ni\nş\ni\nm\n\nÇ\na\nl\nı\nş\nt\na\ny\nı\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n.\n\nDuyuru\n\n19.02.2025\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nM\no\nd\nü\nl\n\n3\n\nQ\nu\nı\nz\n\nT\na\nk\nv\ni\nm\ni\n\nDuyuru\n\n18.02.2025\n\nÇ\ne\nş\ni\nt\nl\ni\nl\ni\nk\nt\ne\n\nB\ni\nr\nl\ni\nk\n\nDuyuru\n\n14.02.2025\n\nS\ne\nv\n\nDuyuru\n\n14.02.2025\n\nG\nİ\nB\nT\nÜ\n\nY\nd\ny\no\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nA\nk\na\nd\ne\nm\ni\nk\n\nK\nu\nr\nu\nl\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nDuyuru\n\n13.02.2025\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\n\n(\n\nH\no\nw\n\nT\no\n\nL\no\nw\ne\nr\n\nT\nt\nt\n\n:\n\nB\ne\ns\nt\n\nP\nr\na\nc\nt\ni\nc\ne\ns\n\n)\n\nDuyuru\n\n11.02.2025\n\n1\n1\n\nŞ\nu\nb\na\nt\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nB\ni\nl\ni\nm\nd\ne\n\nK\na\nd\nı\nn\n\nv\ne\n\nK\nı\nz\n\nÇ\no\nc\nu\nk\nl\na\nr\nı\n\nG\nü\nn\nü\n\nDuyuru\n\n11.02.2025\n\n6\n\nŞ\nu\nb\na\nt\n\nD\ne\np\nr\ne\nm\nl\ne\nr\ni\nn\nd\ne\n\nH\na\ny\na\nt\nı\nn\nı\n\nK\na\ny\nb\ne\nd\ne\nn\n\nV\na\nt\na\nn\nd\na\nş\nl\na\nr\nı\nm\nı\nz\nı\n\nR\na\nh\nm\ne\nt\nl\ne\n\nA\nn\nı\ny\no\nr\nu\nz\n.\n\nDuyuru\n\n06.02.2025\n\nO\nc\na\nk\n\n2\n0\n2\n5\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\no\nn\nu\nç\nl\na\nr\nı\nn\na\n\nG\nö\nr\ne\n\nB\na\nş\na\nr\nı\nl\nı\n\nO\nl\na\nn\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\n\nDuyuru\n\n14.01.2025\n\nO\nc\na\nk\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\nı\nn\na\n\nG\ni\nr\ne\nb\ni\nl\ne\nc\ne\nk\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\n\nDuyuru\n\n10.01.2025\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nO\nc\na\nk\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nDuyuru\n\n10.01.2025\n\nY\ne\nn\ni\n\nY\nı\nl\n\nDuyuru\n\n30.12.2024\n\nM\no\nd\nü\nl\n\n2\n\nÇ\nı\nk\nı\nş\n\nS\nı\nn\na\nv\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n30.12.2024\n\nG\na\nz\ni\na\nn\nt\ne\np\n\n'\ni\nn\n\nK\nu\nr\nt\nu\nl\nu\nş\nu\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n.\n\nDuyuru\n\n25.12.2024\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\nm\ni\nz\nd\ne\n\nD\nü\nn\ny\na\n\nA\nr\na\np\nç\na\n\nG\nü\nn\nü\n\nC\no\nş\nk\nu\ny\nl\na\n\nK\nu\nt\nl\na\nn\nd\nı\n.\n\nDuyuru\n\n19.12.2024\n\n1\n8\n\nA\nr\na\nl\nı\nk\n\nD\nü\nn\ny\na\n\nA\nr\na\np\nç\na\n\nG\nü\nn\nü\n\nDuyuru\n\n17.12.2024\n\nD\nü\nn\ny\na\n\nE\nn\ng\ne\nl\nl\ni\nl\ne\nr\n\nG\nü\nn\nü\n\nDuyuru\n\n03.12.2024\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nM\no\nd\nü\nl\n\nI\nI\n\nQ\nu\ni\nz\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nDuyuru\n\n02.12.2024\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nn\nd\na\n\nA\nr\na\np\nç\na\n\nH\na\nz\nı\nr\nl\nı\nk\n\nE\nğ\ni\nt\ni\nm\ni\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nY\na\np\nı\nl\nd\nı\n.\n\nDuyuru\n\n19.11.2024\n\nC\nu\nm\nh\nu\nr\ni\ny\ne\nt\n\nB\na\ny\nr\na\nm\nı\nm\nı\nz\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n.\n\nDuyuru\n\n28.10.2024\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\n\nDuyuru\n\n21.10.2024\n\n9\n\nE\nk\ni\nm\n\n2\n0\n2\n4\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\n\nS\no\nn\nu\nc\nu\n\nDuyuru\n\n11.10.2024\n\nG\nİ\nB\nT\nÜ\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\n'\nn\nd\na\n\nS\nı\nn\na\nv\n\nM\na\nr\na\nt\no\nn\nu\n\nDuyuru\n\n08.10.2024\n\nY\ne\nn\ni\n\nK\na\ny\nı\nt\n\nY\na\np\nt\nı\nr\na\nn\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\n\nİ\nç\ni\nn\n\nZ\no\nr\nu\nn\nl\nu\n\nH\na\nz\nı\nr\nl\nı\nk\n\nE\nğ\ni\nt\ni\nm\ni\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\n\nT\na\nr\ni\nh\nl\ne\nr\ni\n\nDuyuru\n\n02.10.2024\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nM\no\nd\nü\nl\n\nI\n\nQ\nu\ni\nz\n\nT\na\nr\ni\nh\nl\ne\nr\ni\n\nDuyuru\n\n27.09.2024\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\n\nD\ni\nk\nk\na\nt\ni\nn\ne\n\nDuyuru\n\n27.09.2024\n\nG\nİ\nB\nT\nÜ\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\n'\nn\nd\na\n\nY\ne\nn\ni\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ne\n\nO\nr\ny\na\nn\nt\na\ns\ny\no\nn\n\nS\nu\nn\nu\nm\nu\n\nY\na\np\nı\nl\nd\nı\n.\n\nDuyuru\n\n24.09.2024\n\nS\ne\nv\ni\ny\ne\n\nT\ne\ns\np\ni\nt\n\nS\nı\nn\na\nv\nı\n\nS\no\nn\nu\nç\nl\na\nr\nı\nn\na\n\nG\nö\nr\ne\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\nı\nn\na\n\nG\ni\nr\ne\nc\ne\nk\nl\ne\nr\n\nDuyuru\n\n16.09.2024\n\nM\nü\nt\ne\nr\nc\ni\nm\n\nT\ne\nr\nc\nü\nm\na\nn\nl\nı\nk\n,\n\nİ\ns\nl\na\nm\ni\n\nİ\nl\ni\nm\nl\ne\nr\n\nv\ne\n\nE\nn\nd\nü\ns\nt\nr\ni\n\nM\nü\nh\ne\nn\nd\ni\ns\nl\ni\nğ\ni\n\n(\n\nİ\nn\ng\ni\nl\ni\nz\nc\ne\n\n)\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\ni\nn\n\nD\ni\nk\nk\na\nt\ni\nn\ne\n!\n\nDuyuru\n\n16.08.2024\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\nT\na\nn\nı\nt\nı\nm\n\nV\ni\nd\ne\no\nl\na\nr\nı\n\nDuyuru\n\n02.08.2024\n\nG\nİ\nB\nT\nÜ\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n,\n\nS\nw\no\nt\n\nA\nn\na\nl\ni\nz\ni\n\nÇ\na\nl\nı\nş\nm\na\nl\na\nr\nı\n\nK\na\np\ns\na\nm\nı\nn\nd\na\n\nT\no\np\nl\na\nn\nt\nı\n\nD\nü\nz\ne\nn\nl\ne\nd\ni\n.\n\nDuyuru\n\n18.07.2024\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\nÖ\nl\nç\nm\ne\n\nv\ne\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nK\no\no\nr\nd\ni\nn\na\nt\nö\nr\nl\nü\nğ\nü\n\n\"\nt\ne\ns\nt\ni\nn\ng\n\nA\nn\nd\n\nA\ns\ns\ne\ns\ns\nm\ne\nn\nt\n\nP\nr\no\ng\nr\na\nm\n\n-\n\nI\nt\ne\nm\n\nW\nr\ni\nt\ni\nn\ng\n\"\n\nE\nğ\ni\nt\ni\nm\ni\nn\ne\n\nK\na\nt\nı\nl\nd\nı\n.\n\nDuyuru\n\n18.07.2024\n\n1\n5\n\nT\ne\nm\nm\nu\nz\n\nD\ne\nm\no\nk\nr\na\ns\ni\n\nv\ne\n\nM\ni\nl\nl\ni\n\nB\ni\nr\nl\ni\nk\n\nG\nü\nn\nü\n\nDuyuru\n\n12.07.2024\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nl\na\nr\nı\n\nB\na\nş\na\nr\nı\n\nD\nu\nr\nu\nm\nu\n\nDuyuru\n\n14.06.2024\n\nB\na\nb\na\nl\na\nr\n\nG\nü\nn\nü\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n14.06.2024\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\n\nM\ne\nz\nu\nn\ni\ny\ne\nt\n\nG\nü\nn\nü\nn\nü\n\nC\no\nş\nk\nu\ny\nl\na\n\nK\nu\nt\nl\na\nd\nı\n.\n\nDuyuru\n\n14.06.2024\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\ny\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\nB\ni\nn\na\ns\nı\n\nm\ne\nk\nâ\nn\nd\na\n\nE\nr\ni\nş\ni\nl\ne\nb\ni\nl\ni\nr\nl\ni\nk\n\n(\n\nT\nu\nr\nu\nn\nc\nu\n\nB\na\ny\nr\na\nk\n\n)\n\nA\nl\nm\na\ny\na\n\nH\na\nk\n\nK\na\nz\na\nn\nd\nı\n.\n\nDuyuru\n\n12.06.2024\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nl\na\nr\nı\n\nF\ni\nn\na\nl\n\nS\nı\nn\na\nv\nı\n\nL\ni\ns\nt\ne\nl\ne\nr\ni\n\nDuyuru\n\n11.06.2024\n\nM\no\nd\nü\nl\n\nÇ\nı\nk\nı\nş\n\nv\ne\n\nF\ni\nn\na\nl\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nDuyuru\n\n31.05.2024\n\n1\n6\n.\n\nY\nd\ny\no\n\nY\nö\nn\ne\nt\ni\nc\ni\nl\ne\nr\ni\n\nP\nl\na\nt\nf\no\nr\nm\nu\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nY\na\np\nı\nl\nd\nı\n.\n\nDuyuru\n\n27.05.2024\n\n1\n9\n\nM\na\ny\nı\ns\n\nA\nt\na\nt\nü\nr\nk\n\n'\nü\n\nA\nn\nm\na\n\nG\ne\nn\nç\nl\ni\nk\n\nv\ne\n\nS\np\no\nr\n\nB\na\ny\nr\na\nm\nı\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n19.05.2024\n\nA\nn\nn\ne\nl\ne\nr\n\nG\nü\nn\nü\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n10.05.2024\n\n1\n\nM\na\ny\nı\ns\n\nE\nm\ne\nk\n\nv\ne\n\nD\na\ny\na\nn\nı\nş\nm\na\n\nG\nü\nn\nü\n\nDuyuru\n\n01.05.2024\n\nG\nİ\nB\nT\nÜ\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\nO\nk\nu\nm\na\n\nS\nı\nn\na\nv\nı\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nD\nü\nz\ne\nn\nl\ne\nd\ni\n.\n\nDuyuru\n\n25.04.2024\n\n2\n3\n\nN\ni\ns\na\nn\n\nU\nl\nu\ns\na\nl\n\nE\ng\ne\nm\ne\nn\nl\ni\nk\n\nv\ne\n\nÇ\no\nc\nu\nk\n\nB\na\ny\nr\na\nm\nı\n\nDuyuru\n\n22.04.2024\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nl\na\nr\nı\n\nM\no\nd\nü\nl\n\nI\nV\n\nH\na\nf\nt\na\nl\nı\nk\n\nD\ne\nr\ns\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n05.04.2024\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nl\na\nr\nı\n\nM\no\nd\nü\nl\n\nI\nI\nI\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nDuyuru\n\n05.04.2024\n\nM\na\ns\na\n\nT\ne\nn\ni\ns\ni\n\nT\nu\nr\nn\nu\nv\na\ns\nı\n\nDuyuru\n\n03.04.2024\n\nK\no\nn\nu\nş\nm\na\n\nS\nı\nn\na\nv\nı\nn\nı\nn\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\ni\nl\nm\ne\n\nY\nö\nn\nt\ne\nm\nl\ne\nr\ni\n\nDuyuru\n\n02.04.2024\n\nK\no\nn\nu\nş\nm\na\n\nB\ne\nc\ne\nr\ni\nl\ne\nr\ni\nn\ni\nn\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\ni\nl\nm\ne\ns\ni\n\nDuyuru\n\n28.03.2024\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\n-\n\nN\nv\ni\nv\no\n\nN\ne\nd\ni\nr\n?\n\nN\na\ns\nı\nl\n\nK\nu\nl\nl\na\nn\nı\nl\nı\nr\n?\n\nDuyuru\n\n26.03.2024\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nv\ne\n\nK\na\nr\ni\ny\ne\nr\n\nK\no\no\nr\nd\ni\nn\na\nt\nö\nr\nl\nü\nğ\nü\n\nÖ\nl\nç\nm\ne\n\nv\ne\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nD\nü\nz\ne\nn\nl\ne\nd\ni\n.\n\nDuyuru\n\n21.03.2024\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\n\nİ\nç\ni\nn\n\nT\nÜ\nB\nİ\nT\nA\nK\n\nP\nr\no\nj\ne\n\nY\na\nz\nm\na\n\nE\nğ\ni\nt\ni\nm\ni\n\nDuyuru\n\n18.03.2024\n\n1\n8\n\nM\na\nr\nt\n\nÇ\na\nn\na\nk\nk\na\nl\ne\n\nZ\na\nf\ne\nr\ni\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n.\n\nDuyuru\n\n18.03.2024\n\n1\n2\n\nM\na\nr\nt\n\nİ\ns\nt\ni\nk\nl\na\nl\n\nM\na\nr\nş\nı\nn\nı\nn\n\nK\na\nb\nü\nl\nü\n\nDuyuru\n\n13.03.2024\n\nK\na\nr\ni\ny\ne\nr\n\nG\ne\nl\ni\nş\nt\ni\nr\nm\ne\n\nv\ne\n\nM\ne\nz\nu\nn\nl\na\nr\n\nK\no\no\nr\nd\ni\nn\na\nt\nö\nr\nl\nü\nğ\nü\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nDuyuru\n\n11.03.2024\n\n8\n\nM\na\nr\nt\n\nD\nü\nn\ny\na\n\nK\na\nd\nı\nn\nl\na\nr\n\nG\nü\nn\nü\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n08.03.2024\n\nY\nd\ny\no\n\nİ\nn\ng\ni\nl\ni\nz\nc\ne\n\nB\nö\nl\nü\nm\nü\n\nA\nk\na\nd\ne\nm\ni\nk\n\nP\ne\nr\ns\no\nn\ne\nl\ni\n,\n\nD\nr\n.\n\nS\ne\nm\ni\nh\n\nİ\nr\nf\na\nn\ne\nr\n\n'\ni\nn\n\n\"\nh\no\nw\n\nT\no\n\nT\ne\na\nc\nh\n\nR\ne\na\nd\ni\nn\ng\n\"\n\nS\ne\nm\ni\nn\ne\nr\ni\nn\nd\ne\n\nB\nu\nl\nu\nş\nt\nu\n.\n\nDuyuru\n\n01.03.2024\n\nA\nk\na\nd\ne\nm\ni\nk\n\nP\ne\nr\ns\no\nn\ne\nl\ni\nm\ni\nz\ni\nn\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nG\ne\nç\ne\nr\nl\ni\nl\ni\nğ\ni\n\nO\nl\na\nn\n\nS\ne\nr\nt\ni\nf\ni\nk\na\n\nv\ne\n\nD\ni\np\nl\no\nm\na\nl\na\nr\nı\n\nDuyuru\n\n27.02.2024\n\n5\n\nG\nü\nn\nd\ne\n\n5\n\nA\nt\nö\nl\ny\ne\n\n1\n2\n-\n1\n6\n\n/\n\n0\n2\n\n/\n\n2\n0\n2\n4\n\nDuyuru\n\n19.02.2024\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nA\nk\na\nd\ne\nm\ni\nk\n\nY\nı\nl\nı\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nA\nk\na\nd\ne\nm\ni\nk\n\nK\nu\nr\nu\nl\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nDuyuru\n\n16.02.2024\n\nM\no\nd\nü\nl\n\nI\nI\nI\n\nİ\nn\ng\ni\nl\ni\nz\nc\ne\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\n\nL\ni\ns\nt\ne\nl\ne\nr\ni\n\nDuyuru\n\n16.02.2024\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nD\ne\nr\ns\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n13.02.2024\n\nY\ne\nn\ni\n\nB\na\nş\nl\na\ny\na\nn\n\nA\nk\na\nd\ne\nm\ni\nk\n\nP\ne\nr\ns\no\nn\ne\nl\ni\nm\ni\nz\ne\n\nO\nr\ny\na\nn\nt\na\ns\ny\no\nn\n\nE\nğ\ni\nt\ni\nm\ni\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n\nDuyuru\n\n01.02.2024\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nA\nr\na\np\nç\na\n\n-\n\nİ\nn\ng\ni\nl\ni\nz\nc\ne\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nl\na\nr\nı\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nDuyuru\n\n26.01.2024\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nl\na\nr\nı\n\nM\no\nd\nü\nl\n\nI\nI\n\nM\no\nd\nü\nl\n\nÇ\nı\nk\nı\nş\n\nS\nı\nn\na\nv\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nDuyuru\n\n24.01.2024\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nM\nü\nt\ne\nr\nc\ni\nm\n\nv\ne\n\nT\ne\nr\nc\nü\nm\na\nn\nl\nı\nk\n\nB\nü\nt\nü\nn\nl\ne\nm\ne\n\nS\nı\nn\na\nv\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n18.01.2024\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nG\nü\nz\n\nD\nö\nn\ne\nm\n\nS\no\nn\nu\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nDuyuru\n\n15.01.2024\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nM\no\nd\nü\nl\n\nÇ\nı\nk\nı\nş\n\nv\ne\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\n\nT\na\nr\ni\nh\nl\ne\nr\ni\n\nDuyuru\n\n09.01.2024\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\nl\ne\nr\ni\nn\ni\nn\n\nA\nl\nt\nı\nn\nc\nı\ns\nı\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n.\n\nDuyuru\n\n28.12.2023\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\n\nT\nü\nr\nk\ni\ny\ne\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\nl\ne\nr\n\nA\nr\na\np\nç\na\n\nM\nü\nn\na\nz\na\nr\na\n\nY\na\nr\nı\nş\nm\na\ns\nı\nn\na\n\nK\na\nt\nı\nl\nd\nı\n.\n\nDuyuru\n\n27.12.2023\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nF\ni\nn\na\nl\n\nS\nı\nn\na\nv\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n22.12.2023\n\n1\n8\n\nA\nr\na\nl\nı\nk\n\nD\nü\nn\ny\na\n\nA\nr\na\np\nç\na\n\nG\nü\nn\nü\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\nK\nu\nt\nl\na\nn\nd\nı\n.\n\nDuyuru\n\n19.12.2023\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\nn\ne\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\nm\ni\nz\ni\nn\n\nT\nü\nm\n\nP\ne\nr\ns\no\nn\ne\nl\n\nv\ne\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\n\nD\na\nv\ne\nt\nl\ni\nd\ni\nr\n.\n\nDuyuru\n\n19.12.2023\n\n1\n8\n\nA\nr\na\nl\nı\nk\n\nD\nü\nn\ny\na\n\nA\nr\na\np\nç\na\n\nG\nü\nn\nü\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nDuyuru\n\n14.12.2023\n\nD\ni\nl\n\nE\nğ\ni\nt\ni\nm\ni\n\nK\nu\nr\ns\nl\na\nr\nı\n\nDuyuru\n\n11.12.2023\n\nM\ne\nz\nu\nn\nl\na\nr\n\nK\no\no\nr\nd\ni\nn\na\nt\nö\nr\nl\nü\nğ\nü\n\nA\nk\na\nd\ne\nm\ni\nk\n\nF\na\na\nl\ni\ny\ne\nt\nl\ne\nr\n\nS\ne\nr\ni\ns\ni\n\nI\nV\n\n(\n\nS\nı\nf\nı\nr\nd\na\nn\n\nZ\ni\nr\nv\ne\ny\ne\n\nA\nr\na\np\nç\na\n\nY\no\nl\nc\nu\nl\nu\nğ\nu\n\n)\n\nDuyuru\n\n04.12.2023\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\n\nÇ\na\nl\nı\nş\nm\na\nl\na\nr\nı\nn\nı\nn\n\nD\nö\nr\nd\nü\nn\nc\nü\n\nS\nu\nn\nu\nm\nu\n\nY\nd\ny\no\n\nM\nü\nd\nü\nr\n\nY\na\nr\nd\nı\nm\nc\nı\nm\nı\nz\n\nÖ\nğ\nr\n.\n\nG\nö\nr\n.\n\nD\nu\ny\ng\nu\n\nE\nv\ni\ns\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nY\na\np\nı\nl\nd\nı\n.\n\nDuyuru\n\n01.12.2023\n\nH\no\nc\na\nl\na\nr\nı\nm\nı\nz\nd\na\nn\n\nD\nr\n.\n\nÖ\nğ\nr\n.\n\nÜ\ny\ne\ns\ni\n\nT\na\nr\nr\na\nf\n\nA\nl\nn\na\nh\na\nr\n\n'\nı\nn\n\nY\ne\nn\ni\n\nK\ni\nt\na\nb\nı\n\nÇ\nı\nk\nt\nı\n.\n\nDuyuru\n\n30.11.2023\n\nK\ni\nş\ni\ns\ne\nl\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\n\nDuyuru\n\n28.11.2023\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nH\na\nf\nt\na\nl\nı\nk\n\nD\ne\nr\ns\n\nP\nr\no\ng\nr\na\nm\nı\n\n(\n\nM\no\nd\nü\nl\n\nI\nI\n\n)\n\nDuyuru\n\n24.11.2023\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\n\nO\nl\na\nr\na\nk\n\nA\nr\na\np\nç\na\n\nÖ\nğ\nr\ne\nt\ni\nm\ni\n\nÇ\na\nl\nı\nş\nt\na\ny\nı\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n.\n\nDuyuru\n\n22.11.2023\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nV\ni\nz\ne\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nDuyuru\n\n07.11.2023\n\nC\nu\nm\nh\nu\nr\ni\ny\ne\nt\ni\nm\ni\nz\ni\nn\n\n1\n0\n0\n.\n\nY\nı\nl\nı\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n.\n\nDuyuru\n\n29.10.2023\n\nK\na\nr\ni\ny\ne\nr\n\nG\ne\nl\ni\nş\nt\ni\nr\nm\ne\n\nv\ne\n\nM\ne\nz\nu\nn\nl\na\nr\n\nK\no\no\nr\nd\ni\nn\na\nt\nö\nr\nl\nü\nğ\nü\n\nE\nğ\ni\nt\ni\nm\nl\ne\nr\ni\n\n-\nı\nı\n\nDuyuru\n\n26.10.2023\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\n\nÇ\na\nl\nı\nş\nm\na\nl\na\nr\nı\nn\nı\nn\n\nİ\nk\ni\nn\nc\ni\n\nS\nu\nn\nu\nm\nu\n\nY\nd\ny\no\n\nM\nü\nd\nü\nr\nü\nm\nü\nz\n\nS\na\ny\nı\nn\n\nD\nr\n.\n\nÖ\nğ\nr\n.\n\nÜ\ny\ne\ns\ni\n\nV\ni\nl\nd\na\nn\n\nİ\nn\nc\ni\n\nK\na\nv\na\nk\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nY\na\np\nı\nl\nd\nı\n.\n\nDuyuru\n\n19.10.2023\n\nY\nd\ny\no\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\ne\n\nU\ny\nu\nş\nt\nu\nr\nu\nc\nu\n\ni\nl\ne\n\nM\nü\nc\na\nd\ne\nl\ne\n\nE\nğ\ni\nt\ni\nm\ni\n\nV\ne\nr\ni\nl\nd\ni\n.\n\nDuyuru\n\n18.10.2023\n\nK\ni\nş\ni\ns\ne\nl\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\nl\ne\nr\ni\nn\ni\nn\n\nİ\nk\ni\nn\nc\ni\ns\ni\n\n1\n8\n\nE\nk\ni\nm\n\nÇ\na\nr\nş\na\nm\nb\na\n\nG\nü\nn\nü\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\ne\nc\ne\nk\nt\ni\nr\n.\n\nDuyuru\n\n16.10.2023\n\nE\nr\na\ns\nm\nu\ns\n+\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\n\nS\nı\nn\na\nv\nı\nn\na\n\nG\ni\nr\ne\nn\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\n\nD\ni\nk\nk\na\nt\ni\nn\ne\n!\n\nDuyuru\n\n12.10.2023\n\nE\nr\na\ns\nm\nu\ns\n+\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nD\ne\nğ\ni\nş\ni\nm\n\nP\nr\no\ng\nr\na\nm\nı\n\nT\ne\nc\nr\nü\nb\ne\n\nP\na\ny\nl\na\nş\nı\nm\nı\n\nDuyuru\n\n11.10.2023\n\nE\nr\na\ns\nm\nu\ns\n+\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\n\nS\nı\nn\na\nv\nı\nn\na\n\nG\ni\nr\ne\nc\ne\nk\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\n\nD\ni\nk\nk\na\nt\ni\nn\ne\n\nDuyuru\n\n10.10.2023\n\nK\ni\nş\ni\ns\ne\nl\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\nl\ne\nr\ni\nn\ni\nn\n\nİ\nl\nk\ni\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n.\n\nDuyuru\n\n06.10.2023\n\nO\nr\nt\na\nk\n\nZ\no\nr\nu\nn\nl\nu\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\n\nD\ne\nr\ns\nl\ne\nr\ni\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\nı\nn\na\n\nG\ni\nr\ne\nc\ne\nk\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\n\nD\ni\nk\nk\na\nt\ni\nn\ne\n!\n\nDuyuru\n\n04.10.2023\n\nY\nd\ny\no\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\ne\n\nO\nr\ny\na\nn\nt\na\ns\ny\no\nn\n\nE\nğ\ni\nt\ni\nm\ni\n\nV\ne\nr\ni\nl\nd\ni\n.\n\nDuyuru\n\n02.10.2023\n\nM\nü\nt\ne\nr\nc\ni\nm\n\nT\ne\nr\nc\nü\nm\na\nn\nl\nı\nk\n\nP\nr\no\ng\nr\na\nm\nl\na\nr\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\ni\nn\n\nD\ni\nk\nk\na\nt\ni\nn\ne\n!\n\nDuyuru\n\n29.09.2023\n\nY\nd\ny\no\n\nO\nl\na\nr\na\nk\n\nİ\nl\nk\n\nS\nı\nn\na\nv\nı\nm\nı\nz\nı\n\nV\ne\nr\nd\ni\nk\n.\n\nDuyuru\n\n29.09.2023\n\nZ\no\nr\nu\nn\nl\nu\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nı\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\nı\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nDuyuru\n\n28.09.2023\n\nZ\no\nr\nu\nn\nl\nu\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nı\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\nı\n\nI\n.\n\nA\nş\na\nm\na\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nDuyuru\n\n27.09.2023\n\nE\nk\n\nT\ne\nr\nc\ni\nh\nl\ne\n\nM\nü\nt\ne\nr\nc\ni\nm\n\nT\ne\nr\nc\nü\nm\na\nn\nl\nı\nk\n\nB\nö\nl\nü\nm\nl\ne\nr\ni\nm\ni\nz\ne\n\nY\ne\nr\nl\ne\nş\ne\nn\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\n\nD\ni\nk\nk\na\nt\ni\nn\ne\n!\n\nDuyuru\n\n25.09.2023\n\nK\ni\nş\ni\ns\ne\nl\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\n\nDuyuru\n\n22.09.2023\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\nA\nk\na\nd\ne\nm\ni\nk\n\nK\nu\nr\nu\nl\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n.\n\nDuyuru\n\n22.09.2023\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\nH\na\nf\nt\na\nl\nı\nk\n\nD\ne\nr\ns\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n18.09.2023\n\nZ\no\nr\nu\nn\nl\nu\n\nH\na\nz\nı\nr\nl\nı\nk\n\nP\nr\no\ng\nr\na\nm\nı\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\nı\n\nB\ni\nl\ng\ni\nl\ne\nn\nd\ni\nr\nm\ne\n\nD\nu\ny\nu\nr\nu\ns\nu\n\nDuyuru\n\n13.09.2023\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\nn\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nA\nl\na\nn\nd\na\nk\ni\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\n\nE\nğ\ni\nt\ni\nm\n\nÇ\na\nl\nı\nş\nm\na\nl\na\nr\nı\nn\na\n\nÖ\nn\ne\nm\nl\ni\n\nB\ni\nr\n\nK\na\nt\nk\nı\n\nDuyuru\n\n12.09.2023\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\nK\na\nl\ni\nt\ne\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n.\n\nDuyuru\n\n23.08.2023\n\nZ\no\nr\nu\nn\nl\nu\n\nH\na\nz\nı\nr\nl\nı\nk\n\nS\nı\nn\nı\nf\nı\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\nı\n\nH\na\nk\nk\nı\nn\nd\na\n\nB\ni\nl\ng\ni\nl\ne\nn\nd\ni\nr\nm\ne\n\nv\ne\n\nS\no\nr\nu\n\nÖ\nr\nn\ne\nk\nl\ne\nr\ni\n\nDuyuru\n\n23.08.2023\n\nS\ne\nv\ng\ni\nl\ni\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\ne\n\nH\no\nş\n\nG\ne\nl\nd\ni\nn\ni\nz\n.\n\nDuyuru\n\n21.08.2023\n\nR\no\nm\na\n\n/\n\nİ\nt\na\nl\ny\na\n\nK\no\nn\ng\nr\ne\ns\ni\n\nDuyuru\n\n28.07.2023\n\nT\na\nn\nı\nt\nı\nm\n\nG\nü\nn\nl\ne\nr\ni\n\nDuyuru\n\n28.07.2023\n\nM\nü\nt\ne\nr\nc\ni\nm\n\nT\ne\nr\nc\nü\nm\na\nn\nl\nı\nk\n\nL\ni\ns\na\nn\ns\n\nP\nr\no\ng\nr\na\nm\nl\na\nr\nı\nm\nı\nz\nı\n\nB\ni\nr\n\nd\ne\n\nM\nü\nd\nü\nr\nü\nm\nü\nz\n\nD\nr\n.\n\nÖ\nğ\nr\n.\n\nÜ\ny\ne\ns\ni\n\nV\ni\nl\nd\na\nn\n\nİ\nn\nc\ni\n\nK\na\nv\na\nk\n\nH\no\nc\na\nm\nı\nz\nd\na\nn\n\nD\ni\nn\nl\ne\ny\ni\nn\n!\n\nDuyuru\n\n27.07.2023\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\nI\nI\n.\n\nA\nk\na\nd\ne\nm\ni\nk\n\nK\nu\nr\nu\nl\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nDuyuru\n\n07.06.2023\n\nB\nö\nl\nü\nm\nl\ne\nr\ni\nm\ni\nz\n\nDuyuru\n\n30.05.2023\n\nE\nr\na\ns\nm\nu\ns\n+\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\n\nS\nı\nn\na\nv\nı\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nDuyuru\n\n29.03.2023\n\nE\nr\na\ns\nm\nu\ns\n+\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\n\nS\nı\nn\na\nv\nı\n\nDuyuru\n\n20.03.2023\n\nE\nr\na\ns\nm\nu\ns\n+\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\n\nS\nı\nn\na\nv\nı\n\nDuyuru\n\n30.11.2022\n\nS\na\ny\nı\nn\n\nR\ne\nk\nt\nö\nr\nü\nm\nü\nz\nü\nn\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nm\nu\nz\na\n\nZ\ni\ny\na\nr\ne\nt\ni\n.\n\nDuyuru\n\n30.11.2022\n\n KATEGORİLER\r\n\nÇalıştay\n\nDuyuru\n\nEğitim\n\nGün\n\nHaber\n\nKonferans\n\nSeminer\n\nToplantı\n\nZiyaret",
+      "char_count": 19338,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=34",
+      "title": "Formlar",
+      "body_content": "Personel Formları\n\n Genel Amaçlı Dilekçe Örneği ( Personel )\r\n\n Not Düzeltme Formu\r\n\n Sınav Kâğıdı Teslim Tutanağı\r\n\n UBYS Yeni Kullanıcı Oluşturma Değişiklik Formu\r\n\n Elektronik Posta İstek Şifre Değişikliği Formu\r\n\n Yükseköğretim Bilgi Sistemi Yöksis Şifre Talep Formu\r\n\n Mal Bildirim Beyannamesi\r\n\n Aile Durum Bildirim Formu\r\n\n Doktor Öğretim Üyesi Kadrolarına Yeniden Atama Değerlendirme Komisyonu Tutanağı\r\n\n Ders Telafi Formu\r\n\n Oryantasyon Egitimi Değerlendirme Anketi\r\n\n Oryantasyon Egitimi Katilim Formu\r\n\n Kitap İstek Listesi\r\n\n Jüri Ücret Beyan Formu\r\n\n Tebliğ Tebellüğ Belgesi\r\n\n Yurt Dışı İzin Talep Formu\r\n\n Yurt İçi Yurt Dışı Görevlendirme Talep Formu\r\n\n Maaş Promosyon Dilekçesi Anlaşma Sonrası Katılım\r\n\n Malzeme Talep Formu\r\n\n Toplantı Katılım Tutanağı\r\n\n Emeklilik Belgesi\r\n\n Arıza Bildirim Formu\r\n\nÖğrenci Formları\n\n 2024-2025 Özel Ögrencilik ( Deprem Bölgesi ) Basvuru Dilekcesi\r\n\n Staj Başvuru Formu\r\n\n Staj Defteri\r\n\n Genel Amaçlı Dilekçe Örneği\r\n\n Öğrenci Belgesi İstem Dilekçesi\r\n\n Öğrenci Kimlik Kartı Talep Formu\r\n\n Öneri İstek Memnuniyet Şikayet Formu ( Genel )\r\n\n Memnuniyet Dilek Öneri Şikâyet Bildirim ( Sks ) Formu\r\n\n Öğrenci Memnuniyet Anketi\r\n\n Öğrenci Ders Değerlendirme Anketi Formu\r\n\n Yemek Bursu Başvuru Formu\r\n\n Mazeret Sınavı Başvuru Formu\r\n\n Sınav Notuna İtiraz Formu\r\n\n Not Düzeltme Formu\r\n\n Kısmi Zamanlı Öğrenci Calıştırma İş Başvuru-formu\r\n\n İsteğe Bağlı Hazırlık Programı Bilgisinde Değişiklik Yapmak İsteyen Öğrenciler İçin Dilekçe\r\n\n Oryantasyon Eğitimi Değerlendirme Anketi\r\n\n Toplum ve Kültürü Anlamak Dersi Ders Sonu Geribildirim Formu",
+      "char_count": 1586,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=34",
+      "title": "Galeri",
+      "body_content": "2026\n\n2025\n\n2024\n\n2023\n\nMesleki Gelişim Atölyesi\n\nSeviye Tespit ve Muafiyet Sınavlarıyla İlgili",
+      "char_count": 95,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=34",
+      "title": "Mevzuatlar",
+      "body_content": "Kanunlar\n\n 657 Sayılı Devlet Memurları Kanunu\r\n\n 2547 Sayılı Yükseköğretim Kanunu\r\n\n YÖK Kanunu Disiplin Maddesi\r\n\n Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu\r\n\n Ek Ders Ücreti Ödeme Mevzuatı\r\n\nYönetmelikler\n\n Gaziantep İslam Bilim ve Teknoloji Üniversitesi Önlisans ve Lisans Eğitim-öğretim ve Sınav Yönetmeliği\r\n\n Yükseköğretim Kurumlarında Yabancı Dil Öğretimi ve Yabancı Dille Öğretim Yapılmasında Uyulacak Esaslara İlişkin Yönetmelik\r\n\n Üniversitelerde Akademik Teşkilât Yönetmeliği\r\n\nYönergeler\n\n Yabancı Diller Yüksekokulu Zorunlu Hazırlık Sınıfı Eğitim-öğretim ve Sınav Yönergesi\r\n\n Yabancı Diller Yüksekokulu Sosyal Medya ve Etkinlik Koordinatörlüğü Yönergesi\r\n\n Yabancı Diller Yüksekokulu Proje Geliştirme Koordinatörlüğü Yönergesi\r\n\n Yabancı Diller Yüksekokulu Mesleki Gelişim ve Kariyer Koordinatörlüğü Yönergesi\r\n\n Yabancı Diller Yüksekokulu Kalite Güvencesi ve Kalite Koordinatörlüğü Yönergesi\r\n\n Kariyer Geliştirme ve Mezunlar Koodinatörlüğü Yönergesi\r\n\n Yabancı Diller Yüksekokulu Hazırlık Birimi Sınav ve Program Koordinatörlüğü Yönergesi",
+      "char_count": 1063,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=34",
+      "title": "Faydalı Linkler",
+      "body_content": "Kredi ve Yurtlar Genel Müdürlüğü\r\n\n Sosyal Medya Hesabımız\r\n\n E-Devlet\r\n\n CİMER\r\n\n Biz Nerdeyiz?",
+      "char_count": 96,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=34",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "Mütercim Tercümanlık Bölümü Sıkça Sorulan Sorular\r\n\nkeyboard_arrow_right\n\n Yabancı Diller Yüksekokulunda Hangi Programlar Bulunmaktadır?\r\n\nkeyboard_arrow_right\n\nYabancı Diller Yüksekokulu Mütercim Tercümanlık Bölümüünde Arapça Mütercim Tercümanlık ve İngilizce Mütercim Tercümanlık programları aktif olup öğrenci kabul edilmektedir.\n\n Mütercimlik Programlarında Yabancı Dil Hazırlık Programı Zorunlu Mudur?\r\n\nkeyboard_arrow_right\n\nMuafiyet şartları sağlanmadığı veya muafiyet sınavından geçer not (70) alınmadığı takdirde hazırlık programı zorunludur.\n\n Mütercim-tercümanlık Öğrencileri İçin Hazırlık Programı Kaç Yıldır?\r\n\nkeyboard_arrow_right\n\nHazırlık eğitimi 1 (bir) yıldır. Bir yılın sonunda  başarılı olamayan öğrenciler bir sonraki akademik yılın başında tekrar muafiyet sınavına girerler veya açılması halinde yazokuluna kayıt yapabilirler.\n\n Yabancı Dil Yeterlilik ( Muafiyet ) Sınavı Nedir?\r\n\nkeyboard_arrow_right\n\nYabancı Diller Yüksekokulu tarafından verilen dil yeterliliğini tespit etmek üzere düzenlenen ve okuduğunu anlama, dilbilgisi, kelime becerileri ile konuşma ve yazma becerilerini ölçen bir sınavdır.  Eylül Ayı Yeterlik (Muafiyet) Sınavı , zorunlu hazırlık okuyacak öğrencilerin hazırlık programından muaf olmalarını sağlayan bir sınavdır. Sınavdan 70 ve üzeri puan alan öğrenciler, hazırlık programından muaf olurlar ve doğrudan bölümlerinde derslere başlarlar.\n\n Yabancı Dil Yeterlilik ( Muafiyet ) Sınavı 'nın Kapsamı Nedir?\r\n\nkeyboard_arrow_right\n\nSınavın birinci aşaması, çoktan seçmeli sorulardan oluşan dinleme, okuma, dil kullanımı (dilbilgisi + kelime) ikinci aşaması ise konuşma ve yazma bölümlerinden oluşmaktadır. \n\n Yabancı Dil Yeterlilik ( Muafiyet ) Sınavı 'nda Geçme Notu Nedir?\r\n\nkeyboard_arrow_right\n\nSınav iki aşamalı olup ikinci aşamaya girebilmek için birinci aşamadan 50 ve üzeri almak gerekmektedir. Her iki aşamanın ortalaması 70 ve üzeri olanlar başarılı sayılırlar.\n\n Eylül Ayı Yeterlik Sınavına Girebilmem İçin Başvuru Yapmam Gerekli Midir?\r\n\nkeyboard_arrow_right\n\nÜniversitemizde eğitime yeni başlayacak olan öğrencilerin Eylül ayı muafiyet sınavına girmek için kayıt yaptırmasına gerek yoktur. Ancak sınav saati ve sınav yeri hakkındaki duyuruların, Yabancı Diller Yüksekokulu web sayfasından takip edilmesi gerekmektedir. \n\n Eylül Ayı Muafiyet Sınavına Girmek Zorunlu Mudur?\r\n\nkeyboard_arrow_right\n\nBu sınav aynı zamanda seviye tespit sınavı olarak değerlendirilip sınıflara yerleştirme bu sınava göre yapılacağından Eylül ayı muafiyet sınavına girmek zorunludur. bu sınava girmeyen öğrenci zorunlu hazırlık sınıfına A1 seviyesinden başlatılacaktır.\n\n Hazırlık Sınıflarında Devam Zorunlu Mudur?\r\n\nkeyboard_arrow_right\n\nEvet. Derslerin en az %85’ine devam zorunludur. Bununla ilgili detaylar öğretim yılı başında hazırlık sınıfı öğrencilerine duyurulur.\n\n Devamsızlık Sınırını Aşınca Ne Olur?\r\n\nkeyboard_arrow_right\n\nDevamsızlık sınırını aşan öğrenci hazırlık sınıfından \ndevamsızlık\n nedeniyle kalmış olur.İki yıl üst üste hazırlık sınıfından başarısızlık nedeniyle kalan öğrenciler eşdeğer türkçe programa geçme hakkına sahip iken devamsızlık nedeniyle hazırlık sınıfından kalanlar bu hakka sahip değiller.\n\n Hazırlık Eğitimi Hangi Tarihler Arasında Yapılacaktır?\r\n\nkeyboard_arrow_right\n\n2023/2024 Hazırlık eğitimi ders ve sınav tarihlerini Yabancı Diller Yüksekokulu web sitesinde bulunan \nAKADEMİK TAKVİM\n'den inceleyebilirsiniz.\n\n Hazırlık Eğitimi Boyunca Aynı Sınıfta Mı Eğitim Alınır?\r\n\nkeyboard_arrow_right\n\nHayır. Hazırlık sınıfı eğitiminde modüler sistem takip edildiğinden her 7-8 haftalık periyotlar sonrasında sınıf listeleri başarı durumuna göre tekrar düzenlenir.\n\n Hazırlık Sınıfı Ders Kitaplarını Nereden Temin Edebilirim?\r\n\nkeyboard_arrow_right\n\nHazırlık sınıfında kullanılacak olan ders kitapları, ilgili yayınevlerinin derslerin ilk haftasında okuldaki satış masalarından temin edilir veya sipariş verilir. Derslere kitapsız gelinmesine ve fotokopi kitap kullanılmasına izin verilmez. Öğrenciler kullanılacak kitap listesi hakkında akademik yıl başında bilgilendirilir.\n\n Yabancı Diller Bölümü Sıkça Sorulan Sorular\r\n\nkeyboard_arrow_right\n\n Yabancı Diller Bölümünde Hangi Dersler Okutulmaktadır?\r\n\nkeyboard_arrow_right\n\nÜniversitemizdeki tüm bölümlerin zorunlu yabancı dil dersleri Yabancı Diller bölümündeki hocalarımız tarafından verilmektedir.\n\n Zorunlu Yabancı Dil Dersinden Muaf Olunabilir Mi?\r\n\nkeyboard_arrow_right\n\nEvet, derslerin başlamısndan sonra ilk iki hafta içinde  zorunlu yabancı dil dersi muafiyet sınavı uygulanmaktadır. Bu sınavı başarı ile geçen öğrenciler zorunlu yabancı dil dersinden muaf olurlar. Bu sınava girmek isteyen öğrencilerin derslerin başladığı ilk hafta bölümlerine başvurmaları gerekmektedir.",
+      "char_count": 4701,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=34",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nyabancidiller@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00 \n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nÖğr. Gör. Fatma İrem GÖRKEM ÇETİNKAYA\n\nirem.cetinkaya@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 365,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimtelefonrehberi.aspx?id=34",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nÖğr. Gör. Ahmad SHAWAKH\n\nring_volume\n0000\n\nmail\nahmad.shawakh@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Ayman ZAKKOUR\n\nring_volume\n0000\n\nmail\nayman.zakkour@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Dilek ÖZDEMİR\n\nring_volume\n0000\n\nmail\ndilek.ozdemir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Duygu EVİS\n\nring_volume\n0000\n\nmail\nduygu.evis@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Fatma İrem GÖRKEM ÇETİNKAYA\n\nring_volume\n0000\n\nmail\nirem.cetinkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Hasan CESİM\n\nring_volume\n0000\n\nmail\nhasan.cesim@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Hossam AHMED\n\nring_volume\n0000\n\nmail\nhossam.ahmed@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Mahmoud ALMOHAMAD\n\nring_volume\n0000\n\nmail\nmahmoud.almohamad@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet GÖK\n\nring_volume\n0000\n\nmail\nmehmet.gok@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet Nezir ESİN\n\nring_volume\n0000\n\nmail\nmehmetnezir.esin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Şerife ULUCAN\n\nring_volume\n0000\n\nmail\nserife.ulucan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Zohra LEBCİ\n\nring_volume\n0000\n\nmail\nzohra.lebci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet ÖZTÜRK\n\nring_volume\n1051\n\nmail\nmehmet.ozturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Eyyüp TUNCER\n\nring_volume\n1052\n\nmail\neyyup.tuncer@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Muhammed Halil NOHUT\n\nring_volume\n1053\n\nmail\nmhalil.nohut@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Emine YAVUZ\n\nring_volume\n1054\n\nmail\nemine.yavuz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n İrem YILDIZOĞLU\n\nring_volume\n1060\n\nmail\nirem.yildizoglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Huriye YAŞAR-KARAGÜCÜK\n\nring_volume\n1070\n\nmail\nhuriye.yasar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Vasıf KARAGÜCÜK\n\nring_volume\n1070\n\nmail\nvasif.karagucuk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Zafer ONUR\n\nring_volume\n2117\n\nmail\nzafer.onur@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Ahmet AKBAŞ\n\nring_volume\n2118\n\nmail\nahmet.akbas@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Yusuf AKÇAKOCA\n\nring_volume\n2121\n\nmail\nyusuf.akcakoca@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 2114,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "title": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "department": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 8,
+    "yonetim": 1,
+    "tanitim": 4,
+    "rapor": 1,
+    "personel": 2,
+    "duyuru": 1,
+    "form": 1,
+    "yonetmelik": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

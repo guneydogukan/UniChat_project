@@ -1,0 +1,27 @@
+{
+  "task": "3.2.11.1",
+  "description": "YDYO Harita Gudumlu Deep Scrape",
+  "birimler": [
+    {
+      "department": "Yabanci Diller Yuksekokulu",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\ydyo_output.json",
+      "total_documents": 56,
+      "total_valid": 21,
+      "total_failed": 0,
+      "total_chars": 39719,
+      "pdf_count": 34,
+      "doc_kind_distribution": {
+        "genel": 8,
+        "yonetim": 1,
+        "tanitim": 4,
+        "rapor": 1,
+        "personel": 2,
+        "duyuru": 1,
+        "form": 1,
+        "yonetmelik": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    }
+  ]
+}
