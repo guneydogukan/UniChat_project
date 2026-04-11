@@ -1,0 +1,354 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T23:44:30Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\Erasmus+Koordinatörlüğü.html",
+    "birim_id": 45,
+    "birim_title": "Erasmus+",
+    "category": "erasmus",
+    "department": "Erasmus Koordinatorlugu"
+  },
+  "summary": {
+    "total_blueprint_urls": 20,
+    "total_fetched": 23,
+    "total_valid": 23,
+    "total_failed": 0,
+    "total_skipped": 0,
+    "total_documents": 30,
+    "total_chars": 31411
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Bölüm  /  Birim Koordinatörleri",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260104131728_c978dbbd.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Erasmus+ Charter",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251110164418_6e3cb352.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Isced Kodları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251103153653_5eb04a1e.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "KA131 Anlaşmaları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260118014243_8d50bf23.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "KA171 Anlaşmaları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251117141606_9b011efe.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2023 Dönemi El Kitapçığı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240624153700_0163d278.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2024 Erasmus+ Uygulama El Kitabı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250319124704_4a7b7411.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=45",
+      "title": "Erasmus+ Koordinatörlüğü",
+      "body_content": "2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\n\nEbelik, Hemşirelik ve Yaşlı Bakım Alanında Portekiz ile Erasmus+ İş Birliği\n\n2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\n\nKüresel Ortaklık Ağımız Güçleniyor: Stellenbosch Üniversitesi ile Anlaşma\n\nErasmus+ Kapsamında 42 Yeni Uluslararası Anlaşma Tamamlandı\n\nGİBTÜ 'den Gastronomi Alanında Uluslararası İş Birliği Adımları\n\nErasmus+ KA131 İkili İş Birliği\n\nErasmus+ KA171 İkili İş Birliği\n\nHABERLER\n\nTÜMÜ\n\n26.03.2026 11:15\n\n2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\n\n📢 2025–2026 ERASMUS+ ÖĞRENCİ ÖĞRENİM VE STAJ HAREKETLİLİĞİ SONUÇLARI AÇIKLANDI\n\n Devamını Oku\r\n\n24.02.2026 10:39\n\nEbelik, Hemşirelik ve Yaşlı Bakım Alanında Portekiz ile Erasmus+ İş Birliği\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi bünyesinde, Ebelik-Hemşirelik ve Sağlık Hizmetleri Meslek Yüksekokulu Yaşlı Bakım Programı alanlarında uluslararasılaşma çalışmaları kapsamında önemli bir adım daha atılmıştır.\n\n Devamını Oku\r\n\n23.02.2026 17:00\n\n2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi 2025-2026 Akademik Yılı Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği başvuruları başlamıştır.\n\n Devamını Oku\r\n\n19.02.2026 11:32\n\nKüresel Ortaklık Ağımız Güçleniyor: Stellenbosch Üniversitesi ile Anlaşma\n\nÜniversitemizin uluslararasılaşma vizyonu doğrultusunda, Güney Afrika’nın köklü yükseköğretim kurumlarından Stellenbosch University ile ikili iş birliği anlaşması imzalanmıştır.\n\n Devamını Oku\r\n\n17.02.2026 11:20\n\nErasmus+ Kapsamında 42 Yeni Uluslararası Anlaşma Tamamlandı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi, Erasmus+ KA131 ve KA171 programları kapsamında 2025 yılı için farklı ülkelerden yükseköğretim kurumlarıyla toplam 42 yeni ikili anlaşmanın hazırlanma sürecini başarıyla tamamlamıştır. Süreç; kurumlar arası resmi yazışmaların yürütülmesi, bölüm bazlı ihtiyaç analizlerinin gerçekleştirilmesi, anlaşma metinlerinin hazırlanması ve karşılıklı imza aşamalarının tamamlanmasını kapsamaktadır. Bu anlaşmalar, üniversitemizin uluslararasılaşma vizyonunu güçlendirirken öğrenci ve personel hareketliliği açısından yeni ve sürdürülebilir iş birliklerinin önünü açmaktadır.\n\n Devamını Oku\r\n\n09.02.2026 13:28\n\nGİBTÜ 'den Gastronomi Alanında Uluslararası İş Birliği Adımları\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi akademisyenlerinden \nDr. Öğr. Üyesi Erol Taşkın\n tarafından yürütülen uluslararası temaslar kapsamında gastronomi ve mutfak sanatları alanında önemli iş birliği anlaşmaları gerçekleştirildi.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n26\n\nMar\n\n 2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\r\n\n11\n\nMar\n\n 2025-2026 Erasmus+ Start-up Konsorsiyumu Eğitim Alma Başvuruları Sonuçları Açıklandı.\r\n\n23\n\nŞub\n\n 2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\r\n\n14\n\nOca\n\n Erasmus+ KA131 İkili İş Birliği\r\n\n14\n\nKas\n\n Erasmus+ Personel Hareketliliği Sonuçları Açıklandı",
+      "char_count": 3104,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 24,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=45",
+      "title": "Yönetim",
+      "body_content": "Genel Koordinatör\r\n\nDr. Öğr. Üyesi Muhammed Emin ŞİMŞEK\n\nDr. Öğr. Üyesi\n\nring_volume\n3308\n\nmail\nmuhammedemin.simsek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Erasmus+ Koordinatörü\r\n\nÖğr. Gör. Mehmet Ercan BALTALI\n\nÖğr. Gör.\n\nring_volume\n3308\n\nmail\nmehmetercan.baltali@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Erasmus+ KA171 Sorumlusu\r\n\nÖğr. Gör. Fatma İrem GÖRKEM ÇETİNKAYA\n\nÖğr. Gör.\n\nring_volume\n3308\n\nmail\nirem.cetinkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n İçerme Sorumlusu\r\n\nÖğr. Gör. Duygu EVİS\n\nÖğr. Gör.\n\nring_volume\n3308\n\nmail\nduygu.evis@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 556,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 23,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/birimicerik.aspx?id=45&icid=450",
+      "title": "Erasmus Nedir?",
+      "body_content": "Erasmus programı, 1980 'lerin sonlarından beri var olan ve Avrupa Birliği tarafından yürütülen bir öğrenci değişim programıdır. İsmini 1466 - 1536 yılları arasında yaşamış, Rönesansın en önemli ustalarından Hollandalı hümanist, klasik edebiyat araştırmacısı ve ilahiyatçı Desiderius Erasmus’tan almıştır.\n\nErasmus programı, lisans öğrencilerine yönelik yurtdışı eğitim ve staj imkanlarına ek olarak, master ve doktora seviyeleri ile öğretim üyeleri için de projeler içermektedir. \n\nErasmus programının amacı; Avrupa Birliği ülkeleri ile aday ülkelerdeki yükseköğretim kurumlarının işbirliğini teşvik ederek, üniversiteler arası eğitimde kalitenin arttırılmasına ve geliştirilmesine katkıda bulunmaktır. Aynı zamanda ülkeler arası değişimler sayesinde, öğrencilerin yurtdışı deneyimi yaşamaları, farklı kültür ve yaşam tarzlarını tanıma ve öğrenme imkanı bulmaları sağlanır. Erasmus, öğrenciler ve öğretim elemanlarının araştırma projeleri, akademik müfredat geliştirme çalışmaları, eğitim ve finans giderlerini karşılayarak Avrupa’daki üniversiteler arasında hareketliliği artırır.\n\nErasmus; sadece Türkler için değil, Avrupa’da yaşayan tüm öğrenciler için en popüler değişim programıdır. Öğrencilere geniş bir yelpazede ders ve çalışma programları sunmaktadır. Erasmus programının faydalarını birkaç madde ile şu şekilde sıralayabiliriz: \n\nYurtdışında eğitim almak isteyen öğrenciler için Erasmus’un bir parçası olmak demek, sınırlı bir süre de olsa yabancı bir ülkede yaşama deneyimi kazanmak ve yeni insanlarla tanışmak anlamına gelir.  \n\nGittiğiniz ülkede yabancı dilinizi geliştirme, sizin gibi farklı Avrupa ülkelerinden gelen öğrencilerle pratik yapma ve öğrenme imkanı bulursunuz.\n\nErasmus programıyla gelecekteki kariyer planlarınız için önemli bir adım atmış ve özgeçmişinize ekleyeceğiniz güzel bir deneyim elde etmiş olursunuz. İşverenlerin, yurtdışı eğitim ve çalışma tecrübesine sahip çalışanlara daha sempatik baktıklarını unutmayın!\n\nÇoğu araştırma göstermiştir ki, Erasmus’a katılan öğrenciler ailelerinden ve yaşam alanlarından uzaktayken sorumluluk bilincine sahip olmuşlardır.\n\nVe tabi ki en güzel yanı da gelişmiş bir sosyal çevrede unutamayacağınız bir deneyim yaşıyor ve arkadaş çevresi ediniyorsunuz. Kendi ülkenizin sınırları dışında her zaman ziyaret edebileceğiniz ve size ziyarete gelecek insanlarla tanışırsınız.",
+      "char_count": 2341,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=45&icid=31583",
+      "title": "Erasmus+ Komisyonu",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\nErasmus+ Komisyonu\n\ndate_range\nYayın Tarihi : \n15.11.2025 10:42\n\npeople\nOkunma : \n97\n\nErasmus+ Koordinatörlüğü\n\nok",
+      "char_count": 147,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimicerik.aspx?id=45&icid=528",
+      "title": "Erasmus Policy Statement of Gaziantep Islam Science And Technology University",
+      "body_content": "Established in 2019, Gaziantep Islam Science and Technology University - GISTU, besides being a new university, prioritizes being a dynamic, multicultural university with international standards.  Our goal in participating in the Erasmus+ programme is to increase more comprehensive and innovative applications to become an international university. GISTU aims to maintain, develop and strengthen its relations with domestic and foreign universities, institutions, and organizations on solid ground. It is one of our goals to cooperate with partner universities by developing joint projects and thus ensure the internationalization of our students, academic and administrative staff. With internationalization, GISTU aims to carry out current research in education and training at a global level, to reach international standards practically, to follow and use up-to-date knowledge with innovative and scientific perspectives, and to increase its competitiveness. In this way, GISTU aims to ensure that its students, academic and administrative staff compete effectively and efficiently at the international level. GISTU emphasizes the importance of international issues with its multicultural, well-equipped academic and administrative staff, courses, and up-to-date and innovative training programmes.\n\nWithin the scope of the Erasmus+ programme, the main goal of our institution is to ensure the mobility of students and academic and administrative staff, to increase the projects carried out with joint agreements, to increase the mobility of students and academic staff accepted to our institution from abroad by rapidly progressing towards becoming a higher education institution that provides education in European standards. In addition, within the context of the planned internship/practice mobility, it is aimed for our students to have the opportunity to do internship/practice at universities, related institutions, and organizations abroad so that they see the needs of the globalizing world from a broader perspective and determine their career plans in this direction.\n\nParticipation in the Erasmus+ programme will bring the management understanding of our institution to a better point, thus increasing its autonomy and accountability. This situation is considered an important step in increasing the transparency of our institution. Besides, as GISTU, one of the most important issues for us is providing a non-discriminative environment for students and academic and administrative staff. Our university aims to create an international campus by ensuring the participation of students, academic and administrative staff in teaching and learning, and socio-cultural activities, regardless of different language, religion, race, gender, culture, and disability.\n\nParticipation in the Erasmus+ programme is not only comprehensive and innovative but also enables and contributes to the formation of “greener” projects. As part of this effect, GISTU (with 382,454,00m\n2 \nopen campus field) is suitable for the implementation and support of a greener environment and campus projects for students coming with Erasmus+ mobility. With these projects to be implemented, socialization among all participants will be supported by social projects, and a greener campus project will also be implemented. Each student who comes as a participant of the mobility programme will contribute to a greener campus project by planting trees and flowers together with academic and administrative staff. Awareness-raising projects to protect and feed stray animals in and around the campus will be developed and implemented in cooperation with non-governmental organizations. All these projects and events will also be shared on social media accounts. As a result of the partnerships established through the Erasmus+ programme and with the development of strong cooperations and relations, tolerance and cultural awareness will be enhanced. There are wheelchair ramps and elevators for disabled students in the open and closed areas of our university, and innovative and ergonomic projects will be developed to facilitate the life of these individuals on the campus. Our university aims to be a green, environmentally friendly, street animal-friendly, and disabled-friendly university.\n\nOur university offers many opportunities for students, academic and administrative staff to increase physical activities with its indoor and outdoor facilities (basketball and football fields, tennis courts, bicycle, and walking tracks). In this respect, our university supports the individual and intellectual development of students, academic and administrative staff. In addition, our university offers students the opportunity to live in nature, with a student dormitory for approximately 500 people on campus.\n\nErasmus+ will contribute to our university's education at international standards through student, academic, and administrative staff mobility and exchange programmes. In this context, by participating in the Erasmus+ programme we aim to:\n\n1. Increase the international mobility of students, academic and administrative staff,\n\n2. Ensure the modernization of higher education,\n\n3. Increase the number of students who respect the diversity, have a broad vision, and are well-equipped,\n\n4. Motivate the students to become lifelong learners,\n\n5. Respond to the needs of the globalizing world in line with joint projects,\n\n6. Contribute to the scientific literature by developing joint projects and preparing publications with participating international colleagues (academic staff),\n\n7. Create new fields of activity by cooperating with partner universities, institutions, and organizations,\n\n8. Contribute to the participating students to gain work experience not only in their own countries but also in different geographies of the world,\n\n9. Reflect innovative and futuristic practices in our own education programmes as a result of the shared knowledge and experience gained by the participating academic staff through giving lectures or seminars at international universities.\n\nThe aforementioned goals are guidelines for achieving our goals of high education standards in line with the internationalization strategy of GISTU. GISTU aims to be the new generation university preferred by the Z and Alfa generations with its global orientations that produce and use knowledge by integrating education and research with Erasmus+ programmes, based on interdisciplinary work, prioritizing entrepreneurship and futuristic practices, giving importance to multiculturalism and creativity. While integrating education and research with Erasmus+ programmes, GISTU aims to be a new generation university that produces and uses knowledge, uses interdisciplinary work as a base, prioritizes entrepreneurship and futuristic practices, attaches importance to multiculturalism and creativity, creates value on a global scale, and is on the preferred list of the Z and Alpha generations. With the cumulative benefits provided by Erasmus+ programmes, our goals will become achievable in a shorter time. Through international collaborations, projects, and mobility programmes, GISTU will contribute to creating an intercultural bond and awareness, increasing the visibility of the university, increasing the success of students and academic staff, and in this way the development of the country and society. Erasmus+ programme will also provide access to “the right to equal education” at the international level, and to know and use foreign languages at a more effective level. Being aware of the importance of increasing the number of students and academic staff participating in Erasmus + programmes, we plan to raise the number of scientific and social activities by following the current developments in this field. With the presence of these current realities, GISTU agrees to be a part of this entire global network.",
+      "char_count": 7902,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/erasmus/icerik/31437/giden-ogrenci",
+      "title": "Giden Öğrenci",
+      "body_content": "Erasmus+ Öğrenci Hareketliliği – Gerekli Formlar\n\nÖğrenci hareketliliğiniz için aşağıdaki belgeler gereklidir. Her bir belgeyi eksiksiz doldurmanız ve ilgili birime teslim etmeniz önemlidir:\n\nGerekli Formlar:\n\nChecklist - Öğrenci Öğrenim Staj\n\nLearning Agreement For Study\n\nLearning Agreement For Trainees\n\nKatılımcı Hibe Sözleşmesi\n\nÖğrenci Feragat Formu\n\nÖğrenci Öğrenim Hareketliliği Online Learning Agreement (OLA)\n\nTHY İndirim Kodu\n\nVize Yazısı Alma Kılavuzu\n\nZorunlu Staj Onay Formu\n\n💡 \nNot:\n OLA formu, öğrenci hareketliliği sırasında ders ve program bilgilerinin çevrimiçi olarak onaylanmasını sağlayan resmi Erasmus+ belgesidir.​",
+      "char_count": 638,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/erasmus",
+      "title": "Erasmus+ Koordinatörlüğü",
+      "body_content": "2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\n\nEbelik, Hemşirelik ve Yaşlı Bakım Alanında Portekiz ile Erasmus+ İş Birliği\n\n2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\n\nKüresel Ortaklık Ağımız Güçleniyor: Stellenbosch Üniversitesi ile Anlaşma\n\nErasmus+ Kapsamında 42 Yeni Uluslararası Anlaşma Tamamlandı\n\nGİBTÜ 'den Gastronomi Alanında Uluslararası İş Birliği Adımları\n\nErasmus+ KA131 İkili İş Birliği\n\nErasmus+ KA171 İkili İş Birliği\n\nHABERLER\n\nTÜMÜ\n\n26.03.2026 11:15\n\n2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\n\n📢 2025–2026 ERASMUS+ ÖĞRENCİ ÖĞRENİM VE STAJ HAREKETLİLİĞİ SONUÇLARI AÇIKLANDI\n\n Devamını Oku\r\n\n24.02.2026 10:39\n\nEbelik, Hemşirelik ve Yaşlı Bakım Alanında Portekiz ile Erasmus+ İş Birliği\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi bünyesinde, Ebelik-Hemşirelik ve Sağlık Hizmetleri Meslek Yüksekokulu Yaşlı Bakım Programı alanlarında uluslararasılaşma çalışmaları kapsamında önemli bir adım daha atılmıştır.\n\n Devamını Oku\r\n\n23.02.2026 17:00\n\n2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi 2025-2026 Akademik Yılı Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği başvuruları başlamıştır.\n\n Devamını Oku\r\n\n19.02.2026 11:32\n\nKüresel Ortaklık Ağımız Güçleniyor: Stellenbosch Üniversitesi ile Anlaşma\n\nÜniversitemizin uluslararasılaşma vizyonu doğrultusunda, Güney Afrika’nın köklü yükseköğretim kurumlarından Stellenbosch University ile ikili iş birliği anlaşması imzalanmıştır.\n\n Devamını Oku\r\n\n17.02.2026 11:20\n\nErasmus+ Kapsamında 42 Yeni Uluslararası Anlaşma Tamamlandı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi, Erasmus+ KA131 ve KA171 programları kapsamında 2025 yılı için farklı ülkelerden yükseköğretim kurumlarıyla toplam 42 yeni ikili anlaşmanın hazırlanma sürecini başarıyla tamamlamıştır. Süreç; kurumlar arası resmi yazışmaların yürütülmesi, bölüm bazlı ihtiyaç analizlerinin gerçekleştirilmesi, anlaşma metinlerinin hazırlanması ve karşılıklı imza aşamalarının tamamlanmasını kapsamaktadır. Bu anlaşmalar, üniversitemizin uluslararasılaşma vizyonunu güçlendirirken öğrenci ve personel hareketliliği açısından yeni ve sürdürülebilir iş birliklerinin önünü açmaktadır.\n\n Devamını Oku\r\n\n09.02.2026 13:28\n\nGİBTÜ 'den Gastronomi Alanında Uluslararası İş Birliği Adımları\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi akademisyenlerinden \nDr. Öğr. Üyesi Erol Taşkın\n tarafından yürütülen uluslararası temaslar kapsamında gastronomi ve mutfak sanatları alanında önemli iş birliği anlaşmaları gerçekleştirildi.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n26\n\nMar\n\n 2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\r\n\n11\n\nMar\n\n 2025-2026 Erasmus+ Start-up Konsorsiyumu Eğitim Alma Başvuruları Sonuçları Açıklandı.\r\n\n23\n\nŞub\n\n 2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\r\n\n14\n\nOca\n\n Erasmus+ KA131 İkili İş Birliği\r\n\n14\n\nKas\n\n Erasmus+ Personel Hareketliliği Sonuçları Açıklandı",
+      "char_count": 3104,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=45&icid=31492",
+      "title": "Giden Personel",
+      "body_content": "Checklist - Personel Ders Verme\n\nChecklist - Personel Eğitim Alma\n\nStaff Mobility Agreement For Teaching\n\nStaff-mobility-agreement For Training\n\nKatılımcı Hibe Sözleşmesi\n\nGörevlendirme Dilekçesi",
+      "char_count": 195,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=45&icid=31580",
+      "title": "Gelen Personel",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\nGelen Personel\n\ndate_range\nYayın Tarihi : \n15.11.2025 02:12\n\npeople\nOkunma : \n46\n\nErasmus+ Koordinatörlüğü\n\nAcceptance Letter\n\nok",
+      "char_count": 162,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=45&icid=31572",
+      "title": "Erasmus+ Koordinatörlüğü",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\ndate_range\n\npeople\n\nok",
+      "char_count": 55,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/erasmus/icerik/31664/ka171-ortak-ulkeler-listesi",
+      "title": "KA171 Ortak Ülkeler Listesi",
+      "body_content": "Not: Kırmızı olarak işaretlenmiş ülkelerde lisans ve yüksek lisans düzeyinde öğrenci değişimini amaçlayan projeler yapılamamakta, ancak doktora düzeyinde öğrenci değişimi gerçekleştirilebilmektedir.",
+      "char_count": 198,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=45&icid=31590",
+      "title": "KA171 Proje Başvurusu",
+      "body_content": "KA171 ICM (International Credit Mobility)\n\nKA-171 başvuru şartları ve süreciyle ilgili bilgilere sunum üzerinden ulaşabilirsiniz.\n\nKA-171 Bilgi Sunumu\n\nProje aşamaları;\n\nMevcut anlaşmalar üzerinden proje yazmak isteyen akademisyenlerimiz;\n\nErasmus+ Koordinatörlüğünden anlaşmalı olunan üniversitenin KA171 Partner Bilgi Formunu mail aracılığıyla (\nerasmuska171@gibtu.edu.tr\n / \nirogibtu@gmail.com\n) talep edebilirler.\n\nYeni anlaşma yapmak isteyen  akademisyenlerimiz;\n\nKarşı kuruma mail atmalıdırlar.\n\nÖrnek mail: \n\nDear Sir or Madam,\n\nWarm greetings from Gaziantep Islam Science and Technology University, Türkiye.\n\nWe would like to express our interest in establishing an Erasmus+ Bilateral Agreement and developing a KA171 project between our institutions to promote academic exchange and cooperation.\n\nAttached, you will find a draft version of the Erasmus+ Inter-Institutional Agreement and a Partner Information Form related to your university’s internationalization and exchange strategy. Providing this information will be very helpful and may increase the likelihood of the project being funded.\n\nWe are also open to any suggestions for potential collaboration opportunities.\n\nWe look forward to hearing from you soon.\n\nKing Regards,\n\nEk 1: \nErasmus+ KA171 Agreement Draft\n\nEk 2: \nPartner Information Form\n\nProjenin Nihai Formu\n\nHer iki aşamada da Erasmus+ Ofisinden veya karşı kurumdan E-mail ile talep edilen Partner Information Form doğrultusunda KA171 PROJE BAŞVURU FORMU doldurulup Erasmus+ Koordinatörlüğüne mail atılır.\n\nEk: \nKA171 PROJE BAŞVURU FORMU\n\nDetaylı görüşme talepleriniz için Erasmus+ Koordinatörlüğü ile \"erasmus@gibtu.edu.tr/ irogibtu@gmail.com\" iletişime geçebilirsiniz.",
+      "char_count": 1700,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=45&icid=31589",
+      "title": "KA171 Gelen Personel",
+      "body_content": "Erasmus+ KA171 Handbook",
+      "char_count": 23,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=45&icid=31588",
+      "title": "KA171 Gelen Öğrenci",
+      "body_content": "Erasmus+ KA171 Handbook",
+      "char_count": 23,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=45",
+      "title": "Formlar",
+      "body_content": "Formlar\n\n Bireysel Vize Yazısı Alma Kılavuzu\r\n\n Ders Alan Kodları\r\n\n Dış İlişkiler Koordinatörlüğü 2024 Faaliyet Raporu\r\n\n Erasmus Lisans Ders İntibak Formu ( A )\r\n\n Erasmus Öğrenim Faaliyeti Dosya Teslim ve Evrak Hazırlık Kılavuzu\r\n\n Erasmus+ Kurumlararası Anlaşma İçin Bilgi ve Talep Formu\r\n\n Erasmus+ Learning Agreement For Studies Before\r\n\n Erasmus+ Learning Agreement For Studies During\r\n\n Erasmus+ Nomination Letter\r\n\n Erasmus+ Nomination Letter\r\n\n Erasmus+ Nomination Letter\r\n\n Kurumsal Vize Yazısı Alma Kılavuzu\r\n\n Staj Akış Şeması\r\n\n Staj Sektör Kodları",
+      "char_count": 562,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/erasmus/icerik/31555/icerme-destegi",
+      "title": "İçerme Desteği",
+      "body_content": "İÇERME DESTEĞİ (INCLUSION SUPPORT) \n\nErasmus+ Programı, imkânı kısıtlı katılımcıların programa katılımını teşvik etmektedir. İmkânı kısıtlı olan kişi, ek finansal destek olmadığı takdirde kişisel fiziksel durumu, zihinsel durumu veya sağlık durumu, projeye/hareketlilik faaliyetine katılmasına izin vermeyen potansiyel katılımcıdır.\n\nİçerme desteğine gereksinim duyan öğrenci ve personele ilave hibe verilebilmesi için öğrencilerin Erasmus+ Koordinatörlüğüne ilgili belgeler ile müracaat etmesi gerekir. İçerme Desteği sahibi katılımcı seçildikten sonra, katılımcının ilave hibe talebi varsa, yaklaşık ek masrafları belirlenir ve katılımcının faaliyeti başlamadan önce İçerme Desteği Talep formunu doldurularak gerekli kanıtlayıcı belgelerle birlikte Merkezin onayına sunulur.\n\nTalep uygun görülürse Yararlanıcıyla ek sözleşme imzalanarak içerme desteği için ilave hibe tahsis edilir.\n\nBaşvuru formlarında, İçerme Desteğine niçin ihtiyaç duyulduğunun açıklanması, kanıtlayıcı belgelerin eklenmesi (örneğin İçerme Desteği engelliliğe ilişkinse, engelliliğe ve düzeyine ilişkin bilgileri ihtiva eden doktor raporu (3 aydan eski olmayacak şekilde) veya engellilik kartı fotokopisi, kronik hastalıklar için doktor raporu) gerekir.\n\nMerkez her bir başvuruyu özel olarak değerlendirir; ilave hibe verilip verilemeyeceğini, verilebilecekse uygun hibe miktarını kararlaştırır.\n\nKatılımcı faaliyeti sona erdikten sonra içerme desteği tahsis edilemez.\n\nFaaliyet sonunda, verilen ilave hibenin kullanımına ilişkin faturaların temin edilmesi ve öğrenci tarafından Uluslararası İlişkiler Koordinatörlüğüne ibraz edilmesi gerekmektedir. Belgeye dayanmayan harcamalar yapılmış olsa dahi uygun kabul edilmez.\n\nVeri koruma:\n\nKişisel veriler gizlidir ve yalnızca ulusal hukuk kapsamında Erasmus programına başvuru ve katılımınıza ilişkin olarak kullanılacaktır.\n\nİçerme Sorumlusu: Öğr. Gör. Duygu EVİS\n\nE-posta: erasmus@gibtu.edu.tr\n\nTel:  -  dahili:\n\nEK DÖKÜMANLAR\n\nİçerme Desteği Ek Hibe Talep Formu Öğrenci\n\nİçerme Desteği Ek Hibe Talep Formu Personel",
+      "char_count": 2036,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=45&icid=31557",
+      "title": "Yeşil Seyahat",
+      "body_content": "Erasmus+ Programı Yeşil Seyahat Bilgilendirmesi\n\nYeşil seyahat, seyahatin düşük karbon salınımlı toplu ulaşım araçlarının kullanılarak gerçekleştirilmesidir. Otobüs, tren, paylaşımlı otomobil kullanımı yeşil seyahat kapsamında yer alır. Yeşil seyahat desteği alınabilmesi için gidişte ve dönüşte yeşil seyahat kullanılması ve seyahatin tamamının yarısından fazlasının yeşil araçlar kullanılarak yapılması gerekmektedir.\n\nYeşil seyahat; seyahatinizin %50’sinden fazlasını aşağıdaki çevre dostu ulaşım araçları ile gerçekleştirdiğinizde geçerli olmaktadır:\n\nTren\n\nOtobüs\n\nPaylaşımlı araç (carpooling)\n\nNot: Uçak ile yapılan seyahatler bu kapsamda değerlendirilmez.\n\nYurt dışına çıkmadan önce izlenecek adımlar:\n\n1. Yeşil seyahat kapsamında gerçekleştirilecek seyahatlerde \nYeşil Seyahat Talep Dilekçesi\n doldurulmalıdır.\n\n2. Doldurulan dilekçe hareketlilik öncesinde Erasmus Ofisi’ne teslim edilmelidir.\n\nYurt dışından döndüktan sonra izlenecek adımlar:\n\n1. Otobüs veya tren ile yapılan yolculuklarda, otobüs/tren biletinin ibraz edilmesi yeterlidir.\n\n2. Paylaşımlı araç ile yapılan seyahat sonrasında, araç için yapılan yeşil sigortanın ve birlikte seyahat ettiğiniz kişilerin pasaportlarında yer alan araç simgeli yurda giriş-çıkış mühürlerinin gözüktüğü nüshalar ofisimize teslim edilmelidir.\n\nÖnemli Notlar:\n\nSeyahat sonrasında seyahatin %50’sinden fazlası çevre dostu ulaşım araçlarıyla yapılmamışsa yeşil seyahat hibesinin iadesi istenir.\n\nTalep dilekçesi ve kanıtlayıcı belgeler eksiksiz teslim edilmelidir.\n\nHibe tutarları, Erasmus+ Ulusal Ajansı tarafından belirlenen esaslara göre hesaplanır. Hibe tutarlarına erişmek için \nTıklayınız\n.",
+      "char_count": 1644,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=45",
+      "title": "Faydalı Linkler",
+      "body_content": "Europass\r\n\n Türkiye Ulusal Ajansı\r\n\n Yükseköğretim Kurulu",
+      "char_count": 57,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=45",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\nlabel\nOID\n : E10287358\nalternate_email\nErasmus Code\n: TR GAZIANT05\n\nmail\nerasmus@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nÖğr. Gör. Fatma İrem GÖRKEM ÇETİNKAYA\n\nirem.cetinkaya@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 425,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=45",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nDr. Öğr. Üyesi Kübra AKSOY ÇINAR\n\nring_volume\n0000\n\nmail\nkubra.aksoycinar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Duygu EVİS\n\nring_volume\n3308\n\nmail\nduygu.evis@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Fatma İrem GÖRKEM ÇETİNKAYA\n\nring_volume\n3308\n\nmail\nirem.cetinkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Mehmet Ercan BALTALI\n\nring_volume\n3308\n\nmail\nmehmetercan.baltali@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Muhammed Emin ŞİMŞEK\n\nring_volume\n3308\n\nmail\nmuhammedemin.simsek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Poyraz Demir KANDEMİR\n\nring_volume\n3308\n\nmail\npoyrazdemir.kandemir@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 672,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 3,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=45",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\n\n26.03.2026\n\n2025-2026 Erasmus+ Start-up Konsorsiyumu Eğitim Alma Başvuruları Sonuçları Açıklandı.\n\n11.03.2026\n\n2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\n\n23.02.2026\n\nErasmus+ KA131 İkili İş Birliği\n\n14.01.2026\n\nErasmus+ Personel Hareketliliği Sonuçları Açıklandı\n\n14.11.2025",
+      "char_count": 429,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 2,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=45",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\n\n26.03.2026\n\nEbelik, Hemşirelik ve Yaşlı Bakım Alanında Portekiz ile Erasmus+ İş Birliği\n\n24.02.2026\n\n2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\n\n23.02.2026\n\nKüresel Ortaklık Ağımız Güçleniyor: Stellenbosch Üniversitesi ile Anlaşma\n\n19.02.2026\n\nErasmus+ Kapsamında 42 Yeni Uluslararası Anlaşma Tamamlandı\n\n17.02.2026\n\nGİBTÜ 'den Gastronomi Alanında Uluslararası İş Birliği Adımları\n\n09.02.2026",
+      "char_count": 546,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=45",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nE\nr\na\ns\nm\nu\ns\n+\n\nP\ne\nr\ns\no\nn\ne\nl\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nğ\ni\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nA\nç\nı\nk\nl\na\nn\nd\nı\n\nDuyuru\n\n14.11.2025\n\n2\n0\n2\n4\n\nP\nr\no\nj\ne\n\nD\nö\nn\ne\nm\ni\n\nP\ne\nr\ns\no\nn\ne\nl\n\nE\nğ\ni\nt\ni\nm\n\nA\nl\nm\na\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nğ\ni\n\nE\nk\n\nİ\nl\na\nn\nı\nn\na\n\nA\ni\nt\n\nB\na\nş\nv\nu\nr\nu\n\nS\no\nn\nu\nç\nl\na\nr\nı\n!\n\nDuyuru\n\n23.05.2025\n\nG\na\nz\ni\na\nn\nt\ne\np\n\nİ\ns\nl\na\nm\n\nB\ni\nl\ni\nm\n\nv\ne\n\nT\ne\nk\nn\no\nl\no\nj\ni\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\ns\ni\n\ni\nl\ne\n\nI\nr\na\nk\n\n'\nı\nn\n\nÖ\nn\nd\ne\n\nG\ne\nl\ne\nn\n\nY\nü\nk\ns\ne\nk\nö\nğ\nr\ne\nt\ni\nm\n\nK\nu\nr\nu\nm\nl\na\nr\nı\nn\nd\na\nn\n\nH\ni\nl\nl\na\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\ns\ni\n\nA\nr\na\ns\nı\nn\nd\na\n\nA\nk\na\nd\ne\nm\ni\nk\n\nİ\nş\nb\ni\nr\nl\ni\nğ\ni\n\nP\nr\no\nt\no\nk\no\nl\nü\n\nİ\nm\nz\na\nl\na\nn\nd\nı\n.\n\nDuyuru\n\n06.03.2025\n\nR\ne\nk\nt\nö\nr\n\nD\ne\nm\ni\nr\n\n'\nd\ne\nn\n\nŞ\na\nm\n\n'\nd\na\n\nÖ\nn\ne\nm\nl\ni\n\nZ\ni\ny\na\nr\ne\nt\nl\ne\nr\n.\n\nDuyuru\n\n15.01.2025\n\nG\nİ\nB\nT\nÜ\n\nR\ne\nk\nt\nö\nr\nü\n\nP\nr\no\nf\n.\n\nD\nr\n.\n\nŞ\ne\nh\nm\nu\ns\n\nD\ne\nm\ni\nr\n\nD\no\nh\na\n\nF\no\nr\nu\nm\n\n2\n0\n2\n4\n\n'\nt\ne\n\nÖ\nn\ne\nm\nl\ni\n\nM\ne\ns\na\nj\nl\na\nr\n\nV\ne\nr\nd\ni\n\nDuyuru\n\n09.12.2024\n\n2\n0\n2\n4\n-\n2\n5\n\nA\nk\na\nd\ne\nm\ni\nk\n\nY\nı\nl\nı\n\nE\nr\na\ns\nm\nu\ns\n+\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nÖ\nğ\nr\ne\nn\ni\nm\n\nv\ne\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nS\nt\na\nj\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nk\nl\ne\nr\ni\n\nK\na\np\ns\na\nm\nı\nn\nd\na\n\nY\na\np\nı\nl\na\nn\n\nB\na\nş\nv\nu\nr\nu\nl\na\nr\na\n\nA\ni\nt\n\nN\ni\nh\na\ni\n\nS\no\nn\nu\nç\nl\na\nr\n\nA\nç\nı\nk\nl\na\nn\nd\nı\n.\n\nDuyuru\n\n12.11.2024\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nA\nk\na\nd\ne\nm\ni\nk\n\nY\nı\nl\nı\n\nE\nr\na\ns\nm\nu\ns\n+\n\nP\nr\no\ng\nr\na\nm\nı\n\nK\nA\n1\n3\n1\n\nP\ne\nr\ns\no\nn\ne\nl\n\nD\ne\nr\ns\n\nV\ne\nr\nm\ne\n\nv\ne\n\nE\nğ\ni\nt\ni\nm\n\nA\nl\nm\na\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nğ\ni\n\nB\na\nş\nv\nu\nr\nu\nl\na\nr\nı\n\nB\na\nş\nl\na\nd\nı\n!\n\nDuyuru\n\n07.11.2024\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nE\nr\na\ns\nm\nu\ns\n+\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nÖ\nğ\nr\ne\nn\ni\nm\n\nv\ne\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nS\nt\na\nj\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nk\nl\ne\nr\ni\n\nÖ\nn\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\n!\n\nDuyuru\n\n28.10.2024\n\nE\nr\na\ns\nm\nu\ns\n+\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\n\nS\nı\nn\na\nv\nı\n\nv\ne\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nğ\ni\n\nİ\nç\ni\nn\n\nY\ne\nn\ni\n\nD\nö\nn\ne\nm\n\nB\na\nş\nv\nu\nr\nu\nl\na\nr\nı\n\nDuyuru\n\n13.09.2024\n\nG\nİ\nB\nT\nÜ\n,\n\nE\nr\na\ns\nm\nu\ns\n+\n\nY\nü\nk\ns\ne\nk\nö\nğ\nr\ne\nt\ni\nm\nd\ne\n\nS\nt\nr\na\nt\ne\nj\ni\nk\n\nO\nr\nt\na\nk\nl\nı\nk\n\nP\nr\no\nj\ne\ns\ni\n\nK\na\np\ns\na\nm\nı\nn\nd\na\n\nT\nı\np\n\nE\nğ\ni\nt\ni\nm\ni\nn\ne\n\nY\ne\nn\ni\nl\ni\nk\nç\ni\n\nY\na\nk\nl\na\nş\nı\nm\nı\ny\nl\na\n\nA\nv\nr\nu\np\na\n\nB\ni\nr\nl\ni\nğ\ni\n\n'\nn\nd\ne\nn\n\nD\ne\ns\nt\ne\nk\n\nA\nl\nd\nı\n\nDuyuru\n\n13.09.2024\n\nR\ne\nk\nt\nö\nr\n\nD\ne\nm\ni\nr\n\n'\nd\ne\nn\n\nG\nİ\nB\nT\nÜ\n\n'\nn\nü\nn\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nV\ni\nz\ny\no\nn\nu\nn\nu\n\nG\nü\nç\nl\ne\nn\nd\ni\nr\ne\nn\n\nT\ne\nm\na\ns\nl\na\nr\n.\n\nHaber\n\n06.06.2024\n\nK\no\no\nr\nd\ni\nn\na\nt\nö\nr\nl\nü\nğ\nü\nm\nü\nz\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nP\ne\nr\ns\no\nn\ne\nl\n\nv\ne\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\ne\n\nE\nr\na\ns\nm\nu\ns\n+\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nk\nl\ne\nr\ni\n\nH\na\nk\nk\nı\nn\nd\na\n\nB\ni\nl\ng\ni\nl\ne\nn\nd\ni\nr\nm\ne\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n.\n\nDuyuru\n\n20.10.2023\n\nG\nİ\nB\nT\nÜ\n\n'\n\nd\ne\nn\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\nl\na\nş\nm\na\nd\na\n\nD\ne\nv\n\nH\na\nm\nl\ne\n!\n\nDuyuru\n\n19.10.2023\n\nE\nr\na\ns\nm\nu\ns\n+\n\nP\ne\nr\ns\no\nn\ne\nl\n\nv\ne\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nk\nl\ne\nr\ni\n\nB\ni\nl\ng\ni\nl\ne\nn\nd\ni\nr\nm\ne\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nDuyuru\n\n12.10.2023\n\nR\ne\nk\nt\nö\nr\nü\nm\nü\nz\n\nS\na\ny\nı\nn\n\nP\nr\no\nf\n.\n\nD\nr\n.\n\nŞ\ne\nh\nm\nu\ns\n\nD\ne\nm\ni\nr\n\n'\n\nİ\nn\n\nd\ne\n\nK\na\nt\nı\nl\nı\nm\nı\ny\nl\na\n\nK\nu\nr\nu\nm\ns\na\nl\n\nP\nr\no\nj\ne\nl\ne\nr\ni\nm\ni\nz\n\nK\n1\n3\n1\n\nv\ne\n\nD\nü\nn\ny\na\n\nÜ\nl\nk\ne\nl\ne\nr\ni\n\ni\nl\ne\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nk\n\nS\na\nğ\nl\na\nd\nı\nğ\nı\nm\nı\nz\n\nK\n1\n7\n1\n\nP\nr\no\nj\ne\nl\ne\nr\ni\n\nH\na\nk\nk\nı\nn\nd\na\n\nT\no\np\nl\na\nn\nt\nı\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\nd\ni\nk\n.\n\nDuyuru\n\n21.09.2023\n\nG\nİ\nB\nT\nÜ\n\n'\n\nd\ne\nn\n\n3\n\nY\ne\nn\ni\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nA\nn\nl\na\nş\nm\na\n\nDuyuru\n\n26.05.2023\n\nE\nr\na\ns\nm\nu\ns\n\nB\na\nş\nv\nu\nr\nu\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\ni\nl\ne\n\nİ\nl\ng\ni\nl\ni\n\nD\nu\ny\nu\nr\nu\n\nDuyuru\n\n18.05.2023\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nG\nİ\nB\nT\nÜ\n\nE\nr\na\ns\nm\nu\ns\n+\n\nP\ne\nr\ns\no\nn\ne\nl\n\nD\ne\nr\ns\n\nV\ne\nr\nm\ne\n\nv\ne\n\nE\nğ\ni\nt\ni\nm\n\nA\nl\nm\na\n\nB\na\nş\nv\nu\nr\nu\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nÖ\nl\nç\nü\nt\nl\ne\nr\ni\n\nDuyuru\n\n01.04.2023\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nE\nr\na\ns\nm\nu\ns\n\nS\ne\nç\ni\nm\n\nT\na\nk\nv\ni\nm\ni\n\nv\ne\n\nD\ne\nt\na\ny\nl\nı\n\nB\ni\nl\ng\ni\nl\ne\nr\n\nDuyuru\n\n15.03.2023\n\nT\nü\nr\nk\ni\ny\ne\n\nU\nl\nu\ns\na\nl\n\nA\nj\na\nn\ns\nı\n\ni\nl\ne\n\nT\nü\nr\nk\n\nH\na\nv\na\n\nY\no\nl\nl\na\nr\nı\n\nA\nr\na\ns\nı\nn\nd\na\n\nİ\nm\nz\na\nl\na\nn\na\nn\n\nİ\nş\nb\ni\nr\nl\ni\nğ\ni\n\nP\nr\no\nt\no\nk\no\nl\nü\nn\ne\n\nİ\nl\ni\nş\nk\ni\nn\n\nD\nu\ny\nu\nr\nu\n\nDuyuru\n\n14.01.2023\n\nE\nr\na\ns\nm\nu\ns\n+\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\n\nS\nı\nn\na\nv\nı\n\nDuyuru\n\n06.12.2022\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nİ\nl\ni\ns\nk\ni\nl\ne\nr\n\nG\ne\nn\ne\nl\n\nK\no\no\nr\nd\ni\nn\na\nt\nö\nr\nl\nü\nğ\nü\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nE\nr\na\ns\nm\nu\ns\n+\n\nP\nr\no\ng\nr\na\nm\nl\na\nr\nı\n\nB\ni\nl\ng\ni\nl\ne\nn\nd\ni\nr\nm\ne\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nY\na\np\nı\nl\nd\nı\n\nDuyuru\n\n13.11.2022\n\nE\nr\na\ns\nm\nu\ns\n+\n\nB\ni\nl\ng\ni\nl\ne\nn\nd\ni\nr\nm\ne\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nEğitim\n\n07.11.2022\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nA\nk\na\nd\ne\nm\ni\nk\n\nY\nı\nl\nı\n\nE\nr\na\ns\nm\nu\ns\n+\n\nP\nr\no\ng\nr\na\nm\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nS\nt\na\nj\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nğ\ni\n\nS\nt\na\nr\nt\nu\np\n\nP\nr\no\nj\ne\ns\ni\n\nH\na\nr\na\nk\ne\nt\nl\ni\nl\ni\nk\n\nİ\nl\na\nn\nı\n\nDuyuru\n\n31.10.2022\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nA\nk\na\nd\ne\nm\ni\nk\n\nY\nı\nl\nı\n\nE\nr\na\ns\nm\nu\ns\n+\n\nP\nr\no\ng\nr\na\nm\nı\n\nP\ne\nr\ns\no\nn\ne\nl\n\nD\ne\nr\ns\n\nV\ne\nr\nm\ne\n\nv\ne\n\nE\nğ\ni\nt\ni\nm\n\nA\nl\nm\na\n\nH\na\nr\na\nk\ne\nt\nl\ni\nl\ni\nğ\ni\n\nS\nt\na\nr\nt\nu\np\n\nP\nr\no\nj\ne\ns\ni\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nk\n\nİ\nl\na\nn\nı\n\nDuyuru\n\n31.10.2022\n\nE\nr\na\ns\nm\nu\ns\n\nN\ne\nd\ni\nr\n?\n\nDuyuru\n\n19.04.2021\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\nm\ni\nz\n\nDuyuru\n\n19.04.2021\n\n KATEGORİLER\r\n\nDuyuru\n\nEğitim\n\nHaber",
+      "char_count": 4892,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "title": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "department": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 16,
+    "yonetim": 1,
+    "form": 1,
+    "iletisim": 2,
+    "duyuru": 2,
+    "haber": 1,
+    "menu_haritasi": 1
+  }
+}

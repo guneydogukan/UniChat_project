@@ -1,0 +1,42 @@
+{
+  "task": "3.2.13",
+  "description": "Koordinatorlukler Harita Gudumlu Deep Scrape",
+  "birimler": [
+    {
+      "department": "Dis Iliskiler Koordinatorlugu",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\koord_dis_iliskiler_koordinatorlugu_output.json",
+      "total_documents": 23,
+      "total_valid": 14,
+      "total_failed": 0,
+      "total_chars": 25347,
+      "pdf_count": 8,
+      "doc_kind_distribution": {
+        "genel": 6,
+        "yonetim": 1,
+        "personel": 2,
+        "duyuru": 2,
+        "haber": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Erasmus Koordinatorlugu",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\koord_erasmus_koordinatorlugu_output.json",
+      "total_documents": 30,
+      "total_valid": 23,
+      "total_failed": 0,
+      "total_chars": 31411,
+      "pdf_count": 7,
+      "doc_kind_distribution": {
+        "genel": 16,
+        "yonetim": 1,
+        "form": 1,
+        "iletisim": 2,
+        "duyuru": 2,
+        "haber": 1,
+        "menu_haritasi": 1
+      }
+    }
+  ]
+}

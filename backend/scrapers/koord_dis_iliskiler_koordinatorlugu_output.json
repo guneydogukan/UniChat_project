@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T23:43:23Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\Dış_İlişkiler_Koordinatörlüğü.html",
+    "birim_id": 79,
+    "birim_title": "Hakkımızda",
+    "category": "genel_bilgi",
+    "department": "Dis Iliskiler Koordinatorlugu"
+  },
+  "summary": {
+    "total_blueprint_urls": 15,
+    "total_fetched": 15,
+    "total_valid": 14,
+    "total_failed": 0,
+    "total_skipped": 1,
+    "total_documents": 23,
+    "total_chars": 25347
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Uluslararasılaşma Politikası",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251107145203_8f0b766a.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Uluslararasılaşma Strateji Belgesi",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260203131941_c6fb539c.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Birim Faaliyet Raporu",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251105122315_f8775162.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Birim Faaliyet Raporu 2025",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260323145418_45a3101b.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Dış İlişkiler Koordinatörlüğü Yönergesi",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251103084904_cd1934c3.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Erasmus Koordinatörlüğü Yönergesi",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251103084850_6957805c.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Erasmus Yabancı Dil Sınavı Yönergesi",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251103084831_6a1ea246.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Uluslararası Öğrencilerin Kabul ve Kayıt Esasları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251105113547_35c98510.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=79",
+      "reason": "too_short (19 chars)",
+      "char_count": 19
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=79",
+      "title": "Dış İlişkiler Koordinatörlüğü",
+      "body_content": "Rektörümüz Prof. Dr. Şehmus Demir 'den Dış İlişkiler Koordinatörlüğümüze Ziyaret\n\nGİBTÜ 'den Kuzey Afrika 'da Stratejik Akademik İş Birliği\n\nGİBTÜ Rabat 'ta: Uluslararası Tanıtım Faaliyetleri Devam Ediyor\n\nÜniversitemiz Fas 'ta Uluslararası Eğitim Fuarında Tanıtıldı\n\nGİBTÜ ile Azerbaycan State Oil And Industry University Arasında Stratejik Akademik İş Birliği\n\nGİBTÜ ile Azerbaycan Üniversitesi Arasında Yeni Akademik İş Birliği\n\nGİBTÜ 'den Uluslararası Akademik İş Birliği Adımı\n\nGİBTÜ 'den Bakü Büyükelçiliği 'ne Ziyaret\n\nErasmus+ Koordinatörlüğü\n\nUluslararası Öğrenci Koordinatörlüğü\n\nFarabi Koordinatörlüğü\n\nMevlana Koordinatörlüğü\n\nHABERLER\n\nTÜMÜ\n\n24.01.2026 10:00\n\nRektörümüz Prof. Dr. Şehmus Demir 'den Dış İlişkiler Koordinatörlüğümüze Ziyaret\n\nÜniversitemiz Rektörü Prof. Dr. Şehmus Demir, Dış İlişkiler Koordinatörlüğümüzü ziyaret ederek üniversitemizin uluslararasılaşma vizyonu doğrultusunda yürütülen çalışmalara ilişkin değerlendirmelerde bulundu.\n\n Devamını Oku\r\n\n13.01.2026 11:12\n\nGİBTÜ 'den Kuzey Afrika 'da Stratejik Akademik İş Birliği\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi (GİBTÜ), uluslararasılaşma vizyonu doğrultusunda Kuzey Afrika’daki akademik temaslarını güçlendirmeye devam etmektedir. Bu kapsamda, Fas’ta İslam dünyasının en köklü yükseköğretim geleneklerinden birine sahip olan Karaviyyîn Üniversitesi bünyesinde faaliyet gösteren Dârü’l-Hadîs el-Haseniyye ile iş birliği protokolü imzalanmıştır.\n\n Devamını Oku\r\n\n12.01.2026 09:59\n\nGİBTÜ Rabat 'ta: Uluslararası Tanıtım Faaliyetleri Devam Ediyor\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi, uluslararası tanıtım faaliyetleri kapsamında Fas’ın başkenti Rabat’ta düzenlenen eğitim fuarındaki yerini aldı. Bir önceki gün Kazablanka’da gerçekleştirilen temasların ardından, fuarın ikinci durağı olan Rabat’ta üniversitemiz yoğun ilgiyle karşılandı.\n\n Devamını Oku\r\n\n11.01.2026 12:34\n\nÜniversitemiz Fas 'ta Uluslararası Eğitim Fuarında Tanıtıldı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi, uluslararasılaşma vizyonu doğrultusunda Fas Krallığı’nın Kazablanka şehrinde, Türkiye Maarif Ajansı tarafından düzenlenen uluslararası eğitim fuarına katılarak üniversitemizi temsil etti.\n\n Devamını Oku\r\n\n29.12.2025 14:55\n\nGİBTÜ ile Azerbaycan State Oil And Industry University Arasında Stratejik Akademik İş Birliği\n\nÜniversitemiz ile Azerbaycan’ın önde gelen yükseköğretim kurumlarından Azerbaycan State Oil and Industry University (ASOIU) arasında akademik iş birliğini güçlendirmeye yönelik bir protokol imzalanmıştır.\n\n Devamını Oku\r\n\n28.12.2025 03:19\n\nGİBTÜ ile Azerbaycan Üniversitesi Arasında Yeni Akademik İş Birliği\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi (GİBTÜ), uluslararasılaşma hedefleri doğrultusunda önemli bir adım daha attı. Azerbaycan’ın köklü yükseköğretim kurumlarından Azerbaycan Üniversitesi ile akademik iş birliği protokolü imzalandı.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n29\n\nAra\n\n GİBTÜ ile Azerbaycan State Oil And Industry University Arasında Stratejik Akademik İş Birliği\r\n\n28\n\nAra\n\n GİBTÜ ile Azerbaycan Üniversitesi Arasında Yeni Akademik İş Birliği\r\n\n28\n\nAra\n\n GİBTÜ 'den Uluslararası Akademik İş Birliği Adımı",
+      "char_count": 3137,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=79",
+      "title": "Yönetim",
+      "body_content": "Dış İlişkiler Koordinatörü\r\n\nDr. Öğr. Üyesi Muhammed Emin ŞİMŞEK\n\nKoordinatör\n\nring_volume\n0000\n\nmail\nmuhammedemin.simsek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Erasmus+ Koordinatörü\r\n\nÖğr. Gör. Mehmet Ercan BALTALI\n\nÖğr. Gör.\n\nring_volume\n3308\n\nmail\nmehmetercan.baltali@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Farabi Koordinatörü\r\n\nÖğr. Gör. Fatma İrem GÖRKEM ÇETİNKAYA\n\nÖğr. Gör.\n\nring_volume\n3308\n\nmail\nirem.cetinkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mevlana Koordinatörü\r\n\nÖğr. Gör. Duygu EVİS\n\nÖğr. Gör.\n\nring_volume\n3308\n\nmail\nduygu.evis@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Uluslararası Öğrenci Koordinatörü\r\n\n M. Said UYANIK\n\nBilişim Personeli\n\nring_volume\n3308\n\nmail\nsaid.uyanik@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 701,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=79&icid=31533",
+      "title": "Hakkımızda",
+      "body_content": "Hakkımızda\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi Dış İlişkiler Koordinatörlüğü, üniversitemizin uluslararasılaşma hedefleri doğrultusunda eğitim, araştırma ve kültürel alanlarda küresel iş birliklerini geliştirmek amacıyla faaliyet göstermektedir.\n\nKoordinatörlüğümüz; öğrenci ve personel değişim programları, uluslararası ortaklık anlaşmaları, akademik projeler ve tanıtım faaliyetleri aracılığıyla GİBTÜ’nün dünya çapında tanınırlığını artırmayı hedeflemektedir. Bu kapsamda, \nErasmus+\n, \nMevlana, Farabi\n ve diğer uluslararası programlar aracılığıyla öğrencilerimizin ve akademik/idari personelimizin farklı ülkelerde eğitim ve deneyim fırsatları elde etmeleri desteklenmektedir.\n\nDış İlişkiler Koordinatörlüğü olarak amacımız; üniversitemizin bilimsel birikimini uluslararası platformlarda paylaşmak, kültürler arası anlayış ve etkileşimi güçlendirmek, ve GİBTÜ’yü \n“küresel vizyona sahip, yenilikçi ve sürdürülebilir bir eğitim kurumu”\n haline getirmektir.",
+      "char_count": 972,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=79&icid=31532",
+      "title": "Misyon & Vizyon",
+      "body_content": "MİSYON VE VİZYON\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi (GİBTÜ), kuruluş misyonu ve vizyonu itibariyle İslami değerler ile bilim-teknolojiyi bütünleştiren özel bir yükseköğretim kuruluşudur. Üniversitenin resmi vizyonu “dini ve manevi yapının korunması ve geliştirilmesi, dini faaliyetlerin icrası için ihtisaslı kadroların hazırlanmasını temin eden bir yüksek eğitim kurumu olmak” şeklinde ifade edilmiştir. Bu köklü vizyon çerçevesinde GİBTÜ ’nün uluslararasılaşma vizyonu, bilimsel ve kültürel birikimini dünya çapında paylaşan, küresel alanda tanınan ve tercih edilen bir üniversite olmaktır.\n\nUluslararasılaşma misyonu ise; evrensel eğitim-öğretim standartlarına uygun ders içerikleri ve öğretim kadrosu yetiştirmek; uluslararası öğrenci ve akademisyen değişimini teşvik etmek; yabancı dilde kaliteli eğitim programları açmak, uluslararası iş birlikleri ve projeler aracılığıyla üniversitenin eğitim-araştırma kalitesini artırmaktır. Bu anlamda GİBTÜ, kurumsal misyon ve vizyonunu uluslararası yeterlilikler üzerine kurmakta; stratejik hedeflerine ancak küresel düzeyde rekabetçi bir araştırma-öğretim kalitesiyle ulaşılabileceğinin bilinciyle hareket etmektedir. Üniversitenin stratejik planında sunulan amaç ve hedeflere uluslararası bir perspektif kazandırmak, kültürel etkileşimi artırmak ve Gaziantep’in güçlü değerlerini tüm paydaşlara ulaştırmak uluslararasılaşma misyonunun temel unsurlarıdır.",
+      "char_count": 1416,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251105121032_4a510fc1.png",
+      "title": "20251105121032 4a510fc1.png",
+      "body_content": "PNG\r\n\n \rIHDR 8 [ ì:v sRGB ®Îé gAMA ±üa pHYs Ã ÃÇo¨d NêIDATx^íıUõ}/şf jÊ¡@¬4Ñ!$&9  B­E\räß Á§ODM(JLú¤Zmdæ ­æÿ@h~'Fæg4ş­¦±F:=F!Õ`Ffÿ÷e\rÃ÷áËëõ<[×¬ûÚ¬Ù{½ç{+Ëå @Ê³ÿ õ  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ 8&5ÅÊÚQQVVö¯QQ»²©¸Åöµ1¨uÕ®íÅ5ÚÙç ÚXYZØ)cÏ×®óÚCóªX8vP]¸*³Y»i¨v÷½ªj¢¶ne4´l¼}eÔjg½²+£®á½/®¹aeüháìµÛ¶ccöÂÇÊmÙZ, À1©GTÏx2rÆ¬ÊlÖä%±>\\ñµ#WÿKÌÜ;[Ñ½zF¬Í½KgUgsªcÖÒ7cíêè^ü¹°ÏGbõ)1yî½ñ@ıúØ±vFTvR·:kI¬nÜ?wcı©ÙüùÓ{­xn;Öÿ4æµ:¯¶×ş{üà±ã±ü{¬m/áTE­¯cçuoÕÍÉqwÌ0<ª¯[[\nË»WÇµ;bóÒë¢ôVUÆ/ÅÜ1¾ro×M«Å«Ç%×o[ÅãlõÏ\\®Ã«ÆÅeëÚbì àXvb¯è{b6½òè1xlL¿éêø£İO^}+²éèÛël:¯y],óÕXĞ{fÜ1ãKqquå¾?l³¿~IîÑñåk÷8¯âçÖÅcÉÇêâÁo*ÎİSëëhÑ3ÿqÍôÅn¹/ØYBS«úDé­:1úõşÀ{^[óºâÚÑÇİ\rgÆÛÿ6¦?8Êÿ3îxh^ÌéÍçNy+;:OöÕ>ßs ¤®)VÖ-üTyÿÑqñY¥Çò½inx*n½î{±éò[âÛãfòû®ûY#ã¿÷|ïGÔÏkË³±äñ·ãÅy÷=[*Ù}¢÷ö÷qù­Xş¿n7±r\\L<ïm¼óò¬bÒBPş<ÿqY¬SsP8 ´R¨Vµ$ş×Ã-QÈªaı÷ÿ'N½ffÜ3$luO<1ãoâbphXüDÔoédrhnn3çCÉä÷ÀÕ1²a«][~.^Y>x|¸½ı§}´ª8ÙğH}¬np »'DUY·¨øğåqw§:x+^¸oN+¬ÿò¿ÆÃÏ4Ù¶$Í¯Ä£»ÇyÿD:¾Ô^¦á{ñíû×ìı¼×]eİªbøå·Äò³â{ı}\\;b?ªØµx{Sl(ŞäUöë(M¶Ñª\\ÃÓñì¯Ş)Ms@ Jí\ràoÉíàúÆ)Å$ñb,pÕmKÒ¼öxjäÇ'DÿóÆÇ¤RÂé¸³-ìXõKæÆäÕ·ÄåÃ«ãÜ9ïêIíë}*ö©7: à ĞJ¡|M\\saÇ½írR;ÿkYcùcæ¸ë£nİèúø­X¾àéøÔERjÿÓóObì¤¬´½v6ĞJyeT¿&nºıª¨Ì£å7_·-+[ØÍ±åßÇÏ¥_èıJµä¢aÃ¦x»4ÙÆïcó¥ÉÊAqZ¿ãJÓ 6zäôGg]\"çÛ×ü[,ïp¼òèQ}EüÓ)Y°;bÚÿ'VµnOÒŞ¸35uÅNb»â!ïÏÑ7Î½%k³O\räŞgÇ°âôÊXòì¯³1~:c[lØ¸5ı´X×ÇKíµj~+^}n}q²rÒy1|Ûû°ï\" {±)~ş/¯FEß½UêC/ÿÛ¸çº1Åî¾.şçõ±sÎâ¸3-ãëd¯EY¢Ô¹@·{ŞÜı;^ûÜÙ@s4½±6^(NWÇ³OÍÆøéæWã§Ïü>*OØ'ÅÈkæÄÂá{x½M; üq~şH,~,ó*¯Û¯ùtş]ä`p eïl7[Ú¶·)i(À_W{m[ù¨ÚùßªZU4Æ_,ï£oüN(bùÌKbÜìÅ8RÿöhÜ´1~'6lz»Î¶EÃ²ã²iç\rïÍËŞª³ü:W/nU²Ôê:6lÆâìü¾VüS\\}ÙÍÅÒ¥ÊÉWÇG´ì³9ÿVmÌEÁËñø3¿jS\"T\n,?ØQ±³CòşÄw}/&W¾§}3¾³¢¥Òq®7=WNËnñıUO;hòé cNc®~îÈ\\áqğ½^³æ6ç·x·~nn`;ËcàÜ\\ı»ío`nò×JÜëä&ï±¯ÂkjnÉúw³Ú³õ±::üöÿñ¿;Øwö9+·àúÜúÙ®Ş­ÏÍØÎzí¼Î­ÏµİN«sK877¹²Õºssøp®~ıÖl%²Âòo2 ÀQO5  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2 ²\\^6\r ]YYY6G @Àà*_5jî3 *j @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H G­æØ²lNTUÍe[ó?¿ËfªÙËbKic $£,MÀAWVV¾j8ÔÜg@%8 ğ^WÅÂ±UÅè]¯±1{á²XÓT¨Ö¢TEl÷õ\n¯á1{Ù[Å5×,±­~.jşuÔ]1,ÊÆ.5ÛÛ;Öî¯]UĞ£iÍ²X8{l«åÃ¢¦¶.V6l+®±S§¯àè&à @'UÎZs¹ÈåvDãê©/7,ßÕŞ¥ù­xõ¹õ­ÖkyÕÇ·G­ÔÖ¦X9ïªğÈgcÉÂËbp÷¡1åÑõÙv;bóÒë¢2>VÿnçşÖ{tômÑ°ì7äÛ±úãßÆc5.ËâG1®úÆÂU{¶ÄyÏk 8Ê 8 °ÏÊ£Çà?+&}:?õÅşûc[¬«»>ÆÍ;9,»)Æ÷?.ÿŞ×ı8®¿ìş8}ÉwãæñC£G6?bqşô¿Û/XW\\{¬éğÔÖ5 t- ÍÑ´ò¸lÂ¯âò{ş6.Ú3ß¿µşïXãbâyÜóË¼üqŞÄqQùØ¿ÄO×ş> plp `Ú¾üÿbÁâWbÊíScdÏ}ÿ:İşòÿkÇ-,ÀÜ8ºÿ>~!7Å«_6(ôhoËòè1`PWbõMÙ¼¶ü º\"f ĞI\r·½ó»EÅ»\"®¾'¾3şÔ=¾Lw­½\nìVlkløéñHÃ©ñáS{íûqÖÖgtö V>Ï  v6Ğo|!L^ôL¼ÑNd{t2ğè¼Û7îñ1 æÛñĞÜ3¾ËÚöxö^ÊOÓ>Zı°o:{\r G+ öU3ãò¾<>?şyÅÆlæ¾êÕW~3æÆ]qÙõ?uû1zÄ!§G¼°¶pÒMo¬*ÇÄØá}²ymk èz Øåı?'EÜòí÷ÒSÙ{è1\"¦ßs{\\ğÈ´¸lŞè¨µÌNAşÓÓğX\nĞÅ8 °_úÄ/LØSYyÿ?ï1óqÓ²uÑÙQ>x|Ü4·_ÜrÙ_Eíãkv£æ±èºÿ^¹4îùê§cï}³k èJ Ø/åÑã¬bÒÆõş½4PfÖ6fNÊªbìÂUã¢rôµQ;÷}qóe7Çë:Û§wTÏø~¬¾çÏ\"îÙ±ºUßo~ìºXıĞ7btå{«ÓÎ5 åÊrÖ pº}Õp¨¹ÏJp d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ QËË¦à +++Ë¦àĞòH8 ĞÅB¡¯gı£  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2ÊryÙ4 teeeÙZiCªp|Õp¨¹Ïª¨ Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀà¶}emT+·g3°=ê®²ºhÈæ + r¯G]Í (++Ûõ5;­lælı¶}eÔµ+²º¨)5uÿ·$ö% 5ÿ:ê®ecÆ'øûX³ğQV5'm9à³8¦ 8 $ wL^òZär¹È5¾KF<ËUX¨rkcÑøå'ïÜÚQİ=[ö^ÊOKf-Æ<ö±`ù[¥y[ş=\\ÿÓsãäÙÓW3Àğ)\n@Zzs>ş¡±éí,à4­Çkk¢*+á©ª¹#V4l+-k­éÅXX3,¿|Q¬ZóÃ¨yßğùòò9¼\"¿]KINs~wu1{TU©´¨ª&n]Ñª´¨Xê3,jfOQÅã]u\r»ï¾(fÏ¸åÛÆæßÇûï[âò}éàâssÃX4{liÿeù}İúT4d(V©«³ÿ*[^¬ÖæFÍ{ù¿¥\r\nçT(qz=û±°øû¿oyOòÇX¸2Ö¬¸#jª\n?WÅ¨Ùu±¦©åª¶ÄÇoÍµzÿÚì·¹á©¸5ÿşÎ»,Õ®Â×Îû p(8 ¤¥iU<ò£§\"FS+\n_sbåÓcÌÃ§Ç=ë·F.÷ÛxhØ#qÉõ?u­x\náæª¿ëcF,»cRüùXôn}Ì82æÖ7æ·{2fT÷È?ë/FN>ù}ÕOÿ¯~IÛÒ¢ãî}ãÅãİã+Ûï#¯S^øÇXP÷ÃXpıK1åö©YéÍëñÀ_ß¿<ãX¿#;ŞøVt{}ÜûóVÕäÇÏ(.Ï-MõqçÔbÃ¤Çòç´5ÖûôxañcÙÊhx<ıíÅ±¼ñİh¬¯]1<Ì^/ß;Ö/sVüC,X±1¿bslYö÷1rÌ¿Dÿ{Ş¹Í±ì³ÏÆ÷¾P/»4ÅÏï½>æöûNl.¤å_kgTGg¶ l»'R*9¨û}+V?tmT÷ÈÍmy6î·*&_=%FW_·wTOç/|,ùMöşÎSñ¿ZÂvíÊ?ì×?>.úèß×Y1\rOÇ³¿z'[§ :f}ãªìxí+ï?:¾2½_ÜòùÉqË)ñ1Ì¾?ãı¿ñíQQŞÿcqáùñÂ¯[\\ZTyy|ã¯Ï-./h^ÿb<¾zLÔ\\zFşÊSãïói¯NÚ¿{tùL\\XrµsbüàQ^yNL¸ğ¸Xòì¯ó!fcÔ?úX4ùb\\>²ş{ÆĞ)â=ÂK÷¨èÓ7bÃK±ª½Ò1Ã¤£Op 8´´ÁÙ/-¸ Vß²0\\½¥´èíM±¡áå]¨ğªwfş3^{õw1¤Uô:qo_Íùİmè½+J÷å½£_qªµèÛëlº#Y8ùğui)ª=µ;«zîŞ-ËØg·ólnÜ/·wğü.6mÈ¿_ï(uè|ùwâ¡Ñ¯Åìªã£ªæÖx|Möo pOB 8BzÆĞËgÆcy÷=ÅÇëäHe>D´tB°óÕªêØãâw}#NùŞôøëï½múLk¥<¿»>QıTĞÜPÙô¾j7«ÀÍ7/şa4ÏóµX2¹w¶ğHxôÎN)¯êoÇÅjl/FÍÕ÷·ê)àğp HKùé1vêø[îû×ü>yş$ÆNêÿèÁö;(ê½şEüı=ÆkWüUÜ´l]ìz.o77ç÷ST=*ù÷>MÍëbù÷~¼(F\r91[ç`x_ô=µ_ômÑ°âÁøÑãmJpÚèşGgÇwÅÿº»Î\nÛÜ=í®léêÃÇÊ»ïùÅ÷eK¬©u Ğ¾¢¢÷û³iÃKÀ 1ÇEÿóÆçCÈOã?}5ÿ@~RşÆ÷cÑ°qIÕñ»ª©í1vÍqQ9úÚ¨û¾¸ù²ãuù0Ô}XüÅ-ÅçöÍoõ¢ÖóÓñÕ¾§ÌûxTtç>]Kîº¢U³TÜÿñÂ¸?Èóø¨¾ã­øğù'g;Ğsd|cù·¢ßâ1QQÜf[|ñÆé10[|`ò¡näÕñĞ÷>O; ºõ?ê×^ôGmÚà´èø0¿gÜ>ÿÒìI8ÌÊrrz 8D\n¼¾j8ÔÜg@W !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ QËË¦à +++Ë¦àĞòH8 ĞÅB¡¯gı£  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép dåò²i¤eS L'éJàQ8>ò .­t5ª¨ Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H@:¶¯ÚA£¢veS6cMY./HZYYYøÈ®cûÊÚ8ë¾³ã©¯Güİ§/ü|FTwÏrÔğÙJW£.`{4Ô]Y|P*½ªbÔìÅ±²a[¶¼³^ºáQS÷úî¥9{-Ùiµ£bPíÊüY´ÒjÂø Aµ±r·öE«óæhZykªuëöõú:á ÷îZö÷³ím¿mŞÏóùÙ²=ş\rºùLÔ¬¸,zõº,VÔ|&ÃMËöËâgíı» ¼®còXËE®qyÌéûDûÒ±²©9[x ºWÇµOÆêÙNØm:¡yİqí¸sî¹..é\\6÷Ğè^=#Ö®İÏRvBaËş>ñ}ØoËûøÑ{¾=FÄ'×G.·>1\"JKzDõ'cíÑñâÿ«C¡°/ ºãüé×ÅÇİ÷­Ø¸[IDsÃSqkÍ°¬¤çÊ¨kèÄß÷ë%({İ¾éÅXX3\ntMåâ#çKıu«*JÛã7O/éñ­RIOîÎ_¹/ßßËöÛÿo,½é¯cqÿãûÓ[JÚÊ;¯ù}oÆÜh|è£ñà%ócù¬©amtğãØÑîym»??*¦ÅÕqÓågfû/ìoFLÛğ¥x©qGìxã[Ñ}îµqÛòÿ¦bê´ßÄ¤6GnÇ«q{÷;ãÛ~/Æİ'ÅìXÆ¿?ßvmÌíş­xcÇª¸ëSÇÇk\rÅöĞğø¦øãúe4ÖO×®¸=+°b Ká½È¿6ß#Ï_>#f¬ª¹GÆÜúÆÈ-'¯¹?®îğ|òû~²\"&üÇÖüº_S³yk-+îiÏ}1VïØo,¹*ÎúnÌJ¶`ÿ 8 EÊ£âÔ!1òî»â¶?Ş6:enÿòu?]9>îºñü¨ìèÛ±yC<ÿø3±|æÇ£¢¬[TË6Æ¦·³3°&¾rÑ©|¹¾?FNşRydY<ÓrÜâş~j.¡=Ê£¼ÿgbâ¤ãã¹W×ÅÏ?«'MKöÌ_öã¼ã\"¿ 652¦eLô/¨ù­xõ¹ãcÒÄÏäî/,¬³§Ó¿öùL~ÕñÊúßçç¶*éunÜÒn8ú}¬ıé¿ÄmÏgÉ³ñ«,}şå¸¨ÓUîãíM#ôdsŞÙ°)ŞÎ¦@×ÔüFşá[L8ûÔVm0Ê£Gõ×béúâño1£zú>6ÔïÖáögİ7n«ï-_W¬rÖ±Å¬¥oJ<ö©éø8åâYQ;ıÕöÍÇºÂAß/o--ŞÍöØ²ñÍlúĞj.ÌLøE\\XÿÛÈ½[(µÉtÆÀ>Q±_O¥ :dáĞíø0íwqãuçEe¶à@8 t=Í\r±â;7ÇõÛ./èÍÜ¥¼²:.¾tlÿ¯lØ×R¶ï;:®ª=7¾ìæx £ĞT~RöÑ­±øŞÊ>ëÕW~3¦¿2+.·\"ºgOlÍÑ´êáX´øâü¡g_POÎ¥éqÿ¢ÇbÈùgFUÛoîİÎiK¬ypI<ür¶¬³*OÓûMk_ÜÙ~§¤1ŞÜ\\(å9.ú6h×ù4¿OÜÛÁù´Vşè3ğõxøÉ_FSÓªxğ¾Ç£tjÛbıóõqÜbG!$®_S\n%Cù([Ñ§o¼üğOâù¦Mûw-À1OÀ ë¸{BTªJu«ÙÎ¾UT÷hıUUjĞ^l^èZøò91ñ¬}éå¬q/ÛJw¾¼{ ËN_ıNÌÜş71 [¡a|şµ¯İ0÷Óï¹%N÷·qçÊî­ö×-*>üıèw{m\\Yİ'z¼:ÙÓecbq¿9q×ÃÛiT8§ãòW¦å÷14¦>µ5NÙ¢òAccöå¿ Ş£¿¯}(«fÖ}`º²_Ürnß¨½<¢õùt;'æÔÑù´R~z\\pÃ×âykã©ü¹N­<*NÛ®øpt+¼ùW©ÓòtÁµ1ï1¼â}¾}ÇÂC¼D4¯Ü1AL|B6sèö Â¸@w}öñÈ¡Q¾eYÌzCô}è¡Ş-7ÏVº%8 ]\n]şp\\ñØ»Ù}t Ûsç\\ueô»>+Áéumlyã>Æ´O pÌğWFÏg+]  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2ÊryÙ4@ÒÊÊÊ²) &t% t10îë`ÿ¨¢ $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2 e¹¼l öPVVMÁ±Å# öªp|Up¬qßÃÑK5  H $CÀ !à Ép d8 @2  H $CÀ !à É(ËåeÓ É)++Ë¦àÈ:_·~8\\\næ8Òô}è÷ÃÁ}FW¡  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2 ÀÁĞP5jcåö×£®æÏ£veS¶ 8ÊryÙ4@rÊÊÊÂÇGÚ¾ıt\rÛWÖÆY÷O}=âï>õl|áç3¢º{¶0î3º\n%8 ÀÁU(É(»2ê¶g3¶çg]e5uÑPø)ÿ ?¨XÒQZÚ9M±²vTª]ß[×ÔÜ°\"Í[|Ğ/¼ªjnÇ×lÉFtò¨YqYôêuY¬¨ùL9dá¦ë¿Wp( 8 ªiEÌûÒWbY¿oÆú¹ÈíX|ô¹¨º V65Öé1\"f<¹>r¹õñäÑ£4÷èÕ3µ3ª#¡\"è4 8BÚ4l_µFÛ®47<sFUe¥!­K\nJÛµuâöÃbbÍç¢ªlPÔÔı²ıõ²í«&ÖÄÄªüüQ×îzÛ¢aÙ·bTËüB T«sÜ¥9¶¬x æ÷øúµÊÂÓUye¸úşú½qßùC®ºV¥;eÅó{½TUõ¹¨8,?¯pcMİìÃ¢æÖ§¢¡²k«=­´¬êX¸ªT:ÔÜğTÜZSØ¾e¿Ùug%fp¬p v*U£)>líl,-£íñ§ÄÍ§Üës¹Èåîñ­Ë\"J%ö¹Ü±tÄc1ëÁ_eÕ±^'»OÿØ±6?c/ëE4\nº;¦=÷ÅX½ck¼±äª8ë»1üKë5¬î~;rÿcÖ/©óûFmãÈ5.aÎÛ¿UZ/moøXüSãEıôßÄ7?0oÅòÛ®¹İ¿oJrë>%[MÀNİ£rü¥jãcÑÚ= şÚ:lö²Ø²eYÌv4 Â_¬¿³ıglY6'©OV§wß·-\\kZªxíÔMkêbv±§o{ËÊl~ÁÈş1Ñ¿ø³·õ\"Nÿr\\Ôÿ¸üTGëUÄ©ÃúÅİóoËÖäöW.ŞŞ´1b@ïø@6ç\râíl:ÖÄW.:5ÕÛbıóOÇòåÓcxE·(«øxÌ\\ş|@ú]¶bşÚ®C{ôz%Öo{+^}îø4ñ3Ù5~ vÚ\r+g9YõÚGw{¸:òİÏÊÎ¯ğ³­(UaÙ«cÈ¨sbÅ¹'G¯s5£æã\\GÇÈ´[§³ÚçÎ*?]Ğ]'Û÷7FGê¯ÅÒõ7Å'ãÑ:ø¨[·-[×¼&î»zV¬¸ğhÌ5FıÜÙ6x½ŞQ=£.Ö×ş÷G¯ÁWÔÅºv×~§\rxîÕØĞzù_Å3WÄ°Sÿ°Ø,º¦ı.n¼î¼J\"*g-ÍÅÒ¤¬¤§=ÍoÇÆ·f? @Qs4­¼#¾4îè÷í±#ÿ`±cıñÑ¾Sï¬ßõÛ.ÑH¸wL.VÙ«§Gße_/Í[ñ].=0>Y|`úqÌ¨î÷\r»WÇµOæ×İß«l9ÏÍñÒ¤ßÄ´«ï5ïÄHÂÉgÄgÇ<¿÷oÅğİÜğdÌÿDùìqr¶JI÷¨èÓ7^~ø'ñ|Ó¦XóàxøålQ^yeu\\|éØÿ'^ÙĞ*àõÓO?9Nlz5¡¥\nW{t½ã¢²úÏâÒ±ÕÿúÊîf§òè9ü¼ôÂ­ñwßÉÚÌ4¯eÿí¸eØ¤¸è¬ãbıóõqÜ-¹õbÊĞ¥Mw¥ÅuñDë@·7İO³'ä7¹÷'/8ö8 EcÅ}÷Çq7^×¨,~8W~*®¾æÿ¯Ï{ VlÉ?9´ÛH¸ÔwWcåB£Ş-í6.5&³ÿª´ªE±ªX:´-VÜ5íÛoêD#á|h<6¦ı+q\\{çXU·®hÈG·ÖÕo:8FsC¬¸µ&ªËJK%­B·>÷Ú¸áì=;·¯g½àÂ8ÿ±ñâoJÇìøı*ìûXÑPx¸Û}~ñUX?kl½³!ù~ÿ¹eª5»®Tê¶G£ì¨½ÿÿ½ùù_Ü#¯sçñÆÆìºUÅuÚ6ÿAİßíG7ÇÇò¡qù÷ÅEë¦GU·²èV5=Ö]´(¾wùĞ6'Ä ş2®¹1¼âúÔÖ8¥X¬ÑªBiéåsbâY­vùéqÁìqñÊÓ¢[Å%±øµã³mèzÅ{¨p/t^ç®Ë¿ûqVG¥¶=GÆ7×Æ°ç®,^sY·Å\r;.úï]ËË£â´Á±íG·ìşÚu·J#¯f6Æ´Ç®¿ì½JO_ıNÌÜş71 pÜâïïkÙ28Få Öé¹/åùdnÖÒ7³õKrcjnÉú­¹ÍK¯ËUY[½ckî%WåÎZÛkÌÕÏÊ«rKŞØß`G®±~^näÈy¹úÆ¹\\ã3¹¹#Kû}·~nn`¼à\\cq~~zÉk¹üs³*ÏÌMYòj~ëÙ~'/É­Ïæ¼[2¹º´]wëssÌÍ­-¿Í%¹sÉoGåu¹¥[:ë¹1^ÊíØñjnÉ1Ùu¶:ÆÎë|·´Ïâ~ÕúÜ7¿±$7¥2r¿{©ñ¿òû¸0WY|/Zk}s/-½w¼_Sr^Êï¡x~göW8§l½c,\\Kş*WşøSäŞØõßËÂ{Ñ¸k½Âyn~¥¸ß(ç·­ŞıeÛì´£ôï=pn®>ÿ´\\Ë¿QñçlYgé¯[_÷GZá÷áÌÒï`áÇÖ÷iBÜgtJp :¥y¯w5V~FÂkâÉgFgÄ¨O§^ùÏØ¶áÕx.ÆÅÄó>x`Åê;6Äó?Ëg~<*ÊºEÅğé±¼aclzûíØ´¡pêïÏVljÕh9S1 |\"æßöÏñ£RvdçŞ³ÿÇâÂó«ãüGÇĞ=£êôÑĞºÁôNâî §DYY¯ı¯gÆ¢ùÆàìÛ¾_«'MKUvÊ?çM·g[w\n×Ò2³uCòV%=½Î[v+òÊe÷ü`sá§\"Î¿0.Ú;zT§ß6ÙYVøıÍ»ílûêä8çª+£ßõY N¯kcÃÌw/Ó å'Åi-\niiõ¾çn¯ÍÁöhÜøf6İF!t\r© nş&¶ß8-ÆìÖUpIóûãê ¿ë¹wëcîÀlÁ>û}¬¹ï1aÅF}ãx·~nì÷®`7ÇEå«bÑúßËbÑ×²ñrÎ¯@Q>ö³ñÂõ7ÇwíVòÎ\rKãïo¸/Íùó8«{¡¤áĞ4îşGgÇx(î}âõ}ş¾ówÿÛ¦_#şà¿åCÚÖ=7JvzÅÕ¿ËÂFMíÑÎÇyeT_ü¹;¢ĞºuĞ;N?:û]ïWÓ/ãşEÅóÏ~^Ç»1VÇöÈ?N9³ãN*OÓûMk_ŞÉæí§ÊÓO~'6ÅÚç_Ü GPT=Gÿu,_ôÑxîªb5nUµ±ãòïg\r£a#á¯>pelvZ¶ï¶£¶·ÕRõ«pFÿc|z¡G·¶ó¯bCø8­ú­¸bÈû³óÙÕñA]ëûÆ¹+ÆÅw'k¿gµ®ÍûU1&÷w]9\nqµîH¢İN%@Ëş^º×ıîŞ1E©³sæ.ş¿Õ}]ì¤2ÿoVuRÒ²ıÓOï[ÇJº\nw\"´÷»5·şÛs+£¸Ï(ô(6ï§¹õG> ¼·ësÏÌ«,wşU997ïõmBLÖ»Yş¡ªkÂiÿ47/*Kïw¡7´ÛsÏ¬?¿ÁÁ»÷Ï>~ûvb/ycr×-}ãĞÜ{-Ô´}ÚûÚóŞÑ¨kŞgTQè£¸pyeøÚ¢X_<ïükı¢øZ6ÖÏ.¥A?>:¥íX%GFa¢¯-z!{¿m®û[ı.«ùåxàócûÿsF÷/İ{»9ÕºJe1võT7§õøJë[k\nãÆFúş®¶Y{ß)jçø7WËØJ[òÇÃg.g÷«nëôùìê¯´lPíÊ(Ö>++«ÆÚîX[Ùyîw©ÍöÀ àÙw~TL«ã¦Ë[:Ø+ïÓ6|)^jÜ;ŞøVt{mÜ¶ü­ü³}}Ü9õ¦Ø0é±hÌm7n¯¹ÌåAnó¬ ÿ±5r>«o»6ævÿV¼±cUÜõ©ããµFÌmøEløãÆÆgbúkµqócë\"ºWÇµÙ6ß#ÏWGõ¢~îÈ8·>Ş-ôPxò+qßÕ9ñö¸¸KslYqwL{î±zG~_K®³¾ó÷Ò#Ğ> 8BŞ#')<²,ié°£ØëßocRÍÅŞşÊû&&N:¾Øûöõ/Æã«ÇDÍ¥gäÃĞqÑÿ¼ñ1)ÖÆ«JÛî_©ù­xõ¹ãcÒÄÏDÿò1ø¢ qaG}~·36Õö½­´KóÚ¼Ğö|gU*.Ú5ŞSgì}¬- ó à9>N¹xVÔN5¦}óÇ¥îÍß/o--nã@Çê¬[©oô©Ø>Ë÷i¬- c põê+¿Ó_Í[MİO³'D6Ss4­z8-ş8ÿ#ıâ¸İÆÚ«î¿79'>RÕ¦¤8poËP[bÍKâá}MF{[é77ÇH*ïwZ|tçùluOÔµ>»é}úÆËÿ$oÚÔêÜ:k«¼¢O|yy<ùüÆhZóXÜ÷ğêâ| } pdõÓï¹%N÷·qçÊî­Æsêş~ô»½6®¬îİfÌ¨^ñáÅ'Çíw]Õ{\\[êælL£¡1õ©­qÊ>t<¶Ò1dÔE1äs£WÕXlu>ÇÇù=;8Ö\nã-]óNYÃ+ÎhunµU>è¸aŞÆ¼áSEòÅ=í+ËZĞ$ªğàc#íHß~¯G]ÍÅ]ıa\nÀwrsÕÑïú¬§×µ±aæ1ñ¬£#Ü@W¢H¿(Ò(ÁáXà>£«P $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2 ²\\^6\r²²²l\n¬#ùu[ø=ğuÏ¡æ>£«p Ø+-G?ÿî3º\n½òĞrô+üÂáà³®@À`¯ &: !à Ép d8 @2  H $CÀ !à Ép d8 @2ÊryÙ4°ÊÊÊ²) v \rBÀñ+DêÜçÜçUÔ d8 @2  H $CÀ !à Ép d8 @2  H $£,Ms+++Ë¦àĞ:Ò;îu#y»Ç9\\\n  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2 @R^ºAQVöçQ»rS6¯ 9VŞ£ÊÊ¢jö²ØÍí´í+£vĞ¨ü>² Ğ5 8 Iz8æİ÷l« ³1VÜ÷`ÄÈêhØ°)ŞÎæ@jäô/Íº6-~\"ê·4ç4¯ûIÜ»äìô¥.ÙkêæKuÊÊEÍ­OEÃöU±pì§bö²·²UÅìª/ÄÂ5ï~.(æ¶)¼ªbÔìºXÓÔ]ª&Æì¿[\\VU³(VåçG4ÅÊÚQÙúù×¨9Q·fË  SuÿØøâ°ÇâŞ'^æø}¬}ôÇ#ÆÄ'ÿğ}Ù*kbêü¾QÛ¸#rbØ³â¶| >ıÅş±øÑ_äãOsl©\"ûÓøô ³íòºWÇµ¹Èåò¯Í÷ÄÅóãÁÕY jøEløãÆÆgbúkµqócëò3{Dõ'KëçŞ¥#Yş*¶¶ JÀHQùÇ¥³ÇÄ#w-µÛ_şàİşêè-Øë:/Ã+ºEYÅÇcæòßÄM>ı§YéÏïcÃ«¿a_üdÚíÛ¢UÉO¯sãlvÁÀ¸fòÑ£Ç1êÂâ©Wş3dòajM]ÌUee}ãÜ[Vf+ÀÁ'à $©\nE|ñÓ§íöeÑ¼æş¸zÂ/âÂúßFîİú;0[Ğæ5qßÕ³bÅDc®1êçÌ ÀÁ'à ¤ªçÄØI¯Çu3ëÚ)9.ú6(bq]<±n[6/S~Z±Ú-cFÅqn|zĞ ÙV*OÓûMk_Z5ÏéXï8ıôãÄ¦Wãù²ö= p8 ÉêÃÇÊÊñ1uìém>ğË£çÈ«ã1mÀñY -İ@P¬¦ß2Æìò[³/ÿULğş¨ıİxíCÇeK:P~z\\0{\\¼2á´èVqI,~íøl |e¹B½È+<à¸Ø©ĞSÖYKâì§¾ñwÓâÙ/,Õ=²û¯+Ügîuµ#}¹Ç9ÜgtUJpØ\ruQÿp+|À^Gë ÛóreÕÔE±­tÓ¨5<®¨ûu:Ø=Jİåª]?jëé¡eËâg{Ùo±+ßAµ±2[ØòóÏ~¶ûüè>0FÕü\"Îíur»â5$ëE«eÀÇ-3ğ# Ğå(Áa§}şKL!àT=¯¿=ÆWvÏf\ngZTıhL¬ÿçêxú/'Äüoïßx~Tô?BÈ¸øbÔÆªÕ±ÿïÚşï§h~1â«fDõøgë\nñóWGµ#}¹Ç9ÜgtUJp8èJı}.j&Ëø]u¯ÿ¬İA9Åncóóë5lÏ¶m=P`mÜ¿pv©;Úª+báªÂàmJ>ZJ\n% ÍëbÙÒ¶ee¢¦îõÂy)-ù}¼şÀÜµıêø§9çfá¦õ@ó¹#V4d·îö¶pn5qëbÏ×¿îõXqkMTÖõ×qßÎÖ¥s*¯aXÔÌÖîµ®§°}aÄuÅp3|æòxyæğx_öŞEÓª¨İríÙ ùj{>K~½µtø¼â²¥6­ß£İ¯»øÚy»Jmvß#¦ğù\n¶óZ¯¸ùhhwÄ\rñ»Ú8·>Ş-¾wÛcÍ}ßi¾/5îo|+ºÏ½6n[©VÿNíDï-õ±`ÚÚ´úwù}-)¯¥ó/Êl1p,y=êjíúcÇn<Úş¤ÍRötlU+nû~´¼oªCÇĞÔ,LäÀ×¶ªò4°&¾rÑ©Ù\rÖŞ åQqêy÷]qÛÂeÅ²{öÿX\\x~uñè|àèU§\râílµvUa#ù·İËÖ´.©hUâQÖşÉÈ/Åä!?)Ä´¸zÒÄ¸thÏü)0Î8.â¹Wcıù0²zLÔ\\zF>ıÏbm¼º!ënwçõo\r¯®4>ÎëBô<&¾páÒ:{Ó¯¿Ö>ñQùğòÔ+±~{'Hl.ä¸.&Õ\\Xgåı?'E,yö×¥ëÜíß£ŞŞâ¿Eïd[¼³16½}ğ£Eï¼äµì-ûøÇ£}Õ½:f¬}²s4ÿ:ê®ıJ<|ÎÍqã%ûğ·_JpZ»Õ÷t-ûØıv¯kóß·øDéÿ»ª÷ÎïïÇ¥£'¿ÕÅ?Ôåµ¼İù÷rö³ òÚ°\nÆÔÁ×D]Û±8öG1cé¿Eí'wÄ£SGÇuÿgK@JJ\n3^~yf_vm¬V\\×ğnéğyÅe;CRë%Õ¡5Ã£AË+«ãâKÇÆø?ñJKéÇ{ê}úÆËÿ$oÚk\\·NåQ}ñçbì}å­}¨²PÕ_Úé¯ÆËîM'Ä}Î®~÷/z,f2ôìÅ½O¼ßÿXuÿ½±xÈ9ñª¶ã´Lñ÷ù/ØÇâ¾WgË:«ãßyssßÎòâ´nÅ÷ş$Öå/¸yİOâŞÅç¤ß^ÉË+úÄÀÇÏoÜíÜ×¿wc¬ŞQøkí±hÊQü_ù¢ÏÀ×ãá'Mù/çï{üğ=àÛwO8%{x.=0K%:;bóÒêX<ëÇ±ºåÁ¹UµØ/ÿú^ÖË¦}ê;Ñ¸ãÕXrúıqY¡\np¶è=5Õù±ª~n87êß-õítµâñï+ÍÛÕa7¨UºnPÀVåêuY¬¸|NL<«³Åæ'Ä ş2®¹1¼âúÔÖ8%û/şuªx.}ãÜãâ»e%5­ZĞ;ª§ßÿ¢½7fÜùl·±bL,î7'îºrxôèùéøêWÆöi§E·²^ñáÅ'Çíw]±«JÀNÁ¯{Z®ê²Sş0[Ö xbuQ¹åÜèUUhTÚ'F~õ;1sûßÄneÑmÀ]qÒíµqeuïlıöº n÷1oøî~nêm×Çü¾ÿF-í,Ï\r_Sæ}<**®§â$_ pLh]E-«æ´³¢[ô:÷æR{­«Åîu½óã\råıã?õŞÕ[S­xÕawù+(r;Pònnı©¹³ ·zGáç7sKgUçÎ­Ï/9p]á>s¯s¨é{ìàÿµÜÉÕ¹|ÀÉ~.ø]nõÏçbä¼\\}ãÜ»õssÎÍÕç?$ZOw~½ìsgòÜúwëssls¼ÖZÖıanuı¼ÜÈÊ«rKŞØß«;2W9kinsq½¹ÍK¯ËUæ?ËşÏ3ùcU^[º¹ø¡Ë/ÈÍªü|nÁêßµ{¾»öQÚgéó¯4½ëGææÖ7×Ú¹­/å9÷üÚ­·ms½;\në}27kéÅíK³ÌYğRnënç×êX»k«ı7>;²²øïqfnòòKwß¶ôc} ¥tUJp6ºÇÉçLyınÍJpúÆe¾ßßYG¡DvØìe±eË²=L»®¨òôS£ßM±öùJÕe;Ğáz/?÷=¸*×ÅÓ×ÇÏ'gŞÛÑW­¸P²²ùæü©«Vì¡¼òSñµE/ş4W|­_tU¨lû ÀÁSèwxÖ¨ºĞàÖU5íàt¼±V\rÛ4@>`ì¶ıÒ{vÛ}Èg¢fÅeÑ«Pµæ31$KØ-ÛïÑM.Q©ªğå¯LİzÅèÅ¯Ä²%»{õ*O\rK>İNiÛ¿7\\pú>>-ÕK÷óC¾çöùÜ®Z1Beblc\\áCÑíÀ¡Öî³®w¯ÎçâGÿ¿ñÏÿøËİ'ß³0nİÿüª(ÆÅ£6Vígw·%û¿B@úÅ¬jİÅmZô=æóüXRhZTİ5\"V?2%¿Ëfÿiü¾wàïø{sÑU)Áè*_¾9?¶ßø1§%ÜtĞl±¤§İnoK%\"UkbbU~~¡«Øæö»½mÕo±T¤jbÌş«Ò±ªjÅªÂøTÅu\nÇ.¼ªbÔìºXÓ´¥nv-UèÊv[çÏ§tô¼Ò¬Ô¦uÒn×]xµ:Ïv»ÉcjÅĞĞ%l»??*¦ÅÕqÓåYıùü¼wÎh¿+Ù÷èö¶áÉğ[#·èøÀòùëö¶á±áÿ!é¯ÕÆÍ­Ë?; ,UUÌm¾'F,®.êµ[êÎò+qßÕ9ñ¨\"Ó[VÜÓûb¬Şß×«bà¬ïÆüC9¸$ÅT+İ 8 ]Âûcää/ÅGÅ3Å ó7Äóÿ¶MW²ÇÇs¯¾Û÷ÒííÀé_úpö¡ÛÛ5qÍä|¸êqFºğ¤xêÿİìunÜ²[¿»4¯ı÷øÁmÏçéxöW¥&å»Î§3ãíM#ôdsŞÙî8¦ 8 ]ÂñqÊÅ³=BMûæ=+EóÛ±ñå­¥Åm47n<,½!5¯¹?®ğ¸°ş·{·>æÌtJßèS±?dÊ£âÔ!1dáĞíø0íwqãuçi\r@§8 ]F¨¾ò1ıYqÙ¼ÑÔıÔ8{Bd]É6GÓªcQÖìqt»½­<-NïwB4­}1^hÓğ;on.vû[Şï´øèÎóÙë¨ëà|Zë}úÆËÿ$oÚk\\S[aÀÆú8nÁK±£PåfıR¸1¯£nr ĞôÓï¹%N÷·qçÊî­ºíş~ôkéJö0u{[>hlÌnÙvôwãµµcÈ¨bÈ-çF¯ª9±,>Ùê|ó{vp>­º¾6æ²0WSÚ§iÊ£â´Á±íç÷Uêd ªæXÑ°­ãnr £hv*\nèbNs®º2ú]àôº66Ì¼1&ut ,%8ìä/1]á>s¯s¨é{Ì=Îáà>£«R $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2 ²\\^6Í1®¬¬,CëHìîu}JGúss8¸Ïèªà#Ìs88¤Î}FW%à @b\n!à ÉPE\r £ÇHº\" H*j @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $CÀ !à Ép d8 @2  H $\"âÿÒá×Ubõ@¦ IEND®B`",
+      "char_count": 15788,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=79",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nDr. Öğr. Üyesi Muhammed Emin ŞİMŞEK\n\nKoordinatör\n\nring_volume\n0000\n\nmail\nmuhammedemin.simsek@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 134,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=79",
+      "title": "İdari Personel",
+      "body_content": "İdari\r\n\n M. Said UYANIK\n\nBilişim Personeli\n\nring_volume\n2802\n\nmail\nsaid.uyanik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Poyraz Demir KANDEMİR\n\nBilgisayar İşletmeni\n\nring_volume\n3308\n\nmail\npoyrazdemir.kandemir@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 231,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=79&icid=31534",
+      "title": "Uluslararasılaşma Politikamız",
+      "body_content": "Uluslararasılaşma Politikamız Gaziantep İslam Bilim ve Teknoloji Üniversitesinin Uluslararasılaşma Politikası aşağıdaki ilkelere dayanır.\n\n Üniversitemizin sahip olduğu uluslararası iş birlikleri sayesinde üretilen fikri mülklerle (proje, patent, kongre, konferans, sempozyum vb.) yurtdışına öğrenci, araştırmacı, idari personel ve öğretim üyesi göndermek,\n\n Yurtdışından paydaşlarla ortak akademik programların oluşturulması, araştırma ve geliştirmede ortaklıkların sağlanması yoluyla ülke ekonomisine katkı sağlamak ve Üniversitemizin uluslararası alandaki rekabet gücünü (ranking) arttırmak,\n\n Türkiye için bir barış kuşağı inşa edecek olan gönül elçilerinin yetiştirilmesi adına Üniversitemize gelecek Uluslararası öğrencilerin nicelik ve niteliğinin arttırılmasını sağlamak,\n\n Yetiştirilen uluslararası öğrenciler, ikili iş birlikleri, uluslararası akademik etkinlikler gibi faaliyetlerle Türkiye’nin “olumlu” imajının uluslararası alana ihracına katkı sağlamaktır.",
+      "char_count": 970,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=79",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=79",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nGİBTÜ ile Azerbaycan State Oil And Industry University Arasında Stratejik Akademik İş Birliği\n\n29.12.2025\n\nGİBTÜ ile Azerbaycan Üniversitesi Arasında Yeni Akademik İş Birliği\n\n28.12.2025\n\nGİBTÜ 'den Uluslararası Akademik İş Birliği Adımı\n\n28.12.2025",
+      "char_count": 274,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=79",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nRektörümüz Prof. Dr. Şehmus Demir 'den Dış İlişkiler Koordinatörlüğümüze Ziyaret\n\n24.01.2026\n\nGİBTÜ 'den Kuzey Afrika 'da Stratejik Akademik İş Birliği\n\n13.01.2026\n\nGİBTÜ Rabat 'ta: Uluslararası Tanıtım Faaliyetleri Devam Ediyor\n\n12.01.2026\n\nÜniversitemiz Fas 'ta Uluslararası Eğitim Fuarında Tanıtıldı\n\n11.01.2026\n\nGİBTÜ ile Azerbaycan State Oil And Industry University Arasında Stratejik Akademik İş Birliği\n\n29.12.2025\n\nGİBTÜ ile Azerbaycan Üniversitesi Arasında Yeni Akademik İş Birliği\n\n28.12.2025",
+      "char_count": 527,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=79",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\n KATEGORİLER\r\n\nDuyuru\n\nTanıtım",
+      "char_count": 73,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=79",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\ninternational@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nÖğr. Gör. Fatma İrem GÖRKEM ÇETİNKAYA\n\nirem.cetinkaya@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 364,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=79",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nDr. Öğr. Üyesi Muhammed Emin ŞİMŞEK\n\nring_volume\n0000\n\nmail\nmuhammedemin.simsek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n M. Said UYANIK\n\nring_volume\n2802\n\nmail\nsaid.uyanik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Duygu EVİS\n\nring_volume\n3308\n\nmail\nduygu.evis@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Fatma İrem GÖRKEM ÇETİNKAYA\n\nring_volume\n3308\n\nmail\nirem.cetinkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n M. Said UYANIK\n\nring_volume\n3308\n\nmail\nsaid.uyanik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Mehmet Ercan BALTALI\n\nring_volume\n3308\n\nmail\nmehmetercan.baltali@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Poyraz Demir KANDEMİR\n\nring_volume\n3308\n\nmail\npoyrazdemir.kandemir@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 734,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "title": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "department": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 6,
+    "yonetim": 1,
+    "personel": 2,
+    "duyuru": 2,
+    "haber": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}
