@@ -1,0 +1,510 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T20:46:14Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\Mühendislik ve Doğa Bilimleri Fakültesi\\Mühendislik_ve_Doğa_Bilimleri _Fakültesi.html",
+    "birim_id": 15,
+    "birim_title": "Akademik Birimler",
+    "category": "bolumler",
+    "department": "Muhendislik ve Doga Bilimleri Fakultesi"
+  },
+  "summary": {
+    "total_blueprint_urls": 35,
+    "total_fetched": 35,
+    "total_valid": 34,
+    "total_failed": 0,
+    "total_skipped": 1,
+    "total_documents": 44,
+    "total_chars": 31974
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Fakülte Kataloğumuz",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250919114925_1929ea05.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Fakülte Kataloğumuz ( Eng )",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250919114936_46639570.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "İç ve Dış Paydaşlar",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260324083915_95c267f6.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Satın Alma Prosedürü",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260324083942_7117c5c4.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Sınav Kuralları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260324090748_da924e68.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Öğrenci Toplulukları",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250116120527_6b05e0d7.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Öğrenci Danışmanlık Saatleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250919112624_d89db1c7.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Kalite Komisyonu",
+      "url": "https://www.gibtu.edu.tr/medya/gibtudosya/20231115150905_c38ea370.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Birim Kalite Komisyonları Yönergesi",
+      "url": "https://www.gibtu.edu.tr/medya/gibtudosya/20231115150845_99c2f097.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [
+    {
+      "text": "Öğrenci Bilgi Sistemi",
+      "url": "http://ubys.gibtu.edu.tr/",
+      "type": "subdomain"
+    },
+    {
+      "text": "Akademik Mail",
+      "url": "https://mail.gibtu.edu.tr/",
+      "type": "subdomain"
+    },
+    {
+      "text": "Aday Öğrenci Portalı",
+      "url": "https://adayogrenci.gibtu.edu.tr/",
+      "type": "subdomain"
+    },
+    {
+      "text": "Mezun Öğrenci Bilgi Sistemi",
+      "url": "https://ubys.gibtu.edu.tr/gts/portal/home/index",
+      "type": "subdomain"
+    },
+    {
+      "text": "Uzaktan Eğitim Uygulama ve Araştırma Merkezi",
+      "url": "https://ubys.gibtu.edu.tr",
+      "type": "subdomain"
+    }
+  ],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=15",
+      "reason": "too_short (0 chars)",
+      "char_count": 0
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=15",
+      "title": "Mühendislik ve Doğa Bilimleri Fakültesi",
+      "body_content": "Gençlere Bilim Yolculuğu: GİBTÜ Bilim Söyleşileri Başlıyor\n\nGİBTÜ den Eğitime Engel Tanımayan Destek\n\nGİBTÜ Akademisyenleri TÜBİTAK Bilim Söyleşileri?nde Öğrenciler ve Velilerle Buluştu\n\n2025-2026  Bahar Yarıyılı Yatay Geçiş Başvuru Sonuçları\n\nIX. Uluslararası Bilimler Işığında Yaratılış Kongresi\n\nGİBTÜ Akademisyenleri \"genç Arge Yenilikçi Yaklaşımlar Zirvesi\"nde Üniversitemizi Başarıyla Temsil Etti\n\nKariyer Buluşması II\n\nGİBTÜ 'de Uygulamalı Excel Eğitimi Başladı\n\nHABERLER\n\nTÜMÜ\n\n30.01.2026 15:47\n\n2025-2026  Bahar Yarıyılı Yatay Geçiş Başvuru Sonuçları\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n03\n\nŞub\n\n İntörn Mühendislik Belgeleri\r\n\n30\n\nOca\n\n 2025-2026  Bahar Yarıyılı Yatay Geçiş Başvuru Sonuçları",
+      "char_count": 700,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 35,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=15",
+      "title": "Yönetim",
+      "body_content": "Dekanlık\r\n\nProf. Dr. Osman BİLGİN\n\nDekan V.\n\nring_volume\n2201\n\nmail\nosman.bilgin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Ali AYTEK\n\nDekan Yrd.\n\nring_volume\n2203\n\nmail\nali.aytek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Cemal AKTÜRK\n\nDekan Yrd.\n\nring_volume\n2241\n\nmail\ncemal.akturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Fakülte Sekreterliği\r\n\n Ergün ÖZUSLU\n\nFakülte Sekreteri\n\nring_volume\n2206\n\nmail\nergun.ozuslu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Fakülte Kurulu\r\n\nProf. Dr. Osman BİLGİN\n\nBaşkan\n\nring_volume\n2201\n\nmail\nosman.bilgin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Ali AYTEK\n\nProf. Dr.\n\nring_volume\n2203\n\nmail\nali.aytek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Cemal AKTÜRK\n\nDoç. Dr.\n\nring_volume\n2231\n\nmail\ncemal.akturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Prof. Dr. Koray KÖKSAL\n\nProf. Dr.\n\nring_volume\n0000\n\nmail\nkoray.koksal@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nProf. Dr.\n\nring_volume\n2247\n\nmail\nmehmet.ozcelik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Ali DÖNER\n\nProf. Dr.\n\nring_volume\n2215\n\nmail\nali.doner@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mustafa DEMİRBİLEK\n\nDr. Öğr. Üyesi\n\nring_volume\n2250\n\nmail\nmustafa.demirbilek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. İpek ATİK\n\nÜye\n\nring_volume\n2214\n\nmail\nipek.atik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Bayram BALA\n\nDr. Öğr. Üyesi\n\nring_volume\n2216\n\nmail\nbayram.bala@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yönetim Kurulu\r\n\nProf. Dr. Osman BİLGİN\n\nBaşkan\n\nring_volume\n2201\n\nmail\nosman.bilgin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Ali AYTEK\n\nProf. Dr.\n\nring_volume\n2203\n\nmail\nali.aytek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Cemal AKTÜRK\n\nDoç. Dr.\n\nring_volume\n2231\n\nmail\ncemal.akturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Prof. Dr. Koray KÖKSAL\n\nProf. Dr.\n\nring_volume\n0000\n\nmail\nkoray.koksal@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nProf. Dr.\n\nring_volume\n2247\n\nmail\nmehmet.ozcelik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. İpek ATİK\n\nDoç. Dr.\n\nring_volume\n2214\n\nmail\nipek.atik@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 2018,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 34,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=15",
+      "title": "Misyon",
+      "body_content": "Mühendislik Fakültesi’nin misyonu başta bölgemiz olmak üzere ülkemizin ve insanlığın yararına teknolojik gelişmeleri izleyebilen, ulusal ve uluslararası kuruluşlarda kendini kabul ettirebilen ve etik değerlere saygılı mühendisler yetiştirmek oluşturmaktadır. Bu doğrultuda;\n\nAraştırmacılara, hem bilimsel hem de teknolojik bilgi ve beceriye sahip olmalarını sağlamak için gerekli olan laboratuvar ve her türlü imkanı sağlamak,\n\nAraştırmacıları disiplinler arası çalışmaya, uluslararası gelişmeleri izleyerek ve toplumsal gereksinimleri düşünerek ülke ve dünya bilimine katkıda bulunacak projeler hazırlamaya ve yayınlar yapmaya teşvik etmek amaçlanmaktadır.",
+      "char_count": 657,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 33,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=15",
+      "title": "Vizyon",
+      "body_content": "Fakültemizin vizyonu, Lisans ve lisansüstü eğitimi, bilimsel ve teknolojik araştırmaları, toplumsal gelişmeye yönelik çalışmaları ile ulusal ve uluslararası düzeyde tercih edilen bir fakülte olmaktır.",
+      "char_count": 200,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 32,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=15",
+      "title": "Tarihçe",
+      "body_content": "Fakültemiz Hakkında\n\n18 Mayıs 2018 tarih ve 30425 sayılı Resmi Gazetede yayınlanan Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 09/05/2018 olan 7141 nolu Kanunla, 2809 sayılı kanuna yapılan ek maddeyle önce Gaziantep Bilim ve Teknoloji Üniversitesi adıyla, daha sonra ise 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan Vergi Kanunları ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 17/01/2019 olan 7161 nolu Kanunun 14.maddesi ile 2809 sayılı Kanunun ek 178.maddesi başlığının birinci fıkrasında yer alan “Gaziantep Bilim ve Teknoloji Üniversitesi” ibareleri, “Gaziantep İslam Bilim ve Teknoloji Üniversitesi” olarak değiştirilmesi ile kurulmuştur. \n\n2019 yılında kurulan Mühendislik ve Doğa Bilimleri Fakültesi bünyesinde ilk mühendislik bölümleri 2019 yılında açılmıştır. Elektrik-Elektronik Mühendisliği, Bilgisayar Mühendisliği, Endüstri Mühendisliği ve İnşaat Mühendisliği bölümleri bulunmaktadır. Fakültemiz, bilim ve endüstri alanındaki gelişmelere katkıda bulunacak ve uluslararası seviyede mühendislik kariyerini hedefleyen gençleri eğitmek amacıyla hazırlanmış programlar sunmaktadır.\n\n2020-2021 öğretim yılında Mühendislik ve Doğa Bilimleri Fakültesinde toplam 156 öğrenci  eğitim görmektedir. Öğrenciler kendi potansiyelini kullanabilme becerisine sahip, akademik ve sosyal alanda başarılı, entelektüel, bağımsız düşünebilen, girişimci, yaratıcı, özgüven sahibi olarak yetişmektedirler. Fakültemiz 2020-2021 eğitim öğretim yılında 1 ana mühendislik bilim dalında yüksek lisans programları sunmaktadır.\n\nMühendislik Fakültesi Elektrik-Elektronik, Bilgisayar, Endüstri ve İnşaat Mühendisliği dallarında lisans derecesi vermeye yönelik dört yıllık programlar sunmaktadır. Fakültemiz öğrencileri kendi potansiyelini kullanabilme becerisine sahip, akademik ve sosyal alanda başarılı, entelektüel, bağımsız düşünebilen, girişimci, özgüven sahibi olarak yetişmektedirler.\n\nLisans programlarının birinci yılı matematik, fizik, kimya, ekonomi ve bilgisayar programlama gibi temel derslerden oluşmaktadır. Programların ikinci ve üçüncü yıllarında bölümlerin belirlediği temel mühendislik dersleri, üçüncü ve dördüncü yıllarda alınan tamamlayıcı dersler veya uzmanlık dersleriyle takviye edilmektedir.\n\nMühendislik lisans programları temel bilim dersleri, temel mühendislik dersleri, uzmanlık dersleri, tamamlayıcı dersler ve sosyal ve beşeri bilimler alanındaki derslerden oluşmaktadır. Temel mühendislik dersleri herhangi bir mühendislik dalında uzmanlaşma alanından bağımsız olarak temel mühendislik eğitimi verme amaçlı zorunlu derslerdir. Uzmanlaşma dersleri öğrencileri kendi dallarındaki belirli uzmanlık alanlarında yetiştirmek üzere tasarlanmıştır.\n\nÖğrenciler bölümlerince açılan uzmanlık dersleri arasından kendi ilgileri doğrultusunda seçim yapabilir veya bölümlerce belirlenmiş olan ders dizinlerinden seçebilirler.",
+      "char_count": 2952,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 31,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/30936/kalite-politikasi",
+      "title": "Mühendislikte Kalite, Geleceğe Güvence",
+      "body_content": "Mühendislikte Kalite, Geleceğe Güvence\n\nMühendislik ve Doğa Bilimleri Fakültesi olarak kalite politikamız; yenilikçi, araştırmacı ve etik değerlere bağlı bir eğitim anlayışını benimseyerek çağın ihtiyaçlarına uygun mühendisler ve bilim insanları yetiştirmektir.\n\nBu doğrultuda;\n\n- Öğrenci odaklı ve katılımcı bir eğitim yaklaşımı,\n\n- Sürekli iyileştirme ve gelişim kültürü,\n\n- Bilimsel araştırma ve teknolojik yeniliklere öncülük,\n\n- Paydaşların beklentilerine duyarlılık,\n\n- Topluma ve çevreye karşı sorumluluk bilinci\n\ntemel ilkelerimizdir.\n\nFakültemiz, ISO 9001 Kalite Yönetim Sistemi standartlarını esas alarak, eğitim-öğretim, araştırma ve toplumsal hizmet alanlarında şeffaf, güvenilir ve sürdürülebilir bir kalite anlayışını hayata geçirmeyi taahhüt etmektedir.",
+      "char_count": 768,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 30,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/31293/kurullar",
+      "title": "Kurullar",
+      "body_content": "Fakülte Kurulu\n\nBaşkan\n\nProf. Dr. Osman BİLGİN\n\nÜye\n\nProf. Dr. Ali AYTEK\n\nÜye\n\nProf. Dr. Koray KÖKSAL\n\nÜye\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nÜye\n\nProf. Dr. Ali DÖNER\n\nÜye\n\nDoç. Dr. Cemal AKTÜRK\n\nÜye\n\nDoç. Dr. İpek ATİK\n\nÜye\n\nDr. Öğr. Üyesi Mustafa BEMİRBİLEK\n\nÜye\n\nDr. Öğr. Üyesi Bayram BALA\n\nFakülte Yönetim Kurulu\n\nBaşkan\n\nProf. Dr. Osman BİLGİN\n\nÜye\n\nProf. Dr. Ali AYTEK\n\nÜye\n\nProf. Dr. Koray KÖKSAL\n\nÜye\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nÜye\n\nDoç. Dr. Cemal AKTÜRK\n\nÜye\n\nDoç. Dr. İpek ATİK\n\nFakülte Disiplin Kurulu\n\nBaşkan\n\nProf. Dr. Osman BİLGİN\n\nÜye\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nÜye\n\nDoç. Dr. Cemal AKTÜRK\n\nÜye\n\nDr. Öğr. Üyesi Mustafa DEMİRBİLEK\n\nFakülte Danışma Kurulu\n\nBaşkan\n\nProf. Dr. Osman BİLGİN\n\nÜye\n\nProf. Dr. Ali AYTEK\n\nÜye\n\nDoç. Dr. Cemal AKTÜRK\n\nÜye\n\nDr. Öğr. Üyesi Yüksel TOKUR BOZKURT\n\nÜye\n\nDr. Öğr. Üyesi Mustafa DEMİRBİLEK\n\nÜye\n\nÜmit ALICI (Mezun Öğrenci)\n\nÜye\n\nİslim ARIKAN (STK EMO)\n\nÜye\n\nHakan YUSUFOĞLU (Sanayici)",
+      "char_count": 934,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 29,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/31109/komisyonlar",
+      "title": "Komisyonlar",
+      "body_content": "Tanıtım ve Web Komisyonu\n\nBaşkan\n\nDr. Öğr. Üyesi Bünyamin DİKİCİ\n\nÜye\n\nArş. Gör. Zeynep YÜKSEL\n\nÜye\n\nArş. Gör. Bahadır BOZKURT\n\nÜye\n\nArş. Gör. Yusuf ZİREKGÜR\n\nÜye\n\nÖğrenci Temsilcisi Ahmet BALCI (BMB)\n\nProje ve Bilimsel Araştırmalar Komisyonu\n\nBaşkan\n\nDr. Öğr. Üyesi Yasin İÇEL\n\nÜye\n\nDr. Öğr. Üyesi Yusuf KARADEDE\n\nÜye\n\nDr. Öğr. Üyesi Hamdullah ÖZTÜRK\n\nÜye\n\nÖğrenci Temsilcisi Ahmet BALCI (BMB)\n\nAkreditasyon Komisyonu (Müdek)\n\nBaşkan\n\nProf. Dr. Osman BİLGİN\n\nBaşkan Yardımcısı\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nÜye\n\nDr. Öğr. Üyesi Muhammet Yasin PAK\n\nÜye\n\nDr. Öğr. Üyesi Mustafa DEMİRBİLEK\n\nÜye\n\nDr. Öğr. Üyesi Mehmet ARICI\n\nÜye\n\nDr. Öğr. Üyesi Selen YÜCESOY KAHRAMAN\n\nÜye\n\nDr. Öğr. Üyesi Önder POLAT\n\nÜye\n\nÖğrenci Temsilcisi Ahmet BALCI (BMB)\n\nAkreditasyon Komisyonu (Müdek) Üst Komisyonu\n\nBaşkan\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nÜye\n\nDoç. Dr. Cemal AKTÜRK\n\nÜye\n\nProf. Dr. Ali DÖNER\n\nÜye\n\nDr. Öğr. Üyesi Yusuf KARADEDE\n\nÜye\n\nÖğrenci Temsilcisi Ahmet BALCI (BMB)\n\nAkreditasyon Komisyonu (Müdek) Yürütme Komisyonu\n\nBaşkan\n\nDr. Öğr. Üyesi Mehmet Umut SALUR\n\nÜye\n\nDr. Öğr. Üyesi İbrahim Miraç ELİGÜZEL\n\nÜye\n\nDr. Öğr. Üyesi Yüksek BOZKURT TOKUR\n\nÜye\n\nDr. Öğr. Üyesi Bayram BALA\n\nÜye\n\nÖğrenci Temsilcisi Ahmet BALCI (BMB)\n\nBirim Kalite Komisyonu\n\nBaşkan\n\nDoç. Dr. Cemal AKTÜRK\n\nÜye\n\nProf. Dr. Ali DÖNER\n\nÜye\n\nDr. Öğr. Üyesi Selen YÜCESOY KAHRAMAN\n\nÜye\n\nDr. Öğr. Üyesi Muhammet Yasin PAK\n\nÜye\n\nDr. Öğr. Üyesi Bayram BALA\n\nÜye\n\nDr. Öğr. Üyesi Bünyamin DİKİCİ\n\nÜye\n\nFakülte Sekreteri Ergün ÖZUSLU\n\nÜye\n\nArş Gör. Hilal TEKİN\n\nÜye\n\nÖğrenci Temsilcisi Ahmet BALCI (BMB)\n\nEğitim Öğretim Komisyonu\n\nBaşkan\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nÜye\n\nDoç. Dr. Tarık TALAN\n\nÜye\n\nDr. Öğr. Üyesi Mehmet ARICI\n\nÜye\n\nÖğrenci Temsilcisi Ahmet BALCI (BMB)\n\nSosyal Kültürel ve Spor Faaliyetleri Planlama ve Mezuniyet Komisyonu\n\nBaşkan\n\nDr. Öğr. Üyesi Selen YÜCESOY KAHRAMAN\n\nÜye\n\nDr. Öğr. Üyesi Mehmet Umut SALUR\n\nÜye\n\nDr. Öğr. Üyesi Önder POLAT\n\nÜye\n\nÖğrenci Temsilcisi Ahmet BALCI (BMB)\n\nAkademik Teşvik Komisyonu\n\nBaşkan\n\nDoç. Dr. Zülfikar ASLAN\n\nÜye\n\nDoç. Dr. Mustafa KARHAN\n\nÜye\n\nDr. Öğr. Üyesi Önder POLAT\n\nÜye\n\nDr. Öğr. Üyesi Nazmiye ELİGÜZEL\n\nStaj Komisyonu\n\nBaşkan\n\nProf. Dr. Ali AYTEK\n\nÜye\n\nDoç. Dr. Zülfikar ASLAN\n\nÜye\n\nDr. Öğr. Üyesi İbrahim Miraç ELİGÜZEL\n\nÜye\n\nDr. Öğr. Üyesi Yasin İÇEL\n\nÜye\n\nÖğrenci Temsilcisi Ahmet BALCI (BMB)\n\nDisiplin Komisyonu\n\nBaşkan\n\nProf. Dr. Osman BİLGİN\n\nÜye\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nÜ\nye\n\nDoç. Dr. Cemal AKTÜRK\n\nÜye\n\nDr. Öğr. Üyesi Yusuf KARADEDE\n\nBurs Komisyonu\n\nBaşkan\n\nProf. Dr. Ali AYTEK\n\nÜye\n\nDoç. Dr. Tarık TALAN\n\nÜye\n\nDr. Öğr. Üyesi Yusuf KARADEDE\n\nMühendislik ve Doğa Bilimleri Fakültesi Bologna Komisyonu\n\nDr. Öğr. Üyesi\n\nSelma GÜLYEŞİL\n\nBaşkan\n\nDr. Öğr. Üyesi\n\nMehmet ARICI\n\nÜye\n\nDr. Öğr. Üyesi\n\nMuhammet Yasin PAK\n\nÜye\n\nFakülte Sekreteri\n\nErgün ÖZUSLU\n\nÜye\n\nElektrik Elektronik Mühendisliği Bölümü Bologna Komisyonu\n\nDr. Öğr. Üyesi\n\nMehmet ARICI\n\nBaşkan\n\nDr. Öğr. Üyesi\n\nYüksel Tokur BOZKURT\n\nÜye\n\nArş. Gör.\n\nMehmet Fatih BEKÇİOĞULLARI\n\nÜye\n\nBilgisayar Mühendisliği Bölümü Bologna Komisyonu\n\nDr. Öğr. Üyesi\n\nMuhammet Yasin PAK\n\nBaşkan\n\nDr. Öğr. Üyesi\n\nMehmet Sait VURAL\n\nÜye\n\nArş. Gör.\n\nHilal TEKİN\n\nÜye\n\nEndüstri Mühendisliği Bölümü Bologna Komisyonu\n\nDr. Öğr. Üyesi\n\nSelen YÜCESOY KAHRAMAN\n\nBaşkan\n\nDr. Öğr. Üyesi\n\nNazmiye ELİGÜZEL\n\nÜye\n\nDr. Öğr. Üyesi\n\nYusuf KARADEDE\n\nÜye\n\nDr. Öğr. Üyesi\n\nSelma GÜLYEŞİL\n\nÜye\n\nBirim Komisyon tanımlarına ulaşmak için \nTıklayınız...",
+      "char_count": 3394,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 28,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimhiyerarsi.aspx?id=15",
+      "title": "Organizasyon Şeması",
+      "body_content": "zoom_out_map\n\nDosyayı görüntüleyemiyorsanız, \nburadan indirebilirsiniz\n veya dosyayı görüntülemk için \nAdobe PDF Reader\n indirebilirsiniz.",
+      "char_count": 138,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 27,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/30626/gorev-tanimlari",
+      "title": "Görev Tanımları",
+      "body_content": "- Dekan Görev Tanımı için \nTıklayınız...\n\n- Fakülte Sekreterliği Görev Tanımı için \nTıklayınız...\n\n- Öğretim Üyesi Görev Tanımı için \nTıklayınız...\n\n- Fakülte Yönetim Kurulu Görev Tanımı için \nTıklayınız...\n\n- Fakülte Kurulu Görev Tanımı için \nTıklayınız...\n\n- Bölüm Başkanı Görev Tanımı için \nTıklayınız...\n\n- Araştırma Görevlisi Görev Tanımı için \nTıklayınız...\n\n- Birim Kalite Komisyonu Görev Tanımı için \nTıklayınız...\n\n- Bölüm Sekreterliği Görev Tanımı için \nTıklayınız....\n\n- Birim Öğrenci İşleri Görev Tanımı için \nTıklayınız...",
+      "char_count": 535,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 26,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/30935/is-akis-surecleri",
+      "title": "İş Akış Şemaları",
+      "body_content": "PERSONEL İŞLERİ İŞ AKIŞ ŞEMALARI\n\n- Öğretim Üyesi Atanma İş Akış Şeması için \nTıklayınız...\n\n- Araştırma Görevlisi İş Akış Şeması için \nTıklayınız...\n\n- Ders Görevlendirme İş Akış Şeması için \nTıklayınız...\n\nTAHAKKUK İŞLERİ İŞ AKIŞ ŞEMALARI\n\n- Maaş İşlemleri İş Akış Şeması için \nTıklayınız...\n\n- Ekders İş Akış Şeması için \nTıklayınız...\n\n- Geçici Görev Yolluğu İş Akış Şeması için \nTıklayınız...\n\n- Satın Alma İşlemleri İş Akış Şeması için \nTıklayınız...\n\nYÖNETİM İŞ AKIŞ ŞEMALARI\n\n- Fakülte Kurulu İş Akış Şeması için \nTıklayınız...\n\n- Fakülte Yönetim Kurulu İş Akış Şeması için \nTıklayınız...\n\nTAŞINIR YÖNETİM İŞ AKIŞI ŞEMALARI\n\n- Taşınır Mal, Kayıt ve Kontrol İşlemleri İş Akış Şeması için \nTıklayınız...\n\nÖĞRENCİ İŞLERİ İŞ AKIŞ ŞEMALARI\n\n- Ders Kayıt İş Akış Şeması için \nTıklayınız...\n\n- Ders Programı İş Akış Şeması için \nTıklayınız...\n\n- Ders Muafiyet İş Akış Şeması için \nTıklayınız...\n\n- Mazeret Sınavı İş Akış Şeması için \nTıklayınız...\n\n- Mazeretli Kayıt Yenileme İş Akış Şeması için \nTıklayınız...\n\n- Öğrenci Disiplin İşlemleri İş Akış Şeması için \nTıklayınız...\n\n- Öğrenci Kayıt Dondurma İşlemleri İş Akış Şeması için \nTıklayınız...\n\n- Öğrenci Kontenjanları Belirleme İşlemleri İş Akış Şeması için \nTıklayınız...\n\n- Sınavlara İtiraz İşlemleri İş Akış Şeması için \nTıklayınız...",
+      "char_count": 1292,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 25,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/31095/prosesler",
+      "title": "Süreçler",
+      "body_content": "İdari Personel Prosesi için \nTıklayınız...\n\nAkademik Personel Prosesi için \nTıklayınız...",
+      "char_count": 89,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 24,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimrapor.aspx?id=15",
+      "title": "Raporlar",
+      "body_content": "Faaliyet Raporları\r\n\n 2025 Faaliyet Raporu\r\n\n 2024 Faaliyet Raporları\r\n\n 2023 Faaliyet Raporları\r\n\n 2022 Faaliyet Raporları",
+      "char_count": 123,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 23,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/31643/talimatlar",
+      "title": "Talimatlar",
+      "body_content": "Temizlik Talimatları için \nTıklayınız...\n\nYangın Talimatı için \nTıklayınız...",
+      "char_count": 77,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/31642/risk-planlama-ve-degerlendirme",
+      "title": "Risk Planlama ve Değerlendirme",
+      "body_content": "Risk Planlama Ve Değerlendirme için \nTıklayınız...\n\nPest Analizi için \nTıklayınız...",
+      "char_count": 84,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/31128/toplanti-tutanaklari",
+      "title": "Toplantı Tutanakları",
+      "body_content": "01 Eylül 2025 tarihli Birim Kalite Kurulu Toplantı Kararları için \nTıklayınız..\n\n16 Eylül 2025 tarihli Birim Kalite Krulu Toplantı Kararları için \nTıklayınız...\n\n08 Ekim 2025 tarihli Birim Kalite Kurulu Toplantı Kararları için \nTıklayınız...\n\n27.11.2025 tarihli Üniversite içi İç Tetkik Toplantı Kararları için \nTıklayınız...\n\n11.12.2025 tarihli Birim Kalite Kurulu Toplantı Kararları için \nTıklayınız...\n\n28.01.2026 tarihli Birim Kalite Kurulu Toplantı Kararları için \nTıklayınız...",
+      "char_count": 483,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/30627/egitim-ogretim-plani",
+      "title": "Eğitim-öğretim Planı",
+      "body_content": "Bilgisayar Mühendisliği 2020 Eğitim-Öğretim Planı için \nTıklayınız..!\n\nBilgisayar Mühendisliği 2023 Eğitim-Öğretim Planı için \nTıklayınız..!\n\nElektrik Elektronik Mühendisliği 2019 Eğitim-Öğretim Planı için \nTıklayınız..!\n\nElektrik Elektronik Mühendisliği 2023 Eğitim-Öğretim Planı için \nTıklayınız..!\n\nEndüstri Mühendisliği 2019 Eğitim-Öğretim Planı için \nTıklayınız..!\n\nEndüstri Mühendisliği 2022 Eğitim-Öğretim Planı için \nTıklayınız..!\n\nEndüstri Mühendisliği 2023 Eğitim-Öğretim Planı için \nTıklayınız..!",
+      "char_count": 507,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/32940/engelleri-kaldiran-universite",
+      "title": "Engelleri Kaldıran Üniversite",
+      "body_content": "Engelli bireylerin üniversite yaşamına daha rahat ve eşit şekilde katılmasını teşvik etme yönünde adımlar atan Üniversitemiz, Yükseköğretim Kurulu (YÖK) tarafından düzenlenen 2024 Engelsiz Üniversite Bayrakları ve Program Nişanı Töreni'nde en çok bayrak alan üniversiteler arasında 7 bayrak ile ilk 10 üniversite arasında yer almıştır.\n\nFakültemiz Mekânda erişilebilirlik (Turuncu Bayrak) almaya hak kazanan binalar arasındadır.\n\nFakültemizde, engelli bireylerin toplumsal konumlarını güçlendirmek ve daha aktif bir şekilde hayata katılımlarını sağlamak amacıyla fakültemiz içerisindeki tüm yapılar erişilebilir hale getirilmiştir. Fakültemize, Gaziantep Valiliği bünyesinde oluşturulan Erişilebilirlik İzleme ve Denetleme Komisyonu tarafından “\nErişilebilirlik Belgesi” ve “Erişilebilirlik Bayrağı\n” verilmiştir.\n\nBirimimiz Engelli Öğrenciler Koordinatörü olarak Bilgisayar Mühendisliği Bölümü Araştırma görevlisi Şeyma ÇEÇEN ve Koordinatör Yardımcısı olarak Araştırma Görevlisi Sami AÇIK görevlendirilmiştir.\n\nİletişim :\n\nArş. Gör. Şeyma ÇEÇEN  Tel : 0342 909 75 00 / Dahili : 2230  E- posta: seyma.cecen@gibtu.edu.tr\n\nÖArş. Gör. Sami AÇIK Tel : 0342 909 75 00 / Dahili : 2235  E- posta: sami.acik@gibtu.edu.tr\n\nÜniversitemiz Engelli Öğrenci Birimi Koordinatörlüğü'ne ulaşmak için \nTıklayınız...\n\nÜniversitemiz Engelli Öğrenci Birimi Koordinatörlüğü Yönergesi'ne ulaşmak için \nTıklayınız...",
+      "char_count": 1392,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/33029/oz-degerlendirme-raporu",
+      "title": "Öz Değerlendirme Raporu",
+      "body_content": "- 2025 Yılı Öz Değerlendirme Raporu için \nTıklayınız...",
+      "char_count": 55,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/mdbf/icerik/31159/uygulamali-muhendislik-egitimi--intorn-muhendislik",
+      "title": "Uygulamalı Mühendislik Eğitimi (  İntörn Mühendislik  )",
+      "body_content": "Uygulamalı Mühendislik Eğitimi (İntörn Mühendislik) Koordinatörleri\n\nMühendislik Fakültesi Koordinatörü\n\nDoç. Dr. Zülfikar ASLAN\n\nBilgisayar Mühendisliği Bölümü Koordinatörü\n\nDoç. Dr. Tarık TALAN\n\nElektrik Elektronik Mühendisliği Bölümü Koordinatörü\n\nDr. Öğr. Üyesi Yasin İÇEL\n\nEndüstri Mühendisliği Bölümü Koordinatörü\n\nDr. Öğr. Üyesi İbrahim Miraç ELİGÜZEL\n\n- Uygulamalı Mühendislik Eğitimi (İntörn Mühendislik) Başvuru Belgesi için \nTıklayınız...\n\n- Uygulamalı Mühendislik Eğitimi (İntörn Mühendislik) Protokol Belgesi için \nTıklayınız...\n\n- Uygulamalı Mühendislik Eğitimi (İntörn Mühendislik) Sözleşme Belgesi için \nTıklayınız..\n\n- Uygulamalı Mühendislik Eğitimi (İntörn Mühendislik) Yönergesi için \nTıklayınız...\n\n- Uygulamalı Mühendislik Eğitimi (İntörn Mühendislik) Süreç Uygulama Rehberi için \nTıklayınız...\n\n- Uygulamalı Mühendislik Eğitimi (İntörn Mühendislik) Haftalık Çalışma Raporu için \nTıklayınız...",
+      "char_count": 914,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikBirimler.aspx?id=15",
+      "title": "Akademik Birimler",
+      "body_content": "Elektrik - Elektronik Mühendisliği Bölümü\n\nBilgisayar Mühendisliği Bölümü\n\nEndüstri Mühendisliği Bölümü\n\nİnşaat Mühendisliği Bölümü\n\nMühendislik Temel Bilimleri Bölümü",
+      "char_count": 167,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=15",
+      "title": "Akademik Personel",
+      "body_content": "Elektrik - Elektronik Mühendisliği Bölümü\r\n\nProf. Dr. Osman BİLGİN\n\nProf. Dr.\n\nring_volume\n2201\n\nmail\nosman.bilgin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nProf. Dr.\n\nring_volume\n2247\n\nmail\nmehmet.ozcelik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. İpek ATİK\n\nDoç. Dr.\n\nring_volume\n2214\n\nmail\nipek.atik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Mustafa KARHAN\n\nDoç. Dr.\n\nring_volume\n0000\n\nmail\nmustafa.karhan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yüksel TOKUR BOZKURT\n\nDr. Öğr. Üyesi\n\nring_volume\n2237\n\nmail\nyuksel.tokurbozkurt@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet ARICI\n\nDr. Öğr. Üyesi\n\nring_volume\n2229\n\nmail\nmehmet.arici@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Hamdullah ÖZTÜRK\n\nDr. Öğr. Üyesi\n\nring_volume\n2263\n\nmail\nhamdullah.ozturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Önder POLAT\n\nDr. Öğr. Üyesi\n\nring_volume\n2213\n\nmail\nonder.polat@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yasin İÇEL\n\nDr. Öğr. Üyesi\n\nring_volume\n2254\n\nmail\nyasin.icel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Yusuf ZİREKGÜR\n\nArş. Gör.\n\nring_volume\n2264\n\nmail\nyusuf.zirekgur@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Bünyamin DİKİCİ\n\nArş. Gör.\n\nring_volume\n2223\n\nmail\nbunyamin.dikici@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Mehmet Fatih BEKÇİOĞULLARI\n\nArş. Gör.\n\nring_volume\n2217\n\nmail\nmfatih.bekciogullari@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Sami AÇIK\n\nArş. Gör.\n\nring_volume\n2235\n\nmail\nsami.acik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Bilgisayar Mühendisliği Bölümü\r\n\nDoç. Dr. Cemal AKTÜRK\n\nDoç. Dr.\n\nring_volume\n2231\n\nmail\ncemal.akturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Tarık TALAN\n\nDoç. Dr.\n\nring_volume\n2230\n\nmail\ntarik.talan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Zülfikar ASLAN\n\nDoç. Dr.\n\nring_volume\n2225\n\nmail\nzulfikar.aslan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet Sait VURAL\n\nDr. Öğr. Üyesi\n\nring_volume\n2234\n\nmail\nmehmetsait.vural@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet Umut SALUR\n\nDr. Öğr. Üyesi\n\nring_volume\n2222\n\nmail\nmehmetumut.salur@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Muhammet Yasin PAK\n\nDr. Öğr. Üyesi\n\nring_volume\n2221\n\nmail\nmuhammetyasin.pak@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Şeyma ÇEÇEN\n\nArş. Gör.\n\nring_volume\n2236\n\nmail\nseyma.cecen@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Hilal TEKİN\n\nArş. Gör.\n\nring_volume\n0000\n\nmail\nhilal.tekin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Bahadır BOZKURT\n\nArş. Gör.\n\nring_volume\n2265\n\nmail\nbahadir.bozkurt@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Endüstri Mühendisliği Bölümü\r\n\nDr. Öğr. Üyesi Mustafa DEMİRBİLEK\n\nDr. Öğr. Üyesi\n\nring_volume\n2250\n\nmail\nmustafa.demirbilek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nazmiye ELİGÜZEL\n\nDr. Öğr. Üyesi\n\nring_volume\n2232\n\nmail\nnazmiye.eliguzel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yusuf KARADEDE\n\nDr. Öğr. Üyesi\n\nring_volume\n2252\n\nmail\nyusuf.karadede@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Selen YÜCESOY KAHRAMAN\n\nDr. Öğr. Üyesi\n\nring_volume\n2244\n\nmail\nselen.yucesoy@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi İbrahim Miraç ELİGÜZEL\n\nDr. Öğr. Üyesi\n\nring_volume\n2253\n\nmail\nibrahim.eliguzel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Selma GÜLYEŞİL\n\nDr. Öğr. Üyesi\n\nring_volume\n2218\n\nmail\nselma.gulyesil@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Zeynep YÜKSEL\n\nArş. Gör.\n\nring_volume\n2242\n\nmail\nzeynep.yuksel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n İnşaat Mühendisliği Bölümü\r\n\nProf. Dr. Ali AYTEK\n\nProf. Dr.\n\nring_volume\n2203\n\nmail\nali.aytek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Osman HANSU\n\nDr. Öğr. Üyesi\n\nring_volume\n0000\n\nmail\nosman.hansu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mühendislik Temel Bilimleri Bölümü\r\n\nProf. Dr. Metin BEDİR\n\nProf. Dr.\n\nring_volume\n1005\n\nmail\nmetin.bedir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Prof. Dr. Koray KÖKSAL\n\nProf. Dr.\n\nring_volume\n0000\n\nmail\nkoray.koksal@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Serdar ELHATISARI\n\nProf. Dr.\n\nring_volume\n2212\n\nmail\nserdar.elhatisari@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Ali DÖNER\n\nProf. Dr.\n\nring_volume\n2215\n\nmail\nali.doner@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Bayram BALA\n\nDr. Öğr. Üyesi\n\nring_volume\n2216\n\nmail\nbayram.bala@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Bahar BANKOĞLU YOLA\n\nDr. Öğr. Üyesi\n\nring_volume\n0000\n\nmail\nbahar.bankogluyola@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 4295,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=15",
+      "title": "İdari Personel",
+      "body_content": "Fakülte Sekreterliği\r\n\n Ergün ÖZUSLU\n\nFakülte Sekreteri\n\nring_volume\n2206\n\nmail\nergun.ozuslu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Faruk DURMUŞ\n\nŞef\n\nring_volume\n2260\n\nmail\nfaruk.durmus@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Kerim KALKAN\n\nBilgisayar İşletmeni\n\nring_volume\n2261\n\nmail\nkerim.kalkan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Destek Hizmetler",
+      "char_count": 335,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/akademiktakvim.aspx",
+      "title": "Akademik Takvim",
+      "body_content": "Dosyayı görüntüleyemiyorsanız, \nburadan indirebilirsiniz\n veya dosyayı görüntülemk için \nAdobe PDF Reader\n indirebilirsiniz.",
+      "char_count": 124,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimicerik.aspx?id=15&icid=227",
+      "title": "Ders İçerikleri ve Eğitim-öğretim Planları",
+      "body_content": "Ders İçerikleri \n\nElektrik-Elektronik Mühendisliği Ders içeriklerine erişmek için \ntıklayınız.\n\nBilgisayar Mühendisliği Ders içeriklerine erişmek için \ntıklayınız.\n\nEndüstri Mühendisliği Ders içeriklerine erişmek için \ntıklayınız.\n\nDers Müfredatları\n\nElektrik-Elektronik Mühendisliği Ders müfredatlarına erişmek için \ntıklayınız.\n\nBilgisayar Mühendisliği Ders müfredatlarına erişmek için \ntıklayınız.\n\nEndüstri Mühendisliği Ders müfredatlarına erişmek için \ntıklayınız.",
+      "char_count": 469,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimicerik.aspx?id=15&icid=259",
+      "title": "Not Dönüşüm Tablosu",
+      "body_content": "Yök not dönüşüm tablosuna erişmek için \ntıklayınız.",
+      "char_count": 51,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=15",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nİntörn Mühendislik Belgeleri\n\n03.02.2026\n\n2025-2026  Bahar Yarıyılı Yatay Geçiş Başvuru Sonuçları\n\n30.01.2026",
+      "char_count": 134,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=15",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026  Bahar Yarıyılı Yatay Geçiş Başvuru Sonuçları\n\n30.01.2026",
+      "char_count": 92,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=15",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nG\ne\nn\nç\nl\ne\nr\ne\n\nB\ni\nl\ni\nm\n\nY\no\nl\nc\nu\nl\nu\nğ\nu\n:\n\nG\nİ\nB\nT\nÜ\n\nB\ni\nl\ni\nm\n\nS\nö\ny\nl\ne\nş\ni\nl\ne\nr\ni\n\nB\na\nş\nl\nı\ny\no\nr\n\nDuyuru\n\n06.03.2026\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nB\na\nh\na\nr\n\nY\na\nr\nı\ny\nı\nl\nı\n\nY\na\nt\na\ny\n\nG\ne\nç\ni\nş\n\nB\na\nş\nv\nu\nr\nu\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nDuyuru\n\n30.01.2026\n\nK\na\nl\ni\nt\ne\n\nY\nö\nn\ne\nt\ni\nm\n\nS\ni\ns\nt\ne\nm\ni\n\nT\no\np\nl\na\nn\nt\nı\n\nT\nu\nt\na\nn\na\nğ\nı\n\n(\n\n2\n0\n2\n5\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\n)\n\nDuyuru\n\n02.09.2025\n\nI\nS\nA\nS\n\n2\n0\n2\n5\n\nv\ne\n\nS\nI\nA\nP\n\n2\n0\n2\n5\n\nS\ne\nm\np\no\nz\ny\nu\nm\nl\na\nr\nı\n\nG\nİ\nB\nT\nÜ\n\nE\nv\n\nS\na\nh\ni\np\nl\ni\nğ\ni\nn\nd\ne\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\n\nDuyuru\n\n03.07.2025\n\nG\nİ\nB\nT\nÜ\n\nE\nx\np\no\n\n1\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\nn\ni\n\nD\nü\nz\ne\nn\nl\ne\nd\ni\n\nDuyuru\n\n23.05.2025\n\nT\nÜ\nB\nİ\nT\nA\nK\n\n2\n2\n0\n9\n\nA\n\nP\nr\no\nj\ne\nl\ne\nr\ni\nm\ni\nz\n\nK\na\nb\nu\nl\n\nE\nd\ni\nl\nd\ni\n\nHaber\n\n16.04.2025\n\nI\nE\nE\nE\n\nS\nM\nC\n\nS\no\nc\ni\ne\nt\ny\n,\n\nA\nS\nE\nL\nS\nA\nN\n\nv\ne\n\nG\nİ\nB\nT\nÜ\n\nİ\nş\nb\ni\nr\nl\ni\nğ\ni\ny\nl\ne\n\nA\nk\nı\nl\nl\nı\n\nT\ne\nk\nn\no\nl\no\nj\ni\nl\ne\nr\n\nS\ne\nm\np\no\nz\ny\nu\nm\nu\n\nSempozyum\n\n23.01.2025\n\nM\na\nl\ne\nz\ny\na\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nİ\ns\nl\na\nm\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\ns\ni\n\nİ\nş\nb\ni\nr\nl\ni\nğ\ni\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nDuyuru\n\n26.06.2024\n\nM\nü\nh\ne\nn\nd\ni\ns\nl\ni\nk\n\nv\ne\n\nD\no\nğ\na\n\nB\ni\nl\ni\nm\nl\ne\nr\ni\n\nF\na\nk\nü\nl\nt\ne\nm\ni\nz\nd\ne\n\nS\ni\nb\ne\nr\n\nF\na\nr\nk\nı\nn\nd\na\nl\nı\nk\n\nv\ne\n\nG\nü\nv\ne\nn\nl\ni\n\nİ\nn\nt\ne\nr\nn\ne\nt\n\nK\nu\nl\nl\na\nn\nı\nm\nı\n\ni\nl\ne\n\nİ\nl\ng\ni\nl\ni\n\nS\ni\nb\ne\nr\na\ny\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nB\ni\nl\ng\ni\nl\ne\nn\nd\ni\nr\nm\ne\n\nE\nğ\ni\nt\ni\nm\ni\n\nY\na\np\nı\nl\nd\nı\n.\n\nDuyuru\n\n13.05.2024\n\nM\nü\nh\ne\nn\nd\ni\ns\nl\ni\nk\n\nv\ne\n\nD\no\nğ\na\n\nB\ni\nl\ni\nm\nl\ne\nr\ni\n\nF\na\nk\nü\nl\nt\ne\ns\ni\nn\nd\ne\n\nS\ni\nb\ne\nr\n\nF\na\nr\nk\nı\nn\nd\na\nl\nı\nk\n\nv\ne\n\nG\nü\nv\ne\nn\nl\ni\n\nİ\nn\nt\ne\nr\nn\ne\nt\n\nE\nğ\ni\nt\ni\nm\ni\n\nDuyuru\n\n10.05.2024\n\nG\ne\nl\ne\nn\ne\nk\ns\ne\nk\n\nS\np\no\nr\n\nŞ\ne\nn\nl\ni\nğ\ni\n\nDuyuru\n\n02.04.2024\n\n6\n0\n.\n\nK\nü\nt\nü\np\nh\na\nn\ne\n\nH\na\nf\nt\na\ns\nı\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n25.03.2024\n\nT\nÜ\nB\nİ\nT\nA\nK\n\n1\n0\n0\n2\n-\nA\n\nH\nı\nz\nl\nı\n\nD\ne\ns\nt\ne\nk\n\nM\no\nd\nü\nl\nü\n\nP\nr\no\nj\ne\n\nÖ\nn\ne\nr\ni\ns\ni\n\nK\na\nb\nu\nl\n\nE\nd\ni\nl\nd\ni\n\nDuyuru\n\n14.03.2024\n\nF\na\nk\nü\nl\nt\ne\ns\ni\nn\nd\ne\n\nD\no\nç\ne\nn\nt\nl\ni\nğ\ne\n\nY\ne\nn\ni\n\nA\nt\na\nm\na\n\nY\na\np\nı\nl\nd\nı\n.\n\nDuyuru\n\n23.01.2024\n\nG\na\nz\ni\na\nn\nt\ne\np\n\nE\nl\ne\nk\nt\nr\ni\nk\n\nM\nü\nh\ne\nn\nd\ni\ns\nl\ne\nr\ni\n\nO\nd\na\ns\nı\n\nB\na\nş\nk\na\nn\nı\n\nİ\ns\nl\ni\nm\n\nA\nr\nı\nk\na\nn\n,\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\nm\ni\nz\nd\ne\n\nM\nü\nh\ne\nn\nd\ni\ns\nl\ni\nk\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nn\ne\n\nS\ne\nk\nt\nö\nr\n\nB\ni\nl\ng\ni\ns\ni\n\nV\ne\nr\nd\ni\n\nDuyuru\n\n30.10.2023\n\nE\nl\ne\nk\nt\nr\ni\nk\n\nE\nl\ne\nk\nt\nr\no\nn\ni\nk\n\nM\nü\nh\ne\nn\nd\ni\ns\nl\ni\nğ\ni\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\n\nT\ne\nk\nn\ni\nk\n\nG\ne\nz\ni\nd\ne\n\nDuyuru\n\n30.10.2023\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nT\ne\nr\nc\ni\nh\n\nG\nü\nn\nl\ne\nr\ni\n\nB\na\nş\nl\nı\ny\no\nr\n\nDuyuru\n\n25.07.2023\n\nF\na\nk\nü\nl\nt\ne\nm\ni\nz\n\nM\ne\nz\nu\nn\ni\ny\ne\nt\n\nT\nö\nr\ne\nn\ni\n\n0\n6\n.\n0\n7\n.\n2\n0\n2\n3\n\nT\na\nr\ni\nh\ni\nn\nd\ne\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nDuyuru\n\n12.07.2023\n\n2\n0\n2\n2\n\n-\n\n2\n0\n2\n3\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nM\ne\nz\nu\nn\ni\ny\ne\nt\n\nT\nö\nr\ne\nn\ni\nm\ni\nz\ne\n\nD\na\nv\ne\nt\n\nDuyuru\n\n05.07.2023\n\nS\ni\nb\ne\nr\n\nG\nü\nv\ne\nn\nl\ni\nk\n\nL\na\nb\no\nr\na\nt\nu\nv\na\nr\nı\n\nC\nı\ns\nc\no\n\nDuyuru\n\n08.06.2023\n\nF\na\nk\nü\nl\nt\ne\nm\ni\nz\ni\nn\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nA\nl\na\nn\nd\na\n\nG\nö\nr\nü\nn\nü\nr\nl\nü\nğ\nü\n\nA\nr\nt\nı\ny\no\nr\n\nDuyuru\n\n06.06.2023\n\nA\nk\na\nd\ne\nm\ni\nk\n\nv\ne\n\nİ\nd\na\nr\ni\n\nK\na\nd\nr\no\nm\nu\nz\n\nDuyuru\n\n01.06.2023\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nB\na\nh\na\nr\n\nY\na\nr\nı\n\nY\nı\nl\nı\n\nM\ne\nr\nk\ne\nz\ni\n\nY\ne\nr\nl\ne\nş\nt\ni\nr\nm\ne\n\nP\nu\na\nn\nı\n\n(\n\nM\ny\np\n\n)\n\ni\nl\ne\n\nY\na\nt\na\ny\n\nG\ne\nç\ni\nş\n\nB\na\nş\nv\nu\nr\nu\n\nS\no\nn\nu\nc\nu\n\nDuyuru\n\n02.02.2023\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nM\ne\nr\nk\ne\nz\ni\n\nY\ne\nr\nl\ne\nş\nt\ni\nr\nm\ne\n\nv\ne\n\nK\nu\nr\nu\nm\nl\na\nr\n\nA\nr\na\ns\nı\n\nY\na\nt\na\ny\n\nG\ne\nç\ni\nş\n\nB\na\nş\nv\nu\nr\nu\n\nS\no\nn\nu\nc\nu\n\nDuyuru\n\n19.08.2022\n\n KATEGORİLER\r\n\nDuyuru\n\nHaber\n\nSempozyum",
+      "char_count": 3456,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=15",
+      "title": "Formlar",
+      "body_content": "Öğrenci\n\n Ders Muafiyet Değerlendirme Formu\r\n\n Diğer Yükseköğretim Kurumlarının Yaz Okulu Programlarından Ders Alma Başvuru Formu\r\n\n İlişik Kesme Formu\r\n\n Kayıt Dondurma Başvuru Formu\r\n\n Sınav Kağıdına İtiraz ( Maddi Hata ) Formu\r\n\n Mazeret Ders Kayıt Formu\r\n\n Tek Ders Dilekçesi Formu\r\n\n Yatay Geçiş Başvuru Formu\r\n\n Yaz Okulu Başvuru Formu\r\n\n İntörn Mühendislik ( Uygulamalı Mühendislik ) Başvuru Formu\r\n\nPersonel\n\n Görevlendirme Başvuru Formu ( 1 Haftadan Az )\r\n\n Görevlendirme Başvuru Formu ( 1 Haftadan Fazla )\r\n\n Malzeme Talep Formu\r\n\n Mal Bildirim Formu\r\n\n Not Düzeltme Formu\r\n\n Tebliğ Tebellüğ Belgesi\r\n\n Ders Telafi Formu\r\n\n Ders Muafiyet Başvuru Formu\r\n\n Final ( Yarıyıl Sonu ) Sınavı Ücret Formu",
+      "char_count": 706,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=15",
+      "title": "Mevzuatlar",
+      "body_content": "Mevzuatlar\n\n Mevzuat\r\n\n Çift Anadal Programı Yönergesi\r\n\n Yandal Programı Yönergesi\r\n\n Uygulamalı Mühendislik ( İntörn Mühendislik ) Eğitimi\r\n\n Personel İşleri Mevzuatı\r\n\n Mali İşler Mevzuatı\r\n\n Öğrenci İşleri Mevzuatı\r\n\n Engelli Öğrenci Yönergesi",
+      "char_count": 247,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=15",
+      "title": "Galeri",
+      "body_content": "2026\n\n2025\n\n2024\n\n2023\n\n2021\n\nGençlere Bilim Yolculuğu: GİBTÜ Bilim Söyleşileri Başlıyor\n\n2025-2026  Bahar Yarıyılı Yatay Geçiş Başvuru Sonuçları\n\nKalite Yönetim Sistemi Toplantı Tutanağı ( 2025 Güz Dönemi )",
+      "char_count": 207,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=15",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Mühendislik ve Doğa Bilimleri Fakültesi Binası Şahinbey/Gaziantep\n\nmail\nmdbf@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n-\n\nWeb Sorumlumuz\n\nFaruk DURMUŞ\n\nfaruk.durmus@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 357,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=15",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nDr. Öğr. Üyesi Bahar BANKOĞLU YOLA\n\nring_volume\n0000\n\nmail\nbahar.bankogluyola@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Hilal TEKİN\n\nring_volume\n0000\n\nmail\nhilal.tekin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Mustafa KARHAN\n\nring_volume\n0000\n\nmail\nmustafa.karhan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Osman HANSU\n\nring_volume\n0000\n\nmail\nosman.hansu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Prof. Dr. Koray KÖKSAL\n\nring_volume\n0000\n\nmail\nkoray.koksal@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Metin BEDİR\n\nring_volume\n1005\n\nmail\nmetin.bedir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Osman BİLGİN\n\nring_volume\n2201\n\nmail\nosman.bilgin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Ali AYTEK\n\nring_volume\n2203\n\nmail\nali.aytek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Ergün ÖZUSLU\n\nring_volume\n2206\n\nmail\nergun.ozuslu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Serdar ELHATISARI\n\nring_volume\n2212\n\nmail\nserdar.elhatisari@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Önder POLAT\n\nring_volume\n2213\n\nmail\nonder.polat@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. İpek ATİK\n\nring_volume\n2214\n\nmail\nipek.atik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Ali DÖNER\n\nring_volume\n2215\n\nmail\nali.doner@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Bayram BALA\n\nring_volume\n2216\n\nmail\nbayram.bala@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Mehmet Fatih BEKÇİOĞULLARI\n\nring_volume\n2217\n\nmail\nmfatih.bekciogullari@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Selma GÜLYEŞİL\n\nring_volume\n2218\n\nmail\nselma.gulyesil@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Muhammet Yasin PAK\n\nring_volume\n2221\n\nmail\nmuhammetyasin.pak@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet Umut SALUR\n\nring_volume\n2222\n\nmail\nmehmetumut.salur@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Bünyamin DİKİCİ\n\nring_volume\n2223\n\nmail\nbunyamin.dikici@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Zülfikar ASLAN\n\nring_volume\n2225\n\nmail\nzulfikar.aslan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet ARICI\n\nring_volume\n2229\n\nmail\nmehmet.arici@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Tarık TALAN\n\nring_volume\n2230\n\nmail\ntarik.talan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Cemal AKTÜRK\n\nring_volume\n2231\n\nmail\ncemal.akturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nazmiye ELİGÜZEL\n\nring_volume\n2232\n\nmail\nnazmiye.eliguzel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet Sait VURAL\n\nring_volume\n2234\n\nmail\nmehmetsait.vural@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Sami AÇIK\n\nring_volume\n2235\n\nmail\nsami.acik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Şeyma ÇEÇEN\n\nring_volume\n2236\n\nmail\nseyma.cecen@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yüksel TOKUR BOZKURT\n\nring_volume\n2237\n\nmail\nyuksel.tokurbozkurt@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Cemal AKTÜRK\n\nring_volume\n2241\n\nmail\ncemal.akturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Zeynep YÜKSEL\n\nring_volume\n2242\n\nmail\nzeynep.yuksel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Selen YÜCESOY KAHRAMAN\n\nring_volume\n2244\n\nmail\nselen.yucesoy@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nring_volume\n2247\n\nmail\nmehmet.ozcelik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mustafa DEMİRBİLEK\n\nring_volume\n2250\n\nmail\nmustafa.demirbilek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yusuf KARADEDE\n\nring_volume\n2252\n\nmail\nyusuf.karadede@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi İbrahim Miraç ELİGÜZEL\n\nring_volume\n2253\n\nmail\nibrahim.eliguzel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yasin İÇEL\n\nring_volume\n2254\n\nmail\nyasin.icel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Faruk DURMUŞ\n\nring_volume\n2260\n\nmail\nfaruk.durmus@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Kerim KALKAN\n\nring_volume\n2261\n\nmail\nkerim.kalkan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Hamdullah ÖZTÜRK\n\nring_volume\n2263\n\nmail\nhamdullah.ozturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Yusuf ZİREKGÜR\n\nring_volume\n2264\n\nmail\nyusuf.zirekgur@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Bahadır BOZKURT\n\nring_volume\n2265\n\nmail\nbahadir.bozkurt@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 4022,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 35,
+      "total": 35,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 35,
+      "total": 35,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 35,
+      "total": 35,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 35,
+      "total": 35,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 35,
+      "total": 35,
+      "pct": 100
+    },
+    "title": {
+      "count": 35,
+      "total": 35,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 35,
+      "total": 35,
+      "pct": 100
+    },
+    "department": {
+      "count": 35,
+      "total": 35,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 35,
+      "total": 35,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 35,
+      "total": 35,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 18,
+    "yonetim": 1,
+    "tanitim": 3,
+    "rapor": 2,
+    "yonetmelik": 2,
+    "personel": 2,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

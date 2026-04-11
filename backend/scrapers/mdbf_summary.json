@@ -1,0 +1,90 @@
+{
+  "task": "3.2.8.2",
+  "description": "MDBF Harita Gudumlu Deep Scrape",
+  "birimler": [
+    {
+      "department": "Muhendislik ve Doga Bilimleri Fakultesi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\mdbf_muhendislik_ve_doga_bilimleri_fakultesi_output.json",
+      "total_documents": 44,
+      "total_valid": 34,
+      "total_failed": 0,
+      "total_chars": 31974,
+      "pdf_count": 9,
+      "doc_kind_distribution": {
+        "genel": 18,
+        "yonetim": 1,
+        "tanitim": 3,
+        "rapor": 2,
+        "yonetmelik": 2,
+        "personel": 2,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Bilgisayar Muhendisligi Bolumu",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\mdbf_bilgisayar_muhendisligi_bolumu_output.json",
+      "total_documents": 26,
+      "total_valid": 25,
+      "total_failed": 0,
+      "total_chars": 11787,
+      "pdf_count": 0,
+      "doc_kind_distribution": {
+        "genel": 11,
+        "yonetim": 1,
+        "tanitim": 4,
+        "personel": 1,
+        "mufradat": 2,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Elektrik Elektronik Muhendisligi Bolumu",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\mdbf_elektrik_elektronik_muhendisligi_bolumu_output.json",
+      "total_documents": 24,
+      "total_valid": 23,
+      "total_failed": 0,
+      "total_chars": 22766,
+      "pdf_count": 0,
+      "doc_kind_distribution": {
+        "genel": 9,
+        "yonetim": 1,
+        "tanitim": 4,
+        "personel": 1,
+        "mufradat": 2,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Endustri Muhendisligi Bolumu",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\mdbf_endustri_muhendisligi_bolumu_output.json",
+      "total_documents": 24,
+      "total_valid": 23,
+      "total_failed": 0,
+      "total_chars": 10018,
+      "pdf_count": 0,
+      "doc_kind_distribution": {
+        "genel": 11,
+        "yonetim": 1,
+        "tanitim": 4,
+        "personel": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    }
+  ]
+}

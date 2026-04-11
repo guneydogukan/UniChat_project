@@ -1,0 +1,341 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T20:47:08Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\Mühendislik ve Doğa Bilimleri Fakültesi\\Bilgisayar_Mühendisliği_Bölümü.html",
+    "birim_id": 18,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Bilgisayar Muhendisligi Bolumu"
+  },
+  "summary": {
+    "total_blueprint_urls": 25,
+    "total_fetched": 25,
+    "total_valid": 25,
+    "total_failed": 0,
+    "total_skipped": 0,
+    "total_documents": 26,
+    "total_chars": 11787
+  },
+  "discovered_pdfs": [],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=18",
+      "title": "Bilgisayar Mühendisliği Bölümü",
+      "body_content": "GİBTÜ 'de \"yazek 2. Teknoloji Gecesi\" Yoğun Katılımla Gerçekleşti\n\nHavelsan Jet Cube Girişim Hızlandırma Programı Başvuruları Açıldı\n\nDUYURULAR\n\nTÜMÜ\n\n30\n\nMar\n\n 2025-2026 Bahar Dönemi Arasınav Takvimleri\r\n\n18\n\nMar\n\n GİBTÜ 'de \"yazek 2. Teknoloji Gecesi\" Yoğun Katılımla Gerçekleşti\r\n\n17\n\nŞub\n\n Havelsan Jet Cube Girişim Hızlandırma Programı Başvuruları Açıldı\r\n\n11\n\nŞub\n\n 2025-2026 Bahar Dönemi Ders Programları\r\n\n26\n\nOca\n\n 2025-2026 Güz Dönemi Bütünleme Sınav Takvimi\r\n\n21\n\nKas\n\n 2025-2026 Güz Dönemi Mazeret Sınav Takvimi\r\n\n31\n\nEki\n\n 2025-2026 Güz Dönemi Ara Sınav Takvimleri",
+      "char_count": 577,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 26,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=18",
+      "title": "Yönetim",
+      "body_content": "Bölüm Başkanı\r\n\nDoç. Dr. Cemal AKTÜRK\n\nDoç. Dr.\n\nring_volume\n2231\n\nmail\ncemal.akturk@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 115,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 25,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=18",
+      "title": "Hakkımızda",
+      "body_content": "Bölümümüz 2019 yılında kurulmuş olup, 2020 yılından itibaren beri Eğitim-Öğretime devam etmektedir. Tamamen modern bir şekilde tasarlanan binamızda herşey en ince ayrıntısına kadar düşünülmüştür. Bina içerisinde bulunan geniş kapasiteli sınıflarımız ve Elektronik Laboratuvarı, Mikroişlemci Laboratuvarı, PC laboratuarları bulunmaktadır.\n\nBilgisayar Mühendisliği Profilimiz\n\nBilgisayar Mühendisliği Bölümü, sağlam bir temel ve mühendislik bilimleri altyapısı üzerine edindikleri bilgisayar mühendisi ünvanı ile ulusal ya da uluslar arası bilişim kuruluşlarında veya akademik alanda nitelikli iş bulabilen, var olan bir sistemdeki işleyişi çözümleyebilen, problemleri belirleyip özgün ve yaratıcı çözüm yolları bulabilen, yeni bir sistemi tasarlayıp projelendirebilen, iş yaşamında ilerleme sağlayacak bireysel ve takım çalışması yapabilme, kendisini sözlü ve yazılı olarak ifade edebilme, yabancı dilde yazılmış kaynakları izleyebilme becerileri gelişmiş, yeniliklere açık ve özgüven sahibi ve tüm bunların yanı sıra çağımızın sorunlarına duyarlı ve bu duyarlılığın gerektirdiği sorumlulukla mesleğini yerine getiren, etik ilkelere uygun hareket edebilen bilgisayar mühendisleri yetiştirmek üzere kuram ve uygulamayı bağdaştırarak her iki açıdan da en iyi şekilde öğrencilerimizi eğitmeyi hedefleyen bir eğitim planı yürütmektedir. Program, hem temel mühendislik bilimleri hem de bilgisayar mühendisliği ile ilgili zorunlu dersleri içermektedir. Ayrıca, eğitim planında zorunlu derslerin yanı sıra öğrencilerin kendi tercihlerine göre seçebilecekleri seçimlik dersler de bulunmaktadır. Böylece Bilgisayar Mühendisliği Bölümü, ulusal ve uluslar arası ölçekte, Bilgisayar Mühendisliği mesleğinin her alanında hizmet verebilecek bilgi ve becerilerle donatılmış, alanındaki gelişmeleri takip ederek kendini geliştiren, takım çalışmasına yatkın, sorgulayıcı, etik değerlere önem veren, çağdaş mühendisler yetiştirmektedir. \n\nProgram Eğitim Amaçları\n\nUlusal ve uluslararası üniversite ve araştırma kurumlarında çalışabilen, lisansüstü çalışmalar yapabilen, araştırmacı mezunlar yetiştirmek.\n\nBilgisayar yazılımı/donanımı alanında faaliyet gösteren ulusal ve uluslararası kuruluşlarda başarılı kariyer sergileyebilecek, lider pozisyonlarına ulaşabilecek bilgisayar mühendisleri yetiştirmek.\n\nEdindikleri bilgi ve becerilerle, mesleki ve bilimsel projeler üretebilen ve bu projelerde aktif rol alabilen mühendisler yetiştirmek.\n\nGüncel gelişmeleri takip eden, kritik-analitik düşünme yetisine sahip, etik bilinci benimsemiş, iletişim gücü yüksek mühendisler yetiştirerek alanında nitelikli iş bulabilmelerini sağlamak.",
+      "char_count": 2610,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 24,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimmisyon.aspx?id=18",
+      "title": "Misyon",
+      "body_content": "Konularında uzmanlaşmış zengin bir akademik kadroya sahip, mühendislik alanında akredite olma yolunda ilerleyen ve sistematik yöntemlerle mühendislik problemlerini çözebilecek kapasitede, hızla gelişen teknolojileri uygulayabilen ve kendini güncelleyebilen, farklı bölümlerle disiplinlerarası takım çalışmasına yatkın, karşılaştığı problemlere bilimsel, akademik ve analitik düşünce yaklaşımıyla çözüm getiren, ülkesine, milletine faydalı çalışmalar yapacak, topluma ve etik değerlere saygılı, lider nitelikli, girişimci, çağdaş, üretken ve yönetici niteliklerine sahip Bilgisayar Mühendisi yetiştirmektir.",
+      "char_count": 606,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 23,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimvizyon.aspx?id=18",
+      "title": "Vizyon",
+      "body_content": "Güncel teknolojilerle gerek Gaziantep ve Güneydoğu Anadolu bölgesinin gerekse de ülkemizin ihtiyaçlarına yönelik ulusal ve uluslararası projeler gerçekleştirmek. Teknolojik gelişmelerin yakından izleyen ve uygulamalara dönüştürebilen merkezleriyle hem akademisyenler hem de öğrenciler açısından odak merkezi olmak.\n\nZengin akademik/idari kadrosuyla, yeni teknolojileri geliştiren ve uygulayabilen, bilimsel araştırma ve projeleri üreten, arge ile teknoloji platformlardaki şirket ve kamuda görev alabilen, alanında rekabet edebilen bilgisayar mühendisleri yetiştiren, gerek bölgesel gerekse de ülke sanayisine araştırma projeleriyle danışmanlık yaparak destek olan bir bölüm olmaktır.",
+      "char_count": 684,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=18",
+      "title": "Tarihçe",
+      "body_content": "8 Mayıs 2018 tarih ve 30425 sayılı Resmi Gazetede yayınlanan Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 09/05/2018 olan 7141 nolu Kanunla, 2809 sayılı kanuna yapılan ek maddeyle önce Gaziantep Bilim ve Teknoloji Üniversitesi adıyla, daha sonra ise 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan Vergi Kanunları ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 17/01/2019 olan 7161 nolu Kanunun 14.maddesi ile 2809 sayılı Kanunun ek 178.maddesi başlığının birinci fıkrasında yer alan “Gaziantep Bilim ve Teknoloji Üniversitesi” ibareleri, “Gaziantep İslam Bilim ve Teknoloji Üniversitesi” olarak değiştirilmesi ile kurulmuştur.\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi Bilgisayar Mühendisliği Bölümü üniversitemizde eğitim-öğretim veren 5 mühendislik dallarından biridir ve 2019 yılında kurulmuş olup, 2020 yılından itibaren beri Eğitim-Öğretime devam etmektedir. Tamamen modern bir şekilde tasarlanan binamızda herşey en ince ayrıntısına kadar düşünülmüştür. Bina içerisinde bulunan amfi sınıflarımız ve Elektronik Laboratuvarı, Mikroişlemci Laboratuvarı, PC Laboratuarları bulunmaktadır.",
+      "char_count": 1219,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/bmb/icerik/13338/bilgisayar-muhendisligi-bolum-tanitim-kataloglari",
+      "title": "Bilgisayar Mühendisliği Bölüm Tanıtım Katalogları",
+      "body_content": "Bilgisayar Mühendisliği Bölüm Tanıtım Katalogları\n\nBölüm Tanıtım Katalog (Türkçe)\n\nBölüm Tanıtım Katalog (İngilizce)",
+      "char_count": 116,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimakademikpersonel.aspx?id=18",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nDoç. Dr. Cemal AKTÜRK\n\nDoç. Dr.\n\nring_volume\n2231\n\nmail\ncemal.akturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Tarık TALAN\n\nDoç. Dr.\n\nring_volume\n2249\n\nmail\ntarik.talan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Zülfikar ASLAN\n\nDoç. Dr.\n\nring_volume\n2225\n\nmail\nzulfikar.aslan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet Sait VURAL\n\nDr. Öğr. Üyesi\n\nring_volume\n2234\n\nmail\nmehmetsait.vural@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet Umut SALUR\n\nDr. Öğr. Üyesi\n\nring_volume\n2222\n\nmail\nmehmetumut.salur@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Muhammet Yasin PAK\n\nDr. Öğr. Üyesi\n\nring_volume\n2221\n\nmail\nmuhammetyasin.pak@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Şeyma ÇEÇEN\n\nArş. Gör.\n\nring_volume\n2230\n\nmail\nseyma.cecen@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Bahadır BOZKURT\n\nArş. Gör.\n\nring_volume\n2265\n\nmail\nbahadir.bozkurt@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Hilal TEKİN\n\nArş. Gör.\n\nring_volume\n2245\n\nmail\nhilal.tekin@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 993,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/bmb/icerik/2660/bilgisayar-muhendisligi-ders-listesi-ve-icerikleri",
+      "title": "Ders Müfredatı",
+      "body_content": "LİSANS\n\n2020 Müfredatına erişmek için \ntıklayınız.\n\n2023 Müfredatına erişmek için \ntıklayınız.\n\nYÜKSEK LİSANS\n\n2024 Müfredatına erişmek için \ntıklayınız.",
+      "char_count": 153,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/bmb/icerik/24932/ders-icerikleri",
+      "title": "Ders İçerikleri",
+      "body_content": "2020 Ders İçerikleri\n\n2023 Ders İçerikleri",
+      "char_count": 42,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/bmb/icerik/24941/bologna",
+      "title": "Bologna",
+      "body_content": "Detaylı Ders içeriklerinin olduğu Bologna'ya erişmek için \ntıklayınız.",
+      "char_count": 70,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/bmb/icerik/21798/laboratuvarlar",
+      "title": "Laboratuvarlar",
+      "body_content": "Siber Güvenlik Laboratuvarı\n\nBilgisayar Laboratuvarı",
+      "char_count": 52,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/bmb/icerik/31086/danismanlik",
+      "title": "Danışmanlık",
+      "body_content": "2025-2026 EĞİTİM-ÖĞRETİM YILI ÖĞRENCİ DANIŞMANLIKLARI\n\nSınıf\n\nDanışman Öğretim Üyesi\n\n1.sınıf\n\nDoç.Dr. Zülfikar ASLAN\n\n2.sınıf\n\nDoç.Dr.Cemal AKTÜRK\n\n3.sınıf\n\nDr. Öğr. Üyesi Mehmet Umut SALUR\n\n4.sınıf\n\nDr. Öğr. Üyesi Muhammet Yasin PAK\n\n2025-2026 EĞİTİM-ÖĞRETİM YILI ÖĞRENCİ DANIŞMANLIK SAATLERİ\n\nÖğretim Üyesi\n\nDanışmanlık Günü ve Saati\n\nDoç.Dr.Cemal AKTÜRK\n\nPazartesi 13:00-14:00\n\nDoç.Dr. Tarık TALAN\n\nSalı 10:00-11:00\n\nDoç.Dr. Zülfikar ASLAN\n\nPerşembe 12:00-13:00\n\nDr.Öğr. Üyesi Mehmet Sait VURAL\n\nCuma 14:00-15:00\n\nDr. Öğr. Üyesi Muhammet Yasin PAK\n\nSalı 13:00-14:00\n\nDr. Öğr. Üyesi Mehmet Umut SALUR\n\nSalı 13:00-14:00",
+      "char_count": 621,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/bmb/icerik/31081/komisyonlar",
+      "title": "Komisyonlar",
+      "body_content": "AKREDİTASYON KOMİSYONU\n\nKALİTE KOMİSYONU",
+      "char_count": 40,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/bmb/icerik/31084/ogrenim-ciktilari",
+      "title": "Öğrenim Çıktıları",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\nÖğrenim Çıktıları\n\ndate_range\nYayın Tarihi : \n18.09.2025 17:55\n\npeople\nOkunma : \n87\n\nBilgisayar Mühendisliği Bölümü\n\nÖğrenim Çıktıları\n\nok",
+      "char_count": 171,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/bmb/icerik/31085/is-akislari",
+      "title": "İş Akışları",
+      "body_content": "Lisans Ders Kayıt İş Akışı\n\nYatay Geçiş İş Akış Şeması\n\nErasmus+ Öğrenim Hareketliliği İş Akış Şeması\n\nStaj İş Akış Şeması",
+      "char_count": 122,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/bmb/icerik/26565/sinav-kurallari",
+      "title": "Sınav Kuralları",
+      "body_content": "Sınav Kurallarına erişmek için\n\ntıklayınız.",
+      "char_count": 43,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=18",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Bahar Dönemi Arasınav Takvimleri\n\n30.03.2026\n\nGİBTÜ 'de \"yazek 2. Teknoloji Gecesi\" Yoğun Katılımla Gerçekleşti\n\n18.03.2026\n\nHavelsan Jet Cube Girişim Hızlandırma Programı Başvuruları Açıldı\n\n17.02.2026\n\n2025-2026 Bahar Dönemi Ders Programları\n\n11.02.2026\n\n2025-2026 Güz Dönemi Bütünleme Sınav Takvimi\n\n26.01.2026\n\n2025-2026 Güz Dönemi Mazeret Sınav Takvimi\n\n21.11.2025\n\n2025-2026 Güz Dönemi Ara Sınav Takvimleri\n\n31.10.2025",
+      "char_count": 459,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=18",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=18",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\nd\ne\nn\n\nB\nü\ny\nü\nk\n\nB\na\nş\na\nr\nı\n:\n\nD\no\nç\n.\n\nD\nr\n.\n\nT\na\nr\nı\nk\n\nT\na\nl\na\nn\n\nD\nü\nn\ny\na\nn\nı\nn\n\nE\nN\n\nE\nt\nk\ni\nl\ni\n\nB\ni\nl\ni\nm\n\nİ\nn\ns\na\nn\nl\na\nr\nı\n\nL\ni\ns\nt\ne\ns\ni\nn\nd\ne\n\nDuyuru\n\n23.09.2025\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\nü\nn\n\nT\nÜ\nB\nİ\nT\nA\nK\n\n2\n2\n0\n9\n-\nA\n\n'\nd\na\nk\ni\n\nB\na\nş\na\nr\nı\n\nG\ne\nl\ne\nn\ne\nğ\ni\n\nD\ne\nv\na\nm\n\nE\nd\ni\ny\no\nr\n\nDuyuru\n\n11.04.2025\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\nü\nn\n\nT\nÜ\nB\nİ\nT\nA\nK\n\nB\na\nş\na\nr\nı\ns\nı\n\nDuyuru\n\n27.03.2024\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\n\nY\nü\nk\ns\ne\nk\n\nL\ni\ns\na\nn\ns\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nA\nl\nı\nm\nı\nn\na\n\nB\na\nş\nl\nı\ny\no\nr\n\nDuyuru\n\n04.03.2024\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\n\"\n\nY\na\np\na\ny\n\nZ\ne\nk\na\n\n\"\n\nK\no\nn\nf\ne\nr\na\nn\ns\nı\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nDuyuru\n\n06.01.2024\n\nG\nİ\nB\nT\nÜ\n\nY\na\np\na\ny\n\nZ\ne\nk\na\n\nK\nu\nl\nü\nb\nü\n\n\"\n\nN\ne\nd\ni\nr\n\nB\nu\n\nY\na\np\na\ny\n\nZ\ne\nk\na\n?\n\"\n\nK\no\nn\nu\nl\nu\n\nK\no\nn\nf\ne\nr\na\nn\ns\n\nDuyuru\n\n26.12.2023\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\ni\nn\n\nT\nÜ\nB\nİ\nT\nA\nK\n\nP\nr\no\nj\ne\n\nB\na\nş\na\nr\nı\ns\nı\n\nDuyuru\n\n06.10.2023\n\n KATEGORİLER\r\n\nDuyuru",
+      "char_count": 935,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=18",
+      "title": "Formlar",
+      "body_content": "Öğrenci\n\n İlişik Kesme Formu\r\n\n Kayıt Dondurma Talep Formu\r\n\n Mazeret Sınavı Başvuru Formu\r\n\n Muafiyet Talep Formu\r\n\n Sınav Kağıdına İtiraz ( Maddi Hata ) Formu\r\n\n Tek Ders Dilekçe Formu\r\n\n Yatay Geçiş Başvuru Formu\r\n\n Yaz Okulu Başvuru Formu\r\n\nStaj Faaliyetleri\n\n Staj İş Akışı\r\n\n Staj Yönergesi\r\n\n Staj Ön Başvuru Formu\r\n\n İş Yeri Staj Sözleşmesi\r\n\n Staj Başvuru Formu\r\n\n Aile Sağlık Yardımı Sorgulama Belgesi\r\n\n Öğrenci Staj Güvenliği Beyannamesi\r\n\n Staj Dosyası\r\n\n Staj Yoklama Çizelgesi\r\n\n Öğrenci Staj Sicil Fişi\r\n\n İşyeri Temsilcisinin Stajyer Öğrenciyi Değerlendirme Anketi\r\n\n Stajyer Öğrencinin İşyerini Değerlendirme Anketi",
+      "char_count": 633,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=18",
+      "title": "Galeri",
+      "body_content": "2026\n\n2025\n\n2024\n\nBölümümüzden Büyük Başarı: Doç. Dr. Tarık Talan Dünyanın EN Etkili Bilim İnsanları Listesinde",
+      "char_count": 111,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=18",
+      "title": "Faydalı Linkler",
+      "body_content": "Mühendisler Odası\r\n\n Gaziantep İslam Bilim ve Teknoloji Üniversitesi Mühendislik ve Doğa Bilimleri Fakültesi\r\n\n Türkiye Bilişim Derneği",
+      "char_count": 135,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=18",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nbmb@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nArş. Gör. Şeyma ÇEÇEN\n\nseyma.cecen@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 335,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=18",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nDr. Öğr. Üyesi Muhammet Yasin PAK\n\nring_volume\n2221\n\nmail\nmuhammetyasin.pak@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet Umut SALUR\n\nring_volume\n2222\n\nmail\nmehmetumut.salur@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Zülfikar ASLAN\n\nring_volume\n2225\n\nmail\nzulfikar.aslan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Şeyma ÇEÇEN\n\nring_volume\n2230\n\nmail\nseyma.cecen@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Cemal AKTÜRK\n\nring_volume\n2231\n\nmail\ncemal.akturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet Sait VURAL\n\nring_volume\n2234\n\nmail\nmehmetsait.vural@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Hilal TEKİN\n\nring_volume\n2245\n\nmail\nhilal.tekin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Tarık TALAN\n\nring_volume\n2249\n\nmail\ntarik.talan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Bahadır BOZKURT\n\nring_volume\n2265\n\nmail\nbahadir.bozkurt@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 923,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 26,
+      "total": 26,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 26,
+      "total": 26,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 26,
+      "total": 26,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 26,
+      "total": 26,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 26,
+      "total": 26,
+      "pct": 100
+    },
+    "title": {
+      "count": 26,
+      "total": 26,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 26,
+      "total": 26,
+      "pct": 100
+    },
+    "department": {
+      "count": 26,
+      "total": 26,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 26,
+      "total": 26,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 26,
+      "total": 26,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 11,
+    "yonetim": 1,
+    "tanitim": 4,
+    "personel": 1,
+    "mufradat": 2,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

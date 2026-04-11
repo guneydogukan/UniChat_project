@@ -1,0 +1,320 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T20:48:50Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\Mühendislik ve Doğa Bilimleri Fakültesi\\Endüstri_Mühendisliği_Bölümü.html",
+    "birim_id": 19,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Endustri Muhendisligi Bolumu"
+  },
+  "summary": {
+    "total_blueprint_urls": 23,
+    "total_fetched": 23,
+    "total_valid": 23,
+    "total_failed": 0,
+    "total_skipped": 0,
+    "total_documents": 24,
+    "total_chars": 10018
+  },
+  "discovered_pdfs": [],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=19",
+      "title": "Endüstri Mühendisliği Bölümü",
+      "body_content": "Endüstri Mühendisliği Bölümü 'nde Bologna Toplantısı Gerçekleştirildi\n\nEndüstri Mühendisliği Bölümü 'nde Bologna Toplantısı Gerçekleştirildi\n\nHABERLER\n\nTÜMÜ\n\n27.03.2026 15:10\n\nEndüstri Mühendisliği Bölümü 'nde Bologna Toplantısı Gerçekleştirildi\n\nEndüstri Mühendisliği Bölümü'nde Bologna Toplantısı Gerçekleştirildi\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n07\n\nNis\n\n Endüstri Mühendisi Stajyeri İlanı\r\n\n27\n\nMar\n\n 2025-2026 Bahar Dönemi Ara Sınav Takvimi ( 2025-2026 Spring Semester Midterm Exam Timetable )\r\n\n09\n\nŞub\n\n 2025-2026 Bahar Dönemi Ders Programı\r\n\n27\n\nOca\n\n 2025-2026 Güz Dönemi Bütünleme Sınav Takvimi Güncellendi ( 2025-2026 Fall Semester Make-up Exam Timetable-updated )\r\n\n30\n\nEki\n\n 2025-2026 Güz Dönemi Ara Sınav Takvimi ( 2025-2026 Fall Semester Midterm Exam Timetable )",
+      "char_count": 778,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 24,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=19",
+      "title": "Yönetim",
+      "body_content": "Yönetim\r\n\nDr. Öğr. Üyesi Yusuf KARADEDE\n\nBaşkan\n\nring_volume\n2252\n\nmail\nyusuf.karadede@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 117,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 23,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimhakkimizda.aspx?id=19",
+      "title": "Hakkımızda",
+      "body_content": "Endüstri mühendisliği; insan, makine, bilişim ve enerjiden oluşan bütünleşik sistemlerin en etkili ve verimli şekilde tasarımı, kurulması ve yönetilmesi ile ilgilenen bilim dalıdır. Dünyanın en eski 5 mühendislik dallarından biri endüstri mühendisliğidir.\n\nEndüstri mühendisleri ürün veya hizmet üreten her türlü özel, kamu veya vakıf kuruluşlarında çok farklı pozisyonlarda sorumluluklar almaktadırlar. Planlama, üretim, bilgi işlem, kalite yönetim, bütçe planlama,  insan kaynakları, stratejik planlama, pazarlama ve satış gibi departmanlarda çalışabilmektedirler.  Örneğin planlama departmanında çalışan bir endüstri mühendisi üretim departmanı ile koordineli çalışarak gerekli üretimin planlanması, bu plana bağlı olarak gerekli hammaddelerin belirlenmesi ve doğru miktarlarda tedarik edilmesi, depo yönetimi gibi sorumluluklar alabilmektedir. İnsan kaynakları bölümünde çalışan bir endüstri mühendisi gerekli iş gücünün planlaması,  yetkinlikleri sağlayan personellerin işe alınması, mevcut personel için gerekli olan eğitimlerin planlanması gibi sorumluluklar almaktadırlar. Kısacası üretim, hizmet, makine ve insan olan her türlü kuruluşta endüstri mühendislerine önemli sorumluluklar düşmektedir.\n\nBir endüstri mühendisinin bulunduğu çalışma ortamındaki en temel sorumlulukları şu şekilde sıralanabilir;\n\nÜretim ve hizmet verimliliğini artırmak\n\nMaliyetleri azaltarak karlılığı artırmak\n\nOluşan problemlere bilimin ışığında kalıcı çözümler üretmek\n\nHer bir proses için geliştirici faaliyetler planlamak\n\nÜretilen ürün veya sunulan hizmetin kalitesini artırmak\n\nBir endüstri mühendisinin başarılı olmasının ilk ve en önemli koşulu araştırmayı, okumayı ve öğrenmeyi sevmesidir. Bu konuda azim ve gayret göstermek başarıyı devamlı kılacaktır.",
+      "char_count": 1747,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimmisyon.aspx?id=19",
+      "title": "Misyon",
+      "body_content": "Bilim ve teknolojideki gelişmeleri yakından takip eden, çalıştığı her ortamda karşılaştığı sorunlara akılcı bir yaklaşımla çözüm üreten, “Her zaman daha iyisi yapılabilir” anlayışıyla sorumluluk aldığı tüm görevlerde daha iyi çıktılar üreten, dünyaya, insanlığa ve toplumumuza faydalı endüstri mühendisleri yetiştirmek amacıyla kurulmuştur.",
+      "char_count": 340,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=19",
+      "title": "Tarihçe",
+      "body_content": "8 Mayıs 2018 tarih ve 30425 sayılı Resmi Gazetede yayınlanan Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 09/05/2018 olan 7141 nolu Kanunla, 2809 sayılı kanuna yapılan ek maddeyle önce Gaziantep Bilim ve Teknoloji Üniversitesi adıyla, daha sonra ise 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan Vergi Kanunları ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 17/01/2019 olan 7161 nolu Kanunun 14.maddesi ile 2809 sayılı Kanunun ek 178.maddesi başlığının birinci fıkrasında yer alan “Gaziantep Bilim ve Teknoloji Üniversitesi” ibareleri, “Gaziantep İslam Bilim ve Teknoloji Üniversitesi” olarak değiştirilmesi ile kurulmuştur. Rektör  Gaziantep İslam Bilim ve Teknoloji Üniversitesi Rektörlüğüne, 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan atama kararı ile 2547 sayılı Yükseköğretim Kanununun 13 maddesi ile 3 sayılı Cumhurbaşkanlığı Kararnamesinin 2., 3., ve 7. Maddeleri gereği Prof. Dr. Nihat HATİPOĞLU atanmıştır.\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi Endüstri Mühendisliği Bölümü üniversitemizde eğitim-öğretim veren 5 mühendislik dallarından biridir ve 2020-2021 Sonbahar Dönemi'nde eğitim öğretime başlamıştır. \n\nEndüstri Mühendisliği bölümü olarak temel amacımız, bu bölümde eğitim almak isteyen öğrencilerimizi en güncel bilgiler ile yetiştirerek onların iş hayatında karşılaştıkları problemlere bilimin ışığında akılcı ve analitik çözümler üretmelerini ve ürettikleri her işe değer katmalarını sağlamaktır.",
+      "char_count": 1568,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=19",
+      "title": "Vizyon",
+      "body_content": "Sorgulayan, araştıran, değer üreten, bilimsel gelişmeleri yakından takip eden endüstri mühendisleri yetiştirmek ve bilime katkı sağlayan uluslararası standartlarda bir birim olmak.",
+      "char_count": 180,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=19",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nDr. Öğr. Üyesi Yusuf KARADEDE\n\nDr. Öğr. Üyesi\n\nring_volume\n2252\n\nmail\nyusuf.karadede@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi İbrahim Miraç ELİGÜZEL\n\nDr. Öğr. Üyesi\n\nring_volume\n2253\n\nmail\nibrahim.eliguzel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mustafa DEMİRBİLEK\n\nDr. Öğr. Üyesi\n\nring_volume\n2250\n\nmail\nmustafa.demirbilek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nazmiye ELİGÜZEL\n\nDr. Öğr. Üyesi\n\nring_volume\n2232\n\nmail\nnazmiye.eliguzel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Selen YÜCESOY KAHRAMAN\n\nDr. Öğr. Üyesi\n\nring_volume\n2244\n\nmail\nselen.yucesoy@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Selma GÜLYEŞİL\n\nDr. Öğr. Üyesi\n\nring_volume\n2218\n\nmail\nselma.gulyesil@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Zeynep YÜKSEL\n\nArş. Gör.\n\nring_volume\n2242\n\nmail\nzeynep.yuksel@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 845,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/emb/icerik/31188/mufredatlar",
+      "title": "Müfredatlar",
+      "body_content": "Endüstri Mühendisliği Bölümü 2024 müfredatı için \ntıklayınız.\n\nEndüstri Mühendisliği Bölümü 2020-2022-2023 müfredatları için \ntıklayınız.",
+      "char_count": 137,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/emb/icerik/26500/2024-2025-bahar-donemi-staj-islemleri",
+      "title": "2024-2025 Bahar Dönemi Staj İşlemleri",
+      "body_content": "Staj süreci ile ilgili üniversitemizin yönetmeliği ve staj kılavuzu, staja başlamadan önce ve staj tamamlandıktan sonra teslim edilmesi gereken evraklar ile ilgili bilgiler aşağıda mevcuttur. \n\nStaj Duyurusu\n\nStaj Yönergesi\n\nStaj Akış Şeması\n\nEvraklar:\n\nStaj Başvuru Formu\n\nİş Yeri Staj Sözleşmesi\n\nAile Sağlık Yardımı Sorgulama Belgesi\n\nÖğrenci Staj Sicil Fişi\n\nYoklama Çizelgesi\n\nİş Yeri Temsilcisinin Stajyer Öğrenciyi Değerlendirme Anketi\n\nStajyer Öğrencinin İş Yeri Değerlendirme Anketi",
+      "char_count": 491,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/emb/icerik/13310/endustri-muhendisligi-bologna-ders-formlari",
+      "title": "Endüstri Mühendisliği Bologna Ders Formları",
+      "body_content": "Endüstri Mühendisliği Bologna Ders Formları;\n\nTürkçe Formlar için \ntıklayınız.\n\nİngilizce Formlar için \ntıklayınız.",
+      "char_count": 115,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/emb/icerik/13322/endustri-muhendisligi-bolum-tanitim-katalogu-kurum-katalog",
+      "title": "Endüstri Mühendisliği Bölüm Tanıtım Kataloğu ( Kurum Katalog )",
+      "body_content": "Endüstri Mühendisliği bölüm tanıtım kataloglarımız yayınlanmıştır.\n\nTürkçe Katalog\n\nİngilizce Katalog",
+      "char_count": 101,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/emb/icerik/31065/danismanlik",
+      "title": "Danışmanlık",
+      "body_content": "Dr. Öğr. Üyesi Mustafa DEMİRBİLEK Danışmanlık Listesi\n\nDr. Öğr. Üyesi Nazmiye ELİGÜZEL Danışmanlık Listesi\n\nDr. Öğr. Üyesi Selen YÜCESOY KAHRAMAN Danışmanlık Listesi\n\nDr. Öğr. Üyesi Yusuf KARADEDE Danışmanlık Listesi\n\nDanışmanlık Saatleri\n\nÖğretim Üyesi \n\nDanışmanlık Saatleri\n\nDr. Öğr. Üyesi Mustafa DEMİRBİLEK\n\nÇarşamba 15:00-16:30\n\nDr. Öğr. Üyesi İbrahim Miraç ELİGÜZEL\n\nÇarşamba 13:30-15:00\n\nDr. Öğr. Üyesi Nazmiye ELİGÜZEL\n\nÇarşamba 09:30-11:30\n\nDr. Öğr. Üyesi Selen YÜCESOY KAHRAMAN\n\nÇarşamba 09:30-11:30\n\nDr. Öğr. Üyesi Yusuf KARADEDE\n\nSalı 10:00-12:00\n\nİntörn Mühendislik Uygulaması Endüstri Mühendisliği Bölüm Koordinatörü\n\nDr. Öğr. Üyesi İbrahim Miraç ELİGÜZEL",
+      "char_count": 670,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/emb/icerik/30927/komisyonlar",
+      "title": "Komisyonlar",
+      "body_content": "KOMİSYONLAR\n\nEĞİTİM-ÖĞRETİM KOMİSYONU\n\nMUAFİYET VE İNTİBAK KOMİSYONU\n\nÇİFT ANADAL VE YANDAL KOMİSYONU\n\nİŞ YERİ EĞİTİM KOMİSYONU\n\nKALİTE KOMİSYONU\n\nMEZUNİYET, NOT TETKİK VE MEZUNLARI İZLENME VE DEĞERLENDİRME KOMİSYONU\n\nAKREDİTASYON VE BOLOGNA EŞGÜDÜM (ECTS-AKTS) KOMİSYONU\n\nDEĞİŞİM PROGRAMLARI KOMİSYONU\n\nBÖLÜM İNTERNET SİTESİ DÜZENLEME KOMİSYONU",
+      "char_count": 345,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/emb/icerik/30931/endustri-muhendisligi-ogrenim-ciktilari",
+      "title": "Endüstri Mühendisliği Öğrenim Çıktıları",
+      "body_content": "Endüstri Mühendisliği Öğrenim Çıktıları",
+      "char_count": 39,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/emb/icerik/31053/endustri-muhendisligi-bolumu-is-akis-semalari",
+      "title": "Endüstri Mühendisliği Bölümü İş Akış Şemaları",
+      "body_content": "Lisans Ders Kayıt İş Akış Şeması\n\nYatay Geçiş İş Akış Şeması\n\nErasmus+ Öğrenim Hareketliliği İş Akış Şeması\n\nStaj İş Akış Şeması",
+      "char_count": 128,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=19",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nEndüstri Mühendisi Stajyeri İlanı\n\n07.04.2026\n\n2025-2026 Bahar Dönemi Ara Sınav Takvimi ( 2025-2026 Spring Semester Midterm Exam Timetable )\n\n27.03.2026\n\n2025-2026 Bahar Dönemi Ders Programı\n\n09.02.2026\n\n2025-2026 Güz Dönemi Bütünleme Sınav Takvimi Güncellendi ( 2025-2026 Fall Semester Make-up Exam Timetable-updated )\n\n27.01.2026\n\n2025-2026 Güz Dönemi Ara Sınav Takvimi ( 2025-2026 Fall Semester Midterm Exam Timetable )\n\n30.10.2025",
+      "char_count": 459,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=19",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nEndüstri Mühendisliği Bölümü 'nde Bologna Toplantısı Gerçekleştirildi\n\n27.03.2026",
+      "char_count": 106,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=19",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\n KATEGORİLER\r\n\nDuyuru\n\nTanıtım",
+      "char_count": 73,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=19",
+      "title": "Formlar",
+      "body_content": "Formlar\n\n Ders Muafiyet Değerlendirme Formu\r\n\n Diğer Yükseköğretim Kurumlarının Yaz Okulu Programlarından Ders Alma Başvuru Formu\r\n\n İlişik Kesme Formu\r\n\n Kayıt Dondurma Başvuru Formu\r\n\n Mazeret Ders Kayıt Formu\r\n\n Sınav Kağıdına İtiraz ( Maddi Hata ) Formu\r\n\n Tek Ders Dilekçesi Formu\r\n\n Yatay Geçiş Başvuru Formu\r\n\n Yaz Okulu Başvuru Formu",
+      "char_count": 341,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=19",
+      "title": "Galeri",
+      "body_content": "2024\n\nTÜBİTAK 1505 Projemiz Kapsamında Proje İzleyicimiz Prof. Dr. Sema Palamutcu 'nun Laboratuvarımızı Ziyareti\n\nUlusal Yöneylem Araştırması / Endüstri Mühendisliği 2023 Konferansına Akademisyenlerimizin ve Öğrencilerimizin Önemli Katkıları",
+      "char_count": 241,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=19",
+      "title": "Faydalı Linkler",
+      "body_content": "Temöb ( Türkiye Endüstri Mühendisliği Öğrencileri Buluşması )\r\n\n Yetenek Kapısı",
+      "char_count": 79,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=19",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nemb@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nArş. Gör. Zeynep YÜKSEL\n\nzeynep.yuksel@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 339,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=19",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nDr. Öğr. Üyesi Selma GÜLYEŞİL\n\nring_volume\n2218\n\nmail\nselma.gulyesil@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nazmiye ELİGÜZEL\n\nring_volume\n2232\n\nmail\nnazmiye.eliguzel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Zeynep YÜKSEL\n\nring_volume\n2242\n\nmail\nzeynep.yuksel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Selen YÜCESOY KAHRAMAN\n\nring_volume\n2244\n\nmail\nselen.yucesoy@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mustafa DEMİRBİLEK\n\nring_volume\n2250\n\nmail\nmustafa.demirbilek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yusuf KARADEDE\n\nring_volume\n2252\n\nmail\nyusuf.karadede@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi İbrahim Miraç ELİGÜZEL\n\nring_volume\n2253\n\nmail\nibrahim.eliguzel@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 779,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "title": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "department": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 11,
+    "yonetim": 1,
+    "tanitim": 4,
+    "personel": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

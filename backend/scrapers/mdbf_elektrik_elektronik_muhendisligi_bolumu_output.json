@@ -1,0 +1,327 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T20:48:00Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\Mühendislik ve Doğa Bilimleri Fakültesi\\Elektrik_Elektronik_Mühendisliği_Bölümü.html",
+    "birim_id": 16,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Elektrik Elektronik Muhendisligi Bolumu"
+  },
+  "summary": {
+    "total_blueprint_urls": 24,
+    "total_fetched": 24,
+    "total_valid": 23,
+    "total_failed": 0,
+    "total_skipped": 1,
+    "total_documents": 24,
+    "total_chars": 22766
+  },
+  "discovered_pdfs": [],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/birimidaripersonel.aspx?id=16",
+      "reason": "too_short (5 chars)",
+      "char_count": 5
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=16",
+      "title": "Elektrik Elektronik Mühendisliği Bölümü",
+      "body_content": "Rektör Danışmanı Doç.dr. İpek Atik 'e Ziyaret\n\nElektrik-elektronik Mühendisliği Öğrencilerinden Sektöre Teknik Gezi\n\nEnerji Verimliliği Konulu Etkinlik Gerçekleştirildi\n\nHABERLER\n\nTÜMÜ\n\n18.03.2026 14:42\n\nRektör Danışmanı Doç.dr. İpek Atik 'e Ziyaret\n\n Devamını Oku\r\n\n18.03.2026 14:39\n\nElektrik-elektronik Mühendisliği Öğrencilerinden Sektöre Teknik Gezi\n\n Devamını Oku\r\n\n05.03.2026 12:14\n\nEnerji Verimliliği Konulu Etkinlik Gerçekleştirildi\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n30\n\nMar\n\n 2025-2026 Bahar Ara Sınav Takvimleri\r\n\n09\n\nŞub\n\n 2025-2026 Bahar Yarıyılı Ders Programları\r\n\n28\n\nOca\n\n 2025-2026 Güz Dönemi Bütünleme Sınav Takvimleri\r\n\n25\n\nAra\n\n Final Sınav Takvimi\r\n\n19\n\nKas\n\n 2025-2026 Güz Dönemi Lisans Mazeret Sınav Takvimi\r\n\n28\n\nEki\n\n 2025-2026 Güz Dönemi Ara Sınav Takvimleri",
+      "char_count": 783,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 25,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=16",
+      "title": "Yönetim",
+      "body_content": "Bölüm Başkanlığı\r\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nBölüm Başkanı\n\nring_volume\n2247\n\nmail\nmehmet.ozcelik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Mustafa KARHAN\n\nBölüm Başkan Yardımcısı\n\nring_volume\n0000\n\nmail\nmustafa.karhan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet ARICI\n\nBölüm Başkan Yardımcısı\n\nring_volume\n2229\n\nmail\nmehmet.arici@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 374,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 24,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimhakkimizda.aspx?id=16",
+      "title": "Hakkımızda",
+      "body_content": "Bölümümüz Elektrik Elektronik Mühendisliği adı altında 2019 yılında kurulmuştu. Geniş bir çalışma alanına sahip disiplinlerden biri olan bölümümüz, enerji üretiminden iletişim teknolojilerine kadar birçok sektörde önemli roller üstlenir. İşte elektrik elektronik mühendislerinin başlıca çalışma alanları ve sorumlulukları:\n\nÇalışma Alanları\n\nEnerji Sistemleri\n\nElektrik üretimi, iletimi ve dağıtımı.\n\nYenilenebilir enerji kaynaklarının (güneş, rüzgar, hidroelektrik) tasarımı ve optimizasyonu.\n\nEnerji verimliliği projeleri.\n\nElektronik Tasarım\n\nMikroçip ve devre kartlarının (PCB) tasarımı.\n\nElektronik cihazların geliştirilmesi ve test edilmesi.\n\nOtomasyon sistemleri için kontrol devreleri.\n\nTelekomünikasyon ve İletişim\n\nMobil iletişim ağları ve altyapı sistemlerinin tasarımı.\n\nUydu sistemleri ve fiber optik teknolojileri.\n\nVeri iletişim protokollerinin geliştirilmesi.\n\nOtomasyon ve Kontrol Sistemleri\n\nEndüstriyel otomasyon sistemlerinin tasarımı ve uygulaması.\n\nRobotik sistemlerin geliştirilmesi.\n\nAkıllı ev ve bina teknolojileri.\n\nBiyomedikal Elektronik\n\nTıbbi cihazların tasarımı ve geliştirilmesi (örneğin, EKG cihazları, MR makineleri).\n\nSağlık sektörü için sensör teknolojileri.\n\nSavunma ve Havacılık\n\nRadar, sonar ve savunma sistemlerinin geliştirilmesi.\n\nHavacılık elektroniği ve otonom araçlar.\n\nSorumluluklar\n\nProje Tasarımı ve Yönetimi\n\nMüşteri ihtiyaçlarını analiz ederek projeler tasarlamak.\n\nProje planlaması, bütçeleme ve zaman yönetimi.\n\nTeknik Çözümler Üretme\n\nSistem arızalarını analiz edip çözüm üretmek.\n\nYeni teknolojilerin entegrasyonunu sağlamak.\n\nAraştırma ve Geliştirme (Ar-Ge)\n\nYeni ürünler geliştirmek için yenilikçi yaklaşımlar.\n\nMevcut sistemleri iyileştirme çalışmaları.\n\nGüvenlik ve Standartlara Uyumluluk\n\nElektriksel güvenlik standartlarını ve düzenlemeleri sağlamak.\n\nSistemlerin kalite kontrollerini yapmak.\n\nEkip Çalışması ve İletişim\n\nMultidisipliner ekiplerle koordinasyon sağlamak.\n\nTeknik bilgiyi açık ve etkili bir şekilde iletmek.\n\nEğitim ve Danışmanlık\n\nYeni mühendisler veya teknisyenlere eğitim vermek.\n\nTeknik danışmanlık hizmetleri sunmak.\n\nElektrik elektronik mühendisliği, teknolojik ilerlemelerin temel taşlarından biri olup, hem bireysel hem de endüstriyel gelişime büyük katkılar sağlar. Bu alanda çalışan mühendisler, bilim ve teknolojiyi birleştirerek günlük hayata etki eden çözümler üretirler.",
+      "char_count": 2358,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 23,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=16",
+      "title": "Misyon",
+      "body_content": "Fakültemizin öncelikli amacını, başta bölgemiz olmak üzere ülkemizin ve insanlığın yararına teknolojik gelişmeleri izleyebilen, ulusal ve uluslararası kuruluşlarda kendini kabul ettirebilen ve etik değerlere saygılı mühendisler yetiştirmek oluşturmaktadır. Bu doğrultuda;\n\nAraştırmacılara, hem bilimsel hem de teknolojik bilgi ve beceriye sahip olmalarını sağlamak için gerekli olan laboratuvar ve her türlü imkanı sağlamak,\n\nAraştırmacıları disiplinler arası çalışmaya, uluslararası gelişmeleri izleyerek ve toplumsal gereksinimleri düşünerek ülke ve dünya bilimine katkıda bulunacak projeler hazırlamaya ve yayınlar yapmaya teşvik etmek amaçlanmaktadır.",
+      "char_count": 655,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=16",
+      "title": "Vizyon",
+      "body_content": "Lisans ve lisansüstü eğitimi, bilimsel ve teknolojik araştırmaları, toplumsal gelişmeye yönelik çalışmaları ile ulusal ve uluslararası düzeyde tercih edilen bir fakülte olmak şeklindedir.",
+      "char_count": 187,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimtarihce.aspx?id=16",
+      "title": "Tarihçe",
+      "body_content": "8 Mayıs 2018 tarih ve 30425 sayılı Resmi Gazetede yayınlanan Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 09/05/2018 olan 7141 nolu Kanunla, 2809 sayılı kanuna yapılan ek maddeyle önce Gaziantep Bilim ve Teknoloji Üniversitesi adıyla, daha sonra ise 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan Vergi Kanunları ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 17/01/2019 olan 7161 nolu Kanunun 14.maddesi ile 2809 sayılı Kanunun ek 178.maddesi başlığının birinci fıkrasında yer alan “Gaziantep Bilim ve Teknoloji Üniversitesi” ibareleri, “Gaziantep İslam Bilim ve Teknoloji Üniversitesi” olarak değiştirilmesi ile kurulmuştur.",
+      "char_count": 749,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=16",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nProf. Dr. Osman BİLGİN\n\nProf. Dr.\n\nring_volume\n2201\n\nmail\nosman.bilgin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nProf. Dr.\n\nring_volume\n2247\n\nmail\nmehmet.ozcelik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. İpek ATİK\n\nDoç. Dr.\n\nring_volume\n2214\n\nmail\nipek.atik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Mustafa KARHAN\n\nDoç. Dr.\n\nring_volume\n0000\n\nmail\nmustafa.karhan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet ARICI\n\nDr. Öğr. Üyesi\n\nring_volume\n2229\n\nmail\nmehmet.arici@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yüksel TOKUR BOZKURT\n\nDr. Öğr. Üyesi\n\nring_volume\n2237\n\nmail\nyuksel.tokurbozkurt@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Hamdullah ÖZTÜRK\n\nDr. Öğr. Üyesi\n\nring_volume\n2263\n\nmail\nhamdullah.ozturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Önder POLAT\n\nDr. Öğr. Üyesi\n\nring_volume\n2213\n\nmail\nonder.polat@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yasin İÇEL\n\nDr. Öğr. Üyesi\n\nring_volume\n0000\n\nmail\nyasin.icel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Bünyamin DİKİCİ\n\nDr. Öğr. Üyesi\n\nring_volume\n2223\n\nmail\nbunyamin.dikici@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Mehmet Fatih BEKÇİOĞULLARI\n\nArş. Gör.\n\nring_volume\n2217\n\nmail\nmfatih.bekciogullari@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Sami AÇIK\n\nArş. Gör.\n\nring_volume\n2235\n\nmail\nsami.acik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Yusuf ZİREKGÜR\n\nArş. Gör.\n\nring_volume\n2264\n\nmail\nyusuf.zirekgur@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1453,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/eemb/icerik/13681/ders-mufredati",
+      "title": "Ders Müfredatı",
+      "body_content": "LİSANS\n\n2019 müfredatına erişmek için \ntıklayınız.\n\n2023 müfredatına erişmek için \ntıklayınız.\n\nLİSANSÜSTÜ\n\n2020 müfredatına erişmek için \ntıklayınız.\n\n2024 müfredatına erişmek için \ntıklayınız.",
+      "char_count": 194,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/eemb/icerik/13682/ders-icerikleri",
+      "title": "Ders İçerikleri",
+      "body_content": "2019 Ders İçerikleri\n\n2023 Ders İçerikleri",
+      "char_count": 42,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/eemb/icerik/13685/bologna",
+      "title": "Bologna",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\nBologna\n\ndate_range\nYayın Tarihi : \n26.10.2023 08:00\n\npeople\nOkunma : \n539\n\nElektrik Elektronik Mühendisliği Bölümü\n\nok",
+      "char_count": 152,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/eemb/icerik/369/laboratuvarlarimiz",
+      "title": "Laboratuvarlarımız",
+      "body_content": "Elektrik Devre ve Ölçme Laboratuvarı\n\nAnalog Elektronik Laboratuvarı\n\nSayısal Tasarım Laboratuvarı\n\nHaberleşme Laboratuvarı\n\nKontrol Sistemleri Laboratuvarı\n\nMikroişlemci Laboratuvarı",
+      "char_count": 183,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/eemb/icerik/31106/ogretim-uyeleri-danismanlik-listeleri-ve-saatleri",
+      "title": "Danışmanlık",
+      "body_content": "Prof. Dr. Osman BİLGİN' in Danışmanlık Listesi \n\nProf. Dr. Mehmet Ali ÖZÇELİK' in Danışmanlık Listesi \n\nDoç. Dr. İpek ATİK' in Danışmanlık Listesi  \n\nDoç. Dr. Mustafa KARHAN' ın Danışmanlık Listesi \n\nDr. Öğr. Üyesi Mehmet ARICI' nın Danışmanlık Listesi \n\nDr. Öğr. Üyesi Yüksel TOKUR BOZKURT' un Danışmanlık Listesi \n\nDr. Öğr. Üyesi Hamdullah ÖZTÜRK' ün Danışmanlık Listesi \n\nDr. Öğr. Üyesi Önder POLAT' ın Danışmanlık Listesi \n\nDr. Öğr. Üyesi Yasin İÇEL' in Danışmanlık Listesi \n\nÖğretim Üyelerinin Danışmanlık(Ofis) Saatleri",
+      "char_count": 525,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/eemb/icerik/31049/komisyonlar",
+      "title": "Komisyonlar",
+      "body_content": "BÖLÜM KOMİSYONLARI VE ÇALIŞMA İLKELERİ\n\nA- Komisyonların Çalışma İlkeleri\n\n1-\n Bölüm komisyonları bir komisyon başkanı ve yeterli sayıda öğretim elemanından oluşur. Komisyon üyeleri komisyon işlerinin düzenli bir şekilde yürütülmesi bakımından doğrudan ve birinci derecede Bölüm Başkanına karşı sorumludurlar. Bölüm başkanı da komisyonların düzenli bir şekilde yürütülmesi için gerekli zemini oluşturmak ve komisyonların devamlılığını sağlamak konusunda bölüme karşı sorumludur. Komisyon üyeleri yılsonunda ya da iki yılda bir başka bir komisyona görevlendirilirler.\n\n2-\n Bölüm komisyonlarının her dönem en az bir kere toplanması zorunludur. Toplantı dönem başlamadan en az on beş gün önce gerçekleştirilir. Toplantı yazılı olarak kayıt altına alınır ve hazırlanan raporlar düzenli bir şekilde dosyalanır. Komisyon raporları komisyon başkanı tarafından -dönem başlamadan bir hafta önce komisyon toplantısı için toplanan- bölüm kurulunda veya bölüm akademik kurulunda sunulur. Bu toplantılar haricinde komisyonlar kendi görev alanlarına ait çalışmaları yıl boyunca takip eder ve yaparlar.\n\n3-\n Komisyon toplantılarında gündem komisyon başkanı tarafından en az bir hafta önceden belirlenir. Toplantılara hazırlıklı katılımcılık esastır. Toplantı esnasında gerekirse gündem ile alakalı problemlerin araştırılması ve ilave çalışmaların tamamlanması için aynı hafta içinde tekrar toplanma kararı alınabilir.\n\n4-\n İsteyen öğretim elemanı - komisyon başkanına gerekçesini önceden bildirerek- komisyon toplantılarına katılabilir. Komisyon başkanı gerektiğinde bir öğretim elemanı ya da öğrenciyi komisyon toplantısına davet edilebilir.\n\n5-\n Toplantılara mazeret belirtmeden katılmayan veya verilen sorumlulukları yerine getirmeyen üyeler komisyon başkanı tarafından yazılı olarak uyarılır, bu durum üyenin savunması ile birlikte bölüm başkanına iletilir.\n\n6-\n Komisyon toplantıları yazılı olarak kayıt altına alınır. Toplantı tarihi, gündemi, toplantıya katılanlar ve sonuç kararlar tutanakla komisyon başkanlarınca dosyalanır.\n\n7-\n Komisyonlar tüm faaliyetlerini arşivler ve yıllık komisyon dosyasını oluşturur. Bu dosyalardaki dokümanlar diğer komisyonların faaliyet alanlarıyla ilgili konularda talep edilmesi durumunda paylaşılır.\n\n8-\n Yılsonunda komisyon başkanları bir yıllık çalışma raporlarını Bölüm Başkanlığı’na sunarlar. Komisyonların genel performansı Bölüm Başkanlığı tarafından her yıl değerlendirilir.\n\nB- Bölüm Komisyonları ve Görevleri\n\nEğitim Öğretim Komisyonu\n\nBölümün lisans ve lisansüstü Programının müfredatını güncellemek, Akademik Bölüm Kurulu gündemindeki ilgili konuları müfredat uyumluluğu açısından incelemek, Her dönem başında öğretim üyelerine duyuru yaparak yeni ders önerileri almak ve bu önerileri değerlendirerek bölüm kuruluna iletmektir.  Ayrıca komisyon bölümün akademik, altyapı vb. çeşitli ihtiyaçları ile ilgili çalışmaları gerçekleştirmek ve Akademik Bölüm Kurulu gündemindeki ilgili konuları idari ve mali açıdan değerlendirmekle yükümlüdür.\n\nKomisyon Üyeleri:\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nDoç. Dr. Mustafa KARHAN\n\nDr. Öğr. Üyesi Mehmet ARICI\n\nAr.Gör. Mehmet Fatih BEKÇİOĞULLARI\n\nMuafiyet ve İntibak Komisyonu:\n\nBölüme kurumlar arası veya birim içi yatay geçiş yapan veya daha önce devam ettiği herhangi bir yükseköğretim kurumunda geçtiği dersleri kayıt yaptırdıktan sonra eşdeğerlerinin yerine saydırmak isteyen öğrencilerin sınıf intibaklarını ve ders muafiyetlerini düzenler.\n\nKomisyon Üyeleri:\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nDoç. Dr. Mustafa KARHAN\n\nDr. Öğr. Üyesi Mehmet ARICI\n\nAr.Gör. Yusuf ZİREKGÜR\n\nAkreditasyon, Kalite ve Strateji Geliştirme Komisyonu:\n\nDiğer komisyonların çalışmalarını MÜDEK- YÖKAK vb. beklentileri doğrultusunda yönlendirmek, öz değerlendirme raporunun hazırlamasını koordine etmek, Değerlendirme Takımına sunulacak dokümanların hazırlamasını koordine etmek, bölüm faaliyetlerine ilişkin ölçme, değerlendirme ve öz değerlendirmeler kapsamında inceleme, anket ve benzeri yöntemler geliştirmek. Akademik Bölüm Kurulu gündemindeki ilgili konuları ölçme ve değerlendirme tekniklerine uygunluk açısından incelemek ve sürekli gelişme mantığı içinde Bölüm Kuruluna görüş belirtmek, iç ve dış değerlendirme çalışmalarını yürütmek ve kurumsal değerlendirme ve kalite geliştirme çalışmalarının sonuçlarını içeren yıllık bölüm değerlendirme raporunu diğer komisyonlarla işbirliği içinde hazırlamak. Fakülte kalite koordinatörlüğünde bölümü temsil etmek ve bu konuyla ilgili yapılması gereken işlemleri yürütmek. Güncel şartlar ve gelişen teknoloji imkânlarına uyum sağlaması için gerekli olduğu öngörülen kısa, orta ve uzun vadeli önerileri tartışmaya açmak ve bölümde kurumsallaştırmayı sağlamaktır.\n\nKomisyon Üyeleri:\n\nDr. Öğr. Üyesi Önder POLAT\n\nDr. Öğr. Üyesi Hamdullah ÖZTÜRK\n\nDr. Bünyamin DİKİCİ\n\nAr.Gör. Sami AÇIK\n\nLisanüstü Sınav Komisyonu\n\nLisansüstü programlara öğrenci kabul süreçlerinde gerçekleştirilen bilimsel değerlendirme ve mülakat sınavlarını organize etmek, adayların akademik yeterliliklerini ilgili yönetmelikler çerçevesinde, şeffaf ve objektif kriterlere göre değerlendirmek, sınav tutanaklarını düzenleyerek sonuçları Enstitü’ye raporlamak; ayrıca dönem içi seminer, tez izleme ve tez savunma sınavlarının koordinasyonunu ve mevzuata uygunluğunu sağlamaktır.\n\nKomisyon Üyeleri:\n\nDr. Öğr. Üyesi Yasin İÇEL\n\nDr. Öğr. Üyesi Önder POLAT\n\nDr. Öğr. Üyesi Hamdullah ÖZTÜRK\n\nAnket, Ölçme ve Değerlendirme Komisyonu\n\nBölüm faaliyetlerine ilişkin ölçme, değerlendirme ve öz değerlendirmeler kapsamında inceleme, anket ve benzeri yöntemler geliştirerek uygulamaktır. Bu amaçla, Bölüm Akademik Kurulu gündemindeki ilgili konuları ölçme ve değerlendirme tekniklerine uygunluk açısından incelemek ve görüş belirtmek, Öğrenci anketleri ve Öğretim elemanları değerlendirme anketleri hazırlamak, uygulamak, değerlendirip ve sonuçları rapora dönüştürerek Bölüm Akademik Kuruluna sunmak.\n\nKomisyon Üyeleri:\n\nDr. Bünyamin DİKİCİ\n\nAr.Gör. Mehmet Fatih BEKÇİOĞULLARI\n\nAr.Gör. Sami AÇIK\n\nAkademik Teşvik Komisyonu\n\nYükseköğretim Kurulu tarafından belirlenen \"Akademik Teşvik Ödeneği Yönetmeliği\" çerçevesinde; bölüm öğretim elemanlarının gerçekleştirdiği proje, araştırma, yayın, tasarım, sergi, patent vb. faaliyetlerine ilişkin başvuru dosyalarını şekil ve içerik yönünden incelemek, beyan edilen faaliyetlerin belgelendirilmesini ve puanlama doğruluğunu denetlemek, değerlendirme sonuçlarını raporlayarak süreci akademik takvime uygun şekilde yürütmektir.\n\nKomisyon Üyeleri:\n\nDoç.Dr. Mustafa KARHAN\n\nDr. Öğr. Üyesi Yüksel BOZKURT\n\nDr. Bünyamin DİKİCİ\n\nÖğrenci Değişim Programları Komisyonu\n\nMevlana, Erasmus ve Farabi gibi öğrenci ve öğretim üyesi değişim programını yürütmek, ikili işbirliklerini artırmak, ders uyumlarını ve geri dönen öğrencilerin ders geçme notlarının dönüşümünü gerçekleştirmek, bu programdaki öğrencilerin problemlerine çözüm bulmaya çalışmak, gelen öğrencilerin uyumu ve problemlerinin çözümüne kakı vermek, ilgili yazışmaları yapmak.\n\nKomisyon Üyeleri:\n\nMevlana: Prof.Dr. Osman BİLGİN\n\nFarabi : Doç.Dr. İpek ATİK\n\nErasmus : Dr. Öğr. Üyesi Önder POLAT\n\nÇift Anadal ve Yan Dal Komisyonu\n\nÇift anadal - yandal programlarının yürütülmesi için ana esasları oluşturmak ve bölüm yönetimine tavsiyelerde bulunmak, çift anadal - yandal yapan öğrenciler için gerekli tüm iletişimi planlamak ve onları yönlendirmek.\n\nKomisyon Üyeleri:\n\nDr. Öğr. Üyesi Hamdullah ÖZTÜRK\n\nDr. Öğr. Üyesi Yasin İÇEL\n\nAr.Gör. Sami AÇIK\n\nBologna Süreci ve AKTS Komisyonu\n\nBölümün AKTS/ECTS Koordinatörlüğünü yapmak, Bölüm AKTS Bilgi Paketini her yarıyıl başında kontrol etmek ve sorunlu bilgi paketlerini ilgili öğretim elemanı/anabilim dalı başkanı ile iletişime geçerek sorunun giderilmesini sağlamak.\n\nKomisyon Üyeleri:\n\nDr. Öğr. Üyesi Mehmet ARICI\n\nDr.Öğr.Üyesi Yüksel BOZKURT\n\nAr.Gör. Mehmet Fatih BEKÇİOĞULLARI\n\nDers ve Sınav Programları Komisyonu\n\nDers ve sınav programlarının hazırlanmasına ilişkin kuralları düzenlemek, Her eğitim-öğretim yılı, yarıyıl başında ders programlarını hazırlamak, her yarıyıl için derslerin yarıyıl içi, yarıyıl sonu ve bütünleme sınav programını hazırlamak, ders ve sınav programlarının etkili biçimde planlanmasını ve zamanında teslim edilmesini sağlamak.\n\nKomisyon Üyeleri:\n\nDr. Bünyamin Dikici\n\nAr.Gör. Mehmet Fatih BEKÇİOĞULLARI\n\nAr.Gör. Yusuf ZİREKGÜR\n\nAr.Gör. Sami AÇIK\n\nİntörn, Staj - İşletmede Mesleki Eğitim (İME) ve Endüstri ile ilişkiler Komisyonu\n\nGenel staj ve İME esaslarının yer aldığı yönergeler doğrultusunda, öğrencilerin yapmaları gereken staj ve İME hakkında bilgilendirmeler yapmak, protokol imzalanmasını sağlamak,  öğrencilerin staj - İME yapabilecekleri yerlerin uygunluğunu kontrol etmek, bu eğitimler ile ilgili doğabilecek aksaklık ve problemleri çözmek, Bölüm Akademik Kurulu’na öğrenci staj - İME ile ilgili konularda görüş bildirmek, bu eğitimlerin defter ve raporlarını toplamak, değerlendirilmesini sağlamak ve sonuçları raporlamak. Bölüm içinde yapılan bilimsel etkinliklerden sektörel kuruluşlara, sektörel kuruluşlardaki etkinlikleri ise bölüm içerisindeki öğrencilere ve öğretim üyelerine tanıtılması için gerekli etkinlikleri düzenlemek, üniversite sanayi iş birliği kapsamında sanayi ile bölümün etkileşim kurmasını sağlamak, öğrenciler için kariyer günleri ve teknik geziler düzenlemek.  \n\nKomisyon Üyeleri:\n\nDr. Öğr. Üyesi Yasin İçel\n\nAr.Gör. Yusuf ZİREKGÜR\n\nAr.Gör. Sami AÇIK\n\nLaboratuvar ve Altyapı Komisyonu\n\nBölüm laboratuvarlarının ve eğitim alanlarının fiziksel altyapısının eğitim-öğretim ve araştırma faaliyetlerine uygunluğunu ve sürdürülebilirliğini sağlamak, mevcut cihaz, teçhizat ve envanterin bakım-onarım süreçlerini takip etmek, yeni donanım ve sarf malzeme ihtiyaçlarını belirleyerek temin süreçlerini planlamak, laboratuvarlarda İş Sağlığı ve Güvenliği standartlarının uygulanmasını denetlemek ve bölümün teknik altyapısını geliştirecek projeler üretmektir.\n\nKomisyon Üyeleri:\n\nProf.Dr. Mehmet Ali ÖZÇELİK\n\nDr. Öğr. Üyesi Yasin İÇEL\n\nDr. Öğr. Üyesi Önder POLAT\n\nAr.Gör. Yusuf ZİREKGÜR\n\nEtkinlik, İnternet ve Sosyal Medya Komisyonu\n\nGünümüzün teknolojisine uygun olarak bölümün iletişim olanaklarını iyileştirmek, yeni teknolojilerin transferini ve adaptasyonunu sağlamak, bölüm web sayfasının güncelliğini sağlamak ve web tasarımını yapmak, Bölüm Akademik Kurulu’nca alınan kararların bölüm internet sayfasında güncel olarak ilan edilmesi sağlamak, yapılan anket çalışma sonuçlarının, toplantı, seminer, sempozyum ve sosyal sorumluluk projelerinin bölüm internet sayfasında ilan etmektir. Ayrıca; Mezunlar ile iletişim halinde bulunarak, posta adresi, e-posta adresi, telefon numarası, faks numarası gibi bilgilerini toplayarak mezun sayfası oluşturmak ve mezunlardan geri bildirim almak. Mezunların çalışma dalları, yaptıkları projeler ve başarılarının öğrencilere aktarılmasını sağlayarak, mezunlar ile bölüm arasındaki bilgi alışverişi ve işbirliğini arttırmak.\n\nKomisyon Üyeleri:\n\nDr. Bünyamin Dikici\n\nAr.Gör. Sami AÇIK\n\nAr.Gör. Mehmet Fatih BEKÇİOĞULLARI",
+      "char_count": 10906,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/eemb/icerik/31050/ogrenim-ciktilari",
+      "title": "Öğrenim Çıktıları",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\nÖğrenim Çıktıları\n\ndate_range\nYayın Tarihi : \n18.09.2025 10:31\n\npeople\nOkunma : \n96\n\nElektrik Elektronik Mühendisliği Bölümü\n\nÖğrenim Çıktıları\n\nok",
+      "char_count": 180,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/eemb/icerik/31051/is-akislari",
+      "title": "İş Akışları",
+      "body_content": "Lisans Ders Kayıt İş Akışı\n\nYatay Geçiş İş Akış Şeması\n\nErasmus+ Öğrenim Hareketliliği İş Akış Şeması\n\nStaj İş Akış Şeması",
+      "char_count": 122,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=16",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Bahar Ara Sınav Takvimleri\n\n30.03.2026\n\n2025-2026 Bahar Yarıyılı Ders Programları\n\n09.02.2026\n\n2025-2026 Güz Dönemi Bütünleme Sınav Takvimleri\n\n28.01.2026\n\nFinal Sınav Takvimi\n\n25.12.2025\n\n2025-2026 Güz Dönemi Lisans Mazeret Sınav Takvimi\n\n19.11.2025\n\n2025-2026 Güz Dönemi Ara Sınav Takvimleri\n\n28.10.2025",
+      "char_count": 340,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=16",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nRektör Danışmanı Doç.dr. İpek Atik 'e Ziyaret\n\n18.03.2026\n\nElektrik-elektronik Mühendisliği Öğrencilerinden Sektöre Teknik Gezi\n\n18.03.2026\n\nEnerji Verimliliği Konulu Etkinlik Gerçekleştirildi\n\n05.03.2026",
+      "char_count": 229,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=16",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nD\ni\nj\ni\nt\na\nl\nl\ne\nş\nm\ne\n\nv\ne\n\nY\na\np\na\ny\n\nZ\ne\nk\na\n\ni\nl\ne\n\nE\nn\ne\nr\nj\ni\n\nY\nö\nn\ne\nt\ni\nm\ni\n\nDuyuru\n\n10.06.2025\n\nG\nİ\nB\nT\nÜ\n\n'\n\nd\ne\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ne\n\nE\nn\ne\nr\nj\ni\n\nV\ne\nr\ni\nm\nl\ni\nl\ni\nğ\ni\n\nE\nğ\ni\nt\ni\nm\ni\n\nDuyuru\n\n16.05.2025\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\nG\ne\nl\ne\nc\ne\nğ\ni\nn\n\nU\nl\na\nş\nı\nm\nı\n\nE\nl\ne\n\nA\nl\nı\nn\nd\nı\n\nDuyuru\n\n16.05.2025\n\nG\nİ\nB\nT\nÜ\n\n-\n\nE\nx\np\no\n\n1\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nP\nr\no\nj\ne\nl\ne\nr\ni\n\nS\ne\nr\ng\ni\ns\ni\nn\ne\n\nD\na\nv\ne\nt\n\nDuyuru\n\n16.05.2025\n\nM\ni\nk\nr\no\ni\nş\nl\ne\nm\nc\ni\n\nL\na\nb\no\nr\na\nt\nu\nv\na\nr\nı\n\nD\ne\nr\ns\ni\n\nF\ni\nn\na\nl\n\nP\nr\no\nj\ne\nl\ne\nr\ni\n\nDuyuru\n\n27.12.2024\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\nü\nn\n\nT\nÜ\nB\nİ\nT\nA\nK\n\nP\nr\no\nj\ne\n\nB\na\nş\na\nr\nı\ns\nı\n\nDuyuru\n\n03.10.2023\n\nİ\nl\nk\n\nM\ne\nz\nu\nn\nl\na\nr\nı\nm\nı\nz\n.\n.\n.\n\nDuyuru\n\n12.07.2023\n\n2\n0\n2\n1\n-\n2\n0\n2\n2\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nM\ni\nk\nr\no\ni\nş\nl\ne\nm\nc\ni\n\nL\na\nb\n.\n\nF\ni\nn\na\nl\n\nÖ\nd\ne\nv\nl\ne\nr\ni\n\nDuyuru\n\n04.10.2022\n\nL\na\nb\no\nr\na\nt\nu\nv\na\nr\nl\na\nr\nı\nm\nı\nz\n\nDuyuru\n\n16.03.2021\n\n KATEGORİLER\r\n\nDuyuru\n\nEtkinlik",
+      "char_count": 929,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=16",
+      "title": "Formlar",
+      "body_content": "Formlar\n\n Ders Muafiyet Değerlendirme Formu\r\n\n Diğer Yükseköğretim Kurumlarının Yaz Okulu Programlarından Ders Alma Başvuru Formu\r\n\n İlişik Kesme Formu\r\n\n Kayıt Dondurma Başvuru Formu\r\n\n Mazeret Ders Kayıt Formu\r\n\n Sınav Kağıdına İtiraz ( Maddi Hata ) Formu\r\n\n Tek Ders Dilekçesi Formu\r\n\n Yatay Geçiş Başvuru Formu\r\n\n Yaz Okulu Başvuru Formu",
+      "char_count": 341,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=16",
+      "title": "Galeri",
+      "body_content": "2025\n\n2024\n\n2023\n\n2021\n\nDijitalleşme ve Yapay Zeka ile Enerji Yönetimi\n\nGİBTÜ ' de Öğrencilere Enerji Verimliliği Eğitimi\n\nGİBTÜ 'de Geleceğin Ulaşımı Ele Alındı\n\nGİBTÜ - Expo 1 Öğrenci Projeleri Sergisine Davet\n\nMikroişlemci Laboratuvarı Dersi Final Projeleri\n\nLisansüstü Seminer Sunumları",
+      "char_count": 290,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=16",
+      "title": "Faydalı Linkler",
+      "body_content": "YÖK\r\n\n TÜBİTAK\r\n\n TEKNOFEST\r\n\n Akademik Takvim",
+      "char_count": 46,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=16",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Mühendislik ve Doğa Bilimleri Fakültesi Binası Şahinbey/Gaziantep\n\nmail\neemb@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00-01\n\nprint\n0850 258 98 00\n\nWeb Sorumlumuz\n\nArş. Gör. Mehmet Fatih BEKÇİOĞULLARI\n\nmfatih.bekciogullari@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 405,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=16",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nDoç. Dr. Mustafa KARHAN\n\nring_volume\n0000\n\nmail\nmustafa.karhan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yasin İÇEL\n\nring_volume\n0000\n\nmail\nyasin.icel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Osman BİLGİN\n\nring_volume\n2201\n\nmail\nosman.bilgin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Önder POLAT\n\nring_volume\n2213\n\nmail\nonder.polat@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. İpek ATİK\n\nring_volume\n2214\n\nmail\nipek.atik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Mehmet Fatih BEKÇİOĞULLARI\n\nring_volume\n2217\n\nmail\nmfatih.bekciogullari@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Bünyamin DİKİCİ\n\nring_volume\n2223\n\nmail\nbunyamin.dikici@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet ARICI\n\nring_volume\n2229\n\nmail\nmehmet.arici@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Sami AÇIK\n\nring_volume\n2235\n\nmail\nsami.acik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yüksel TOKUR BOZKURT\n\nring_volume\n2237\n\nmail\nyuksel.tokurbozkurt@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Mehmet Ali ÖZÇELİK\n\nring_volume\n2247\n\nmail\nmehmet.ozcelik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Hamdullah ÖZTÜRK\n\nring_volume\n2263\n\nmail\nhamdullah.ozturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Yusuf ZİREKGÜR\n\nring_volume\n2264\n\nmail\nyusuf.zirekgur@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1323,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "title": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "department": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 24,
+      "total": 24,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 9,
+    "yonetim": 1,
+    "tanitim": 4,
+    "personel": 1,
+    "mufradat": 2,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}
