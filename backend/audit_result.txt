@@ -1,0 +1,73 @@
+﻿python : 17:47:35 [INFO] Splitter tamamland²: 1 belge -> 2 chunk
+At line:1 char:1
++ python audit_374.py 2>&1 | Out-File -Encoding utf8 audit_result.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (17:47:35 [INFO]...elge -> 2 chunk:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+============================================================
+3.2.7.4 DENETIM RAPORU
+============================================================
+
+=== 1. Import Testi ===
+  [OK] map_guided_scraper
+  [OK] splitter + _split_semantic
+  [OK] DOC_KINDS
+
+=== 2. Method Varl²k Kontrol³ ===
+  [OK] _extract_title
+  [OK] _infer_doc_kind
+  [OK] _title_from_url_slug
+  [OK] _clean_page_content
+  [OK] _extract_pdf_documents
+  [OK] load_from_json
+
+=== 3. pdfplumber Kontrol³ ===
+  [OK] pdfplumber v0.11.9
+
+=== 4. doc_kind Inference Testi (3.2.7.4-B) ===
+  [OK] ps://www.gibtu.edu.tr/BirimYonetim.aspx?id=11 -> yonetim         (expected: yonetim)
+  [OK] tps://www.gibtu.edu.tr/BirimMisyon.aspx?id=11 -> tanitim         (expected: tanitim)
+  [OK] https://www.gibtu.edu.tr/BirimForm.aspx?id=11 -> form            (expected: form)
+  [OK] ps://www.gibtu.edu.tr/BirimMevzuat.aspx?id=11 -> yonetmelik      (expected: yonetmelik)
+  [OK] s://www.gibtu.edu.tr/BirimIletisim.aspx?id=11 -> iletisim        (expected: iletisim)
+  [OK] tps://www.gibtu.edu.tr/BirimDuyuru.aspx?id=11 -> duyuru          (expected: duyuru)
+  [OK] ttps://www.gibtu.edu.tr/BirimHaber.aspx?id=11 -> haber           (expected: haber)
+  [OK] fakultesi/icerik/31100/kalite-politikalarimiz -> rapor           (expected: rapor)
+  [OK] ahiyatfakultesi/icerik/31157/ders-programlari -> mufradat        (expected: mufradat)
+  [OK] https://www.gibtu.edu.tr/Birim.aspx?id=11     -> genel           (expected: genel)
+  [OK] gibtu.edu.tr/BirimAkademikPersonel.aspx?id=11 -> personel        (expected: personel)
+  Sonuc: 11/11 PASS
+
+=== 5. Title Slug Testi (3.2.7.4-A) ===
+  [OK] fakultesi/icerik/31100/kalite-politikalarimiz -> 'Kalite politikalarimiz'
+  [OK] tps://www.gibtu.edu.tr/BirimMisyon.aspx?id=11 -> 'Misyon'
+  [OK] /ilahiyatfakultesi/icerik/30941/risk-haritasi -> 'Risk haritasi'
+
+=== 6. Semantic Chunking Testi (3.2.7.4-D) ===
+  Input: 1 document, 322 chars
+  Output: 2 chunks
+  heading_context metadata: OK
+    Chunk 0: 107 chars, heading_context="Kalite Politikalarimiz"
+    Chunk 1: 211 chars, heading_context="Egitim-Ogretim Politikamiz"
+
+=== 7. Boilerplate Selectors Kontrol³ (3.2.7.4-C) ===
+  DOM selectors: 15 adet
+  Regex patterns: 10 adet
+    [OK] footer
+    [OK] nav
+    [OK] ul.collapsible
+    [OK] ul.side-nav
+
+=== 8. URL doc_kind Map Kontrol³ ===
+  Toplam pattern sayisi: 39
+  Unique doc_kind sayisi: 11 -> ['duyuru', 'form', 'genel', 'haber', 'iletisim', 'mufradat', 'personel', 'rapor', 'tanitim', 'yonetim', 'yonetmelik']
+
+============================================================
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Masa³st³\unichat_proje\backend\audit_374.py", line 154, in <module>
+    print('SONUC: TUM KONTROLLER GECTI \u2705')
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1254.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 28: character maps to <undefined>

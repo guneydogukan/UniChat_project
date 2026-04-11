@@ -98,7 +98,7 @@ PLACEHOLDER_KEYWORDS = [
     "bu sayfa henüz", "test sayfası",
 ]
 
-# Boilerplate kalıpları (GİBTÜ header/footer kalıntıları)
+# Boilerplate kalıpları (GİBTÜ header/footer kalıntıları) — regex text
 _BOILERPLATE_PATTERNS = [
     r"GIBTU Homepage\s*",
     r"GAZİANTEP İSLAM,?\s*BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ\s*",
@@ -107,6 +107,73 @@ _BOILERPLATE_PATTERNS = [
     r"E-Devlet Girişi\s*",
     r"Kişisel Veri Korunması\s*",
     r"Üst Menu\s*",
+    r"Aday Öğrenci Portalı\s*",
+    r"Akademik Takvim\s*",
+    r"Tüm Hakları Saklıdır.*",
+]
+
+# Boilerplate DOM seçicileri (3.2.7.4-C: Tam boilerplate temizliği)
+# Bu seçicilerle eşleşen HTML elementleri parse sırasında tamamen kaldırılır
+_BOILERPLATE_SELECTORS = [
+    "footer",                    # Alt bilgi alanı
+    "div.page-footer",           # Materialize footer
+    "div.footer-copyright",      # Footer copyright
+    "ul.collapsible",            # Sidebar menü (her sayfada tekrar eden)
+    "ul.side-nav",               # Yan navigasyon
+    "nav",                       # Üst navigasyon barları
+    "div.navbar",                # Navbar konteyner
+    "div.navbar-fixed",          # Fixed navbar
+    "span.birim-menu",           # Birim menü container
+    "span#birim-menu-slide",     # Birim menü slide
+    ".fixed-action-btn",         # Floating action button
+    "div#header",                # Header ID
+    "div#footer",                # Footer ID
+    "div.ust-menu",              # Üst menü alanı
+    "div.arama-kutusu",          # Arama kutusu
+]
+
+# URL pattern → doc_kind eşleştirme tablosu (3.2.7.4-B)
+_URL_DOC_KIND_MAP = [
+    # (URL'de aranacak pattern, atanacak doc_kind)
+    (r"birimyonetim\.aspx",          "yonetim"),
+    (r"birimmisyon\.aspx",           "tanitim"),
+    (r"birimvizyon\.aspx",           "tanitim"),
+    (r"birimtarihce\.aspx",          "tanitim"),
+    (r"birimhakkimizda\.aspx",       "tanitim"),
+    (r"birimtanitim\.aspx",          "tanitim"),
+    (r"birimgorevtanimi\.aspx",      "tanitim"),
+    (r"birimform\.aspx",             "form"),
+    (r"birimmevzuat\.aspx",          "yonetmelik"),
+    (r"birimiletisim\.aspx",         "iletisim"),
+    (r"birimtelefonrehberi\.aspx",   "iletisim"),
+    (r"birimduyuru\.aspx",           "duyuru"),
+    (r"birimhaber\.aspx",            "haber"),
+    (r"birimduyuruarsivi\.aspx",     "duyuru"),
+    (r"birimrapor\.aspx",            "rapor"),
+    (r"birimgaleri\.aspx",           "genel"),
+    (r"birimfaydalilink\.aspx",      "genel"),
+    (r"birimsss\.aspx",              "genel"),
+    (r"birimakademikpersonel\.aspx", "personel"),
+    (r"birimidaripersonel\.aspx",    "personel"),
+    (r"/kalite[/-]",                 "rapor"),
+    (r"/mufradat",                   "mufradat"),
+    (r"/ders-program",               "mufradat"),
+    (r"/ders-icerik",                "mufradat"),
+    (r"/bologna",                    "mufradat"),
+    (r"/duyuru",                     "duyuru"),
+    (r"/haber",                      "haber"),
+    (r"/etkinlik",                   "haber"),
+    (r"/konferans",                  "haber"),
+    (r"/seminer",                    "haber"),
+    (r"/misyon",                     "tanitim"),
+    (r"/vizyon",                     "tanitim"),
+    (r"/tarihce",                    "tanitim"),
+    (r"/organizasyon",               "tanitim"),
+    (r"/faaliyet-rapor",             "rapor"),
+    (r"/ic-ve-dis-payda",            "rapor"),
+    (r"/prosedur",                   "yonetmelik"),
+    (r"/talimat",                    "yonetmelik"),
+    (r"/yonerge",                    "yonetmelik"),
 ]
 
 # Minimum içerik uzunluğu (bundan kısa sayfalar "boş" sayılır)
@@ -440,22 +507,8 @@ class MapGuidedScraper:
 
         soup = BeautifulSoup(html, "lxml")
 
-        # ── Başlık çıkarma (GİBTÜ'ye özel) ──
-        title = ""
-        for selector_fn, selector_arg in [
-            (soup.find, ("span", {"class": "page_title"})),
-            (soup.find, ("span", {"class": "sayfa_baslik"})),
-            (soup.find, ("div", {"class": "card-title"})),
-            (soup.find, ("h1",)),
-        ]:
-            el = selector_fn(*selector_arg) if isinstance(selector_arg, tuple) else selector_fn(selector_arg)
-            if el:
-                inner = el.find("span") if el.name in ("span",) and el.find("span") else el
-                txt = inner.get_text(strip=True) if inner else el.get_text(strip=True)
-                if txt:
-                    title = txt
-                    break
-
+        # ── Başlık çıkarma (3.2.7.4-A: Genişletilmiş) ──
+        title = self._extract_title(soup, url)
         result.title = title
 
         # ── Ana içerik çıkarma ──
@@ -637,7 +690,15 @@ class MapGuidedScraper:
             for e in self._all_external_links
         ]
 
-        # 7. Ingestion
+        # 7. PDF İçerik Çıkarımı (3.2.7.4-E)
+        if self._all_discovered_pdfs:
+            pdf_docs = self._extract_pdf_documents()
+            if pdf_docs:
+                documents.extend(pdf_docs)
+                report.total_documents = len(documents)
+                logger.info("📄 PDF\'lerden %d ek Document oluşturuldu", len(pdf_docs))
+
+        # 8. Ingestion
         if documents and not dry_run:
             self._ingest(documents)
 
@@ -670,7 +731,7 @@ class MapGuidedScraper:
                 "source_id": source_id,
                 "last_updated": now,
                 "title": r.title or f"{self.department} — Sayfa",
-                "doc_kind": self.doc_kind,
+                "doc_kind": self._infer_doc_kind(r.url, default=self.doc_kind),
                 "language": "tr",
                 "department": self.department,
                 "contact_unit": self.contact_unit or self.department,
@@ -725,23 +786,435 @@ class MapGuidedScraper:
 
         return documents
 
-    # ── İçerik Temizleme ──────────────────────────────────────────────────────
+    # ── İçerik Temizleme (3.2.7.4-C: Tam Boilerplate Temizliği) ────────────
 
     def _clean_page_content(self, html: str) -> str:
         """
         Tam sayfa HTML'ini temizleyerek ana metni çıkarır.
-        Boilerplate kalıplarını kaldırır.
+
+        3.2.7.4-C: TÜM sayfalar için Header, Footer, Sidebar, Menü ve
+        navigasyon elementlerini DOM seviyesinde kaldırır.
         """
-        content = clean_html(html)
-        if not content:
+        if not html:
             return ""
 
+        soup = BeautifulSoup(html, "lxml")
+
+        # 1. DOM seviyesinde boilerplate elementlerini kaldır
+        for selector in _BOILERPLATE_SELECTORS:
+            for el in soup.select(selector):
+                el.decompose()
+
+        # 2. script, style, noscript kaldır
+        for tag in soup.find_all(["script", "style", "noscript", "iframe"]):
+            tag.decompose()
+
+        # 3. Ana içerik alanını bul
+        content_el = None
+
+        # Öncelik 1: birim_safya_body_detay
+        content_el = soup.find("div", class_="birim_safya_body_detay")
+
+        # Öncelik 2: card-content (Birim.aspx sayfaları)
+        if not content_el:
+            content_el = soup.find("div", class_="card-content")
+
+        # Öncelik 3: form#aspnetForm (icerik/ sayfaları)
+        if not content_el:
+            content_el = soup.find("form", id="aspnetForm")
+
+        # Öncelik 4: body
+        if not content_el:
+            content_el = soup.find("body")
+
+        if not content_el:
+            return ""
+
+        # 4. İçerik alanından da kalan boilerplate'leri kaldır
+        for selector in _BOILERPLATE_SELECTORS:
+            for el in content_el.select(selector):
+                el.decompose()
+
+        # 5. Metin çıkar
+        content = content_el.get_text(separator="\n")
+
+        # 6. Regex tabanlı boilerplate kalıntılarını temizle
         for pattern in _BOILERPLATE_PATTERNS:
             content = re.sub(pattern, "", content)
 
+        # 7. Normalleştir
+        content = re.sub(r"[ \t]+", " ", content)
         content = re.sub(r"\n\s*\n+", "\n\n", content)
         content = content.strip()
+
         return content
+
+    # ── Başlık Çıkarma (3.2.7.4-A) ─────────────────────────────────────────
+
+    def _extract_title(self, soup: BeautifulSoup, url: str) -> str:
+        """
+        Sayfa başlığını çıkarır. 5 kademeli fallback:
+          1. span.page_title / span.sayfa_baslik (Birim*.aspx)
+          2. h1
+          3. h2 (icerik/ sayfaları — ilk h2 genellikle sayfa başlığı)
+          4. <title> tagından birim adı kaldırılarak
+          5. URL slug'ından başlık üretimi (son çare)
+        """
+        # Kademe 1: GİBTÜ'ye özel span seçicileri
+        for cls in ["page_title", "sayfa_baslik"]:
+            el = soup.find("span", class_=cls)
+            if el:
+                inner = el.find("span")
+                txt = (inner or el).get_text(strip=True)
+                if txt and len(txt) > 2:
+                    return txt
+
+        # Kademe 2: h1
+        h1 = soup.find("h1")
+        if h1:
+            txt = h1.get_text(strip=True)
+            if txt and len(txt) > 2:
+                return txt
+
+        # Kademe 3: İlk h2 (icerik sayfalarında başlık h2'de)
+        h2 = soup.find("h2")
+        if h2:
+            txt = h2.get_text(strip=True)
+            if txt and len(txt) > 2:
+                return txt
+
+        # Kademe 4: <title> tag'ından
+        title_tag = soup.find("title")
+        if title_tag:
+            raw = title_tag.get_text(strip=True)
+            # "GİBTÜ - İlahiyat Fakültesi" → "İlahiyat Fakültesi"
+            if " - " in raw:
+                parts = raw.split(" - ", 1)
+                if len(parts) > 1 and len(parts[1].strip()) > 2:
+                    return parts[1].strip()
+            elif raw and len(raw) > 2:
+                return raw
+
+        # Kademe 5: URL slug fallback
+        return self._title_from_url_slug(url)
+
+    @staticmethod
+    def _title_from_url_slug(url: str) -> str:
+        """
+        URL slug'ından okunabilir başlık üretir.
+        Örn: 'kalite-toplantilari' → 'Kalite Toplantilari'
+             'BirimMisyon.aspx?id=11' → 'Misyon'
+        """
+        parsed = urlparse(url)
+        path = parsed.path.strip("/")
+
+        if not path:
+            return ""
+
+        # Birim*.aspx kalıbı: BirimMisyon → Misyon
+        last_segment = path.split("/")[-1]
+        if last_segment.lower().startswith("birim") and ".aspx" in last_segment.lower():
+            name = last_segment.split(".")[0]  # BirimMisyon
+            name = re.sub(r"^[Bb]irim", "", name)  # Misyon
+            if name:
+                return name
+
+        # icerik/ kalıbı: son segment slug'dır
+        # icerik/31100/kalite-toplantilari → kalite-toplantilari
+        slug = last_segment
+        # Sayısal segment'i atla
+        if slug.isdigit() and len(path.split("/")) > 1:
+            segments = path.split("/")
+            slug = segments[-1] if not segments[-1].isdigit() else segments[-2]
+
+        if slug.isdigit():
+            return ""
+
+        # Slug'ı başlığa çevir: tire → boşluk, ilk harfler büyük
+        title = slug.replace("-", " ").replace("_", " ")
+        title = title.strip()
+        if title:
+            title = title[0].upper() + title[1:]
+        return title
+
+    # ── Otomatik doc_kind Atama (3.2.7.4-B) ────────────────────────────────
+
+    @staticmethod
+    def _infer_doc_kind(url: str, default: str = "genel") -> str:
+        """
+        URL pattern'e göre otomatik doc_kind atar.
+        Eşleşme bulunamazsa default değer döner.
+        """
+        url_lower = url.lower()
+        for pattern, kind in _URL_DOC_KIND_MAP:
+            if re.search(pattern, url_lower):
+                return kind
+        return default
+
+    # ── PDF İçerik Çıkarımı (3.2.7.4-E) ───────────────────────────────────
+
+    def _extract_pdf_documents(self):
+        """
+        Scrape sırasında tespit edilen PDF'leri indirir ve metin çıkarır.
+
+        Her PDF için ayrı bir Haystack Document oluşturur:
+          - doc_kind: pdf_rapor
+          - source_type: pdf
+          - title: PDF metin adı veya dosya adından
+
+        pdfplumber yoksa graceful degradation ile atlanır.
+        """
+        from haystack import Document
+
+        try:
+            import pdfplumber
+        except ImportError:
+            logger.warning(
+                "⚠️ pdfplumber yüklü değil. PDF metin çıkarımı atlanıyor. "
+                "Yüklemek için: pip install pdfplumber"
+            )
+            return []
+
+        import io
+
+        now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        pdf_documents = []
+
+        for pdf_link in self._all_discovered_pdfs:
+            url = pdf_link.url
+            text_name = pdf_link.text or ""
+
+            try:
+                logger.info("📥 PDF indiriliyor: %s", url[:70])
+                resp = requests.get(url, timeout=20)
+                resp.raise_for_status()
+
+                # PDF metin çıkarma
+                pdf_text = ""
+                with pdfplumber.open(io.BytesIO(resp.content)) as pdf:
+                    for page in pdf.pages:
+                        page_text = page.extract_text()
+                        if page_text:
+                            pdf_text += page_text + "\n\n"
+
+                pdf_text = pdf_text.strip()
+
+                if not pdf_text or len(pdf_text) < MIN_CONTENT_LENGTH:
+                    logger.warning(
+                        "⚠️ PDF metin çıkarılamadı (OCR gerekebilir): %s", url[:60]
+                    )
+                    continue
+
+                # Başlık: bağlantı metni > dosya adı > ilk satır
+                title = text_name
+                if not title:
+                    title = url.split("/")[-1].replace(".pdf", "").replace("_", " ")
+                if not title:
+                    first_line = pdf_text.split("\n")[0][:100]
+                    title = first_line
+
+                source_id = self._generate_source_id(url)
+                doc_id = hashlib.sha256(pdf_text.encode("utf-8")).hexdigest()
+
+                meta = {
+                    "category": self.category,
+                    "source_url": url,
+                    "source_type": "pdf",
+                    "source_id": source_id,
+                    "last_updated": now,
+                    "title": title,
+                    "doc_kind": "pdf_rapor",
+                    "language": "tr",
+                    "department": self.department,
+                    "contact_unit": self.contact_unit or self.department,
+                    "contact_info": self.contact_info or "",
+                }
+
+                doc = Document(id=doc_id, content=pdf_text, meta=meta)
+                pdf_documents.append(doc)
+                logger.info(
+                    "  ✅ PDF Document: \"%s\" | %d karakter",
+                    title[:45], len(pdf_text),
+                )
+
+            except requests.RequestException as e:
+                logger.warning("❌ PDF indirilemedi: %s — %s", url[:60], e)
+            except Exception as e:
+                logger.warning("❌ PDF işleme hatası: %s — %s", url[:60], e)
+
+        return pdf_documents
+
+    # ── JSON'dan Yükleme (3.2.7.4-F) ──────────────────────────────────────
+
+    def load_from_json(self, json_path: str, dry_run: bool = False):
+        """
+        Daha önce scrape edilen JSON çıktısından Document oluşturup
+        tekrar fetch etmeden DB'ye yükler.
+
+        Yeni doc_kind atama, boilerplate temizleme ve title iyileştirme
+        kurallarını JSON verilerine de uygular.
+
+        JSON'daki meta alanından category ve department otomatik okunabilir
+        (CLI'dan sağlanmamışsa).
+
+        Args:
+            json_path: Önceki scrape çıktı JSON dosyasının yolu.
+            dry_run: True ise veritabanına yazmadan rapor ver.
+
+        Returns:
+            Yüklenen Document sayısı.
+        """
+        import json as json_mod
+        from haystack import Document
+        from haystack.document_stores.types import DuplicatePolicy
+
+        logger.info("📂 JSON'dan yükleniyor: %s", json_path)
+
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json_mod.load(f)
+
+        # JSON meta alanından category/department otomatik oku (CLI override yoksa)
+        json_meta = data.get("meta", {})
+        category = self.category
+        department = self.department
+        if category == "genel_bilgi" and json_meta.get("category"):
+            category = json_meta["category"]
+            logger.info("  JSON meta'dan category okundu: %s", category)
+        if not department and json_meta.get("department"):
+            department = json_meta["department"]
+            logger.info("  JSON meta'dan department okundu: %s", department)
+
+        page_results = data.get("page_results", [])
+        if not page_results:
+            logger.warning("JSON'da page_results bulunamadı.")
+            return 0
+
+        now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        documents = []
+        skipped_no_body = 0
+        skipped_too_short = 0
+
+        for pr in page_results:
+            url = pr.get("url", "")
+            body = pr.get("body_content", "")
+            title = pr.get("title", "")
+
+            # body_content yoksa (eski JSON formatı) — atla ve uyar
+            if not body:
+                skipped_no_body += 1
+                continue
+
+            # Regex tabanlı boilerplate kalıntılarını yeniden temizle
+            for pattern in _BOILERPLATE_PATTERNS:
+                body = re.sub(pattern, "", body)
+            body = re.sub(r"[ \t]+", " ", body)
+            body = re.sub(r"\n\s*\n+", "\n\n", body)
+            body = body.strip()
+
+            if len(body) < MIN_CONTENT_LENGTH:
+                skipped_too_short += 1
+                continue
+
+            # Yeni başlık kurallarını uygula
+            if not title or len(title) < 3:
+                title = self._title_from_url_slug(url)
+
+            doc_kind = self._infer_doc_kind(url, default=self.doc_kind)
+            source_id = self._generate_source_id(url)
+            doc_id = hashlib.sha256(body.encode("utf-8")).hexdigest()
+
+            meta = {
+                "category": category,
+                "source_url": url,
+                "source_type": "web",
+                "source_id": source_id,
+                "last_updated": now,
+                "title": title or f"{department} - Sayfa",
+                "doc_kind": doc_kind,
+                "language": "tr",
+                "department": department,
+                "contact_unit": self.contact_unit or department,
+                "contact_info": self.contact_info or "",
+            }
+
+            doc = Document(id=doc_id, content=body, meta=meta)
+            documents.append(doc)
+
+        # ── Özet Rapor ──
+        logger.info("")
+        logger.info("=" * 65)
+        logger.info("JSON YÜKLEME RAPORU — %s", department or json_path)
+        logger.info("=" * 65)
+        logger.info("  JSON sayfa sayısı:     %d", len(page_results))
+        logger.info("  Oluşturulan Document:  %d", len(documents))
+        logger.info("  Atlanan (body yok):    %d", skipped_no_body)
+        logger.info("  Atlanan (çok kısa):    %d", skipped_too_short)
+
+        if skipped_no_body > 0:
+            logger.warning(
+                "  ⚠️ %d sayfa body_content içermiyor. "
+                "Bu JSON eski formatta olabilir (3.2.7.4 öncesi). "
+                "Sayfalari tekrar scrape edip --save-json ile kaydedin.",
+                skipped_no_body,
+            )
+
+        # doc_kind dağılımı
+        kind_dist = {}
+        for d in documents:
+            k = d.meta.get("doc_kind", "?")
+            kind_dist[k] = kind_dist.get(k, 0) + 1
+        logger.info("")
+        logger.info("📊 doc_kind Dağılımı:")
+        for k, v in sorted(kind_dist.items(), key=lambda x: -x[1]):
+            logger.info("  %-16s : %d", k, v)
+
+        # Title doluluk
+        titled = sum(1 for d in documents if d.meta.get("title") and len(d.meta["title"]) > 3)
+        title_pct = titled / len(documents) * 100 if documents else 0
+        title_icon = "✅" if title_pct >= 90 else "⚠️" if title_pct >= 50 else "❌"
+        logger.info("")
+        logger.info(
+            "%s Title doluluk: %d/%d (%%%.0f)",
+            title_icon, titled, len(documents), title_pct,
+        )
+
+        # Karakter dağılımı
+        char_ranges = {"<100": 0, "100-500": 0, "500-5K": 0, "5K-50K": 0, ">50K": 0}
+        total_chars = 0
+        for d in documents:
+            cl = len(d.content)
+            total_chars += cl
+            if cl < 100:
+                char_ranges["<100"] += 1
+            elif cl < 500:
+                char_ranges["100-500"] += 1
+            elif cl < 5000:
+                char_ranges["500-5K"] += 1
+            elif cl < 50000:
+                char_ranges["5K-50K"] += 1
+            else:
+                char_ranges[">50K"] += 1
+        logger.info("")
+        logger.info("📏 Karakter Dağılımı (toplam: %s):", f"{total_chars:,}")
+        for rng, cnt in char_ranges.items():
+            logger.info("  %-10s : %d", rng, cnt)
+
+        logger.info("=" * 65)
+
+        if documents and not dry_run:
+            from app.ingestion.loader import ingest_documents
+            count = ingest_documents(documents, policy=DuplicatePolicy.OVERWRITE)
+            logger.info("💾 %d chunk DB'ye yazıldı (OVERWRITE).", count)
+            return count
+
+        if dry_run:
+            logger.info(
+                "DRY-RUN: %d Document → ingestion pipeline'a gönderilecekti "
+                "(validate → semantic chunk → embed → pgvector write).",
+                len(documents),
+            )
+
+        return len(documents)
 
     # ── Yardımcı Fonksiyonlar ─────────────────────────────────────────────────
 
@@ -912,11 +1385,12 @@ class MapGuidedScraper:
             kind_counts[kind] = kind_counts.get(kind, 0) + 1
         report.doc_kind_distribution = kind_counts
 
-        # Sayfa sonuçları
+        # Sayfa sonuçları (body_content dahil — load-json modu için gerekli)
         for r in results:
             report.page_results.append({
                 "url": r.url,
                 "title": r.title,
+                "body_content": r.body_content,
                 "char_count": r.char_count,
                 "is_valid": r.is_valid,
                 "depth": r.depth,
@@ -1011,11 +1485,11 @@ class MapGuidedScraper:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="GİBTÜ Harita Güdümlü Canlı Scraper (Görev 3.2.7.2)",
+        description="GİBTÜ Harita Güdümlü Canlı Scraper (Görev 3.2.7.2 + 3.2.7.4-F)",
     )
     parser.add_argument(
-        "--blueprint", required=True,
-        help="Blueprint HTML dosya yolu",
+        "--blueprint", required=False, default=None,
+        help="Blueprint HTML dosya yolu (--load-json kullanılmıyorsa zorunlu)",
     )
     parser.add_argument(
         "--category", default="genel_bilgi",
@@ -1057,7 +1531,60 @@ def main():
         "--save-json", type=str, default=None,
         help="Raporu JSON dosyasına kaydet",
     )
+    # 3.2.7.4-F: JSON'dan yükleme modu
+    parser.add_argument(
+        "--load-json", type=str, default=None,
+        help=(
+            "Daha önce scrape edilen JSON çıktısından Document oluşturup "
+            "DB'ye yükle. Bu mod aktifken --blueprint gerekmez, canlı fetch "
+            "yapılmaz. Yeni doc_kind atama, başlık iyileştirme ve boilerplate "
+            "temizleme kuralları JSON verilerine uygulanır. "
+            "OVERWRITE policy ile DB güncellenir."
+        ),
+    )
     args = parser.parse_args()
+
+    # ── --load-json modu (3.2.7.4-F) ──
+    if args.load_json:
+        json_path = args.load_json
+        if not Path(json_path).exists():
+            logger.error("JSON dosyası bulunamadı: %s", json_path)
+            sys.exit(1)
+
+        # Blueprint zorunlu değil, ama dummy path gerekiyor
+        # load_from_json blueprint'e ihtiyaç duymaz
+        blueprint_path = args.blueprint or json_path  # placeholder
+
+        scraper = MapGuidedScraper(
+            blueprint_path=blueprint_path,
+            category=args.category,
+            department=args.department,
+            doc_kind=args.doc_kind,
+            contact_unit=args.contact_unit,
+            contact_info=args.contact_info,
+        )
+
+        is_dry = args.dry_run or not args.ingest
+        result = scraper.load_from_json(json_path, dry_run=is_dry)
+
+        logger.info("")
+        logger.info(
+            "🏁 Görev 3.2.7.4-F — JSON'dan yükleme tamamlandı: %s",
+            f"{result} chunk/Document" if isinstance(result, int) else str(result),
+        )
+
+        if is_dry and not args.ingest:
+            logger.info(
+                "💡 DB'ye yüklemek için: --ingest bayrağını ekleyin"
+            )
+        return
+
+    # ── Normal scrape modu ──
+    if not args.blueprint:
+        logger.error(
+            "--blueprint parametresi zorunludur (--load-json kullanılmıyorsa)."
+        )
+        sys.exit(1)
 
     scraper = MapGuidedScraper(
         blueprint_path=args.blueprint,

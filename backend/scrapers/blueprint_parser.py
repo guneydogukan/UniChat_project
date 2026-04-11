@@ -630,6 +630,8 @@ def extract_body_content(html: str) -> str:
     Bu, sidebar menüsünden bağımsız olarak sayfanın gövde metnini alır.
     Boş döndürülürse sayfa yalnızca navigasyon içeriyor demektir.
 
+    3.2.7.4-C uyumu: DOM seviyesinde tam boilerplate temizliği uygular.
+
     Args:
         html: Ham HTML string.
 
@@ -640,6 +642,22 @@ def extract_body_content(html: str) -> str:
         return ""
 
     soup = BeautifulSoup(html, "lxml")
+
+    # 3.2.7.4-C: DOM seviyesinde boilerplate elementlerini kaldır
+    _BOILERPLATE_SELECTORS = [
+        "footer", "div.page-footer", "div.footer-copyright",
+        "ul.collapsible", "ul.side-nav", "nav", "div.navbar",
+        "div.navbar-fixed", "span.birim-menu", "span#birim-menu-slide",
+        ".fixed-action-btn", "div#header", "div#footer",
+        "div.ust-menu", "div.arama-kutusu",
+    ]
+    for selector in _BOILERPLATE_SELECTORS:
+        for el in soup.select(selector):
+            el.decompose()
+
+    # Script, style vb. kaldır
+    for tag in soup.find_all(["script", "style", "noscript", "iframe"]):
+        tag.decompose()
 
     # Öncelik 1: birim_safya_body_detay (GİBTÜ standart gövde alanı)
     body_div = soup.find("div", class_="birim_safya_body_detay")
@@ -654,10 +672,6 @@ def extract_body_content(html: str) -> str:
 
     if not body_div:
         return ""
-
-    # Script, style vb. kaldır
-    for tag in body_div.find_all(["script", "style", "noscript"]):
-        tag.decompose()
 
     text = body_div.get_text(separator="\n")
 

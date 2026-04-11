@@ -186,6 +186,146 @@ def _merge_short_chunks(chunks: List[Document]) -> List[Document]:
     return merged
 
 
+# ── Strateji: Semantic (Başlık + Paragraf Bazlı) ──
+
+def _split_semantic(doc: Document) -> List[Document]:
+    """
+    3.2.7.4-D: Anlamsal bölme stratejisi.
+
+    Öncelik sırası:
+      1. H1/H2/H3 başlık sınırlarına göre bölme
+      2. Paragraf (\\n\\n) sınırlarına göre bölme
+      3. Max chunk boyutu aşılırsa kelime bazlı fallback
+
+    Her chunk'a heading_context metadata'sı eklenir.
+    """
+    content = doc.content
+    if not content:
+        return [doc]
+
+    # Başlıkları tespit et (## veya ### ile başlayan satırlar)
+    heading_pattern = re.compile(r'^(#{1,4})\s+(.+)', re.MULTILINE)
+    headings = list(heading_pattern.finditer(content))
+
+    # Heading varsa heading-based böl
+    if len(headings) >= 2:
+        return _split_by_headings_with_context(doc, content, headings)
+
+    # Heading yoksa paragraf bazlı böl
+    return _split_by_paragraphs(doc, content)
+
+
+def _split_by_headings_with_context(
+    doc: Document, content: str, headings: list
+) -> List[Document]:
+    """
+    Heading'lere göre böler, her chunk'a heading_context ekler.
+    """
+    chunks = []
+    current_heading_context = ""
+
+    # Heading'den önce giriş paragrafı
+    if headings[0].start() > 0:
+        intro = content[:headings[0].start()].strip()
+        if intro and len(intro) >= CHUNK_MIN_CHARS:
+            chunk_doc = Document(
+                content=intro,
+                meta={**(doc.meta.copy() if doc.meta else {}), "heading_context": "Giriş"},
+            )
+            chunks.append(chunk_doc)
+
+    for i, match in enumerate(headings):
+        heading_level = len(match.group(1))
+        heading_text = match.group(2).strip()
+        start = match.start()
+        end = headings[i + 1].start() if i + 1 < len(headings) else len(content)
+        section = content[start:end].strip()
+
+        if not section:
+            continue
+
+        # Heading context oluştur
+        if heading_level <= 2:
+            current_heading_context = heading_text
+        else:
+            current_heading_context = f"{current_heading_context} > {heading_text}" if current_heading_context else heading_text
+
+        # Çok uzun section'ları paragraf bazlı alt-böl
+        if len(section) > CHUNK_MAX_CHARS * 1.5:
+            sub_chunks = _split_by_paragraphs(
+                Document(content=section, meta=doc.meta.copy() if doc.meta else {}),
+                section,
+                heading_context=current_heading_context,
+            )
+            chunks.extend(sub_chunks)
+        else:
+            chunk_meta = doc.meta.copy() if doc.meta else {}
+            chunk_meta["heading_context"] = current_heading_context
+            chunks.append(Document(content=section, meta=chunk_meta))
+
+    return chunks if chunks else _default_splitter.run([doc])["documents"]
+
+
+def _split_by_paragraphs(
+    doc: Document, content: str, heading_context: str = ""
+) -> List[Document]:
+    """
+    Paragraf (\\n\\n) sınırlarına göre böler.
+    Max chunk'a ulaşınca yeni chunk başlatır.
+    Context overlap: önceki chunk'ın son cümlesi sonraki chunk'ın başına eklenir.
+    """
+    paragraphs = re.split(r'\n\s*\n', content)
+    chunks = []
+    current_chunk = ""
+
+    for para in paragraphs:
+        para = para.strip()
+        if not para:
+            continue
+
+        # Mevcut chunk + yeni paragraf max'ı aşar mı?
+        if current_chunk and len(current_chunk) + len(para) + 2 > CHUNK_MAX_CHARS:
+            # Mevcut chunk'ı kaydet
+            chunk_meta = doc.meta.copy() if doc.meta else {}
+            if heading_context:
+                chunk_meta["heading_context"] = heading_context
+            chunks.append(Document(content=current_chunk.strip(), meta=chunk_meta))
+
+            # Context overlap: önceki chunk'ın son cümlesini al
+            overlap = _get_last_sentence(current_chunk)
+            current_chunk = overlap + "\n\n" + para if overlap else para
+        else:
+            current_chunk = current_chunk + "\n\n" + para if current_chunk else para
+
+    # Son chunk
+    if current_chunk.strip():
+        chunk_meta = doc.meta.copy() if doc.meta else {}
+        if heading_context:
+            chunk_meta["heading_context"] = heading_context
+        chunks.append(Document(content=current_chunk.strip(), meta=chunk_meta))
+
+    # Çok uzun kalan chunk'ları word splitter ile böl
+    final_chunks = []
+    for chunk in chunks:
+        if len(chunk.content) > CHUNK_MAX_CHARS * 2:
+            sub = _default_splitter.run([chunk])["documents"]
+            final_chunks.extend(sub)
+        else:
+            final_chunks.append(chunk)
+
+    return final_chunks if final_chunks else _default_splitter.run([doc])["documents"]
+
+
+def _get_last_sentence(text: str) -> str:
+    """Metnin son cümlesini döndürür (context overlap için)."""
+    sentences = re.split(r'[.!?]\s+', text.strip())
+    if sentences and len(sentences) > 1:
+        last = sentences[-1].strip()
+        if len(last) > 10:
+            return last[:200]  # Max 200 kar overlap
+    return ""
+
+
 # ── Ana Giriş Noktası ──
 
 def split_documents(documents: List[Document]) -> List[Document]:
@@ -230,8 +370,8 @@ def split_documents(documents: List[Document]) -> List[Document]:
             doc_chunks = _default_splitter.run([doc])["documents"]
 
         else:
-            # genel ve diğer tüm türler — varsayılan
-            doc_chunks = _default_splitter.run([doc])["documents"]
+            # genel ve diğer tüm türler — semantic (başlık+paragraf) bölme (3.2.7.4-D)
+            doc_chunks = _split_semantic(doc)
 
         # 1.5 Kısa chunk birleştirme (bölünmez dışında)
         if doc_kind not in ("iletisim", "form") and len(doc_chunks) > 1:

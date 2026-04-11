@@ -46,6 +46,8 @@ DOC_KINDS = Literal[
     "rapor",
     "menu_haritasi",
     "takvim",
+    "personel",
+    "pdf_rapor",
     "genel"
 ]
 
