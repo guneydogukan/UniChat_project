@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:37:11Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\MESLEK YÜKSEKOKULLARI\\Sağlık Hizmetleri Meslek Yüksekokulu\\Tıbbi_Laboratuvar_Teknikleri_Bölümü.html",
+    "birim_id": 99,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Tibbi Laboratuvar Teknikleri Programi"
+  },
+  "summary": {
+    "total_blueprint_urls": 20,
+    "total_fetched": 20,
+    "total_valid": 15,
+    "total_failed": 0,
+    "total_skipped": 5,
+    "total_documents": 16,
+    "total_chars": 8736
+  },
+  "discovered_pdfs": [],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikBirimler.aspx?id=99",
+      "reason": "too_short (8 chars)",
+      "char_count": 8
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=99",
+      "reason": "too_short (0 chars)",
+      "char_count": 0
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=99",
+      "reason": "too_short (5 chars)",
+      "char_count": 5
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=99",
+      "reason": "too_short (16 chars)",
+      "char_count": 16
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=99",
+      "reason": "too_short (19 chars)",
+      "char_count": 19
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=99",
+      "title": "Tıbbi Laboratuvar Teknikleri Programı",
+      "body_content": "GİBTÜ 'de Geleceğin Eğitim Modeli Konuşuldu\n\nGİBTÜ 'nün Kalite Yolculuğu ISO 9001 ile Taçlandı\n\nTürkiye Yüzyılı Maarif Modeli Konferansı\n\nGİBTÜ 'de Mehmet Akif ve Çanakkale Ruhu Konferansı Gerçekleştirildi\n\nUzun Yılların Hizmetine Teşekkür\n\nGİBTÜ, IKAF26 'da Gençlerin Kariyer Yolculuğuna Yön Veriyor\n\nRektörümüzden Ramazan Bayramı Mesajı\n\nGİBTÜ 'de Çanakkale Geçilmez Programı Duygu Dolu Anlara Sahne Oldu",
+      "char_count": 406,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=99",
+      "title": "Yönetim",
+      "body_content": "Yönetim\r\n\nDr. Öğr. Üyesi Şeyda KAYA\n\nÖğretim Elemanı\n\nring_volume\n3019\n\nmail\nseyda.kaya@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 118,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=99",
+      "title": "Hakkımızda",
+      "body_content": "Tıbbi Laboratuvar Teknikleri Programı; hastane, klinik ve diğer araştırma laboratuvarlarında (mikrobiyoloji, biyokimya, patoloji, hematoloji, endokrinoloji, parazitoloji, moleküler biyoloji ve genetik) görev yapmak üzere, modern tekniklere hâkim, alanında yetkin laboratuvar teknikerleri yetiştirmeyi hedeflemektedir. Bu program mezunları laboratuvar ekipman, makine, araç ve gereçlerini kullanarak tıbbi materyallerin biyokimyasal, mikrobiyolojik, patolojik ve hematolojik analizlerini yapma bilgi ve becerisine sahip olurlar. Tıbbi Laboratuvar Teknikleri Programı, 1 Dr.Öğr:Üyesi ve 4 Öğretim görevlisi ile hizmet vermektedir. Programda öğretim dili Türkçedir. Öğrenciler Ölçme, Seçme ve Yerleştirme Merkezi'nce (ÖSYM) yapılan sınav ile seçilmektedir.",
+      "char_count": 753,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=99",
+      "title": "Misyon",
+      "body_content": "Tıbbi Laboratuvar Teknikleri programı, laboratuvarlarda teknolojik cihazları, araçları ve gereçleri kullanabilen, güncel teknikleri takip ederek uygulamalarını yapabilen, insan sağlığına ve etik değerlere önem vererek iletişim ve sorun çözme yeteneği gelişmiş, ülkemizin nitelikli ara eleman ihtiyacını karşılayabilecek öğrencileri yetiştirmeyi görev edinmiştir.",
+      "char_count": 362,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTanitim.aspx?id=99",
+      "title": "Tanıtım",
+      "body_content": "Tıbbi Laboratuvar Teknikleri Programı; hastane, klinik ve diğer araştırma laboratuvarlarında (mikrobiyoloji, biyokimya, patoloji, hematoloji, endokrinoloji, parazitoloji, moleküler biyoloji ve genetik) görev yapmak üzere, modern tekniklere hâkim, alanında yetkin laboratuvar teknikerleri yetiştirmeyi hedeflemektedir. Bu program mezunları laboratuvar ekipman, makine, araç ve gereçlerini kullanarak tıbbi materyallerin biyokimyasal, mikrobiyolojik, patolojik ve hematolojik analizlerini yapma bilgi ve becerisine sahip olurlar.\n\nMESLEĞİN GEREKTİRDİĞİ ÖZELLİKLER\n\nTıbbi laboratuvar teknikeri olmak isteyenlerin;\n\nBiyoloji ve kimya konularına ilgili ve bu alanlarda başarılı,\n\nDikkatini uzun bir süre bir noktaya yoğunlaştırabilen, sabırlı,\n\nÇalışma gruplarında sorumluluk alabilen ve bireysel çalışabilme becerisine sahip,\n\nGöz ve el koordinasyonunu rahat kullanabilen\n\nRutin işler yapmaktan sıkılmayan,\n\nEtkili iletişim kurabilen, hoşgörülü kimseler olmaları gerekir.\n\nÜNVAN\n\nBu bölümden mezun olan öğrencilere \"Tıbbi Laboratuvar Teknikleri Ön Lisans Diploması\" ve \"Tıbbi Laboratuvar Teknikeri\" ünvanı verilmektedir.\n\nGÖREVLER\n\nTıbbi Laboratuvar teknikerleri;\n\nLaboratuvardaki test cihazları ve araçlarının kullanım öncesi kontrollerini yapar.\n\nDeneyler, analizler ve testlerde kullanılacak numune ve örnekleri hazırlar.\n\nTahlil edilecek katı ve sıvı örneklerin test edilebilmesi için gerekli kimyasal sıvıları ve karışımları ve fiziksel şartları hazırlar.\n\nLaboratuvar araç-gereçlerini kullanarak istenilen deney, test ve analizleri yapar.\n\nDeney, test ve analiz bulgularını rapor eder, takip işlemlerini yapar.\n\nLaboratuvar araç-gereçlerini temizler, dezenfekte eder, bakımını yapar,\n\nLaboratuvar uzmanlarının ve tıp adamlarının araştırma çalışmalarına yardımcı olur.\n\nEĞİTİMİN SÜRESİ VE İÇERİĞİ\n\nTıbbi Laboratuvar Teknikleri Programı’nın eğitim süresi, ön lisans düzeyinde iki yıldır. Öğrencilere; Laboratuvar Kimyası, Genel Biyokimya, Klinik Biyokimya, Genel Biyoloji, Genel Mikrobiyoloji, Tıbbi Mikrobiyoloji, Laboratuvar Aletleri, Tıbbi Biyoloji ve Genetik, Moleküler Biyolojik Yöntemler, Patoloji, Hematoloji, İnsan Genetiği, İmmünoloji, Parazitoloji, Toksikoloji, Laboratuvar Uygulamaları gibi mesleki derslerin yanı sıra, Tıbbi Terminoloji, Anatomi, Fizyoloji, Farmakoloji, Histoloji, Atatürk İlkeleri ve İnkılap Tarihi, Türk Dili, İngilizce, İş Sağlığı ve Güvenliği, Halk Sağlığı, Temel Bilgi Teknolojileri, İlk Yardım, Genel ve Mesleki Etik gibi dersler verilmektedir. \n\nAyrıca 1. Sınıf yaz döneminin sonunda 30 iş günü Yaz stajı uygulaması yapılmaktadır.\n\nMEZUNİYET KOŞULLARI\n\nİki yıllık öğretim süresi boyunca en az 120 AKTS ders toplamına ulaşılmalıdır. Gaziantep İslam, Bilim ve Teknoloji Üniversitesi önlisans ve lisans yönetmeliğine göre öğrencilerin mezun olabilmeleri için en az 2,00 ortalaması olması gerekmektedir. Eğitim-Öğretim ve Sınav Yönergesinde belirtilen bütün çalışmaları ve 120 AKTS’yi tamamlamış öğrenci; öğrenimini bitirmiş sayılır ve kendisine Sağlık Hizmetleri Meslek Yüksekokulu’nun Tıbbi Laboratuvar Teknikleri Programının ön lisans diploması verilir.\n\nÜST DERECE PROGRAMLARA GEÇİŞ\n\nTıbbi Laboratuvar Teknikleri önlisans programından mezun olan öğrencilerin Dikey Geçiş Sınavı (DGS) sonucunda Biyoloji, Moleküler Biyoloji ve Genetik, Biyomühendislik, Biyoteknoloji, Biyoteknoloji ve Moleküler Biyoloji, Genetik ve Biyomühendislik, Hemşirelik, Hemşirelik ve Sağlık Hizmetleri lisans programlarına geçiş yapma imkânı bulunmaktadır.\n\nÇALIŞMA ALANLARI VE İŞ BULMA OLANAKLARI\n\nTıbbi Laboratuvar Teknikleri Programı mezunları hastanelerde, tıp fakültelerinde, özel klinikler ve tahlil laboratuvarlarında, sağlık ocakları, diğer sağlık kuruluşlarının araştırma merkezlerinde, halk sağlığı enstitülerinde ve gıda sanayii işletmelerinde, Sağlık Bakanlığına bağlı kamu ve özel tedavi kurumlarının biyokimya, mikrobiyoloji, histoloji, hematoloji, seroloji, patoloji, parazitoloji laboratuvarları, tüp bebek merkezleri ve kan merkezlerinde çalışabilmektedirler. Ayrıca ilaç firmalarının ve gıda sektörünün mikrobiyoloji araştırma birimlerinde görev yapabilirler.",
+      "char_count": 4087,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=99",
+      "title": "Tarihçe",
+      "body_content": "Tarihçe\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi Sağlık Hizmetleri Meslek Yüksekokulu bünyesinde yer alan Tıbbi Laboratuvar Teknikleri Programı, 2021-2022 yılında eğitim-öğretim faaliyetine başlamıştır. Açılan bu program 2021 yılından itibaren örgün öğretim olarak eğitim-öğretim faaliyetlerini sürdürmektedir.",
+      "char_count": 318,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=99",
+      "title": "Vizyon",
+      "body_content": "Eğitim kalitesini yükseltmek amacı ile ileri eğitim teknikleri kullanarak ulusal ve uluslararası düzeyde rekabet edebilecek eğitim standartlarına ulaşmak ve sağlık sektöründeki kurum/kuruluşlar tarafından öncelikli olarak tercih edilen insan kaynağının yetiştirilerek sektöre kazandırılması hedefleri doğrultusunda; bilimsel özgürlüğe inanan güvenilir, üst düzey sağlık bilgi ve becerisi ile donanımlı tıbbi laboratuvar teknikerleri yetiştirilmesine katkıda bulunmaktadır. \n\nTıbbi teşhis laboratuvarları, sağlık hizmetlerinin önemli bir bağlantısını oluşturur. Bu laboratuvarların en temel unsuru laboratuvar teknisyenleridir. Burada verilen hizmetin kalitesi, büyük ölçüde laboratuvar teknisyenlerinin eğitim düzeyine ve becerilerine bağlıdır. Tıbbi Laboratuvar Teknikleri Programı, Sağlık Hizmetleri Meslek Yüksekokulu çatısı altında iki yıllık bir ön lisans programı kapsamında laboratuvar teknikerleri yetiştirmektedir. Program ezbere değil, düşünmeye ve uygulamaya dayalı bir eğitim vermeyi ilke edinmiştir.",
+      "char_count": 1012,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=99",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nÖğr. Gör. Abdul Saltuk Buğra DAŞ\n\nÖğretim Elemanı\n\nring_volume\n3011\n\nmail\nabdulsaltukbugra.das@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Dr. Ali İmran KORKMAZ\n\nÖğretim Elemanı\n\nring_volume\n3021\n\nmail\naliimran.korkmaz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Demet YILMAZKAYA GÖĞÜŞ\n\nDr. Öğr. Üyesi\n\nring_volume\n0000\n\nmail\ndemet.yilmazkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Leyla TUTAR\n\nÖğretim Elemanı\n\nring_volume\n3023\n\nmail\nleyla.tutar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Şeyda KAYA\n\nÖğretim Elemanı\n\nring_volume\n3019\n\nmail\nseyda.kaya@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 602,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=99",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=99",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=99",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\n KATEGORİLER",
+      "char_count": 55,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=99",
+      "title": "Formlar",
+      "body_content": "Formlar\n\nFormlar\n\nok",
+      "char_count": 20,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=99",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=99",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\ntibbilaboratuvarteknikleri@gibtu.edu.tr\n\nphone\n+90 342 909 75 00\n\nprint\n+90 342 909 75 00\n\nWeb Sorumlumuz\n\nÖğr. Gör. Abdul Saltuk Buğra DAŞ\n\nabdulsaltukbugra.das@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 374,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=99",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nDr. Öğr. Üyesi Demet YILMAZKAYA GÖĞÜŞ\n\nring_volume\n0000\n\nmail\ndemet.yilmazkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Abdul Saltuk Buğra DAŞ\n\nring_volume\n3011\n\nmail\nabdulsaltukbugra.das@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Şeyda KAYA\n\nring_volume\n3019\n\nmail\nseyda.kaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Dr. Ali İmran KORKMAZ\n\nring_volume\n3021\n\nmail\naliimran.korkmaz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Leyla TUTAR\n\nring_volume\n3023\n\nmail\nleyla.tutar@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 559,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "title": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "department": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 2,
+    "yonetim": 1,
+    "tanitim": 5,
+    "personel": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

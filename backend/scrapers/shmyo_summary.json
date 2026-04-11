@@ -1,0 +1,125 @@
+{
+  "task": "3.2.10.1",
+  "description": "SHMYO Harita Gudumlu Deep Scrape",
+  "birimler": [
+    {
+      "department": "Saglik Hizmetleri MYO",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\shmyo_saglik_hizmetleri_myo_output.json",
+      "total_documents": 67,
+      "total_valid": 37,
+      "total_failed": 0,
+      "total_chars": 49827,
+      "pdf_count": 32,
+      "doc_kind_distribution": {
+        "genel": 21,
+        "yonetim": 1,
+        "tanitim": 4,
+        "rapor": 1,
+        "yonetmelik": 2,
+        "form": 1,
+        "personel": 2,
+        "duyuru": 2,
+        "haber": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Ameliyathane Hizmetleri Programi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\shmyo_ameliyathane_hizmetleri_programi_output.json",
+      "total_documents": 15,
+      "total_valid": 14,
+      "total_failed": 0,
+      "total_chars": 11751,
+      "pdf_count": 0,
+      "doc_kind_distribution": {
+        "genel": 2,
+        "tanitim": 5,
+        "personel": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Fizyoterapi Programi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\shmyo_fizyoterapi_programi_output.json",
+      "total_documents": 16,
+      "total_valid": 15,
+      "total_failed": 0,
+      "total_chars": 5212,
+      "pdf_count": 0,
+      "doc_kind_distribution": {
+        "genel": 3,
+        "tanitim": 5,
+        "personel": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Tibbi Laboratuvar Teknikleri Programi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\shmyo_tibbi_laboratuvar_teknikleri_programi_output.json",
+      "total_documents": 16,
+      "total_valid": 15,
+      "total_failed": 0,
+      "total_chars": 8736,
+      "pdf_count": 0,
+      "doc_kind_distribution": {
+        "genel": 2,
+        "yonetim": 1,
+        "tanitim": 5,
+        "personel": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Yasli Bakim Programi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\shmyo_yasli_bakim_programi_output.json",
+      "total_documents": 17,
+      "total_valid": 16,
+      "total_failed": 0,
+      "total_chars": 8656,
+      "pdf_count": 0,
+      "doc_kind_distribution": {
+        "genel": 3,
+        "yonetim": 1,
+        "tanitim": 5,
+        "personel": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Ilk ve Acil Yardim Programi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\shmyo_ilk_ve_acil_yardim_programi_output.json",
+      "total_documents": 16,
+      "total_valid": 15,
+      "total_failed": 0,
+      "total_chars": 6996,
+      "pdf_count": 0,
+      "doc_kind_distribution": {
+        "genel": 3,
+        "tanitim": 5,
+        "personel": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    }
+  ]
+}

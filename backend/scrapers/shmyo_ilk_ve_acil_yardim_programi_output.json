@@ -1,0 +1,265 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:38:28Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\MESLEK YÜKSEKOKULLARI\\Sağlık Hizmetleri Meslek Yüksekokulu\\İlk_ve_Acil_Yardım_Bölümü.html",
+    "birim_id": 98,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Ilk ve Acil Yardim Programi"
+  },
+  "summary": {
+    "total_blueprint_urls": 20,
+    "total_fetched": 20,
+    "total_valid": 15,
+    "total_failed": 0,
+    "total_skipped": 5,
+    "total_documents": 16,
+    "total_chars": 6996
+  },
+  "discovered_pdfs": [],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=98",
+      "reason": "too_short (7 chars)",
+      "char_count": 7
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikBirimler.aspx?id=98",
+      "reason": "too_short (8 chars)",
+      "char_count": 8
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=98",
+      "reason": "too_short (0 chars)",
+      "char_count": 0
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=98",
+      "reason": "too_short (5 chars)",
+      "char_count": 5
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=98",
+      "reason": "too_short (16 chars)",
+      "char_count": 16
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=98",
+      "title": "İlk ve Acil Yardım Programı",
+      "body_content": "GİBTÜ 'de Geleceğin Eğitim Modeli Konuşuldu\n\nGİBTÜ 'nün Kalite Yolculuğu ISO 9001 ile Taçlandı\n\nTürkiye Yüzyılı Maarif Modeli Konferansı\n\nGİBTÜ 'de Mehmet Akif ve Çanakkale Ruhu Konferansı Gerçekleştirildi\n\nUzun Yılların Hizmetine Teşekkür\n\nGİBTÜ, IKAF26 'da Gençlerin Kariyer Yolculuğuna Yön Veriyor\n\nRektörümüzden Ramazan Bayramı Mesajı\n\nGİBTÜ 'de Çanakkale Geçilmez Programı Duygu Dolu Anlara Sahne Oldu",
+      "char_count": 406,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=98",
+      "title": "Hakkımızda",
+      "body_content": "Tıbbi aciller, kazalar, felaketler ve diğer acil durumlarda gerekli ilk yardımı uygulamak, hastayı donanımlı bir ambulans ile sağlık kuruluşlarına zamanında zarar vermeden ve acil durum sonrası rehabilitasyonuna imkan sunacak biçimde ulaştırmayı sağlamak hayati önem taşımaktadır. İlk ve acil Yardım programının amacı yaşamı kurtarıcı tıbbi girişimleri, nitelikli sağlık girişimi uygulayabilen ve sürücü ehliyetine sahip sağlık personeli yetiştirmektir. Programı bitirenlere Ön Lisans Diploması ve \"Acil Yardım Teknikeri\" ünvanı verilir. Öğrenciler teorik ve pratik derslere ilave olarak acil serviste ve 112 ambulanslarında uygulama yaparlar. Ambulans teknikeri olmak için kişilerin hasta ve zayıf insanlara yardım etmekten hoşlanan, bedence sağlıklı ve güçlü, çabuk ve doğru karar verebilen, dikkatli, soğukkanlı ve sorumluluk duygusu güçlü, başkaları ile iyi iletişim kurabilen kimseler olmaları gerekir.\n\n2021-2022 yılında eğitim öğretime başlayan program ilk mezunlarını 2023 yılında vermiştir. Program teorik ve uygulama olarak derslerini yürütmektedir. Bunun yanı sıra ikinci sınıfa geçen öğrenciler haftada 2 gün (16 saat) hastane ve istasyonlarda staja çıkmaktadırlar. İlk ve Acil Yardım Programını tamamlamak ve ön lisans derecesini almak için, öğrenciler zorunlu ve mesleki seçmeli dersleri (toplam 120 AKTS için) başarıyla tamamlamalı ve 4.00 üzerinden en az 2.00 olan bir genel not ortalamasına sahip olmalıdır. Programı bitirenlere \nÖn Lisans Diploması\n ve \nAcil Yardım Teknikeri-PARAMEDİK\n ünvanı verilir.\n\nÖğrenciler Yüksekokulda başarılı olduktan sonra Öğrenci Seçme ve Yerleştirme Merkezinin açmış olduğu Dikey geçiş sınavına girip başarılı olduğu takdirde, Lisans eğitimi yapmaya hak kazanırlar. Gelişen teknolojiyle beraber sağlık kuruluşları kalifiye elemanlara ihtiyaç duyduklarından üniversite mezunlarını tercih etmeye başlamakta ve gelecekte daha da önemli olması beklenmektedir. Dikey Geçiş Yapılabilen Bölümler : Programımızdan mezun olan öğrenciler “Acil Yardım ve Afet Yönetimi, Hemşirelik, Hemşirelik ve Sağlık Hizmetleri, ” bölümlerine dikey geçiş ile geçebilmektedirler.\n\nEğitim Süresi  \n\n:\n\n2 yıl \n\nDiploma Türü \n           : \nÖn lisans\n\nÖğrenim yöntem ve teknikleri   \n\n:  Anlatım, Uygulama\n\nKontenjan                 : 60",
+      "char_count": 2256,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=98",
+      "title": "Misyon",
+      "body_content": "Bu programın misyonu; Hastane öncesi acil hizmetlerinde hasta ve yaralılara temel ve ileri yaşam desteği verebilen, bilimsel ve teknolojik gelişmelerin gerektirdiği bilgi, beceri ve donanıma sahip, hasta ya da yaralıların ambulansla güvenli bir şekilde hastanelere ulaşmasını sağlayan, ekip çalışmasına yatkın, ilk ve acil yardım gerektiren tüm durumlarda doğru ve etkin müdahaleyi yapabilen, etik kurallara bağlı sağlık personeli yetiştirmektir.",
+      "char_count": 446,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTanitim.aspx?id=98",
+      "title": "Tanıtım",
+      "body_content": "Tıbbi aciller, kazalar, felaketler ve diğer acil durumlarda gerekli ilk yardımı uygulamak, hastayı donanımlı bir ambulans ile sağlık kuruluşlarına zamanında zarar vermeden ve acil durum sonrası rehabilitasyonuna imkan sunacak biçimde ulaştırmayı sağlamak hayati önem taşımaktadır. İlk ve acil Yardım programının amacı yaşamı kurtarıcı tıbbi girişimleri, nitelikli sağlık girişimi uygulayabilen ve sürücü ehliyetine sahip sağlık personeli yetiştirmektir. Programı bitirenlere Ön Lisans Diploması ve \"Acil Yardım Teknikeri\" ünvanı verilir. Öğrenciler teorik ve pratik derslere ilave olarak acil serviste ve 112 ambulanslarında uygulama yaparlar. Ambulans teknikeri olmak için kişilerin hasta ve zayıf insanlara yardım etmekten hoşlanan, bedence sağlıklı ve güçlü, çabuk ve doğru karar verebilen, dikkatli, soğukkanlı ve sorumluluk duygusu güçlü, başkaları ile iyi iletişim kurabilen kimseler olmaları gerekir.\n\n2021-2022 yılında eğitim öğretime başlayan program ilk mezunlarını 2023 yılında vermiştir. Program teorik ve uygulama olarak derslerini yürütmektedir. Bunun yanı sıra ikinci sınıfa geçen öğrenciler haftada 2 gün (16 saat) hastane ve istasyonlarda staja çıkmaktadırlar. İlk ve Acil Yardım Programını tamamlamak ve ön lisans derecesini almak için, öğrenciler zorunlu ve mesleki seçmeli dersleri (toplam 120 AKTS için) başarıyla tamamlamalı ve 4.00 üzerinden en az 2.00 olan bir genel not ortalamasına sahip olmalıdır. Programı bitirenlere \nÖn Lisans Diploması\n ve \nAcil Yardım Teknikeri-PARAMEDİK\n ünvanı verilir.\n\nÖğrenciler Yüksekokulda başarılı olduktan sonra Öğrenci Seçme ve Yerleştirme Merkezinin açmış olduğu Dikey geçiş sınavına girip başarılı olduğu takdirde, Lisans eğitimi yapmaya hak kazanırlar. Gelişen teknolojiyle beraber sağlık kuruluşları kalifiye elemanlara ihtiyaç duyduklarından üniversite mezunlarını tercih etmeye başlamakta ve gelecekte daha da önemli olması beklenmektedir. Dikey Geçiş Yapılabilen Bölümler : Programımızdan mezun olan öğrenciler “Acil Yardım ve Afet Yönetimi, Hemşirelik, Hemşirelik ve Sağlık Hizmetleri, ” bölümlerine dikey geçiş ile geçebilmektedirler.\n\nEğitim Süresi  \n\n:\n\n2 yıl \n\nDiploma Türü \n           : \nÖn lisans\n\nÖğrenim yöntem ve teknikleri   \n\n:  Anlatım, Uygulama\n\nKontenjan                 : 60",
+      "char_count": 2256,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=98",
+      "title": "Tarihçe",
+      "body_content": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi İlk ve Acil Yardım Programı 2021-2022 eğitim-öğretim yılında ön lisans düzeyinde eğitime başlamıştır.",
+      "char_count": 149,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=98",
+      "title": "Vizyon",
+      "body_content": "Vizyonumuz bilimsel ve teknolojik gelişmelere açık, donanımlı, sağlık hizmetleri konusunda bilgi sahibi ve ani hastalık ya da yaralanma durumlarında hasta/yaralıya kurtarıcı müdahaleyi yapabilen, gerek ülke genelinde gerekse dünyada hizmet sunabilecek alanında yetkin paramedikler yetiştirmektir.",
+      "char_count": 296,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=98",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nÖğr. Gör. Beyhan ŞİMŞEK\n\nÖğr. Gör.\n\nring_volume\n3018\n\nmail\nbeyhan.simsek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Gülüstan KÖSE\n\nÖğr. Gör.\n\nring_volume\n3039\n\nmail\ngulustan.kose@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Tuğba İŞLER\n\nÖğr. Gör.\n\nring_volume\n3016\n\nmail\ntugba.isler@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 320,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=98",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=98",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=98",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\n KATEGORİLER",
+      "char_count": 55,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=98",
+      "title": "Formlar",
+      "body_content": "Formlar\n\nFormlar\n\nok",
+      "char_count": 20,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=98",
+      "title": "Faydalı Linkler",
+      "body_content": "GİBTÜ İlk ve Acil Yrdım Programı İnstagram Hesabı",
+      "char_count": 49,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=98",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=98",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nilkacilyardim@gibtu.edu.tr\n\nphone\n+90 342 909 75 00\n\nprint\n+90 342 909 75 00\n\nWeb Sorumlumuz\n\nÖğr. Gör. Beyhan ŞİMŞEK\n\nbeyhan.simsek@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 345,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=98",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nÖğr. Gör. Tuğba İŞLER\n\nring_volume\n3016\n\nmail\ntugba.isler@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Beyhan ŞİMŞEK\n\nring_volume\n3018\n\nmail\nbeyhan.simsek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Gülüstan KÖSE\n\nring_volume\n3039\n\nmail\ngulustan.kose@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 328,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "title": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "department": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 3,
+    "tanitim": 5,
+    "personel": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:35:50Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\MESLEK YÜKSEKOKULLARI\\Sağlık Hizmetleri Meslek Yüksekokulu\\Ameliyathane_Hizmetleri_Bölümü.html",
+    "birim_id": 100,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Ameliyathane Hizmetleri Programi"
+  },
+  "summary": {
+    "total_blueprint_urls": 20,
+    "total_fetched": 20,
+    "total_valid": 14,
+    "total_failed": 0,
+    "total_skipped": 6,
+    "total_documents": 15,
+    "total_chars": 11751
+  },
+  "discovered_pdfs": [],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=100",
+      "reason": "too_short (7 chars)",
+      "char_count": 7
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikBirimler.aspx?id=100",
+      "reason": "too_short (8 chars)",
+      "char_count": 8
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=100",
+      "reason": "too_short (0 chars)",
+      "char_count": 0
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=100",
+      "reason": "too_short (5 chars)",
+      "char_count": 5
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=100",
+      "reason": "too_short (16 chars)",
+      "char_count": 16
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=100",
+      "reason": "too_short (19 chars)",
+      "char_count": 19
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=100",
+      "title": "Ameliyathane Hizmetleri Programı",
+      "body_content": "GİBTÜ 'de Geleceğin Eğitim Modeli Konuşuldu\n\nGİBTÜ 'nün Kalite Yolculuğu ISO 9001 ile Taçlandı\n\nTürkiye Yüzyılı Maarif Modeli Konferansı\n\nGİBTÜ 'de Mehmet Akif ve Çanakkale Ruhu Konferansı Gerçekleştirildi\n\nUzun Yılların Hizmetine Teşekkür\n\nGİBTÜ, IKAF26 'da Gençlerin Kariyer Yolculuğuna Yön Veriyor\n\nRektörümüzden Ramazan Bayramı Mesajı\n\nGİBTÜ 'de Çanakkale Geçilmez Programı Duygu Dolu Anlara Sahne Oldu",
+      "char_count": 406,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=100",
+      "title": "Hakkımızda",
+      "body_content": "Program Adı:\n Ameliyathane Hizmetleri Programı (Önlisans)\n\nEğitim Türü \n: Tam Zamanlı 1. Öğretim\n\nProgram Tanıtımı\n\nMeslek Yüksekokulumuz Ameliyathane Hizmetleri Programı; sağlık alanında kariyer planlayan öğrenciler için tüm beklentiyi karşılayacak şekilde planlanmıştır. Bu doğrultuda eğitim programımız güncel bilgiler ışığında hazırlanmıştır.\n\nAmeliyathane Hizmetleri Bölümünün amacı; ameliyathanede kullanılan tüm cerrahi malzemelerin hazırlanmasını ve ameliyat sırasında kullanılmasını sağlayabilecek, bütün ameliyat ekiplerinde doğrudan yer alabilecek, cerrahi ameliyat sırasında asiste edebilecek, ameliyathane, cerrahi yoğun bakım merkezi ve sterilizasyon ünitelerinde ihtiyaç duyulan yardımcı cerrahi sağlık personeli yetiştirilmektedir. Ameliyathane Hizmetleri Bölümünü başarıyla tamamlayan öğrencilere ön lisans diploması ve “Ameliyathane Teknikeri” unvanı verilir.\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi Sağlık Hizmetleri Meslek Yüksekokulu ‘Ameliyathane Hizmetleri Programı’; gelişen ameliyathane tekniklerini takip eden, iletişim becerileri yüksek, etik değerlere saygılı, ekip çalışmasına yatkın, problem çözebilen. çabuk kavrayabilen, saygın, nitelikli ve cerrahi alanda uluslararası bilgi seviyesine ulaşmış  ameliyathane teknikerleri yetiştirmeyi ilke edinmiştir. Bu doğrultuda hazırladığımız eğitim müfredatıyla mesleki derslerin yanında Temel Tıp dersleri de verilecek ve 2 yıl boyunca hem teorik hem uygulamalı dersler en verimli şekilde öğrencilerimize aktarılacaktır. Okulumuzun deneyimli ve donanımlı akademik kadrosu ve Üniversitemizin laboratuvar alt yapısı ile öğrencilerimize sunduğumuz zengin ders içerikleri ve laboratuvar uygulamalarının yanında Sağlık Tesislerinde de uygulamalar yapılarak öğrencilerimizi mesleğe en iyi şekilde hazırlayacağız.\n\nAmeliyathane Hizmetleri Bölümünde Okumak İsteyenlerin Sahip Olması Gereken Özellikler Nelerdir?\n\nYüksek dikkat ve sorumluluk sahibi olmak,\n\nSabırlı ve titiz olmak,\n\nStresli ve duygusal durumlarla başa çıkabilme yeteneği göstermek,\n\nHasta güvenliği ve memnuniyetini ön planda tutmak,\n\nİşbirliği ve ekip çalışmasına yatkın olmak,\n\nEtkili iletişim becerilerine sahip olmak,\n\nEsnek çalışma saatlerine uyumlu olmak,\n\nAnalitik düşünme yeteneğine sahip olmak gerekmektedir.\n\nAmeliyathane tekniklerinin görevleri nedir diye özetlemek gerekirse;\n\nHastanın ve Ameliyat Odasının Operasyon Öncesi hazırlıklarını yapar.\n\nAmeliyathanede cerrahın sorumluluğu altında ameliyat sırasında ameliyat ekibine yardımcı olur.\n\nHastadan alınan patolojileri korur ve kayıt tutarak ilgili yerlere teslim eder.\n\nAmeliyat sonrasında kullanılan aletlerin sterilizasyonunu (mikroptan arındırma) yaparak muhafazasını sağlar.\n\nAmeliyathanedeki bütün cihaz ve aletlerin bakımını, temizliğini, muhafazasını ve tedarik edilmesini sağlar.\n\nAmeliyathane sterilizasyonunun korunmasını sağlar.\n\nKayıtların tutulmasını sağlar ve kontrol eder.\n\nCerrahi branşlarla ilgili hastalıkları ve ameliyat yöntemlerini yeterli derecede bilir.\n\nTüm cerrahi branşların ameliyatlarında kullanılan temel - özel setleri ve diğer cerrahi malzemeleri tanır, ameliyata hazırlayarak kullanımına yardımcı olur.\n\nİş güvenliği, hasta ve çalışan güvenliği, mesleğin verimlilik ve kalite gereklerini bilir ve bu ilkelere uygun olarak çalışır.\n\nHalk sağlığı, Enfeksiyon hastalıkları, bulaşıcı hastalıklar ve önleme yöntemlerini tanımlar.\n\nYara bakımı ve temizliğini bilir, pansumanını yapar.\n\nAtık yönetimi ve çevre koruma düzenlemelerini bilir.\n\nTemel sağlık, ilk yardım, bilgisayar kullanımı ve genel kültür konularında bilgi sahibidir.\n\nİş Olanakları\n\nMezun sayısının az olması ve özel hastanelerin çoğalması ile daha çok ihtiyaç duyulan bir meslek haline gelmiştir. Hastanelerin bu alanda özel eğitim görmüş sağlık elemanlarına ihtiyaçları olması nedeniyle iş bulma imkânları yüksektir. Mezun olan öğrencilerimiz Sağlık Bakanlığı, üniversite hastaneleri ile özel sağlık kuruluşlarının ameliyathaneleri başta olmak üzere, merkezi sterilizasyon ünitelerinde, endoskopi salonlarında, doğumhanelerde, diş ile ilgili tedaviler ve cerrahi işlemlerin gerçekleştirildiği birimlerde, cerrahi branş uzmanlarına destek vererek görev yapabilirler. \n\nAyrıca isteyen öğrencilerimiz mezuniyet sonrası Dikey Geçiş Sınavına girerek ÖSYM tarafından ilan edilen lisans programlarından;\n\nAcil Yardım ve Afet Yönetimi,\n\nHemşirelik,                                                                                                              \n\nHemşirelik ve Sağlık Hizmetleri bölümlerinde lisans eğitimine devam edebilirler.\n\nSağlık alanına yapıcı katkılar sağlamak ve geleceğin bireylerini yetiştirmek üzere sizi ailemize davet ediyoruz.",
+      "char_count": 4643,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=100",
+      "title": "Misyon",
+      "body_content": "Ameliyathane Programının misyonu; Sağlık hizmetleri içerisinde, cerrahi alanda ihtiyaç duyulan, ameliyathane tekniklerini takip eden, iletişim becerileri yüksek, etik değerlere saygılı, ekip çalışmasına yatkın, problem çözebilen, çabuk kavrayabilen, ülkemizde ve uluslararası sağlık sektöründe tercih edilen ve sürekli kendini geliştirmeyi amaçlayan nitelikli ameliyathane teknikerleri yetişmektir.",
+      "char_count": 398,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTanitim.aspx?id=100",
+      "title": "Tanıtım",
+      "body_content": "Program Adı:\n Ameliyathane Hizmetleri Programı (Önlisans)\n\nEğitim Türü \n: Tam Zamanlı 1. Öğretim\n\nProgram Tanıtımı\n\nMeslek Yüksekokulumuz Ameliyathane Hizmetleri Programı; sağlık alanında kariyer planlayan öğrenciler için tüm beklentiyi karşılayacak şekilde planlanmıştır. Bu doğrultuda eğitim programımız güncel bilgiler ışığında hazırlanmıştır.\n\nAmeliyathane Hizmetleri Bölümünün amacı; ameliyathanede kullanılan tüm cerrahi malzemelerin hazırlanmasını ve ameliyat sırasında kullanılmasını sağlayabilecek, bütün ameliyat ekiplerinde doğrudan yer alabilecek, cerrahi ameliyat sırasında asiste edebilecek, ameliyathane, cerrahi yoğun bakım merkezi ve sterilizasyon ünitelerinde ihtiyaç duyulan yardımcı cerrahi sağlık personeli yetiştirilmektedir. Ameliyathane Hizmetleri Bölümünü başarıyla tamamlayan öğrencilere ön lisans diploması ve “Ameliyathane Teknikeri” unvanı verilir.\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi Sağlık Hizmetleri Meslek Yüksekokulu ‘Ameliyathane Hizmetleri Programı’; gelişen ameliyathane tekniklerini takip eden, iletişim becerileri yüksek, etik değerlere saygılı, ekip çalışmasına yatkın, problem çözebilen. çabuk kavrayabilen, saygın, nitelikli ve cerrahi alanda uluslararası bilgi seviyesine ulaşmış  ameliyathane teknikerleri yetiştirmeyi ilke edinmiştir. Bu doğrultuda hazırladığımız eğitim müfredatıyla mesleki derslerin yanında Temel Tıp dersleri de verilecek ve 2 yıl boyunca hem teorik hem uygulamalı dersler en verimli şekilde öğrencilerimize aktarılacaktır. Okulumuzun deneyimli ve donanımlı akademik kadrosu ve Üniversitemizin laboratuvar alt yapısı ile öğrencilerimize sunduğumuz zengin ders içerikleri ve laboratuvar uygulamalarının yanında Sağlık Tesislerinde de uygulamalar yapılarak öğrencilerimizi mesleğe en iyi şekilde hazırlayacağız.\n\nAmeliyathane Hizmetleri Bölümünde Okumak İsteyenlerin Sahip Olması Gereken Özellikler Nelerdir?\n\nYüksek dikkat ve sorumluluk sahibi olmak,\n\nSabırlı ve titiz olmak,\n\nStresli ve duygusal durumlarla başa çıkabilme yeteneği göstermek,\n\nHasta güvenliği ve memnuniyetini ön planda tutmak,\n\nİşbirliği ve ekip çalışmasına yatkın olmak,\n\nEtkili iletişim becerilerine sahip olmak,\n\nEsnek çalışma saatlerine uyumlu olmak,\n\nAnalitik düşünme yeteneğine sahip olmak gerekmektedir.\n\nAmeliyathane tekniklerinin görevleri nedir diye özetlemek gerekirse;\n\nHastanın ve Ameliyat Odasının Operasyon Öncesi hazırlıklarını yapar.\n\nAmeliyathanede cerrahın sorumluluğu altında ameliyat sırasında ameliyat ekibine yardımcı olur.\n\nHastadan alınan patolojileri korur ve kayıt tutarak ilgili yerlere teslim eder.\n\nAmeliyat sonrasında kullanılan aletlerin sterilizasyonunu (mikroptan arındırma) yaparak muhafazasını sağlar.\n\nAmeliyathanedeki bütün cihaz ve aletlerin bakımını, temizliğini, muhafazasını ve tedarik edilmesini sağlar.\n\nAmeliyathane sterilizasyonunun korunmasını sağlar.\n\nKayıtların tutulmasını sağlar ve kontrol eder.\n\nCerrahi branşlarla ilgili hastalıkları ve ameliyat yöntemlerini yeterli derecede bilir.\n\nTüm cerrahi branşların ameliyatlarında kullanılan temel - özel setleri ve diğer cerrahi malzemeleri tanır, ameliyata hazırlayarak kullanımına yardımcı olur.\n\nİş güvenliği, hasta ve çalışan güvenliği, mesleğin verimlilik ve kalite gereklerini bilir ve bu ilkelere uygun olarak çalışır.\n\nHalk sağlığı, Enfeksiyon hastalıkları, bulaşıcı hastalıklar ve önleme yöntemlerini tanımlar.\n\nYara bakımı ve temizliğini bilir, pansumanını yapar.\n\nAtık yönetimi ve çevre koruma düzenlemelerini bilir.\n\nTemel sağlık, ilk yardım, bilgisayar kullanımı ve genel kültür konularında bilgi sahibidir.\n\nİş Olanakları\n\nMezun sayısının az olması ve özel hastanelerin çoğalması ile daha çok ihtiyaç duyulan bir meslek haline gelmiştir. Hastanelerin bu alanda özel eğitim görmüş sağlık elemanlarına ihtiyaçları olması nedeniyle iş bulma imkânları yüksektir. Mezun olan öğrencilerimiz Sağlık Bakanlığı, üniversite hastaneleri ile özel sağlık kuruluşlarının ameliyathaneleri başta olmak üzere, merkezi sterilizasyon ünitelerinde, endoskopi salonlarında, doğumhanelerde, diş ile ilgili tedaviler ve cerrahi işlemlerin gerçekleştirildiği birimlerde, cerrahi branş uzmanlarına destek vererek görev yapabilirler. \n\nAyrıca isteyen öğrencilerimiz mezuniyet sonrası Dikey Geçiş Sınavına girerek ÖSYM tarafından ilan edilen lisans programlarından;\n\nAcil Yardım ve Afet Yönetimi,\n\nHemşirelik,                                                                                                              \n\nHemşirelik ve Sağlık Hizmetleri bölümlerinde lisans eğitimine devam edebilirler.\n\nSağlık alanına yapıcı katkılar sağlamak ve geleceğin bireylerini yetiştirmek üzere sizi ailemize davet ediyoruz.",
+      "char_count": 4643,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=100",
+      "title": "Tarihçe",
+      "body_content": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Ameliyathane Hizmetleri Programı 2023-2024 eğitim-öğretim yılında ön lisans düzeyinde eğitime başlamıştır.",
+      "char_count": 154,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=100",
+      "title": "Vizyon",
+      "body_content": "Eğitim kalitesini yükseltmek amacı ile ileri eğitim teknikleri kullanarak ulusal ve uluslararası düzeyde rekabet edebilecek eğitim standartlarına ulaşmak ve kendi alanlarında en üst düzeyde bilgi seviyesine ulaşmış, evrensel değerlere ve insana saygılı, değişim ve yenilikçiliğe önder olan kaliteli sağlık elemanları yetiştirmektir.",
+      "char_count": 332,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=100",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nÖğr. Gör. Elif ÖZDEMİR\n\nÖğr. Gör.\n\nring_volume\n3005\n\nmail\nelif.ozdemir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Orhan POLAT\n\nÖğr. Gör.\n\nring_volume\n3025\n\nmail\norhan.polat@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Özlem KARDAŞ KİN\n\nÖğr. Gör. Dr.\n\nring_volume\n3040\n\nmail\nozlem.kardaskin@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 337,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=100",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=100",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=100",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\n KATEGORİLER",
+      "char_count": 55,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=100",
+      "title": "Formlar",
+      "body_content": "Formlar\n\nFormlar\n\nok",
+      "char_count": 20,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=100",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=100",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nameliyathanehizmetleri@gibtu.edu.tr\n\nphone\n+90 342 909 75 00\n\nprint\n+90 342 909 75 00\n\nWeb Sorumlumuz\n\nÖğr. Gör. Elif ÖZDEMİR\n\nelif.ozdemir@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 352,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=100",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nÖğr. Gör. Elif ÖZDEMİR\n\nring_volume\n3005\n\nmail\nelif.ozdemir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Orhan POLAT\n\nring_volume\n3025\n\nmail\norhan.polat@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Özlem KARDAŞ KİN\n\nring_volume\n3040\n\nmail\nozlem.kardaskin@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 341,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "title": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "department": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 15,
+      "total": 15,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 2,
+    "tanitim": 5,
+    "personel": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

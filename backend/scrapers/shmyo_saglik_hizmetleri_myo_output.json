@@ -1,0 +1,680 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:35:10Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\MESLEK YÜKSEKOKULLARI\\Sağlık_Hizmetleri_Meslek_Yüksekokulu_Genel_Yapısı.html",
+    "birim_id": 31,
+    "birim_title": "Akademik Birimler",
+    "category": "bolumler",
+    "department": "Saglik Hizmetleri MYO"
+  },
+  "summary": {
+    "total_blueprint_urls": 38,
+    "total_fetched": 38,
+    "total_valid": 37,
+    "total_failed": 0,
+    "total_skipped": 1,
+    "total_documents": 67,
+    "total_chars": 49827
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Meslek Yüksekokul Kataloğumuz",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250924120251_2545446e.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Meslek Yüksekokul Kataloğumuz (  Eng )",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20230606094003_ead6beef.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Öz Değerlendirme Raporu",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260311095804_23bddecf.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Risk Analizi",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250912090726_5a06051f.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Swot Analizi",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250912090903_66a7b81d.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Komisyon ve Koordinatörlükler",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251120092911_1a6f93f1.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "İş Planı ( Puko Döngüsü )",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250916133910_26689b49.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Shmyo Yönetim Prosesi",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250918095147_d1ed7a18.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Shmyo Akademik Eğitim Prosesi",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250918094932_993aaedf.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2025 Yılı Faaliyet Raporu",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260119161533_c1b98a43.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2024 Yılı Faaliyet Raporu",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250124142629_75b1b95d.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2023 Yılı Faaliyet Rapou",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240207144322_2d572006.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2022 Yılı Faaliyet Raporu",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240206113625_ffad4f36.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2021 Yılı Faaliyet Raporu",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240206113509_31ae6abf.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2020 Yılı Faaliyet Raporu",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240206113131_4d4d152a.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Öğrenci Danışmalık Saatleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250925163728_b749f924.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Kalite Komisyonu",
+      "url": "https://www.gibtu.edu.tr/medya/gibtudosya/20231115150905_c38ea370.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Birim Kalite Komisyonları Yönergesi",
+      "url": "https://www.gibtu.edu.tr/medya/gibtudosya/20231115150845_99c2f097.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2023 Uluslararası Öğrenci Öğrenim Ücretleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20230728141351_b2ee1067.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Application Requirements",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20230802155328_1d099d1a.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "متطلبات الاستمارة",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20230804155504_3cc40161.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Raporlar",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20250319113840_7039582b.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Bölüm  /  Birim Koordinatörleri",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260104131728_c978dbbd.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Erasmus+ Charter",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251110164418_6e3cb352.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Isced Kodları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251103153653_5eb04a1e.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "KA131 Anlaşmaları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260118014243_8d50bf23.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "KA171 Anlaşmaları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251117141606_9b011efe.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2023 Dönemi El Kitapçığı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240624153700_0163d278.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2024 Erasmus+ Uygulama El Kitabı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250319124704_4a7b7411.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Organizasyon Şeması",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251001092238_603989c0.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Hassa Görevler Tablosu",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260330095411_e60f1a4b.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Birim İç Değerlendirme Raporu",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260330110937_ed7d9bf2.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [
+    {
+      "text": "Sayısal Veriler",
+      "url": "https://ubys.gibtu.edu.tr/bip/businessintelligence/home/index",
+      "type": "subdomain"
+    },
+    {
+      "text": "Öğretim Planları ve Ders İçerikleri",
+      "url": "https://ubys.gibtu.edu.tr/ais/outcomebasedlearning/home/index?culture=tr-tr",
+      "type": "subdomain"
+    },
+    {
+      "text": "Aday Öğrenci Portalı",
+      "url": "https://adayogrenci.gibtu.edu.tr/",
+      "type": "subdomain"
+    },
+    {
+      "text": "Mezun Öğrenci Bilgi Sistemi",
+      "url": "https://ubys.gibtu.edu.tr/gts/portal/home/index",
+      "type": "subdomain"
+    },
+    {
+      "text": "Uzaktan Eğitim Uygulama ve Araştırma Merkezi",
+      "url": "https://ubys.gibtu.edu.tr",
+      "type": "subdomain"
+    },
+    {
+      "text": "Gaziantep",
+      "url": "https://gaziantep.goturkiye.com/tr/anasayfa",
+      "type": "external"
+    },
+    {
+      "text": "Başvuru Ekranı",
+      "url": "https://ubys.gibtu.edu.tr/ais/applicationforms/home/index?apptype=3",
+      "type": "subdomain"
+    },
+    {
+      "text": "Öğrenci No. Sorgulama (  Öbs  )",
+      "url": "https://ubys.gibtu.edu.tr/ogrencinosorgulama#",
+      "type": "subdomain"
+    },
+    {
+      "text": "Öğrencilik Durumu Sorgulama ( E-Devlet )",
+      "url": "https://www.turkiye.gov.tr/yuksekogretim-kurulu-universite-e-kayit-belge-sorgulama",
+      "type": "external"
+    },
+    {
+      "text": "Kurumsal Değerlendirme Sistemi",
+      "url": "https://ubys.gibtu.edu.tr/BIP/BusinessIntelligence/Home/Index",
+      "type": "subdomain"
+    }
+  ],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/birimidaribirimler.aspx?id=31",
+      "reason": "too_short (0 chars)",
+      "char_count": 0
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=31",
+      "title": "Sağlık Hizmetleri Meslek Yüksekokulu",
+      "body_content": "2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Akademik Genel Kurul Toplantımız Gerçekleştirildi\n\nMeslek Yüksekokulumuz Personeli ile Değerlendirme ve Stratejik Planlama Toplantısı\n\n22 Aralık Paramedik Günü Etkinliği Gerçekleştirildi\n\n17 Aralık 2025 | Mezun Öğrenci Buluşması\n\nSağlık Çalışanlarına Yönelik Tıbbi İngilizce Okuma ve Konuşma Kursu\n\nGaziantep Genç Kızılay topluluğu İlk ve Acil Yardım Müdahale Teknikleri ile İlgili Eğitim Gerçekleştirdi.\n\nGISTU Erasmus+ Ofisi Sağlık Hizmetleri Meslek Yüksekokulunda Bilgilendirme Sunumu Düzenledi.\n\nHABERLER\n\nTÜMÜ\n\n03.04.2026 11:43\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Akademik Genel Kurul Toplantımız Gerçekleştirildi\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Akademik Genel Kurul Toplantımız Rektör Yardımcımız Prof.Dr. Reşit YILDIZ'ın da katılımı ile icra edildi.\n\n Devamını Oku\r\n\n24.12.2025 15:38\n\nMeslek Yüksekokulumuz Personeli ile Değerlendirme ve Stratejik Planlama Toplantısı\n\nMeslek Yüksekokulumuz Müdürü Doç.Dr.Hikmet DİNÇ'in nazik daveti ile Değerlendirme ve Stratejik Planlama Toplantısı için bir araya gelindi. \n\n Devamını Oku\r\n\n22.12.2025 08:56\n\n22 Aralık Paramedik Günü Etkinliği Gerçekleştirildi\n\nÜniversitemiz Tıbbi Hizmetler ve Teknikler Bölümü İlk ve Acil Yardım Programı tarafından, 22 Aralık Paramedik Günü kapsamında anlamlı bir etkinlik düzenlendi. Etkinlik, İl Sağlık Müdürlüğü ve UMKE iş birliğiyle gerçekleştirildi.\n\n Devamını Oku\r\n\n19.12.2025 14:38\n\n17 Aralık 2025 | Mezun Öğrenci Buluşması\n\nSağlık ve Bakım Hizmetleri Bölümü Yaşlı Bakım Programı olarak, ilk mezunlarımızdan Ahmet Mercan ve Aykut Topuz ile yeniden bir araya gelmenin mutluluğunu yaşadık.\n\n Devamını Oku\r\n\n12.12.2025 13:09\n\nGaziantep Genç Kızılay topluluğu İlk ve Acil Yardım Müdahale Teknikleri ile İlgili Eğitim Gerçekleştirdi.\n\nSağlık Hizmetleri Meslek Yüksekokulumuz Ameliyathane Hizmetleri Programı öğrencilerine ilk ve acil yardım müdahale teknikleri ile ilgili Gaziantep genç Kızılay topluluğu eğitimcisi tarafından sertifikalı katılım belgesi verilen eğitim gerçekleştirilmiş olup; Sayın Halil ALICIOĞLU'nun anlatımları ve değerli sunumları öğrencilerimize önemli katkılar sağlamıştır.\n\n Devamını Oku\r\n\n09.12.2025 14:07\n\nGISTU Erasmus+ Ofisi Sağlık Hizmetleri Meslek Yüksekokulunda Bilgilendirme Sunumu Düzenledi.\n\nÜniversitemiz Erasmus+ Ofisi tarafından Sağlık Hizmetleri Meslek Yüksekokulu öğrencilerine yönelik Erasmus+ programının tanıtımına ilişkin bilgilendirici bir sunum gerçekleştirildi. Erasmus+ Ofisi koordinasyonunda Öğr. Gör. İrem ÇETİNKAYA tarafından verilen sunumda, Erasmus+ kapsamında sunulan öğrenim ve staj hareketliliği imkânları, başvuru aşamaları, hibe süreçleri ve uluslararası deneyimin öğrencilere sağlayacağı katkılar detaylı şekilde aktarıldı.\n\nSunum sırasında öğrencilerden gelen sorular yanıtlanırken, yurt dışı hareketlilik sürecine dair önemli hatırlatmalar ve başvuruda dikkat edilmesi gereken hususlar da paylaşıldı. Öğrencilerin gösterdiği yoğun ilgi, yüksekokul bünyesindeki uluslararasılaşma farkındalığının her geçen gün daha da güçlendiğini ortaya koydu.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n27\n\nMar\n\n 2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Ara Sınav Takvimi\r\n\n05\n\nŞub\n\n 2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Ders Programı\r\n\n30\n\nOca\n\n 2025-2026 Eğitim - Öğretim Yılı Bahar Dönemi Yatay Geçiş Sonuçları İlanı\r\n\n21\n\nOca\n\n 2025-2026 Eğitim Öğretim Yılı Güz Dönemi Bütünleme Sınav Takvimi\r\n\n17\n\nAra\n\n Sağlık Çalışanlarına Yönelik Tıbbi İngilizce Okuma ve Konuşma Kursu\r\n\n28\n\nEki\n\n 2025-2026 Eğitim Öğretim Yılı Güz Dönemi Ara Sınav Takvimi",
+      "char_count": 3555,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 35,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimyonetim.aspx?id=31",
+      "title": "Yönetim",
+      "body_content": "Müdür\r\n\nDoç. Dr. Hikmet DİNÇ\n\nMeslek Yüksekokul Müdürü\n\nring_volume\n3001\n\nmail\nhikmet.dinc@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Müdür Yardımcıları\r\n\nDr. Öğr. Üyesi Özlem KARDAŞ KİN\n\nDr. Öğr. Üyesi\n\nring_volume\n3035\n\nmail\nozlem.kardaskin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Şeyda KAYA\n\nÖğr. Gör. Dr.\n\nring_volume\n3019\n\nmail\nseyda.kaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yüksekokul Sekreteri\r\n\n Mehmet Ali EKİNCİOĞLU\n\nYüksekokul Sekreteri\n\nring_volume\n3033\n\nmail\nmehmetali.ekincioglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yönetim Kurulu\r\n\nDoç. Dr. Hikmet DİNÇ\n\nBaşkan\n\nring_volume\n3001\n\nmail\nhikmet.dinc@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Özlem KARDAŞ KİN\n\nMeslek Yüksekokul Müdür Yardımcısı\n\nring_volume\n3035\n\nmail\nozlem.kardaskin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Şeyda KAYA\n\nMeslek Yüksekokul Müdür Yardımcısı\n\nring_volume\n3019\n\nmail\nseyda.kaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Ayşegül Burçin YILDIRIM\n\nÜye\n\nring_volume\n2312\n\nmail\naysegul.yildirim@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi İbrahim Halil KENGER\n\nÜye\n\nring_volume\n2313\n\nmail\nibrahimhalil.kenger@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Rabia TAŞDEMİR\n\nÜye\n\nring_volume\n2315\n\nmail\nrabia.tasdemir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yüksekokul Kurulu\r\n\nDoç. Dr. Hikmet DİNÇ\n\nBaşkan\n\nring_volume\n3001\n\nmail\nhikmet.dinc@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Özlem KARDAŞ KİN\n\nMeslek Yüksekokul Müdür Yardımcısı\n\nring_volume\n3035\n\nmail\nozlem.kardaskin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Şeyda KAYA\n\nMeslek Yüksekokul Müdür Yardımcısı\n\nring_volume\n3019\n\nmail\nseyda.kaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Nur Ceren GÜVENÇ\n\nBölüm Başkan V.\n\nring_volume\n3009\n\nmail\nnurceren.guvenc@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Halil İbrahim DEMİRÖZ\n\nBölüm Başkan V.\n\nring_volume\n3010\n\nmail\nhibrahim.demiroz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Demet YILMAZKAYA GÖĞÜŞ\n\nBölüm Başkanı\n\nring_volume\n3038\n\nmail\ndemet.yilmazkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n İdari",
+      "char_count": 1988,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 34,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTanitim.aspx?id=31",
+      "title": "Tanıtım",
+      "body_content": "TARİHÇE\n\nÜniversitemiz 18 Mayıs 2018 tarih ve 30425 sayılı Resmi Gazetede yayınlanan Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 09/05/2018 olan 7141 nolu Kanunla, 2809 sayılı kanuna yapılan ek maddeyle önce Gaziantep Bilim ve Teknoloji Üniversitesi adıyla; daha sonra ise 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan Vergi Kanunları ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 17/01/2019 olan 7161 nolu Kanunun 14.maddesi ile 2809 sayılı Kanunun ek 178.maddesi başlığının birinci fıkrasında yer alan “Gaziantep Bilim ve Teknoloji Üniversitesi” ibareleri, “Gaziantep İslam Bilim ve Teknoloji Üniversitesi” olarak değiştirilmesi ile kurulmuştur.\n\nMeslek yüksekokulları üst düzeyde uygulayıcı meslek elemanı yetiştiren yükseköğretim kurumları olup, eğitim öğretim süreleri 2 yıldır. Mezun olma hakkı kazanan öğrencilere ön lisans diploması verilir. Teknik bölümlerden mezun olan öğrenciler aynı zamanda  “Tekniker” ünvanı almaya hak kazanır. Meslek Yüksekokulumuzda Fizyoterapi, Yaşlı Bakım, İlk ve Acil Yardım, Tıbbi Laboratuvar Teknikleri ve Ameliyathane Hizmetleri Programlarında Öğrenci kabul edilmektedir.  \n\nAKADEMİK KADRO\n\nYüksekokulumuzda kadrolu olarak ders veren; 19 öğretim Görevlisi bulunmaktadır. Ayrıca Üniversitemizde mevcut Tıp Fakültesi ve Sağlık Bilimleri Fakültesi başta olmak üzere diğer Fakülte ve Yüksekokullardan görevlendirilen öğretim elemanları da eğitim-öğretime katkı sağlamaktadır.\n\nEĞİTİM YERİ\n\nYüksekokulumuz, Gaziantep İslam Bilim ve Teknoloji Üniversitesi kampüsü içinde kendisine tahsis edilen mekânda eğitim-öğretimini sürdürmektedir. Teorik dersler Yüksekokulumuza ait dersliklerde ve üniversitemiz amfilerinde; uygulamalı dersler ise Gaziantep Aile ve Sosyal Politikalar Bakanlığına bağlı Yaşlı Bakım evleri ile Sağlık Bakanlığına ait Bölge Eğitim ve Araştırma Hastanesi klinik ve laboratuvarlarında yapılmaktadır.\n\nFİZİKİ DURUM\n\nYüksekokulumuzda 105 kişilik 7 adet amfi, 60 Kişilik 2 adet Derslik, 1 Adet Toplantı Salonu, 1 Adet çalışma salonu, 1 adet laboratuvar, Etkinlik Salonu, kantin ve Bay Bayan Mescit bulunmaktadır. Okulumuz bina içi resimlerine  \nhttp://www.gibtu.edu.tr/birimicerik.aspx?id=31&icid=148\n linkine tıklayarak ulaşabilirsiniz.",
+      "char_count": 2313,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 32,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=31",
+      "title": "Tarihçe",
+      "body_content": "TARİHÇE\n\nÜniversitemiz 18 Mayıs 2018 tarih ve 30425 sayılı Resmi Gazetede yayınlanan Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 09/05/2018 olan 7141 nolu Kanunla, 2809 sayılı kanuna yapılan ek maddeyle önce Gaziantep Bilim ve Teknoloji Üniversitesi adıyla; daha sonra ise 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan Vergi Kanunları ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 17/01/2019 olan 7161 nolu Kanunun 14.maddesi ile 2809 sayılı Kanunun ek 178.maddesi başlığının birinci fıkrasında yer alan “Gaziantep Bilim ve Teknoloji Üniversitesi” ibareleri, “Gaziantep İslam Bilim ve Teknoloji Üniversitesi” olarak değiştirilmesi ile kurulmuştur.\n\n Meslek Yüksekokulumuzda aşağdaki Programlara Öğrenci kabul edilmektedir.\n\nFizyoterapi ve Rehabilitasyon Bölümü / Fizyoterapi Programı,\n\nSağlık ve Bakım Hizmetleri Bölümü / Yaşlı Bakım Programı,\n\nTıbbi Hizmetler ve Teknikler Bölümü / Tıbbi Laboratuvar Teknikleri Programı,\n\nTıbbi Hizmetler ve Teknikler Bölümü / İlk ve Acil Yardım Programı,\n\nTıbbi Hizmetler ve Teknikler Bölümü / Ameliyathane Hizmetleri Programı.",
+      "char_count": 1188,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 31,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=31",
+      "title": "Misyon",
+      "body_content": "Ulusal uluslararası ve etik ilkelere dayalı planlı eğitim hizmetleri desteğiyle, çağdaş bilgi ve beceri ile bağışlanmış, kültürel bilgi ve iletişim sahibi, insan sağlığına ve etik değerlere önem veren çözüm odaklı, özverili, kullanıcıların sağlık hizmetlerine kavuşturulması.",
+      "char_count": 275,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 30,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=31",
+      "title": "Vizyon",
+      "body_content": "Sürekli kendini yenileyen bilime, gelişen ve değişen bilgi sistemine rahatça uyum sağlayabilen güncel bilgi birikimi ile donanımlı, bilgi paylaşımına açık, mesleki alanda üst düzey bilgi ve deneyim sahibi bireyler yetiştirerek verdiği kaliteli eğitim ile alanında en üst seviyede olmak.",
+      "char_count": 286,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 29,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimhiyerarsi.aspx?id=31",
+      "title": "Organizasyon Şeması",
+      "body_content": "zoom_out_map\n\nDosyayı görüntüleyemiyorsanız, \nburadan indirebilirsiniz\n veya dosyayı görüntülemk için \nAdobe PDF Reader\n indirebilirsiniz.",
+      "char_count": 138,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 28,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimakademikbirimler.aspx?id=31",
+      "title": "Akademik Birimler",
+      "body_content": "Fizyoterapi ve Rehabilitasyon Bölümü\n\nFizyoterapi Programı\n\nSağlık ve Bakım Hizmetleri Bölümü\n\nYaşlı Bakım Programı\n\nTıbbi Hizmetler ve Teknikler Bölümü\n\nTıbbi Laboratuvar Teknikleri Programı\n\nİlk ve Acil Yardım Programı\n\nAmeliyathane Hizmetleri Programı",
+      "char_count": 254,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 27,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/shmyo/icerik/31046/kalite-politikasi",
+      "title": "Kalite Politikası",
+      "body_content": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Sağlık Hizmetleri Meslek Yüksekokulu Birim Kalita Politikası; Yükseköğretim kalite güvence sistemini esas alan, sürekli iyileştirme ve yenilikçi yaklaşımları benimseyen, eğitim-öğretim, araştırma-geliştirme ve toplumsal katkı alanlarında etkin, mesleki gerekliliklere uygun, etik ilkeleri benimseyen ve benimseten, çağdaş bilgi ve beceri ile kültürel bilgi ve iletişim sahibi nitelikli sağlık profesyonelleri yetiştiren ve sağlık hizmeti alanında etkili ve başarılı katkısı olan bir öğretim kurumu olma ilkesi ile kurumsal kalite sisteminin güvence altına alınmasını ve yürütülmesini kapsar.",
+      "char_count": 639,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 25,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=31&icid=33001",
+      "title": "Akreditasyon Belgeleri",
+      "body_content": "İlk ve Acil Yardım Programı MEDEK Akreditasyon Belgesi için \ntıklayınız\n.\n\nYaşlı Bakım Programı MEDEK Akreditasyon Belgesi için \ntıklayınız\n.",
+      "char_count": 141,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 24,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimicerik.aspx?id=31&icid=14162",
+      "title": "Görev Tanım Formları",
+      "body_content": "Sağlık Hizmetleri Meslek Yüksekokulunda Görev Tanımları\n\n1. Gibtü SHMYO Yüksekokul Müdürü Görev Tanımı için \ntıklayınız\n.\n\n2. Gibtü SHMYO Yüksekokul Müdürü Yardımcıları Görev Tanımı için \ntıklayınız\n.\n\n3. Gibtü SHMYO Yüksekokul Kurulu Görev Tanımı için \ntıklayınız\n. \n\n4. Gibtü SHMYO Yönetim Kurulu Görev Tanımı için \ntıklayınız\n.\n\n5. Gibtü SHMYO Bölüm Kurulu Görev Tanımı için \ntıklayınız\n.\n\n6. Gibtü SHMYO Bölüm Başkanı Görev Tanımı için \ntıklayınız\n. \n\n7. Gibtü SHMYO Yüksekokul Sekreteri Görev Tanımı için \ntıklayınız\n.\n\n8. Öğrenci, Arşiv ve Web İşlerinden Sorumlu Memur Görev Tanımı için \ntıklayınız\n.\n\n9. Personel, Kayıt Kontrol ve Mali İşlerden Sorumlu Memur Görev Tanımı için \ntıklayınız\n.\n\n10. \nGibtu SHMYO Destek Personel Görev Tanımı için \ntıklayınız\n.",
+      "char_count": 763,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 23,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/shmyo/icerik/22867/dis-paydaslarla-ile-yapilan-protokoller",
+      "title": "Paydaşlarımız",
+      "body_content": "DIŞ PAYDAŞLAR\n\nGaziantep İl Sağlık Müdürlüğü\n\nGaziantep İl Sağlık Müdürlüğü ile Gaziantep İslam Bilim ve Teknoloji Üniversitesi arasında imzalanan Protokoller:\n\n                      * 2021 yılında yapılmış olan Protokol için \ntıklayınız \n\n                      * 2022 yılında yapılmış olan Protokol için \ntıklayınız\n\n                      * 2025 yılında imza altına alınan Gaziantep İslam Bilim ve Teknoloji Üniversitesi ile Gaziantep Şehir Hastanesi \n\"Birlikte Kullanım Protokolü\"\n için \ntıklayınız\n\nGaziantep Üniversitesi\n\n   ​Gaziantep Üniversitesi ile Gaziantep İslam Bilim ve Teknoloji Üniversitesi arasında imzalanan Protokoller:\n\n                      * 2024 yılında yapılmış olan Protokol için \ntıklayınız\n\nGaziantep Büyükşehir Belediyesi\n\nİÇ PAYDAŞLAR\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi \nTıp Fakültesi\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi \nSağlık Bilimleri Fakültesi\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi \nTeknik Bilimler Meslek Yüksekokulu\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi \nMühendislik ve Doğa Bilimleri Fakültesi\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi \nRektörlük Ortak Dersler Bölümü",
+      "char_count": 1158,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimicerik.aspx?id=31&icid=167",
+      "title": "İş Akış Şemaları",
+      "body_content": "Sağlık Hizmetleri Meslek Yüksekokulu İş Akış Şemaları:\n\nDers Kayıt İşlemleri İş Akış Şeması için \ntıklayınız \n\nDers Muafiyet ve İntibak İşlemleri İş Akış Şeması için \ntıklayınız \n\nMazeret Sınavı İş Akış Şeması için \ntıklayınız\n\nÖğrenci Disiplin İşleri İş Akış Şeması için \ntıklayınız\n\nHaftalık Ders Programı İş Akış Şeması için \ntıklayınız \n\nKayıt Dondurma İş Akış Şeması için \ntıklayınız\n\nGelen-Giden Evrak İş Akış Şeması için \ntıklayınız\n\nMazeretli Kayıt Yenileme İş Akış Şeması için \ntıklayınız\n\nSınavlara İtiraz İşlemleri İş Akış Şeması için \ntıklayınız\n\nEk Ders İşlemleri İş Akış Şeması için \ntıklayınız\n\nÖğretim Elemanı Atama İşlemleri İş Akış Şeması için \ntıklayınız\n\nDers Görevlendirme İş Akış Şeması için \ntıklayınız\n\nGörev Yolluğu İşlemleri İş Akış Şeması için \ntıklayınız\n\nKurul Kararı İşlemleri İş Akış Şeması için \ntıklayınız",
+      "char_count": 838,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/shmyo/icerik/30826/kurullar",
+      "title": "Kurullar",
+      "body_content": "Yüksekokul Kurulu\n\nSıra No\n\nUnvan / Ad-Soyad\n\nGörevi\n\nKuruldaki Görevi\n\n1\n\nDoç. Dr. Hikmet DİNÇ\n\nYüksekokul Müdürü\n\nBaşkan\n\n2\n\nÖğr. Gör. Dr. Şeyda KAYA   \n\nYüksekokul Müdür Yardımcısı \n\nÜye\n\n3\n\nÖğr. Gör. Elif ÖZDEMİR\n\nYüksekokul Müdür Yardımcısı \n\nÜye\n\n4\n\nÖğr. Gör. Işılay KILIÇASLAN\n\nFizyoterapi ve Rehabilitasyon Bölümü Başkan V.   \n\nÜye\n\n5\n\nÖğr. Gör. Nur Ceren GÜVENÇ\n\nSağlık ve Bakım Hizmetleri Bölümü Başkan V.\n\nÜye\n\n6\n\nÖğr. Gör. Leyla TUTAR\n\nTıbbi Hizmetler ve Teknikler Bölümü Başkan V.\n\nÜye\n\nYüksekokul Yönetim Kurulu\n\nSıra No\n\nUnvan / Ad-Soyad\n\nGörevi\n\nKuruldaki Görevi\n\n1\n\nDoç. Dr. Hikmet DİNÇ\n\nYüksekokul Müdürü\n\nBaşkan\n\n2\n\nÖğr. Gör. Dr. Şeyda KAYA\n\nYüksekokul Müdür Yardımcısı\n\nÜye\n\n3\n\nÖğr. Gör. Elif ÖZDEMİR\n\nYüksekokul Müdür Yardımcısı\n\nÜye\n\n4\n\nDoç. Dr. Rabia TAŞDEMİR\n\nTıp Fakültesi Anatomi Anabilim Dalı Başkanı\n\nÜye\n\n5\n\nDoç. Dr. Ayşegül Burçin YILDIRIM\n\nTıp Fakültesi Histoloji ve Embriyoloji Anabilim Dalı Başkanı \n\nÜye\n\n6\n\nDr. Öğr. Üyesi İbrahim Halil KENGER \n\nTıp Fakültesi Tıbbi Genetik Anabilim Dalı Başkanı \n\nÜye\n\nYüksekokul \nDanışma Kurulu\n\nSıra No\n\nUnvan / Ad-Soyad\n\nGörevi\n\nKuruldaki Görevi\n\n1\n\nDoç. Dr. Hikmet DİNÇ\n\nYüksekokul Müdürü\n\nBaşkan\n\n2\n\nÖğr. Gör. Dr. Şeyda KAYA\n\nYüksekokul Müdür Yardımcısı\n\nÜye\n\n3\n\nÖğr. Gör. Elif ÖZDEMİR\n\nYüksekokul Müdür Yardımcısı\n\nÜye\n\n4\n\nDr. Öğr. Üyesi Bengisu TÜFEKÇİ  \n\nFizyoterapi ve Rehabilitasyon Bölümü Dr. Öğr. Üyesi\n\nÜye\n\n5\n\nDr. Baver DEMİR\n\nÇocuk Sağlığı ve Hastalıkları Uzmanı \n\nÜye\n\n6\n\nDr. Ahmet ŞAHİN\n\nEnfeksiyon Hastalıkları Uzmanı \n\nÜye\n\n7\n\nDoç. Dr. Akın YİĞİN\n\nHarran Üniversitesi Veterinerlik Fakültesi- Genetik Anabilim Dalı Üyesi \n\nÜye\n\n8\n\nBaran CANBAKIŞ\n\nÖğrenci Temsilcisi\n\nÜye",
+      "char_count": 1656,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/shmyo/icerik/31048/talimatlar",
+      "title": "Talimatlar",
+      "body_content": "Meslek Yüksekokulumuz Talimatları:\n\nYangın Talimatı için \ntıklayınız\n\nLaboratuvar Kullanım Talimatı için \ntıklayınız \n\nGenel Temizlik Talimatı için \ntıklayınız \n\nOfis Çalişmalarinda İş Sağliği Ve Güvenliği Talimati için \ntıklayınız\n\nArşiv Talimatı için \ntıklayınız",
+      "char_count": 264,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimicerik.aspx?id=31&icid=31061",
+      "title": "Anketler",
+      "body_content": "Meslek Yüksekokulumuz bünyesinde Uygulanan Anket Sonuçları:\n\n2025 Yılı Öğrenci Memnuniyeti Anketi Sonuçları\n\n2025 Yılı Dış Paydaş Görüş Anketi Sonuçları\n\n2025 Yılı Öğrenci Ders Değerlendirme Anketi Sonuçları\n\nAnket Değerlendirme Raporları: \n\n2024-2025 Öğretim Yılı Güz Dönemi derslerinin öğrenci değerlendirme anketlerinin analizi\n\n2023-2024 Öğretim yılı Bahar Dönemi derslerinin öğrenci değerlendirme anketlerinin analizi",
+      "char_count": 422,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=31",
+      "title": "Formlar",
+      "body_content": "Öğrenci İşleri\n\n Ders Muafiyet Başvuru Formu\r\n\n Mazeret Ders Kayıt Formu\r\n\n Mazeret Sınavı Dilekçe Formu\r\n\n Ders Ekleme Çıkarma Dilekçesi\r\n\n İlişik Kesme Formu ( Kendi İsteği ile )\r\n\n Kayıt Dondurma Başvuru Formu\r\n\n Diğer Yükseköğretim Kurumlarının Yaz Okulu Programlarından Ders Alma Başvuru Formu\r\n\n Ek Sınav Başvuru Formu\r\n\n Tek Ders Dilekçesi Formu\r\n\n Diploma Kayıp Formu\r\n\n Sınav Kağıdı Teslim Tutanağı\r\n\n Sınav Zarf Kapağı\r\n\n Staj Sözleşmesi\r\n\n Staj Başvuru Formu\r\n\n Staj Başvuru Formu ( Yaz Stajı İçin )\r\n\n İş Kazası Bildirim Formu\r\n\nPersonel İşleri\n\n Aile Durum Bildirim Formu\r\n\n Arşiv Evrak Talep Formu\r\n\n Etkinlik Değerlendirme Formu\r\n\n Etkinlik Talep Formu\r\n\n Faaliyet Değerlendirme Formu ( Dr. Öğretim Üyesi )\r\n\n Faaliyet Değerlendirme Raporu ( Öğretim Görevlisi )\r\n\n Akademik Personel Görevlendirme Talep Formu ( 1 Haftadan Az )\r\n\n Akademik Personel Görevlendirme Talep Formu( 1 Haftadan Fazla )\r\n\n Lavabo Temizlik Takip Formu\r\n\n Mal Bildirim Beyannamesi Formu\r\n\n Mescit Temizlik Takip Formu",
+      "char_count": 1004,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=31",
+      "title": "Akademik Personel",
+      "body_content": "Fizyoterapi ve Rehabilitasyon Bölümü\r\n\n Fizyoterapi Programı\r\n\nÖğr. Gör. Işılay KILIÇASLAN\n\nÖğr. Gör.\n\nring_volume\n3006\n\nmail\nisilay.kilicaslan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Bengisu TÜFEKÇİ\n\nDr. Öğr. Üyesi\n\nring_volume\n3022\n\nmail\nbengisu.tufekci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Halil İbrahim DEMİRÖZ\n\nBölüm Başkan V.\n\nring_volume\n3010\n\nmail\nhibrahim.demiroz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Aysun SÖYLEMEZ\n\nÖğr. Gör.\n\nring_volume\n3020\n\nmail\naysun.soylemez@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Sağlık ve Bakım Hizmetleri Bölümü\r\n\n Yaşlı Bakım Programı\r\n\nÖğr. Gör. Nur Ceren GÜVENÇ\n\nBölüm Başkan V.\n\nring_volume\n3024\n\nmail\nnurceren.guvenc@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Emine KARACAN\n\nDr. Öğr. Üyesi\n\nring_volume\n3008\n\nmail\nemine.karacan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Dr. Ayşe Duygu ÖZBAŞ\n\nÖğr. Gör. Dr.\n\nring_volume\n3009\n\nmail\nayseduygu.ozbas@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Esin SAPÇI\n\nDr. Öğr. Üyesi\n\nring_volume\n3007\n\nmail\nesin.sapci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Tıbbi Hizmetler ve Teknikler Bölümü\r\n\n Tıbbi Laboratuvar Teknikleri Programı\r\n\nÖğr. Gör. Leyla TUTAR\n\nÖğr. Gör.\n\nring_volume\n3023\n\nmail\nleyla.tutar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Demet YILMAZKAYA GÖĞÜŞ\n\nBölüm Başkanı\n\nring_volume\n3038\n\nmail\ndemet.yilmazkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Dr. Ali İmran KORKMAZ\n\nÖğr. Gör. Dr.\n\nring_volume\n3021\n\nmail\naliimran.korkmaz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Şeyda KAYA\n\nDr. Öğr. Üyesi\n\nring_volume\n3019\n\nmail\nseyda.kaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Abdul Saltuk Buğra DAŞ\n\nÖğr. Gör. Dr.\n\nring_volume\n3011\n\nmail\nabdulsaltukbugra.das@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n İlk ve Acil Yardım Programı\r\n\nÖğr. Gör. Gülüstan KÖSE\n\nProgram Başkanı\n\nring_volume\n3039\n\nmail\ngulustan.kose@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Beyhan ŞİMŞEK\n\nÖğr. Gör.\n\nring_volume\n3018\n\nmail\nbeyhan.simsek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Tuğba İŞLER\n\nÖğr. Gör.\n\nring_volume\n3016\n\nmail\ntugba.isler@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Ameliyathane Hizmetleri Programı\r\n\nDr. Öğr. Üyesi Özlem KARDAŞ KİN\n\nProgram Başkanı\n\nring_volume\n3035\n\nmail\nozlem.kardaskin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Elif ÖZDEMİR\n\nÖğr. Gör.\n\nring_volume\n3005\n\nmail\nelif.ozdemir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Orhan POLAT\n\nDr. Öğr. Üyesi\n\nring_volume\n3025\n\nmail\norhan.polat@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 2421,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=31",
+      "title": "İdari Personel",
+      "body_content": "Yüksekokul Sekreteri\r\n\n Mehmet Ali EKİNCİOĞLU\n\nYüksekokul Sekreteri\n\nring_volume\n3033\n\nmail\nmehmetali.ekincioglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Öğrenci İşleri\r\n\n Meryem YİĞİT\n\nMemur\n\nring_volume\n3034\n\nmail\nmeryem.ekinci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Personel İşleri\r\n\n Muhittin ÇİFÇİ\n\nMemur\n\nring_volume\n3036\n\nmail\nmuhittin.cifci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Tahakkuk İşleri\r\n\n Muhittin ÇİFÇİ\n\nMemur\n\nring_volume\n3036\n\nmail\nmuhittin.cifci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Kayıt Kontrol İşleri\r\n\n Meryem YİĞİT\n\nMemur\n\nring_volume\n3034\n\nmail\nmeryem.ekinci@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 593,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/akademiktakvim",
+      "title": "Akademik Takvim",
+      "body_content": "Dosyayı görüntüleyemiyorsanız, \nburadan indirebilirsiniz\n veya dosyayı görüntülemk için \nAdobe PDF Reader\n indirebilirsiniz.",
+      "char_count": 124,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/ogrencikulupleri",
+      "title": "Üniversitemiz Öğrenci Toplulukları",
+      "body_content": "Afet ve Acil Durum Öğrenci Topluluğu\n\nE-POSTA\ngulustan.kose@gibtu.edu.tr\n\nDANIŞMAN BİLGİSİ\n\nDanışman\nÖĞR. GÖR. GÜLÜSTAN KÖSE\n\nDanışman Y.\nÖĞR. GÖR. GÜLÜSTAN KÖSE",
+      "char_count": 161,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birim.aspx?id=71",
+      "title": "Uluslararası Öğrenci Ofisi",
+      "body_content": "GİBTÜ ve Gaün 'lü Uluslararası Öğrenciler İngilizce Münazarada Buluştu\n\nGİBTÜ ve Gaün 'lü Uluslararası Öğrenciler İngilizce Münazarada Buluştu\n\nHABERLER\n\nTÜMÜ\n\n13.03.2026 12:03\n\nGİBTÜ ve Gaün 'lü Uluslararası Öğrenciler İngilizce Münazarada Buluştu\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi English Speaking Kulübü (ES Club) ile Gaziantep Üniversitesi Debate Kulübü iş birliğinde düzenlenen İngilizce münazara etkinliği, tamamı uluslararası öğrencilerden oluşan katılımcıların aktif performansıyla gerçekleştirildi.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n13\n\nMar\n\n GİBTÜ ve Gaün 'lü Uluslararası Öğrenciler İngilizce Münazarada Buluştu",
+      "char_count": 637,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/erasmus",
+      "title": "Erasmus+ Koordinatörlüğü",
+      "body_content": "2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\n\nEbelik, Hemşirelik ve Yaşlı Bakım Alanında Portekiz ile Erasmus+ İş Birliği\n\n2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\n\nKüresel Ortaklık Ağımız Güçleniyor: Stellenbosch Üniversitesi ile Anlaşma\n\nErasmus+ Kapsamında 42 Yeni Uluslararası Anlaşma Tamamlandı\n\nGİBTÜ 'den Gastronomi Alanında Uluslararası İş Birliği Adımları\n\nErasmus+ KA131 İkili İş Birliği\n\nErasmus+ KA171 İkili İş Birliği\n\nHABERLER\n\nTÜMÜ\n\n26.03.2026 11:15\n\n2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\n\n📢 2025–2026 ERASMUS+ ÖĞRENCİ ÖĞRENİM VE STAJ HAREKETLİLİĞİ SONUÇLARI AÇIKLANDI\n\n Devamını Oku\r\n\n24.02.2026 10:39\n\nEbelik, Hemşirelik ve Yaşlı Bakım Alanında Portekiz ile Erasmus+ İş Birliği\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi bünyesinde, Ebelik-Hemşirelik ve Sağlık Hizmetleri Meslek Yüksekokulu Yaşlı Bakım Programı alanlarında uluslararasılaşma çalışmaları kapsamında önemli bir adım daha atılmıştır.\n\n Devamını Oku\r\n\n23.02.2026 17:00\n\n2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi 2025-2026 Akademik Yılı Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği başvuruları başlamıştır.\n\n Devamını Oku\r\n\n19.02.2026 11:32\n\nKüresel Ortaklık Ağımız Güçleniyor: Stellenbosch Üniversitesi ile Anlaşma\n\nÜniversitemizin uluslararasılaşma vizyonu doğrultusunda, Güney Afrika’nın köklü yükseköğretim kurumlarından Stellenbosch University ile ikili iş birliği anlaşması imzalanmıştır.\n\n Devamını Oku\r\n\n17.02.2026 11:20\n\nErasmus+ Kapsamında 42 Yeni Uluslararası Anlaşma Tamamlandı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi, Erasmus+ KA131 ve KA171 programları kapsamında 2025 yılı için farklı ülkelerden yükseköğretim kurumlarıyla toplam 42 yeni ikili anlaşmanın hazırlanma sürecini başarıyla tamamlamıştır. Süreç; kurumlar arası resmi yazışmaların yürütülmesi, bölüm bazlı ihtiyaç analizlerinin gerçekleştirilmesi, anlaşma metinlerinin hazırlanması ve karşılıklı imza aşamalarının tamamlanmasını kapsamaktadır. Bu anlaşmalar, üniversitemizin uluslararasılaşma vizyonunu güçlendirirken öğrenci ve personel hareketliliği açısından yeni ve sürdürülebilir iş birliklerinin önünü açmaktadır.\n\n Devamını Oku\r\n\n09.02.2026 13:28\n\nGİBTÜ 'den Gastronomi Alanında Uluslararası İş Birliği Adımları\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi akademisyenlerinden \nDr. Öğr. Üyesi Erol Taşkın\n tarafından yürütülen uluslararası temaslar kapsamında gastronomi ve mutfak sanatları alanında önemli iş birliği anlaşmaları gerçekleştirildi.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n26\n\nMar\n\n 2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\r\n\n11\n\nMar\n\n 2025-2026 Erasmus+ Start-up Konsorsiyumu Eğitim Alma Başvuruları Sonuçları Açıklandı.\r\n\n23\n\nŞub\n\n 2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\r\n\n14\n\nOca\n\n Erasmus+ KA131 İkili İş Birliği\r\n\n14\n\nKas\n\n Erasmus+ Personel Hareketliliği Sonuçları Açıklandı",
+      "char_count": 3104,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/ogrenciisleri",
+      "title": "Öğrenci İşleri Daire Başkanlığı",
+      "body_content": "GİBTÜ 'de Geleceğin Eğitim Modeli Konuşuldu\n\nGİBTÜ 'nün Kalite Yolculuğu ISO 9001 ile Taçlandı\n\nTürkiye Yüzyılı Maarif Modeli Konferansı\n\nGİBTÜ 'de Mehmet Akif ve Çanakkale Ruhu Konferansı Gerçekleştirildi\n\nUzun Yılların Hizmetine Teşekkür\n\nGİBTÜ, IKAF26 'da Gençlerin Kariyer Yolculuğuna Yön Veriyor\n\nRektörümüzden Ramazan Bayramı Mesajı\n\nGİBTÜ 'de Çanakkale Geçilmez Programı Duygu Dolu Anlara Sahne Oldu\n\nSıkça Sorulan Sorular\n\nÖğrenci No Sorgula\n\nÖğrencilik Durumu Sorgula\n\nAday Öğrenci\n\nUluslararası Öğrenci\n\nAkademik Takvim\n\nBologna Ders Bigi Paketi\n\nUBYS",
+      "char_count": 561,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/shmyo/icerik/27591/engelli-ogrenci",
+      "title": "Engelli Öğrenci",
+      "body_content": "Engelleri Kaldıran Üniversite\n\nEngelli bireylerin üniversite yaşamına daha rahat ve eşit şekilde katılmasını teşvik etme yönünde adımlar atan Üniversitemiz, Yükseköğretim Kurulu (YÖK) tarafından düzenlenen 2024 Engelsiz Üniversite Bayrakları ve Program Nişanı Töreni'nde en çok bayrak alan üniversiteler arasında 7 bayrak ile ilk 10 üniversite arasında yer almıştır\n\nMeslek Yüksekokulumuzun hizmet verdiği binamız da Mekânda erişilebilirlik (Turuncu Bayrak) almaya hak kazanan binalar arasındadır.\n\nAyrıca Üniversitemize, engelli bireylerin toplumsal konumlarını güçlendirmek ve daha aktif bir şekilde hayata katılımlarını sağlamak amacıyla Üniversite içerisindeki tüm yapılar erişilebilir hale getirilmesi nedeniyle Gaziantep Valiliği bünyesinde oluşturulan Erişilebilirlik İzleme ve Denetleme Komisyonu tarafından “Erişilebilirlik Belgesi” ve “Erişilebilirlik Bayrağı” verilmiştir.\n\nBirimimiz Engelli Öğrenciler Koordinatörü Tıbbi Laboratuvar Teknikleri Programı Öğr. Gör. Dr. Ali İmran KORKMAZ, Koordinatör Yardımcısı ise Öğr. Gör. Halil İbrahim DEMİRÖZ'dür. Herhangi bir yardım söz konusu olduğunda ilgili hocalarımız ile iletişim kurulmasını tavsiye ederiz. \n\nİletişim:\n\nÖğr. Gör. Dr. Ali İmran KORKMAZ\n dahili : 3021 mail: aliimran.korkmaz@gibtu.edu.tr\n\nÖğr. Gör. Halil İbrahim DEMİRÖZ\n  dahili : 3010 mail: hibrahim.demiroz@gibtu.edu.tr\n\nÜniversitemiz Engelli Öğrenci Birimi Koordinatörlüğü'ne ulaşmak için \ntıklayınız\n.\n\nÜniversitemiz Engelli Öğrenci Birimi Koordinatörlüğü Yönergesi'ne ulaşmak için \ntıklayınız.",
+      "char_count": 1520,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/ulasim",
+      "title": "Ulaşım",
+      "body_content": "GİBTÜ ' Ye Nasıl Ulaşırım ?\r\n\nŞehir içi ulaşımda halk otobüsleri, belediye otobüsleri, minübüs, tramvay ve taksiler kullanılmaktadır. Sarı ve mavi otobüsler belediye tarafından işletilmektedir. Gaziantep Büyükşehir Belediyesinin ulaşım hizmetlerini veren şirketinin adı GAZİULAŞ'tır. Tüm tramvay ve belediye otobüslerinin işletim hakkı GAZİULAŞ tarafından yapılmaktadır. Bu ulaşım ağından faydalanabilmek için \"GAZİANTEP KART\" adlı teknolojik ödeme aracını kullanmanız gerekmektedir. Bu kart indirimli yolculuk edilmesini sağlamaktadır. Turistler için tek günlük ulaşım kartları da mevcuttur. Bu kart kent içindeki satış noktalarından temin edilmektedir. Taksi, dolmuş ve minübüslerde nakit para kabul edilmektedir. GAZİULAŞ uhdesinde bulunan tüm ulaşım hizmetleri için \"GAZİANTEP KART\" zorunluluğu vardır. Şehir içi ulaşım için daha detaylı bilgiye buradan ulaşabilirsiniz.\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi, Gaziantep şehrinin güneybatısında bulunmaktadır. Bulunduğu bölge halk arasında \"Onkoloji Bölgesi\", \"Beştepe Bölgesi\" veya \"Antepia Bölgesi\" olarak tanımlanmaktadır. Şehir içi merkezden bu bölgeye B31, B60-1, TA3, B45, B77 numaralı otobüs seferleriyle gelebilirsiniz. GİBTÜ'ye gelen otobüsler ve bu otobüslere ait durak-rota bilgilerine \nburadan\n ulaşabilirsiniz",
+      "char_count": 1286,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/shmyo/icerik/11869/tercih-atlasi",
+      "title": "Tercih Atlası",
+      "body_content": "Fizyeterapi Programı Tercih Atlası için tıklyanız\n\nYaşlı Bakım Programı Tercih Atlası için tıklayınız\n\nİlk ve Acil Yardım Programı Tercih Atlası için tıklayınız\n\nTıbbi Laboratuvar Teknikleri Programı Tercih Atlası için tıklayınız\n\nAmeliyathane Hizmetleri Programı Tercih Atlası için tıklayınız",
+      "char_count": 293,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimicerik.aspx?id=31&icid=148",
+      "title": "Okulumuz Resim Galerisi",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\nOkulumuz Resim Galerisi\n\ndate_range\nYayın Tarihi : \n19.11.2020 08:00\n\npeople\nOkunma : \n1696\n\nSağlık Hizmetleri Meslek Yüksekokulu\n\nok",
+      "char_count": 166,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=31&icid=32948",
+      "title": "2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Ders Programı",
+      "body_content": "Ameliyathane Hizmetleri Pr. 2025-2026 Bahar Dönemi Ders Programı için \ntıklayınız.\n\nFizyoterapi Pr. 2025-2026 Bahar Dönemi Ders Programı için \ntıklayınız\n\nİlk ve Acil Yardım Pr. 2025-2026 Bahar Dönemi Ders Programı için \ntıklayınız\n\nTıbbi Laboratuvar Teknikleri Pr. 2025-2026 Bahar Dönemi Ders Programı için \ntıklayınız\n\nYaşlı Bakım Pr. 2025-2026 Güz Dönemi Bahar Programı için \ntıklayınız",
+      "char_count": 389,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimduyuru.aspx?id=31",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Ara Sınav Takvimi\n\n27.03.2026\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Ders Programı\n\n05.02.2026\n\n2025-2026 Eğitim - Öğretim Yılı Bahar Dönemi Yatay Geçiş Sonuçları İlanı\n\n30.01.2026\n\n2025-2026 Eğitim Öğretim Yılı Güz Dönemi Bütünleme Sınav Takvimi\n\n21.01.2026\n\nSağlık Çalışanlarına Yönelik Tıbbi İngilizce Okuma ve Konuşma Kursu\n\n17.12.2025\n\n2025-2026 Eğitim Öğretim Yılı Güz Dönemi Ara Sınav Takvimi\n\n28.10.2025",
+      "char_count": 484,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=31",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Akademik Genel Kurul Toplantımız Gerçekleştirildi\n\n03.04.2026\n\nMeslek Yüksekokulumuz Personeli ile Değerlendirme ve Stratejik Planlama Toplantısı\n\n24.12.2025\n\n22 Aralık Paramedik Günü Etkinliği Gerçekleştirildi\n\n22.12.2025\n\n17 Aralık 2025 | Mezun Öğrenci Buluşması\n\n19.12.2025\n\nGaziantep Genç Kızılay topluluğu İlk ve Acil Yardım Müdahale Teknikleri ile İlgili Eğitim Gerçekleştirdi.\n\n12.12.2025\n\nGISTU Erasmus+ Ofisi Sağlık Hizmetleri Meslek Yüksekokulunda Bilgilendirme Sunumu Düzenledi.\n\n09.12.2025",
+      "char_count": 572,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimduyuruarsivi.aspx?id=31",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\nm\ni\nz\n\nT\ne\nk\nn\no\nl\no\nj\ni\n\nT\nr\na\nn\ns\nf\ne\nr\n\nO\nf\ni\ns\ni\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nS\na\nğ\nl\nı\nk\n\nH\ni\nz\nm\ne\nt\nl\ne\nr\ni\n\nM\ne\ns\nl\ne\nk\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nm\nu\nz\n\nP\ne\nr\ns\no\nn\ne\nl\ni\nn\ne\n\nY\nö\nn\ne\nl\ni\nk\n\nB\ni\nl\ng\ni\nl\ne\nn\nd\ni\nr\nm\ne\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n.\n\nHaber\n\n10.10.2025\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nB\nü\nt\nü\nn\nl\ne\nm\ne\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nDuyuru\n\n27.06.2025\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\nS\na\nğ\nl\nı\nk\nl\nı\n\nY\na\nş\na\nm\n\nİ\nç\ni\nn\n\nA\nd\nı\nm\n\nA\nt\nı\nl\nd\nı\n:\n\n\"\n\nS\na\nğ\nl\nı\nk\nl\nı\n\nT\ne\nr\nc\ni\nh\n\nF\ne\ns\nt\ni\nv\na\nl\ni\n\n\"\n\nB\na\nş\na\nr\nı\ny\nl\na\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nEtkinlik\n\n03.06.2025\n\n\"\n\nG\nİ\nB\nT\nÜ\n\nS\na\nğ\nl\nı\nk\n\nv\ne\n\nB\ni\ny\no\nl\no\nj\ni\nk\n\nB\ni\nl\ni\nm\nl\ne\nr\n\nD\ne\nr\ng\ni\ns\ni\n\n(\n\nG\nI\nS\nT\nU\n\nJ\no\nu\nr\nn\na\nl\n\no\nf\n\nH\ne\na\nl\nt\nh\n\nA\nn\nd\n\nB\ni\no\nl\no\ng\ni\nc\na\nl\n\nS\nc\ni\ne\nn\nc\ne\ns\n\n)\n\"\n\nD\ne\nr\ng\ni\ns\ni\n\nM\na\nk\na\nl\ne\n\nÇ\na\nğ\nr\nı\ns\nı\n\nDergi\n\n27.05.2025\n\n\"\n\nN\nö\nr\no\ng\ne\nl\ni\nş\ni\nm\ns\ne\nl\n\nÇ\no\nc\nu\nk\n\nH\na\ns\nt\na\nl\nı\nk\nl\na\nr\nı\nn\nd\na\n\nA\nl\nt\n\nÜ\nr\ni\nn\ne\nr\n\nS\ni\ns\nt\ne\nm\n\nD\ni\ns\nf\no\nn\nk\ns\ni\ny\no\nn\nl\na\nr\nı\nn\na\n\nÇ\no\nk\n\nY\nö\nn\nl\nü\n\nB\na\nk\nı\nş\n\nS\ne\nm\np\no\nz\ny\nu\nm\nu\n\"\n\nSempozyum\n\n15.05.2025\n\nB\ni\nr\n\nG\nü\nn\n\nB\ni\nz\nd\ne\nn\n\nS\ni\nz\ne\n:\n\nK\na\nm\np\nü\ns\nü\nm\nü\nz\nd\ne\n\nK\na\nl\np\nt\ne\nn\n\nK\na\nl\nb\ne\n\nM\no\nr\na\nl\n\nB\nu\nl\nu\nş\nm\na\ns\nı\n\nDuyuru\n\n09.05.2025\n\nÜ\nn\ni\nd\ne\ns\n\nP\nr\no\nj\ne\nl\ne\nr\ni\n\nHaber\n\n08.05.2025\n\nT\nı\nb\nb\ni\n\nL\na\nb\no\nr\na\nt\nu\nv\na\nr\n\nT\ne\nk\nn\ni\nk\nl\ne\nr\ni\n\nP\nr\no\ng\nr\na\nm\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\n\nB\ne\ny\na\nz\n\nÖ\nn\nl\nü\nk\nl\ne\nr\ni\nn\ni\n\nG\nu\nr\nu\nr\nl\na\n\nG\ni\ny\nd\ni\n\nDuyuru\n\n29.04.2025\n\n2\n0\n\nN\ni\ns\na\nn\n\nA\nm\ne\nl\ni\ny\na\nt\nh\na\nn\ne\n\nG\nü\nn\nü\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nGün\n\n25.04.2025\n\nD\nü\nn\ny\na\n\nL\na\nb\no\nr\na\nn\nt\nl\na\nr\n\nG\nü\nn\nü\n\nv\ne\n\nB\ne\ny\na\nz\n\nÖ\nn\nl\nü\nk\n\nG\ni\ny\nm\ne\n\nT\nö\nr\ne\nn\ni\n\nDuyuru\n\n16.04.2025\n\nS\na\nğ\nl\nı\nk\n\nH\ni\nz\nm\ne\nt\nl\ne\nr\ni\n\nM\ne\ns\nl\ne\nk\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nn\n\n'\nd\na\n\nL\na\nb\no\nr\na\nn\nt\nl\na\nr\n\nM\ne\ns\nl\ne\nğ\ne\n\nİ\nl\nk\n\nA\nd\nı\nm\nı\nn\nı\n\nA\nt\nt\nı\n\nHaber\n\n09.05.2024\n\n1\n8\n-\n2\n4\n\nM\na\nr\nt\n\nY\na\nş\nl\nı\nl\na\nr\na\n\nS\na\ny\ng\nı\n\nH\na\nf\nt\na\ns\nı\n\nHaber\n\n26.03.2024\n\n1\n8\n-\n2\n4\n\nM\na\nr\nt\n\nY\na\nş\nl\nı\nl\na\nr\na\n\nS\na\ny\ng\nı\n\nH\na\nf\nt\na\ns\nı\n\nDuyuru\n\n05.03.2024\n\nS\na\nğ\nl\nı\nk\n\nH\ni\nz\nm\ne\nt\nl\ne\nr\ni\n\nM\ne\ns\nl\ne\nk\n\nO\nk\nu\nl\nu\n\nF\ni\nz\ny\no\nt\ne\nr\na\np\ni\n\nB\nö\nl\nü\nm\nü\n\nO\nl\na\nr\na\nk\n\n2\n0\n1\n9\n\nM\na\nr\nt\n\nA\ny\nı\nn\nd\na\n\nA\nç\nı\nl\na\nn\n\nG\na\nz\ni\na\nn\nt\ne\np\n\nB\nü\ny\nü\nk\nş\ne\nh\ni\nr\n\nB\ne\nl\ne\nd\ni\ny\ne\ns\ni\n\nE\nn\ng\ne\nl\ns\ni\nz\n\nY\na\nş\na\nm\n\nM\ne\nr\nk\ne\nz\ni\nn\ne\n\nZ\ni\ny\na\nr\ne\nt\ni\nm\ni\nz\ni\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\nd\ni\nk\n\nEğitim\n\n22.12.2023\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nA\nr\na\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nDuyuru\n\n07.04.2023\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nD\nö\nn\ne\nm\n\nS\no\nn\nu\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n.\n\nDuyuru\n\n26.12.2022\n\nD\no\nğ\nr\nu\n\nB\ni\nl\ni\nn\ne\nn\n\nY\na\nn\nl\nı\nş\n\nİ\nl\nk\n\nY\na\nr\nd\nı\nm\n\nU\ny\ng\nu\nl\na\nm\na\nl\na\nr\nı\n\nDuyuru\n\n19.12.2022\n\nG\nİ\nB\nT\nÜ\n\nG\ne\nn\nç\n\nT\ne\nm\na\n\nK\nu\nl\nü\nb\nü\n\nT\na\nn\nı\nt\nı\nm\n\nK\no\nn\nf\ne\nr\na\nn\ns\nı\n\nDuyuru\n\n13.12.2022\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nA\nr\na\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nSınav İlanı\n\n04.11.2022\n\n2\n0\n2\n1\n-\n2\n0\n2\n2\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nD\nö\nn\ne\nm\n\nS\no\nn\nu\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\nl\ne\nr\ni\n.\n\nDuyuru\n\n20.05.2022\n\n1\n8\n-\n2\n4\n\nM\na\nr\nt\n\nY\na\nş\nl\nı\nl\na\nr\na\n\nS\na\ny\ng\nı\n\nH\na\nf\nt\na\ns\nı\n\nDuyuru\n\n25.03.2022\n\n2\n0\n2\n1\n-\n2\n0\n2\n2\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nD\ne\nr\ns\n\nP\nr\no\ng\nr\na\nm\nı\n\n(\n\n2\n8\n\nŞ\nu\nb\na\nt\n\n2\n0\n2\n2\n\nT\na\nr\ni\nh\ni\n\nİ\nt\ni\nb\na\nr\ni\ny\nl\ne\n\nG\ne\nç\ne\nr\nl\ni\nd\ni\nr\n.\n\n)\n\nDuyuru\n\n15.02.2022\n\n1\n\nE\nk\ni\nm\n\nD\nü\nn\ny\na\n\nY\na\nş\nl\nı\nl\na\nr\n\nG\nü\nn\nü\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nDuyuru\n\n04.10.2021\n\n2\n0\n2\n0\n\n-\n\n2\n0\n2\n1\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nA\nr\na\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nDuyuru\n\n17.11.2020\n\nF\ni\nz\ny\no\nt\ne\nr\na\np\ni\n\nv\ne\n\nR\ne\nh\na\nb\ni\nl\ni\nt\na\ns\ny\no\nn\n\nB\nö\nl\nü\nm\nü\n\nDuyuru\n\n13.11.2020\n\nS\na\nğ\nl\nı\nk\n\nB\na\nk\nı\nm\n\nH\ni\nz\nm\ne\nt\nl\ne\nr\ni\n\nB\nö\nl\nü\nm\nü\n\nDuyuru\n\n13.11.2020\n\nG\na\nz\ni\na\nn\nt\ne\np\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\ns\ni\n\nR\ne\nk\nt\nö\nr\n\n'\nü\n\nP\nr\no\nf\n.\n\nD\nr\n.\n\nA\nr\ni\nf\n\nÖ\nz\na\ny\nd\nı\nn\n\n'\na\n\nN\ne\nz\na\nk\ne\nt\n\nZ\ni\ny\na\nr\ne\nt\ni\n\nDuyuru\n\n13.11.2020\n\n2\n0\n2\n0\n\n-\n\n2\n0\n2\n1\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nD\ne\nr\ns\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n13.11.2020\n\nM\nü\nf\nr\ne\nd\na\nt\n\nDuyuru\n\n02.11.2020\n\n KATEGORİLER\r\n\nAçılış\n\nDergi\n\nDuyuru\n\nEğitim\n\nEtkinlik\n\nGün\n\nHaber\n\nKonferans\n\nKutlama Mesajı\n\nMezuniyet\n\nOrganizasyon\n\nSempozyum\n\nSınav İlanı\n\nTanıtım",
+      "char_count": 4333,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=31",
+      "title": "Mevzuatlar",
+      "body_content": "Kanunlar\n\n Yükseköğretim Kanunu ( 2547 )\r\n\n Yüksek Öğretim Personel Kanunu ( 2914 )\r\n\n Araştırma ve Geliştirme Faaliyetlerinin Desteklenmesi Hakkında Kanun ( 5746 )\r\n\n Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun ( 4483 )\r\n\nYÖK Yönetmelikleri\n\n Öğretim Üyeliğine Yükseltilme ve Atanma Yönetmeliği\r\n\n Doçentlik Sınav Yönetmeliği\r\n\n Öğretim Üyesi Dışındaki Öğretim Elemanı Kadrolarına Yapılacak Atamalarda Uygulanacak Merkezi Sınav Sınav ile Giriş Sınavlarına İlişkin Usul ve Esaslar Hakkında Yönetmelik\r\n\n Mevlana Değişim Programına İlişkin Yönetmelik\r\n\n Yükseköğretim Üst Kuruluşları ile Yükseköğretim Kurumları Personeli Görevde Yükselme ve Unvan Değişikliği Yönetmeliği\r\n\n Üniversitelerde Akademik Teşkilât Yönetmeliği\r\n\n Yükseköğretim Kurumlarında Akademik Kurulların Oluşturulması ve Bilimsel Denetim Yönetmeliği\r\n\n Devlet Yükseköğretim Kurumlarında Öğretim Elemanı Norm Kadrolarının Belirlenmesine ve Kullanılmasına İlişkin Yönetmelik\r\n\n Lisans Öğrenimlerini Tamamlamayan Veya Tamamlayamayanların Ön Lisans Diploması Almaları Veya Meslek Yüksekokullarına İntibakları Hakkında Yönetmelik\r\n\n Meslek Yüksekokulları ve Açıköğretim Ön Lisans Programları Mezunlarının Lisans Öğrenimine Devamları Hakkında Yönetmelik Te Değişiklik Yapılmasına Dair Yönetmelik\r\n\n Yükseköğretim Kurumlarında Önlisans ve Lisans Düzeyindeki Programlar Arasında Geçiş, Çiftanadal, Yan Dal ile Kurumlar Arası Kredi Transferi Yapılması Esaslarına İlişkin Yönetmelik\r\n\n Sağlık Bakanlığına Bağlı Sağlık Tesisleri ve Üniversitelere Ait İlgili Birimlerin Birlikte Kullanımı ve İşbirliği Usul ve Esasları Hakkında Yönetmelik\r\n\n Yükseköğretim Kurumları Öğrenci Disiplin Yönetmeliği\r\n\n Yükseköğretim Kurumları Engelliler Danışma ve Koordinasyon Yönetmeliği\r\n\nÜniversitemiz Yönetmelikleri\n\n Gaziantep İslam Bilim ve Teknoloji Üniversitesi Önlisans ve Lisans Eğitim - Öğretim ve Sınav Yönetmeliği\r\n\nÜniversitemiz Yönergeleri\n\n Akademik Danışmanlık Yönergesi\r\n\n Bologna Süreci Yönergesi\r\n\n Diploma Yönergesi\r\n\n Önlisans ve Lisans Düzeyindeki Programlar Arasında Yatay Geçiş Esaslarına İlişkin Yönerge\r\n\n Özel Öğrenci Yönergesi\r\n\n Sağlık Hizmetleri Meslek Yüksekokulu Staj Yönergesi\r\n\nÜniversitemiz Usul ve Esasları\n\n Azami Süre Sınav Hakları ve Ek Sürelere Dair Uygulama Esasları",
+      "char_count": 2264,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=31",
+      "title": "Faydalı Linkler",
+      "body_content": "ÜBYS\r\n\n CİMER\r\n\n Yükseköğretim Kurulu\r\n\n Kredi ve Yurtlar Genel Müdürlüğü\r\n\n E-Devlet\r\n\n AFAD",
+      "char_count": 93,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=31",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "Sık Sorulan Sorular\r\n\nkeyboard_arrow_right\n\n 1. Sınıf Öğrencisiyim, Ders Kaydı Yaptırmam Gerekiyor Mu?\r\n\nkeyboard_arrow_right\n\nYeni kayıt yaptıran 1. sınıf öğrencilerinin Güz ve Bahar Yarıyıllarında \ne-kayıt\n\nsayfasından derslerini seçerek ders kaydı yapmaları gerekmektedir.\n\n Akademik Kadro Sayınız Nedir?\r\n\nkeyboard_arrow_right\n\nYüksekokulumuzda kadrolu olarak ders veren; 6 öğretim görevlisi bulunmaktadır. Ayrıca Tıp Fakültesi ağırlıklı olmak üzere Üniversitemizde bulunan diğer fakülte ve yüksekokullardan görevlendirilen öğretim elemanları da eğitim-öğretime katkı sağlamaktadır.\n\n Aldığım Bazı Dersleri Tekrar Alarak Yükseltmek İstiyorum. Bu Mümkün Mü?\r\n\nkeyboard_arrow_right\n\nÖğrenciler not ortalamalarını yükseltmek amacıyla öğrenimleri süresince daha önce almış oldukları dersleri tekrarlayabilirler. Tekrarlanan derste önceki not ne olursa olsun alınan son not geçerlidir ve not ortalaması hesaplarında son not kullanılır.\n\n Alıp Kaldığım Seçmeli Dersi Bir Sonraki Yıl Tekrar Almak Zorunda Mıyım?\r\n\nkeyboard_arrow_right\n\nÖğrenci alıp kaldığı seçmeli dersin yerine daha sonraki dönemlerde farklı bir seçmeli ders alabilir.\n\n Ara Sınav ve Yarı Yıl Sonu Sınavların Oranları Nedir?\r\n\nkeyboard_arrow_right\n\nDönem içinde aldığınz notların hesaplaması aşağıdaki gibidir;\n\nAra Sınav (Vize)                      = %40\n\nYarı Yıl Sonu Sınavı (Final)    = %60\n\nÖrnek;\n\nAra Sınavdan 60 yarı yıl sonu sınavdan 70 aldınız\n\nAra Sınav (Vize)   : 60*40/100 = 24\n\nYarı Yıl Sonu Sınavı (Final)    = 70*60/100=42 \n\nDönem Notunuz  = 42+24= \n66\n\n Çift Ana Dal ve Yan Dal Nedir?\r\n\nkeyboard_arrow_right\n\n Çift ana dal programı, gerekli şartları sağlayan öğrencilerin ilgili mevzuat çerçevesinde üniversitede yürütülen önlisans diploma programları ile diğer önlisans programları arasında, lisans programları ile diğer lisans programları veya önlisans programları arasında eş zamanlı olarak ders alıp, iki ayrı diploma alabilmesini sağlayan programdır.\n\n• Yan dal programı, gerekli şartları sağlayan öğrencilerin ilgili çerçevesinde Üniversitede bir başka diploma programında belirli bir konuya yönelik sınırlı sayıda eş zamanlı olarak derslerin alındığı programdır. Yan dal programı ayrı bir diploma programı anlamını taşımaz ve bu programı tamamlayanlara yan dal sertifikası verilir.\n\n Ders Kaydımı Ne Zaman ve Nasıl Yapmalıyım?\r\n\nkeyboard_arrow_right\n\n• Kayıt yenileme, ders alma, ders ekleme ve bırakma işlemleri; her eğitim-öğretim yarıyılı başında akademik takvimde belirlenen tarihler arasında üniversitenin internet sayfasından interaktif olarak yapılır.\n\n• Kayıt yenileme işlemlerinin tümünden öğrenciler sorumlu olup bu işlemleri kendileri yapmakla yükümlüdürler. Ancak her öğrenci için ders kayıt yenileme işlemlerinde yardımcı olmak için bölüm başkanlığınca ilgili bölümün öğretim elemanları arasından bir akademik danışman görevlendirilir. Danışman, her yarıyıl başında kaydının yapılmasında öğrenciye danışmanlık yapar ve öğrencinin akademik durumunu izler. Ders kayıt yenileme işlemleri öğrencinin akademik danışmanının onayı ile kesinleşir. Süresi içinde kaydı danışmanı tarafından reddedilen veya onaylanmayan öğrencilerin kayıtları ilgili danışmanın yazılı dilekçesi doğrultusunda bölüm başkanının görüşü ve ilgili birim yönetim kurulunun onayı ile kesinleşir.\n\n• Öğrenciler ders ekle-bırak süresi içerisinde ders kayıtlarındaki değişiklikleri tekrar akademik danışmanlarına onaylatmak zorundadır.\n\n• Belirlenen süreler içinde kaydını yenilemeyen öğrenciler, o dönemde derslere devam edemez; sınavlara giremez ve öğrencilik haklarından yararlanamazlar. Bu arada geçen süre öğrenim süresinden sayılır.\n\n• Öğrenciler, kayıt yenileme işlemlerinde öncelikle daha önceki dönemlerde almadığı ve döneminde açılmış ise başarısız olduğu dersleri (seçmeli dersler hariç) almak zorundadır.\n\n• Öğrenci değişim programlarına katılan öğrencilerin kayıt yenileme işlemleri akademik takvimde belirlenen ders kayıt yenileme süresi dışında ilgili birim yönetim kurulu kararı ile yapılır.\n\n• Normal süresi içerisinde mezun olamayan öğrencilerin ilgili döneme ait katkı payı veya öğrenim ücretini ödemek koşulu ile kayıtlarını yarıyıl başında, akademik takvimde belirtilen kayıt yenileme süresi içinde yapmaları gerekir. Bu durumdaki öğrenciler, mezun oluncaya kadar katkı payı ve öğrenim ücretini ödemek zorundadır.\n\n Devamsızlık Sürem Ne Kadar?\r\n\nkeyboard_arrow_right\n\n1) Öğrencilerin derslere devam zorunluluğu, her yarıyıl için en az %70, tamamen uygulamalı ders saatinden oluşan derslerde en az %80 olmak zorundadır.\n\n(2) Sağlık raporu derslere devam yükümlülüğünü kaldırmaz. Öğrenciler, ilgili kurullarca kabul edilen sağlık raporlarının kapsadığı süreler içinde de devamsız sayılırlar ve bu süre içinde hiçbir derse ve sınavlara giremezler.\n\n En Düşük Geçme Notu Kaç?\r\n\nkeyboard_arrow_right\n\nEn Düşük Geçme Notu = 60\n\nGenel Not Ortalamanız 2,00 ve üstü olduğu takdirde \n\n50-60 Arası notlarınız şartlı başarırsınız. Altına düşerse dersi tekrar etmeniz gerekiyor. \n\n Gaziantep İslam Bilim ve Teknoloji Üniversitesi Devlet Üniversitesi Mi?\r\n\nkeyboard_arrow_right\n\nEvet. \n\n Geçerli Sebeplerden Dolayı Sınavlara Giremedim. Ne Yapabilirim?\r\n\nkeyboard_arrow_right\n\n• Geçerli bir sağlık raporu olan öğrencilere, giremediği ara sınavlar için mazeret sınavı hakkı verilir. Yarıyıl sonu ve bütünleme sınavının mazereti yapılmaz.\n\n• Üniversite veya diğer devlet kurumları tarafından çeşitli akademik, sosyal, kültürel ve sportif faaliyetlere katılmak üzere görevlendirilen öğrencilerin görevlendirildikleri süreler, devam şartı dışında tutulur ve katılamadıkları sınavlardan mazeret sınav hakkı verilir.\n\n• Sağlık raporu devamdan sayılmaz. Sadece mazeret sınav hakkı verilmesi için kullanılır.\n\n• Mazeret sınavları için ikinci bir mazeret sınavı verilmez.\n\n• Öğrenciler, mazeretlerini sınav tarihini takip eden beş iş günü içerisinde ilgili bölüm başkanlığına yazılı olarak bildirir.\n\n• Ara sınavlar dışındaki hiçbir sınav için mazeret sınavı verilmez.\n\n• Mazeretli oldukları günler içinde yapılan sınavlara giren öğrenciler için tekrar mazeret sınavı yapılmaz.\n\n• Aynı gün ve saatte sınavları çakışan öğrencilere, giremedikleri sınavlar için mazeret sınavı hakkı tanınır. Bu durumdaki öğrencilerin bölüm başkanlığına beş iş günü içinde bir dilekçeyle başvurmaları zorunludur.\n\n Harf Notunun Anlamları Nedir?\r\n\nkeyboard_arrow_right\n\na) AA, BA, BB, CB, CC (Başarılı): Bir dersten AA, BA, BB, CB veya CC notlarından birini alan öğrenci o dersi başarmış sayılır.\n\nb) DC veya DD (Şartlı Başarılı): Bir dersten DC veya DD notu alan bir öğrenci mezun olma aşamasında 2.00 GNO’ya erişmiş olmak koşuluyla o dersi başarmış sayılır.\n\nc) FF (Başarısız): Girdiği yarıyıl/yıl sonu sınavında başarı sağlayamayan ve devam koşulu aranmaksızın teorik dersin sadece sınavlarına girerek tekrar etmesi gereken öğrencilere verilir.\n\nç) FZ (Devamsız): Devam koşulunu gerçekleştiremeyen ve derse varsa uygulamalara devam ederek sınavlarına girmesi gereken devamsız öğrencilere verilir.\n\nd) FT (Tekrar): Teori ve uygulamadan oluşan derslerden devam koşulunu sağladıkları halde, yapılan uygulama sınavında başarısız olan ve derse uygulamaları ile birlikte devam ederek sınavlarına girmesi gereken öğrencilere veya sadece uygulamadan oluşan derslerden devam koşulunu sağladıkları halde girdikleri yarıyıl/yıl sonu sınavlarında başarısız olan ve uygulamalara devam ederek sınavlarına girmesi gereken öğrencilere verilir.\n\ne) M (Muaf): Üniversite dışından nakil yoluyla gelen veya ÖSYM aracılığı ile yatay veya dikey geçiş yolu ile Üniversiteye kayıt yaptıran öğrencilerin daha önce almış oldukları ve denkliği bölüm başkanlığının önerisi üzerine ilgili yönetim kurulunca tanınan dersleri ifade eder.\n\n(3) Kredisiz derslerin ve stajların değerlendirilmesinde aşağıdaki notlar verilir:\n\na) S (Yeterli): S notu, kredisiz derslerden geçen veya staj çalışmasını başarı ile tamamlayan öğrencilere verilir.\n\nb) U (Yetersiz): U notu, kredisiz derslerde veya staj çalışmasında başarısız olan öğrencilere verilir.\n\n(4) Tıp Fakültesi ve Diş Hekimliğinde sınav notları ve değerlendirilmesi, Senato tarafından belirlenen esaslara göre yürütülür.\n\n Her Yarı Yılda Kaç AKTS Almam Gerekiyor. Mezun Olmam İçin Toplam Kaç AKTS Olması Gerekiyor.\r\n\nkeyboard_arrow_right\n\nHer yarıyılda 30 AKTS kredisi alınması zorunludur. Bir öğrencinin mezun olabilmesi için toplam 120 AKTS alması gerekir.\n\n Kayıt Silmek ve Kayıt Dondurmak İçin Ne Yapmam Gerekiyor?\r\n\nkeyboard_arrow_right\n\nweb sitemzi formlar bölümünde bulunan dilekçeyi doldururar Yüksekokul Sekreterliğine başvurmanız gerekiyor. \n\n Kimlik Kartımı Kaybettim Ne Yapmam Gerekiyor?\r\n\nkeyboard_arrow_right\n\nKimlik kartını kaybeden veya kimlik kartı kullanılamayacak kadar yıpranan öğrenci, Yüksekokul Sekerterliğine yazılı olarak başvurması halinde, yıpranma durumunda ise eski kimlik kartını iade etmesi koşuluyla kendisine, yeni kimlik kartı verilir. Kayıp veya yenileme durumunda kart bedelinin Üniversite tarafından belirlenen esaslar çerçevesinde öğrenci tarafından ödenmesi gerekir.\n\n Okulumuzla Nasıl İletişim Kurabilirim?\r\n\nkeyboard_arrow_right\n\nweb sitemiz ilteişim linkinde bulunan mesaj gönder seçeneğinden mesaj gönderebilir, telefon rehberinden ilgili kişiye ulaşabilirsiniz. \n\n Öğrenci Alan Programlar Hangileri?\r\n\nkeyboard_arrow_right\n\nFizyoterapi ve Yaşlı Bakım Programına öğrenci alınmatadır. \n\n Öğrenci Değişim Programı Nedir?\r\n\nkeyboard_arrow_right\n\n• Üniversite ile yurt içi ve yurt dışı bir başka yükseköğretim kurumu arasında yapılan anlaşma uyarınca öğrenci değişim programları uygulanabilir. Bu programlar çerçevesinde öğrenciler bir veya iki dönem yurt içi veya yurt dışındaki üniversitelerde öğrenim görebilirler.\n\n• Değişim programları, ikili anlaşmalar ve YÖK tarafından belirlenen esaslar doğrultusunda uygulanır.\n\n• Öğrenciler, normal öğrenim sürelerinin ilk ve son yarıyılında değişim programlarına katılamazlar.\n\n• Ulusal ve uluslararası değişim programları çerçevesinde alınan derslerin Üniversitedeki eşdeğerleri ve notları öğrencinin transkriptine ilgili bölüm kurulunun önerisiyle birim yönetim kurulu kararıyla işlenir.\n\n• Öğrenciler, değişim programlarında geçirdiği yarıyıllarda Üniversiteye ait öğrenim harcını ödemek ve kayıt yenilemek zorundadır. Değişim programlarında geçen yarıyıllar öğrenim süresinden sayılır.\n\n Sınav Sonucum Harf Aralığında Neye Denk Geliyor?\r\n\nkeyboard_arrow_right\n\nBaşarı Notu\n\nKatsayı\n\nPuan\n\n       AA                         4.00                  90-100\n\n       BA                         3.50                   80-89\n\n       BB                         3.00                   70-79\n\n       CB                         2.50                   65-69\n\n       CC                         2.00                   60-64\n\n       DC                         1.50                   55-59\n\n       DD                         1.00                   50-54\n\n       FD                         0.50                   30-49\n\n        FF                          0.00                 00-29",
+      "char_count": 10914,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=31",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nshmyo@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nMeryem YİĞİT\n\nmeryem.ekinci@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 330,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=31",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nDoç. Dr. Ayşegül Burçin YILDIRIM\n\nring_volume\n2312\n\nmail\naysegul.yildirim@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi İbrahim Halil KENGER\n\nring_volume\n2313\n\nmail\nibrahimhalil.kenger@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Rabia TAŞDEMİR\n\nring_volume\n2315\n\nmail\nrabia.tasdemir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Hikmet DİNÇ\n\nring_volume\n3001\n\nmail\nhikmet.dinc@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Elif ÖZDEMİR\n\nring_volume\n3005\n\nmail\nelif.ozdemir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Işılay KILIÇASLAN\n\nring_volume\n3006\n\nmail\nisilay.kilicaslan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Esin SAPÇI\n\nring_volume\n3007\n\nmail\nesin.sapci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Emine KARACAN\n\nring_volume\n3008\n\nmail\nemine.karacan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Dr. Ayşe Duygu ÖZBAŞ\n\nring_volume\n3009\n\nmail\nayseduygu.ozbas@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Nur Ceren GÜVENÇ\n\nring_volume\n3009\n\nmail\nnurceren.guvenc@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Halil İbrahim DEMİRÖZ\n\nring_volume\n3010\n\nmail\nhibrahim.demiroz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Abdul Saltuk Buğra DAŞ\n\nring_volume\n3011\n\nmail\nabdulsaltukbugra.das@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Tuğba İŞLER\n\nring_volume\n3016\n\nmail\ntugba.isler@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Beyhan ŞİMŞEK\n\nring_volume\n3018\n\nmail\nbeyhan.simsek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Şeyda KAYA\n\nring_volume\n3019\n\nmail\nseyda.kaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Aysun SÖYLEMEZ\n\nring_volume\n3020\n\nmail\naysun.soylemez@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Dr. Ali İmran KORKMAZ\n\nring_volume\n3021\n\nmail\naliimran.korkmaz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Bengisu TÜFEKÇİ\n\nring_volume\n3022\n\nmail\nbengisu.tufekci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Leyla TUTAR\n\nring_volume\n3023\n\nmail\nleyla.tutar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Nur Ceren GÜVENÇ\n\nring_volume\n3024\n\nmail\nnurceren.guvenc@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Orhan POLAT\n\nring_volume\n3025\n\nmail\norhan.polat@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet Ali EKİNCİOĞLU\n\nring_volume\n3033\n\nmail\nmehmetali.ekincioglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Meryem YİĞİT\n\nring_volume\n3034\n\nmail\nmeryem.ekinci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Özlem KARDAŞ KİN\n\nring_volume\n3035\n\nmail\nozlem.kardaskin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Muhittin ÇİFÇİ\n\nring_volume\n3036\n\nmail\nmuhittin.cifci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Demet YILMAZKAYA GÖĞÜŞ\n\nring_volume\n3038\n\nmail\ndemet.yilmazkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Gülüstan KÖSE\n\nring_volume\n3039\n\nmail\ngulustan.kose@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 2700,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 38,
+      "total": 38,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 38,
+      "total": 38,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 38,
+      "total": 38,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 38,
+      "total": 38,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 38,
+      "total": 38,
+      "pct": 100
+    },
+    "title": {
+      "count": 38,
+      "total": 38,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 38,
+      "total": 38,
+      "pct": 100
+    },
+    "department": {
+      "count": 38,
+      "total": 38,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 38,
+      "total": 38,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 38,
+      "total": 38,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 21,
+    "yonetim": 1,
+    "tanitim": 4,
+    "rapor": 1,
+    "yonetmelik": 2,
+    "form": 1,
+    "personel": 2,
+    "duyuru": 2,
+    "haber": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

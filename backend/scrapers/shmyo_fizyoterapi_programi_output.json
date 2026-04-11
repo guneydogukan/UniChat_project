@@ -1,0 +1,265 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:36:31Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\MESLEK YÜKSEKOKULLARI\\Sağlık Hizmetleri Meslek Yüksekokulu\\Fizyoterapi ve Rehabilitasyon Bölümü.html",
+    "birim_id": 96,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Fizyoterapi Programi"
+  },
+  "summary": {
+    "total_blueprint_urls": 20,
+    "total_fetched": 20,
+    "total_valid": 15,
+    "total_failed": 0,
+    "total_skipped": 5,
+    "total_documents": 16,
+    "total_chars": 5212
+  },
+  "discovered_pdfs": [],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=96",
+      "reason": "too_short (7 chars)",
+      "char_count": 7
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikBirimler.aspx?id=96",
+      "reason": "too_short (8 chars)",
+      "char_count": 8
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=96",
+      "reason": "too_short (0 chars)",
+      "char_count": 0
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=96",
+      "reason": "too_short (5 chars)",
+      "char_count": 5
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=96",
+      "reason": "too_short (16 chars)",
+      "char_count": 16
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=96",
+      "title": "Fizyoterapi Programı",
+      "body_content": "GİBTÜ 'de Geleceğin Eğitim Modeli Konuşuldu\n\nGİBTÜ 'nün Kalite Yolculuğu ISO 9001 ile Taçlandı\n\nTürkiye Yüzyılı Maarif Modeli Konferansı\n\nGİBTÜ 'de Mehmet Akif ve Çanakkale Ruhu Konferansı Gerçekleştirildi\n\nUzun Yılların Hizmetine Teşekkür\n\nGİBTÜ, IKAF26 'da Gençlerin Kariyer Yolculuğuna Yön Veriyor\n\nRektörümüzden Ramazan Bayramı Mesajı\n\nGİBTÜ 'de Çanakkale Geçilmez Programı Duygu Dolu Anlara Sahne Oldu",
+      "char_count": 406,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=96",
+      "title": "Hakkımızda",
+      "body_content": "Fizyoterapi teknikerliği mesleği, hareket bozukluğuna yol açan her türlü yaralanma, hastalık ve yaşlılıkta, ağrı ve fonksiyon bozukluklarında uzman bir hekimin tanısı sonrası fizyoterapist gözetiminde birçoğu dünyada fizyoterapistler tarafından geliştirilmiş olan tedavi yaklaşımlarını uygulamaya yönelik bilgi ve beceriyi kazanan, sağlık ve yaşam kalitesinin artırılmasında önemli görevleri olan bir meslektir. Fizyoterapi teknikerliği yapabilmek için, bu mesleğin eğitimini veren 2 yıllık bir lisans programını bitirmiş olmak ve diplomanın T.C. Sağlık Bakanlığı’nca onaylanmış olması gerekmektedir. Mezuniyet sonrası “Fizik Tedavi Teknikerliği” ön lisans programını başarı ile bitirenler, ÖSYM tarafından yapılan Dikey Geçiş Sınavı’nda başarılı oldukları takdirde, Fizik Tedavi ve Rehabilitasyon lisans programına dikey geçiş hakkı kazanırlar. Fizik tedavi teknikerlerinin istihdamı, sağlık hizmetlerinin birçok alanında mümkün olmaktadır. Bölümümüzde  1 doktor öğretim görevlisi ve 3 öğretim görevlisi olmak üzere toplamda 4 akademik personel hizmet vermektedir. Programda öğretim dili Türkçedir. Öğrenciler Ölçme, Seçme ve Yerleştirme Merkezi'nce (ÖSYM) yapılan sınav ile seçilmektedir.",
+      "char_count": 1190,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=96",
+      "title": "Misyon",
+      "body_content": "Bu programın misyonu; fizyoterapi teknikerliği programının gerektirdiği bilgi, beceri, sorumluluk ve donanımı sağlayabilmek,  bilimsel gelişmeleri yakından takip eden, etik ilkelere değer veren, ekip çalışmalarına yatkın, fizyoterapi uygulamalarını gerçekleştirebilecek ve hastaların ihtiyaçlarına cevap verebilecek nitelikte sağlık alanında ihtiyaç duyulan fizyoterapi teknikerlerinin yetiştirilmesidir.",
+      "char_count": 404,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTanitim.aspx?id=96",
+      "title": "Tanıtım",
+      "body_content": "Fizyoterapi teknikerliği programının amacı, fizik tedavi uygulama alanında eksikliği duyulan sağlık teknikerlerini yetiştirmektir. Doğuştan veya sonradan hareket yetersizliklerine yol açan her türlü hastalıkta fizyoterapiste yardımcı olacak kalifiye eleman ihtiyacı da artmıştır. Bu bakış açısıyla dünyada fizyoterapi teknikerliği ön lisans programları giderek artmaktadır. Fizyoterapi Teknikerlerinin, fiziksel tıp ve rehabilitasyon uzmanı veya fizyoterapist gözetiminde fizik tedavi ve temel tıbbi egzersizlerin uygulanmasını sağlamak, fizyoterapi sırasında istenmeyen durumların oluşması halinde ilgili kayıtları tutup gerekli önlemlerin alınmasına yardımcı olmak, fizyoterapi sürecinde hasta ve çalışan güvenliği açısından gerekli tedbirleri almak ve fizyoterapi uygulamaları çerçevesinde sağlığın geliştirilmesi gibi başlıca görevleri bulunmaktadır. Bölüm öğrencilerini, mezuniyetten sonra geniş bir çalışma alanı beklemektedir. Mezunlar rehabilitasyon merkezlerinde, özel kliniklerde, spor kulüplerinde, Sağlık Bakanlığı' na bağlı devlet hastanelerinde, üniversite araştırma hastanelerinde, özel hastanelerde, özel eğitim merkezlerinde, spor/sağlık merkezleri, spor kulüplerinde, huzurevlerinde, kaplıca/termal tesislerinde, özel dal merkezlerinde çalışabilirler.",
+      "char_count": 1269,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=96",
+      "title": "Tarihçe",
+      "body_content": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Fizyoterapi Teknikerliği Programı 2020-2021 eğitim-öğretim yılında ön lisans düzeyinde eğitime başlamıştır",
+      "char_count": 154,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=96",
+      "title": "Vizyon",
+      "body_content": "Vizyonumuz  örnek teşkil edecek kaliteli eğitim/öğretim hizmeti sunmaktır. Nitelikli eğitim ve araştırmalarla ülkenin sağlık bilimleri alanındaki uluslararası görünürlüğünü arttırmak ve mezun kalitesini yükseltmenin yanında sağlık alanında nitelikli fizyoterapi teknikeri yetiştirilmesine katkıda bulunmaktır.",
+      "char_count": 309,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=96",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nÖğr. Gör. Aysun SÖYLEMEZ\n\nBölüm Başkan V.\n\nring_volume\n3020\n\nmail\naysun.soylemez@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Bengisu TÜFEKÇİ\n\nDr. Öğr. Üyesi\n\nring_volume\n3022\n\nmail\nbengisu.tufekci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Halil İbrahim DEMİRÖZ\n\nÖğr. Gör.\n\nring_volume\n3010\n\nmail\nhibrahim.demiroz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Işılay KILIÇASLAN\n\nÖğr. Gör.\n\nring_volume\n3006\n\nmail\nisilay.kilicaslan@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 470,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=96",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=96",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=96",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\n KATEGORİLER",
+      "char_count": 55,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=96",
+      "title": "Formlar",
+      "body_content": "Formlar\n\nFormlar\n\nok",
+      "char_count": 20,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=96",
+      "title": "Faydalı Linkler",
+      "body_content": "2024 ÖSYM Sınav Takvimi\r\n\n GİBTÜ 2023-2024 Akademik Takvim",
+      "char_count": 58,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=96",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=96",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nfizyoterapi@gibtu.edu.tr\n\nphone\n+90 342 909 75 00\n\nprint\n+90 342 909 75 00\n\nWeb Sorumlumuz\n\nÖğr. Gör. Işılay KILIÇASLAN\n\nisilay.kilicaslan@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 351,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=96",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nÖğr. Gör. Işılay KILIÇASLAN\n\nring_volume\n3006\n\nmail\nisilay.kilicaslan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Halil İbrahim DEMİRÖZ\n\nring_volume\n3010\n\nmail\nhibrahim.demiroz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Aysun SÖYLEMEZ\n\nring_volume\n3020\n\nmail\naysun.soylemez@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Bengisu TÜFEKÇİ\n\nring_volume\n3022\n\nmail\nbengisu.tufekci@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 456,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "title": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "department": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 16,
+      "total": 16,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 3,
+    "tanitim": 5,
+    "personel": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

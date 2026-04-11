@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:37:48Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\MESLEK YÜKSEKOKULLARI\\Sağlık Hizmetleri Meslek Yüksekokulu\\Yaşlı_Bakımı_Bölümü.html",
+    "birim_id": 97,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Yasli Bakim Programi"
+  },
+  "summary": {
+    "total_blueprint_urls": 18,
+    "total_fetched": 18,
+    "total_valid": 16,
+    "total_failed": 0,
+    "total_skipped": 2,
+    "total_documents": 17,
+    "total_chars": 8656
+  },
+  "discovered_pdfs": [],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikBirimler.aspx?id=97",
+      "reason": "too_short (8 chars)",
+      "char_count": 8
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=97",
+      "reason": "too_short (16 chars)",
+      "char_count": 16
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=97",
+      "title": "Yaşlı Bakımı Programı",
+      "body_content": "GİBTÜ 'de Geleceğin Eğitim Modeli Konuşuldu\n\nGİBTÜ 'nün Kalite Yolculuğu ISO 9001 ile Taçlandı\n\nTürkiye Yüzyılı Maarif Modeli Konferansı\n\nGİBTÜ 'de Mehmet Akif ve Çanakkale Ruhu Konferansı Gerçekleştirildi\n\nUzun Yılların Hizmetine Teşekkür\n\nGİBTÜ, IKAF26 'da Gençlerin Kariyer Yolculuğuna Yön Veriyor\n\nRektörümüzden Ramazan Bayramı Mesajı\n\nGİBTÜ 'de Çanakkale Geçilmez Programı Duygu Dolu Anlara Sahne Oldu",
+      "char_count": 406,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=97",
+      "title": "Yönetim",
+      "body_content": "Yönetim\r\n\nÖğr. Gör. Dr. Ayşe Duygu ÖZBAŞ\n\nBölüm Başkan V.\n\nring_volume\n3009\n\nmail\nayseduygu.ozbas@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 128,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=97",
+      "title": "Hakkımızda",
+      "body_content": "Yaşlı Bakım Programının;\n\nAmacı:\n  Yaşlılıkta yaşlanma ile ortaya çıkan fiziksel, ruhsal ve sosyal yetersizliklerin yeniden yapılandırılmasına yardımcı olmak amacıyla tedavi ve sosyal bakım hizmeti sunan ara elemanların ortaya çıkmasıdır. Bu nedenle programdan yararlanacaklar, yaşlı bakım hizmeti konusunda gerekli bilgi, beceri ve değerler bütünleştirip, özümseyerek; kamu alanı, özel alan ve sivil toplum örgütlerinde yaşlıların temel özellikleri ve hizmetlerini bilme ve bu doğrultuda yaşlıların ihtiyaçlarını karşılayanların karşılanması, aynı zamanda yaşlıya bütüncül yaklaşabilme yetisi programı temel amacını oluşturur.  \n\nKabul Koşulları ve Kontenjanı:\n\n Yaşlı Bakım Programına öğrenci kabulü, Ölçme, Seçme ve Yerleştirme Merkezi (ÖSYM) tarafından yapılan Temel Yeterlilik Testi (TYT) puanı ile gerçekleştirilmektedir. Ayrıca programımıza Yabancı Uyruklu Öğrenci Sınavı (YÖS) da öğrenciye göre kabul edilmektedir. Programın kontenjanı 60 öğrenci olup, başarıya göre yerleştirme yapılmaktadır.\n\nEğitim Süresi:\n\n 2 Yıl\n\nDiploma Türü:\n Önlisans\n\nDers Uygulamaları ve Süresi:\n\n Programın Yaşlı Bakım İlke ve Esasları (I, II, III ve IV) derslerinin kapsamı; anlaşma yapılan (hastane vb.) kurumlarda, 1.Sınıfın Bahar döneminde (2.Dönem) başlamak üzere haftalık 8 saat şekilde uygulama yapılmaktadır.\n\nMezuniyet Koşulları:\n  Mezun olmak için tüm dersleri başarmış olması, en asgari 120 AKTS kredisi kesilmesinin, 4 üzerinden en az 2 olması ve dönem içi uygulamalı derslerini de tamamlamış olması gerekmektedir.",
+      "char_count": 1512,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=97",
+      "title": "Misyon",
+      "body_content": "Bilimsel, sosyal ve kültürel koşullara kolaylıkla uyum sağlayabilen, yaşam boyu öğrenmeyi ve kendini yenilemeyi ilke edinmiş, ülke ve dünya sorunlarına duyarlı, takım çalışmasına ve paylaşım kültürüne yatkın, bütüncül yaklaşım ve eleştirel düşünme sürecini kullanarak almış olduğu yaşlı bakımı eğitimi ile; yaşlı bireylerin sağlığını koruma, geliştirme ve sürdürme becerisine sahip, bakım, eğitim, araştırma, yönetim, danışmanlık ve liderlik rollerini etkin olarak yerine getirebilen, etkili iletişim kurabilen ve değişim yaratabilen, yaşlı bakımı teknikerliğinin gelişmesine katkıda bulunabilecek, mesleğini ulusal ve uluslararası düzeyde yerine getirebilecek inisiyatif sahibi ve mesleği ile ilgili yasalara ve etik ilkelere bağlı profesyonel yaşlı bakımı teknikerleri yetiştirmektir.",
+      "char_count": 786,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTanitim.aspx?id=97",
+      "title": "Tanıtım",
+      "body_content": "Yaşlı Bakımı Programının;\n\nGenel Önemi ve Tanıtımı:\n\nYaşam biçimi ve standartlarında yaşanan değişim, tüm dünyada doğumda beklenen yaşam süresini yükseltmiştir. Artan yaşlı nüfusuna paralel olarak, 60 yaşın üstündeki yaşlılar için hizmet veren huzurevi yaşlı bakım ve rehabilitasyon merkezlerine olan başvurularda da artış görülmektedir. Sonuç olarak, yaşlı nüfusa sunulan sağlık ve bakım hizmetinin kalitesi tüm dünya için önem arz etmektedir. Bu kapsamda bakıldığında, nitelikli yaşlı bakımı tekniker ihtiyacının artacağı düşünülmektedir. Bu program, ortaya çıkacak bu ihtiyacı karşılama düşüncesiyle eğitim-öğretim faaliyetlerini gerçekleştirmektedir.\n\nBitirenlerin Ünvanı ve Görev Tanımları:\n Bu programdan mezun olanlar \"Yaşlı Bakım Teknikeri\" ünvanını almaktadır. 2 Mayısı 2014 Tarihli ve 29007 sayılı Resmi Gazetede, Sağlık Meslek Mensupları İle Sağlık Hizmetlerinde Çalışan Diğer Meslek Mensuplarının İş ve Görev Tanımlarına Dair Yönetmeliğe göre Yaşlı Bakımı Teknikeri İş ve Görev Tanımları şu şekildedir;\n\nYaşlı Bakımı Teknikeri / Evde Hasta Bakım Teknikeri\n\nYaşlı bireyler ile evde bakım gerektiren hastaların;\n\nFiziksel, ruhsal ve sosyal yönden bakım gereksinimlerini değerlendirir. Günlük yaşam aktivitelerinin korunmasını, sürdürülmesini ve en üst düzeyde kullanmasını destekler.\n\nDiyetisyen tarafından önerilen beslenme programına uygun olarak besler, kilo takibi yapar ve değişiklikleri sağlık ekibi üyeleri ile değerlendirir.\n\nYaşam alanını kaza riski ve güvenlik yönünden değerlendirir, gerekli düzenlemelerin yapılmasını sağlar.\n\nSağlık ekibi tarafından planlanan tıbbi bakımı takip eder, tıbbi bakımın uygulanmasına yönelik problem tespit etmesi halinde sağlık meslek mensubuna durumu iletir.\n\nAğız ve diş bakımı gibi günlük kişisel bakıma yardımcı olur. Yatağa bağımlı olma, hastalık veya engellilik nedenli bağımlılık durumlarında kişisel bakım ve temizlik uygulamalarını yerine getirir.\n\nSağlık hizmetlerine ulaşmasına yardımcı olur, gerektiğinde refakat eder.\n\nBakım veren aile üyelerini destekler.\n\nİstismardan korur, aileyi ve gerekli durumlarda ilgili kurumları bu konuda bilgilendirir.\n\nSosyal aktivitelere yönlendirir ve katılımını destekler.\n\nMezunların İstihdam Alanları ve Çalışma Koşulları:\n Yaşlı bakım hizmetlerinin yürütüldüğü;\n\nSosyal Hizmetler Müdürlüklerine bağlı özel Huzurevlerinde,\n\nHastanelerin Geriatri birimlerinde,\n\nAile Araştırma Kurumunda, Devlet Planlama Teşkilatı’nda,\n\nBelediyelerde,  Hastanelerde, Aile Danışma Merkezlerinde,\n\nSivil Toplum Kuruluşları ve özel kurumlarda yürütülen yaşlı bakımı hizmetlerinde,  \n\nYaşlı bakımevlerinde, güçsüzler yurdunda, yaşlılar için gündüz bakım merkezlerinde, \n\nSağlık Müdürlüklerine bağlı birimlerdeki yaşlıya yönelik evde bakım uygulamaları hizmetlerinde  çalışabilmektedirler.\n\nAynı zamanda bakım hizmetini özel ve bireysel evinde almak isteyenler tarafından da istihdam edilebilirler.\n\nDevlete bağlı kurumlarda KPSS (Kamu Personeli Seçme Sınavı) puanları ile atama yapılabilmektedir.\n\nYaşlı Bakımı Teknikerliğinin Geleceği:\n\nYaşam biçimi ve standartlarında yaşanan değişim, tüm dünyada doğumda beklenen yaşam süresini yükseltmiştir. Artan yaşlı nüfusuna paralel olarak, 60 yaşın üstündeki yaşlılar için hizmet veren huzurevi yaşlı bakım ve rehabilitasyon merkezlerine olan başvurularda da artış görülmektedir. Sonuç olarak, yaşlı nüfusa sunulan sağlık ve bakım hizmetinin kalitesi tüm dünya için önem arz etmektedir. Bu kapsamda bakıldığında yaşlı bakımı teknikeri ihtiyacının artacağı düşünülmektedir.",
+      "char_count": 3494,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=97",
+      "title": "Tarihçe",
+      "body_content": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Sağlık Hizmetleri Meslek Yüksekokulu Sağlık ve Bakım Hizmetleri Bölümü bünyesinde yer alan Yaşlı Bakımı Programı, 2020-2021 yılında eğitim-öğretim faaliyetine başlamıştır. Açılan bu program 2020 yılından itibaren örgün öğretim olarak eğitim-öğretim faaliyetlerini sürdürmektedir.",
+      "char_count": 327,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=97",
+      "title": "Vizyon",
+      "body_content": "Eğitim kalitesini yükseltmek amacı ile ileri eğitim teknikleri kullanarak ulusal ve uluslararası düzeyde rekabet edebilecek eğitim standartlarına ulaşmak ve sağlık sektöründeki kurum/kuruluşlar tarafından öncelikli olarak tercih edilen insan kaynağının yetiştirilerek sektöre kazandırılması hedefleri doğrultusunda; bilimsel özgürlüğe inanan güvenilir, üst düzey sağlık bilgi ve becerisi ile donanımlı yaşlı bakımı teknikerleri yetiştirerek toplumda bulunan yaşlı bireylerin yaşam kalitelerini yükseltmektir.",
+      "char_count": 508,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=97",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nÖğr. Gör. Dr. Ayşe Duygu ÖZBAŞ\n\nÖğr. Gör. Dr.\n\nring_volume\n3009\n\nmail\nayseduygu.ozbas@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Emine KARACAN\n\nÖğr. Gör. Dr.\n\nring_volume\n3008\n\nmail\nemine.karacan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Esin SAPÇI\n\nÖğr. Gör. Dr.\n\nring_volume\n3007\n\nmail\nesin.sapci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Nur Ceren GÜVENÇ\n\nÖğr. Gör.\n\nring_volume\n3024\n\nmail\nnurceren.guvenc@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 459,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=97",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=97",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=97",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\n KATEGORİLER\r\n\nOrganizasyon",
+      "char_count": 70,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=97",
+      "title": "Formlar",
+      "body_content": "Formlar\n\nFormlar\n\nok",
+      "char_count": 20,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=97",
+      "title": "Faydalı Linkler",
+      "body_content": "GİBTÜ Yaşlı Bakımı Programı Instagram Adresi\r\n\n GİBTÜ Yaşlı Bakımı Programı Twitter Adresi",
+      "char_count": 90,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=97",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=97",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nyaslibakimi@gibtu.edu.tr\n\nphone\n+90 342 909 75 00\n\nprint\n+90 342 909 75 00\n\nWeb Sorumlumuz\n\nDr. Öğr. Üyesi Esin SAPÇI\n\nesin.sapci@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 342,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=97",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nDr. Öğr. Üyesi Esin SAPÇI\n\nring_volume\n3007\n\nmail\nesin.sapci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Emine KARACAN\n\nring_volume\n3008\n\nmail\nemine.karacan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Dr. Ayşe Duygu ÖZBAŞ\n\nring_volume\n3009\n\nmail\nayseduygu.ozbas@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Nur Ceren GÜVENÇ\n\nring_volume\n3024\n\nmail\nnurceren.guvenc@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 444,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 17,
+      "total": 17,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 17,
+      "total": 17,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 17,
+      "total": 17,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 17,
+      "total": 17,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 17,
+      "total": 17,
+      "pct": 100
+    },
+    "title": {
+      "count": 17,
+      "total": 17,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 17,
+      "total": 17,
+      "pct": 100
+    },
+    "department": {
+      "count": 17,
+      "total": 17,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 17,
+      "total": 17,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 17,
+      "total": 17,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 3,
+    "yonetim": 1,
+    "tanitim": 5,
+    "personel": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}
