@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T23:30:07Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\Sağlık_Kültür_ve_Spor_Daire_Başkanlığı.html",
+    "birim_id": 8,
+    "birim_title": "Hakkımızda",
+    "category": "spor",
+    "department": "Saglik Kultur ve Spor Daire Baskanligi"
+  },
+  "summary": {
+    "total_blueprint_urls": 32,
+    "total_fetched": 33,
+    "total_valid": 32,
+    "total_failed": 0,
+    "total_skipped": 1,
+    "total_documents": 35,
+    "total_chars": 47977
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Öğrenci Toplulukları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260225152934_b001cb16.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Topluluk Faaliyetleri",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260225155245_7b0c4db4.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=8",
+      "reason": "too_short (0 chars)",
+      "char_count": 0
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=8",
+      "title": "Sağlık Kültür ve Spor Daire Başkanlığı",
+      "body_content": "GİBTÜ 'de \"yazek 2. Teknoloji Gecesi\" Yoğun Katılımla Gerçekleşti\n\nGİBTÜ ve Gaün 'lü Uluslararası Öğrenciler İngilizce Münazarada Buluştu\n\nGİBTÜ 'de \" Geleceği İnşa Eden Kadınlar \" Buluşması\n\nGİBTÜ Ailesi Geleneksel İftarda Buluştu\n\nGİBTÜ Öğrenci Toplulukları Topluma Değer Katacak Projeleriyle ÜNİDES 'ten Destek Aldı\n\nRektörümüz Prof. Dr. Şehmus Demir Öğrencilerle İftar Sofrasında Buluştu\n\nKöklerim Benimle: Uyum Sürecinde Psikolojik Dayanıklılık Etkinliği\n\nGİBTÜ Uluslararası Öğrencileri Yedikuyular 'da Karın Keyfini Çıkardı\n\nHABERLER\n\nTÜMÜ\n\n18.03.2026 14:04\n\nGİBTÜ 'de \"yazek 2. Teknoloji Gecesi\" Yoğun Katılımla Gerçekleşti\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi’nde Yapay Zeka Öğrenci Topluluğu tarafından düzenlenen “YAZEK 2. Teknoloji Gecesi”, farklı üniversitelerden öğrencileri teknoloji ve yapay zeka projeleri etrafında bir araya getirdi.\n\n Devamını Oku\r\n\n14.03.2026 13:56\n\nGİBTÜ ve Gaün 'lü Uluslararası Öğrenciler İngilizce Münazarada Buluştu\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi English Speaking Kulübü (ES Club) ile Gaziantep Üniversitesi Debate Kulübü iş birliğinde düzenlenen İngilizce münazara etkinliği, tamamı uluslararası öğrencilerden oluşan katılımcıların aktif performansıyla gerçekleştirildi.\n\n Devamını Oku\r\n\n13.03.2026 13:41\n\nGİBTÜ 'de \" Geleceği İnşa Eden Kadınlar \" Buluşması\n\nFatma Şahin: “Kaybedenler vazgeçenlerdir, vazgeçmeyeceğiz”\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi’nde düzenlenen “Geleceği İnşa Eden Kadınlar” programında öğrencilerle bir araya gelen Gaziantep Büyükşehir Belediye Başkanı Fatma Şahin, gençlere azim ve kararlılık mesajı verdi. Programın açılış konuşmasını yapan GİBTÜ Rektörü Prof. Dr. Şehmus Demir ise kadınların bilimden yönetime kadar her alanda güçlü şekilde yer almasının toplumsal gelişim için büyük önem taşıdığını vurguladı.\n\n Devamını Oku\r\n\n11.03.2026 11:13\n\nGİBTÜ Ailesi Geleneksel İftarda Buluştu\n\nÜniversitemizin akademik ve idari personeli, Ramazan ayının manevi atmosferinde düzenlenen iftar programında bir araya geldi.\n\n Devamını Oku\r\n\n10.03.2026 10:52\n\nGİBTÜ Öğrenci Toplulukları Topluma Değer Katacak Projeleriyle ÜNİDES 'ten Destek Aldı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi (GİBTÜ), öğrencilerin akademik gelişimlerinin yanı sıra sosyal sorumluluk, çevre bilinci, kültürel etkileşim ve teknoloji üretimi gibi alanlarda aktif rol almalarını teşvik eden çalışmalarıyla dikkat çekmeye devam ediyor.\n\nBu kapsamda GİBTÜ bünyesinde faaliyet gösteren üç öğrenci topluluğu tarafından hazırlanan projeler, Gençlik ve Spor Bakanlığı Gençlik Hizmetleri Genel Müdürlüğü tarafından yürütülen Üniversite Öğrenci Toplulukları İş Birliği ve Destek Programı (ÜNİDES) kapsamında desteklenmeye hak kazandı.\n\n Devamını Oku\r\n\n05.03.2026 15:45\n\nRektörümüz Prof. Dr. Şehmus Demir Öğrencilerle İftar Sofrasında Buluştu\n\n“Üniversitemizin Asıl Sahibi Öğrencilerimizdir” \n\nÜniversitemizde Ramazan ayının manevi atmosferini paylaşmak ve öğrencilerle bir araya gelmek amacıyla düzenlenen iftar programında, Rektörümüz Prof. Dr. Şehmus Demir öğrencilerle aynı sofrayı paylaştı. \n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n08\n\nAra\n\n 2025-2026 Eğitim Öğretim Yılı İŞKUR Gençlik Programı Yedek Katılımcı Listesi\r\n\n04\n\nAra\n\n 2025-2026 Eğitim Öğretim Yılı İŞKUR Gençlik Programı Katılımcı Listesi\r\n\n04\n\nAra\n\n Kısmi Zamanlı Öğrenci Çalışma Programı Başvuru Sonuçları Açıklandı\r\n\n17\n\nKas\n\n Kısmi Zamanlı Öğrenci Alımı Başvuruları Başladı\r\n\n13\n\nKas\n\n İŞKUR Gençlik Programı Kura Sonuçları ve Başvuru Takvimi\r\n\n31\n\nEki\n\n İŞKUR Gençlik Programı Başvuruları Başladı\r\n\n27\n\nEki\n\n Gaziantep İslam Bilim ve Teknoloji Üniversitesi Psikolojik Destek Merkezi Hizmetinizde\r\n\n15\n\nEki\n\n Kurs Kayıtları Başladı",
+      "char_count": 3671,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 35,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=8",
+      "title": "Yönetim",
+      "body_content": "Yönetim\r\n\n Daire Başkanı\r\n\n Mahmut AKŞAHİN\n\nDaire Başkan V.\n\nring_volume\n17 01\n\nmail\nmahmut.aksahin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Şube Müdürleri\r\n\n Zeki YÜCEL\n\nŞube Müdürü\n\nring_volume\n17 02\n\nmail\nzeki.yucel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Ferhat ÇİFTÇİ\n\nŞef\n\nring_volume\n17 04\n\nmail\nferhat.ciftci@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 332,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 34,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=8",
+      "title": "Hakkımızda",
+      "body_content": "Sağlık, Kültür ve Spor Daire Başkanlığı, 2547 sayılı Yükseköğretim Kanun’un 2880 sayılı Kanun’la değişik 46. ve 47. maddeleri uyarınca kurulmuştur.\n\nÖğrencilerin beden ve ruh sağlığının korunması, beslenme, çalışma, dinlenme ve boş zamanları değerlendirme gibi sosyal ihtiyaçlarını karşılamak ve bu amaçla bütçe imkânları nispetinde okuma salonları, yataklı sağlık merkezleri, öğrenci kantini ve yemekhaneler açmak, toplantı, tiyatro ve sinema salonları, spor salon ve sahaları, kamp yerleri sağlamak ve bunlardan öğrencilerin en iyi şekilde yararlanmaları için gerekli önlemleri almakla görevlidir.\n\nBu amaçla Sağlık, Kültür ve Spor Daire Başkanlığı tüm çalışanlar ve öğrencilerimizin sağlık ihtiyaçlarını gidermek için bir sağlık kuruluşu, öğrencilerin sosyal, kültürel danışma ve rehberlik ile spor ihtiyaçlarını karşılayan bir hizmet birimidir. Aynı zamanda eğitim-öğretimin desteklenmesi amacıyla bu alanda uygulama ve araştırmalar yapılmaktadır.\n\nHizmetlerimiz;\n\nHer türlü sağlık hizmetlerini yürütür, yataklı sağlık merkezleri açar,\n\nGüzel sanatlar ve spor alanlarında çalışmalar ve gösteriler düzenler,\n\nÖğrencilere burs ve kredi, beslenme, barınma, çalışma, dinlenme ve boş zamanlarını değerlendirme, ulaşım ve iş bulma alanlarında yardımcı olacak hizmetlerde bulunur,\n\nPsikolojik danışmanlık ve rehberlik hizmetleri yapar, öğrencilerin kişisel ve ailevi sorunlarını çözümlemeye çalışır,\n\nHizmet alanına giren konularda araştırma ve uygulamalar yapar veya yaptırır ve gerekli gördüklerini yayınlar,\n\nHizmet veren meslek elemanlarının yetişme ve gelişmelerini sağlamak için hizmet içi eğitim programları düzenler,\n\nBütün bu hizmetlerin görülmesi için gerekli olan öğrenci kantin ve lokantaları, okuma salonları ile öğrenci yurtları açar, toplantı, sinema ve tiyatro salonları, spor salon ve sahaları, kamp yerleri sağlar, bu ve benzeri diğer tesisleri kurar, kiralar, işletir veya işlettirir.\n\nBu amaca yönelik olarak üniversitenin diğer birimleri ve üniversite dışındaki kuruluşlarla işbirliği içinde çalışır.",
+      "char_count": 2018,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 33,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimhiyerarsi.aspx?id=8",
+      "title": "Organizasyon Şeması",
+      "body_content": "zoom_out_map\n\nDosyayı görüntüleyemiyorsanız, \nburadan indirebilirsiniz\n veya dosyayı görüntülemk için \nAdobe PDF Reader\n indirebilirsiniz.",
+      "char_count": 138,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 32,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGorevTanimi.aspx?id=8",
+      "title": "Görev Tanımı",
+      "body_content": "Daire Başkanı\n\nİdari Hizmetler Şube Müdürlüğü \n\nİdari Hizmetler Birimi\n\nKültür Hizmetleri Şube Müdürlüğü\n\nKültür Hizmetleri Birimi\n\nMali Hizmetler Şube Müdürlüğü\n\nMali Hizmetler Birimi\n\nSpor Hizmetleri Şube Müdürlüğü\n\nSpor Hizmetleri Birimi \n\nYemekhane Hizmetleri Şube Müdürlüğü\n\nYemekhane Hizmetleri Birimi\n\nSağlık Hizmetleri Şube Müdürlüğü\n\nSağlık Hizmetleri Birimi\n\nDestek Personeli\n\nTaşınır Kayıt Yetkilisi",
+      "char_count": 410,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 30,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=8",
+      "title": "Misyon",
+      "body_content": "Öğrencilerimizin ve personelimizin beden ve ruh sağlıklarını korumak amacıyla, çağdaş yöntemlerle yeterli ve kaliteli düzeyde beslenme, barınma, sağlık, kültür, spor, psikolojik danışma ve rehberlik hizmeti sunmak, sosyal ihtiyaçlarını karşılamak, alanında lider ve yenilikçi bir birim olmaktır.",
+      "char_count": 295,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 29,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTanitim.aspx?id=8",
+      "title": "Tanıtım",
+      "body_content": "Birim Tanıtım Kataloğu",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 28,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=8",
+      "title": "Tarihçe",
+      "body_content": "18 Mayıs 2018 tarih ve 30425 sayılı Resmi Gazetede yayınlanan Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 09/05/2018 olan 7141 nolu Kanunla, 2809 sayılı kanuna yapılan ek maddeyle önce Gaziantep Bilim ve Teknoloji Üniversitesi adıyla, daha sonra ise 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan Vergi Kanunları ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 17/01/2019 olan 7161 nolu Kanunun 14.maddesi ile 2809 sayılı Kanunun ek 178. maddesi başlığının birinci fıkrasında yer alan “Gaziantep Bilim ve Teknoloji Üniversitesi” ibareleri, “Gaziantep İslam Bilim ve Teknoloji Üniversitesi” olarak değiştirilmesi ile kurulmuştur.\n\nÜniversitemiz idari teşkilatlanmasının bir parçası olan Başkanlığımız; 2547 sayılı Kanun’un 2880 sayılı kanunla değişik 46. ve 47. maddeleri uyarınca kurulmuş ve teşkilatlanması, yönetimi, çalışmaları, görevlilerin yetki ve sorumluluklarına ilişkin genel hükümler yönetmelikle belirlenmiştir.",
+      "char_count": 1045,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 27,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=8",
+      "title": "Vizyon",
+      "body_content": "Öğrenci ve personeline yönelik faaliyetleri sürekli iyileştiren, kaynaklarını verimli kullanan, bilgi ve teknoloji ile donatılmış öncü bir birim olmaktır.",
+      "char_count": 154,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 26,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=8",
+      "title": "İdari Personel",
+      "body_content": "Beslenme Hizmetleri Şube Müdürlüğü\r\n\n Zeki YÜCEL\n\nŞube Müdürü\n\nring_volume\n1702\n\nmail\nzeki.yucel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Tuğçe ÜLKER\n\nDiyetisyen\n\nring_volume\n17 03\n\nmail\ntugce.ulker@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Selma ELĞAY\n\nMemur\n\nring_volume\n17 05\n\nmail\nselma.elgay@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Uğur KORKMAZ\n\nHizmetli\n\nring_volume\n17 05\n\nmail\nugur.korkmaz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Destek Hizmetleri Şube Müdürlüğü\r\n\n Zeki YÜCEL\n\nŞube Müdürü\n\nring_volume\n17 02\n\nmail\nzeki.yucel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Cemal KUŞCİ\n\nMemur\n\nring_volume\n17 10\n\nmail\ncemal.kusci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Ayfer ETEBEKLİOĞLU\n\nDestek Personeli\n\nring_volume\n17 10\n\nmail\nayfer.etebeklioglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Beyza KEKLİKÇİ\n\nDestek Personeli\n\nring_volume\n17 10\n\nmail\nbeyza.keklikci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Hatice Nur ÇIRAK\n\nDestek Personeli\n\nring_volume\n17 10\n\nmail\nhaticenur.cirak@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n İbrahim DEMİR\n\nHizmetli\n\nring_volume\n17 10\n\nmail\nibrahim.demir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Kültür Şube Müdürlüğü\r\n\n Ferhat ÇİFTÇİ\n\nŞef\n\nring_volume\n17 04\n\nmail\nferhat.ciftci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Ahmet KOÇAK\n\nMemur\n\nring_volume\n1712\n\nmail\nahmet.kocak@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Abdullah BAĞLAN\n\nBilgisayar İşletmeni\n\nring_volume\n17 09\n\nmail\nabdullah.baglan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet Ali ARSLAN\n\nBilgisayar İşletmeni\n\nring_volume\n1708\n\nmail\nmehmetali.arslan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Spor ve Sağlık Şube Müdürlüğü\r\n\n Ferhat ÇİFTÇİ\n\nŞef\n\nring_volume\n1704\n\nmail\nferhat.ciftci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Beyza Ceren ERDOĞAN\n\nPsikolog\n\nring_volume\n17 11\n\nmail\nbeyzaceren.erdogan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Sema Nur YAŞAR\n\nSağlık Teknikeri\n\nring_volume\n17\n\nmail\nsemanur.yasar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Burak ŞAHİN\n\nHizmetli\n\nring_volume\n17 07\n\nmail\nburak.sahin@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1901,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 24,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/sks/icerik/30925/kalite-politikasi",
+      "title": "Kalite Politikası",
+      "body_content": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Sağlık Kültür Spor Daire Başkanlığı olarak kalite politikamız; sürekli iyileştirme prensibi doğrultusunda iç kalite güvencesi sistemini yenilikçi uygulamalarla destekleyerek kalite standartlarını artırmayı, iç ve dış paydaşlar ile etkin iletişim ve iş birliği sağlayarak kalite kültürünün yaygınlaşmasını sağlamayı, kalite güvencesi sistemine yönelik faaliyetleri sürekli olarak geliştirerek sistemin sürdürülebilirliğini sağlamayı taahhüt etmektedir.",
+      "char_count": 499,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 23,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/sks/icerik/31036/raporlar",
+      "title": "Raporlar",
+      "body_content": "2019 Yılı Birim Faaliyet Raporu\n\n2021 Yılı Birim Faaliyet Raporu\n\n2022 Yılı Birim Faaliyet Raporu\n\n2023 Yılı Birim Faaliyet Raporu\n\n2024 Yılı Birim Faaliyet Raporu\n\n2025 Yılı Birim Faaliyet Raporu",
+      "char_count": 196,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/sks/icerik/31037/paydas-listesi",
+      "title": "Paydaş",
+      "body_content": "PAYDAŞLAR\n\nİç ve Dış Paydaş Listesi\n\nPAYDAŞ TOPLANTI TUTANAKLARI\n\nÖğrenci Toplulukları Toplantısı\n / 25.09.2025\n\nÖğrenci Toplulukları Toplantısı\n / 16-17.02.2026",
+      "char_count": 161,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/sks/icerik/31038/prosedurler",
+      "title": "Prosedürler",
+      "body_content": "001 - Doküman Yönetim Prosedürü\n\n002 - İç Tetkik Prosedürü\n\n003 - Sürekli İyileştirme Prosedürü",
+      "char_count": 95,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/sks/icerik/31039/birim-kalite-komisyonu-toplantilari",
+      "title": "Birim Kalite Komisyonu Toplantıları",
+      "body_content": "21.08.2025 tarih ve 1 Sıra Numaralı Toplantı Tutanağı",
+      "char_count": 53,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/sks/icerik/31040/memnuniyet-anketleri",
+      "title": "Memnuniyet Anketleri",
+      "body_content": "Öğrenci Yemek Memnuniyet Anketi",
+      "char_count": 31,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/sks/icerik/31092/birim-kalite-sureci",
+      "title": "Birim Kalite Süreci",
+      "body_content": "2025 Yılı Birim Kalite Süreci",
+      "char_count": 29,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/sks/icerik/14097/birim-kalite-komisyonu",
+      "title": "Birim Kalite Komisyonu",
+      "body_content": "Birim Kalite Komisyonu\n\nDaire Başkan V. Mahmut AKŞAHİN - Birim Kalite Sorumlusu\n\nŞube Müdürü V. Ferhat ÇİFTÇİ - Birim Kalite Temsilcisi\n\nŞef Tuncay ŞAHAN - Üye\n\nMemur Ahmet KOÇAK - Üye\n\nMemur Selma ELĞAY - Üye",
+      "char_count": 209,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/sks/icerik/30923/gzft-analizi",
+      "title": "Planlar",
+      "body_content": "01 - Risk Analizi\n\n02 - SWOT Analizi\n\n03 - PEST Analizi\n\n04 - Yıllık Çalışma Planı",
+      "char_count": 82,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=8",
+      "title": "Formlar",
+      "body_content": "Formlar\n\n 01-Aile Durum Bildirim Formu\r\n\n 02-Düzeltici Faaliyet Formu\r\n\n 03-Emeklilik Belgesi Formu\r\n\n 04-İlişik Kesme Talep Formu\r\n\n 05-İstifa Dilekçesi Talep Formu\r\n\n 06-Lavabo Temizlik Takip Formu\r\n\n 07-Mal Bildirim Beyannamesi\r\n\n 08-Malzeme Talep Formu\r\n\n 09-Mescit Temizleme Takip Formu\r\n\n 10-Tebliğ Tebellüğ Belgesi Formu\r\n\n 11-Ücretsiz İzin Talep Formu\r\n\n 12-MUAYENE ve Kabul Komisyonu Formu\r\n\n 13-TUTANAK Formu\r\n\n 14-KOMİSYON Kararı Formu\r\n\n 15-TOPLANTI Karar Formu\r\n\n 16-ÖĞRENCİ Dilekçe Formu\r\n\n 17-MEMNUNİYET, Dilek, Öneri, Şikayet Bildirim Formu\r\n\n 18-PERSONEL Dilekçe Formu\r\n\n 19-GÜNLÜK Satılan Yenilen Yemek, Fiş ve Tutar Tutanağı -idare\r\n\n 20-GÜNLÜK Yenilen Yemek Fiş Sayım Tutanağı-firma\r\n\n 21-Öğrenci Toplulukları Kuruluş Güncelleme Talep Formu ( EK1 )\r\n\n 22-Öğrenci Toplulukları Danışman Yardımcısı Kabul Formu ( EK2 )\r\n\n 23-Topluluk Kurucu Üye Bildirim Formu ( EK3 )\r\n\n 24-Topluluk Tüzüğü Formu ( EK4 )\r\n\n 25-Topluluk Faaliyet Planı Bildirim Formu ( EK5 )\r\n\n 26-Genel Kurul Sonuç Bildirim Formu ( EK6 )\r\n\n 27-Topluluk Üye Kayıt Formu ( EK7 )\r\n\n 28-Öğrenci Toplulukları İç Denetim Formu ( EK8 )\r\n\n 29-Öğrenci Toplulukları Etkinlik Başvuru Formu ( EK9 )\r\n\n 30-Öğrenci Toplulukları Etkinlik Sonuç Bildirim Formu ( EK10 )\r\n\n 31-Öğrenci Toplulukları Faaliyet Değerlendirme Formu ( EK11 )\r\n\n 32-Kısmi Zamanlı Öğrenci İhtiyaç Bildirim Formu ( Form-1 )\r\n\n 33-Kısmi Zamanlı Öğrenci Başvuru Formu ( Form-2 )\r\n\n 34-Kısmi Zamanlı Öğrenci Belirleme Komisyonu ( Form-3 )\r\n\n 35-Kısmi Zamanlı Öğrenci Aylık Çalışma Çizelgesi ( Form-4 )\r\n\n 36-Kısmi Zamanlı Öğrenci Aylık Puantaj Çizelgesi ( Form-5 )\r\n\n 37-Kısmi Zamanlı Öğrenci İşten Ayrılma Çizelgesi ( Form-6 )\r\n\n 38-Kısmi Zamanlı Öğrenci Sgk İlişik Taahhütnamesi Formu ( Form-7 )\r\n\n 39-Kısmi Zamanlı Öğrenci Çalıştırma Sözleşmesi( Form-8 )\r\n\n 40-Kısmi Zamanlı Öğrenci İşe Başlama Formu ( Form-9 )\r\n\n 41-Yemek Burs Başvuru Formu ( Form-1 )\r\n\n 42-Yemek Bursu Değerlendirme Komisyonu ( Form-2 )\r\n\n 43-Yemek Bursu Değerlendirme ( Form-3 )\r\n\n 44-Tanıtım Araçları Başvuru Formu ( EK1 )\r\n\n 45-Tanıtım Araçları Taahhütname Formu ( EK2 )\r\n\n 46-Kantin, Kafeterya ve Tüm İşletmeler İçin Denetim Formu\r\n\n 47-Kurs Başvuru Formu\r\n\n 48-PERSONEL Takım Müsabaka Formu\r\n\n 49-ÖĞRENCİ Takım Müsabaka Formu\r\n\n 50-Personel Branş Takım Listesi Formu\r\n\n 51-Öğrenci Branş Takım Listesi Formu\r\n\n 52-Sağlık Beyan Formu\r\n\n 53-Arşiv Dizin Formu\r\n\n 54-Birim Kalite Süreci Formu",
+      "char_count": 2401,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/sks/icerik/30818/prosesler",
+      "title": "Prosesler",
+      "body_content": "Afiş Asma Prosesi\n\nStant Açma Prosesi\n\nÖğrenci Topluluğu Etkinlik Düzenleme Prosesi\n\nÖğrenci Topluluğu Kurma Prosesi\n\nÖğrenci Yemek Bursu Prosesi\n\nYemek Ödeme (Hakediş) Prosesi\n\nKısmi Zamanlı Öğrenci Çalıştırma Prosesi\n\nStajyer Öğrenci Sigorta Prim Ödemeleri Prosesi\n\nTopluluk Akademik Danışmanlık İşlemleri Prosesi\n\nToplulukların Değerlendirilmesi ve Kapatılması Prosesi\n\nÜniversite İçi Spor Oyunları Prosesi",
+      "char_count": 409,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=8",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Eğitim Öğretim Yılı İŞKUR Gençlik Programı Yedek Katılımcı Listesi\n\n08.12.2025\n\n2025-2026 Eğitim Öğretim Yılı İŞKUR Gençlik Programı Katılımcı Listesi\n\n04.12.2025\n\nKısmi Zamanlı Öğrenci Çalışma Programı Başvuru Sonuçları Açıklandı\n\n04.12.2025\n\nKısmi Zamanlı Öğrenci Alımı Başvuruları Başladı\n\n17.11.2025\n\nİŞKUR Gençlik Programı Kura Sonuçları ve Başvuru Takvimi\n\n13.11.2025\n\nİŞKUR Gençlik Programı Başvuruları Başladı\n\n31.10.2025\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi Psikolojik Destek Merkezi Hizmetinizde\n\n27.10.2025\n\nKurs Kayıtları Başladı\n\n15.10.2025",
+      "char_count": 600,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=8",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nGİBTÜ 'de \"yazek 2. Teknoloji Gecesi\" Yoğun Katılımla Gerçekleşti\n\n18.03.2026\n\nGİBTÜ ve Gaün 'lü Uluslararası Öğrenciler İngilizce Münazarada Buluştu\n\n14.03.2026\n\nGİBTÜ 'de \" Geleceği İnşa Eden Kadınlar \" Buluşması\n\n13.03.2026\n\nGİBTÜ Ailesi Geleneksel İftarda Buluştu\n\n11.03.2026\n\nGİBTÜ Öğrenci Toplulukları Topluma Değer Katacak Projeleriyle ÜNİDES 'ten Destek Aldı\n\n10.03.2026\n\nRektörümüz Prof. Dr. Şehmus Demir Öğrencilerle İftar Sofrasında Buluştu\n\n05.03.2026",
+      "char_count": 488,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=8",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\n\"\ny\na\nz\ne\nk\n\n2\n.\n\nT\ne\nk\nn\no\nl\no\nj\ni\n\nG\ne\nc\ne\ns\ni\n\"\n\nY\no\nğ\nu\nn\n\nK\na\nt\nı\nl\nı\nm\nl\na\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\n\nEğitim\n\n18.03.2026\n\nG\nİ\nB\nT\nÜ\n\nv\ne\n\nG\na\nü\nn\n\n'\nl\nü\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\n\nİ\nn\ng\ni\nl\ni\nz\nc\ne\n\nM\nü\nn\na\nz\na\nr\na\nd\na\n\nB\nu\nl\nu\nş\nt\nu\n\nİşbirlikleri\n\n14.03.2026\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\n\"\n\nG\ne\nl\ne\nc\ne\nğ\ni\n\nİ\nn\nş\na\n\nE\nd\ne\nn\n\nK\na\nd\nı\nn\nl\na\nr\n\n\"\n\nB\nu\nl\nu\nş\nm\na\ns\nı\n\nKonferans\n\n13.03.2026\n\nG\nİ\nB\nT\nÜ\n\nA\ni\nl\ne\ns\ni\n\nG\ne\nl\ne\nn\ne\nk\ns\ne\nl\n\nİ\nf\nt\na\nr\nd\na\n\nB\nu\nl\nu\nş\nt\nu\n\nOrganizasyon\n\n11.03.2026\n\nG\nİ\nB\nT\nÜ\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nT\no\np\nl\nu\nl\nu\nk\nl\na\nr\nı\n\nT\no\np\nl\nu\nm\na\n\nD\ne\nğ\ne\nr\n\nK\na\nt\na\nc\na\nk\n\nP\nr\no\nj\ne\nl\ne\nr\ni\ny\nl\ne\n\nÜ\nN\nİ\nD\nE\nS\n\n'\nt\ne\nn\n\nD\ne\ns\nt\ne\nk\n\nA\nl\nd\nı\n\nHaber\n\n10.03.2026\n\nR\ne\nk\nt\nö\nr\nü\nm\nü\nz\n\nP\nr\no\nf\n.\n\nD\nr\n.\n\nŞ\ne\nh\nm\nu\ns\n\nD\ne\nm\ni\nr\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\nl\ne\n\nİ\nf\nt\na\nr\n\nS\no\nf\nr\na\ns\nı\nn\nd\na\n\nB\nu\nl\nu\nş\nt\nu\n\nOrganizasyon\n\n05.03.2026\n\nK\nö\nk\nl\ne\nr\ni\nm\n\nB\ne\nn\ni\nm\nl\ne\n:\n\nU\ny\nu\nm\n\nS\nü\nr\ne\nc\ni\nn\nd\ne\n\nP\ns\ni\nk\no\nl\no\nj\ni\nk\n\nD\na\ny\na\nn\nı\nk\nl\nı\nl\nı\nk\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n.\n\nKonferans\n\n25.02.2026\n\nG\nİ\nB\nT\nÜ\n\nC\na\nn\ns\na\nğ\nl\nı\nğ\nı\n\nT\no\np\nl\nu\nl\nu\nğ\nu\n\n'\nn\nd\na\nn\n\nA\nn\nl\na\nm\nl\nı\n\nH\nu\nz\nu\nr\ne\nv\ni\n\nZ\ni\ny\na\nr\ne\nt\ni\n\nZiyaret\n\n23.02.2026\n\nK\nö\nk\nl\ne\nr\ni\nm\n\nB\ne\nn\ni\nm\nl\ne\n:\n\nU\ny\nu\nm\n\nS\nü\nr\ne\nc\ni\nn\nd\ne\n\nP\ns\ni\nk\no\nl\no\nj\ni\nk\n\nD\na\ny\na\nn\nı\nk\nl\nı\nl\nı\nk\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nKonferans\n\n20.02.2026\n\nA\nf\ne\nt\ne\n\nD\ni\nr\ne\nn\nç\nl\ni\n\nG\nİ\nB\nT\nÜ\n\nEğitim\n\n19.02.2026\n\nG\nİ\nB\nT\nÜ\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\n\nY\ne\nd\ni\nk\nu\ny\nu\nl\na\nr\n\n'\nd\na\n\nK\na\nr\nı\nn\n\nK\ne\ny\nf\ni\nn\ni\n\nÇ\nı\nk\na\nr\nd\nı\n\nZiyaret\n\n18.02.2026\n\nG\ne\nr\ni\n\nD\nö\nn\nü\nş\nü\nm\n\nV\na\nz\no\n\nT\na\ns\na\nr\nı\nm\nı\n\nEtkinlik\n\n23.12.2025\n\nM\na\nn\ne\nv\ni\n\nB\na\nh\na\nr\nı\nm\n\nÜ\nç\n\nA\ny\nl\na\nr\n\nSeminer\n\n23.12.2025\n\nG\nİ\nB\nT\nÜ\n\nS\ni\nn\ne\nm\na\n\nG\nü\nn\nl\ne\nr\ni\n\nGösteri\n\n19.12.2025\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nT\no\np\nl\nu\nl\nu\nğ\nu\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\nd\ne\nn\n\nA\nI\nD\nS\n\nH\na\ns\nt\na\nl\nı\nğ\nı\nn\na\n\nY\nö\nn\ne\nl\ni\nk\n\nF\na\nr\nk\nı\nn\nd\na\nl\nı\nk\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nZiyaret\n\n12.12.2025\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nİ\nŞ\nK\nU\nR\n\nG\ne\nn\nç\nl\ni\nk\n\nP\nr\no\ng\nr\na\nm\nı\n\nY\ne\nd\ne\nk\n\nK\na\nt\nı\nl\nı\nm\nc\nı\n\nL\ni\ns\nt\ne\ns\ni\n\nDuyuru\n\n08.12.2025\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nİ\nŞ\nK\nU\nR\n\nG\ne\nn\nç\nl\ni\nk\n\nP\nr\no\ng\nr\na\nm\nı\n\nK\na\nt\nı\nl\nı\nm\nc\nı\n\nL\ni\ns\nt\ne\ns\ni\n\nDuyuru\n\n04.12.2025\n\nK\nı\ns\nm\ni\n\nZ\na\nm\na\nn\nl\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nÇ\na\nl\nı\nş\nm\na\n\nP\nr\no\ng\nr\na\nm\nı\n\nB\na\nş\nv\nu\nr\nu\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nA\nç\nı\nk\nl\na\nn\nd\nı\n\nDuyuru\n\n04.12.2025\n\nG\na\nz\ni\na\nn\nt\ne\np\n\nH\na\ny\nv\na\nn\na\nt\n\nB\na\nh\nç\ne\ns\ni\n\nB\na\nr\nı\nn\na\nk\n\nZ\ni\ny\na\nr\ne\nt\ni\n\nZiyaret\n\n03.12.2025\n\nC\na\nn\n\nS\na\nğ\nl\nı\nğ\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nT\no\np\nl\nu\nl\nu\nğ\nu\n\nB\ne\ns\nl\ne\nn\nm\ne\n\nv\ne\n\nH\ni\nj\ny\ne\nn\n\nE\nğ\ni\nt\ni\nm\ni\n\nZiyaret\n\n03.12.2025\n\nS\nu\nd\na\nn\n\n'\nd\na\n\nN\ne\nl\ne\nr\n\nO\nl\nu\ny\no\nr\n\n?\n\nProgram\n\n28.11.2025\n\nA\nh\nş\na\np\n\nB\no\ny\na\nm\na\n\nA\nt\nö\nl\ny\ne\ns\ni\n\nEtkinlik\n\n23.11.2025\n\n'\n\n'\n1\n7\n\nK\na\ns\nı\nm\n\nD\nü\nn\ny\na\n\nP\nr\ne\nm\na\nt\nü\nr\ne\n\nG\nü\nn\nü\n\n'\n\n'\n\nY\no\nğ\nu\nn\n\nB\na\nk\nı\nm\n\nZ\ni\ny\na\nr\ne\nt\ni\n\nZiyaret\n\n19.11.2025\n\nK\nı\ns\nm\ni\n\nZ\na\nm\na\nn\nl\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nA\nl\nı\nm\nı\n\nB\na\nş\nv\nu\nr\nu\nl\na\nr\nı\n\nB\na\nş\nl\na\nd\nı\n\nDuyuru\n\n17.11.2025\n\nİ\nŞ\nK\nU\nR\n\nG\ne\nn\nç\nl\ni\nk\n\nP\nr\no\ng\nr\na\nm\nı\n\nK\nu\nr\na\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nv\ne\n\nB\na\nş\nv\nu\nr\nu\n\nT\na\nk\nv\ni\nm\ni\n\nDuyuru\n\n13.11.2025\n\nÇ\nö\np\n\nT\no\np\nl\na\nm\na\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nEtkinlik\n\n31.10.2025\n\nİ\nŞ\nK\nU\nR\n\nG\ne\nn\nç\nl\ni\nk\n\nP\nr\no\ng\nr\na\nm\nı\n\nB\na\nş\nv\nu\nr\nu\nl\na\nr\nı\n\nB\na\nş\nl\na\nd\nı\n\nDuyuru\n\n31.10.2025\n\nG\na\nz\ni\na\nn\nt\ne\np\n\nİ\ns\nl\na\nm\n\nB\ni\nl\ni\nm\n\nv\ne\n\nT\ne\nk\nn\no\nl\no\nj\ni\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\ns\ni\n\nP\ns\ni\nk\no\nl\no\ng\n\nR\na\nn\nd\ne\nv\nu\n\nF\no\nr\nm\nu\n\nKampus Özel / Yaşam\n\n27.10.2025\n\nC\na\nn\ns\na\nğ\nl\nı\nğ\nı\n\nH\nu\nz\nu\nr\ne\nv\ni\n\n'\nn\nd\ne\n\nG\nö\nn\nü\nl\n\nB\nu\nl\nu\nş\nm\na\ns\nı\n\nZiyaret\n\n27.10.2025\n\nG\nİ\nB\nT\nÜ\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nT\no\np\nl\nu\nl\nu\nk\nl\na\nr\nı\n\nC\no\nş\nk\nu\ny\nl\na\n\nT\na\nn\nı\nt\nı\nl\nd\nı\n\nTanıtım\n\n23.10.2025\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\n\nY\nı\nl\nl\na\nr\nı\nn\nı\n\nN\na\ns\nı\nl\n\nV\ne\nr\ni\nm\nl\ni\n\nG\ne\nç\ni\nr\ne\nb\ni\nl\ni\nr\ni\nz\n?\n\nSöyleşi\n\n16.10.2025\n\nK\nu\nr\ns\n\nK\na\ny\nı\nt\nl\na\nr\nı\n\nB\na\nş\nl\na\nd\nı\n\nKurs\n\n15.10.2025\n\nG\nİ\nB\nT\nÜ\n\nG\ne\nn\nç\n\nT\ne\nm\na\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nT\no\np\nl\nu\nl\nu\nğ\nu\n\nT\na\nn\nı\nt\nı\nm\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nTanıtım\n\n13.10.2025\n\nG\nİ\nB\nT\nÜ\n\nC\na\nn\n\nS\na\nğ\nl\nı\nğ\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nT\no\np\nl\nu\nl\nu\nğ\nu\n\nT\na\nn\nı\nt\nı\nm\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nTanıtım\n\n13.10.2025\n\nR\nu\nh\n\nS\na\nğ\nl\nı\nğ\nı\nn\nı\nn\n\nK\no\nr\nu\nn\nm\na\ns\nı\nn\nd\na\n\nS\nt\nr\ne\ns\ni\nn\n\nR\no\nl\nü\n\nKonferans\n\n13.10.2025\n\nG\na\nz\ni\na\nn\nt\ne\np\n\nİ\ns\nl\na\nm\n\nB\ni\nl\ni\nm\n\nv\ne\n\nT\ne\nk\nn\no\nl\no\nj\ni\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\ns\ni\n\nM\ne\nd\ni\nk\no\n\nS\na\nğ\nl\nı\nk\n\nB\ni\nr\ni\nm\ni\n\nH\ni\nz\nm\ne\nt\ni\nn\ni\nz\nd\ne\n\nHaber\n\n10.10.2025\n\nR\nu\nh\n\nS\na\nğ\nl\nı\nğ\nı\nn\nı\nn\n\nK\no\nr\nu\nn\nm\na\ns\nı\nn\nd\na\n\nS\nt\nr\ne\ns\ni\nn\n\nR\no\nl\nü\n\nKonferans\n\n09.10.2025\n\nP\ns\ni\nk\no\nl\no\nj\ni\nm\ni\nz\ni\n\nG\nü\nç\nl\nü\n\nT\nu\nt\nm\na\nn\nı\nn\n\nY\no\nl\nl\na\nr\nı\n\nSeminer\n\n02.10.2025\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nT\no\np\nl\nu\nl\nu\nk\nl\na\nr\nı\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nToplantı\n\n25.09.2025\n\nG\nİ\nB\nT\nÜ\n\nG\ne\nç\ne\nr\nk\ne\nn\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nT\no\np\nl\nu\nl\nu\nğ\nu\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nS\nu\nm\nu\nd\n\nF\ni\nl\no\ns\nu\nn\na\n\nD\ne\ns\nt\ne\nk\n:\n\nZ\nu\nl\nm\ne\n\nK\na\nr\nş\nı\n\nD\nu\nr\nu\nş\n\nHaber\n\n23.09.2025\n\nE\nl\n\nE\nl\ne\n\nG\nü\nv\ne\nn\nl\ni\n\nG\ne\nl\ne\nc\ne\nk\n\nP\nr\no\nj\ne\ns\ni\n\nK\na\np\ns\na\nm\nı\nn\nd\na\n\nB\ni\nl\ng\ni\nl\ne\nn\nd\ni\nr\nm\ne\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nEğitim\n\n16.09.2025\n\nO\nr\ny\na\nn\nt\na\ns\ny\no\nn\n\nE\nğ\ni\nt\ni\nm\ni\n\nEğitim\n\n15.09.2025\n\nB\ni\nr\ni\nm\n\nK\na\nl\ni\nt\ne\n\nK\no\nm\ni\ns\ny\no\nn\nu\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nToplantı\n\n21.08.2025\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\nM\ne\nz\nu\nn\ni\ny\ne\nt\n\nC\no\nş\nk\nu\ns\nu\n\nMezuniyet\n\n26.05.2025\n\nİ\nŞ\nK\nU\nR\n\nİ\nU\nP\n\nG\ne\nn\nç\nl\ni\nk\n\nP\nr\no\ng\nr\na\nm\nı\n\nE\nğ\ni\nt\ni\nm\ni\n\nEğitim\n\n12.05.2025\n\nO\nk\nu\nl\n\nB\no\ny\na\nm\na\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nEtkinlik\n\n05.05.2025\n\nİ\nŞ\nK\nU\nR\n\nİ\nU\nP\n\nİ\nş\n\nS\na\nğ\nl\nı\nğ\nı\n\nv\ne\n\nG\nü\nv\ne\nn\nl\ni\nğ\ni\n\nE\nğ\ni\nt\ni\nm\ni\n\nEğitim\n\n05.05.2025\n\nİ\nŞ\nK\nU\nR\n\nİ\nU\nP\n\nİ\nş\n\nA\nh\nl\na\nk\nı\n,\n\nM\no\nt\ni\nv\na\ns\ny\no\nn\n\nv\ne\n\nS\nt\nr\ne\ns\n\nY\nö\nn\ne\nt\ni\nm\ni\n\nE\nğ\ni\nt\ni\nm\ni\n\nEğitim\n\n24.04.2025\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nS\no\nn\nu\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nT\no\np\nl\nu\nl\nu\nk\nl\na\nr\nı\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nToplantı\n\n24.04.2025\n\nİ\nŞ\nK\nU\nR\n\nİ\nU\nP\n\nF\ni\nn\na\nn\ns\na\nl\n\nO\nk\nu\nr\ny\na\nz\na\nr\nl\nı\nk\n\nE\nğ\ni\nt\ni\nm\ni\n\nEğitim\n\n22.04.2025\n\n KATEGORİLER\r\n\nDuyuru\n\nEğitim\n\nEtkinlik\n\nFestival\n\nGösteri\n\nGün\n\nHaber\n\nİşbirlikleri\n\nKampus Özel / Yaşam\n\nKonferans\n\nKurs\n\nMezuniyet\n\nOrganizasyon\n\nProgram\n\nSeminer\n\nSergi\n\nSöyleşi\n\nTanıtım\n\nToplantı\n\nZiyaret",
+      "char_count": 6143,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=8",
+      "title": "Galeri",
+      "body_content": "2026\n\n2025\n\n2024\n\n2023\n\n2022\n\n2021\n\nGİBTÜ 'de \"yazek 2. Teknoloji Gecesi\" Yoğun Katılımla Gerçekleşti\n\nGİBTÜ ve Gaün 'lü Uluslararası Öğrenciler İngilizce Münazarada Buluştu\n\nGİBTÜ 'de \" Geleceği İnşa Eden Kadınlar \" Buluşması\n\nGİBTÜ Ailesi Geleneksel İftarda Buluştu\n\nGİBTÜ Öğrenci Toplulukları Topluma Değer Katacak Projeleriyle ÜNİDES 'ten Destek Aldı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi Mediko Sağlık Birimi Hizmetinizde\n\nRektörümüz Prof. Dr. Şehmus Demir Öğrencilerle İftar Sofrasında Buluştu\n\nKöklerim Benimle: Uyum Sürecinde Psikolojik Dayanıklılık Etkinliği Gerçekleştirildi.\n\nKöklerim Benimle: Uyum Sürecinde Psikolojik Dayanıklılık Etkinliği\n\nGİBTÜ Uluslararası Öğrencileri Yedikuyular 'da Karın Keyfini Çıkardı\n\nGİBTÜ Cansağlığı Topluluğu 'ndan Anlamlı Huzurevi Ziyareti\n\nAfete Dirençli GİBTÜ\n\nGeri Dönüşüm Vazo Tasarımı\n\nManevi Baharım Üç Aylar\n\nGİBTÜ Sinema Günleri\n\nHemşirelik Öğrenci Topluluğu Öğrencilerimizden AIDS Hastalığına Yönelik Farkındalık Etkinliği\n\nGaziantep Hayvanat Bahçesi Barınak Ziyareti\n\n' '17 Kasım Dünya Prematüre Günü ' ' Yoğun Bakım Ziyareti\n\n2025-2026 Eğitim Öğretim Yılı İŞKUR Gençlik Programı Katılımcı Listesi\n\nKısmi Zamanlı Öğrenci Çalışma Programı Başvuru Sonuçları Açıklandı\n\nCan Sağlığı Öğrenci Topluluğu Beslenme ve Hijyen Eğitimi\n\nSudan 'da Neler Oluyor ?\n\nAhşap Boyama Atölyesi\n\nÇöp Toplama Etkinliği\n\nKısmi Zamanlı Öğrenci Alımı Başvuruları Başladı\n\nİŞKUR Gençlik Programı Kura Sonuçları ve Başvuru Takvimi\n\nGİBTÜ Öğrenci Toplulukları Coşkuyla Tanıtıldı\n\nİŞKUR Gençlik Programı Başvuruları Başladı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi Psikolog Randevu Formu\n\nCansağlığı Huzurevi 'nde Gönül Buluşması\n\nÜniversite Yıllarını Nasıl Verimli Geçirebiliriz?\n\nKurs Kayıtları Başladı\n\nGİBTÜ Genç Tema Öğrenci Topluluğu Tanıtım Etkinliği\n\nGİBTÜ Can Sağlığı Öğrenci Topluluğu Tanıtım Etkinliği\n\nRuh Sağlığının Korunmasında Stresin Rolü\n\nRuh Sağlığının Korunmasında Stresin Rolü\n\nPsikolojimizi Güçlü Tutmanın Yolları\n\n2025-2026 Eğitim Öğretim Yılı Güz Dönemi Öğrenci Toplulukları Toplantısı\n\nOryantasyon Eğitimi\n\nGİBTÜ Geçerken Öğrenci Topluluğu Tarafından Sumud Filosuna Destek: Zulme Karşı Duruş\n\nEl Ele Güvenli Gelecek Projesi Kapsamında Bilgilendirme Etkinliği GİBTÜ 'de Gerçekleştirildi\n\nBirim Kalite Komisyonu Toplantısı",
+      "char_count": 2287,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimRapor.aspx?id=8",
+      "title": "Raporlar",
+      "body_content": "Faaliyet Raporları\r\n\n 2019 Yılı Birim Faaliyet Raporu\r\n\n 2021 Yılı Birim Faaliyet Raporu\r\n\n 2022 Yılı Birim Faaliyet Raporu\r\n\n 2023 Yılı Birim Faaliyet Raporu\r\n\n 2024 Yılı Birim Faaliyet Raporu\r\n\n 2025 Yılı Birim Faaliyet Raporu",
+      "char_count": 228,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=8",
+      "title": "Mevzuatlar",
+      "body_content": "Kanunlar\n\n 657 Sayılı Devlet Memurları Kanunu\r\n\n 2547 Sayılı Yükseköğretim Kanunu\r\n\n 5018 Sayılı Kamu Mali Yönetimi ve Kontrol Kanunu\r\n\n 5510 Sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu\r\n\n 4734 Sayılı Kamu İhale Kanunu\r\n\n 4735 Sayılı Kamu İhale Sözleşmeleri Kanunu\r\n\n 2886 Sayılı Devlet İhale Kanunu\r\n\n 6245 Sayılı Harcırah Kanunu\r\n\nYönetmelikler\n\n Merkezi Harcama Belgeleri Yönetmeliği\r\n\n Resmi Yazışmalarda Uygulanacak Usul ve Esaslar Hakkında Yönetmelik\r\n\n Yükseköğretim Kurumları, Mediko-sosyal Sağlık, Kültür ve Spor İşleri Dairesi Uygulama Yönetmeliği\r\n\nYönergeler\n\n GİBTÜ Kantin, Kafeterya, Kırtasiye ve Benzeri İşletmelere Ait Kiralama, İşletim ve Denetim Yönergesi\r\n\n GİBTÜ Kısmi Zamanlı Öğrenci Çalıştırma Yönergesi\r\n\n GİBTÜ Öğrenci Toplulukları Yönergesi\r\n\n GİBTÜ Öğrenci Yemek Bursu Yönergesi\r\n\n GİBTÜ Sosyal Kültürel ve Sportif Amaçlı Tesisler İşletim ve Süreli Kullanım Yönergesi\r\n\n GİBTÜ Ticari Reklam, İlan, Afiş, Stant ve Tanıtım Araçları Uygulama Yönergesi\r\n\n GİBTÜ Yemek Hizmeti Yürütme Yönergesi",
+      "char_count": 1029,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=8",
+      "title": "Faydalı Linkler",
+      "body_content": "E-kap\r\n\n Strateji ve Bütçe Başkanlığı\r\n\n Gençlik ve Spor Bakanlığı\r\n\n Aile ve Sosyal Hizmetler Bakanlığı\r\n\n Kültür ve Turizm Bakanlığı\r\n\n Yükseköğretim Kurulu\r\n\n Kredi ve Yurtlar Genel Müdürlüğü\r\n\n Gaziantep Valiliği\r\n\n Şahinbey Belediyesi\r\n\n Sosyal Güvenlik Kurumu\r\n\n Mevzuat Bilgi Sistemi\r\n\n Resmi Gazete\r\n\n E-bütçe\r\n\n KBS Uygulamaları\r\n\n E Devlet",
+      "char_count": 349,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=8",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "Öğrenci Toplulukları\r\n\nkeyboard_arrow_right\n\n Öğrenci Topluluğu Neyi İfade Eder?\r\n\nkeyboard_arrow_right\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi öğrencilerin ders dışı zamanlarında belirli bir hedef doğrultusunda eğitim, sağlık, spor, sosyal, bilim ve kültür faaliyetlerini Gaziantep İslam Bilim ve Teknoloji Üniversitesi Öğrenci Toplulukları Yönergesine göre planlı ve organize şekilde gerçekleştirmek amacıyla bir araya gelerek oluşturdukları gruba Öğrenci Topluluğu denir.  \n\n Öğrenci Toplulukları Yönergesinin Kapsamı Nedir?\r\n\nkeyboard_arrow_right\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi öğrencilerinin bilimsel, sosyal, kültürel, sanatsal, sportif ve mesleki alanlarda sürekli faaliyet göstermek amacıyla oluşturdukları öğrenci topluluklarını kapsar.\n\n Öğrenci Toplulukları Yönergesinin Dayanağı Nedir?\r\n\nkeyboard_arrow_right\n\n2547 sayılı Yüksek Öğretim Kanunu’nun 2880 sayılı kanunla değişik 46. ve 47. maddeleri ile Yükseköğretim Kurulu Başkanlığı tarafından 03.02.1984 tarih ve 18301 sayılı Resmi Gazetede yayınlanarak yürürlüğe giren “Yükseköğretim Kurumları Mediko-Sosyal Sağlık, Kültür ve Spor İşleri Yönetmeliğinin 5, 10, 16, 17. maddelerinde belirtilen amaç ve esasları doğrultusunda hazırlanmıştır.\n\n Öğrenci Topluluğu Nasıl Kurulur?\r\n\nkeyboard_arrow_right\n\nÖğrenci topluluklarının kurulma işlemleri; Topluluk Kurma Talep Formu (EK-1), danışman/danışman yardımcısı kabul formu (EK-2), topluluk kurucu üye bildirim formu (EK-3), topluluk tüzüğü (EK-4), faaliyet planı (EK-5) , kurucu üye öğrencilere ait öğrenci işlerinden alınmış olan güncel öğrenci belgeleriyle birlikte Sağlık Kültür ve Spor Daire Başkanlığı Kültür Şube Müdürlüğüne başvurularak yapılır.\n\n Akademik Danışman Nedir ve Görevleri Nelerdir?\r\n\nkeyboard_arrow_right\n\nTopluluk danışmanı, üniversite öğretim elemanları arasından, kurucu öğrenciler teklifi ve kurulun onayı ile görevlendirilir. Topluluk danışmanı Topluluğun öğrenci toplulukları yönergesi hükümlerine uygun faaliyet göstermesi, denetimi, topluluğa ait demirbaş ve eşyaların muhafazası hususunda kurula karşı sorumludur. Topluluk danışmanı, genel kurul, yönetim kurulu ve denetim kurulunun bu yönergeyi ve topluluk tüzüğüne uygun ve etkili çalışmalarını denetler, bu kurulların alacağı kararları onaylamak suretiyle yürürlüğe konulmasını ve dönem sonunda topluluk defter, evrak ve demirbaşlarının yeni yönetime devredilmesini sağlar. Öğrenci Toplulukları Yönergesinde yer alan diğer görevleri yerine getirir.\n\n-Danışman Üniversite nezdinde, yürürlükte bulunan yasalar ve yönetmelikler çerçevesinde, öğrenci topluluğundan sorumlu kişi olup, topluluk çalışma alanı ile ilgili konularda danışmanlık yapar.\n\n-Akademik danışman sorumluluğu altındaki öğrenci topluluğunun amaçları dışında faaliyet göstermesi veya disiplin yönetmeliğine ve yasalara uymaması durumunda, topluluk yönetim kurulu üyeleri hakkında işlem yapılmasını, gerektiğinde topluluğun kapatılmasını öğrenci etkinlik komisyonuna bildirir.\n\n-Yönetim Kurulunun çalışmalarını ve topluluğun sorumluluğundaki defterlerin tutulmasını denetler.\n\n-Üniversitenin genel ilkeleri çerçevesinde topluluk çalışmalarını denetler ve etkinliklerin yürütülmesine yardımcı olur.\n\n-Öğrenci topluluğunun Üniversite ile ilgili olan ilişkilerinde yardımcı olur. Öğrenci toplulukları onaylanmış yıllık etkinlik programlarına, ek bir etkinlikte bulunmak istediği zaman, akademik danışmanın onayını almak zorundadır.\n\n Akademik Danışman Zorunlu Mu?\r\n\nkeyboard_arrow_right\n\nEvet. Her öğrenciEvet. Her öğrenci topluluğunun bir akademik danışmanının olması zorunludur. topluluğunun bir akademik danışmanının olması zorunludur.\n\n Öğretim Elemanları Birden Fazla Kulübe Danışmanlık Yapabilirler Mi?\r\n\nkeyboard_arrow_right\n\nHayır. Bir öğretim elemanı birden fazla topluluğa akademik danışmanlık yapamaz.\n\n Öğrenci Topluluğu En Az Kaç Kişi ile Kurulabilir?\r\n\nkeyboard_arrow_right\n\nÖğrenci topluluğunun kurulabilmesi için en az 10 (on) öğrencinin kurucu üye olması gerekir.\n\n Öğrenci Topluluğu Tüzüğünde Hangi Maddeler Olmalı?\r\n\nkeyboard_arrow_right\n\nTopluluğun ismi adres ve niteliği, amacı ve faaliyet alanları, topluluk organları, tüzük, yürürlülük ve değişikliği ile genel kurula katılan üyelerin ve danışman hocanın imzaları olmalıdır.\n\n Etkinlik Yapmak İçin Kaç Gün Önceden Başvurulmalı?\r\n\nkeyboard_arrow_right\n\nÜniversitenin mali desteğini gerektirmeyen etkinlik ve faaliyetler için en az (5) gün önce; birden fazla akademik birim veya üniversitenin mali desteğini gerektiren etkinlik ve faaliyetler için en az on beş (15) gün önce Daire Başkanlığına başvurabilirler.\n\n Aynı İsimle Birden Fazla Topluluk Kurulabilir Mi?\r\n\nkeyboard_arrow_right\n\nHayır. Üniversite içinde amacı ve ismi aynı birden fazla öğrenci topluluğu kurulamaz. Ancak, Üniversitenin merkez kampüsü dışında diğer kampüslerinde aynı adla topluluk şubesi kurulabilir. Topluluk şubelerinin kurulabilmesi için topluluk yönetiminin karar alması ve bu karar eşliğinde Daire Başkanlığına başvurması gerekmektedir. Daire başkanlığı tarafından uygun görülen şube açma istekleri Rektörlük onayı alınarak işlerlik kazanır.\n\n \" Gaziantep İslam Bilim ve Teknoloji Üniversitesi \" İbaresi Her Topluluğun Adının Başında Olmak Zorunda Mı?\r\n\nkeyboard_arrow_right\n\nEvet. “Gaziantep İslam Bilim ve Teknoloji Üniversitesi” ibaresi her topluluk isminin başında olmak zorundadır. İlgili topluluklara ait logo özgün bir biçimde tasarlanmış ve üzerinde Üniversitemizin adının yer alması gerekir.\n\n Öğrenci Topluluklarının Amaçları Nelerdir?\r\n\nkeyboard_arrow_right\n\n-Bilimsel, kültürel, sosyal, sanatsal ve sportif etkinliklerde bulunmalarını, bu tür etkinlikler ile akademik gelişmelerini desteklemelerini sağlar.\n\n-\nAyrıca; bilgi, yetenek ve ilgileri ölçüsünde kişisel potansiyellerini geliştirmeleri, takım çalışmasının önemine inanan, özgüveni yüksek sorumluluk sahibi bireyler olarak yetişmelerini sağlar.\n\n Toplulukların Çalışmalarında Benimsenecek Temel İlkeler Nelerdir?\r\n\nkeyboard_arrow_right\n\n-Öğrenci topluluklarının yapılan etkinliğe bağlı olarak üniversite imkânları ölçüsünde yararlandırılması, Topluluklar, üye kayıtlarını, gelen-giden evrak, karar defterleri ve tutanaklar, malzeme alımı, demirbaş kayıtları ile her türlü resmi belge ve evrakların takip ve korunmasından sorumludur.\n\n-\nÜyelerden üyelik aidatı veya başka bir ad altında herhangi bir nakdi yardım alınamaz; ancak topluluk üyeleri kendi rızaları ve kulüp danışmanı onayı ile topluluğa ayni malzeme desteğinde bulunabilirler. Öğrenci toplulukları, Anayasamızda ifadesini bulan, Devletin ve Milletin bölünmez bütünlüğüne, hukuk devleti ilkesine, temel hak ve özgürlüklere uygun davranış ve faaliyetlerde bulunurlar.\n\n Topluluk Çalışma Konuları Nelerdir?\r\n\nkeyboard_arrow_right\n\n-Spor/Doğa sporları\n\n-Kültür/Sanat/Edebiyat\n\n-Sağlık/Yaşam\n\n-\nSosyal Etkinlikler ve Gönüllülük Hizmetleri\n\n-Eğitim/Bilim/Teknoloji\n\n-\nUluslararası Faaliyetler\n\n-\nKişisel Gelişim\n\n Öğrenci Toplulukları Organizasyonu?\r\n\nkeyboard_arrow_right\n\nÖğrenci toplulukları ve bu topluluklarda üstlenilen görevler, öğrenciler için liderlik vasıflarını, kişiler arası sosyal ilişkilerini ve karar verme becerilerini geliştiren önemli fırsatlar sağlar.\n\n Toplulukların Yönetim ve Denetim Kurullarını Belirlemeleri\r\n\nkeyboard_arrow_right\n\nÖğrenci toplulukları her yıl topluluk başkanı tarafından on beş gün önce ilan edilmek suretiyle, mayıs ayının ilk haftası içinde Genel Kurullarını yaparak Yönetim ve Denetim Kurullarını belirler. Topluluk, Yönetim ve Denetim Kurulları asil ve yedek üyeleri ile öğrenci topluluk üyelerin isimleri, daire başkanlığına sunulur.\n\n Yönetim Kurulu Kaç Kişiden Oluşur?\r\n\nkeyboard_arrow_right\n\n5 asil ve 1 yedek üyeden oluşur.\n\n Denetleme Kurulu Kaç Kişiden Oluşur?\r\n\nkeyboard_arrow_right\n\n3 asil ve 1 yedek üyeden oluşur.\n\n Kimler Yönetim Kuruluna Seçilebilir?\r\n\nkeyboard_arrow_right\n\nTopluluk üyeleri arasından disiplin cezası almamış olanlar seçilebilir.\n\n Başkan, Yönetim ve Denetleme Kurulu Üyelerinin Kişisel Bilgileri?\r\n\nkeyboard_arrow_right\n\nBaşkan, yönetim ile denetleme kurulu üyelerinin seçilmelerini izleyen 15 gün içinde seçilenlerin kimlik bilgilerini ve kişisel iletişim bilgilerini Sağlık Kültür ve Spor Daire Başkanlığı’na bildirirler. \n\n Kimler Topluluklara Üye Olabilir?\r\n\nkeyboard_arrow_right\n\nÜniversitenin ön lisans, lisans,  programlarına kayıtlı olan tüm öğrenciler topluluk üyesi olabilir.\n\n Birden Fazla Topluluğa Üye Olunabilir Mi?\r\n\nkeyboard_arrow_right\n\nEvet. Bir öğrenci birden fazla topluluğa üye olabilir.\n\n Birden Fazla Topluluğun Yönetim ve Denetiminde Bulunulabilir Mi?\r\n\nkeyboard_arrow_right\n\nHayır. Bir öğrenci birden fazla topluluğun yönetiminde ve denetiminde bulunamaz.    \n\n Genel Kurul Nedir?\r\n\nkeyboard_arrow_right\n\nGenel kurul topluluğun en yetkili karar organı olup topluluğa kayıtlı üyelerden oluşur.   \n\n Genel Kurul Faaliyet Alanı?\r\n\nkeyboard_arrow_right\n\nTopluluk tüzüğünü Öğrenci Toplulukları Yönergesine ve diğer yürürlükteki mevzuata göre topluluk amaçlarına uygunluğu açısından inceleyerek onaylar. Yönetim ve denetim kurulu üyelerini gizli oy ve açık sayım ilkelerine göre seçmek. Üyelikten çıkarma hakkında karar vermek. Yönetim ve denetim kurulları tarafından sunulan faaliyet ve denetleme raporlarını inceleyerek karara bağlamak.\n\n Yönetim ve Denetleme Kurulları Nasıl Seçilir?\r\n\nkeyboard_arrow_right\n\nGenel kurulda öğrenci topluluğunun yönetim ve denetleme kurulları gizli oyla seçilir.\n\n Genel Kurul ne Zaman Yapılmalıdır?\r\n\nkeyboard_arrow_right\n\nGenel kurul; topluluk başkanı tarafından on beş gün önce ilan edilmek suretiyle,  her yıl mayıs ayının ilk haftası içinde toplanır. Üyelerin üçte birinin yazılı talebiyle genel kurul olağanüstü toplantıya çağrılabilir. Toplantı günü,  yönetim kurulu tarafından on beş gün içinde belirlenerek, toplantı tarihinden en az bir hafta önce ilan edilir.\n\n Rektörlük Genel Kurulda Gözlemci Bulundurabilir Mi?\r\n\nkeyboard_arrow_right\n\nEvet. Rektörlük gerek görürse genel kurulda gözlemci bulundurabilir.\n\n Yönetim Kurulunda İşleyiş Nasıl Oluyor?\r\n\nkeyboard_arrow_right\n\nYönetim Kurulu ilk toplantısında başkan, başkan yardımcısı, sekreter ve mali üyeyi seçer.  Başkan, topluluğun her türlü karar ve yürütme işinden sorumludur.  \n\n Yönetim Kurulunun Görevleri Nelerdir?\r\n\nkeyboard_arrow_right\n\nTopluluk tüzüğünü hazırlayarak kulüp genel kurulunun onayına sunmak. Kulüp faaliyetlerini yönergeye uygun yürütmek ve denetlemek. Güncel üye listelerini her yıl Aralık ayı sonuna kadar Daire Başkanlığına bildirmek. Kulübün üniversite içindeki ve dışındaki tüm etkinliklerinde ve haberleşmelerinde Rektörlük onayı almak. Kulübün demirbaş eşyalarının korunmasını sağlamak.\n\n Farklı Üniversitelerdeki Öğrenciler Topluluk Etkinliklerinde Geçici Olarak Görev Alabilirler Mi?\r\n\nkeyboard_arrow_right\n\nTopluluk etkinliklerinde geçici olarak çalışmak isteyen diğer üniversite öğrencileri için Akademik Danışmanın bilgisi dâhilinde Daire Başkanlığı’na başvurur ve Rektörlük onayını alır.\n\n Yönetim Kurulunun Yapacağı Etkinliklerde İşleyiş Nasıl Oluyor?\r\n\nkeyboard_arrow_right\n\nYönetim Kurulu; topluluk yapacağı etkinlikler için, topluluk Akademik Danışmanın bilgisi dâhilinde, başkanın yazılı başvurusu ile Daire Başkanlığı kanalıyla Öğrenci Toplulukları Koordinasyon Kurulundan izin alır. \n\n Üniversite Öğrenci Topluluklarına ne Tür İmkânlar Sağlar?\r\n\nkeyboard_arrow_right\n\na) Öğrenci toplulukları, yapacakları faaliyetler için bütçe imkânları ölçüsünde yararlandırılır.\n\nb) Toplulukların etkinlik ve faaliyetlerinde ihtiyaç duyacağı araç, gereç, malzeme ve diğer materyaller; Akademik Danışmanın imzalı talebi ile Daire Başkanlığınca karşılanır.\n\nc) Yurt içi ve/veya yurt dışında gerçekleştirecekleri ve/veya katılacakları etkinlikler için ulaşım ve/veya mali destek ihtiyacı bulunan topluluklar, planlanan etkinlikten en az on beş (15) gün önce Daire Başkanlığına başvurmalıdır.\n\nç) Topluluğun amacına uygun olmayan etkinlikler destek kapsamı dışındadır.\n\n Yönetim Kurulu Etkinlik Programını Başkanlığa ne Zaman Sunar?\r\n\nkeyboard_arrow_right\n\nEtkinlik programını her öğrenim yılının ilk ayı sonuna kadar Daire Başkanlığı’na verir.\n\n Toplantıların Gün, Saat ve Yerlerinin Tespiti ile İlgili İşleyiş?\r\n\nkeyboard_arrow_right\n\nGenel kurul toplantılarının gün, saat, yerini tespit eder. Olağan ve olağanüstü toplantıları on beş gün önceden duyurur. Kullanacakları yerler için Daire Başkanlığı kanalıyla Rektörlükten izin alır. Bu yerlerin topluluk amaçlarına uygun olarak kullanımından ve denetlenmesinden yönetim kurulu sorumludur. Genel kurulda alınan kararları üyelere ve ilgili birimlere duyurur ve uygular.\n\n Denetleme Kurulunun İşleyişi, Görev ve Yetkileri Nelerdir?\r\n\nkeyboard_arrow_right\n\nTopluluğun evrak, defter ve demirbaş eşyasının durumunu inceler. Topluluk faaliyetlerinin mevzuat hükümlerine uygunluğunu denetler. Gerekli gördüğü hallerde Yönetim Kuruluna Genel Kurulun olağanüstü toplantıya çağırılmasını önerir. Yılda en az bir defa denetim yaparak, düzenleyeceği Denetim Formunu rapor halinde Genel Kurula ve Daire Başkanlığına sunar.\n\n Öğrenci Toplulukları Koordinasyon Kurulu Nedir?\r\n\nkeyboard_arrow_right\n\nÖğrenci Toplulukları Koordinasyon Kurulu, öğrenci topluluklarının işleyişlerinden sorumlu bir komisyondur. Bu Komisyon, Öğrenci topluluklarının etkinlik programı onaylar. Amacı dışında izinsiz etkinlik gerçekleştiren, yılsonunda amaçları doğrultusunda yeterli etkinlikte bulunmayan, Akademik Danışman’ı olmayan öğrenci topluluklarını uyarır.\n\n Bu Komisyonda görevlendirilecekler;\n\n1)Rektör Yardımcısı,\n\n2)Sağlık, Kültür ve Spor Daire Başkanı,\n\n3)Öğrenci Toplulukları Koordinatörü,\n\n4)Öğrenci İşleri Daire Başkanı\n\n5)Öğrenci Konseyi Başkanı olmak üzere beş (5) üyeden oluşur oluşur.\n\nÖğrenci Toplulukları Faaliyet Değerlendirme Formu (Ek-11) kapsamında yapılan inceleme sonucunda üç puanın altında kalan topluluklar, kurul kararı ile uyarılarak bir yıl süre tanınır. Bir yılsonunda yapılan değerlendirme sonucu yeterliliği sağlayamayan topluluklar kurul kararı ile kapatılır.\n\n Komisyonun Sekreterya İşlerini Kim Yürütür?\r\n\nkeyboard_arrow_right\n\nKomisyonun sekretarya hizmetlerini Sağlık Kültür ve Spor Daire Başkanlığı yürütür.\n\n Öğrenci Topluluklarının İzlenmesi ve İşleyişi\r\n\nkeyboard_arrow_right\n\nEtkinlikleri askıya alınmış öğrenci toplulukları, etkin bir öğrenci topluluğu ile işbirliği yapamaz. Topluluğun etkinlik programlarında yer alan etkinliklerde, gerekli koordinasyonun sağlanması için (İzin alınması, salon tahsisi, duyuru vb.) Öğrenci topluluğunun Yönetim Kurulu en geç 15 gün önceden Daire Başkanlığına etkinlik talep formu (Ek-9) ile başvuru yapar.\n\n Daire Başkanlığı Gerekli Gördüğü Zamanlarda Topluluk Defterlerini Denetleyebilir Mi?\r\n\nkeyboard_arrow_right\n\nÖğrenci topluluklarının defterleri gerekli görüldüğü durumlarda Daire Başkanlığı tarafından denetlenebilir. Denetimlerde herhangi bir usulsüzlük tespit edildiğinde topluluk yazılı olarak uyarılır ve işlemin on beş(15) gün içerisinde düzeltilmesi istenir. Aynı durum tekrarlandığında topluluğun kapatılması için Rektörlük makamına öneride bulunulur.\n\n Etkinliklerde Yükseköğretim Kurumları Öğrenci Disiplin Yönetmeliği?nin İhlali Durumunda ne Yapılır?\r\n\nkeyboard_arrow_right\n\nÖğrenci toplulukları aracılığı ile yapılan etkinliklerde Yükseköğretim Kurumları Öğrenci Disiplin Yönetmeliği’nin ihlali durumunda, Gaziantep İslam Bilim ve Teknoloji Üniversitesi Öğrenci Disiplin Yönetmeliği hükümleri uygulanır.\n\n Topluluklar Defter Tutmak ve Belgeleri Düzenlemekle Yükümlüler Mi?\r\n\nkeyboard_arrow_right\n\nEvet. Aşağıda belirtilen defterleri tutmak ve belgeleri düzenlemekle yükümlüdürler:\n\n-Üye Kayıt Defteri\n: Bu deftere üyelerin adları, fotoğrafları, okul, sınıf ve bölümleri, adresleri ve iletişim bilgileri kaydedilir. \n\n-Karar Defteri\n: Yönetim kurulu tarafından alınan kararlar, karar defterlerine yazılır.\n\n-\nDemirbaş Defteri: \nTopluluğun kullanması için verilmiş olan demirbaş eşyalar ile topluluk tarafından bağış ve sair yollarla edindiği demirbaşlar bu deftere kaydedilir.\n\n Topluluklara Yeni Üye Kazandırılabilir Mi?\r\n\nkeyboard_arrow_right\n\nEvet. Öğrenci toplulukları, onay alınması kaydıyla, Üniversite içinde yıl boyu süren etkinliklerden yararlanarak, öğrenci topluluğu tanıtım festivali, bahar festivali, gazete, dergi reklâmları, el ilanları aracılığı ile tanıtım ve reklâmlarını yapabilir ve üye sayılarını arttırabilirler.  \n\n Topluluklar Üniversitenin Hangi İmkânlarından Yararlanabilirler?\r\n\nkeyboard_arrow_right\n\nTopluluklar yapacakları etkinlik ve programların uygulanmasında Daire Başkanlığı önerisi ile Rektörlüğün uygun göreceği Üniversitenin tüm imkânlarından yararlanabilir.\n\n Toplulukların Faaliyet Yapıldıktan Sonra Sağlık, Kültür ve Spor Dairesi Başkanlığına Teslim Etmesi Gereken Belgeler Nelerdir?\r\n\nkeyboard_arrow_right\n\nTopluluklar etkinlik sonrası faaliyet raporlarını yazılı ve görselleri dosya halinde Sağlık, Kültür ve Spor Dairesi Başkanlığına teslim etmelidirler. (Ek-10)\n\n Topluluklar Kendi Adlarına Nakdi Gelir Elde Edebilirler Mi?\r\n\nkeyboard_arrow_right\n\nHayır. Topluluklar kendi adlarına nakdi gelir elde edemez, ihtiyaç duyulan harcamalar bütçe imkanları dahilinde Daire Başkanlığınca veya sponsor desteği ile sağlayabilirler.\n\n Desteğe İhtiyacı Olan Topluluklar ne Yapmalı?\r\n\nkeyboard_arrow_right\n\n-\nEtkinliklerini gerçekleştirebilmek için desteğe ihtiyacı olan topluluklar, bağlı oldukları yönetim kurulunda karar alarak Sağlık, Kültür ve Spor Dairesine yazılı olarak başvuru yaparlar.\n\n-Yapılan destek başvurusu doğrudan doğruya topluluğun etkinlik alanı ile bağlantılı olmalıdır. Bu madde ile çelişen destek talepleri reddedilir.\n\n Üniversite Tarafından Ulaşım Desteği Sağlanabilir Mi?\r\n\nkeyboard_arrow_right\n\n-Gerçekleştireceği etkinlik ile Üniversiteyi temsil edecek olan topluluklar, ulaşım giderleri kapsamında destek başvurusu yapabilirler.\n\n-Ulaşım giderleri desteğinden yararlanmak isteyen topluluğun, ev sahibi Üniversite tarafından gönderilmiş davet yazısı ve basılı etkinlik programıyla (afiş, poster, web sayfası çıktısı vb.) başvurması gereklidir.\n\n-Ev sahibi konumunda bulunan tüzel kişilik üniversite haricinde bir kurumsa, destek başvurusuna ayrıca Valilik, Kaymakamlık ya da ilgili resmi kurum tarafından verilmiş izin kâğıdı da eklenmelidir.     \n\n Topluluklar Üniversitenin Teknik İmkânlarından Yararlanılabilir Mi?\r\n\nkeyboard_arrow_right\n\n-Daire Başkanlığı bünyesinde bulunan teknik imkânlardan tüm topluluklar yararlanabilirler.\n\n-Topluluklar, ilgili yasal düzenlemelere aykırı olmamak koşuluyla Üniversite dışından destek sağlayabilirler (sponsor desteği).\n\n-Daire Başkanlığınca, Rektör onayı alınmak koşuluyla bu ilkelerdeki destekler ve işleyiş ile ilgili ek düzenlemelere gidilebilir.\n\n Daire Başkanlığı Toplulukları Hangi Hususlarda Denetleyebilir?\r\n\nkeyboard_arrow_right\n\nÖğrenci toplulukları Daire Başkanlığına karşı sorumludur. Daire Başkanlığı Rektörlük adına toplulukları şu hususlarda denetlemeye yetkilidir.\n\n-\nAmaçları doğrultusunda çalışıp çalışmadığı,\n\n-\nSağlanan desteğin yerinde kullanılıp kullanılmadığı,\n\n-\nYıllık çalışma programlarının onaya gönderip gönderilmediği,\n\n-\nOnaylanmış çalışma programının uygulanıp uygulanmadığı,\n\n-\nEvraklarının düzenli tutulup tutulmadığı.\n\n Hangi Durumlarda Topluluklar Kapatılır?\r\n\nkeyboard_arrow_right\n\nÖğrenci Toplulukları Yönergesi kapsamında talep edilen güncelleme belgelerini zamanında kurula teslim etmemesi, bu yönerge hükümlerine aykırı davranış ve faaliyette bulunması, Genel kurulun toplanamaması, üniversite içinde veya dışında izinsiz faaliyet yaptığının tespit edilmesi, hiç etkinlik yapmaması gibi hallerde kurul kararı ile kapatılmasına karar verilir. Tutmakla yükümlü oldukları defterler ve kayıtları tutmayan, eksik tutan, defter ve kayıtlarında yanlış bilgi ve belgelere yer veren, tutmakla yükümlü olduğu defter ve belgelerin talebi halinde bunları danışmanına ve rektörlüğe vermeyen öğrenci topluluğunun faaliyetleri kurul tarafından durdurularak, yasal işlem başlatılır ve kulüp kapatılır.                                                                                                                                                                      \n\n Kapatılan Toplulukların Demirbaşları Kime Devredilir?\r\n\nkeyboard_arrow_right\n\nKapatılan toplulukların tüm demirbaşları üniversiteye devredilmiş sayılır.\n\n Topluluklarla İlgili Uyuşmazlıklarda ne Yapılır?\r\n\nkeyboard_arrow_right\n\nTopluluklarla ilgili her tür uyuşmazlıklar Rektörlük tarafından karara bağlanır.\n\n Öğrenci Toplulukları Yönergesinin Esaslarını Kim Yürütür?\r\n\nkeyboard_arrow_right\n\nBu Yönerge hükümlerini Gaziantep İslam Bilim ve Teknoloji Üniversitesi Rektörü yürütür.",
+      "char_count": 20460,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=8",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe Mah. 192180 Nolu Cadde 27010 Şahinbey/Gaziantep\n\nmail\nsks@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nFerhat ÇİFTÇİ\n\nferhat.ciftci@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 329,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=8",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\n Sema Nur YAŞAR\n\nring_volume\n17\n\nmail\nsemanur.yasar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mahmut AKŞAHİN\n\nring_volume\n17 01\n\nmail\nmahmut.aksahin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Zeki YÜCEL\n\nring_volume\n17 02\n\nmail\nzeki.yucel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Tuğçe ÜLKER\n\nring_volume\n17 03\n\nmail\ntugce.ulker@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Ferhat ÇİFTÇİ\n\nring_volume\n17 04\n\nmail\nferhat.ciftci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Selma ELĞAY\n\nring_volume\n17 05\n\nmail\nselma.elgay@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Uğur KORKMAZ\n\nring_volume\n17 05\n\nmail\nugur.korkmaz@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Burak ŞAHİN\n\nring_volume\n17 07\n\nmail\nburak.sahin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Abdullah BAĞLAN\n\nring_volume\n17 09\n\nmail\nabdullah.baglan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Ayfer ETEBEKLİOĞLU\n\nring_volume\n17 10\n\nmail\nayfer.etebeklioglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Beyza KEKLİKÇİ\n\nring_volume\n17 10\n\nmail\nbeyza.keklikci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Cemal KUŞCİ\n\nring_volume\n17 10\n\nmail\ncemal.kusci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Hatice Nur ÇIRAK\n\nring_volume\n17 10\n\nmail\nhaticenur.cirak@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n İbrahim DEMİR\n\nring_volume\n17 10\n\nmail\nibrahim.demir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Beyza Ceren ERDOĞAN\n\nring_volume\n17 11\n\nmail\nbeyzaceren.erdogan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Zeki YÜCEL\n\nring_volume\n1702\n\nmail\nzeki.yucel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Ferhat ÇİFTÇİ\n\nring_volume\n1704\n\nmail\nferhat.ciftci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet Ali ARSLAN\n\nring_volume\n1708\n\nmail\nmehmetali.arslan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Ahmet KOÇAK\n\nring_volume\n1712\n\nmail\nahmet.kocak@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1685,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/../../../BirimRapor.aspx?id=8",
+      "title": "Raporlar",
+      "body_content": "Faaliyet Raporları\r\n\n 2019 Yılı Birim Faaliyet Raporu\r\n\n 2021 Yılı Birim Faaliyet Raporu\r\n\n 2022 Yılı Birim Faaliyet Raporu\r\n\n 2023 Yılı Birim Faaliyet Raporu\r\n\n 2024 Yılı Birim Faaliyet Raporu\r\n\n 2025 Yılı Birim Faaliyet Raporu",
+      "char_count": 228,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 33,
+      "total": 33,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 33,
+      "total": 33,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 33,
+      "total": 33,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 33,
+      "total": 33,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 33,
+      "total": 33,
+      "pct": 100
+    },
+    "title": {
+      "count": 33,
+      "total": 33,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 33,
+      "total": 33,
+      "pct": 100
+    },
+    "department": {
+      "count": 33,
+      "total": 33,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 33,
+      "total": 33,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 33,
+      "total": 33,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 13,
+    "yonetim": 1,
+    "tanitim": 6,
+    "personel": 1,
+    "rapor": 3,
+    "yonetmelik": 2,
+    "form": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

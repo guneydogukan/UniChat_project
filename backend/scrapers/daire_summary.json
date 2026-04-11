@@ -1,0 +1,68 @@
+{
+  "task": "3.2.12",
+  "description": "Daire Baskanliklari Harita Gudumlu Deep Scrape",
+  "birimler": [
+    {
+      "department": "Ogrenci Isleri Daire Baskanligi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\daire_ogrenci_isleri_daire_baskanligi_output.json",
+      "total_documents": 52,
+      "total_valid": 39,
+      "total_failed": 0,
+      "total_chars": 835497,
+      "pdf_count": 12,
+      "doc_kind_distribution": {
+        "genel": 27,
+        "yonetim": 1,
+        "personel": 1,
+        "yonetmelik": 3,
+        "rapor": 2,
+        "duyuru": 2,
+        "haber": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Kutuphane ve Dokumantasyon Daire Baskanligi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\daire_kutuphane_ve_dokumantasyon_daire_baskanligi_output.json",
+      "total_documents": 52,
+      "total_valid": 39,
+      "total_failed": 0,
+      "total_chars": 835497,
+      "pdf_count": 12,
+      "doc_kind_distribution": {
+        "genel": 27,
+        "yonetim": 1,
+        "personel": 1,
+        "yonetmelik": 3,
+        "rapor": 2,
+        "duyuru": 2,
+        "haber": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Saglik Kultur ve Spor Daire Baskanligi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\daire_saglik_kultur_ve_spor_daire_baskanligi_output.json",
+      "total_documents": 35,
+      "total_valid": 32,
+      "total_failed": 0,
+      "total_chars": 47977,
+      "pdf_count": 2,
+      "doc_kind_distribution": {
+        "genel": 13,
+        "yonetim": 1,
+        "tanitim": 6,
+        "personel": 1,
+        "rapor": 3,
+        "yonetmelik": 2,
+        "form": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    }
+  ]
+}
