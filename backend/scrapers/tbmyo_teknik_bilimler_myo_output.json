@@ -1,0 +1,665 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:48:29Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\MESLEK YÜKSEKOKULLARI\\Teknik_Bilimler_Meslek_Yüksekokulu_Genel_Yapısı.html",
+    "birim_id": 36,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Teknik Bilimler MYO"
+  },
+  "summary": {
+    "total_blueprint_urls": 42,
+    "total_fetched": 42,
+    "total_valid": 41,
+    "total_failed": 0,
+    "total_skipped": 1,
+    "total_documents": 65,
+    "total_chars": 34470
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Tanıtım Kataloğu - Sunum",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260219093705_c832e0e1.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Organizasyon Şeması",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250709163838_e5fb0e1b.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Birim Kalite Politikamız",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260218150124_1d4b2239.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Swot Analizi",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260218145226_8dfc1a2e.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Pest Analizi",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260218150617_fffccaac.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Sınav Kuralları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260218150928_2577ec10.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Risk Planlama ve Değerlendirme",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260218150756_500644cc.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Kamu Hizmet Envanteri",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260218151420_c99c5aac.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Kalite El Kitabı",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251128095501_cec187dc.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Eylül Ayı Kalite Toplantı Tutanağı",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251128101936_b2d45db2.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Ekim Ayı Kalite Toplantı Tutanağı",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251128101954_a7f292cc.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Akademik Takvim",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20241021160432_6eb64300.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Ders Değerlerlendirme Anketi",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260219121716_07b6a321.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Kalite Komisyonu",
+      "url": "https://www.gibtu.edu.tr/medya/gibtudosya/20231115150905_c38ea370.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Birim Kalite Komisyonları Yönergesi",
+      "url": "https://www.gibtu.edu.tr/medya/gibtudosya/20231115150845_99c2f097.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2023 Uluslararası Öğrenci Öğrenim Ücretleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20230728141351_b2ee1067.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Application Requirements",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20230802155328_1d099d1a.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "متطلبات الاستمارة",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20230804155504_3cc40161.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Raporlar",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20250319113840_7039582b.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Bölüm  /  Birim Koordinatörleri",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260104131728_c978dbbd.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Erasmus+ Charter",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251110164418_6e3cb352.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Isced Kodları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251103153653_5eb04a1e.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "KA131 Anlaşmaları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260118014243_8d50bf23.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "KA171 Anlaşmaları",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251117141606_9b011efe.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2023 Dönemi El Kitapçığı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240624153700_0163d278.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2024 Erasmus+ Uygulama El Kitabı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250319124704_4a7b7411.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [
+    {
+      "text": "Aday Öğrenci Portalı",
+      "url": "https://adayogrenci.gibtu.edu.tr/",
+      "type": "subdomain"
+    },
+    {
+      "text": "Mezun Öğrenci Bilgi Sistemi",
+      "url": "https://ubys.gibtu.edu.tr/gts/portal/home/index",
+      "type": "subdomain"
+    },
+    {
+      "text": "Uzaktan Eğitim Uygulama ve Araştırma Merkezi",
+      "url": "https://ubys.gibtu.edu.tr",
+      "type": "subdomain"
+    },
+    {
+      "text": "Gaziantep",
+      "url": "https://gaziantep.goturkiye.com/tr/anasayfa",
+      "type": "external"
+    },
+    {
+      "text": "Başvuru Ekranı",
+      "url": "https://ubys.gibtu.edu.tr/ais/applicationforms/home/index?apptype=3",
+      "type": "subdomain"
+    }
+  ],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/birimidaribirimler.aspx?id=36",
+      "reason": "too_short (0 chars)",
+      "char_count": 0
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=36",
+      "title": "Teknik Bilimler Meslek Yüksekokulu",
+      "body_content": "Uluslararası Öğrencilerden Yoğun Katılım\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Vize Sınav Takvimi Açıklandı.\n\nUluslararası Öğrencilerle Akademik, Kültürel ve Bilimsel Etkileşim Ortamı Oluşturuldu\n\nTBMYO Makine ve Metal Teknolojileri Bölümünden OSB Kolejine Ziyaret\n\nTBMYO 'dan Odaksan Mekatronik Plc Eğitim Merkezini Ziyaret Etti.\n\nKöklerim Benimle: Uyum Sürecinde Psikolojik Dayanıklılık Etkinliği\n\nBölümlerimizin 2025-2026 Eğitim Öğretim Dönemi Bahar Yarıyılı Ders Programları\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Yatay Geçiş Sonuçları\n\nAkademik Takvim\n\nDers Programları\n\nProgramlarımız\n\nUBYS\n\nÖğrenci İşleri Daire Başkanlığı\n\nBologna Ders Bilgi Paketi\n\nÖğrenci Kulüpleri\n\nHABERLER\n\nTÜMÜ\n\n02.04.2026 11:30\n\nUluslararası Öğrencilerden Yoğun Katılım\n\nİpekyolu Genç Sosyal Girişimcilik Merkezi’nde düzenlenen “Geleceği Şekillendiren Teknoloji: Yapay Zekâ” konulu etkinlik, uluslararası öğrencilere yönelik olarak gerçekleştirildi. TBMYO Bilgisayar Teknolojileri Bölümünde Görev yapan Öğr. Gör. Murat Kaan Akar tarafından gerçekleştirilen program, saat 13.30’da başladı ve katılımcıların yoğun ilgisiyle karşılandı. Etkinlik boyunca yapay zekânın eğitimden iş dünyasına, günlük yaşamdan toplumsal dönüşüme kadar pek çok alandaki etkisi ele alındı.\n\n Devamını Oku\r\n\n30.03.2026 15:34\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Vize Sınav Takvimi Açıklandı.\n\n Devamını Oku\r\n\n26.03.2026 00:11\n\nUluslararası Öğrencilerle Akademik, Kültürel ve Bilimsel Etkileşim Ortamı Oluşturuldu\n\nİpekyolu Genç Sosyal Girişimcilik Merkezinde, “Biyomalzemeler ve İnsan Sağlığındaki Dönüştürücü Rolü” başlıklı etkinlik düzenlendi.\n\n Devamını Oku\r\n\n12.03.2026 14:06\n\nTBMYO Makine ve Metal Teknolojileri Bölümünden OSB Kolejine Ziyaret\n\nGaziantep OSB Koleji’ne gerçekleştirdiğimiz ziyaret kapsamında okulun eğitim ortamı, akademik faaliyetleri ve öğrencilere sunulan imkanlar hakkında bilgi alma fırsatı bulduk. Ziyaret sırasında okul yönetimi tarafından kurumun eğitim anlayışı, yürütülen projeler ve öğrencilerin akademik ve sosyal gelişimlerine yönelik çalışmalar hakkında detaylı bir sunum yapıldı.\n\n Devamını Oku\r\n\n06.03.2026 12:07\n\nTBMYO 'dan Odaksan Mekatronik Plc Eğitim Merkezini Ziyaret Etti.\n\n Devamını Oku\r\n\n23.02.2026 10:47\n\nKöklerim Benimle: Uyum Sürecinde Psikolojik Dayanıklılık Etkinliği\n\nUluslararası Öğrencilerin Uyum Sürecinde Karşılaştıkları Psikolojik Zorluklara Destek olmak amacıyla “Köklerim Benimle” uyum sürecinde psikolojik dayanıklılık başlıklı bir etkinlik gerçekleştirilecek. Klinik Psikolog Beyza Ceren Erdoğan tarafından yürütülecek olan programda, psikolojik dayanıklılık, aidiyet duygusu ve kültürel uyum konuları ele alınacak.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n30\n\nMar\n\n 2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Vize Sınav Takvimi Açıklandı.\r\n\n09\n\nŞub\n\n Bölümlerimizin 2025-2026 Eğitim Öğretim Dönemi Bahar Yarıyılı Ders Programları\r\n\n30\n\nOca\n\n 2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Yatay Geçiş Sonuçları\r\n\n26\n\nAra\n\n Yüksekokulumuz Final Sınav Takvimi Açıklandı\r\n\n18\n\nAra\n\n Yoğun Bakım Mühendisliği Çalıştayı\r\n\n04\n\nKas\n\n Üniversitemiz ile Gaziantep Ticaret Odası Arasındaki Mesleki Eğitim İş Birliği Hayata Geçirildi\r\n\n30\n\nEki\n\n Programlarımızın Vize Tarihleri Açıklandı\r\n\n30\n\nEki\n\n 2. Uluslararası Elektrik, Elektronik, Enerji ve Bilgisayar Bilimlerindeki Gelişmeler Konferansı ( Wos )",
+      "char_count": 3317,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 39,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=36",
+      "title": "Yönetim",
+      "body_content": "Yüksekokul Müdürü\r\n\nDoç. Dr. İpek ATİK\n\nMeslek Yüksekokul Müdürü\n\nring_volume\n3101\n\nmail\nipek.atik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yüksekokul Müdür Yardımcısı\r\n\nDr. Öğr. Üyesi Abdurrahman DOĞAN\n\nMeslek Yüksekokul Müdür Yardımcısı\n\nring_volume\n3102\n\nmail\nabdurrahman.dogan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nermin KAPTAN\n\nMeslek Yüksekokul Müdür Yardımcısı\n\nring_volume\n3103\n\nmail\nnermin.kaptan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yüksekokul Sekreteri\r\n\n Tuncay ŞAHAN\n\nYüksekokul Sekreter V.\n\nring_volume\n3102\n\nmail\ntuncay.sahan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yüksekokul Kurulu\r\n\nDoç. Dr. İpek ATİK\n\nBaşkan\n\nring_volume\n3101\n\nmail\nipek.atik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Elifgül ÇAKMAK KAYA\n\nÜye\n\nring_volume\n3123\n\nmail\nelifgul.cakmakkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Gökhan TOPAL\n\nÜye\n\nring_volume\n3182\n\nmail\ngokhan.topal@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Sedat GÜVEN\n\nDr. Öğr. Üyesi\n\nring_volume\n3181\n\nmail\nsedat.guven@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Yüksekokul Yönetim Kurulu\r\n\nDoç. Dr. İpek ATİK\n\nBaşkan\n\nring_volume\n3101\n\nmail\nipek.atik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yüksel TOKUR BOZKURT\n\nÜye\n\nring_volume\n0000\n\nmail\nyuksel.tokurbozkurt@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet ARICI\n\nÜye\n\nring_volume\n2211\n\nmail\nmehmet.arici@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yusuf KALINKARA\n\nÜye\n\nring_volume\n0000\n\nmail\nyusuf.kalinkara@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Abdurrahman DOĞAN\n\nÜye\n\nring_volume\n3102\n\nmail\nabdurrahman.dogan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nermin KAPTAN\n\nÜye\n\nring_volume\n3114\n\nmail\nnermin.kaptan@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1671,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 38,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=36",
+      "title": "Vizyon",
+      "body_content": "Nitelikli öğretim elemanı kadrosuyla, yenilikçi ve yaratıcı bir bakış açısı benimseyen, kendini her daim güncelleyen, sektörün ihtiyaçlarına cevap veren, üniversite-sanayi işbirliğini geliştirerek fark oluşturmayı amaçlayan bölge ve ülke sorunlarına çözmeye yönelik çalışmalar yapan, insan odaklı bir eğitim anlayışıyla öncü ve küresel anlamda Üniversitemizi bir marka haline getiren Yüksekokul olmaktır.",
+      "char_count": 404,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 37,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimmisyon.aspx?id=36",
+      "title": "Misyon",
+      "body_content": "Evrensel ve milli değerlere sahip, bölge ve ülkenin ekonomik gelişimine katkı sağlayacak, kurumsal değerlerimizi benimseyen, insan haklarına, çevreye ve toplumsal değerlere saygılı, liyakat sahibi, sorgulayan, analitik düşünce yapısına sahip, çağdaş, yaşam boyu öğrenmeye odaklı, teknolojiyi en iyi şekilde kullanan, güncel müfredatı takip eden, endüstrinin ihtiyaç duyduğu alanlarda teknik ve uygulamalı eğitim almış, meselğin gerektirdiği tam donanımlara sahip bireyler yetiştirmektir.",
+      "char_count": 487,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 36,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimrapor.aspx?id=36",
+      "title": "Raporlar",
+      "body_content": "Faaliyet Raporları\r\n\n 2024 Yılı Faaliyet Raporu",
+      "char_count": 47,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 35,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/27593/is-akis-semalari",
+      "title": "İş Akış Şemaları",
+      "body_content": "Ders Kayıt İşlemleri İş Akış Şeması \n\nDers Muafiyet ve İntibak İşlemleri İş Akış Şeması \n\nMazeret Sınavı İş Akış Şeması \n\nÖğrenci Disiplin Soruşturması İş Akış Şeması \n\nHaftalık Ders Programı Oluşturma İş Akış Şeması \n\nÖğrenci Kayıt Dondurma İş Akış Şeması \n\nÖğrenci Kontenjanları Belirleme İş Akış Şeması \n\nMazeretli Kayıt Yenileme İş Akış Şeması \n\nSınavlara İtiraz İş Akış Şeması \n\nÖğretim Elemenı Atanma İşlemleri İş Akış Şeması \n\nDers Görevlendirme İş Akış Şeması \n\nEk Ders İş Akış Şeması \n\nGeçici Görev Yolluğu İş Akış Şeması \n\nKurul Kararları İş Akış Şeması\n\nTaşınır Mal İş Akış Şeması",
+      "char_count": 591,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 34,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/27592/gorev-tanim-formlari",
+      "title": "Görev Tanım Formları",
+      "body_content": "1. \nTBMYO Müdürü Görev Tanımı\n\n2. \nTBMYO Müdür Yardımcısı Görev Tanımı\n\n3. \nTBMYO Yönetim Kurulu Görev Tanımı \n\n4. \nTBMYO Yüksekokul Kurulu Görev Tanımı\n\n5. \nTBMYO Bölüm Kurulu Görev Tanımı \n\n6. \nTBMYO Bölüm Başkanı Görev Tanımı \n\n7. \nTBMYO Yüksekokul Sekreteri Görev Tanımı \n\n8\n. \nTBMYO \nPersonel, Kayıt Kontrol ve Mali İşlerden Sorumlu Memur Görev Tanımı\n\n9\n.\n\nTBMYO \nÖğrenci, Arşiv ve Web İşlerinden Sorumlu Memur Görev Tanımı\n\n10. \nTBMYO Destek Personeli Görev Tanımı \n\n11.TBMYO Görev Vekalet Uygulaması Tanımı",
+      "char_count": 514,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 33,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/27594/dis-paydaslarla-ile-yapilan-protokoller",
+      "title": "Dış Paydaşlar ile Yapılan Protokoller",
+      "body_content": "1. Eğitimde İşbirliği Uygulama Protokolü\n\nEğitimde İşbirliği Uygulama Protokolü Üniveristemiz İle Kızılhisar Mesleki ve Teknik Anadolu Lisesi  İşbirliğiyle gerçekleştirilen, eğitim hizmetlerini geliştirmek\n ve yaygınlaştırmak amacını taşıyan bir protokoldür. \n\n2. GTO ile Mesleki Eğitim İşbirliği Protokolü\n\nYükseköğretim Kurulu ile Türkiye Odalar ve Borsalar Birliği arasında Meslek Yüksekokulları eğitim işbirliği protokolüdür.",
+      "char_count": 429,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 32,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/30963/risk-plani",
+      "title": "Risk Planı",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\nRisk Planı\n\ndate_range\nYayın Tarihi : \n12.09.2025 09:16\n\npeople\nOkunma : \n96\n\nTeknik Bilimler Meslek Yüksekokulu\n\nRisk Planı \n\nok",
+      "char_count": 162,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 31,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/30965/talimatlar",
+      "title": "Talimatlar",
+      "body_content": "Temizlik Talimatı\n\nYangın Talimatı",
+      "char_count": 34,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 30,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/30966/prosesler",
+      "title": "Prosesler",
+      "body_content": "Akademik Prosesler\n\nİdari Prosesler",
+      "char_count": 35,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 29,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/30968/performans-gostergeleri",
+      "title": "Performans Göstergeleri",
+      "body_content": "Performans Göstergeleri",
+      "char_count": 23,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 28,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/33008/komisyon-ve-koordinatorluklerin-gorevleri",
+      "title": "Komisyon ve Koordinatörlüklerin Görevleri",
+      "body_content": "Akademik Teşvik Komisyonu için \ntıklayınız...!\n\nBologna Koordinatörlüğü için \ntıklayınız...!\n\nDisiplin Komisyonu için \ntıklayınız...!\n\nEğitim Öğretim Komisyonu için \ntıklayınız...!\n\nErasmus Koordinatörlüğü için \ntıklayınız...!\n\nFarabi Koordinatörlüğü için \ntıklayınız...!\n\nKalite ve Akreditasyon Komisyonu için \ntıklayınız...!\n\nMezuniyet Komisyonu için \ntıklayınız...!\n\nMuayene ve Kabul Komisyonu için \ntıklayınız...!\n\nMüfredat Komisyonu için \ntıklayınız...!\n\nProje ve Bilimsel Araştırmalar Komisyonu için \ntıklayınız...!\n\nSatınalma Komisyonu için \ntıklayınız...!\n\nStratejik Plan Çalışma Komisyonu için \ntıklayınız...!\n\nTanıtım Web Komisyonu için \ntıklayınız...!\n\nUluslararası Öğrenci Koordinatörlüğü  için \ntıklayınız...!\n\nYatay Geçiş, İntibak ve Muafiyet Komisyonu için \ntıklayınız...!\n\nYaz Stajı Koordinatörlüğü için \ntıklayınız...!\n\nYüksekokul Danışma Kurulu için \ntıklayınız...!",
+      "char_count": 883,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 27,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/33012/akademik-kurul-toplantilari",
+      "title": "Akademik Kurul Toplantıları",
+      "body_content": "2025-2026 Eğitim Öğretim Yılı Akademik Kurul Toplantısı",
+      "char_count": 55,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 26,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/33010/dis-paydas-toplanti-tutanaklari",
+      "title": "Dış Paydaş Toplantı Tutanakları",
+      "body_content": "Protokol Kurul Kararları\n\nTOBB-YÖK MYO GİBTÜ Teknik Bilimler Protokol Kurulu Toplantısı-1\n\nTOBB-YÖK MYO GİBTÜ Teknik Bilimler Protokol Kurulu Toplantısı-2\n\nTOBB-YÖK MYO GİBTÜ Teknik Bilimler Protokol Kurulu Toplantısı-3\n\nBilgisayar Programcılığı Programı\n\nBölüm Kurul Kararı-30.09.2025\n\nBölüm Kurul Kararı-30.09.2025\n\nBölüm Kurul Kararı-30.09.2025\n\nBölüm Kurul Kararı-27.09.2025\n\nBölüm Kurul Kararı-23.09.2025\n\nBölüm Kurul Kararı-12.09.2025\n\nBölüm Kurul Kararı-10.09.2025\n\nBölüm Kurul Kararı-08.09.2025\n\nBölüm Kurul Kararı-05.09.2025\n\nBölüm Kurul Kararı-11.07.2025\n\nMakine Programı\n\nBölüm Kurul Kararı 26.09.2025\n\nBölüm Kurul Kararı 24.09.2025\n\nBölüm Kurul Kararı 12.09.2025\n\nBölüm Kurul Kararı 08.09.2025\n\nBölüm Kurul Kararı 18.07.2025\n\nBölüm Kurul Kararı 23.05.2025\n\nBölüm Kurul Kararı 01.07.2024\n\nBölüm Kurul Kararı 11.07.2023\n\nBölüm Kurul Kararı 11.07.2022",
+      "char_count": 860,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 25,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/33011/yuksekokul-kurulu-ve-yonetim-kurulu-kararlari",
+      "title": "Yüksekokul Kurulu ve Yönetim Kurulu Kararları",
+      "body_content": "Karar\n\nYönetim Kurul Kararı- 13.02.2026\n\nYönetim Kurul Kararı- 10.02.2026\n\nYönetim Kurul Kararı- 09.02.2026\n\nYönetim Kurul Kararı- 09.02.2026\n\nYönetim Kurul Kararı- 06.02.2026\n\nYönetim Kurul Kararı- 04.02.2026\n\nYönetim Kurul Kararı- 30.01.2026\n\nYönetim Kurul Kararı- 23.01.2026\n\nYönetim Kurul Kararı- 22.01.2026\n\nYönetim Kurul Kararı- 02.01.2026\n\nYönetim Kurul Kararı- 19.08.2025\n\nYönetim Kurul Kararı- 08.08.2025",
+      "char_count": 413,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 24,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/33009/bolum-kurul-kararlari",
+      "title": "Bölüm Kurul Kararları",
+      "body_content": "Bilgisayar Programcılığı Programı\n\nBölüm Kurul Kararı-30.09.2025\n\nBölüm Kurul Kararı-30.09.2025\n\nBölüm Kurul Kararı-30.09.2025\n\nBölüm Kurul Kararı-27.09.2025\n\nBölüm Kurul Kararı-23.09.2025\n\nBölüm Kurul Kararı-12.09.2025\n\nBölüm Kurul Kararı-10.09.2025\n\nBölüm Kurul Kararı-08.09.2025\n\nBölüm Kurul Kararı-05.09.2025\n\nBölüm Kurul Kararı-11.07.2025\n\nMakine Programı\n\nBölüm Kurul Kararı 26.09.2025\n\nBölüm Kurul Kararı 24.09.2025\n\nBölüm Kurul Kararı 12.09.2025\n\nBölüm Kurul Kararı 08.09.2025\n\nBölüm Kurul Kararı 18.07.2025\n\nBölüm Kurul Kararı 23.05.2025\n\nBölüm Kurul Kararı 01.07.2024\n\nBölüm Kurul Kararı 11.07.2023\n\nBölüm Kurul Kararı 11.07.2022",
+      "char_count": 639,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 23,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimakademikbirimler.aspx?id=36",
+      "title": "Akademik Birimler",
+      "body_content": "Bilgisayar Teknolojisi Bölümü / Bilgisayar Programcılığı\n\nMakine ve Metal Teknolojisi Bölümü / Makine Programı\n\nElektronik ve Otomasyon Bölümü / Radyo ve Televizyon Teknolojisi",
+      "char_count": 176,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimakademikpersonel.aspx?id=36",
+      "title": "Akademik Personel",
+      "body_content": "Bilgisayar Teknolojisi Bölümü / Bilgisayar Programcılığı\r\n\nDr. Öğr. Üyesi Yusuf KALINKARA\n\nDr. Öğr. Üyesi\n\nring_volume\n3121\n\nmail\nyusuf.kalinkara@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Elifgül ÇAKMAK KAYA\n\nÖğr. Gör.\n\nring_volume\n3123\n\nmail\nelifgul.cakmakkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Çiğdem ÇOBAN\n\nÖğr. Gör.\n\nring_volume\n3124\n\nmail\ncigdem.coban@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Murat Kaan AKAR\n\nÖğr. Gör.\n\nring_volume\n3115\n\nmail\nmuratkaan.akar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Makine ve Metal Teknolojisi Bölümü / Makine Programı\r\n\nDr. Öğr. Üyesi Sedat GÜVEN\n\nDr. Öğr. Üyesi\n\nring_volume\n3110\n\nmail\nsedat.guven@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Abdurrahman DOĞAN\n\nDr. Öğr. Üyesi\n\nring_volume\n3112\n\nmail\nabdurrahman.dogan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Mahmud TEKİN\n\nDr. Öğr. Üyesi\n\nring_volume\n0000\n\nmail\nmahmud.tekin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Adem AKSOY\n\nÖğr. Gör.\n\nring_volume\n3111\n\nmail\nadem.aksoy@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Elektronik ve Otomasyon Bölümü / Radyo ve Televizyon Teknolojisi\r\n\nDr. Öğr. Üyesi Nermin KAPTAN\n\nDr. Öğr. Üyesi\n\nring_volume\n3114\n\nmail\nnermin.kaptan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Gökhan TOPAL\n\nÖğr. Gör. Dr.\n\nring_volume\n3107\n\nmail\ngokhan.topal@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Fırat BİNGÖL\n\nÖğr. Gör.\n\nring_volume\n3108\n\nmail\nfirat.bingol@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1398,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimidaripersonel.aspx?id=36",
+      "title": "İdari Personel",
+      "body_content": "Yüksekokul Sekreteri\r\n\n Tuncay ŞAHAN\n\nYüksekokul Sekreter V.\n\nring_volume\n3102\n\nmail\ntuncay.sahan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n İdari\r\n\n Mehmet DEMİROK\n\nBilgisayar İşletmeni\n\nring_volume\n3105\n\nmail\nmehmet.demirok@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet Şerif YEŞİLMEN\n\nTekniker\n\nring_volume\n3106\n\nmail\nmehmetserif.yesilmen@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 356,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/27596/tercih-atlasi",
+      "title": "Tercih Atlası",
+      "body_content": "Bilgisayar Teknolojisi Bölümü / Bilgisayar Programcılığı\n\nMakine ve Metal Teknolojisi Bölümü / Makine Programı\n\nElektronik ve Otomasyon Bölümü / Radyo ve Televizyon Teknolojisi",
+      "char_count": 176,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/ulasim",
+      "title": "Ulaşım",
+      "body_content": "GİBTÜ ' Ye Nasıl Ulaşırım ?\r\n\nŞehir içi ulaşımda halk otobüsleri, belediye otobüsleri, minübüs, tramvay ve taksiler kullanılmaktadır. Sarı ve mavi otobüsler belediye tarafından işletilmektedir. Gaziantep Büyükşehir Belediyesinin ulaşım hizmetlerini veren şirketinin adı GAZİULAŞ'tır. Tüm tramvay ve belediye otobüslerinin işletim hakkı GAZİULAŞ tarafından yapılmaktadır. Bu ulaşım ağından faydalanabilmek için \"GAZİANTEP KART\" adlı teknolojik ödeme aracını kullanmanız gerekmektedir. Bu kart indirimli yolculuk edilmesini sağlamaktadır. Turistler için tek günlük ulaşım kartları da mevcuttur. Bu kart kent içindeki satış noktalarından temin edilmektedir. Taksi, dolmuş ve minübüslerde nakit para kabul edilmektedir. GAZİULAŞ uhdesinde bulunan tüm ulaşım hizmetleri için \"GAZİANTEP KART\" zorunluluğu vardır. Şehir içi ulaşım için daha detaylı bilgiye buradan ulaşabilirsiniz.\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi, Gaziantep şehrinin güneybatısında bulunmaktadır. Bulunduğu bölge halk arasında \"Onkoloji Bölgesi\", \"Beştepe Bölgesi\" veya \"Antepia Bölgesi\" olarak tanımlanmaktadır. Şehir içi merkezden bu bölgeye B31, B60-1, TA3, B45, B77 numaralı otobüs seferleriyle gelebilirsiniz. GİBTÜ'ye gelen otobüsler ve bu otobüslere ait durak-rota bilgilerine \nburadan\n ulaşabilirsiniz",
+      "char_count": 1286,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/27597/bolumlerimizin-ders-programlari",
+      "title": "Ders Programları",
+      "body_content": "Bilgisayar Programcılığı Ders Programı\n\n Makine Programı Ders Programı\n\n Radyo ve Televizyon Teknolojisi Ders Programı",
+      "char_count": 118,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/30606/ogretim-planlari-ve-ders-icerikleri",
+      "title": "Öğretim Planları ve Ders İçerikleri",
+      "body_content": "Bilgisayar Teknolojisi Bölümü / Bilgisayar Programcılığı Programı\n\nElektronik ve Otomosyon Bölümü / Radyo ve Televizyon Teknolojisi Programı\n\nMakine ve Metal Teknolojileri Bölümü / Makine Programı",
+      "char_count": 196,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/ogrencikulupleri",
+      "title": "Üniversitemiz Öğrenci Toplulukları",
+      "body_content": "Afet ve Acil Durum Öğrenci Topluluğu\n\nE-POSTA\ngulustan.kose@gibtu.edu.tr\n\nDANIŞMAN BİLGİSİ\n\nDanışman\nÖĞR. GÖR. GÜLÜSTAN KÖSE\n\nDanışman Y.\nÖĞR. GÖR. GÜLÜSTAN KÖSE",
+      "char_count": 161,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birim.aspx?id=71",
+      "title": "Uluslararası Öğrenci Ofisi",
+      "body_content": "GİBTÜ ve Gaün 'lü Uluslararası Öğrenciler İngilizce Münazarada Buluştu\n\nGİBTÜ ve Gaün 'lü Uluslararası Öğrenciler İngilizce Münazarada Buluştu\n\nHABERLER\n\nTÜMÜ\n\n13.03.2026 12:03\n\nGİBTÜ ve Gaün 'lü Uluslararası Öğrenciler İngilizce Münazarada Buluştu\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi English Speaking Kulübü (ES Club) ile Gaziantep Üniversitesi Debate Kulübü iş birliğinde düzenlenen İngilizce münazara etkinliği, tamamı uluslararası öğrencilerden oluşan katılımcıların aktif performansıyla gerçekleştirildi.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n13\n\nMar\n\n GİBTÜ ve Gaün 'lü Uluslararası Öğrenciler İngilizce Münazarada Buluştu",
+      "char_count": 637,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/erasmus",
+      "title": "Erasmus+ Koordinatörlüğü",
+      "body_content": "2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\n\nEbelik, Hemşirelik ve Yaşlı Bakım Alanında Portekiz ile Erasmus+ İş Birliği\n\n2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\n\nKüresel Ortaklık Ağımız Güçleniyor: Stellenbosch Üniversitesi ile Anlaşma\n\nErasmus+ Kapsamında 42 Yeni Uluslararası Anlaşma Tamamlandı\n\nGİBTÜ 'den Gastronomi Alanında Uluslararası İş Birliği Adımları\n\nErasmus+ KA131 İkili İş Birliği\n\nErasmus+ KA171 İkili İş Birliği\n\nHABERLER\n\nTÜMÜ\n\n26.03.2026 11:15\n\n2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\n\n📢 2025–2026 ERASMUS+ ÖĞRENCİ ÖĞRENİM VE STAJ HAREKETLİLİĞİ SONUÇLARI AÇIKLANDI\n\n Devamını Oku\r\n\n24.02.2026 10:39\n\nEbelik, Hemşirelik ve Yaşlı Bakım Alanında Portekiz ile Erasmus+ İş Birliği\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi bünyesinde, Ebelik-Hemşirelik ve Sağlık Hizmetleri Meslek Yüksekokulu Yaşlı Bakım Programı alanlarında uluslararasılaşma çalışmaları kapsamında önemli bir adım daha atılmıştır.\n\n Devamını Oku\r\n\n23.02.2026 17:00\n\n2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi 2025-2026 Akademik Yılı Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği başvuruları başlamıştır.\n\n Devamını Oku\r\n\n19.02.2026 11:32\n\nKüresel Ortaklık Ağımız Güçleniyor: Stellenbosch Üniversitesi ile Anlaşma\n\nÜniversitemizin uluslararasılaşma vizyonu doğrultusunda, Güney Afrika’nın köklü yükseköğretim kurumlarından Stellenbosch University ile ikili iş birliği anlaşması imzalanmıştır.\n\n Devamını Oku\r\n\n17.02.2026 11:20\n\nErasmus+ Kapsamında 42 Yeni Uluslararası Anlaşma Tamamlandı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi, Erasmus+ KA131 ve KA171 programları kapsamında 2025 yılı için farklı ülkelerden yükseköğretim kurumlarıyla toplam 42 yeni ikili anlaşmanın hazırlanma sürecini başarıyla tamamlamıştır. Süreç; kurumlar arası resmi yazışmaların yürütülmesi, bölüm bazlı ihtiyaç analizlerinin gerçekleştirilmesi, anlaşma metinlerinin hazırlanması ve karşılıklı imza aşamalarının tamamlanmasını kapsamaktadır. Bu anlaşmalar, üniversitemizin uluslararasılaşma vizyonunu güçlendirirken öğrenci ve personel hareketliliği açısından yeni ve sürdürülebilir iş birliklerinin önünü açmaktadır.\n\n Devamını Oku\r\n\n09.02.2026 13:28\n\nGİBTÜ 'den Gastronomi Alanında Uluslararası İş Birliği Adımları\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi akademisyenlerinden \nDr. Öğr. Üyesi Erol Taşkın\n tarafından yürütülen uluslararası temaslar kapsamında gastronomi ve mutfak sanatları alanında önemli iş birliği anlaşmaları gerçekleştirildi.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n26\n\nMar\n\n 2025-2026 Erasmus+ Öğrenci Öğrenim ve Staj Hareketliliği Sonuçları Açıklandı\r\n\n11\n\nMar\n\n 2025-2026 Erasmus+ Start-up Konsorsiyumu Eğitim Alma Başvuruları Sonuçları Açıklandı.\r\n\n23\n\nŞub\n\n 2025-2026 Erasmus+ Startup Konsorsiyum Personel Eğitim Alma Hareketliliği Başvuruları Başladı\r\n\n14\n\nOca\n\n Erasmus+ KA131 İkili İş Birliği\r\n\n14\n\nKas\n\n Erasmus+ Personel Hareketliliği Sonuçları Açıklandı",
+      "char_count": 3104,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/31136/engelleri-kaldiran-universite",
+      "title": "Engelleri Kaldıran Üniversite",
+      "body_content": "Engelli bireylerin üniversite yaşamına daha rahat ve eşit şekilde katılmasını teşvik etme yönünde adımlar atan Üniversitemiz, Yükseköğretim Kurulu (YÖK) tarafından düzenlenen 2024 Engelsiz Üniversite Bayrakları ve Program Nişanı Töreni'nde en çok bayrak alan üniversiteler arasında 7 bayrak ile ilk 10 üniversite arasında yer almıştır\n\nMeslek Yüksekokulumuzun hizmet verdiği binamız da Mekânda erişilebilirlik (Turuncu Bayrak) almaya hak kazanan binalar arasındadır.\n\nAyrıca Üniversitemize, engelli bireylerin toplumsal konumlarını güçlendirmek ve daha aktif bir şekilde hayata katılımlarını sağlamak amacıyla Üniversite içerisindeki tüm yapılar erişilebilir hale getirilmesi nedeniyle Gaziantep Valiliği bünyesinde oluşturulan Erişilebilirlik İzleme ve Denetleme Komisyonu tarafından “Erişilebilirlik Belgesi” ve “Erişilebilirlik Bayrağı” verilmiştir.\n\nBirimimiz Engelli Öğrenciler Koordinatörü Bilgisayar Teknolojisi Bölümü Bilgisayar Programcılığı Programı Öğretim Görevlisi Elifgül ÇAKMAK KAYA  Koordinatör Yardımcısı ise Öğretim Görevlisi Doktor Yusuf KALINKARA'dır. Herhangi bir yardım söz konusu olduğunda ilgili hocalarımız ile iletişim kurulmasını tavsiye ederiz. \n\nİletişim:\n\nÖğretim Görevlisi Elifgül ÇAKMAK KAYA  dahili : 3123 mail: elifgul.cakmakkaya@gibtu.edu.tr\n\nÖğretim Görevlisi Doktor Yusuf KALINKARA  dahili : 3121 mail:yusuf.kalinkara@gibtu.edu.tr\n\nÜniversitemiz Engelli Öğrenci Birimi Koordinatörlüğü'ne ulaşmak için \ntıklayınız\n.\n\nÜniversitemiz Engelli Öğrenci Birimi Koordinatörlüğü Yönergesi'ne ulaşmak için \ntıklayınız.",
+      "char_count": 1544,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/33014/ders-degerlendirme-anket-sonuclari",
+      "title": "Ders Değerlendirme Anket Sonuçları",
+      "body_content": "Bilgisayar Programcılığı Programı\n\nAnket Sonuçları\n\n2024-2025 Bahar Yarıyılı Ders Değerlendirme Anket Sonuçları\n\n2024-2025 Güz Yarıyılı Ders Değerlendirme Anket Sonuçları",
+      "char_count": 170,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/33026/mezun-anket-raporlari",
+      "title": "Mezun Anket Raporları",
+      "body_content": "Bilgisayar Programcılığı Programı\n\nMezun Anket Raporu\n\nMakine Programı\n\n...",
+      "char_count": 75,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/teknikbilimler/icerik/33015/ogrenci-memnuniyet-anket-sonuclari",
+      "title": "Öğrenci Memnuniyet Anket Sonuçları",
+      "body_content": "Bilgisayar Programcılığı Programı\n\n2024-2025 Bahar Yarıyılı Öğrenci Memnuniyet Anket Sonuçları\n\n2024-2025 Güz Yarıyılı Öğrenci Memnuniyet Anket Sonuçları\n\nMakine Programı\n\n2023-2024 ve 2024-2025 Bahar Yarıyılı Öğrenci Değerlendirme Anketi Kapsamlı Analiz Raporu",
+      "char_count": 261,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=36",
+      "title": "Formlar",
+      "body_content": "Öğrencilerimiz İçin Hazır Formlar\n\n Ders Ekleme Çıkarma Dilekçesi\r\n\n Ders Muafiyeti Başvuru Formu\r\n\n Ders Telafi Formu\r\n\n Diğer Yükseköğretim Kurumlarının Yaz Okulu Programlarından Ders Alma Başvuru Formu\r\n\n Diploma Kayıp Formu\r\n\n Ek Sınav Başvuru Formu\r\n\n İlişik Kesme Başvuru Formu\r\n\n Kayıt Dondurma Formu\r\n\n Mazeret Ders Kayıt Formu\r\n\n Mazeret Sınavı Başvuru Formu\r\n\n Not Düzeltme Talep Formu\r\n\n Sağlık Raporu Bildirim Dilekçesi\r\n\n Staj Başvuru Formu ( Ders Dönemi Stajı İçin )\r\n\n Staj Başvuru Formu ( Yaz Stajı İçin )\r\n\n Taahhütname- Yatay Geçiş Başvuru Formu ( Başarı Puanı ile )\r\n\n Taahhütname-yatay Geçiş Başvuru Formu ( Merkezi Yerleştirme Puanı ile )\r\n\n Tek Ders Dilekçesi Formu\r\n\n Yatay Geçiş Engel Durum Bildirim Formu\r\n\nPersonelimiz İçin Hazır Formlar\n\n Aile Durum Bildirim Formu\r\n\n Ders Görevlendirme Tablosu\r\n\n Doktor Öğretim Üyesi Değerlendirme ve Faaliyet Raporu\r\n\n Eğitim Değerlendirme Formu\r\n\n Hizmet Birleştirme Dilekçesi\r\n\n İlişik Kesme Formu\r\n\n Kimlik Kartı Talep Formu\r\n\n Mal Bildirim Beyan Formu\r\n\n Nakil Bildirim Formu\r\n\n Öğrenci Ders Değerlendirme Anketi\r\n\n Öğretim Elemanı ( Öğretim Görevlisi - Araştırma Görevlisi ) Değerlendirme ve Faaliyet Raporu\r\n\n Öğretim Elemanı ( Öğr. Gör.- Ar. Gör ) Başvuru Formu Örneği\r\n\n Öğretim Üyesi ( Prof. - Doç. - Dr. Öğr. Üyesi ) Başvuru Formu Örneği\r\n\n Sınav Evrak Teslim Tutanağı\r\n\n Sınav Zarf Kapağı\r\n\n Tebliğ Tebellüğ Belgesi Formu\r\n\n Ücretsiz İzin Talep Formu\r\n\n Yurt İçi Görev Yolluk Bildirim Formu",
+      "char_count": 1464,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=36",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Vize Sınav Takvimi Açıklandı.\n\n30.03.2026\n\nBölümlerimizin 2025-2026 Eğitim Öğretim Dönemi Bahar Yarıyılı Ders Programları\n\n09.02.2026\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Yatay Geçiş Sonuçları\n\n30.01.2026\n\nYüksekokulumuz Final Sınav Takvimi Açıklandı\n\n26.12.2025\n\nYoğun Bakım Mühendisliği Çalıştayı\n\n18.12.2025\n\nÜniversitemiz ile Gaziantep Ticaret Odası Arasındaki Mesleki Eğitim İş Birliği Hayata Geçirildi\n\n04.11.2025\n\nProgramlarımızın Vize Tarihleri Açıklandı\n\n30.10.2025\n\n2. Uluslararası Elektrik, Elektronik, Enerji ve Bilgisayar Bilimlerindeki Gelişmeler Konferansı ( Wos )\n\n30.10.2025",
+      "char_count": 666,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=36",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nUluslararası Öğrencilerden Yoğun Katılım\n\n02.04.2026\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Vize Sınav Takvimi Açıklandı.\n\n30.03.2026\n\nUluslararası Öğrencilerle Akademik, Kültürel ve Bilimsel Etkileşim Ortamı Oluşturuldu\n\n26.03.2026\n\nTBMYO Makine ve Metal Teknolojileri Bölümünden OSB Kolejine Ziyaret\n\n12.03.2026\n\nTBMYO 'dan Odaksan Mekatronik Plc Eğitim Merkezini Ziyaret Etti.\n\n06.03.2026\n\nKöklerim Benimle: Uyum Sürecinde Psikolojik Dayanıklılık Etkinliği\n\n23.02.2026",
+      "char_count": 501,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=36",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\nd\ne\nn\n\nY\no\nğ\nu\nn\n\nK\na\nt\nı\nl\nı\nm\n\nDuyuru\n\n02.04.2026\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nV\ni\nz\ne\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nA\nç\nı\nk\nl\na\nn\nd\nı\n.\n\nDuyuru\n\n30.03.2026\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\nl\ne\n\nA\nk\na\nd\ne\nm\ni\nk\n,\n\nK\nü\nl\nt\nü\nr\ne\nl\n\nv\ne\n\nB\ni\nl\ni\nm\ns\ne\nl\n\nE\nt\nk\ni\nl\ne\nş\ni\nm\n\nO\nr\nt\na\nm\nı\n\nO\nl\nu\nş\nt\nu\nr\nu\nl\nd\nu\n\nDuyuru\n\n26.03.2026\n\nT\nB\nM\nY\nO\n\nM\na\nk\ni\nn\ne\n\nv\ne\n\nM\ne\nt\na\nl\n\nT\ne\nk\nn\no\nl\no\nj\ni\nl\ne\nr\ni\n\nB\nö\nl\nü\nm\nü\nn\nd\ne\nn\n\nO\nS\nB\n\nK\no\nl\ne\nj\ni\nn\ne\n\nZ\ni\ny\na\nr\ne\nt\n\nDuyuru\n\n12.03.2026\n\nT\nB\nM\nY\nO\n\n'\nd\na\nn\n\nO\nd\na\nk\ns\na\nn\n\nM\ne\nk\na\nt\nr\no\nn\ni\nk\n\nP\nl\nc\n\nE\nğ\ni\nt\ni\nm\n\nM\ne\nr\nk\ne\nz\ni\nn\ni\n\nZ\ni\ny\na\nr\ne\nt\n\nE\nt\nt\ni\n.\n\nDuyuru\n\n06.03.2026\n\nK\nö\nk\nl\ne\nr\ni\nm\n\nB\ne\nn\ni\nm\nl\ne\n:\n\nU\ny\nu\nm\n\nS\nü\nr\ne\nc\ni\nn\nd\ne\n\nP\ns\ni\nk\no\nl\no\nj\ni\nk\n\nD\na\ny\na\nn\nı\nk\nl\nı\nl\nı\nk\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nEtkinlik\n\n23.02.2026\n\nB\nö\nl\nü\nm\nl\ne\nr\ni\nm\ni\nz\ni\nn\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nD\nö\nn\ne\nm\ni\n\nB\na\nh\na\nr\n\nY\na\nr\nı\ny\nı\nl\nı\n\nD\ne\nr\ns\n\nP\nr\no\ng\nr\na\nm\nl\na\nr\nı\n\nDuyuru\n\n09.02.2026\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nY\na\nt\na\ny\n\nG\ne\nç\ni\nş\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nDuyuru\n\n30.01.2026\n\nY\no\nğ\nu\nn\n\nB\na\nk\nı\nm\n\nM\nü\nh\ne\nn\nd\ni\ns\nl\ni\nğ\ni\n\nÇ\na\nl\nı\nş\nt\na\ny\nı\n\nDuyuru\n\n18.12.2025\n\nT\nÜ\nB\nİ\nT\nA\nK\n\n2\n2\n0\n9\n\nP\nr\no\nj\ne\n\nB\na\nş\nv\nu\nr\nu\nl\na\nr\nı\n\nİ\nç\ni\nn\n\nB\ni\nl\ng\ni\nl\ne\nn\nd\ni\nr\nm\ne\n\nE\nğ\ni\nt\ni\nm\ni\n\nV\ne\nr\ni\nl\nd\ni\n\nHaber\n\n03.12.2025\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nm\nu\nz\nd\na\n\nK\na\nl\ni\nt\ne\n\nY\nö\nn\ne\nt\ni\nm\n\nS\ni\ns\nt\ne\nm\ni\n\nİ\nç\n\nD\ne\nn\ne\nt\ni\nm\n\nT\ne\nt\nk\ni\nk\ni\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nHaber\n\n25.11.2025\n\n2\n0\n2\n5\n\n/\n\n2\n0\n2\n6\n\nA\nk\na\nd\ne\nm\ni\nk\n\nG\ne\nn\ne\nl\n\nK\nu\nr\nu\nl\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nHaber\n\n20.11.2025\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nm\nu\nz\n\nA\nk\na\nd\ne\nm\ni\nk\n\nK\nu\nr\nu\nl\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n.\n\nDuyuru\n\n23.10.2025\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\nM\nE\nD\nE\nK\n\nS\nü\nr\ne\nç\nl\ne\nr\ni\n\nB\na\nş\na\nr\nı\ny\nl\na\n\nT\na\nm\na\nm\nl\na\nn\nd\nı\n\nHaber\n\n06.10.2025\n\nE\nn\ng\ne\nl\nl\ne\nr\ni\n\nK\na\nl\nd\nı\nr\na\nn\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\n\nDuyuru\n\n22.09.2025\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nG\nü\nz\n\ny\na\nr\nı\ny\nı\nl\nı\n\nY\na\nt\na\ny\n\nG\ne\nç\ni\nş\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nDuyuru\n\n25.08.2025\n\n2\n\n'\nn\nd\n\nI\nn\nt\ne\nr\nn\na\nt\ni\no\nn\na\nl\n\nC\no\nn\nf\ne\nr\ne\nn\nc\ne\n\nO\nn\n\nA\nd\nv\na\nn\nc\ne\ns\n\nİ\nn\n\nE\nl\ne\nc\nt\nr\ni\nc\na\nl\n,\n\nE\nl\ne\nc\nt\nr\no\nn\ni\nc\ns\n,\n\nE\nn\ne\nr\ng\ny\n,\n\nA\nn\nd\n\nC\no\nm\np\nu\nt\ne\nr\n\nS\nc\ni\ne\nn\nc\ne\ns\n\nDuyuru\n\n26.06.2025\n\nG\nİ\nB\nT\nÜ\n,\n\nI\nS\nA\nS\n\n2\n0\n2\n5\n\nv\ne\n\nS\nI\nA\nP\n\n2\n0\n2\n5\n\ni\nl\ne\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nS\ne\nm\np\no\nz\ny\nu\nm\nl\na\nr\na\n\nE\nv\n\nS\na\nh\ni\np\nl\ni\nğ\ni\n\nY\na\np\nı\ny\no\nr\n\nHaber\n\n24.06.2025\n\nG\nİ\nB\nT\nÜ\n\nY\na\np\na\ny\n\nZ\ne\nk\na\ny\na\n\nD\ne\ns\nt\ne\nğ\ni\nn\ni\n\nS\nü\nr\nd\nü\nr\nü\ny\no\nr\n\nHaber\n\n14.04.2025\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nm\nu\nz\n\n2\n0\n2\n4\n\n/\n\n2\n0\n2\n5\n\nG\nü\nz\n\nY\na\nr\nı\ny\nı\nl\nı\n\nF\ni\nn\na\nl\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\nl\ne\nr\ni\n\nY\na\ny\nı\nn\nl\na\nn\nd\nı\n\nDuyuru\n\n20.12.2024\n\nS\ne\nv\ng\ni\nl\ni\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\n,\n\nY\ne\nn\ni\nl\ne\nn\ne\nn\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nK\ni\nm\nl\ni\nk\n\nK\na\nr\nt\nl\na\nr\nı\nn\nı\nz\n\nG\ne\nl\nm\ni\nş\nt\ni\nr\n!\n\nDuyuru\n\n20.12.2024\n\nK\na\nd\nı\nn\na\n\nŞ\ni\nd\nd\ne\nt\ne\n\nH\na\ny\nı\nr\n!\n!\n!\n\nDuyuru\n\n15.10.2024\n\nS\ni\nn\ne\nm\na\n\nv\ne\n\nD\nr\na\nm\na\nt\nu\nr\nj\ni\n\nK\nu\nl\nü\nb\nü\n\nY\ne\nn\ni\n\nÜ\ny\ne\nl\ne\nr\ne\n\nK\na\np\nı\nl\na\nr\nı\nn\nı\n\nA\nç\nt\nı\n\nDuyuru\n\n10.10.2024\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nm\nu\nz\nd\na\n\nT\na\nn\nı\nş\nm\na\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n\nDuyuru\n\n10.10.2024\n\nG\nİ\nB\nT\nÜ\n\nS\nü\nr\nd\nü\nr\nü\nl\ne\nb\ni\nl\ni\nr\nl\ni\nk\n\nO\nf\ni\ns\ni\n,\n\nK\na\nm\np\nü\ns\n\nH\na\ny\nv\na\nn\nl\na\nr\nı\nn\na\n\nD\ne\ns\nt\ne\nk\n\nO\nl\nm\na\ny\na\n\nD\ne\nv\na\nm\n\nE\nd\ni\ny\no\nr\n\nDuyuru\n\n09.10.2024\n\nG\nİ\nB\nT\nÜ\n\nV\nR\nL\nA\nB\n\ni\nl\ne\n\nG\ne\nl\ne\nc\ne\nğ\ni\nn\n\nE\nğ\ni\nt\ni\nm\n\nY\nö\nn\nt\ne\nm\nl\ne\nr\ni\n\nB\nu\ng\nü\nn\n\nY\nü\nk\ns\ne\nk\nö\nğ\nr\ne\nt\ni\nm\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\n\ni\nl\ne\n\nB\nu\nl\nu\nş\nu\ny\no\nr\n\nAçılış\n\n02.10.2024\n\nG\nİ\nB\nT\nÜ\n\nS\na\nn\na\nl\n\nG\ne\nr\nç\ne\nk\nl\ni\nk\n\nL\na\nb\no\nr\na\nt\nu\nv\na\nr\nı\n\nA\nç\nı\nl\nı\nş\nı\n\nAçılış\n\n30.09.2024\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nm\nu\nz\nd\na\n\nY\ne\nn\ni\n\nD\nö\nn\ne\nm\n\nİ\nç\ni\nn\n\nP\nl\na\nn\nl\na\nr\n\nY\na\np\nı\nl\nd\nı\n\nDuyuru\n\n25.09.2024\n\nİ\nn\ng\ni\nl\ni\nz\nc\ne\n\nM\nu\na\nf\ni\ny\ne\nt\n\nS\nı\nn\na\nv\nı\n\nD\nu\ny\nu\nr\nu\ns\nu\n\nDuyuru\n\n04.09.2024\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\nM\ne\nz\nu\nn\ni\ny\ne\nt\n\nH\ne\ny\ne\nc\na\nn\nı\n\nDuyuru\n\n28.05.2024\n\nT\ne\nk\nn\ni\nk\n\nB\ni\nl\ni\nm\nl\ne\nr\n\nM\ne\ns\nl\ne\nk\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\n'\nn\nd\na\n\nP\nr\no\nf\ne\ns\ny\no\nn\ne\nl\n\nF\no\nt\no\nğ\nr\na\nf\n\nÇ\ne\nk\ni\nm\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nDuyuru\n\n14.03.2024\n\nT\ne\nk\nn\ni\nk\n\nB\ni\nl\ni\nm\nl\ne\nr\n\nM\ne\ns\nl\ne\nk\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\n'\nn\nd\na\n\nİ\nş\n\nv\ne\n\nM\ne\ns\nl\ne\nk\n\nD\na\nn\nı\nş\nm\na\nn\nl\na\nr\nı\nn\nd\na\nn\n\nE\nğ\ni\nt\ni\nm\n\nDuyuru\n\n14.03.2024\n\nG\ne\nl\ne\nc\ne\nk\n,\n\nB\nu\ng\nü\nn\nk\nü\n\nS\ne\nç\ni\nm\nl\ne\nr\ni\nm\ni\nz\ne\n\nB\na\nğ\nl\nı\n\nDuyuru\n\n08.03.2024\n\nT\ne\nk\nn\ni\nk\n\nB\ni\nl\ni\nm\nl\ne\nr\n\nM\ne\ns\nl\ne\nk\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nA\nk\na\nd\ne\nm\ni\nk\n\nK\nu\nr\nu\nl\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nY\na\np\nı\nl\nd\nı\n\nDuyuru\n\n29.02.2024\n\nE\nl\ni\nt\n\nS\no\nl\na\nr\n\nE\nn\ne\nr\nj\ni\n\n'\nn\ni\nn\n\nD\ne\ns\nt\ne\nk\nl\ne\nr\ni\ny\nl\ne\n\nDuyuru\n\n26.02.2024\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\nY\ne\nn\ni\nl\ni\nk\nç\ni\n\nB\ni\nr\n\nD\no\nk\nu\nn\nu\nş\n:\n\nM\na\nk\ni\nn\ne\n\nL\na\nb\no\nr\na\nt\nu\nv\na\nr\nı\n\nF\na\na\nl\ni\ny\ne\nt\ne\n\nA\nç\nı\nl\nd\nı\n!\n\nDuyuru\n\n05.01.2024\n\nR\ne\nk\nt\nö\nr\n\nD\na\nn\nı\nş\nm\na\nn\nı\n\nÇ\ne\np\ni\nk\n\n'\nt\ne\nn\n\nZ\ni\ny\na\nr\ne\nt\n\nDuyuru\n\n13.07.2023\n\nY\na\nt\na\ny\n\nG\ne\nç\ni\nş\n\nS\no\nn\nu\nç\nl\na\nr\nı\n\nDuyuru\n\n18.08.2022\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\nm\ni\nz\n\nF\na\nk\nü\nl\nt\ne\n\nv\ne\n\nM\ne\ns\nl\ne\nk\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nl\na\nr\nı\nn\na\n\nB\na\nğ\nl\nı\n\nB\nö\nl\nü\nm\n\n/\n\nP\nr\no\ng\nr\na\nm\nl\na\nr\nı\nn\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nE\nğ\ni\nt\ni\nm\n-\nö\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nY\na\nt\na\ny\n\nG\ne\nç\ni\nş\n\nB\na\nş\nv\nu\nr\nu\nl\na\nr\nı\n\nDuyuru\n\n29.07.2022\n\nR\na\nd\ny\no\n\nv\ne\n\nT\ne\nl\ne\nv\ni\nz\ny\no\nn\n\nT\ne\nk\nn\no\nl\no\nj\ni\ns\ni\n\nB\nö\nl\nü\nm\nü\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\n\nS\no\nn\n\nS\nü\nr\na\nt\n\nHaber\n\n18.05.2022\n\nR\na\nd\ny\no\n\nG\nİ\nB\nT\nÜ\n\n'\ny\nü\n\nD\ni\nn\nl\ne\nd\ni\nn\ni\nz\n\nM\ni\n\n?\n?\n\nHaber\n\n06.05.2022\n\nB\ni\nr\ni\nm\nl\ne\nr\ni\nm\ni\nz\ni\nn\n\nÇ\na\nl\nı\nş\nm\na\nl\na\nr\nı\nn\nd\na\nn\n\nK\na\nr\ne\nl\ne\nr\n\nHaber\n\n06.05.2022\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nm\nu\nz\nd\na\n\nE\nr\na\ns\nm\nu\ns\n\nv\ne\n\nİ\nş\nk\nu\nr\n\nG\nü\nn\nl\ne\nr\ni\n\nEğitim\n\n12.04.2022\n\n2\n0\n2\n1\n-\n2\n0\n2\n2\n\nE\nğ\ni\nt\ni\nm\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nA\nr\na\n\nS\nı\nn\na\nv\n\nT\na\nr\ni\nh\nl\ne\nr\ni\n\nDuyuru\n\n08.04.2022\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nm\nu\nz\nd\na\nn\n\nT\nÜ\nB\nİ\nT\nA\nK\n\nP\nr\no\nj\ne\ns\ni\n\nEğitim\n\n09.06.2021\n\n KATEGORİLER\r\n\nAçılış\n\nDuyuru\n\nEğitim\n\nEtkinlik\n\nHaber\n\nKonferans",
+      "char_count": 5975,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=36",
+      "title": "Galeri",
+      "body_content": "2026\n\n2025\n\n2024\n\n2023\n\n2022\n\n2021\n\nUluslararası Öğrencilerden Yoğun Katılım\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Vize Sınav Takvimi Açıklandı.\n\nUluslararası Öğrencilerle Akademik, Kültürel ve Bilimsel Etkileşim Ortamı Oluşturuldu\n\nTBMYO Makine ve Metal Teknolojileri Bölümünden OSB Kolejine Ziyaret\n\nTBMYO 'dan Odaksan Mekatronik Plc Eğitim Merkezini Ziyaret Etti.\n\nKöklerim Benimle: Uyum Sürecinde Psikolojik Dayanıklılık Etkinliği\n\n2025 / 2026 Akademik Genel Kurul Toplantısı Gerçekleştirildi\n\nTÜBİTAK 2209 Proje Başvuruları İçin Bilgilendirme Eğitimi Verildi\n\nBölümlerimizin 2025-2026 Eğitim Öğretim Dönemi Bahar Yarıyılı Ders Programları\n\n2025-2026 Eğitim Öğretim Yılı Bahar Dönemi Yatay Geçiş Sonuçları\n\nYoğun Bakım Mühendisliği Çalıştayı\n\nYüksekokulumuzda Kalite Yönetim Sistemi İç Denetim Tetkiki Gerçekleştirildi\n\nYüksekokulumuz Akademik Kurul Toplantısı Gerçekleştirildi.\n\nGİBTÜ 'de MEDEK Süreçleri Başarıyla Tamamlandı\n\nEngelleri Kaldıran Üniversite",
+      "char_count": 967,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=36",
+      "title": "Mevzuatlar",
+      "body_content": "Kanunlar\n\n Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi Hakkında Kanun ( 5746 )\r\n\n Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun ( 7749 )\r\n\n Yükseköğretim Kanunu ( 2547 )\r\n\n Yükseköğretim Personel Kanunu ( 2914 )\r\n\nYÖK Yönetmelikleri\n\n Devlet Yükseköğretim Kurumlarında Öğretim Elemanı Norm Kadrolarının Belirlenmesine ve Kullanılmasına İlişkin Yönetmelik\r\n\n Doçentlik Yönetmeliği\r\n\n Lisans Öğrenimlerini Tamamlamayan Veya Tamamlayamayanların Ön Lisans Diploması Almaları Veya Meslek Yüksekokullarına İntibakları Hakkında Yönetmelik\r\n\n Meslek Yüksekokulları ve Açıköğretim Ön Lisans Programları Mezunlarının Lisans Öğrenimine Devamları Hakkında Yönetmelik\r\n\n Mevlana Değişim Programına İlişkin Yönetmelik\r\n\n Öğretim Üyeliğine Yükseltilme ve Atanma Yönetmeliği\r\n\n Öğretim Üyesi Dışındaki Öğretim Elemanı Kadrolarına Yapılacak Atamalarda Uygulanacak Merkezi Sınav ile Giriş Sınavlarına İlişkin Usul ve Esaslar Hakkında Yönetmelik\r\n\n Üniversitelerde Akademik Teşkilât Yönetmeliği\r\n\n Yükseköğretim Kurumları Öğrenci Disiplin Yönetmeliği\r\n\n Yükseköğretim Kurumlarında Akademik Kurulların Oluşturulması ve Bilimsel Denetim Yönetmeliği\r\n\n Yükseköğretim Kurumlarında Önlisans ve Lisans Düzeyindeki Programlar Arasında Geçiş, Çift Anadal, Yan Dal ile Kurumlar Arası Kredi Transferi Yapılması Esaslarına İlişkin Yönetmelik\r\n\n Yükseköğretim Üst Kuruluşları ile Yükseköğretim Kurumları Personeli Görevde Yükselme ve Unvan Değişikliği Yönetmeliği\r\n\nÜniversitemiz Yönetmelikleri\n\n Gaziantep İslam Bilim ve Teknoloji Üniversitesi Önlisans ve Lisans Eğitim-öğretim ve Sınav Yönetmeliği\r\n\nÜniversitemiz Yönergeleri\n\n Gaziantep İslam Bilim ve Teknoloji Üniversitesi Diploma Yönergesi\r\n\n Gaziantep İslam Bilim ve Teknoloji Üniversitesi Önlisans ve Lisans Düzeyindeki Programlar Arasında Yatay Geçiş Esaslarına İlişkin Yönerge\r\n\n Gaziantep İslam Bilim ve Teknoloji Üniversitesi Özel Öğrenci Yönergesi\r\n\n Gaziantep İslam Bilim ve Teknoloji Üniversitesi Teknik Bilimler Meslek Yüksekokulu Staj Yönergesi",
+      "char_count": 2019,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=36",
+      "title": "Faydalı Linkler",
+      "body_content": "Biz Nerdeyiz\r\n\n CİMER\r\n\n E-Devlet\r\n\n Kredi ve Yurtlar Genel Müdürlüğü\r\n\n Yükseköğretim Kurulu",
+      "char_count": 93,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=36",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=36",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nteknikbilimler@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nMehmet Şerif YEŞİLMEN\n\nmehmetserif.yesilmen@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 355,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=36",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nÖğr. Gör. Mahmud TEKİN\n\nring_volume\n0000\n\nmail\nmahmud.tekin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yusuf KALINKARA\n\nring_volume\n0000\n\nmail\nyusuf.kalinkara@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yüksel TOKUR BOZKURT\n\nring_volume\n0000\n\nmail\nyuksel.tokurbozkurt@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mehmet ARICI\n\nring_volume\n2211\n\nmail\nmehmet.arici@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. İpek ATİK\n\nring_volume\n3101\n\nmail\nipek.atik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Abdurrahman DOĞAN\n\nring_volume\n3102\n\nmail\nabdurrahman.dogan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Tuncay ŞAHAN\n\nring_volume\n3102\n\nmail\ntuncay.sahan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nermin KAPTAN\n\nring_volume\n3103\n\nmail\nnermin.kaptan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet DEMİROK\n\nring_volume\n3105\n\nmail\nmehmet.demirok@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet Şerif YEŞİLMEN\n\nring_volume\n3106\n\nmail\nmehmetserif.yesilmen@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Gökhan TOPAL\n\nring_volume\n3107\n\nmail\ngokhan.topal@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Fırat BİNGÖL\n\nring_volume\n3108\n\nmail\nfirat.bingol@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Sedat GÜVEN\n\nring_volume\n3110\n\nmail\nsedat.guven@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Adem AKSOY\n\nring_volume\n3111\n\nmail\nadem.aksoy@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Abdurrahman DOĞAN\n\nring_volume\n3112\n\nmail\nabdurrahman.dogan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nermin KAPTAN\n\nring_volume\n3114\n\nmail\nnermin.kaptan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Murat Kaan AKAR\n\nring_volume\n3115\n\nmail\nmuratkaan.akar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yusuf KALINKARA\n\nring_volume\n3121\n\nmail\nyusuf.kalinkara@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Elifgül ÇAKMAK KAYA\n\nring_volume\n3123\n\nmail\nelifgul.cakmakkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Çiğdem ÇOBAN\n\nring_volume\n3124\n\nmail\ncigdem.coban@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Sedat GÜVEN\n\nring_volume\n3181\n\nmail\nsedat.guven@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Gökhan TOPAL\n\nring_volume\n3182\n\nmail\ngokhan.topal@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 2182,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 42,
+      "total": 42,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 42,
+      "total": 42,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 42,
+      "total": 42,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 42,
+      "total": 42,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 42,
+      "total": 42,
+      "pct": 100
+    },
+    "title": {
+      "count": 42,
+      "total": 42,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 42,
+      "total": 42,
+      "pct": 100
+    },
+    "department": {
+      "count": 42,
+      "total": 42,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 42,
+      "total": 42,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 42,
+      "total": 42,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 27,
+    "yonetim": 1,
+    "tanitim": 2,
+    "rapor": 1,
+    "yonetmelik": 2,
+    "personel": 2,
+    "form": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

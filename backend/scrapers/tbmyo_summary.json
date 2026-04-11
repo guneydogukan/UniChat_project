@@ -1,0 +1,90 @@
+{
+  "task": "3.2.10.2",
+  "description": "TBMYO Harita Gudumlu Deep Scrape",
+  "birimler": [
+    {
+      "department": "Teknik Bilimler MYO",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\tbmyo_teknik_bilimler_myo_output.json",
+      "total_documents": 65,
+      "total_valid": 41,
+      "total_failed": 0,
+      "total_chars": 34470,
+      "pdf_count": 26,
+      "doc_kind_distribution": {
+        "genel": 27,
+        "yonetim": 1,
+        "tanitim": 2,
+        "rapor": 1,
+        "yonetmelik": 2,
+        "personel": 2,
+        "form": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Bilgisayar Programciligi Programi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\tbmyo_bilgisayar_programciligi_programi_output.json",
+      "total_documents": 20,
+      "total_valid": 19,
+      "total_failed": 0,
+      "total_chars": 16511,
+      "pdf_count": 0,
+      "doc_kind_distribution": {
+        "genel": 9,
+        "yonetim": 1,
+        "tanitim": 3,
+        "personel": 1,
+        "duyuru": 1,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Radyo ve Televizyon Teknolojisi Programi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\tbmyo_radyo_ve_televizyon_teknolojisi_programi_output.json",
+      "total_documents": 22,
+      "total_valid": 21,
+      "total_failed": 0,
+      "total_chars": 15763,
+      "pdf_count": 0,
+      "doc_kind_distribution": {
+        "genel": 9,
+        "yonetim": 1,
+        "tanitim": 4,
+        "personel": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Makine Programi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\tbmyo_makine_programi_output.json",
+      "total_documents": 20,
+      "total_valid": 19,
+      "total_failed": 0,
+      "total_chars": 13514,
+      "pdf_count": 0,
+      "doc_kind_distribution": {
+        "genel": 6,
+        "tanitim": 3,
+        "yonetim": 1,
+        "personel": 2,
+        "mufradat": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "yonetmelik": 1,
+        "form": 1,
+        "iletisim": 1,
+        "menu_haritasi": 1
+      }
+    }
+  ]
+}

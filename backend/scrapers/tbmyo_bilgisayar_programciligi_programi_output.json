@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:49:11Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\MESLEK YÜKSEKOKULLARI\\Teknik Bilimler Meslek Yüksekokulu\\Bilgisayar_Teknolojisi_Bölümü-Bilgisayar_Programcılığı.html",
+    "birim_id": 46,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Bilgisayar Programciligi Programi"
+  },
+  "summary": {
+    "total_blueprint_urls": 19,
+    "total_fetched": 19,
+    "total_valid": 19,
+    "total_failed": 0,
+    "total_skipped": 0,
+    "total_documents": 20,
+    "total_chars": 16511
+  },
+  "discovered_pdfs": [],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIcerik.aspx?id=46&icid=538",
+      "title": "Bilgisayar Programcılığı",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\ndate_range\n\npeople\n\nok",
+      "char_count": 55,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=46",
+      "title": "Yönetim",
+      "body_content": "Bölüm Başkanı\r\n\nÖğr. Gör. Elifgül ÇAKMAK KAYA\n\nÖğr. Gör.\n\nring_volume\n3123\n\nmail\nelifgul.cakmakkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 130,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=46",
+      "title": "Hakkımızda",
+      "body_content": "Bilgisayayar Programcılığı Genel Bilgileri\n\nEğitim Süresi            \n: 2 yıl \n\nDiploma Türü            : \nÖn lisans\n\nÖğrenim yöntem ve teknikleri         \n:  Anlatım, Uygulama\n\nKontenjan\n                 : 60\n\nBilgisayayar Programcılığı \nAmaçları\n\nBilgisayar ve ilgili bilişim teknolojileri çağımızda çok yaygın kullanım alanına sahip olmakla birlikte çok hızlı bir şekilde gelişmektedir. Bilgisayar programcılığının temel amacı, gelişen teknolojiyi takip edebilen, teorik ve pratik bilgiye sahip, gerekli olan sektörlerde üretime katkı sağlayan, araştırma-geliştirme yapabilen, etik değerlere sahip programcıların yetiştirilmesidir.\n\nProgramın somut amaçları arasında, bölümde öğrenim görenlerin aşağıdaki bilgi ve becerileri kazanması yer almaktadır:\n\nBir kurumun tüm bilgi işlem çalışmalarının yönetimi\n\nBilgi işlem sistemlerinin geliştirilmesi ve optimize edilmesi\n\nDonanım ve yazılım performanslarının ölçülmesi, değerlendirilmesi\n\nBir sistem için gerekli olan bilgisayar sistemlerinin en uygun bir şekilde tasarlanması\n\nFirmalarda bilgisayar kullanan ama bilgisayar alanında uzman olmayanlara gerekli olan eğitimlerin verilmesi\n\nSektörde ihtiyaç duyulan programların yazılması, test edilmesi ve işletmeye hazır hale getirilmesi\n\nBilgisayarlar arası gerekli olan iletişimin sağlanması için sistemlerin kurulması, test edilmesi\n\nSaklanması gereken veriler için sistemlerin tasarlanması, bakımının yapılması\n\nBilgisayar sistemlerinde gerekli olan güvenlik önlemlerinin alınması\n\nFirmaların güncel sosyal ağlarla bütünleştirilmesi\n\nBilgisayar  programcılığının avantajları, yetiştirilen mühendislerin endüstri, ticaret, eğitim ve hizmet sektörlerinde çalışan kamu ve özel kuruluşlarda bilgisayar ve bilişim teknolojileri konularında ihtiyaç duyulan alanlarda çalışabilme imkânlarının olmasıdır. Ayrıca araştırma geliştirme yapan firmaların da çoğunlukla bilgisayar programcılarına ihtiyaçları vardır. Örneğin gerek Üniversitelerde yer alan Teknopark/Teknokent gibi gereksede organize sanayi, yazılım şirketleri ve devlet/özel kurumlarının bilgi işlem birimlerinde donanımlı bilgisayar programlcılarına ihtiyaç duyulmaktadır. Sosyal ağlar veya mobil platformlarda yapılabilecek olan yazılımlarla ülkemizin prestijine katkı sağlayabilme ve yurtdışı kaynaklı gelir getirebilme de programın avantajları arasında yer almaktadır.",
+      "char_count": 2326,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=46",
+      "title": "Misyon",
+      "body_content": "Teknolojide yaşanan gelişim ivmesini yakalayan ve teknolojik beklentilerine ayak uyduran, sorgulayan, araştıran, problem çözen, toplum bilimci olan, mesleği ile ilgili alanda bilgi üretebilen ve uygulayan, üretilen bilgiyi toplumsal ve endüstriyel faydaya dönüştüren, endüstri ve hizmet sektörlerinde çalışabilen nitelikli programcı ve teknik elemanlar yetiştiren, gölgeye ve dünyaya katma değer sağlayacak nitelikli bireyler yetiştiren bir program olmak şeklindedir.",
+      "char_count": 467,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=46",
+      "title": "Vizyon",
+      "body_content": "Endüstri ve teknoloji alanındaki eleman ihtiyacının karşılanmasına katkıda bulunacak, bilgisayar alanındaki temel kavramları bilen, program planlama ve tasarımında görev alıp yazılım, kurulum ve test işlemlerini yapabilen, veri güvenliği ve saklanması ile ilgili tedbirleri alabilen, yaygın karşılaşılan yazılım ve donanım arızalarını tespit edip, sorunlara çözüm üretebilen, kişisel ve ağ işletim sistemlerini tanıyıp, ağ sistemlerinin güvenliğini sağlayabilen, mesleği ile ilgili etik, sağlık ve emniyet tedbirlerini gözeten, teknolojik gelişmelere adapte olup öğrenen/geliştiren, yapay zeka teknolojilerine aşina teknik elemanların yetiştirilmesi hedeflenmektedir.",
+      "char_count": 667,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/bilgisayarprogramciligi/icerik/13417/katalog-ve-brosurler",
+      "title": "Bilgisayar Programcılığı",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\ndate_range\n\npeople\n\nok",
+      "char_count": 55,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=46",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nDr. Öğr. Üyesi Yusuf KALINKARA\n\nDr. Öğr. Üyesi\n\nring_volume\n3121\n\nmail\nyusuf.kalinkara@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Elifgül ÇAKMAK KAYA\n\nÖğr. Gör.\n\nring_volume\n3123\n\nmail\nelifgul.cakmakkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Çiğdem ÇOBAN\n\nÖğr. Gör.\n\nring_volume\n3124\n\nmail\ncigdem.coban@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Murat Kaan AKAR\n\nÖğr. Gör.\n\nring_volume\n3115\n\nmail\nmuratkaan.akar@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 455,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/birimicerik.aspx?id=46&icid=580",
+      "title": "Bologna Formları",
+      "body_content": "GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ\n\nTEKNİK BİLİMLER MESLEK YÜKSEKOKULU\n\nBİLGİSAYAR TEKNOLOJİSİ BÖLÜMÜ/BİLGİSAYAR PROGRAMCILIĞI\n\nGÜNCEL MÜFREDATI\n\n1.Yarıyıl Zorunlu Dersler\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nBTP104\n\nGenel Matematik\n\nGüz\n\n3\n\n0\n\n0\n\n3\n\n4\n\nBTP105\n\nAlgoritma ve Programlama Temelleri\n\nGüz\n\n3\n\n1\n\n0\n\n4\n\n6\n\n1.Yarıyıl Seçmeli Ders Havuzu\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nOSD023\n\nToplum ve Kültürü Anlamak\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS028\n\nOfis Yazılımları\n\nGüz\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTP110\n\nBilgisayar Donanımı\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS002\n\nBilişim Hukuku\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTP111\n\nSayısal Tasarım\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS015\n\nBilgisayar Grafiği ve Animasyon\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\n1. Yarıyıl Ortak YÖK Dersleri\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nOZD051\n\nAtatürk İlkeleri ve İnkılap Tarihi - I\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n2\n\nOZD053\n\nTürk Dili - I\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n2\n\nOZD055\n\nYabancı Dil- I\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n2\n\nOZD057\n\nKariyer Planlama\n\nGüz\n\n1\n\n0\n\n0\n\n1\n\n2\n\n2.Yarıyıl Zorunlu Dersler\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nBTP205\n\nProgramlamaya Giriş\n\nBahar\n\n3\n\n1\n\n0\n\n4\n\n6\n\n2.Yarıyıl Seçmeli Ders Havuzu\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nOSD012\n\nMedeniyetler ve Küresel Karşılaşmalar\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS033\n\nWeb Tasarımının Temelleri\n\nBahar\n\n3\n\n1\n\n0\n\n4\n\n6\n\nBTPS001\n\nYazılım Kurulum ve Yönetimi\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTP216\n\nİnsan Bilgisayar Etkileşimi\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTP215\n\nMesleki İngilizce\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS008\n\nGirişimcilik\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS017\n\nGörüntü İşleme ve Anlama\n\nBahar\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS018\n\nXML ve Web Servisleri\n\nBahar\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTP212\n\nMeslek Etiği\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTP213\n\nMesleki Matematik\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\n2.Yarıyıl Ortak YÖK Dersleri\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nOZD052\n\nAtatürk İlkeleri ve İnkılap Tarihi II\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n2\n\nOZD054\n\nTürk Dili-ll\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n2\n\nOZD056\n\nYabancı Dil - II\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n2\n\n3.Yarıyıl Zorunlu Dersler\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\n BTP315\n\nBitirme Projesi I\n\n  Güz\n\n8\n\n0\n\n0\n\n8\n\n12\n\n3.Yarıyıl Seçmeli Ders Havuzu\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nOSD028\n\nYapay Zeka ve İnsan\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS029\n\nNesneye Yönelik Programlama\n\nGüz\n\n3\n\n1\n\n0\n\n4\n\n5\n\nBTPS030\n\nVeri Tabanı Yönetim Sistemleri\n\nGüz\n\n3\n\n1\n\n0\n\n4\n\n5\n\nBTPS031\n\nGörsel Programlamaya Giriş\n\nGüz\n\n3\n\n1\n\n0\n\n4\n\n5\n\nBTPS012\n\nArtırılmış ve Sanal Gerçeklik\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS019\n\nİnternet Programcılığı\n\nGüz\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS020\n\nSiber Güvenlik\n\nGüz\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS022\n\nMobil Programlama\n\nGüz\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS023\n\nAğ Programlama\n\nGüz\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTP311\n\nAğ Temelleri\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTP316\n\nE-Ticaret\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\n4.Yarıyıl Zorunlu Dersler\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nBTP425\n\nBitirme Projesi II\n\nBahar\n\n8\n\n0\n\n0\n\n8\n\n12\n\n4.Yarıyıl Seçmeli Ders Havuzu\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nOSD004\n\nPost-Modern Dönemde Din ve Gençlik\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS005\n\nİş Sağlığı ve Güvenliği\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS032\n\nGörsel Programlama ile Veri tabanı Uygulamaları\n\nBahar\n\n3\n\n1\n\n0\n\n4\n\n6\n\nBTPS027\n\nMakine Öğrenmesi\n\nBahar\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS024\n\nMATLAB İle Uygulama\n\nBahar\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS025\n\nGömülü Sistem Tasarımı Temelleri\n\nBahar\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS026\n\nKriptografiye Giriş\n\nBahar\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS013\n\nOyun Programlama\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS014\n\nPrompt Yazma Teknikleri\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS016\n\nMetaverse\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3",
+      "char_count": 3545,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/birimicerik.aspx?id=46&icid=535",
+      "title": "Müfredat",
+      "body_content": "GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ\n\nTEKNİK BİLİMLER MESLEK YÜKSEKOKULU\n\nBİLGİSAYAR TEKNOLOJİSİ BÖLÜMÜ/BİLGİSAYAR PROGRAMCILIĞI\n\nGÜNCEL MÜFREDATI\n\n1.Yarıyıl Zorunlu Dersler\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nBTP104\n\nGenel Matematik\n\nGüz\n\n3\n\n0\n\n0\n\n3\n\n4\n\nBTP105\n\nAlgoritma ve Programlama Temelleri\n\nGüz\n\n3\n\n1\n\n0\n\n4\n\n6\n\n1.Yarıyıl Seçmeli Ders Havuzu\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nOSD023\n\nToplum ve Kültürü Anlamak\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS028\n\nOfis Yazılımları\n\nGüz\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTP110\n\nBilgisayar Donanımı\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS002\n\nBilişim Hukuku\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTP111\n\nSayısal Tasarım\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS015\n\nBilgisayar Grafiği ve Animasyon\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\n1. Yarıyıl Ortak YÖK Dersleri\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nOZD051\n\nAtatürk İlkeleri ve İnkılap Tarihi - I\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n2\n\nOZD053\n\nTürk Dili - I\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n2\n\nOZD055\n\nYabancı Dil- I\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n2\n\nOZD057\n\nKariyer Planlama\n\nGüz\n\n1\n\n0\n\n0\n\n1\n\n2\n\n2.Yarıyıl Zorunlu Dersler\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nBTP205\n\nProgramlamaya Giriş\n\nBahar\n\n3\n\n1\n\n0\n\n4\n\n6\n\n2.Yarıyıl Seçmeli Ders Havuzu\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nOSD012\n\nMedeniyetler ve Küresel Karşılaşmalar\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS033\n\nWeb Tasarımının Temelleri\n\nBahar\n\n3\n\n1\n\n0\n\n4\n\n6\n\nBTPS001\n\nYazılım Kurulum ve Yönetimi\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTP216\n\nİnsan Bilgisayar Etkileşimi\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTP215\n\nMesleki İngilizce\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS008\n\nGirişimcilik\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS017\n\nGörüntü İşleme ve Anlama\n\nBahar\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS018\n\nXML ve Web Servisleri\n\nBahar\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTP212\n\nMeslek Etiği\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTP213\n\nMesleki Matematik\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\n2.Yarıyıl Ortak YÖK Dersleri\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nOZD052\n\nAtatürk İlkeleri ve İnkılap Tarihi II\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n2\n\nOZD054\n\nTürk Dili-ll\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n2\n\nOZD056\n\nYabancı Dil - II\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n2\n\n3.Yarıyıl Zorunlu Dersler\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\n  BTP315\n\nBitirme Projesi I\n\n  Güz\n\n8\n\n0\n\n0\n\n8\n\n12\n\n3.Yarıyıl Seçmeli Ders Havuzu\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nOSD028\n\nYapay Zeka ve İnsan\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS029\n\nNesneye Yönelik Programlama\n\nGüz\n\n3\n\n1\n\n0\n\n4\n\n5\n\nBTPS030\n\nVeri Tabanı Yönetim Sistemleri\n\nGüz\n\n3\n\n1\n\n0\n\n4\n\n5\n\nBTPS031\n\nGörsel Programlamaya Giriş\n\nGüz\n\n3\n\n1\n\n0\n\n4\n\n5\n\nBTPS012\n\nArtırılmış ve Sanal Gerçeklik\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS019\n\nİnternet Programcılığı\n\nGüz\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS020\n\nSiber Güvenlik\n\nGüz\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS022\n\nMobil Programlama\n\nGüz\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS023\n\nAğ Programlama\n\nGüz\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTP311\n\nAğ Temelleri\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTP316\n\nE-Ticaret\n\nGüz\n\n2\n\n0\n\n0\n\n2\n\n3\n\n4.Yarıyıl Zorunlu Dersler\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nBTP425\n\nBitirme Projesi II\n\nBahar\n\n8\n\n0\n\n0\n\n8\n\n12\n\n4.Yarıyıl Seçmeli Ders Havuzu\n\nDers Kodu\n\nDers Adı\n\nDönem\n\nT\n\nU\n\nL\n\nKredi\n\nAKTS\n\nOSD004\n\nPost-Modern Dönemde Din ve Gençlik\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS005\n\nİş Sağlığı ve Güvenliği\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS032\n\nGörsel Programlama ile Veri tabanı Uygulamaları\n\nBahar\n\n3\n\n1\n\n0\n\n4\n\n6\n\nBTPS027\n\nMakine Öğrenmesi\n\nBahar\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS024\n\nMATLAB İle Uygulama\n\nBahar\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS025\n\nGömülü Sistem Tasarımı Temelleri\n\nBahar\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS026\n\nKriptografiye Giriş\n\nBahar\n\n2\n\n1\n\n0\n\n3\n\n4\n\nBTPS013\n\nOyun Programlama\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS014\n\nPrompt Yazma Teknikleri\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3\n\nBTPS016\n\nMetaverse\n\nBahar\n\n2\n\n0\n\n0\n\n2\n\n3",
+      "char_count": 3546,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/bilgisayarprogramciligi/icerik/31211/program-egitim-amaclari",
+      "title": "Program Eğitim Amaçları",
+      "body_content": "Bilgisayar Programcılığı \n\nBilgisayar Programcılığının eğitim amaçları, öğrencilerimiizn Mezuniyet sonrasında mesleki ve bireysel gelişimlerinde ulaşmaları beklemnen hedefleri tanımlamaktadır. Aşağıda programmız için belirlenen dört temel eğitim amacı yer almaktadır.\n\nPEA1: \nYazılım geliştirme, veri tabanı, web ve mobil uygulama gibi alanlarda görev alabilen; teknik bilgisini iş ortamında etkili kullanan, sorumluluk sahibi bilgisayar programcıları olmaları.\n\nPEA2: \nKarşılaştıkları bilişim problemlerini tanımlayabilen, çözüm üretebilen ve yeni teknolojileri yazılım süreçlerine uygulayabilen, yenilikçi bireyler olmaları.\n\nPEA3:\n Mesleki çalışmalarında etik ilkelere bağlı kalan; veri güvenliği, iş güvenliği, çevre ve toplumsal sorumluluk konularında duyarlı, sürdürülebilir bilişim anlayışına sahip olmaları.\n\nPEA4: \nKendini sürekli geliştirme bilinci taşıyan, öğrenmeye açık ve yeni yazılım teknolojilerini takip edebilen bireyler olmaları.",
+      "char_count": 948,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/bilgisayarprogramciligi/icerik/31222/program-egitim-ciktilari",
+      "title": "Program Eğitim Çıktıları",
+      "body_content": "Temel algoritma, programlama ve veri yapıları bilgilerini kullanarak bilişim problemlerine yönelik çözümleri uygulamalı süreçlerde geliştirir.\n\n Güncel web teknolojileri ve arayüz tasarım ilkelerini kullanarak kullanıcı etkileşimli dinamik web uygulamaları geliştirir.\n\n Veritabanı tasarımı ve ilişkisel veri modeli ilkelerine göre sistem çözümleri oluşturur ve veritabanı uygulamaları geliştirir.\n\nYazılım geliştirme süreçlerinde test planları oluşturur, hata ayıklama teknikleri uygular ve sonuçları değerlendirerek yazılım kalitesini artırır.\n\nBilgisayar sistemleri ve yazılım geliştirme ortamlarında kullanılan araçları, işletim sistemlerini ve programlama dillerini güvenli ve etkin biçimde kullanır.\n\nYazılım ve donanım alanındaki teknolojik gelişmeleri takip eder; yeni nesil bilişim çözümlerini sistem geliştirme süreçlerine entegre eder.\n\nBilişim projelerinde takım çalışmasına etkin biçimde katılır; gerektiğinde bağımsız karar alma ve bireysel sorumluluk üstlenme becerisi gösterir.\n\nMesleki uygulamalarında etik ilkelere bağlı kalır; veri güvenliği, kullanıcı gizliliği, iş sağlığı ve kalite kurallarına uygun şekilde hareket eder.\n\nSözlü ve yazılı iletişim araçlarını etkili biçimde kullanarak bilişimle ilgili bilgi, analiz ve çözümleri açık ve anlaşılır şekilde ifade eder.\n\nÖğrenme sürecini bağımsız biçimde sürdürebilecek farkındalığa sahiptir; mesleki gelişimini destekleyecek bireysel öğrenme stratejileri geliştirir.\n\nBilişim sistemleriyle ilgili uygulamalarda; iş sağlığı, çevresel sürdürülebilirlik, kullanıcı memnuniyeti ve toplumsal etkiyi gözetir; teknik kararların doğurabileceği etik ve hukuki sonuçların bilincindedir.",
+      "char_count": 1646,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/bilgisayarprogramciligi/icerik/31238/danismanlik-saatleri",
+      "title": "Danışmanlık Saatleri",
+      "body_content": "Danışman Hoca\n\nSınıf\n\nGün\n\nSaat\n\nÖğr. Gör. Elifgül Çakmak Kaya\n\n1. Sınıf\n\nÇarşamba\n\n10:00–12:00\n\n2. Sınıf\n\nÇarşamba\n\n13:00–15:00\n\nÖğr. Gör. Dr. Yusuf Kalınkara\n\n1. Sınıf\n\nÇarşamba\n\n13:00–15:00\n\n2. Sınıf\n\nÇarşamba\n\n15:00–17:00\n\nÖğr. Gör. Çiğdem Çoban\n\n1. Sınıf\n\nPerşembe\n\n10:00–12:00\n\n2. Sınıf\n\nPerşembe\n\n13:00–15:00\n\nDanışmanlık Randevu Talep Formunu doldurmak için \nTıklayınız",
+      "char_count": 377,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=46",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Bahar Yarıyılı ders Programı\n\n18.02.2026\n\n2025-2026 Güz Yarıyılı Bütünleme Sınav Takvimi\n\n22.01.2026\n\n2025-2026 Güz Yarıyılı Final Programı\n\n01.01.2026\n\nTeknik Bilimler MYO Öğrencileri, Yükseköğretimde Yapay Zekâ Entegrasyonu Zirvesi 'ne Yoğun İlgi Gösterdi\n\n24.11.2025\n\n2025-2026 Güz Yarıyılı Ara Sınav Programı ( Güncel )\n\n30.10.2025",
+      "char_count": 370,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=46",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nTeknik Bilimler MYO 'da Erasmus+ Bilgilendirme Toplantısı Gerçekleştirildi\n\n10.12.2025\n\nKariyer Günleri Kapsamında Murat Anlaş 'ı Ağırladık\n\n06.01.2026\n\nTeknik Bilimler MYO Öğrencileri, Yükseköğretimde Yapay Zekâ Entegrasyonu Zirvesi 'ne Yoğun İlgi Gösterdi\n\n24.11.2025\n\nBilgisayar Programcılığı Öğrencileri T3 Vakfı & TEKNOFEST Tanıtım Konferansına Katıldı\n\n23.10.2025\n\nGİBTÜ Teknik Bilimler MYO Öğrencileri Gaziantep Foruma Yoğun Katılım Sağladı\n\n23.10.2025",
+      "char_count": 484,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=46",
+      "title": "Formlar",
+      "body_content": "Formlar\n\n Ders Ekleme Çıkarma Dilekçesi\r\n\n Ders Muafiyeti Başvuru Formu\r\n\n Mazeret Sınavı Başvuru Formu\r\n\n Not Düzeltme Formu\r\n\n Tek Ders Başvuru Dilekçesi\r\n\n Kayıt Dondurma Başvuru Formu\r\n\n İlişik Kesme Formu\r\n\n Sağlık Raporu Bilidirim Dilekçesi\r\n\n Taahhütname - Yatay Geçiş Formu ( Başarı Puanı ile )\r\n\n Taahhütname - Yatay Geçiş Formu ( Merkezi Yerleştirme Puanı ile )",
+      "char_count": 371,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=46",
+      "title": "Galeri",
+      "body_content": "2026\n\n2025\n\n2024\n\n2023\n\nTeknik Bilimler MYO 'da Erasmus+ Bilgilendirme Toplantısı Gerçekleştirildi\n\nKariyer Günleri Kapsamında Murat Anlaş 'ı Ağırladık\n\n2025-2026 Güz Dönemi Ders Programı\n\nİngilizce Muafiyet Sınav Duyurusu",
+      "char_count": 222,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=46",
+      "title": "Faydalı Linkler",
+      "body_content": "CİMER\r\n\n TÜBİTAK\r\n\n Türkiye Bilişim Derneği",
+      "char_count": 43,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=46",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nbilgisayarprogramciligi@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nÖğr. Gör. Çiğdem ÇOBAN\n\ncigdem.coban@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 357,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=46",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nÖğr. Gör. Murat Kaan AKAR\n\nring_volume\n3115\n\nmail\nmuratkaan.akar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Yusuf KALINKARA\n\nring_volume\n3121\n\nmail\nyusuf.kalinkara@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Elifgül ÇAKMAK KAYA\n\nring_volume\n3123\n\nmail\nelifgul.cakmakkaya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Çiğdem ÇOBAN\n\nring_volume\n3124\n\nmail\ncigdem.coban@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 447,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "title": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "department": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 9,
+    "yonetim": 1,
+    "tanitim": 3,
+    "personel": 1,
+    "duyuru": 1,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

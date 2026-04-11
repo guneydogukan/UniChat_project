@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:50:35Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\MESLEK YÜKSEKOKULLARI\\Teknik Bilimler Meslek Yüksekokulu\\Makine_ve_Metal_Teknolojisi_Bölümü-Makine_Programı.html",
+    "birim_id": 47,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Makine Programi"
+  },
+  "summary": {
+    "total_blueprint_urls": 19,
+    "total_fetched": 19,
+    "total_valid": 19,
+    "total_failed": 0,
+    "total_skipped": 0,
+    "total_documents": 20,
+    "total_chars": 13514
+  },
+  "discovered_pdfs": [],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=47",
+      "title": "Makine Programı",
+      "body_content": "2025-2026 Güz Yarıyılı Bütünleme Sınav Takvimi\n\nMakine Programı Öğrencilerimizden Devlet Demiryolları 'na Mesleki Gezi\n\n2025-2026 Güz Yarıyılı Final Programı\n\nKariyer Günleri Kapsamında Murat Anlaş 'ı Ağırladık\n\n2025-2026 Güz Yarıyılı Makine Programı Ara Sınav Programı ( Güncel )\n\nHABERLER\n\nTÜMÜ\n\n26.01.2026 12:07\n\nMakine Programı Öğrencilerimizden Devlet Demiryolları 'na Mesleki Gezi\n\nYüksekokulumuz Makine Programı öğrencileri, mesleki gelişimlerini desteklemek amacıyla Devlet Demiryolları Bakım ve Onarım Atölyesine teknik bir gezi gerçekleştirdi.\n\n Devamını Oku\r\n\n06.01.2026 12:04\n\nKariyer Günleri Kapsamında Murat Anlaş 'ı Ağırladık\n\n42 no.lu Bilişim Teknolojileri Meslek Komitesi Üyesi Murat ANLAŞ, yüksekokulumuzda düzenlenen Kariyer Günleri etkinliği kapsamında öğrencilerimizle buluştu.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n22\n\nOca\n\n 2025-2026 Güz Yarıyılı Bütünleme Sınav Takvimi\r\n\n26\n\nOca\n\n 2025-2026 Güz Yarıyılı Final Programı\r\n\n30\n\nEki\n\n 2025-2026 Güz Yarıyılı Makine Programı Ara Sınav Programı ( Güncel )",
+      "char_count": 1020,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=47",
+      "title": "Hakkımızda",
+      "body_content": "Sanayi bakımından gelişmiş ülkelerde imalat sektörü için geniş bir istihdam olanağı sağlayan Makine ve Metal Teknolojileri Bölümü bünyesinde yer alan Makine Programı, sektörün ihtiyaç duyduğu eğitim programları gözetilerek geliştirilmiştir. Makine Programında temel bilimlere yönelik dersler ve bilgisayar destekli tasarım, üretim, imalat, malzeme, kalite kontrol ve ölçme gibi makine alanına özgü teorik ve uygulamalı eğitimler verilmektedir. Programın ana hedefi hızla gelişen bilim ve teknolojinin gerektirdiği bilgi birikimine, bu bilgileri pratiğe aktarabilecek becerilere, aynı zamanda analiz ve sentez yapabilme yeteneğine sahip teknik eleman yetiştirmektir.\n\nBu programa ÖSYM Başkanlığınca yapılan Temel Yetenek Sınavına (TYT) göre öğrenci alınmaktadır. Makine programı öğreniminde öğrenci kontenjanımız 40 kişi olarak belirlenmiştir. Eğitim dili Türkçe’dir. Teorik ve uygulama dersleri Teknik Bilimler Meslek Yüksekokulu dersliklerinde ve uygulama laboratuvarlarında yapılmaktadır. Bu programdan mezun olan öğrenciler her yarıyılda 30 AKTS olmak üzere en az 120 AKTS kredisini başarıyla tamamlayarak mezun unvanı kazanmaktadır. Bölümün alt yapı ve eğitim-öğretim olanakları mezunların mesleki hayatlarında karşılaşacakları görev ve sorumlulukları alabilme becerileri kazanmalarına imkan verecek şekilde planlanmıştır.\n\nMakine Programı; sanayide faaliyet gösteren bütün kurum ve kuruluşlara ara eleman yetiştiren bir programdır. Makine Programı mezunları, kamuda veya özel sektörde; makine imalatı, otomotiv, gıda, tekstil, ağır sanayi, maden, gemi inşa, havacılık, petrokimya, enerji kuruluşları vb. gibi pek çok farklı sektörde istihdam edilmektedir.\n\nTürkiye’de sektöre göre en fazla istihdam; Türkiye İş Kurumu’nun 2019 işgücü piyasası Türkiye raporuna göre %28,9 ile “imalat” sektöründedir. Aynı raporda, genel olarak işverenlerin gelecek 10 yıl içerisinde revaçta olacağını düşündüğü ve geleceğin mesleği olarak adlandırdığı liste içerisinde 3 boyutlu katı model teknikeri, endüstriyel otomasyon teknikeri ve iklimlendirme teknikeri meslekleri yer almaktadır. Sonuçlar göz önünde bulundurulduğunda, makine alanında yetişmiş kalifiye elemanların günümüzde istihdamın önemli bir kısmını oluşturduğu ve gelecekte Makine Programı mezunlarına talebin artacağı öngörülmektedir.",
+      "char_count": 2285,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=47",
+      "title": "Misyon",
+      "body_content": "Misyon: ülkemiz için gereken nitelikli bireyler yetiştirip; bu bireylere yenilikçi, yaratıcı ve çözüm odaklı eğitimler verip, aynı zamanda milli, kültürel ve toplumsal değerlere duyarlı olarak yetiştirmeyi kendisine amaç edinmiş teknik eğitim kurumu olmak.",
+      "char_count": 256,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=47",
+      "title": "Vizyon",
+      "body_content": "Vizyon: özgün, çözüm odaklı, duyarlı, milletimizin tarihinden ve kültüründen güç alarak geleceğe yön verebilen modern bir öğretim yöntemi oluşturarak; teori ve pratiği harmanlayabilen, mesleki olarak yetkin, etik kurallara hakim ve gelişen teknolojiyi takip edip ve kullanabilen bireyler yetiştirmek.",
+      "char_count": 300,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=47",
+      "title": "Yönetim",
+      "body_content": "Yönetim\r\n\nDoç. Dr. İpek ATİK\n\nMeslek Yüksekokul Müdür Vekili\n\nring_volume\n2284\n\nmail\nipek.atik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Sedat GÜVEN\n\nBölüm Başkan V.\n\nring_volume\n3181\n\nmail\nsedat.guven@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 237,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=47",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nDr. Öğr. Üyesi Sedat GÜVEN\n\nDr. Öğr. Üyesi\n\nring_volume\n3110\n\nmail\nsedat.guven@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Abdurrahman DOĞAN\n\nDr. Öğr. Üyesi\n\nring_volume\n3112\n\nmail\nabdurrahman.dogan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Adem AKSOY\n\nÖğretim Elemanı\n\nring_volume\n3111\n\nmail\nadem.aksoy@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 348,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=47",
+      "title": "İdari Personel",
+      "body_content": "İdari\r\n\n Mehmet DEMİROK\n\nBilgisayar İşletmeni\n\nring_volume\n3105\n\nmail\nmehmet.demirok@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Tuncay ŞAHAN\n\nYüksekokul Sekreter V.\n\nring_volume\n3102\n\nmail\ntuncay.sahan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet Şerif YEŞİLMEN\n\nBilgisayar İşletmeni\n\nring_volume\n3106\n\nmail\nmehmetserif.yesilmen@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 344,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/makineprogrami/icerik/22856/bologna-icerikleri",
+      "title": "Bologna İçerikleri",
+      "body_content": "1. Yarıyıl\n\nMP104 - Matematik\n\nMP105 - İmalat İşlemleri 1\n\nMP109 - Teknik Resim\n\nOZD051 - Atatürk İlkeleri ve İnkılap Tarihi 1\n\nOZD053 - Türk Dili 1\n\nOZD055 - Yabancı Dil 1\n\nMP112 - Mekanik\n\nOZD057 - Kariyer Planlama\n\nOSD023 - Toplum ve Kültürü Anlamak\n\nSeçmeli Ders ( Altta yer alan dersler arasında)\n\n2. Yarıyıl\n\nMP205 - İmalat İşlemleri 2\n\nMP209 - Bilgisayar Destekli Çizim 1\n\nMP212 - İşçi sağlığı ve İş Güvenliği\n\nMP213 - Malzeme Bilimi 1\n\nMP214 - Mukavemet\n\nOZD052 - Atatürk İlkeleri ve İnkılap Tarihi 2\n\nOZD054 - Türk Dili 2\n\nOZD056 - Yabancı Dil 2\n\nOSD012 - Medeniyetler ve Küresel Karşılaşmalar\n\nSeçmeli Ders ( Altta yer alan dersler arasında)\n\n3. Yarıyıl\n\nMP311 - Bilgisayar Destekli Çizim\n\nMP314 - CNC Torna Teknolojisi\n\nMP315 - Termodinamik\n\nMP316 - Makine Elemanları\n\nOSD028 - Yapay Zeka ve İnsan\n\nSeçmeli Ders ( Altta yer alan dersler arasında)\n\nSeçmeli Ders ( Altta yer alan dersler arasında)\n\nSeçmeli Ders ( Altta yer alan dersler arasında)\n\n4 Yarıyıl\n\nMP410 - Modern Üretim Teknolojileri\n\nMP411 - Enerji Sistemleri\n\nMP413 - CNC Freze Teknoljisi\n\nMP414 - Sta\nj\n\nOSD004 - Post-Modern Dönemde Din ve Gençlik\n\nSeçmeli Ders ( Altta yer alan dersler arasında)\n\nSeçmeli Ders ( Altta yer alan dersler arasında)\n\nSeçmeli Ders ( Altta yer alan dersler arasında)\n\nSeçmeli Dersler\n\nMPS25 - Ölçme ve Kontrol\n\nMPS26 - Mesleki Matematik\n\nMPS27 - Malzeme Bilimi- II\n\nMPS28 - Temel Elektrik Uygulamaları\n\nMPS29 - Hidrolik ve Pnömatik\n\nMPS30 - Yüzey İşlemleri\n\nMPS31 - Işıl İşlemler\n\nMPS32 - Tersine Mühendislik\n\nMPS33 - PLC Teknolojisi\n\nMPS34 - Kalıpçılık\n\nMPS35 - Laboratuvar\n\nMPS36 - Kaynak Teknolojisi\n\nMPS37 - Saç Metal Şekillendirme\n\nMPS38 - Transport Teknolojisi\n\nMPS39 - Makine Tasarımı\n\nMPS40 - Döküm Teknolojisi\n\nMPS41 - Toz Metalurjisi\n\nMPS42 - İmalat İşlemleri - III\n\nMPS43 - Standardizasyon\n\nMPS44 - Güneş Enerjileri\n\nMPS45 - Motor Teknolojisi\n\nMPS46 - Tesisat Teknolojisi\n\nMPS47 - İklimlendirme\n\nMPS48 - Bilgisayar Destekli Üretim\n\nMPS49 - İleri Modelleme Teknikleri",
+      "char_count": 1978,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/makineprogrami/icerik/25110",
+      "title": "Müfredat",
+      "body_content": "Makine Programı Müfredatı Türkçe 2024-2025 için  \ntıklayınız\n\n Department Of Machinery Metal Technologies Curriculum English 2024-2025 \nclick",
+      "char_count": 141,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/makineprogrami/icerik/31208/program-egitim-amaclari",
+      "title": "Program Eğitim Amaçları",
+      "body_content": "Makine Programı eğitim amaçları, öğrencilerimizin mezuniyet sonrası mesleki ve bireysel gelişimlerinde ulaşmaları beklenen hedefleri ifade eder. Aşağıda programımız için belirlenmiş 4 eğitim amacı listelenmiştir:\n\nPEA1:\n Makine sektörünün üretim, bakım, kalite ve imalat gibi uygulama alanlarında görev alarak; teknik bilgilerini etkin biçimde kullanan, iş ortamında sorumluluk alabilen nitelikli teknik elemanlar olmaları.\n\nPEA2:\n Karmaşık problemleri tanımlayabilen, çözüm geliştirebilen ve teknolojik gelişmeleri üretim süreçlerine entegre edebilen, yaratıcı ve yenilikçi teknikerler olmaları.\n\nPEA3:\n Meslekî faaliyetlerinde etik kurallara bağlı hareket eden; iş güvenliği, çevre, kalite ve toplumsal etki konularında duyarlılık sahibi, sürdürülebilirlik ilkesini benimseyen bireyler olmaları.\n\nPEA4:\n Mesleki gelişimini sürdürebilecek farkındalığa sahip, yaşam boyu öğrenme bilincine ulaşmış ve yeni teknolojileri öğrenmeye istekli bireyler olmaları.",
+      "char_count": 955,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/makineprogrami/icerik/31223/makine-program-ciktilari",
+      "title": "Makine Program Çıktıları",
+      "body_content": "Makine Programı’nın amacı; teknik bilgi ve becerilerini etkin bir şekilde kullanabilen, üretim ve bakım süreçlerine katkı sağlayan, yenilikçi, çözüm odaklı ve etik değerlere bağlı teknikerler yetiştirmektir. Bu doğrultuda belirlenen Program Çıktıları (PÇ), Türkiye Yükseköğretim Yeterlilikler Çerçevesi (TYYÇ) ile uyumlu şekilde tasarlanmış olup öğrencilerimizin mezun olduklarında kazanmaları beklenen bilgi, beceri ve yetkinlikleri tanımlar.\n\nAşağıda, Makine Programı’na ait 11 Program Çıktısı yer almaktadır:\n\nTemel teknik hesaplamalar için gerekli olan matematiksel, fiziksel ve malzeme bilgilerini uygulamalı süreçlerde kullanır.\n\nTeknik resim, CAD yazılımları ve imalat teknolojileri kullanarak üretim ve bakım faaliyetlerini destekler.\n\nİmalat uygulamalarında tasarım ilkeleri doğrultusunda çözüm önerileri geliştirir.\n\nAtölye ve laboratuvar ortamlarında deney planlar, veri toplar, ölçüm yapar ve sonuçları değerlendirir.\n\nMakine sektöründe kullanılan makine ve teçhizatların yazılım sistemlerini güvenli ve etkin şekilde kullanır.\n\nSektörel güncellemeleri takip eder, yeni teknolojileri öğrenerek üretim süreçlerine entegre eder.\n\nEndüstriyel ortamlarda takım çalışmasına uyum sağlar, gerektiğinde bağımsız karar alma sorumluluğu üstlenir.\n\nMesleki faaliyetlerinde etik ilkelere bağlı kalır, kalite bilinciyle hareket eder ve iş güvenliği kurallarına uyar.\n\nSözlü ve yazılı iletişim araçlarını kullanarak teknik bilgileri açık ve anlaşılır biçimde ifade eder.\n\nÖğrenme sürecini kendi başına sürdürebilecek farkındalığa sahiptir; mesleki gelişimine yönelik adımlar atar.\n\nMakine sistemleriyle ilgili uygulamalarda; iş güvenliği, çevresel sürdürülebilirlik, üretim kalitesi ve toplumsal etkiyi gözetir; bu alanlardaki teknik kararların doğurabileceği etik ve hukuki sonuçlar hakkında farkındalık geliştirir.",
+      "char_count": 1814,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/makineprogrami/icerik/31239/danismanlik-saatleri",
+      "title": "Danışmanlık Saatleri",
+      "body_content": "Danışman Hoca\n\nSınıf\n\nGün\n\nSaat\n\nDr. Öğr. Üyesi Sedat GÜVEN\n\n1. Sınıf\n\nSalı\n\n09:25-10:10\n\n2. Sınıf\n\nPazartesi\n\n13:30–14:15\n\n Öğr. Gör. Abdurrahman DOĞAN\r\n\n1. Sınıf\n\nPazartesi\n\n13:30–15:10\n\n2. Sınıf\n\nPazartesi\n\n15:20–17:00\n\nÖğr. Gör. Adem AKSOY\n\n1. Sınıf\n\nÇarşamba\n\n13:30-14:20\n\n2. Sınıf\n\nPerşembe\n\n14:25–15:20",
+      "char_count": 309,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=47",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Güz Yarıyılı Bütünleme Sınav Takvimi\n\n22.01.2026\n\n2025-2026 Güz Yarıyılı Final Programı\n\n26.01.2026\n\n2025-2026 Güz Yarıyılı Makine Programı Ara Sınav Programı ( Güncel )\n\n30.10.2025",
+      "char_count": 216,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=47",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nMakine Programı Öğrencilerimizden Devlet Demiryolları 'na Mesleki Gezi\n\n26.01.2026\n\nKariyer Günleri Kapsamında Murat Anlaş 'ı Ağırladık\n\n06.01.2026",
+      "char_count": 172,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=47",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nM\nü\nf\nr\ne\nd\na\nt\n\nDuyuru\n\n20.03.2025\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\nm\nu\nz\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nE\nl\ne\nm\na\nn\nı\nn\nı\nn\n\nK\ni\nt\na\nb\nı\n\nY\na\ny\nı\nm\nl\na\nn\nd\nı\n\nHaber\n\n06.08.2021\n\n KATEGORİLER\r\n\nDuyuru\n\nHaber\n\nTanıtım",
+      "char_count": 235,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=47",
+      "title": "Mevzuatlar",
+      "body_content": "Yönergeler\n\n Gaziantep İslam Bilim ve Teknoloji Üniversitesi Teknik Bilimler Meslek Yüksekokulu Staj Yönergesi\r\n\nMevzuatlar",
+      "char_count": 123,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=47",
+      "title": "Formlar",
+      "body_content": "Öğrenci\n\n Ders Ekleme Çıkarma Dilekçesi\r\n\n Ders Muafiyeti Başvuru Formu\r\n\n İlişik Kesme Başvuru Formu\r\n\n Kayıt Dondurma Formu\r\n\n Mazeret Sınavı Başvuru Formu\r\n\n Not Düzeltme Formu\r\n\n Sağlık Raporu Bildirim Dilekçesi\r\n\n Taahhütname- Yatay Geçiş Başvuru Formu ( Başarı Puanı ile )\r\n\n Taahhütname-yatay Geçiş Başvuru Formu ( Merkezi Yerleştirme Puanı ile )\r\n\nStaj\n\n F01 - Staj Başvuru Formu\r\n\n F02 - Aile Sağlık Yardımı Sorgulama Belgesi\r\n\n F04 - İş Yeri Staj Sözleşmesi\r\n\n F05 - Staj Dosyası\r\n\n F06 - Öğrenci İşyeri Değerlendirme Anketi\r\n\n F07 - İşyeri Öğrenci Değerlendirme Formu\r\n\n F08 - Staj Yoklama Çizelgesi\r\n\n F09 - Öğrenci Staj Sicil Fişi\r\n\n Staj Duyurusu 2025\r\n\n Staj Kılavuzu\r\n\n Staj Yönergesi",
+      "char_count": 700,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=47",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "Sıkça Sorulan Sorular\r\n\nkeyboard_arrow_right\n\n Dikey Geçiş Sınavı ( DGS ) Sonrası Hangi Bölümleri Tercih Edebiliriz ?\r\n\nkeyboard_arrow_right\n\nBu bölümden mezun olan öğrencilerimiz için 2547 sayılı Yükseköğretim mevzuatının dikey geçiş esasları uyarınca eğitime devam edebilme olanağı mevcuttur. Dikey geçiş Yapılabilecek 4 Yıllık Bölümler şunlardır;\n\nEndüstri Mühendisliği\n\nEnerji Sistemleri Mühendisliği\n\nGemi İnşaatı ve Gemi Makineleri Mühendisliği\n\nEnerji Yönetimi Endüstri ve Sistem Mühendisliği\n\nGemi Makineleri İşletme Mühendisliği\n\nGemi ve Deniz Teknolojisi Mühendisliği\n\nİmalat Mühendisliği\n\nMakine Mühendisliği\n\nMakine ve İmalat Mühendisliği\n\nMalzeme Bilimi ve Mühendisliği\n\nMalzeme Bilimi ve Nanoteknoloji Mühendisliği\n\nMalzeme Mühendisliği\n\nMetalurji ve Malzeme Mühendisliği\n\nNanoteknoloji Mühendisliği\n\nNanobilim ve Nanoteknoloji\n\nOtomotiv Mühendisliği\n\nTakım Makineleri ve Teknolojileri Mühendisliği\n\n GİBTÜ 'de Olanaklar Nelerdir?\r\n\nkeyboard_arrow_right\n\nSpor Tesisleri ve Faaliyetleri, Sosyal ve Kültürel Etkinlikler, Kariyer Hizmetleri, Burslar ve Maddi İmkanlar, Öğrenci Kulüpleri, Sağlık Hizmetleri, Barınma, Ulaşım, Beslenme, Kütüphane, Yemekhane ve İnternet olanakları bulunmaktadır.\n\n GİBTÜ 'e Nasıl Ulaşım Sağlayabilirim ?\r\n\nkeyboard_arrow_right\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi, Gaziantep şehrinin güneybatısında bulunmaktadır. Bulunduğu bölge halk arasında \"Onkoloji Bölgesi\", \"Beştepe Bölgesi\" veya \"Antepia Bölgesi\" olarak tanımlanmaktadır. Şehir içi merkezden bu bölgeye B31, B60-1, TA3, B45, B77 numaralı otobüs seferleriyle ulaşım sağlanmaktadır.\n\n Yurt İmkanı Var Mı ?\r\n\nkeyboard_arrow_right\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi'nde kampüs içinde kız öğrenci yurdu bulunmaktadır.",
+      "char_count": 1737,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 3,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=47",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nmakineprogrami@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nÖğr. Gör. Adem AKSOY\n\nadem.aksoy@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 344,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "title": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "department": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 6,
+    "tanitim": 3,
+    "yonetim": 1,
+    "personel": 2,
+    "mufradat": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "yonetmelik": 1,
+    "form": 1,
+    "iletisim": 1,
+    "menu_haritasi": 1
+  }
+}

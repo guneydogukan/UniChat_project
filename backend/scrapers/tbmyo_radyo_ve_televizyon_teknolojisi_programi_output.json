@@ -1,0 +1,300 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:49:55Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\MESLEK YÜKSEKOKULLARI\\Teknik Bilimler Meslek Yüksekokulu\\Elektronik_ve_Otomasyon_Bölümü-Radyo_ve_Televizyon_Teknolojisi.html",
+    "birim_id": 48,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Radyo ve Televizyon Teknolojisi Programi"
+  },
+  "summary": {
+    "total_blueprint_urls": 21,
+    "total_fetched": 21,
+    "total_valid": 21,
+    "total_failed": 0,
+    "total_skipped": 0,
+    "total_documents": 22,
+    "total_chars": 15763
+  },
+  "discovered_pdfs": [],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=48",
+      "title": "Radyo ve Televizyon Teknolojisi",
+      "body_content": "2025-2026 Güz Yarıyılı Vize Programı\n\nGİBTÜ Teknik Bilimler MYO Öğrencileri Gaziantep Foruma Yoğun Katılım Sağladı\n\nHABERLER\n\nTÜMÜ\n\n30.10.2025 22:16\n\n2025-2026 Güz Yarıyılı Vize Programı\n\n Devamını Oku\r\n\n22.10.2025 09:39\n\nGİBTÜ Teknik Bilimler MYO Öğrencileri Gaziantep Foruma Yoğun Katılım Sağladı\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi’nin öncülüğünde, Gaziantep Valiliği, Gaziantep Büyükşehir Belediyesi ve Şahinbey Belediyesi iş birliğiyle düzenlenen Gaziantep Forum II, “İslâm Dünyası Nereye? – Güçlü Bir Gelecek İçin Perspektif” temasıyla Şahinbey Kongre ve Sanat Merkezinde başladı.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n30\n\nEki\n\n 2025-2026 Güz Yarıyılı Vize Programı",
+      "char_count": 680,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=48",
+      "title": "Yönetim",
+      "body_content": "Bölüm Başkanı\r\n\nDr. Öğr. Üyesi Gökhan TOPAL\n\nÖğretim Elemanı\n\nring_volume\n3182\n\nmail\ngokhan.topal@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 128,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=48",
+      "title": "Hakkımızda",
+      "body_content": "Hakkımızda\n\n18 Mayıs 2018 tarih ve 30425 sayılı Resmi Gazetede yayınlanan Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 09/05/2018 olan 7141 nolu Kanunla, 2809 sayılı kanuna yapılan ek maddeyle önce Gaziantep Bilim ve Teknoloji Üniversitesine bağlı Teknik Bilimler Meslek Yüksekokulu bünyesinde açılmıştır.\n\nRadyo ve Televizyon Teknolojisi Genel Bilgileri\n\nEğitim Süresi            \n: 2 yıl \n\nDiploma Türü            : \nÖn lisans\n\nÖğrenim yöntem ve teknikleri         \n:  Anlatım, Uygulama\n\nKontenjan\n                 : 40\n\nRadyo ve Televizyon Teknolojisi Amaçları\n\nRadyo ve Televizyon Programcılığı Önlisans Programının amacı radyo televizyon programları konusunda gerekli kurumsal bilgiyi sunarken, radyo ve televizyon programcılığı süreçlerini yönetme, çeşitli programlar üretme ve yayınlayabilme bilgisini edindirerek gelişen ve dönüşen dijital dünya hakkında gerekli bilgi ile mezun olunmasını sağlamaktır. Böylelikle, bu programda başta radyo televizyon olmak üzere sinema ve dijital kültür gibi farklı kitle iletişim ortam ve araçlarının kulanım yerlerini ve biçimlerini bilen, radyo ve televizyon alanı ile ilgili karşılaştığı sorunları çözmeye yönelik doğru bilgi kaynaklarına ulaşabilen, radyo ve televizyon programları üreten ekiplerin içinde sorumluluklarını yerine getirebilen bireylerin yetiştirilmesi hedeflenirken, yenilikçi dünyanın dijital teknolojileri hakkında da altyapı oluşturulması amaçlanmaktadır.\n\nRadyo ve Televizyon Teknolojisi Avantajları\n\n1- Kurgu kuramını uygulayarak mesleği için gerekli bilgisayar yazılımlarını kullanabilme.\n\n2- Fotoğraf makinesi ve tv kamerasını kullanarak, sanatsal ve teknik yönden duygusal etkiyi arttırma yöntemlerini uygulayabilme.\n\n3- Halkla ilişkiler ve pazarlama kavramlarını tanıtım sürecine uyarlayabilme .\n\n4- Radyo ve televizyon teknolojisi alanındaki çalışmalar için gerekli verileri tanımlama ve değerlendirme.\n\n5- Haber yazım ve röportaj tekniklerini geliştirebilme.\n\n6- Mesleki teknik cihazlar ile görsel işitsel medya üretme yollarını yönetebilme ve uygulayabilme.\n\n7- Radyo programı üretebilmek için radyo yayımcılığının temel aşamalarını tanımlayabilme.\n\n8- Radyo ve televizyon tasarımı planlayabilme ve uygulayabilme, ses ve görüntü dilini kullanarak etki yaratabilme. Bununla birlikte ekip çalışmasını yönetme becerisi kazanma.\n\n 9- Radyo-televizyon-internet sektöründe üretim ve dağıtım aşamalarını planlayabilme.\n\n10- Sesi tasarımı uygulayabilme.\n\n11- Belgesel yapım sürecini başından sonuna oluşturabilme ve mesleki etik bilinciyle hareket etme.\n\n12- Görsel medya için gereken sanatsal atmosfer çalışmaları ile oyuncu yönetimi için gerekli beceriyi kazanma.\n\n13- Kısa Film Proje hazırlama, yönetme ve takım çalışması düzenleyebilme.\n\n14- Senaryo yazım tekniklerini etkin bir biçimde kullanma.",
+      "char_count": 2833,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=48",
+      "title": "Misyon",
+      "body_content": "Küresel düzeyde yenilikçi bir eğitim ortamında öğrencileri ve akademik kadrosuyla birlikte öğrenme arzusu etrafında buluşan teori ve uygulamanın birbirini tamamladığı düşünen, araştıran, ekip çalışmasına açık, yaratıcı, kendine güvenen, sosyal sorumluluk bilincine ve etik anlayışına sahip, çağdaş ve insani değerlerle donanmış yerel, bölgesel, ulusal kalkınmaya katkıda bulunmayı amaçlayan girişimci öğrenciler yetiştirilmesi hedeflenmektedir.",
+      "char_count": 444,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTanitim.aspx?id=48",
+      "title": "Tanıtım",
+      "body_content": "Tanıtımımız hazırlanıyor...",
+      "char_count": 27,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=48",
+      "title": "Vizyon",
+      "body_content": "Sürekli kendisini yenileyen iletişim ve teknoloji dünyasının ihtiyaç ve beklentilerini yakalayan, geleceğe entelektüel, kalifiye meslek insanları ve geniş ufuklu bireyler yetiştirerek, Dünyayı ve ülkesini doğru algılayabilen nesiller topluma kazandırmayı amaçlamaktadır.",
+      "char_count": 270,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/radyotelevizyonteknolojisi/icerik/13288/egitim-katalogu-ve-brosurler",
+      "title": "Eğitim Kataloğu ve Broşürler",
+      "body_content": "Eğitim Kataloğu ve Broşürler için \nTıklayınız.\n\nTürkçe Kurum Kataloğu için\n\nTıklayınız\n\nİngilizce Kurum Kataloğu için \nTıklayınız",
+      "char_count": 129,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimakademikpersonel.aspx?id=48",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nDr. Öğr. Üyesi Nermin KAPTAN\n\nDr. Öğr. Üyesi\n\nring_volume\n3114\n\nmail\nnermin.kaptan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Gökhan TOPAL\n\nÖğr. Gör. Dr.\n\nring_volume\n3107\n\nmail\ngokhan.topal@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Fırat BİNGÖL\n\nÖğretim Elemanı\n\nring_volume\n3108\n\nmail\nfirat.bingol@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 345,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/birimicerik.aspx?id=48&icid=2586",
+      "title": "Bologna",
+      "body_content": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi\n\nTeknik Bilimler Meslek Yüksekokulu\n\nRadyo ve Televizyon Teknolojisi Programı Müfredatı\n\nYarı Yıl\n\nDersin Kodu\n\nDersin Adı\n\nSınıf\n\nDönem\n\nSaat\n\nKredi\n\nAKTS\n\nDersin Tipi\n\nT\n\nU\n\nOZD051\n\nAtatürk İlkeleri ve İnkılap Tarihi-I\n\n1\n\nGüz\n\n2\n\n0\n\n2\n\n2\n\nÜniversite Seçmelisi\n\nOZD053\n\nTürk Dili-I\n\n1\n\nGüz\n\n2\n\n0\n\n2\n\n2\n\nÜniversite Seçmelisi\n\nOZD055\n\nYabancı Dil-I\n\n1\n\nGüz\n\n2\n\n0\n\n2\n\n2\n\nÜniversite Seçmelisi\n\nOZD057\n\nKariyer Planlama\n\n1\n\nGüz\n\n1\n\n0\n\n1\n\n2\n\nÜniversite Seçmelisi\n\nOSD023\n\nToplum ve Kültürü Anlamak\n\n1\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nÜniversite Seçmelisi\n\nRTT109\n\nTemel Kamera ve Çekim Teknikleri\n\n1\n\nGüz\n\n2\n\n1\n\n3\n\n4\n\n Zorunlu\n\nRTT110\n\nHaber Toplama ve Yazma Teknikleri-I\n\n1\n\nGüz\n\n2\n\n1\n\n3\n\n       4\n\nZorunlu\n\nRTT112\n\nTemel Kurgu Teknikleri\n\n1\n\nGüz\n\n2\n\n1\n\n3\n\n4\n\nBölüm Seçmelisi\n\nRTT113\n\nTemel Fotoğrafçılık Teknikleri\n\n1\n\nGüz\n\n2\n\n1\n\n3\n\n4\n\nBölüm Seçmelisi\n\nRTT114\n\nTemel İletişim\n\n1\n\nGüz\n\n2\n\n0\n\n2\n\n4\n\nBölüm Seçmelisi\n\nRTT115\n\nİkna Edici İletişim\n\n1\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT116\n\nDinler ve Ekoloji\n\n1\n\nGüz\n\n3\n\n0\n\n3\n\n4\n\nBölüm Seçmelisi\n\nRTT117\n\nTürk Siyasi Tarihi\n\n1\n\nGüz\n\n3\n\n0\n\n3\n\n3\n\nBölüm Seçmelisi\n\nToplam\n\n25\n\n34\n\nII. Yarı Yıl\n\nDersin Kodu\n\nDersin Adı\n\nSınıf\n\nDönem\n\nSaat\n\nKredi\n\nAKTS\n\nDersin Tipi\n\nT\n\nU\n\nOZD052\n\nAtatürk İlkeleri ve İnkılap Tarihi-II\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n2\n\nÜniversite Seçmelisi\n\nOZD054\n\nTürk Dili-II\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n2\n\nÜniversite Seçmelisi\n\nOZD056\n\nYabancı Dil-II\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n2\n\nÜniversite Seçmelisi\n\nOSD012\n\nMedeniyetler ve Küresel Karşılaşmalar\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nÜniversite Seçmelisi\n\nRTT210\n\nİleri Düzey Kamera ve Çekim Teknikleri\n\n1\n\nBahar\n\n2\n\n2\n\n3\n\n5\n\nZorunlu\n\nRTT211\n\nSenaryo\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n2\n\nZorunlu\n\nRTT212\n\nHaber Toplama ve Yazma Teknikleri-II\n\n1\n\nBahar\n\n2\n\n2\n\n3\n\n5\n\nZorunlu\n\nRTT213\n\nİleri Düzey Kurgu Teknikleri\n\n1\n\nBahar\n\n2\n\n2\n\n3\n\n5\n\nBölüm Seçmelisi\n\nRTT214\n\nİnternet Haberciliği\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n2\n\nBölüm Seçmelisi\n\nRTT215\n\nİleri Düzey Fotoğrafçılık\n\n1\n\nBahar\n\n2\n\n2\n\n3\n\n4\n\nBölüm Seçmelisi\n\nRTT216\n\nEkoloji ve Sinema\n\n1\n\nBahar\n\n2\n\n2\n\n3\n\n5\n\nBölüm Seçmelisi\n\nRTT217\n\nKültürlerarası İletişim\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT218\n\nMedya ve Popüler Kültür\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nToplam\n\n26\n\n35\n\nIII. Half Year\n\nDersin Kodu\n\nDersin Adı\n\nSınıf\n\nDönem\n\nSaat\n\nKredi\n\nAKTS\n\nDersin Tipi\n\nT\n\nU\n\nOSD028\n\nYapay Zeka ve İnsan\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nÜniversite Seçmelisi\n\nRTT309\n\nRadyo ve Podcast Program Yapımı-I\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nZorunlu\n\nRTT310\n\nTelevizyonda Yapım Yönetim\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nZorunlu\n\nRTT311\n\nKısa Film Yapımı\n\n2\n\nGüz\n\n2\n\n2\n\n3\n\n5\n\nZorunlu\n\nRTT312\n\nMedya Ekonomisi\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT313\n\nYeni Medya ve Toplum\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT314\n\nSinematografi\n\n2\n\nGüz\n\n2\n\n1\n\n3\n\n5\n\nBölüm Seçmelisi\n\nRTT315\n\nKitle İletişim Kuramları\n\n2\n\nGüz\n\n2\n\n0\n\n3\n\n5\n\nBölüm Seçmelisi\n\nRTT316\n\nSiyasi Düşünce Tarihi\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT317\n\nMedya Okuryazarlığı\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT318\n\nGönüllülük Çalışmaları\n\n2\n\nGüz\n\n2\n\n0\n\n3\n\n5\n\nBölüm Seçmelisi\n\nToplam\n\n18\n\n30\n\nIV. Yarı Yıl\n\nDersin Kodu\n\nDersin Adı\n\nSınıf\n\nDönem\n\nSaat\n\nKredi\n\nAKTS\n\nDersin Tipi\n\nT\n\nU\n\nOSD004\n\nPost-Modern Dönemde Din ve Gençlik\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nÜniversite Seçmelisi\n\nRTT410\n\nRadya ve Podcast Program Yapımı-II\n\n2\n\nBahar\n\n2\n\n1\n\n3\n\n4\n\nZorunlu\n\nRTT411\n\nHalkla İlişkiler ve Medya\n\n2\n\nBahar\n\n3\n\n0\n\n3\n\n5\n\nZorunlu\n\nRTT412\n\nFilm Eleştiri ve Analizi  \n\n2\n\nBahar\n\n2\n\n2\n\n3\n\n5\n\nZorunlu\n\nRTT413\n\nYeni İletişim Teknolojileri\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n4\n\nBölüm Seçmelisi\n\nRTT414\n\nDijital Reklamcılık\n\n2\n\nBahar\n\n3\n\n0\n\n3\n\n4\n\nBölüm Seçmelisi\n\nRTT415\n\nBelgesel Film\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n2\n\nBölüm Seçmelisi\n\nRTT416\n\nİş Sağlığı ve Güvenliği\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT417\n\nUygarlık Tarihi\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT418\n\nProtokol Yönetimi ve Sosyal Davranış\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT419\n\nBasının Güncel Sorunları\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nToplam\n\n20\n\n30",
+      "char_count": 3949,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/radyotelevizyonteknolojisi/icerik/31398/danismanliklar",
+      "title": "Danışmanlıklar",
+      "body_content": "Danışman Hoca\n\nSınıflar\n\nÖğr. Gör. Fırat BİNGÖL\n\n1 Sınıflar\n\nÖğr. Gör. Fırat BİNGÖL\n\n2. Sınıflar",
+      "char_count": 96,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/radyotelevizyonteknolojisi/icerik/31396/danismanlik-saatleri",
+      "title": "Danışmanlık Saatleri",
+      "body_content": "Danışman Hoca \n\nSınıf\n\nGün\n\nSaat\n\nÖğr. Gör. Dr. Gökhan TOPAL\n\n1.Sınıf\n\n2.Sınıf\n\nPazartesi\n\nPerşembe\n\n8:30/9:30\n\n8:30/9:30\n\nÖğr. Gör. Dr. Nermin KAPTAN\n\n1.Sınıf\n\n2.Sınıf\n\nPerşembe\n\nPerşembe\n\n9:30/10:30\n\n10:30/11:30\n\nÖğr. Gör. Fırat BİNGÖL\n\n1.Sınıf\n\n2.Sınıf\n\nCuma\n\nCuma\n\n10:00/11:00\n\n11:00/12:00\n\nDanışmanlık Talep Formunu Doldurmak İçin \nTıklayınız",
+      "char_count": 347,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/birimicerik.aspx?id=48&icid=2585",
+      "title": "Müfredat",
+      "body_content": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi\n\nTeknik Bilimler Meslek Yüksekokulu\n\nRadyo ve Televizyon Teknolojisi Programı Müfredatı\n\nYarı Yıl\n\nDersin Kodu\n\nDersin Adı\n\nSınıf\n\nDönem\n\nSaat\n\nKredi\n\nAKTS\n\nDersin Tipi\n\nT\n\nU\n\nOZD051\n\nAtatürk İlkeleri ve İnkılap Tarihi-I\n\n1\n\nGüz\n\n2\n\n0\n\n2\n\n2\n\nÜniversite Seçmelisi\n\nOZD053\n\nTürk Dili-I\n\n1\n\nGüz\n\n2\n\n0\n\n2\n\n2\n\nÜniversite Seçmelisi\n\nOZD055\n\nYabancı Dil-I\n\n1\n\nGüz\n\n2\n\n0\n\n2\n\n2\n\nÜniversite Seçmelisi\n\nOZD057\n\nKariyer Planlama\n\n1\n\nGüz\n\n1\n\n0\n\n1\n\n2\n\nÜniversite Seçmelisi\n\nOSD023\n\nToplum ve Kültürü Anlamak\n\n1\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nÜniversite Seçmelisi\n\nRTT109\n\nTemel Kamera ve Çekim Teknikleri\n\n1\n\nGüz\n\n2\n\n1\n\n3\n\n4\n\n Zorunlu\n\nRTT110\n\nHaber Toplama ve Yazma Teknikleri-I\n\n1\n\nGüz\n\n2\n\n1\n\n3\n\n       4\n\nZorunlu\n\nRTT112\n\nTemel Kurgu Teknikleri\n\n1\n\nGüz\n\n2\n\n1\n\n3\n\n4\n\nBölüm Seçmelisi\n\nRTT113\n\nTemel Fotoğrafçılık Teknikleri\n\n1\n\nGüz\n\n2\n\n1\n\n3\n\n4\n\nBölüm Seçmelisi\n\nRTT114\n\nTemel İletişim\n\n1\n\nGüz\n\n2\n\n0\n\n2\n\n4\n\nBölüm Seçmelisi\n\nRTT115\n\nİkna Edici İletişim\n\n1\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT116\n\nDinler ve Ekoloji\n\n1\n\nGüz\n\n3\n\n0\n\n3\n\n4\n\nBölüm Seçmelisi\n\nRTT117\n\nTürk Siyasi Tarihi\n\n1\n\nGüz\n\n3\n\n0\n\n3\n\n3\n\nBölüm Seçmelisi\n\nToplam\n\n25\n\n34\n\nII. Yarı Yıl\n\nDersin Kodu\n\nDersin Adı\n\nSınıf\n\nDönem\n\nSaat\n\nKredi\n\nAKTS\n\nDersin Tipi\n\nT\n\nU\n\nOZD052\n\nAtatürk İlkeleri ve İnkılap Tarihi-II\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n2\n\nÜniversite Seçmelisi\n\nOZD054\n\nTürk Dili-II\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n2\n\nÜniversite Seçmelisi\n\nOZD056\n\nYabancı Dil-II\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n2\n\nÜniversite Seçmelisi\n\nOSD012\n\nMedeniyetler ve Küresel Karşılaşmalar\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nÜniversite Seçmelisi\n\nRTT210\n\nİleri Düzey Kamera ve Çekim Teknikleri\n\n1\n\nBahar\n\n2\n\n2\n\n3\n\n5\n\nZorunlu\n\nRTT211\n\nSenaryo\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n2\n\nZorunlu\n\nRTT212\n\nHaber Toplama ve Yazma Teknikleri-II\n\n1\n\nBahar\n\n2\n\n2\n\n3\n\n5\n\nZorunlu\n\nRTT213\n\nİleri Düzey Kurgu Teknikleri\n\n1\n\nBahar\n\n2\n\n2\n\n3\n\n5\n\nBölüm Seçmelisi\n\nRTT214\n\nİnternet Haberciliği\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n2\n\nBölüm Seçmelisi\n\nRTT215\n\nİleri Düzey Fotoğrafçılık\n\n1\n\nBahar\n\n2\n\n2\n\n3\n\n4\n\nBölüm Seçmelisi\n\nRTT216\n\nEkoloji ve Sinema\n\n1\n\nBahar\n\n2\n\n2\n\n3\n\n5\n\nBölüm Seçmelisi\n\nRTT217\n\nKültürlerarası İletişim\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT218\n\nMedya ve Popüler Kültür\n\n1\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nToplam\n\n26\n\n35\n\nIII. Half Year\n\nDersin Kodu\n\nDersin Adı\n\nSınıf\n\nDönem\n\nSaat\n\nKredi\n\nAKTS\n\nDersin Tipi\n\nT\n\nU\n\nOSD028\n\nYapay Zeka ve İnsan\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nÜniversite Seçmelisi\n\nRTT309\n\nRadyo ve Podcast Program Yapımı-I\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nZorunlu\n\nRTT310\n\nTelevizyonda Yapım Yönetim\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nZorunlu\n\nRTT311\n\nKısa Film Yapımı\n\n2\n\nGüz\n\n2\n\n2\n\n3\n\n5\n\nZorunlu\n\nRTT312\n\nMedya Ekonomisi\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT313\n\nYeni Medya ve Toplum\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT314\n\nSinematografi\n\n2\n\nGüz\n\n2\n\n1\n\n3\n\n5\n\nBölüm Seçmelisi\n\nRTT315\n\nKitle İletişim Kuramları\n\n2\n\nGüz\n\n2\n\n0\n\n3\n\n5\n\nBölüm Seçmelisi\n\nRTT316\n\nSiyasi Düşünce Tarihi\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT317\n\nMedya Okuryazarlığı\n\n2\n\nGüz\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT318\n\nGönüllülük Çalışmaları\n\n2\n\nGüz\n\n2\n\n0\n\n3\n\n5\n\nBölüm Seçmelisi\n\nToplam\n\n18\n\n30\n\nIV. Yarı Yıl\n\nDersin Kodu\n\nDersin Adı\n\nSınıf\n\nDönem\n\nSaat\n\nKredi\n\nAKTS\n\nDersin Tipi\n\nT\n\nU\n\nOSD004\n\nPost-Modern Dönemde Din ve Gençlik\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nÜniversite Seçmelisi\n\nRTT410\n\nRadya ve Podcast Program Yapımı-II\n\n2\n\nBahar\n\n2\n\n1\n\n3\n\n4\n\nZorunlu\n\nRTT411\n\nHalkla İlişkiler ve Medya\n\n2\n\nBahar\n\n3\n\n0\n\n3\n\n5\n\nZorunlu\n\nRTT412\n\nFilm Eleştiri ve Analizi  \n\n2\n\nBahar\n\n2\n\n2\n\n3\n\n5\n\nZorunlu\n\nRTT413\n\nYeni İletişim Teknolojileri\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n4\n\nBölüm Seçmelisi\n\nRTT414\n\nDijital Reklamcılık\n\n2\n\nBahar\n\n3\n\n0\n\n3\n\n4\n\nBölüm Seçmelisi\n\nRTT415\n\nBelgesel Film\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n2\n\nBölüm Seçmelisi\n\nRTT416\n\nİş Sağlığı ve Güvenliği\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT417\n\nUygarlık Tarihi\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT418\n\nProtokol Yönetimi ve Sosyal Davranış\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nRTT419\n\nBasının Güncel Sorunları\n\n2\n\nBahar\n\n2\n\n0\n\n2\n\n3\n\nBölüm Seçmelisi\n\nToplam\n\n20\n\n30",
+      "char_count": 3949,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=48",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Güz Yarıyılı Vize Programı\n\n30.10.2025",
+      "char_count": 73,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=48",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Güz Yarıyılı Vize Programı\n\n30.10.2025\n\nGİBTÜ Teknik Bilimler MYO Öğrencileri Gaziantep Foruma Yoğun Katılım Sağladı\n\n22.10.2025",
+      "char_count": 163,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=48",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nG\nü\nz\n\nY\na\nr\nı\ny\nı\nl\nı\n\nD\ne\nr\ns\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n14.09.2025\n\nP\nr\no\nf\ne\ns\ny\no\nn\ne\nl\n\nF\no\nt\no\nğ\nr\na\nf\n\nÇ\ne\nk\ni\nm\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nDuyuru\n\n03.05.2024\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nM\ne\nz\nu\nn\ni\ny\ne\nt\n\nH\ne\ny\ne\nc\na\nn\nı\n\nDuyuru\n\n18.07.2023\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nÇ\na\nl\nı\nş\nm\na\nl\na\nr\nı\n\nDuyuru\n\n13.04.2022\n\n KATEGORİLER\r\n\nDuyuru\n\nEğitim\n\nHaber\n\nÖğrenci İlanı",
+      "char_count": 406,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=48",
+      "title": "Formlar",
+      "body_content": "Öğrenci İşleri\n\n Ders Ekleme Çıkarma Dilekçesi\r\n\n Ders Muafiyeti Başvuru Formu\r\n\n İlişik Kesme Başvuru Formu\r\n\n Kayıt Dondurma Formu\r\n\n Mazeret Sınavı Başvuru Formu\r\n\n Not Düzeltme Formu\r\n\n Sağlık Raporu Bildirim Formu\r\n\n Taahhütname- Yatay Geçiş Başvuru Formu ( Başarı Puanı ile )\r\n\n Taahhütname- Yatay Geçiş Başvuru Formu ( Merkezi Yerleştirme Puanı ile )\r\n\nPersonel İşleri\n\n Aile Durum Bildirim Formu\r\n\n Doktor Öğretim Üyesi Değerlendirme ve Faaliyet Raporu\r\n\n Emeklilik Başvuru Dilekçesi\r\n\n Hizmet Birleştirme Dilekçesi\r\n\n İlişik Kesme Formu\r\n\n Kimlik Kartı Talep Formu\r\n\n Mal Bildirim Formu\r\n\n Nakil Bildirim Formu\r\n\n Öğretim Elemanı ( Öğretim Görevlisi-araştırma Görevlisi ) Başvuru Formu Örneği\r\n\n Öğretim Elemanı ( Öğretim Görevlisi-araştırma Görevlisi ) Değerlendirme ve Faaliyet Raporu\r\n\n Öğretim Üyesi ( Prof.- Doç.- Dr. Öğr. Üyesi ) Başvuru Formu Örneği\r\n\n Tebliğ Tebellüğ Belgesi Formu\r\n\n Ücretsiz İzin Talep Formu\r\n\n Yurt İçi Görev Yolluk Bildirim Formu",
+      "char_count": 967,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=48",
+      "title": "Galeri",
+      "body_content": "2026\n\n2024\n\n2022\n\n2025-2026 Güz Yarıyılı Ders Programı",
+      "char_count": 54,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=48",
+      "title": "Faydalı Linkler",
+      "body_content": "CİMER\r\n\n Genç İletişimciler\r\n\n Radyo GİBTÜ\r\n\n Rtük\r\n\n TÜBİTAK\r\n\n Yetenek Tv",
+      "char_count": 75,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=48",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=48",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nradyotelevizyonteknolojisi@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nDr. Öğr. Üyesi Nermin KAPTAN\n\nnermin.kaptan@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 367,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=48",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nDr. Öğr. Üyesi Gökhan TOPAL\n\nring_volume\n3107\n\nmail\ngokhan.topal@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nÖğr. Gör. Fırat BİNGÖL\n\nring_volume\n3108\n\nmail\nfirat.bingol@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nermin KAPTAN\n\nring_volume\n3114\n\nmail\nnermin.kaptan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Gökhan TOPAL\n\nring_volume\n3182\n\nmail\ngokhan.topal@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 435,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "title": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "department": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 22,
+      "total": 22,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 9,
+    "yonetim": 1,
+    "tanitim": 4,
+    "personel": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}
