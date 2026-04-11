@@ -1,0 +1,387 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:11:50Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\İktisadi İdari ve Sosyal Bilimler Fakültesi\\Mütercim_Tercümanlık_Bölümü.html",
+    "birim_id": 94,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Mutercim Tercumanlik Bolumu"
+  },
+  "summary": {
+    "total_blueprint_urls": 19,
+    "total_fetched": 19,
+    "total_valid": 19,
+    "total_failed": 0,
+    "total_skipped": 0,
+    "total_documents": 37,
+    "total_chars": 21523
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Mta 1. Sınıf İzlenceleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240924091450_8b328361.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Mta 2. Sınıf İzlenceleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240924091511_65289b4a.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Mti 1. Sınıf İzlenceleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240924091536_6ead29cf.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Mti 2. Sınıf İzlenceleri",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240924091554_ebd21dee.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Öğrenci Oryantasyon Sunumu ( Türkçe )",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20241007102929_dd7fb879.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Öğrenci Oryantasyon Sunumu ( İngilizce )",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20241007102954_4e077786.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "İngilizce Mütercim Tercümanlık Müfredatı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250214162123_7fb7cd4f.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Arapça Mütercim Tercümanlık Müfredatı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250214162111_f3aa2881.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2024-2025 Akademik Yılı Mütercim Tercümanlık Bölümü Oryantasyon Sunumu Anket Sonuçları",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20241015104640_13c9a891.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Arapça Mütercim ve Tercümanlık Bölümü Eğitim Öğretim Planı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250916130547_3c744cef.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "İngilizce Mütercim ve Tercümanlık Bölümü Eğitim Öğretim Planı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250916130613_0a3c86e0.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Kalite Güvencesi ve Kalite Koordinatörlüğü Yönergesi",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240326152553_96195cba.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2023-2024 Yılı Akreditasyon Genel Değerlendirme Raporu",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240625132813_58015c22.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2023-2024 Güz Dönemi Mti Anket Raporları",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240326154319_15f17a02.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2023-2024 Bahar Dönemi Mti Anket Raporları",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240920160846_08eb6d8b.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Kalite Komisyonu",
+      "url": "https://www.gibtu.edu.tr/medya/gibtudosya/20231115150905_c38ea370.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Birim Kalite Komisyonları Yönergesi",
+      "url": "https://www.gibtu.edu.tr/medya/gibtudosya/20231115150845_99c2f097.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [
+    {
+      "text": "Ders İçerikleri",
+      "url": "https://ubys.gibtu.edu.tr/ais/outcomebasedlearning/home/index?culture=tr-tr",
+      "type": "subdomain"
+    },
+    {
+      "text": "Aday Öğrenci Portalı",
+      "url": "https://adayogrenci.gibtu.edu.tr/",
+      "type": "subdomain"
+    },
+    {
+      "text": "Mezun Öğrenci Bilgi Sistemi",
+      "url": "https://ubys.gibtu.edu.tr/gts/portal/home/index",
+      "type": "subdomain"
+    },
+    {
+      "text": "Uzaktan Eğitim Uygulama ve Araştırma Merkezi",
+      "url": "https://ubys.gibtu.edu.tr",
+      "type": "subdomain"
+    }
+  ],
+  "failed_urls": [],
+  "skipped_urls": [],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/mutercimtercumanlik/icerik/33063/2025-2026-mta-ders-izlenceleri",
+      "title": "2025-2026-MTA-DERS İzlenceleri",
+      "body_content": "https://drive.google.com/drive/folders/13v72PPl-cDHj6TKm3qgR-1JuXWrpewP-?usp=gmail\n\nhttps://drive.google.com/drive/folders/1v5scc66h2pc-bsullRvA8-55U6CVDwgb?usp=gmail",
+      "char_count": 166,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=94",
+      "title": "Mütercim Tercümanlık Bölümü",
+      "body_content": "GİBTÜ 'de Geleceğin Eğitim Modeli Konuşuldu\n\nGİBTÜ 'nün Kalite Yolculuğu ISO 9001 ile Taçlandı\n\nTürkiye Yüzyılı Maarif Modeli Konferansı\n\nGİBTÜ 'de Mehmet Akif ve Çanakkale Ruhu Konferansı Gerçekleştirildi\n\nUzun Yılların Hizmetine Teşekkür\n\nGİBTÜ, IKAF26 'da Gençlerin Kariyer Yolculuğuna Yön Veriyor\n\nRektörümüzden Ramazan Bayramı Mesajı\n\nGİBTÜ 'de Çanakkale Geçilmez Programı Duygu Dolu Anlara Sahne Oldu\n\nDUYURULAR\n\nTÜMÜ\n\n20\n\nOca\n\n 2025-2026 Eğitim Öğretim Yılı İngilizce Mütercim ve Tercümanlık Bölümü Güz Dönemi Bütünleme Programı Yayınlandı!\r\n\n20\n\nOca\n\n 2025-2026 Eğitim Öğretim Yılı Arapça Mütercim ve Tercümanlık Bölümü Güz Dönemi Bütünleme Programı Yayınlandı!\r\n\n23\n\nAra\n\n 2025-2026 Eğitim Öğretim Yılı İngilizce Mütercim ve Tercümanlık Bölümü Güz Dönemi Final Programı Yayınlandı!\r\n\n23\n\nAra\n\n 2025-2026 Eğitim Öğretim Yılı Arapça Mütercim ve Tercümanlık Bölümü Güz Dönemi Final Programı Yayınlandı!\r\n\n28\n\nEki\n\n İngilizce Mütercim ve Tercümanlık Bölümü 2025-2026 Güz Dönemi Vize Programı Güncellendi!\r\n\n24\n\nEki\n\n Arapça Mütercim ve Tercümanlık Bölümü 2025-2026 Güz Dönemi Vize Programı Yayınlandı!",
+      "char_count": 1106,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=94",
+      "title": "Yönetim",
+      "body_content": "Yönetim\r\n\n Bölüm Kurulu\r\n\nDr. Öğr. Üyesi İbrahim ALŞİBLİ\n\nAnabilim Dalı Başkanı\n\nring_volume\n0000\n\nmail\nibrahim.alsibli@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Suna ÖZKAN\n\nAnabilim Dalı Başkanı\n\nring_volume\n0000\n\nmail\nsuna.ozkan@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 266,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=94",
+      "title": "Misyon",
+      "body_content": "Çağdaş bir dünya görüşüne ve evrensel değerlere sahip olan, öncelikle Türkçeyi sonra en az bir yabancı dili en üst düzeyde bilmenin ve çeviride kullanmanın yanı sıra, tıp, hukuk, sosyal bilimler, teknik ve edebiyat alanlarında, terminoloji ve alan bilgisiyle donanmış ve bu alanlarda ulusal ve uluslararası düzeyde çeviri yapan, çevirmenlik mesleğinin etik değerlerine sahip yazılı ve sözlü çevirmenler yetiştirmek.",
+      "char_count": 415,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTanitim.aspx?id=94",
+      "title": "Tanıtım",
+      "body_content": "Mütercim ve Tercümanlık Bölümü'nün kuruluş amacı, bilimsel yöntemler çerçevesinde hukuk, iktisat, edebiyat, sosyal, teknik ve fen bilimleri, tıp, siyaset bilimi, uluslararası ilişkiler, maliye ve benzeri birçok konuda ve çağın gerekleri doğrultusunda gelişmekte olan yeni alanlarda İngilizce-Türkçe ve Arapça-Türkçe dil çiftleri çerçevesinde yazılı ve sözlü çeviri yapabilecek bilgili, kültürlü, mesleğin gerektirdiği becerilerle donanmış ve bu alanda büyük ölçüde gereksinim duyulan nitelikli mütercim ve tercümanlar yetiştirmektir.\n\nBölüm kataloğumuza aşağıdan ulaşabilirsiniz.\n\nTürkçe\n\nEnglish\n\nArabic",
+      "char_count": 604,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=94",
+      "title": "Tarihçe",
+      "body_content": "Üniversitemiz 18 Mayıs 2018 tarih ve 30425 sayılı Resmi Gazetede yayınlanan Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 09/05/2018 olan 7141 nolu Kanunla, 2809 sayılı kanuna yapılan ek maddeyle önce Gaziantep Bilim ve Teknoloji Üniversitesi adıyla, daha sonra ise 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan Vergi Kanunları ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 17/01/2019 olan 7161 nolu Kanunun 14.maddesi ile 2809 sayılı Kanunun ek 178.maddesi başlığının birinci fıkrasında yer alan “Gaziantep Bilim ve Teknoloji Üniversitesi” ibareleri, “Gaziantep İslam Bilim ve Teknoloji Üniversitesi” olarak değiştirilmesi ile kurulmuştur. Bölümümüz ise 2023-2024 eğitim öğretim yılı itibarıyla İktisadi İdari ve Sosyal Bilimler Fakültesi altında çalışmalarını yürütmektedir.",
+      "char_count": 900,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=94",
+      "title": "Vizyon",
+      "body_content": "Çeviribilime yönelik akademik çalışmalarda ve çevirmenliği meslek olarak yapan bireylerin yetiştirilmesinde, Türkiye'de uluslararası düzeyde çeviri eğitimi veren en yetkin bölüm olmak; ulusal ve uluslararası kuruluşlarda çalıştırılmak üzere tercih edilen, çok dilli çeviri yapabilen sözlü ve yazılı çevirmenler yetiştirmek; hem ulusal hem de uluslararası kurum ve kuruluşlarla işbirliği içinde bilim dünyasına olduğu kadar ülke kalkınmasına da katkıda bulunacak önder bir bölüm olmak.",
+      "char_count": 484,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimakademikpersonel.aspx?id=94",
+      "title": "Akademik Personel",
+      "body_content": "İngilizce Mütercim Tercümanlık Bölümü\r\n\nDr. Öğr. Üyesi Suna ÖZKAN\n\nAnabilim Dalı Başkanı\n\nring_volume\n0000\n\nmail\nsuna.ozkan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Sinan ÖZYURT\n\nDr. Öğr. Üyesi\n\nring_volume\n1076\n\nmail\nsinan.ozyurt@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Kübra AKSOY ÇINAR\n\nDr. Öğr. Üyesi\n\nring_volume\n0000\n\nmail\nkubra.aksoycinar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Vildan İNCİ KAVAK\n\nDr. Öğr. Üyesi\n\nring_volume\n1075\n\nmail\nvildan.incikavak@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Busenur ASLAN\n\nArş. Gör.\n\nring_volume\n1078\n\nmail\nbusenur.aslan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Mustafa DAĞDELEN\n\nArş. Gör.\n\nring_volume\n1078\n\nmail\nmustafa.dagdelen@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Arapça Mütercim Tercümanlık Bölümü\r\n\nDr. Öğr. Üyesi İbrahim ALŞİBLİ\n\nAnabilim Dalı Başkanı\n\nring_volume\n1073\n\nmail\nibrahim.alsibli@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mohamed ABDELREHEM\n\nDr. Öğr. Üyesi\n\nring_volume\n1074\n\nmail\nmohamed.abdelrehem@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Tarraf ALNAHAR\n\nDr. Öğr. Üyesi\n\nring_volume\n1072\n\nmail\ntarraf.alnahar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Ömer Faruk YETİM\n\nDr. Öğr. Üyesi\n\nring_volume\n2129\n\nmail\nomerfaruk.yetim@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Abdurrahim EKİNCİ\n\nDr. Öğr. Üyesi\n\nring_volume\n3112\n\nmail\nabdurrahim.ekinci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Tuba ÖZAYDIN\n\nArş. Gör.\n\nring_volume\n1078\n\nmail\ntuba.ozaydin@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1479,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimidaripersonel.aspx?id=94",
+      "title": "İdari Personel",
+      "body_content": "İdari\r\n\n Fatma Nur ÖZTEKİN\n\nMemur\n\nring_volume\n1063\n\nmail\nfatmanur.oztekin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet Zahid CEYHAN\n\nMemur\n\nring_volume\n0000\n\nmail\nmehmetzahid.ceyhan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Ümmügülsüm ÇELİK\n\nFakülte Sekreteri\n\nring_volume\n1062\n\nmail\nummugulsum.celik@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 318,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/akademiktakvim",
+      "title": "Akademik Takvim",
+      "body_content": "Dosyayı görüntüleyemiyorsanız, \nburadan indirebilirsiniz\n veya dosyayı görüntülemk için \nAdobe PDF Reader\n indirebilirsiniz.",
+      "char_count": 124,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=94",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Eğitim Öğretim Yılı İngilizce Mütercim ve Tercümanlık Bölümü Güz Dönemi Bütünleme Programı Yayınlandı!\n\n20.01.2026\n\n2025-2026 Eğitim Öğretim Yılı Arapça Mütercim ve Tercümanlık Bölümü Güz Dönemi Bütünleme Programı Yayınlandı!\n\n20.01.2026\n\n2025-2026 Eğitim Öğretim Yılı İngilizce Mütercim ve Tercümanlık Bölümü Güz Dönemi Final Programı Yayınlandı!\n\n23.12.2025\n\n2025-2026 Eğitim Öğretim Yılı Arapça Mütercim ve Tercümanlık Bölümü Güz Dönemi Final Programı Yayınlandı!\n\n23.12.2025\n\nİngilizce Mütercim ve Tercümanlık Bölümü 2025-2026 Güz Dönemi Vize Programı Güncellendi!\n\n28.10.2025\n\nArapça Mütercim ve Tercümanlık Bölümü 2025-2026 Güz Dönemi Vize Programı Yayınlandı!\n\n24.10.2025",
+      "char_count": 713,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=94",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=94",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nA\nk\na\nd\ne\nm\ni\nd\ne\nn\n\nS\na\nh\na\ny\na\n:\n\nÇ\ne\nv\ni\nr\nm\ne\nn\ni\nn\n\nY\no\nl\nc\nu\nl\nu\nğ\nu\n\nA\nd\nl\nı\n\nP\na\nn\ne\nl\n\nY\no\nğ\nu\nn\n\nİ\nl\ng\ni\n\nG\nö\nr\nd\nü\n\nDuyuru\n\n28.05.2025\n\n1\n9\n\nM\na\ny\nı\ns\n\nA\nt\na\nt\nü\nr\nk\n\n'\nü\n\nA\nn\nm\na\n\nG\ne\nn\nç\nl\ni\nk\n\nv\ne\n\nS\np\no\nr\n\nB\na\ny\nr\na\nm\nı\nm\nı\nz\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n!\n\nDuyuru\n\n20.05.2025\n\nÇ\na\nl\nı\nş\nt\na\ny\nı\nm\nı\nz\na\n\nT\nü\nm\n\nA\nk\na\nd\ne\nm\ni\nk\n\nP\ne\nr\ns\no\nn\ne\nl\ni\nm\ni\nz\n\nD\na\nv\ne\nt\nl\ni\nd\ni\nr\n\nDuyuru\n\n14.05.2025\n\nP\na\nn\ne\nl\ni\nm\ni\nz\ne\n\nT\nü\nm\n\nA\nk\na\nd\ne\nm\ni\nk\n\nP\ne\nr\ns\no\nn\ne\nl\ni\nm\ni\nz\n\nD\na\nv\ne\nt\nl\ni\nd\ni\nr\n.\n\nDuyuru\n\n13.05.2025\n\nÇ\na\nl\nı\nş\nt\na\ny\nı\nm\nı\nz\na\n\nT\nü\nm\n\nA\nk\na\nd\ne\nm\ni\nk\n\nP\ne\nr\ns\no\nn\ne\nl\ni\nm\ni\nz\n\nD\na\nv\ne\nt\nl\ni\nd\ni\nr\n\nDuyuru\n\n13.05.2025\n\nA\nn\nn\ne\nl\ne\nr\n\nG\nü\nn\nü\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n11.05.2025\n\nS\ne\nv\ng\ni\n\nV\na\nr\ns\na\n\nE\nn\ng\ne\nl\n\nY\no\nk\nt\nu\nr\n\nDuyuru\n\n08.05.2025\n\nÜ\nn\ni\nd\ne\ns\n\nK\na\np\ns\na\nm\nı\nn\nd\na\n\nP\nr\no\nj\ne\nl\ne\nr\ni\nm\ni\nz\n\nK\na\nb\nu\nl\n\nE\nd\ni\nl\nd\ni\n\nDuyuru\n\n08.05.2025\n\n1\n\nM\na\ny\nı\ns\n\nİ\nş\nç\ni\n\nB\na\ny\nr\na\nm\nı\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n01.05.2025\n\nÇ\no\nc\nu\nk\n\nE\ns\ni\nr\ng\ne\nm\ne\n\nK\nu\nr\nu\nm\nu\n\nİ\nç\ni\nn\n\nK\ne\nr\nm\ne\ns\n\nD\nü\nz\ne\nn\nl\ne\nd\ni\nk\n\nDuyuru\n\n30.04.2025\n\n2\n3\n\nN\ni\ns\na\nn\n\nU\nl\nu\ns\na\nl\n\nE\ng\ne\nm\ne\nn\nl\ni\nk\n\nv\ne\n\nÇ\no\nc\nu\nk\n\nB\na\ny\nr\na\nm\nı\nm\nı\nz\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n23.04.2025\n\nİ\nn\ng\ni\nl\ni\nz\nc\ne\n\nD\ni\nl\ni\n\nG\nü\nn\nü\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n23.04.2025\n\nÇ\na\nn\na\nk\nk\na\nl\ne\n\nZ\na\nf\ne\nr\ni\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n18.03.2025\n\nİ\ns\nt\ni\nk\nl\na\nl\n\nM\na\nr\nş\nı\n\n'\nm\nı\nz\nı\nn\n\nK\na\nb\nu\nl\nü\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n12.03.2025\n\nK\na\nd\nı\nn\nl\na\nr\n\nG\nü\nn\nü\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n08.03.2025\n\nH\na\ny\nı\nr\nl\nı\n\nR\na\nm\na\nz\na\nn\nl\na\nr\n\nDuyuru\n\n01.03.2025\n\nS\ne\nv\ng\ni\n\nG\nü\nn\nü\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n14.02.2025\n\nK\na\nd\nı\nn\n\nv\ne\n\nK\nı\nz\n\nÇ\no\nc\nu\nk\nl\na\nr\nı\n\nG\nü\nn\nü\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n13.02.2025\n\n6\n\nŞ\nu\nb\na\nt\n\nD\ne\np\nr\ne\nm\nl\ne\nr\ni\nn\nd\ne\nk\ni\n\nK\na\ny\nı\np\nl\na\nr\nı\nm\nı\nz\nı\n\nR\na\nh\nm\ne\nt\nl\ne\n\nA\nn\nı\ny\no\nr\nu\nz\n.\n\nDuyuru\n\n06.02.2025\n\nG\na\nz\ni\n\nŞ\ne\nh\nr\ni\nm\ni\nz\ni\nn\n\nK\nu\nr\nt\nu\nl\nu\nş\nu\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n25.12.2024\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\nm\ni\nz\nd\ne\n\nD\nü\nn\ny\na\n\nA\nr\na\np\nç\na\n\nG\nü\nn\nü\n\nC\no\nş\nk\nu\ny\nl\na\n\nK\nu\nt\nl\na\nn\nd\nı\n\nDuyuru\n\n19.12.2024\n\nD\no\nç\n.\n\nD\nr\n.\n\nM\n.\n\nC\ne\nm\n\nO\nd\na\nc\nı\no\nğ\nl\nu\n\n'\nn\nu\nn\n\nK\no\nn\nu\nk\n\nO\nl\nd\nu\nğ\nu\n\nW\ne\nb\ni\nn\na\nr\n\n'\nı\nm\nı\nz\n\nA\nk\na\nd\ne\nm\ni\nk\n\nP\ne\nr\ns\no\nn\ne\nl\ni\nm\ni\nz\n\nv\ne\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\ni\nn\n\nK\na\nt\nı\nl\nı\nm\nı\ny\nl\na\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\n\nDuyuru\n\n19.12.2024\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\n\nB\nö\nl\nü\nm\n\nT\na\nn\nı\nt\nı\nm\n\nv\ne\n\nK\na\nr\ni\ny\ne\nr\n\nF\nu\na\nr\nı\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\n\nDuyuru\n\n16.12.2024\n\nD\no\nç\n.\n\nD\nr\n.\n\nM\n.\n\nC\ne\nm\n\nO\nd\na\nc\nı\no\nğ\nl\nu\n\n'\nn\nu\nn\n\nK\no\nn\nu\nk\n\nO\nl\na\nc\na\nğ\nı\n\nW\ne\nb\ni\nn\na\nr\n\n'\nı\nm\nı\nz\na\n\nT\nü\nm\n\nP\ne\nr\ns\no\nn\ne\nl\ni\nm\ni\nz\n\nv\ne\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\n\nD\na\nv\ne\nt\nl\ni\nd\ni\nr\n.\n\nDuyuru\n\n11.12.2024\n\nB\ni\nl\ni\nn\nç\nl\ni\n\nO\nl\n,\n\nF\na\nr\nk\nı\nn\nd\na\n\nO\nl\n\nA\nm\na\n\nE\nn\ng\ne\nl\n\nO\nl\nm\na\n!\n\nDuyuru\n\n03.12.2024\n\nM\nü\nt\ne\nr\nc\ni\nm\n\nv\ne\n\nT\ne\nr\nc\nü\nm\na\nn\nl\nı\nk\n\nB\nö\nl\nü\nm\nü\n,\n\nİ\ns\nl\na\nm\n\nD\nü\nn\ny\na\ns\nı\nn\nd\na\n\nİ\nl\ne\nt\ni\nş\ni\nm\n\nv\ne\n\nG\nü\nv\ne\nn\n\nA\nr\na\ny\nı\nş\nı\n\nF\no\nr\nu\nm\nu\nn\nd\na\n\nDuyuru\n\n03.12.2024\n\nM\nü\nt\ne\nr\nc\ni\nm\n\nv\ne\n\nT\ne\nr\nc\nü\nm\na\nn\nl\nı\nk\n\nB\nö\nl\nü\nm\nü\nn\nd\ne\n\nÖ\nğ\nr\ne\nt\nm\ne\nn\nl\ne\nr\n\nG\nü\nn\nü\n\nC\no\nş\nk\nu\ny\nl\na\n\nK\nu\nt\nl\na\nn\nd\nı\n.\n\nDuyuru\n\n02.12.2024\n\nD\nr\n.\n\nÖ\nğ\nr\n.\n\nÜ\ny\ne\ns\ni\n\nM\no\nh\na\nm\ne\nd\n\nA\nb\nd\ne\nl\nr\ne\nh\ne\nm\n\nH\no\nc\na\nm\nı\nz\nd\na\nn\n\nÖ\nn\ne\nm\nl\ni\n\nA\nd\nı\nm\nl\na\nr\n\nDuyuru\n\n12.11.2024\n\nE\nğ\ni\nt\ni\nm\nd\ne\n\nS\nü\nr\ne\nk\nl\ni\n\nG\ne\nl\ni\nş\ni\nm\n:\n\nY\no\nğ\nu\nn\n\nS\nı\nn\na\nv\n\nH\na\nz\nı\nr\nl\nı\nk\n\nK\nu\nr\ns\nu\n\nT\na\nm\na\nm\nl\na\nn\nd\nı\n\nDuyuru\n\n12.11.2024\n\n8\n.\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nB\ni\nl\ni\nm\nl\ne\nr\ni\n\nK\no\nn\ng\nr\ne\ns\ni\n\nG\nİ\nB\nT\nÜ\n\nO\nt\nu\nr\nu\nm\nl\na\nr\nı\n\nB\na\nş\na\nr\nı\ny\nl\na\n\nS\no\nn\na\n\nE\nr\nd\ni\n\nDuyuru\n\n08.11.2024\n\nC\nu\nm\nh\nu\nr\ni\ny\ne\nt\n\nB\na\ny\nr\na\nm\nı\nm\nı\nz\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n29.10.2024\n\nG\nİ\nB\nT\nÜ\n\nM\nü\nt\ne\nr\nc\ni\nm\n\nT\ne\nr\nc\nü\nm\na\nn\nl\nı\nk\n\nB\nö\nl\nü\nm\nü\n\n'\nn\nd\ne\nk\ni\n\nY\ne\nn\ni\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\ne\n\nO\nr\ny\na\nn\nt\na\ns\ny\no\nn\n\nS\nu\nn\nu\nm\nu\n\nY\na\np\nı\nl\nd\nı\n\nDuyuru\n\n30.09.2024\n\nM\nü\nt\ne\nr\nc\ni\nm\n\nT\ne\nr\nc\nü\nm\na\nn\nl\nı\nk\n\nB\nö\nl\nü\nm\nü\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nA\nk\na\nd\ne\nm\ni\nk\n\nY\nı\nl\nı\n\nK\nu\nr\nu\nl\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n\nDuyuru\n\n12.09.2024\n\nH\no\nş\n\nG\ne\nl\nd\ni\nn\ni\nz\n\nDuyuru\n\n21.08.2024\n\nD\nr\n.\n\nÖ\nğ\nr\n.\n\nÜ\ny\ne\ns\ni\n\nM\no\nh\na\nm\ne\nd\n\nA\nb\nd\ne\nl\nr\ne\nh\ne\nm\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nM\nü\nn\na\nz\na\nr\na\n\nH\na\nk\ne\nm\nl\ni\nğ\ni\n\nE\nğ\ni\nt\ni\nm\n\nK\nu\nr\ns\nu\nn\na\n\nK\na\nt\nı\nl\nd\nı\n.\n\nDuyuru\n\n31.07.2024\n\nM\nü\nt\ne\nr\nc\ni\nm\n\nT\ne\nr\nc\nü\nm\na\nn\nl\nı\nk\n\nB\nö\nl\nü\nm\nü\n\nv\ne\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n\nÖ\nl\nç\nm\ne\n\nv\ne\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nK\no\no\nr\nd\ni\nn\na\nt\nö\nr\nl\nü\nğ\nü\n\n\"\nt\ne\ns\nt\ni\nn\ng\n\nA\nn\nd\n\nA\ns\ns\ne\ns\ns\nm\ne\nn\nt\n\nP\nr\no\ng\nr\na\nm\n\n-\n\nI\nt\ne\nm\n\nW\nr\ni\nt\ni\nn\ng\n\"\n\nE\nğ\ni\nt\ni\nm\ni\nn\ne\n\nK\na\nt\nı\nl\nd\nı\n.\n\nDuyuru\n\n19.07.2024\n\nG\nİ\nB\nT\nÜ\n\nM\nü\nt\ne\nr\nc\ni\nm\n\nT\ne\nr\nc\nü\nm\na\nn\nl\nı\nk\n\nB\nö\nl\nü\nm\nü\n\nv\ne\n\nY\na\nb\na\nn\nc\nı\n\nD\ni\nl\nl\ne\nr\n\nY\nü\nk\ns\ne\nk\no\nk\nu\nl\nu\n,\n\nS\nw\no\nt\n\nA\nn\na\nl\ni\nz\ni\n\nÇ\na\nl\nı\nş\nm\na\nl\na\nr\nı\n\nK\na\np\ns\na\nm\nı\nn\nd\na\n\nT\no\np\nl\na\nn\nt\nı\n\nD\nü\nz\ne\nn\nl\ne\nd\ni\n.\n\nDuyuru\n\n19.07.2024\n\nT\nü\nm\n\nB\na\nb\na\nl\na\nr\nı\nm\nı\nz\nı\nn\n\nB\na\nb\na\nl\na\nr\n\nG\nü\nn\nü\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n14.06.2024\n\nM\na\nr\ni\nj\na\nm\np\no\nl\ne\n\nU\ny\ng\nu\nl\na\nm\na\nl\nı\n\nB\ni\nl\ni\nm\nl\ne\nr\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\ns\ni\n\ni\nl\ne\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nk\n\nA\nn\nl\na\nş\nm\na\nl\na\nr\nı\nm\nı\nz\n\nY\na\np\nı\nl\nd\nı\n\nDuyuru\n\n14.06.2024\n\nD\nr\n.\n\nÖ\nğ\nr\n.\n\nÜ\ny\ne\ns\ni\n\nM\no\nh\na\nm\ne\nd\n\nA\nb\nd\ne\nl\nr\ne\nh\ne\nm\n\nM\nı\ns\nı\nr\n\n'\nd\na\nk\ni\n\n6\n\nE\nk\ni\nm\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\ns\ni\n\n'\nn\nd\ne\n\nv\ne\n\nP\na\nk\ni\ns\nt\na\nn\n\n'\nd\na\nk\ni\n\nA\nt\nh\na\nr\n\nI\nn\nt\ne\nr\nn\na\nt\ni\no\nn\na\nl\n\nA\nc\na\nd\ne\nm\ny\n\n'\nd\ne\n\nD\nü\nz\ne\nn\nl\ne\nn\ne\nn\n\nS\ne\nm\np\no\nz\ny\nu\nm\nl\na\nr\na\n\nK\na\nt\nı\nl\nd\nı\n\nDuyuru\n\n04.06.2024\n\n1\n9\n\nM\na\ny\nı\ns\n\nA\nt\na\nt\nü\nr\nk\n\n'\nü\n\nA\nn\nm\na\n\nG\ne\nn\nç\nl\ni\nk\n\nv\ne\n\nS\np\no\nr\n\nB\na\ny\nr\na\nm\nı\nm\nı\nz\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n!\n\nDuyuru\n\n18.05.2024\n\nT\nü\nr\nk\ni\ny\ne\n\n'\nd\ne\n\nA\nr\na\np\nç\na\n\nÖ\nğ\nr\ne\nt\ni\nm\ni\nn\nd\ne\n\nK\na\nr\nş\nı\nl\na\nş\nı\nl\na\nn\n\nS\no\nr\nu\nn\nl\na\nr\n\nDuyuru\n\n16.05.2024\n\nT\nü\nm\n\nA\nn\nn\ne\nl\ne\nr\ni\nm\ni\nz\ni\nn\n\nA\nn\nn\ne\nl\ne\nr\n\nG\nü\nn\nü\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n10.05.2024\n\nT\nü\nr\nk\ni\ny\ne\n\n'\nd\ne\n\nA\nr\na\np\nç\na\n\nÖ\nğ\nr\ne\nt\ni\nm\ni\nn\nd\ne\n\nK\na\nr\nş\nı\nl\na\nş\nı\nl\na\nn\n\nS\no\nr\nu\nn\nl\na\nr\n\nDuyuru\n\n09.05.2024\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nD\ni\nl\n\nÖ\nğ\nr\ne\nt\nm\ne\nn\nl\ni\nğ\ni\n\nS\ne\nr\nt\ni\nf\ni\nk\na\nl\na\nr\nı\n\nv\ne\n\nD\ni\np\nl\no\nm\na\nl\na\nr\nı\n\nDuyuru\n\n08.05.2024\n\nU\nl\nu\ns\nl\na\nr\na\nr\na\ns\nı\n\nD\ni\nl\n\nÖ\nğ\nr\ne\nt\nm\ne\nn\nl\ni\nğ\ni\n\nS\ne\nr\nt\ni\nf\ni\nk\na\nl\na\nr\nı\n\nDuyuru\n\n30.04.2024\n\nO\nk\nu\nm\na\n\nB\ne\nc\ne\nr\ni\nl\ne\nr\ni\nn\ni\nn\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\ni\nl\nm\ne\ns\ni\n\nDuyuru\n\n30.04.2024\n\n2\n3\n\nN\ni\ns\na\nn\n\nU\nl\nu\ns\na\nl\n\nE\ng\ne\nm\ne\nn\nl\ni\nk\n\nv\ne\n\nÇ\no\nc\nu\nk\n\nB\na\ny\nr\na\nm\nı\nm\nı\nz\n\nK\nu\nt\nl\nu\n\nO\nl\ns\nu\nn\n\nDuyuru\n\n22.04.2024\n\nM\ne\ns\nl\ne\nk\ni\n\nG\ne\nl\ni\nş\ni\nm\n\nA\nt\nö\nl\ny\ne\ns\ni\n-\n\n-\n\nD\ni\nl\n\nE\nğ\ni\nt\ni\nm\ni\nn\nd\ne\n\nO\nk\nu\nm\na\n\nB\ne\nc\ne\nr\ni\ns\ni\nn\ni\nn\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\ni\nl\nm\ne\ns\ni\n\nDuyuru\n\n22.04.2024\n\nK\no\nn\nu\nş\nm\na\n\nS\nı\nn\na\nv\nı\nn\nı\nn\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\nm\ne\n\nY\nö\nn\nt\ne\nm\nl\ne\nr\ni\n\nDuyuru\n\n03.04.2024\n\n KATEGORİLER\r\n\nDuyuru\n\nHaber",
+      "char_count": 6622,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=94",
+      "title": "Formlar",
+      "body_content": "Formlar\n\nFormlar\n\nok",
+      "char_count": 20,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=94",
+      "title": "Galeri",
+      "body_content": "2025\n\n2024\n\nAkademiden Sahaya: Çevirmenin Yolculuğu Adlı Panel Yoğun İlgi Gördü\n\n19 Mayıs Atatürk 'ü Anma Gençlik ve Spor Bayramımız Kutlu Olsun!\n\nÇalıştayımıza Tüm Akademik Personelimiz Davetlidir\n\nPanelimize Tüm Akademik Personelimiz Davetlidir.\n\nÇalıştayımıza Tüm Akademik Personelimiz Davetlidir\n\nAnneler Günü Kutlu Olsun\n\nSevgi Varsa Engel Yoktur\n\nÜnides Kapsamında Projelerimiz Kabul Edildi\n\n1 Mayıs İşçi Bayramı Kutlu Olsun\n\nÇocuk Esirgeme Kurumu İçin Kermes Düzenledik\n\n23 Nisan Ulusal Egemenlik ve Çocuk Bayramımız Kutlu Olsun\n\nİngilizce Dili Günü Kutlu Olsun\n\nÇanakkale Zaferi Kutlu Olsun\n\nİstiklal Marşı 'mızın Kabulü Kutlu Olsun\n\nKadınlar Günü Kutlu Olsun\n\nHayırlı Ramazanlar\n\nSevgi Günü Kutlu Olsun\n\nKadın ve Kız Çocukları Günü Kutlu Olsun\n\n6 Şubat Depremlerindeki Kayıplarımızı Rahmetle Anıyoruz.\n\nGazi Şehrimizin Kurtuluşu Kutlu Olsun\n\nÜniversitemizde Dünya Arapça Günü Coşkuyla Kutlandı\n\nDoç. Dr. M. Cem Odacıoğlu 'nun Konuk Olduğu Webinar 'ımız Akademik Personelimiz ve Öğrencilerimizin Katılımıyla Gerçekleşti\n\nÜniversite Bölüm Tanıtım ve Kariyer Fuarı Gerçekleşti\n\nDoç. Dr. M. Cem Odacıoğlu 'nun Konuk Olacağı Webinar 'ımıza Tüm Personelimiz ve Öğrencilerimiz Davetlidir.\n\nBilinçli Ol, Farkında Ol Ama Engel Olma!\n\nMütercim ve Tercümanlık Bölümü, İslam Dünyasında İletişim ve Güven Arayışı Forumunda\n\nMütercim ve Tercümanlık Bölümünde Öğretmenler Günü Coşkuyla Kutlandı.\n\nDr. Öğr. Üyesi Mohamed Abdelrehem Hocamızdan Önemli Adımlar\n\nEğitimde Sürekli Gelişim: Yoğun Sınav Hazırlık Kursu Tamamlandı\n\n8. Uluslararası Öğrenci Bilimleri Kongresi GİBTÜ Oturumları Başarıyla Sona Erdi\n\nCumhuriyet Bayramımız Kutlu Olsun\n\nGİBTÜ Mütercim Tercümanlık Bölümü 'ndeki Yeni Öğrencilerimize Oryantasyon Sunumu Yapıldı\n\nMütercim Tercümanlık Bölümü 2024-2025 Akademik Yılı Kurul Toplantısı Düzenlendi\n\nSeviye Tespit / Muafiyet Sınavı ve Muafiyet Talebi Hakkında Duyuru\n\nMütercim Tercümanlık Bölümünü Kazanan Tüm Öğrencilerin Dikkatine\n\nHoş Geldiniz\n\nDr. Öğr. Üyesi Mohamed Abdelrehem Uluslararası Münazara Hakemliği Eğitim Kursuna Katıldı.\n\nMütercim Tercümanlık Bölümü ve Yabancı Diller Yüksekokulu Ölçme ve Değerlendirme Koordinatörlüğü \"testing And Assessment Program - Item Writing\" Eğitimine Katıldı.\n\nGİBTÜ Mütercim Tercümanlık Bölümü ve Yabancı Diller Yüksekokulu, Swot Analizi Çalışmaları Kapsamında Toplantı Düzenledi.",
+      "char_count": 2328,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=94",
+      "title": "Faydalı Linkler",
+      "body_content": "Hacettepe Üniversitesi Çeviribilim ve Uygulamaları Dergisi\r\n\n Metis Çeviri Dergisi Arşivi\r\n\n The Translator: Studies In Intercultural Communication\r\n\n Translation Studies Bibliography",
+      "char_count": 183,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=94",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "Mütercim Tercümanlık Bölümü\r\n\nkeyboard_arrow_right\n\n Devamsızlık Sınırı Aşılınca Ne Olur?\r\n\nkeyboard_arrow_right\n\nDevamsızlık sınırını aşan öğrenci hazırlık sınıfından \ndevamsızlık\n nedeniyle kalmış olur. İki yıl üst üste hazırlık sınıfından başarısızlık nedeniyle kalan öğrenciler eşdeğer Türkçe programa geçme hakkına sahip iken devamsızlık nedeniyle hazırlık sınıfından kalanlar bu hakka sahip değildir.\n\n Eylül Ayı Muafiyet Sınavına Girmek Zorunlu Mudur?\r\n\nkeyboard_arrow_right\n\nBu sınav aynı zamanda seviye tespit sınavı olarak değerlendirilip sınıflara yerleştirme bu sınava göre yapılacağından Eylül ayı muafiyet sınavına girmek zorunludur. bu sınava girmeyen öğrenci zorunlu hazırlık sınıfına A1 seviyesinden başlatılacaktır.\n\n Eylül Ayı Yeterlik Sınavına Girebilmem İçin Başvuru Yapmam Gerekli Midir?\r\n\nkeyboard_arrow_right\n\nÜniversitemizde eğitime yeni başlayacak olan öğrencilerin Eylül ayı muafiyet sınavına girmek için kayıt yaptırmasına gerek yoktur. Ancak sınav saati ve sınav yeri hakkındaki duyuruların, Yabancı Diller Yüksekokulu web sayfasından takip edilmesi gerekmektedir. \n\n Hazırlık Eğitimi Boyunca Aynı Sınıfta Mı Eğitim Alınır?\r\n\nkeyboard_arrow_right\n\nHayır. Hazırlık sınıfı eğitiminde modüler sistem takip edilir ve her 7-8 haftalık periyotlar sonrasında sınıf listeleri başarı durumuna göre tekrar düzenlenir.\n\n Hazırlık Eğitimi Hangi Tarihler Arasında Yapılacaktır?\r\n\nkeyboard_arrow_right\n\n2023/2024 hazırlık eğitimi ders ve sınav tarihlerini İktisadi İdari ve Sosyal Bilimler Fakültesi web sitesinde bulunan akademik takvimden inceleyebilirsiniz.\n\n Hazırlık Sınıfı Ders Kitaplarını Nereden Temin Edebilirim?\r\n\nkeyboard_arrow_right\n\nHazırlık sınıfında kullanılacak olan ders kitapları, derslerin ilk haftasında ilgili yayınevlerinin okuldaki satış masalarından temin edilir veya sipariş verilir. Derslere kitapsız gelinmesine ve fotokopi kitap kullanılmasına izin verilmez. Öğrenciler kullanılacak kitap listesi hakkında akademik yıl başında bilgilendirilir.\n\n Hazırlık Sınıflarında Devam Zorunlu Mudur?\r\n\nkeyboard_arrow_right\n\nEvet. Derslerin en az %85’ine devam zorunludur. Bununla ilgili detaylar öğretim yılı başında hazırlık sınıfı öğrencilerine duyurulur.\n\n Mütercim Tercümanlık Öğrencileri İçin Hazırlık Programı Kaç Yıldır?\r\n\nkeyboard_arrow_right\n\nHazırlık eğitimi 1 (bir) yıldır. Bir yılın sonunda  başarılı olamayan öğrenciler bir sonraki akademik yılın başında tekrar muafiyet sınavına girerler veya açılması halinde yaz okuluna kayıt yaptırabilirler.\n\n Mütercim Tercümanlık Programlarında Yabancı Dil Hazırlık Programı Zorunlu Mudur?\r\n\nkeyboard_arrow_right\n\nMuafiyet şartları sağlanmadığı veya muafiyet sınavından geçer not (70) alınmadığı takdirde hazırlık programı zorunludur.\n\n Yabancı Dil Yeterlilik ( Muafiyet ) Sınavı Nedir?\r\n\nkeyboard_arrow_right\n\nYabancı Diller Yüksekokulu tarafından verilen dil yeterliliğini tespit etmek üzere düzenlenen ve okuduğunu anlama, dilbilgisi, kelime becerileri ile konuşma ve yazma becerilerini ölçen bir sınavdır.  Eylül Ayı Yeterlik (Muafiyet) Sınavı , zorunlu hazırlık okuyacak öğrencilerin hazırlık programından muaf olmalarını sağlayan bir sınavdır. Sınavdan 70 ve üzeri puan alan öğrenciler, hazırlık programından muaf olurlar ve doğrudan bölümlerinde derslere başlarlar.\n\n Yabancı Dil Yeterlilik ( Muafiyet ) Sınavında Geçme Notu Nedir?\r\n\nkeyboard_arrow_right\n\nSınav iki aşamalı olup ikinci aşamaya girebilmek için birinci aşamadan 50 ve üzeri almak gerekmektedir. Her iki aşamanın ortalaması 70 ve üzeri olanlar başarılı sayılırlar.\n\n Yabancı Dil Yeterlilik ( Muafiyet ) Sınavının Kapsamı Nedir?\r\n\nkeyboard_arrow_right\n\nSınavın birinci aşaması, çoktan seçmeli sorulardan oluşan dinleme, okuma, dil kullanımı (dilbilgisi + kelime); ikinci aşaması ise konuşma ve yazma bölümlerinden oluşmaktadır.",
+      "char_count": 3781,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=94",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nmutercimtercumanlik@gibtu.edu.tr\n\nphone\n+90 342 909 75 00\n\nprint\n+90 342 909 75 00\n\nWeb Sorumlumuz\n\nFatma Nur ÖZTEKİN\n\nfatmanur.oztekin@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 348,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=94",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nDr. Öğr. Üyesi İbrahim ALŞİBLİ\n\nring_volume\n0000\n\nmail\nibrahim.alsibli@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Kübra AKSOY ÇINAR\n\nring_volume\n0000\n\nmail\nkubra.aksoycinar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Mehmet Zahid CEYHAN\n\nring_volume\n0000\n\nmail\nmehmetzahid.ceyhan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Suna ÖZKAN\n\nring_volume\n0000\n\nmail\nsuna.ozkan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Ümmügülsüm ÇELİK\n\nring_volume\n1062\n\nmail\nummugulsum.celik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Fatma Nur ÖZTEKİN\n\nring_volume\n1063\n\nmail\nfatmanur.oztekin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Tarraf ALNAHAR\n\nring_volume\n1072\n\nmail\ntarraf.alnahar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi İbrahim ALŞİBLİ\n\nring_volume\n1073\n\nmail\nibrahim.alsibli@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Mohamed ABDELREHEM\n\nring_volume\n1074\n\nmail\nmohamed.abdelrehem@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Vildan İNCİ KAVAK\n\nring_volume\n1075\n\nmail\nvildan.incikavak@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Sinan ÖZYURT\n\nring_volume\n1076\n\nmail\nsinan.ozyurt@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Busenur ASLAN\n\nring_volume\n1078\n\nmail\nbusenur.aslan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Mustafa DAĞDELEN\n\nring_volume\n1078\n\nmail\nmustafa.dagdelen@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Tuba ÖZAYDIN\n\nring_volume\n1078\n\nmail\ntuba.ozaydin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Ömer Faruk YETİM\n\nring_volume\n2129\n\nmail\nomerfaruk.yetim@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Abdurrahim EKİNCİ\n\nring_volume\n3112\n\nmail\nabdurrahim.ekinci@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1644,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "title": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "department": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 20,
+      "total": 20,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 6,
+    "yonetim": 1,
+    "tanitim": 4,
+    "personel": 2,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

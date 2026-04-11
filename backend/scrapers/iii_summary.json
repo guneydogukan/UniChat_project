@@ -1,0 +1,48 @@
+{
+  "task": "3.2.8.5",
+  "description": "IISBF Harita Gudumlu Deep Scrape",
+  "birimler": [
+    {
+      "department": "Iktisadi Idari ve Sosyal Bilimler Fakultesi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\iii_iktisadi_idari_ve_sosyal_bilimler_fakultesi_output.json",
+      "total_documents": 59,
+      "total_valid": 33,
+      "total_failed": 0,
+      "total_chars": 640952,
+      "pdf_count": 25,
+      "doc_kind_distribution": {
+        "genel": 16,
+        "yonetim": 1,
+        "tanitim": 3,
+        "personel": 2,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "yonetmelik": 2,
+        "rapor": 3,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Mutercim Tercumanlik Bolumu",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\iii_mutercim_tercumanlik_bolumu_output.json",
+      "total_documents": 37,
+      "total_valid": 19,
+      "total_failed": 0,
+      "total_chars": 21523,
+      "pdf_count": 17,
+      "doc_kind_distribution": {
+        "genel": 6,
+        "yonetim": 1,
+        "tanitim": 4,
+        "personel": 2,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    }
+  ]
+}
