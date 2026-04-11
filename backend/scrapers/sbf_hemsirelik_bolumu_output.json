@@ -1,0 +1,293 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T21:08:53Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\Sağlık Bilimleri Fakültesi\\Hemşirelik.html",
+    "birim_id": 29,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Hemsirelik Bolumu"
+  },
+  "summary": {
+    "total_blueprint_urls": 21,
+    "total_fetched": 21,
+    "total_valid": 18,
+    "total_failed": 0,
+    "total_skipped": 3,
+    "total_documents": 20,
+    "total_chars": 19969
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Hemşirelik Komite Listesi",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250717112036_b3daf852.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=29",
+      "reason": "too_short (0 chars)",
+      "char_count": 0
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=29",
+      "reason": "too_short (5 chars)",
+      "char_count": 5
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=29",
+      "reason": "too_short (19 chars)",
+      "char_count": 19
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=29",
+      "title": "Hemşirelik",
+      "body_content": "Bölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Sigaranın Zararlarına Yönelik Etkinlik Düzenlendi.\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Öfke Kontrol Eğitim Etkinliği Düzenlendi.\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Stresle Baş Etme Etkinliği Düzenlendi.\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Uyku Hijyeni Eğitim Etkinliği Düzenlendi.\n\nBölümümüz Tarafından Mesleğe İlk Adım Töreni Düzenlenecektir.\n\n2025-2026 Eğitim ve Öğretim Yılı Bahar Dönemi Vize Sınav Takvimi Açıklanmıştır.\n\nHemşirelik Bölümü 2025-2026 Eğitim ve Öğretim Yılı Bahar Dönemi Ders Programı Yayınlanmıştır.\n\nHemşirelik Bölümü 2025-2026 Güz Dönemi Bütünleme Sınav Takvimi Açıklanmıştır.\n\nHABERLER\n\nTÜMÜ\n\n08.04.2026 16:57\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Sigaranın Zararlarına Yönelik Etkinlik Düzenlendi.\n\n Devamını Oku\r\n\n08.04.2026 16:45\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Stresle Baş Etme Etkinliği Düzenlendi.\n\n Devamını Oku\r\n\n08.04.2026 16:39\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Uyku Hijyeni Eğitim Etkinliği Düzenlendi.\n\n Devamını Oku\r\n\n07.01.2026 10:02\n\nArş. Gör. Sebahat Kuşlu 'nun TUBİTAK-1005 Projesi Kabul Edildi.\n\n Devamını Oku\r\n\n17.12.2025 10:16\n\nBölümümüz Akademisyenlerinden Doç. Dr. Çiğdem Aksu EN İyi Sözel Sunum Birincilik Ödülü Kazandı\n\n Devamını Oku\r\n\n17.12.2025 10:15\n\nHemşirelik Bölümü Tarafından \" Kaliteli Uykunun Önemi \" Etkinliği Düzenlendi\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n08\n\nNis\n\n Bölümümüz Tarafından Mesleğe İlk Adım Töreni Düzenlenecektir.\r\n\n01\n\nNis\n\n 2025-2026 Eğitim ve Öğretim Yılı Bahar Dönemi Vize Sınav Takvimi Açıklanmıştır.\r\n\n11\n\nŞub\n\n Hemşirelik Bölümü 2025-2026 Eğitim ve Öğretim Yılı Bahar Dönemi Ders Programı Yayınlanmıştır.\r\n\n22\n\nOca\n\n Hemşirelik Bölümü 2025-2026 Güz Dönemi Bütünleme Sınav Takvimi Açıklanmıştır.\r\n\n28\n\nAra\n\n 2025-2026 Eğitim ve Öğretim Yılı Güz Dönemi Final Sınav Takvimi Açıklanmıştır.\r\n\n08\n\nAra\n\n GİBTÜ 'de \" HIV 'i Tanıyorum, HIV Hakkında Bilinçleniyorum \" Paneli Gerçekleştirildi\r\n\n08\n\nAra\n\n GİBTÜ 'de \" Sağlık Hizmetlerinde Problem Çözme ve Karar Verme Süreçleri \" Konulu Workshop Gerçekleştirildi\r\n\n08\n\nAra\n\n GİBTÜ 'de ' 'sağlık Hizmetlerinde Kalite ve Akreditasyon Süreçleri ile Sürdürülebilirlik ' ' Konulu Eğitim Etkinliği Gerçekleştirildi\r\n\n08\n\nAra\n\n Üniversite - Okul İşbirliğiyle Teknoloji Bağımlılığına Dikkat Çekildi: Mahmut Hümayun Özhelvacı Ortaokulu 'nda Bilgilendirme Semineri\r\n\n24\n\nEki\n\n 2025-2026 Eğitim ve Öğretim Yılı Güz Dönemi Vize Sınav Takvimi Açıklanmıştır.",
+      "char_count": 2925,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=29",
+      "title": "Yönetim",
+      "body_content": "Yönetim\r\n\nProf. Dr. İbrahim Halil TÜRKBEYLER\n\nBölüm Başkan V.\n\nring_volume\n2301\n\nmail\nihalil.turkbeyler@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Burcu ÇAKI DÖNER\n\nBölüm Başkan Yardımcısı\n\nring_volume\n2424\n\nmail\nburcu.caki@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 258,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=29",
+      "title": "Hakkımızda",
+      "body_content": "Hakkımızda hazırlanıyor...",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGorevTanimi.aspx?id=29",
+      "title": "Görev Tanımı",
+      "body_content": "Görev tanımı hazırlanıyor...",
+      "char_count": 28,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=29",
+      "title": "Misyon",
+      "body_content": "Misyonumuz hazırlanıyor...\n\nGAZİANTEP İSLAM BİLİM ve TEKNOLOJİ ÜNİVERSİTESİ\n\nSAĞLIK BİLİMLERİ FAKÜLTESİ \n\nHEMŞİRELİK LİSANS PROGRAMI ÇIKTILARI\n\nBu programdan mezun olan öğrenci:\n\n1. \nSağlıklı/hasta birey, aile ve toplumun sağlık bakım gereksinimlerini kanıta dayalı ve bütüncül yaklaşımla belirleyecek bilgi, beceri ve tutuma sahiptir.\n\n2. \nMesleki rol ve işlevlerini yerine getirmek için gerekli bilgi ve becerilere sahiptir.\n\n3. \nHemşirelikle ilgili kanıta dayalı bilgileri kullanarak hemşirelik sürecini uygular.\n\n4. \nMesleki uygulama ve araştırmalarında güncel bilgi ve iletişim teknolojilerini kullanır. \n\n5. \nUluslararası ve ulusal boyutta sağlık, güvenlik ve çevre sorunlarına duyarlıdır.\n\n6. \nEtkili iletişim becerilerini kullanır.\n\n7. \nHemşirelik uygulamalarında eleştirel düşünme, sorun çözme ve karar verme becerilerini kullanır.\n\n8. \nSağlık ekibi ve diğer disiplinlerle işbirliği içinde araştırma, proje ve etkinlikler yürütür.\n\n9. \nHemşirelik uygulamalarını etik ilkeler ve yasal düzenlemeler doğrultusunda gerçekleştirir.\n\n10. \nProfesyonel kimliği ile meslektaşlarına rol model ve topluma örnek olur.\n\n11. \nEn az bir yabancı dili (en az Avrupa Dil Portföyü B1 Genel Düzeyinde) kullanarak alanındaki bilgileri izler ve meslektaşlarıyla iletişim kurar.\n\n12. \nYaşam boyu öğrenmeyi benimser.",
+      "char_count": 1301,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTanitim.aspx?id=29",
+      "title": "Tanıtım",
+      "body_content": "Tanıtımımız hazırlanıyor...",
+      "char_count": 27,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=29",
+      "title": "Tarihçe",
+      "body_content": "Tarihçemiz hazırlanıyor...",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=29",
+      "title": "Vizyon",
+      "body_content": "Vizyonumuz hazırlanıyor",
+      "char_count": 23,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=29",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nProf. Dr. İbrahim Halil TÜRKBEYLER\n\nBölüm Başkan V.\n\nring_volume\n0000\n\nmail\nihalil.turkbeyler@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Burcu ÇAKI DÖNER\n\nBölüm Başkan Yardımcısı\n\nring_volume\n2424\n\nmail\nburcu.caki@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Zeynep GÜNGÖRMÜŞ\n\nProf. Dr.\n\nring_volume\n2401\n\nmail\nzeynep.gungormus@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Duygu AYAR\n\nDoç. Dr.\n\nring_volume\n2412\n\nmail\nduygu.ayar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Çiğdem AKSU\n\nDoç. Dr.\n\nring_volume\n2411\n\nmail\ncigdem.aksu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Burçin IŞIK\n\nDoç. Dr.\n\nring_volume\n2403\n\nmail\nburcin.isik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Meryem KILIÇ\n\nBölüm Başkan Yardımcısı\n\nring_volume\n2441\n\nmail\nmeryem.kilic@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Şirin ÇELİKKANAT\n\nDoç. Dr.\n\nring_volume\n2426\n\nmail\nsirin.celikkanat@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nuriye Efe ERTÜRK\n\nDr. Öğr. Üyesi\n\nring_volume\n0000\n\nmail\nnuriye.efeerturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nesrin ÖZER\n\nDr. Öğr. Üyesi\n\nring_volume\n0000\n\nmail\nnesrin.ozer@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Ayşe EMİNOĞLU GÜVEN\n\nArş. Gör.\n\nring_volume\n2432\n\nmail\nayse.eminoglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Sebahat KUŞLU\n\nArş. Gör.\n\nring_volume\n2423\n\nmail\nsebahat.kuslu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Beşir ÇAKIR\n\nArş. Gör.\n\nring_volume\n2442\n\nmail\nbesir.cakir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. İlkay DAĞLI\n\nArş. Gör.\n\nring_volume\n2445\n\nmail\nilkay.dagli@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1546,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=29",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nBölümümüz Tarafından Mesleğe İlk Adım Töreni Düzenlenecektir.\n\n08.04.2026\n\n2025-2026 Eğitim ve Öğretim Yılı Bahar Dönemi Vize Sınav Takvimi Açıklanmıştır.\n\n01.04.2026\n\nHemşirelik Bölümü 2025-2026 Eğitim ve Öğretim Yılı Bahar Dönemi Ders Programı Yayınlanmıştır.\n\n11.02.2026\n\nHemşirelik Bölümü 2025-2026 Güz Dönemi Bütünleme Sınav Takvimi Açıklanmıştır.\n\n22.01.2026\n\n2025-2026 Eğitim ve Öğretim Yılı Güz Dönemi Final Sınav Takvimi Açıklanmıştır.\n\n28.12.2025\n\nGİBTÜ 'de \" HIV 'i Tanıyorum, HIV Hakkında Bilinçleniyorum \" Paneli Gerçekleştirildi\n\n08.12.2025\n\nGİBTÜ 'de \" Sağlık Hizmetlerinde Problem Çözme ve Karar Verme Süreçleri \" Konulu Workshop Gerçekleştirildi\n\n08.12.2025\n\nGİBTÜ 'de ' 'sağlık Hizmetlerinde Kalite ve Akreditasyon Süreçleri ile Sürdürülebilirlik ' ' Konulu Eğitim Etkinliği Gerçekleştirildi\n\n08.12.2025\n\nÜniversite - Okul İşbirliğiyle Teknoloji Bağımlılığına Dikkat Çekildi: Mahmut Hümayun Özhelvacı Ortaokulu 'nda Bilgilendirme Semineri\n\n08.12.2025\n\n2025-2026 Eğitim ve Öğretim Yılı Güz Dönemi Vize Sınav Takvimi Açıklanmıştır.\n\n24.10.2025",
+      "char_count": 1084,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=29",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Sigaranın Zararlarına Yönelik Etkinlik Düzenlendi.\n\n08.04.2026\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Stresle Baş Etme Etkinliği Düzenlendi.\n\n08.04.2026\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Uyku Hijyeni Eğitim Etkinliği Düzenlendi.\n\n08.04.2026\n\nArş. Gör. Sebahat Kuşlu 'nun TUBİTAK-1005 Projesi Kabul Edildi.\n\n07.01.2026\n\nBölümümüz Akademisyenlerinden Doç. Dr. Çiğdem Aksu EN İyi Sözel Sunum Birincilik Ödülü Kazandı\n\n17.12.2025\n\nHemşirelik Bölümü Tarafından \" Kaliteli Uykunun Önemi \" Etkinliği Düzenlendi\n\n17.12.2025",
+      "char_count": 799,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=29",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nÜ\ny\ne\nl\ne\nr\ni\n\nD\no\nç\n.\n\nD\nr\n.\n\nD\nu\ny\ng\nu\n\nA\ny\na\nr\n,\n\nD\nr\n.\nö\nğ\nr\n.\nü\ny\ne\ns\ni\n\nN\ne\ns\nr\ni\nn\n\nÖ\nz\ne\nr\n\nv\ne\n\n3\n.\n\nS\nı\nn\nı\nf\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nS\ni\ng\na\nr\na\nn\nı\nn\n\nZ\na\nr\na\nr\nl\na\nr\nı\nn\na\n\nY\nö\nn\ne\nl\ni\nk\n\nE\nt\nk\ni\nn\nl\ni\nk\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n.\n\nHaber\n\n08.04.2026\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nÜ\ny\ne\nl\ne\nr\ni\n\nD\no\nç\n.\n\nD\nr\n.\n\nD\nu\ny\ng\nu\n\nA\ny\na\nr\n,\n\nD\nr\n.\nö\nğ\nr\n.\nü\ny\ne\ns\ni\n\nN\ne\ns\nr\ni\nn\n\nÖ\nz\ne\nr\n\nv\ne\n\n3\n.\n\nS\nı\nn\nı\nf\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nÖ\nf\nk\ne\n\nK\no\nn\nt\nr\no\nl\n\nE\nğ\ni\nt\ni\nm\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n.\n\nHaber\n\n08.04.2026\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nÜ\ny\ne\nl\ne\nr\ni\n\nD\no\nç\n.\n\nD\nr\n.\n\nD\nu\ny\ng\nu\n\nA\ny\na\nr\n,\n\nD\nr\n.\nö\nğ\nr\n.\nü\ny\ne\ns\ni\n\nN\ne\ns\nr\ni\nn\n\nÖ\nz\ne\nr\n\nv\ne\n\n3\n.\n\nS\nı\nn\nı\nf\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nS\nt\nr\ne\ns\nl\ne\n\nB\na\nş\n\nE\nt\nm\ne\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n.\n\nHaber\n\n08.04.2026\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nÜ\ny\ne\nl\ne\nr\ni\n\nD\no\nç\n.\n\nD\nr\n.\n\nD\nu\ny\ng\nu\n\nA\ny\na\nr\n,\n\nD\nr\n.\nö\nğ\nr\n.\nü\ny\ne\ns\ni\n\nN\ne\ns\nr\ni\nn\n\nÖ\nz\ne\nr\n\nv\ne\n\n3\n.\n\nS\nı\nn\nı\nf\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nU\ny\nk\nu\n\nH\ni\nj\ny\ne\nn\ni\n\nE\nğ\ni\nt\ni\nm\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n.\n\nHaber\n\n08.04.2026\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nM\ne\ns\nl\ne\nğ\ne\n\nİ\nl\nk\n\nA\nd\nı\nm\n\nT\nö\nr\ne\nn\ni\n\nD\nü\nz\ne\nn\nl\ne\nn\ne\nc\ne\nk\nt\ni\nr\n.\n\nDuyuru\n\n08.04.2026\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nğ\ni\nt\ni\nm\n\nv\ne\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nV\ni\nz\ne\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nA\nç\nı\nk\nl\na\nn\nm\nı\nş\nt\nı\nr\n.\n\nDuyuru\n\n01.04.2026\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nğ\ni\nt\ni\nm\n\nv\ne\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nD\ne\nr\ns\n\nP\nr\no\ng\nr\na\nm\nı\n\nY\na\ny\nı\nn\nl\na\nn\nm\nı\nş\nt\nı\nr\n.\n\nDuyuru\n\n11.02.2026\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nB\nü\nt\nü\nn\nl\ne\nm\ne\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nA\nç\nı\nk\nl\na\nn\nm\nı\nş\nt\nı\nr\n.\n\nDuyuru\n\n22.01.2026\n\nA\nr\nş\n.\n\nG\nö\nr\n.\n\nS\ne\nb\na\nh\na\nt\n\nK\nu\nş\nl\nu\n\n'\nn\nu\nn\n\nT\nU\nB\nİ\nT\nA\nK\n-\n1\n0\n0\n5\n\nP\nr\no\nj\ne\ns\ni\n\nK\na\nb\nu\nl\n\nE\nd\ni\nl\nd\ni\n.\n\nHaber\n\n07.01.2026\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nğ\ni\nt\ni\nm\n\nv\ne\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nF\ni\nn\na\nl\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nA\nç\nı\nk\nl\na\nn\nm\nı\nş\nt\nı\nr\n.\n\nDuyuru\n\n28.12.2025\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\n\nA\nk\na\nd\ne\nm\ni\ns\ny\ne\nn\nl\ne\nr\ni\nn\nd\ne\nn\n\nD\no\nç\n.\n\nD\nr\n.\n\nÇ\ni\nğ\nd\ne\nm\n\nA\nk\ns\nu\n\nE\nN\n\nİ\ny\ni\n\nS\nö\nz\ne\nl\n\nS\nu\nn\nu\nm\n\nB\ni\nr\ni\nn\nc\ni\nl\ni\nk\n\nÖ\nd\nü\nl\nü\n\nK\na\nz\na\nn\nd\nı\n\nHaber\n\n17.12.2025\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\n\"\n\nK\na\nl\ni\nt\ne\nl\ni\n\nU\ny\nk\nu\nn\nu\nn\n\nÖ\nn\ne\nm\ni\n\n\"\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n\nHaber\n\n17.12.2025\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\nd\ne\nn\n\nA\nı\nd\ns\n\nH\na\ns\nt\na\nl\nı\nğ\nı\nn\na\n\nY\nö\nn\ne\nl\ni\nk\n\nF\na\nr\nk\nı\nn\nd\na\nl\nı\nk\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nDuyuru\n\n12.12.2025\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\n\"\n\nH\nI\nV\n\n'\ni\n\nT\na\nn\nı\ny\no\nr\nu\nm\n,\n\nH\nI\nV\n\nH\na\nk\nk\nı\nn\nd\na\n\nB\ni\nl\ni\nn\nç\nl\ne\nn\ni\ny\no\nr\nu\nm\n\n\"\n\nP\na\nn\ne\nl\ni\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nDuyuru\n\n08.12.2025\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\n\"\n\nS\na\nğ\nl\nı\nk\n\nH\ni\nz\nm\ne\nt\nl\ne\nr\ni\nn\nd\ne\n\nP\nr\no\nb\nl\ne\nm\n\nÇ\nö\nz\nm\ne\n\nv\ne\n\nK\na\nr\na\nr\n\nV\ne\nr\nm\ne\n\nS\nü\nr\ne\nç\nl\ne\nr\ni\n\n\"\n\nK\no\nn\nu\nl\nu\n\nW\no\nr\nk\ns\nh\no\np\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nDuyuru\n\n08.12.2025\n\nG\nİ\nB\nT\nÜ\n\n'\nd\ne\n\n'\n\n'\ns\na\nğ\nl\nı\nk\n\nH\ni\nz\nm\ne\nt\nl\ne\nr\ni\nn\nd\ne\n\nK\na\nl\ni\nt\ne\n\nv\ne\n\nA\nk\nr\ne\nd\ni\nt\na\ns\ny\no\nn\n\nS\nü\nr\ne\nç\nl\ne\nr\ni\n\ni\nl\ne\n\nS\nü\nr\nd\nü\nr\nü\nl\ne\nb\ni\nl\ni\nr\nl\ni\nk\n\n'\n\n'\n\nK\no\nn\nu\nl\nu\n\nE\nğ\ni\nt\ni\nm\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nDuyuru\n\n08.12.2025\n\nÜ\nn\ni\nv\ne\nr\ns\ni\nt\ne\n\n-\n\nO\nk\nu\nl\n\nİ\nş\nb\ni\nr\nl\ni\nğ\ni\ny\nl\ne\n\nT\ne\nk\nn\no\nl\no\nj\ni\n\nB\na\nğ\nı\nm\nl\nı\nl\nı\nğ\nı\nn\na\n\nD\ni\nk\nk\na\nt\n\nÇ\ne\nk\ni\nl\nd\ni\n:\n\nM\na\nh\nm\nu\nt\n\nH\nü\nm\na\ny\nu\nn\n\nÖ\nz\nh\ne\nl\nv\na\nc\nı\n\nO\nr\nt\na\no\nk\nu\nl\nu\n\n'\nn\nd\na\n\nB\ni\nl\ng\ni\nl\ne\nn\nd\ni\nr\nm\ne\n\nS\ne\nm\ni\nn\ne\nr\ni\n\nDuyuru\n\n08.12.2025\n\nH\nI\nV\n\n'\ni\n\nT\na\nn\nı\ny\no\nr\nu\nm\n\nH\nI\nV\n\nH\na\nk\nk\nı\nn\nd\na\n\nB\ni\nl\ni\nn\nç\nl\ne\nn\ni\ny\no\nr\nu\nm\n\nP\na\nn\ne\nl\ni\n\nHaber\n\n02.12.2025\n\nÇ\no\nc\nu\nk\nl\na\nr\nd\na\n\nS\no\ns\ny\na\nl\n\nM\ne\nd\ny\na\n\nv\ne\n\nD\ni\nj\ni\nt\na\nl\n\nO\ny\nu\nn\n\nB\na\nğ\nı\nm\nl\nı\nl\nı\nğ\nı\n\nS\ne\nm\ni\nn\ne\nr\ni\n\nEtkinlik\n\n26.11.2025\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\n1\n4\n\nK\na\ns\nı\nm\n\nD\ni\ny\na\nb\ne\nt\n\nG\nü\nn\nü\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n\nDuyuru\n\n19.11.2025\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nğ\ni\nt\ni\nm\n\nv\ne\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nV\ni\nz\ne\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nA\nç\nı\nk\nl\na\nn\nm\nı\nş\nt\nı\nr\n.\n\nDuyuru\n\n24.10.2025\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nğ\ni\nt\ni\nm\n\nv\ne\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nG\nü\nz\n\nY\na\nr\nı\ny\nı\nl\nı\n\nİ\nl\nk\n\nA\nk\nr\na\nn\n-\ny\nö\nn\nd\ne\nr\n\nB\nu\nl\nu\nş\nm\na\ns\nı\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n.\n\nHaber\n\n17.10.2025\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nÜ\ny\ne\nl\ne\nr\ni\n\nB\na\nş\na\nr\nı\n\nB\ne\nl\ng\ne\ns\ni\n\nA\nl\nd\nı\n\nHaber\n\n15.10.2025\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\nn\nd\ne\n\nO\nr\ny\na\nn\nt\na\ns\ny\no\nn\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n\nHaber\n\n30.09.2025\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\n\n2\n0\n2\n5\n-\n2\n0\n2\n6\n\nE\nğ\ni\nt\ni\nm\n\nv\ne\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nD\ne\nr\ns\n\nP\nr\no\ng\nr\na\nm\nı\n\nY\na\ny\nı\nn\nl\na\nn\nm\nı\nş\nt\nı\nr\n.\n\nDuyuru\n\n11.09.2025\n\nD\ne\nğ\ne\nr\nl\ni\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ni\nm\ni\nz\n\nH\no\nş\ng\ne\nl\nd\ni\nn\ni\nz\n.\n.\n.\n\nHaber\n\n27.08.2025\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nB\nü\nt\nü\nn\nl\ne\nm\ne\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nA\nç\nı\nk\nl\na\nn\nm\nı\nş\nt\nı\nr\n.\n\nDuyuru\n\n25.06.2025\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\nt\ne\n\nK\na\nr\ni\ny\ne\nr\n\nF\ne\ns\nt\ni\nv\na\nl\ni\n\nB\na\nş\nl\nı\ny\no\nr\n\nEtkinlik\n\n12.06.2025\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\n\nT\na\nr\na\nf\nı\nn\nd\na\nn\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nH\na\nf\nt\na\ns\nı\n\nC\no\nş\nk\nu\ny\nl\na\n\nK\nu\nt\nl\na\nn\nd\nı\n.\n\nEtkinlik\n\n16.05.2025\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nE\nğ\ni\nt\ni\nm\n\nv\ne\n\nÖ\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nV\ni\nz\ne\n\nS\nı\nn\na\nv\n\nT\na\nk\nv\ni\nm\ni\n\nA\nç\nı\nk\nl\na\nn\nm\nı\nş\nt\nı\nr\n.\n\nDuyuru\n\n14.03.2025\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nD\ne\nr\ns\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n10.02.2025\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nB\nü\nt\nü\nn\nl\ne\nm\ne\n\nS\nı\nn\na\nv\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n18.01.2025\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\nt\ne\n\nG\ni\nr\ni\nş\ni\nm\nc\ni\nl\ni\nk\n\nv\ne\n\nİ\nn\no\nv\na\ns\ny\no\nn\n\nD\ne\nr\ns\ni\n\nS\ne\nr\ng\ni\ns\ni\n\nY\no\nğ\nu\nn\n\nİ\nl\ng\ni\n\ni\nl\ne\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nHaber\n\n01.01.2025\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\nt\ne\n\nG\ni\nr\ni\nş\ni\nm\nc\ni\nl\ni\nk\n\nv\ne\n\nİ\nn\no\nv\na\ns\ny\no\nn\n\nD\ne\nr\ns\ni\n\nS\ne\nr\ng\ni\ns\ni\nn\ne\n\nD\na\nv\ne\nt\nl\ni\ns\ni\nn\ni\nz\n!\n\nHaber\n\n30.12.2024\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\nn\nd\ne\n\n'\nh\ne\nr\n\nY\nö\nn\nü\ny\nl\ne\n\nE\np\ni\nl\ne\np\ns\ni\n\n'\n\nİ\ns\ni\nm\nl\ni\n\nP\na\nn\ne\nl\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n.\n\nDuyuru\n\n15.11.2024\n\nH\ne\nr\n\nY\nö\nn\nü\ny\nl\ne\n\nE\np\ni\nl\ne\np\ns\ni\n\nP\na\nn\ne\nl\ni\n\nDuyuru\n\n11.11.2024\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\n\nA\nr\na\nş\nt\nı\nr\nm\na\n\nG\nö\nr\ne\nv\nl\ni\nl\ne\nr\ni\n\nS\na\nğ\nl\nı\nk\n\nB\ni\nl\ni\nm\nl\ne\nr\ni\nn\nd\ne\n\nG\ne\nn\nç\n\nY\na\nk\nl\na\nş\nı\nm\nl\na\nr\n\nÇ\na\nl\nı\nş\nt\na\ny\nı\nn\nd\na\n\nÇ\ne\nş\ni\nt\nl\ni\n\nK\no\nn\nu\nl\na\nr\na\n\nD\ne\nğ\ni\nn\nd\ni\n\nHaber\n\n23.10.2024\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\nn\nd\ne\n\n1\n2\n\nM\na\ny\nı\ns\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nH\na\nf\nt\na\ns\nı\n\nK\nu\nt\nl\na\nn\nd\nı\n\nHaber\n\n23.10.2024\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\nn\nd\ne\n\nB\ne\ny\na\nz\n\nÖ\nn\nl\nü\nk\n\nG\ni\ny\nm\ne\n\nT\nö\nr\ne\nn\ni\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n\nHaber\n\n19.10.2024\n\nH\ne\nm\nş\ni\nr\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\nn\nd\ne\n\nO\nr\ny\na\nn\nt\na\ns\ny\no\nn\n\nP\nr\no\ng\nr\na\nm\nı\n\nD\nü\nz\ne\nn\nl\ne\nn\nd\ni\n.\n\nHaber\n\n02.10.2024\n\n KATEGORİLER\r\n\nDuyuru\n\nEtkinlik\n\nHaber\n\nKonferans",
+      "char_count": 7038,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=29",
+      "title": "Formlar",
+      "body_content": "Formlar\n\nFormlar\n\nok",
+      "char_count": 20,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=29",
+      "title": "Galeri",
+      "body_content": "2026\n\n2025\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Sigaranın Zararlarına Yönelik Etkinlik Düzenlendi.\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Öfke Kontrol Eğitim Etkinliği Düzenlendi.\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Stresle Baş Etme Etkinliği Düzenlendi.\n\nBölümümüz Öğretim Üyeleri Doç. Dr. Duygu Ayar, Dr.öğr.üyesi Nesrin Özer ve 3. Sınıf Öğrencilerimiz Tarafından Uyku Hijyeni Eğitim Etkinliği Düzenlendi.\n\nBölümümüz Tarafından Mesleğe İlk Adım Töreni Düzenlenecektir.\n\n2025-2026 Eğitim ve Öğretim Yılı Bahar Dönemi Vize Sınav Takvimi Açıklanmıştır.\n\nHemşirelik Bölümü 2025-2026 Eğitim ve Öğretim Yılı Bahar Dönemi Ders Programı Yayınlanmıştır.\n\nHemşirelik Bölümü 2025-2026 Güz Dönemi Bütünleme Sınav Takvimi Açıklanmıştır.\n\nArş. Gör. Sebahat Kuşlu 'nun TUBİTAK-1005 Projesi Kabul Edildi.\n\n2025-2026 Eğitim ve Öğretim Yılı Güz Dönemi Final Sınav Takvimi Açıklanmıştır.\n\nBölümümüz Akademisyenlerinden Doç. Dr. Çiğdem Aksu EN İyi Sözel Sunum Birincilik Ödülü Kazandı\n\nHemşirelik Bölümü Tarafından \" Kaliteli Uykunun Önemi \" Etkinliği Düzenlendi\n\nHemşirelik Bölümü Öğrencilerimizden Aıds Hastalığına Yönelik Farkındalık Etkinliği\n\nGİBTÜ 'de \" HIV 'i Tanıyorum, HIV Hakkında Bilinçleniyorum \" Paneli Gerçekleştirildi\n\nGİBTÜ 'de \" Sağlık Hizmetlerinde Problem Çözme ve Karar Verme Süreçleri \" Konulu Workshop Gerçekleştirildi\n\nGİBTÜ 'de ' 'sağlık Hizmetlerinde Kalite ve Akreditasyon Süreçleri ile Sürdürülebilirlik ' ' Konulu Eğitim Etkinliği Gerçekleştirildi\n\nÜniversite - Okul İşbirliğiyle Teknoloji Bağımlılığına Dikkat Çekildi: Mahmut Hümayun Özhelvacı Ortaokulu 'nda Bilgilendirme Semineri\n\nHIV 'i Tanıyorum HIV Hakkında Bilinçleniyorum Paneli\n\nÇocuklarda Sosyal Medya ve Dijital Oyun Bağımlılığı Semineri\n\nHemşirelik Bölümü Tarafından 14 Kasım Diyabet Günü Etkinliği Düzenlendi\n\n2025-2026 Eğitim ve Öğretim Yılı Güz Dönemi Vize Sınav Takvimi Açıklanmıştır.\n\nBölümümüz 2025-2026 Eğitim ve Öğretim Güz Yarıyılı İlk Akran-yönder Buluşması Gerçekleştirildi.\n\nBölümümüz Öğretim Üyeleri Başarı Belgesi Aldı\n\nHemşirelik Bölümünde Oryantasyon Etkinliği Düzenlendi\n\nHemşirelik Bölümü 2025-2026 Eğitim ve Öğretim Yılı Güz Dönemi Ders Programı Yayınlanmıştır.\n\nDeğerli Öğrencilerimiz Hoşgeldiniz...",
+      "char_count": 2412,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=29",
+      "title": "Mevzuatlar",
+      "body_content": "Hemşirelik Bölümü 8.Dönem Klinik Saha Uygulama Yönergesi\n\n Hemşirelik Bölümü Klinik Saha Uygulama Yönergesi\r\n\nHemşirelik Bölümü Klinik / Saha Uygulama Değerlendirme Rehberi\n\n Hemşirelik Bölümü Klinik / Saha Uygulama Değerlendirme Rehberi\r\n\nHemşirelik Bölümü Komiteleri\n\n Komite Görev Tanımları\r\n\n Komite Üyeleri\r\n\nHemşirelik Bölümü Lisans Klinik / Saha Uygulama Yönergesi\n\n Hemşirelik Bölümü Lisans Klinik / Saha Uygulama Yönergesi\r\n\nHemşirelik Bölümü Müfredatları\n\n Hemşirelik Bölümü 2020-2021 Müfredatı\r\n\n Hemşirelik Bölümü 2022-2023 Müfredatı\r\n\n Hemşirelik Bölümü 2023-2024 Müfredatı",
+      "char_count": 586,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=29",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=29",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nhemsirelik@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nArş. Gör. Beşir ÇAKIR\n\nbesir.cakir@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 342,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=29",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nProf. Dr. İbrahim Halil TÜRKBEYLER\n\nring_volume\n0000\n\nmail\nihalil.turkbeyler@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nesrin ÖZER\n\nring_volume\n0000\n\nmail\nnesrin.ozer@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Nuriye Efe ERTÜRK\n\nring_volume\n0000\n\nmail\nnuriye.efeerturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. İbrahim Halil TÜRKBEYLER\n\nring_volume\n2301\n\nmail\nihalil.turkbeyler@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Zeynep GÜNGÖRMÜŞ\n\nring_volume\n2401\n\nmail\nzeynep.gungormus@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Burçin IŞIK\n\nring_volume\n2403\n\nmail\nburcin.isik@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Çiğdem AKSU\n\nring_volume\n2411\n\nmail\ncigdem.aksu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Duygu AYAR\n\nring_volume\n2412\n\nmail\nduygu.ayar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Sebahat KUŞLU\n\nring_volume\n2423\n\nmail\nsebahat.kuslu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Burcu ÇAKI DÖNER\n\nring_volume\n2424\n\nmail\nburcu.caki@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Şirin ÇELİKKANAT\n\nring_volume\n2426\n\nmail\nsirin.celikkanat@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Ayşe EMİNOĞLU GÜVEN\n\nring_volume\n2432\n\nmail\nayse.eminoglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Meryem KILIÇ\n\nring_volume\n2441\n\nmail\nmeryem.kilic@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Beşir ÇAKIR\n\nring_volume\n2442\n\nmail\nbesir.cakir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. İlkay DAĞLI\n\nring_volume\n2445\n\nmail\nilkay.dagli@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1502,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 19,
+      "total": 19,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 19,
+      "total": 19,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 19,
+      "total": 19,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 19,
+      "total": 19,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 19,
+      "total": 19,
+      "pct": 100
+    },
+    "title": {
+      "count": 19,
+      "total": 19,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 19,
+      "total": 19,
+      "pct": 100
+    },
+    "department": {
+      "count": 19,
+      "total": 19,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 19,
+      "total": 19,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 19,
+      "total": 19,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 3,
+    "yonetim": 1,
+    "tanitim": 6,
+    "personel": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "yonetmelik": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

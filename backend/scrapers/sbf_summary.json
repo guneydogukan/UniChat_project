@@ -1,0 +1,91 @@
+{
+  "task": "3.2.8.3",
+  "description": "SBF Harita Gudumlu Deep Scrape",
+  "birimler": [
+    {
+      "department": "Saglik Bilimleri Fakultesi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\sbf_saglik_bilimleri_fakultesi_output.json",
+      "total_documents": 64,
+      "total_valid": 41,
+      "total_failed": 0,
+      "total_chars": 487536,
+      "pdf_count": 24,
+      "doc_kind_distribution": {
+        "genel": 23,
+        "yonetim": 1,
+        "tanitim": 5,
+        "rapor": 2,
+        "personel": 2,
+        "form": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "yonetmelik": 2,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Ebelik Bolumu",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\sbf_ebelik_bolumu_output.json",
+      "total_documents": 41,
+      "total_valid": 30,
+      "total_failed": 0,
+      "total_chars": 15274,
+      "pdf_count": 10,
+      "doc_kind_distribution": {
+        "genel": 16,
+        "yonetim": 1,
+        "tanitim": 5,
+        "personel": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "yonetmelik": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Hemsirelik Bolumu",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\sbf_hemsirelik_bolumu_output.json",
+      "total_documents": 20,
+      "total_valid": 18,
+      "total_failed": 0,
+      "total_chars": 19969,
+      "pdf_count": 1,
+      "doc_kind_distribution": {
+        "genel": 3,
+        "yonetim": 1,
+        "tanitim": 6,
+        "personel": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "yonetmelik": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Fizyoterapi ve Rehabilitasyon Bolumu",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\sbf_fizyoterapi_ve_rehabilitasyon_bolumu_output.json",
+      "total_documents": 25,
+      "total_valid": 20,
+      "total_failed": 0,
+      "total_chars": 8576,
+      "pdf_count": 4,
+      "doc_kind_distribution": {
+        "genel": 5,
+        "yonetim": 1,
+        "tanitim": 6,
+        "personel": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "yonetmelik": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    }
+  ]
+}

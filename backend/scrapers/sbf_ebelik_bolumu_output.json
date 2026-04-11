@@ -1,0 +1,464 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T21:08:08Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\Sağlık Bilimleri Fakültesi\\Ebelik.html",
+    "birim_id": 30,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Ebelik Bolumu"
+  },
+  "summary": {
+    "total_blueprint_urls": 33,
+    "total_fetched": 33,
+    "total_valid": 30,
+    "total_failed": 0,
+    "total_skipped": 3,
+    "total_documents": 41,
+    "total_chars": 15274
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Organizasyon Şeması",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260325143004_1a2021fe.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2020 Müfredatı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240118153048_52de5e06.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2022 Müfredatı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240118152938_b4f0bcfe.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2023 Müfredatı",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240920145227_891d3e4c.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "İş Sağlığı ve Güvenliği, Algoritmaları ve Formları",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240329120810_5db7e3ae.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Akademik Takvim",
+      "url": "http://www.gibtu.edu.tr/medya/birim/dosya/20210527104658_75bf569b.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Ebelik Bölümü Sınıf Temsilcileri",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260410155630_020e2917.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Akademik Danışmanlık Saatleri",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260410154342_a43a377a.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Akademik Takvim",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260410103454_dd709586.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Ebelik Mezun Yeterlilik Anketi",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260410160019_eb0ee664.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [
+    {
+      "text": "Bölüm Tanıtım Videosu",
+      "url": "https://www.youtube.com/watch?v=zhL5fZtsUNc",
+      "type": "external"
+    }
+  ],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=30",
+      "reason": "too_short (0 chars)",
+      "char_count": 0
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=30",
+      "reason": "too_short (5 chars)",
+      "char_count": 5
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=30",
+      "reason": "too_short (19 chars)",
+      "char_count": 19
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=30",
+      "title": "Ebelik",
+      "body_content": "Sağlıkta İnovasyon Başarısı\n\nUyuşturucu ile Mücadele Semineri\n\nEbelik Bölümü 1. Sınıf Öğrencileri Hoş Geldiniz Etkinliği\n\nEbelik Bölümü Akran Yönderliği ve Oryantasyon Semineri\n\nAile Planlamasında Danışmanlık Becerileri: Vaka Temelli Atölye Çalışması\n\nGeleceğin Babaları İçin Anne Sütünün Önemi, Emzirme Desteği ve Sürdürülebilir Beslenme: Erkek Öğrencilerle Farkındalık Semineri\n\nEbelik Bölümü Öğrencileri ile Toplum Ruh Sağlığı Merkezine Teknik Gezi\n\nHABERLER\n\nTÜMÜ\n\n27.02.2026 09:00\n\nSağlıkta İnovasyon Başarısı\n\nEbelik Bölümü Öğrencimiz Sedef Altun Türkiye Üçüncüsü Oldu\n\nSağlıkta İnovasyon Başarısı\n\nÜniversitemiz Ebelik Bölümü öğrencisi Sedef Altun, Sakarya İl Sağlık Müdürlüğü tarafından düzenlenen Sakarya İnovasyon Yarışması’nda 500 proje arasından 3.’lük elde ederek önemli bir başarıya imza attı.\n\n Devamını Oku\r\n\n10.02.2026 13:23\n\nEbelik Bölümü 2025-2026 Bahar Dönemi Ders Programı\n\n Devamını Oku\r\n\n10.11.2025 09:00\n\n10 Kasım Atatürk 'ü Anma Etkinliği\n\nGİBTÜ Ebelik Bölümü olarak 10.11.2025 tarihinde saat 09.00-11.00 \"10 Kasım Atatürk'ü Anma Etkinliği\" gerçekleştirilmiştir. \n\n Devamını Oku\r\n\n26.12.2025 09:00\n\nEbelikte İnovasyon Projeleri Bilim Kafede Sergilendi\n\nEBELİKTE İNOVASYON PROJELERİ BİLİM KAFE’DE SERGİLENDİ\n\nÜniversitemiz Ebelik Bölümü 4. sınıf öğrencileri, “Ebelikte İnovasyon” dersi kapsamında geliştirdikleri projeleri Rektörlük Bilim Kafe’de düzenlenen etkinlikte başarıyla sundu. Dersin sorumlusu Dr. Öğr. Üyesi Betül Kaplan rehberliğinde hazırlanan projeler, katılımcılardan yoğun ilgi gördü.\n\nSon ders kapsamında gerçekleştirilen sunumlarda öğrenciler, ebelik mesleğine yenilikçi bakış açıları kazandırmayı amaçlayan, yaratıcı ve uygulanabilir projelerini paylaşma fırsatı buldu. Birbirinden özgün ve inovatif fikirlerin yer aldığı etkinlikte, öğrencilerin mesleki bilgi ve becerilerini inovasyonla birleştirmeleri dikkat çekti.\n\nBilim Kafe’de gerçekleştirilen proje sunumları, öğrencilerin problem çözme, eleştirel düşünme ve sunum becerilerini geliştirmelerine katkı sağlarken; ebelikte inovatif yaklaşımların önemini bir kez daha ortaya koydu. Etkinlik, hem akademik hem de mesleki açıdan verimli bir öğrenme ortamı sunarak başarıyla tamamlandı.\n\n Devamını Oku\r\n\n19.12.2025 12:00\n\nErasmus Bilgilendirme Toplantısı\n\nEbelik Bölümü Erasmus Koordinatörlüğü ile Ebelik Bölümü Kariyer Planlama dersi kapsamında, GİBTÜ Erasmus Koordinatörlüğünün işbirliği gerçekleştirilen Erasmus Bilgilendirme Toplantısı  19.12.2025 saat 12.00-13.00 arasında yapılmıştır. Toplantıya GİBTÜ Erasmus Koordinatörlüğünden Öğr. Gör. F. İrem ÇETİNKAYA, Dr. Öğr. Üyesi Zehra ÇERÇER ve Ebelik Bölüm Başkanı Dr. Öğr. Üyesi Kamile AKÇA katılım sağlamıştır, Ebelik Bölümü öğrencilerine ayrıntılı bilgi verilmiştir.\n\n Devamını Oku\r\n\n03.11.2025 13:49\n\nEbelik Bölümü 2025-2026 Güz Eğitim Öğretim Yarıyılı Yönder Eğitimi\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n27\n\nŞub\n\n Sağlıkta İnovasyon Başarısı\r\n\n10\n\nŞub\n\n Ebelik Bölümü 2025-2026 Bahar Dönemi Ders Programı\r\n\n10\n\nKas\n\n 10 Kasım Atatürk 'ü Anma Etkinliği\r\n\n26\n\nAra\n\n Ebelikte İnovasyon Projeleri Bilim Kafede Sergilendi\r\n\n19\n\nAra\n\n Erasmus Bilgilendirme Toplantısı\r\n\n03\n\nKas\n\n Ebelik Bölümü 2025-2026 Güz Eğitim Öğretim Yarıyılı Yönder Eğitimi\r\n\n20\n\nEki\n\n Uyuşturucu ile Mücadele Semineri\r\n\n20\n\nEki\n\n Ebelik Bölümü 1. Sınıf Öğrencileri Hoş Geldiniz Etkinliği",
+      "char_count": 3303,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 31,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=30",
+      "title": "Yönetim",
+      "body_content": "Yönetim\r\n\nDr. Öğr. Üyesi Kamile AKÇA\n\nBölüm Başkanı\n\nring_volume\n2430\n\nmail\nkamile.akca@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 118,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 30,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=30",
+      "title": "Hakkımızda",
+      "body_content": "Gaziantep İslam Bilim ve Teknoloji Üniversitesi Ebelik Bölümü 4 yıllık (8 yarıyıl) lisans düzeyinde örgün öğretim yapan ve alanında profesyonel ebeler yetiştirmeyi kendine ilke edinen bir eğitim ve öğretim programıdır. Sağlık Bilimleri Fakültesi bünyesinde bulunan Ebelik Bölümü ilk öğrencilerini 2020-2021 Eğitim-Öğretim yılında almış ve ilk mezunlarını 2023-2024 Eğitim-Öğretim yılında vermiştir. Lisans düzeyindeki öğrencilerin öğrenimlerini daha iyi yapabilmeleri için mevcut programları çağın gereklerine ve Avrupa Birliği Standartlarına uygun olacak şekilde gözden geçirerek revize etmektedir. Ebelik Bölümü öğrencileri teorik derslerde öğrendikleri bilgileri öğretim elemanları gözetiminde öncelikle beceri laboratuvarında daha sonra Gaziantep İl Sağlık Müdürlüğüne bağlı hastane ve aile sağlığı merkezlerinde uygulama alanına aktarmaktadırlar. Bölümümüzde 6 Doktor Öğretim Üyesi ve 3 Araştırma Görevlisi bulunmaktadır.",
+      "char_count": 926,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 29,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGorevTanimi.aspx?id=30",
+      "title": "Görev Tanımı",
+      "body_content": "Görev tanımı hazırlanıyor...",
+      "char_count": 28,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 28,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=30",
+      "title": "Misyon",
+      "body_content": "Toplum sağlığını iyileştirmek ve geliştirmek amacıyla, kadın ve çocuk sağlığını ön planda tutarak, etik değerlere ve evrensel standartlara duyarlı, araştırmacı ve yenilikçi profesyonel ebeler yetiştirmeyi hedefler. Öğrenciler, sağlık hizmetlerinde etkin ve verimli bir şekilde görev alabilecek, mesleki standartlara uygun bakım sunma yetkinliğine sahip bireyler olarak yetiştirilir. Ayrıca, yaşam boyu öğrenmeye ve mesleki gelişime odaklanarak, ebelik mesleğinin bilimsel ve pratik alanlarda ilerlemesine katkıda bulunacak donanıma sahip olurlar.",
+      "char_count": 546,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 27,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=30",
+      "title": "Tarihçe",
+      "body_content": "18 Mayıs 2018 tarih ve 30425 sayılı Resmi Gazetede yayınlanan Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 09/05/2018 olan 7141 nolu Kanunla, 2809 sayılı kanuna yapılan ek maddeyle önce Gaziantep Bilim ve Teknoloji Üniversitesi adıyla, daha sonra ise 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan Vergi Kanunları ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 17/01/2019 olan 7161 nolu Kanunun 14.maddesi ile 2809 sayılı Kanunun ek 178.maddesi başlığının birinci fıkrasında yer alan “Gaziantep Bilim ve Teknoloji Üniversitesi” ibareleri, “Gaziantep İslam Bilim ve Teknoloji Üniversitesi” olarak değiştirilmesi ile kurulmuştur.\n\nGaziantep İslam, Bilim ve Teknoloji Üniversitesi Sağlık Bilimleri Fakültesi Ebelik Bölümü 2019 yılında açılmış olup, 4 yıllık (8 yarıyıl) lisans düzeyinde örgün eğitim veren ve alanında profesyonel ebeler yetiştirmeyi ilke edinmiş bir eğitim-öğretim programıdır.\n\nEbelik Bölümü ilk öğrencilerini 2020-2021 Eğitim-Öğretim yılında kabul etmiş ve ilk mezunlarını 2023-2024 Eğitim-Öğretim yılında vermiştir.\n\nBölümümüzde 6 Doktor Öğretim Üyesi ve 3 Araştırma Görevlisi bulunmaktadır. 2025-2026 Bahar dönemi itibarıyla öğrenci sayısı 353'tür.",
+      "char_count": 1289,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 26,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=30",
+      "title": "Vizyon",
+      "body_content": "Yenilikçi, kalite odaklı ve öğrenci merkezli eğitim anlayışını benimseyerek, çağdaş ve araştırmacı bireyler yetiştirmeyi hedeflemektedir. Gelişen teknoloji ve entelektüel ortamla uyumlu, yüksek standartlarda ebelik hizmeti sunabilecek uzmanlar yetiştiren, ulusal ve uluslararası düzeyde tercih edilen bir eğitim kurumu olmayı amaçlar. Eğitim programları, öğretim elemanları ve araştırmalarıyla, ebelik alanında liderlik yaparak, sağlık ve eğitim politikalarının gelişimine katkıda bulunan bir model oluşturmayı hedeflemektedir.",
+      "char_count": 527,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 25,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=30",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nDr. Öğr. Üyesi Kamile AKÇA\n\nBölüm Başkanı\n\nring_volume\n2430\n\nmail\nkamile.akca@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Sema İÇEL\n\nDr. Öğr. Üyesi\n\nring_volume\n2431\n\nmail\nsema.icel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Ayşe ELKOCA\n\nDr. Öğr. Üyesi\n\nring_volume\n2404\n\nmail\nayse.elkoca@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Zehra ÇERÇER\n\nDr. Öğr. Üyesi\n\nring_volume\n2416\n\nmail\nzehra.cercer@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Betül KAPLAN\n\nDr. Öğr. Üyesi\n\nring_volume\n2433\n\nmail\nbetul.kaplan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Fadime BİÇER ŞAHİN\n\nDr. Öğr. Üyesi\n\nring_volume\n2422\n\nmail\nfadime.bicersahin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Elif BAYRAKÇI EROĞLU\n\nArş. Gör.\n\nring_volume\n2418\n\nmail\nelif.bayrakci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Tuğba KANARYA\n\nArş. Gör.\n\nring_volume\n2239\n\nmail\ntugba.kanarya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Songül KEKİL\n\nArş. Gör.\n\nring_volume\n2443\n\nmail\nsongul.kekil@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1001,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 23,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ebelik/icerik/31138/ebelik-bolumu-sinif-temsilcileri-2025-2026-guz-yariyili",
+      "title": "Ebelik Bölümü Sınıf Temsilcileri 2025-2026 Güz Yarıyılı",
+      "body_content": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20250922102150_5f222e7c.pdf",
+      "char_count": 70,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ebelik/icerik/25157/mezun-izleme-formlari",
+      "title": "Mezun İzleme Formları",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\nMezun İzleme Formları\n\ndate_range\nYayın Tarihi : \n21.03.2025 15:57\n\npeople\nOkunma : \n214\n\nEbelik\n\ntaslak\n\ntaslak\n\nok",
+      "char_count": 149,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ebelik/icerik/31393/ebelik-mezun-yeterlilik-anketi",
+      "title": "Ebelik Mezun Yeterlilik Anketi",
+      "body_content": "EBELİK MEZUN YETERLİLİK ANKETİ:\n\nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20251024112700_0105ca8c.pdf",
+      "char_count": 103,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=30",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nSağlıkta İnovasyon Başarısı\n\n27.02.2026\n\nEbelik Bölümü 2025-2026 Bahar Dönemi Ders Programı\n\n10.02.2026\n\n10 Kasım Atatürk 'ü Anma Etkinliği\n\n10.11.2025\n\nEbelikte İnovasyon Projeleri Bilim Kafede Sergilendi\n\n26.12.2025\n\nErasmus Bilgilendirme Toplantısı\n\n19.12.2025\n\nEbelik Bölümü 2025-2026 Güz Eğitim Öğretim Yarıyılı Yönder Eğitimi\n\n03.11.2025\n\nUyuşturucu ile Mücadele Semineri\n\n20.10.2025\n\nEbelik Bölümü 1. Sınıf Öğrencileri Hoş Geldiniz Etkinliği\n\n20.10.2025",
+      "char_count": 485,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=30",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nSağlıkta İnovasyon Başarısı\n\n27.02.2026\n\nEbelik Bölümü 2025-2026 Bahar Dönemi Ders Programı\n\n10.02.2026\n\n10 Kasım Atatürk 'ü Anma Etkinliği\n\n10.11.2025\n\nEbelikte İnovasyon Projeleri Bilim Kafede Sergilendi\n\n26.12.2025\n\nErasmus Bilgilendirme Toplantısı\n\n19.12.2025\n\nEbelik Bölümü 2025-2026 Güz Eğitim Öğretim Yarıyılı Yönder Eğitimi\n\n03.11.2025",
+      "char_count": 368,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=30",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nG\ne\nl\ne\nc\ne\nğ\ni\nn\n\nB\na\nb\na\nl\na\nr\nı\n\nİ\nç\ni\nn\n\nA\nn\nn\ne\n\nS\nü\nt\nü\nn\nü\nn\n\nÖ\nn\ne\nm\ni\n,\n\nE\nm\nz\ni\nr\nm\ne\n\nD\ne\ns\nt\ne\nğ\ni\n\nv\ne\n\nS\nü\nr\nd\nü\nr\nü\nl\ne\nb\ni\nl\ni\nr\n\nB\ne\ns\nl\ne\nn\nm\ne\n:\n\nE\nr\nk\ne\nk\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\nl\ne\n\nF\na\nr\nk\nı\nn\nd\na\nl\nı\nk\n\nS\ne\nm\ni\nn\ne\nr\ni\n\nDuyuru\n\n17.10.2025\n\nA\nF\nA\nD\n\nT\ne\nk\nn\ni\nk\n\nG\ne\nz\ni\ns\ni\n\nEtkinlik\n\n29.09.2025\n\nE\nb\ne\nl\ni\nk\n\nB\nö\nl\nü\nm\nü\n\nD\nö\nn\ne\nm\n\nS\no\nn\nu\n\nK\na\nh\nv\na\nl\nt\nı\ns\nı\n\nDuyuru\n\n03.06.2025\n\n5\n\nM\na\ny\nı\ns\n\nD\nü\nn\ny\na\n\nE\nb\ne\nl\ne\nr\n\nG\nü\nn\nü\n\nP\na\nn\ne\nl\n\n'\ni\n\nPanel\n\n06.05.2025\n\nM\ne\nz\nu\nn\n-\nm\ne\nz\nu\nn\n\nA\nd\na\ny\nl\na\nr\nı\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nB\nu\nl\nu\nş\nm\na\ns\nı\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nEtkinlik\n\n28.04.2025\n\nA\nF\nA\nD\n\nİ\nl\n\nM\nü\nd\nü\nr\nl\nü\nğ\nü\n\nT\ne\nk\nn\ni\nk\n\nG\ne\nz\ni\n\nDuyuru\n\n17.04.2025\n\nM\ne\nz\nu\nn\n\nİ\nz\nl\ne\nm\ne\n\nF\no\nr\nm\nl\na\nr\nı\n\nDuyuru\n\n21.03.2025\n\nK\na\nr\ni\ny\ne\nr\n\nP\nl\na\nn\nl\na\nm\na\n\n:\n\nE\nb\ne\n\n-\n\nÖ\nğ\nr\ne\nn\nc\ni\n\nB\nu\nl\nu\nş\nm\na\ns\nı\n\nS\nö\ny\nl\ne\nş\ni\ns\ni\n\nSöyleşi\n\n21.03.2025\n\nG\nİ\nB\nT\nÜ\n\nT\ne\nr\nc\ni\nh\n\nT\na\nn\nı\nt\nı\nm\n\nG\nü\nn\nl\ne\nr\ni\n\nEtkinlik\n\n21.03.2025\n\nS\no\ns\ny\na\nl\n\nE\nt\nk\ni\nn\nl\ni\nk\nl\ne\nr\n\nEtkinlik\n\n21.03.2025\n\n5\n\nM\na\ny\nı\ns\n\nD\nü\nn\ny\na\n\nE\nb\ne\nl\ne\nr\n\nG\nü\nn\nü\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nEtkinlik\n\n21.03.2025\n\nF\ne\nt\na\nl\n\nS\na\nğ\nl\nı\nğ\nı\nn\n\nD\ne\nğ\ne\nr\nl\ne\nn\nd\ni\nr\ni\nl\nm\ne\ns\ni\n\nP\na\nn\ne\nl\ni\n\nPanel\n\n21.03.2025\n\nB\ni\nl\ni\nm\ns\ne\nl\n\nE\nt\nk\ni\nn\nl\ni\nk\nl\ne\nr\n\nEtkinlik\n\n21.03.2025\n\n KATEGORİLER\r\n\nDuyuru\n\nEtkinlik\n\nPanel\n\nSöyleşi",
+      "char_count": 1326,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=30",
+      "title": "Formlar",
+      "body_content": "Ebelik Bölümü Mezuniyet Kriterleri Formları\n\n Doğum Bakım Rehberi\r\n\n Bakım Planı Formu\r\n\n Ebe Gözlem Formu\r\n\n Sıvı İzlem Çizelgesi\r\n\n Mezuniyet Koşulları-çizelge\r\n\n Doğum Sonu Dönem\r\n\n Riskli ve Sağlıklı Gebelik Formu\r\n\n Travay İzlem\r\n\n Epizyotomi İzlem Formu\r\n\n Yenidoğan Formu\r\n\n Jinekolojik Patoloji Formu\r\n\nYaz Okulu Ders Alma Dilekçesi\n\n Yaz Okulu Ders Alma Dilekçesi",
+      "char_count": 372,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ebelik/icerik/25444/akreditasyon-toplanti-tutanaklari",
+      "title": "Akreditasyon Toplantı Tutanakları",
+      "body_content": "15.05.2025 tarihli toplantı tutanağı için tıklayınız:  \nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20250523140636_84220136.pdf",
+      "char_count": 126,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ebelik/icerik/30791/is-akis-semalari",
+      "title": "İş Akış Şemaları",
+      "body_content": "YATAY/DİKEY GEÇİŞ İŞLEMLERİ ÖĞRETİM ELEMANI İŞLEM BASAMAKLARI:\n\nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20250822133410_613acf99.pdf\n\nÖĞRENCİ DERS SEÇME AKIŞI: \nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20250905104442_35608461.pdf",
+      "char_count": 233,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ebelik/icerik/30803/ebelik-bolumu-komite-listesi",
+      "title": "Ebelik Bölümü Komite Listesi",
+      "body_content": "Ebelik Bölümü Komite Listesi:\n\nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20250825163117_46802d30.pdf",
+      "char_count": 101,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ebelik/icerik/30887/ebelik-bolumu-ders-programlari",
+      "title": "Ebelik Bölümü Ders Programları",
+      "body_content": "2023-2024 Güz Dönemi Ebelik Ders Programı: \n\nttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20250909153222_b4cab2e4.pdf\n\n2023-2024 Bahar Dönemi Ebelik Ders Programı: \n\nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20250909153314_0cd4cbdf.pdf\n\n2024-2025 Güz Dönemi Ebelik Ders Programı: \n\nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20250909153645_bee9f184.pdf\n\n2024-2025 Bahar Dönemi Ebelik Ders Programı: \n\nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20250909153717_a17539c7.pdf\n\n2025-2026 Güz Dönemi Ebelik Ders Programı: \n\nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20250909153802_4ca4adde.pdf",
+      "char_count": 586,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ebelik/icerik/31264/komite",
+      "title": "Komite",
+      "body_content": "Akran ve Yönder Öğrenci Listesi:\n\nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20251003112539_532b475e.pdf",
+      "char_count": 104,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ebelik/icerik/31356/ebelik-bolumu-sinav-sorulari-belirtke-tablosu-formu",
+      "title": "Ebelik Bölümü Sınav Soruları Belirtke Tablosu Formu",
+      "body_content": "EBELİK BÖLÜMÜ SINAV SORULARI BELİRTKE TABLOSU FORMU: \nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20251017141533_3757ed68.pdf",
+      "char_count": 124,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ebelik/icerik/31368/ebelik-bolumu-ogrenci-memnuniyeti-anketi-akademik-danismanlik-ve-rehberlik",
+      "title": "Ebelik Bölümü Öğrenci Memnuniyeti Anketi ( Akademik Danışmanlık ve Rehberlik )",
+      "body_content": "ÖĞRENCİ MEMNUNİYETİ ANKETİ (Akademik Danışmanlık ve Rehberlik): \n\nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20251020104309_fd12d342.pdf",
+      "char_count": 136,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ebelik/icerik/31369/ebelik-bolumu-ogretim-elemani-performans-degerlendirme-anketi",
+      "title": "Ebelik Bölümü Öğretim Elemanı Performans Değerlendirme Anketi",
+      "body_content": "ÖĞRETİM ELEMANI PERFORMANS DEĞERLENDİRME ANKETİ:\n\nhttps://www.gibtu.edu.tr/Medya/Birim/Dosya/20251020104332_140a416d.pdf",
+      "char_count": 120,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimicerik.aspx?id=30&icid=25150",
+      "title": "Bilimsel Etkinlikler",
+      "body_content": "Fetal Sağlığın Değerlendirilmesi Paneli 19.10.2023 detay için tıklayınız\n\n5 Mayıs Dünya Ebeler Günü Etkinliği 05.05.2023 detay için tıklayınız\n\nKariyer Planlama : Ebe - Öğrenci Buluşması Söyleşisi 14.05.2024 detay için tıklayınız\n\n5 Mayıs Dünya Ebeler Günü Paneli 07.05.2025 detay için tıklayınız\n\nAkran Yönderliği ve Oryantasyon Semineri 01.10.2025 detay için tıklayınız\n\nUyuşturucu İle Mücadele Semineri 08.10.2025 detay için tıklayınız\n\nGeleceğin Babaları İçin Anne Sütünün Önemi, Emzirme Desteği ve Sürdürülebilir Beslenme: Erkek Öğrencilerle Farkındalık Semineri 13.10.2025 detay için tıklayınız\n\nAile Planlamasında Danışmanlık Becerileri: Vaka Temelli Atölye Çalışması 17.10.2025 detay için tıklayınız\n\nErasmus Bilgilendirme Toplantısı 19.12.2025 detay için tıklayınız\n\nEbelikte İnovasyon Projeleri Bilim Kafede Sergilendi 26.12.2025 detay için tıklayın\n\nSağlıkta İnovasyon Başarısı 27.02.2026 detay için tıklayınız",
+      "char_count": 921,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/ebelik/icerik/25154/sosyal-etkinlikler",
+      "title": "Sosyal Etkinlikler",
+      "body_content": "GİBTÜ Tercih Tanıtım Günleri 29.07.2024 - 02.08.2024 detay için tıklayınız\n\nAFAD İl Müdürlüğü Teknik Gezi 10.04.2025 ( Ebelik Bölümü 4. Sınıf Öğrencileriyle Halk Sağlığı Dersi Kapsamında Afet ve Acil Durum Yönetimi Başkanlığı (AFAD) İl Müdürlüğüne teknik bir gezi düzenlenmiştir )\n\nMezun - Mezun Adayları Öğrenci Buluşması Etkinliği\n\nGİBTÜ Ebelik Bölümü Dönem Sonu Kahvaltısı 02.06.2025 detay için tıklayınız\n\nAFAD Teknik Gezisi 26.09.2025 detay için tıklayınız\n\nEbelik Bölümü 1. Sınıf Öğrencileri Hoşgeldiniz Etkinliği 10.10.2025 detay için tıklayınız\n\nEbelik Bölümü Öğrencileri İle Toplum Ruh Sağlığı Merkezine Teknik Gezi 15.10.2025 detay için tıklayınız\n\n10 Kasım Atatürk'ü Anma Etkinliği 10.11.2025 detay için tıklayınız",
+      "char_count": 725,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=30",
+      "title": "Galeri",
+      "body_content": "2026\n\n2025\n\nGeleceğin Babaları İçin Anne Sütünün Önemi, Emzirme Desteği ve Sürdürülebilir Beslenme: Erkek Öğrencilerle Farkındalık Semineri\n\nAFAD Teknik Gezisi",
+      "char_count": 159,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=30",
+      "title": "Mevzuatlar",
+      "body_content": "Mevzuatlar\n\n Ebelik Bölümü Klinik Saha Yönergesi",
+      "char_count": 48,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=30",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=30",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nebelik@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nArş. Gör. Songül KEKİL\n\nsongul.kekil@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 340,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=30",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nArş. Gör. Tuğba KANARYA\n\nring_volume\n2239\n\nmail\ntugba.kanarya@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Ayşe ELKOCA\n\nring_volume\n2404\n\nmail\nayse.elkoca@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Zehra ÇERÇER\n\nring_volume\n2416\n\nmail\nzehra.cercer@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Elif BAYRAKÇI EROĞLU\n\nring_volume\n2418\n\nmail\nelif.bayrakci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Fadime BİÇER ŞAHİN\n\nring_volume\n2422\n\nmail\nfadime.bicersahin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Kamile AKÇA\n\nring_volume\n2430\n\nmail\nkamile.akca@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Sema İÇEL\n\nring_volume\n2431\n\nmail\nsema.icel@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Betül KAPLAN\n\nring_volume\n2433\n\nmail\nbetul.kaplan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Songül KEKİL\n\nring_volume\n2443\n\nmail\nsongul.kekil@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 914,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "title": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "department": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 16,
+    "yonetim": 1,
+    "tanitim": 5,
+    "personel": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "yonetmelik": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

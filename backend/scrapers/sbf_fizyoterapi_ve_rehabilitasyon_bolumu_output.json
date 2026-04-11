@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T21:09:46Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\Sağlık Bilimleri Fakültesi\\Fizyoterapi_ve_Rehabilitasyon_Bölümü.html",
+    "birim_id": 32,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Fizyoterapi ve Rehabilitasyon Bolumu"
+  },
+  "summary": {
+    "total_blueprint_urls": 23,
+    "total_fetched": 23,
+    "total_valid": 20,
+    "total_failed": 0,
+    "total_skipped": 3,
+    "total_documents": 25,
+    "total_chars": 8576
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Komite Görev Tanımları",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250912114624_8fb83a88.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "FTR Bölümü Komite Listesi",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251016140619_98cbccfc.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "FTR Bölümü İç ve Dış Paydaş Listesi",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251121093314_05d4e2c1.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Swot Analizi",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20251121132704_5bb37181.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=32",
+      "reason": "too_short (0 chars)",
+      "char_count": 0
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=32",
+      "reason": "too_short (5 chars)",
+      "char_count": 5
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=32",
+      "reason": "too_short (19 chars)",
+      "char_count": 19
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=32",
+      "title": "Fizyoterapi ve Rehabilitasyon Bölümü",
+      "body_content": "Postür Analizi\n\nFizyoterapide Yeşil Dönüşüm\n\nSigara ve Alkol Bağımlılığı\n\nOrgan Bağışı Bilgilendirme\n\nKortlar Engel Tanımaz Projesi\n\nYeşil Fizyoterapi: Sürdürülebilirlik Bilincinin Klinik ve Eğitim Ortamlarına Entegrasyonu\n\nEngelli Bireyler İçin Sürdürülebilir ve Erişilebilir Çözümler: Sürdürülebilir Adımlar, Erişilebilir Çözümler\n\nFizyoterapi ve Rehabilitasyon Bölümü Geleneksel Origo 'hoş Geldin ' Partisi\n\nHABERLER\n\nTÜMÜ\n\n06.04.2026 10:38\n\nPostür Analizi\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü öğrencileri, yürütücülüğünü Doç. Dr. Demet Gözaçan Karabulut’un üstlendiği Sağlık Projeleri ve Gönüllülük Çalışmaları dersi kapsamında “Postür Analizi” projesini hayata geçirdi.\n\n Devamını Oku\r\n\n06.04.2026 10:26\n\nFizyoterapide Yeşil Dönüşüm\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü öğrencileri, yürütücülüğünü Doç. Dr. Demet Gözaçan Karabulut’un üstlendiği Sağlık Projeleri ve Gönüllülük Çalışmaları dersi kapsamında “Fizyoterapide Yeşil Dönüşüm” projesini hayata geçirmiştir.\n\n Devamını Oku\r\n\n06.04.2026 10:00\n\nSigara ve Alkol Bağımlılığı\n\nGİBTÜ Fizyoterapi ve Rehabilitasyon Bölümü 3.sınıf öğrencileri yürütücülüğünü Doç. Dr. Demet Gözaçan Karabulut’un üstlendiği “Sağlık Projeleri ve Gönüllülük Çalışmaları” kapsamında sigara ve alkolün zararları hakkında farkındalık oluşturmak amacıyla çeşitli etkinlikler gerçekleştirildi.\n\n Devamını Oku\r\n\n03.04.2026 17:10\n\nOrgan Bağışı Bilgilendirme\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü 3. Sınıf öğrencileri, yürütücülüğünü Doç.Dr.Demet Gözaçan Karabulut’un üstlendiği Sağlık Projeleri ve Gönüllülük Çalışmaları dersi kapsamında “Organ Bağışı Bilgilendirme” hayata geçmiştir.\n\n Devamını Oku\r\n\n12.03.2026 14:09\n\nKortlar Engel Tanımaz Projesi\n\nGİBTÜ FTR Bölümü 3. Sınıf öğrencileri, yürütücülüğünü Dr. Öğr. Üyesi Gönül Elpeze'nin yaptığı Kortlar Engel Tanımaz Projesi kapsamında sahada aktif olarak yer aldılar.\n\n Devamını Oku\r\n\n21.11.2025 09:38\n\nYeşil Fizyoterapi: Sürdürülebilirlik Bilincinin Klinik ve Eğitim Ortamlarına Entegrasyonu\n\nGİBTÜ Sağlık Bilimleri Fakültesi Fizyoterapi ve Rehabilitasyon Bölümü sürdürülebilirlik ilkeleri doğrultusunda 'Yeşil Fizyoterapi: Sürdürülebilirlik Bilincinin Klinik ve Eğitim Ortamlarına Entegrasyonu' uygulamalı atölye çalışmasını öğretim üyelerinden Doç. Dr. Zekiye İpek KATIRCI KIRMACI tarafından 14 Kasım 2025 tarihinde gerçekleştirdi.\n\n Devamını Oku",
+      "char_count": 2472,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 24,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=32",
+      "title": "Yönetim",
+      "body_content": "Yönetim\r\n\nDoç. Dr. Demet GÖZAÇAN KARABULUT\n\nBölüm Başkanı\n\nring_volume\n2417\n\nmail\ndemet.karabulut@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 128,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 23,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=32",
+      "title": "Hakkımızda",
+      "body_content": "Hakkımızda hazırlanıyor...",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGorevTanimi.aspx?id=32",
+      "title": "Görev Tanımı",
+      "body_content": "Görev tanımı hazırlanıyor...",
+      "char_count": 28,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=32",
+      "title": "Misyon",
+      "body_content": "Misyonuz; \n\nÇağdaş bilgi ve beceri ile donanmış, yenilikçi, toplumsal sorumluluk bilinci yüksek, etik değerlere bağlı özverili, nitelikli fizyoterapistler yetiştirmek.",
+      "char_count": 167,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTanitim.aspx?id=32",
+      "title": "Tanıtım",
+      "body_content": "Tanıtımımız hazırlanıyor...",
+      "char_count": 27,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=32",
+      "title": "Tarihçe",
+      "body_content": "Tarihçemiz hazırlanıyor...",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=32",
+      "title": "Vizyon",
+      "body_content": "Vizyonumuz; \n\n            Toplumsal sorunlara duyarlı, güncel bilgi birikimi ile donanımlı, saygın, mesleki alanda üst düzey bilgi ve deneyim sahibi fizyoterapistler yetiştirerek verdiği kaliteli eğitim ile alanında en üst seviyede bir bölüm olmak.",
+      "char_count": 248,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=32",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nDoç. Dr. Demet GÖZAÇAN KARABULUT\n\nBölüm Başkanı\n\nring_volume\n2417\n\nmail\ndemet.karabulut@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Zekiye İpek KATIRCI KIRMACI\n\nDoç. Dr.\n\nring_volume\n2437\n\nmail\nipek.kirmaci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Çağtay MADEN\n\nDoç. Dr.\n\nring_volume\n2429\n\nmail\ncagtay.maden@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Gönül ELPEZE\n\nDr. Öğr. Üyesi\n\nring_volume\n2435\n\nmail\ngonul.elpeze@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Hatice YILDIRIM\n\nArş. Gör.\n\nring_volume\n2436\n\nmail\nhatice.yildirim@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Tuba GÜN KALKIN\n\nArş. Gör.\n\nring_volume\n0000\n\nmail\ntuba.gun@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Tuğba TEKEŞ\n\nArş. Gör.\n\nring_volume\n2447\n\nmail\ntugba.tekes@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 771,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=32",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=32",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nPostür Analizi\n\n06.04.2026\n\nFizyoterapide Yeşil Dönüşüm\n\n06.04.2026\n\nSigara ve Alkol Bağımlılığı\n\n06.04.2026\n\nOrgan Bağışı Bilgilendirme\n\n03.04.2026\n\nKortlar Engel Tanımaz Projesi\n\n12.03.2026\n\nYeşil Fizyoterapi: Sürdürülebilirlik Bilincinin Klinik ve Eğitim Ortamlarına Entegrasyonu\n\n21.11.2025",
+      "char_count": 319,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=32",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nP\no\ns\nt\nü\nr\n\nA\nn\na\nl\ni\nz\ni\n\nDuyuru\n\n06.04.2026\n\nF\ni\nz\ny\no\nt\ne\nr\na\np\ni\nd\ne\n\nY\ne\nş\ni\nl\n\nD\nö\nn\nü\nş\nü\nm\n\nDuyuru\n\n06.04.2026\n\nS\ni\ng\na\nr\na\n\nv\ne\n\nA\nl\nk\no\nl\n\nB\na\nğ\nı\nm\nl\nı\nl\nı\nğ\nı\n\nDuyuru\n\n06.04.2026\n\nO\nr\ng\na\nn\n\nB\na\nğ\nı\nş\nı\n\nB\ni\nl\ng\ni\nl\ne\nn\nd\ni\nr\nm\ne\n\nDuyuru\n\n03.04.2026\n\nK\no\nr\nt\nl\na\nr\n\nE\nn\ng\ne\nl\n\nT\na\nn\nı\nm\na\nz\n\nP\nr\no\nj\ne\ns\ni\n\nDuyuru\n\n12.03.2026\n\nT\ne\nl\ne\n-\nr\ne\nh\na\nb\ni\nl\ni\nt\na\ns\ny\no\nn\n\nv\ne\n\nU\nz\na\nk\nt\na\nn\n\nF\ni\nz\ny\no\nt\ne\nr\na\np\ni\n\nH\ni\nz\nm\ne\nt\nl\ne\nr\ni\nn\ni\nn\n\nS\nü\nr\nd\nü\nr\nü\nl\ne\nb\ni\nl\ni\nr\nl\ni\nğ\ni\n\nO\nr\nt\no\np\ne\nd\ni\nk\n\nV\na\nk\na\nl\na\nr\nd\na\n\nS\nü\nr\nd\nü\nr\nü\nl\ne\nb\ni\nl\ni\nr\n\nF\ni\nz\ny\no\nt\ne\nr\na\np\ni\n\nT\ne\nl\ne\n-\nr\ne\nh\na\nb\ni\nl\ni\nt\na\ns\ny\no\nn\n\nÖ\nr\nn\ne\nğ\ni\n\nDuyuru\n\n22.12.2025\n\nY\ne\nş\ni\nl\n\nF\ni\nz\ny\no\nt\ne\nr\na\np\ni\n:\n\nS\nü\nr\nd\nü\nr\nü\nl\ne\nb\ni\nl\ni\nr\nl\ni\nk\n\nB\ni\nl\ni\nn\nc\ni\nn\ni\nn\n\nK\nl\ni\nn\ni\nk\n\nv\ne\n\nE\nğ\ni\nt\ni\nm\n\nO\nr\nt\na\nm\nl\na\nr\nı\nn\na\n\nE\nn\nt\ne\ng\nr\na\ns\ny\no\nn\nu\n\nDuyuru\n\n21.11.2025\n\nE\nn\ng\ne\nl\nl\ni\n\nB\ni\nr\ne\ny\nl\ne\nr\n\nİ\nç\ni\nn\n\nS\nü\nr\nd\nü\nr\nü\nl\ne\nb\ni\nl\ni\nr\n\nv\ne\n\nE\nr\ni\nş\ni\nl\ne\nb\ni\nl\ni\nr\n\nÇ\nö\nz\nü\nm\nl\ne\nr\n:\n\nS\nü\nr\nd\nü\nr\nü\nl\ne\nb\ni\nl\ni\nr\n\nA\nd\nı\nm\nl\na\nr\n,\n\nE\nr\ni\nş\ni\nl\ne\nb\ni\nl\ni\nr\n\nÇ\nö\nz\nü\nm\nl\ne\nr\n\nDuyuru\n\n31.10.2025\n\nF\ni\nz\ny\no\nt\ne\nr\na\np\ni\n\nv\ne\n\nR\ne\nh\na\nb\ni\nl\ni\nt\na\ns\ny\no\nn\n\nB\nö\nl\nü\nm\nü\n\nG\ne\nl\ne\nn\ne\nk\ns\ne\nl\n\nO\nr\ni\ng\no\n\n'\nh\no\nş\n\nG\ne\nl\nd\ni\nn\n\n'\n\nP\na\nr\nt\ni\ns\ni\n\nDuyuru\n\n20.10.2025\n\nF\ni\nz\ny\no\nt\ne\nr\na\np\ni\n\nv\ne\n\nR\ne\nh\na\nb\ni\nl\ni\nt\na\ns\ny\no\nn\n\nB\nö\nl\nü\nm\nü\n\nA\nk\nr\na\nn\n\nY\nö\nn\nd\ne\nr\nl\ni\nğ\ni\n\nv\ne\n\nO\nr\ny\na\nn\nt\na\ns\ny\no\nn\n\nS\ne\nm\ni\nn\ne\nr\ni\n\nDuyuru\n\n01.10.2025\n\nG\na\nz\ni\na\nn\nt\ne\np\n\nB\nü\ny\nü\nk\nş\ne\nh\ni\nr\n\nB\ne\nl\ne\nd\ni\ny\ne\ns\ni\n\nE\nn\ng\ne\nl\ns\ni\nz\n\nY\na\nş\na\nm\n\nM\ne\nr\nk\ne\nz\ni\n\nİ\nş\n\nB\ni\nr\nl\ni\nğ\ni\n\n3\n.\n\nB\ni\nl\ni\nm\n\nK\nu\nr\nu\nl\nu\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nDuyuru\n\n26.09.2025\n\nG\nİ\nB\nT\nÜ\n\nF\nT\nR\n\nK\nl\ni\nn\ni\nk\n\nU\ny\ng\nu\nl\na\nm\na\n\nD\nı\nş\n\nP\na\ny\nd\na\nş\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nDuyuru\n\n11.09.2025\n\nG\na\nz\ni\na\nn\nt\ne\np\n\nB\nü\ny\nü\nk\nş\ne\nh\ni\nr\n\nB\ne\nl\ne\nd\ni\ny\ne\ns\ni\n\nE\nn\ng\ne\nl\ns\ni\nz\n\nY\na\nş\na\nm\n\nM\ne\nr\nk\ne\nz\ni\n\nİ\nş\n\nB\ni\nr\nl\ni\nğ\ni\n\n2\n.\n\nB\ni\nl\ni\nm\n\nK\nu\nr\nu\nl\nu\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nDuyuru\n\n20.06.2025\n\nT\nü\nr\nk\ni\ny\ne\n\nF\ni\nz\ny\no\nt\ne\nr\na\np\ni\ns\nt\nl\ne\nr\ni\n\nD\ne\nr\nn\ne\nğ\ni\nn\ni\nn\n\nB\nö\nl\nü\nm\nü\nm\nü\nz\ne\n\nZ\ni\ny\na\nr\ne\nt\ni\n\nDuyuru\n\n20.06.2025\n\n2\n0\n2\n4\n-\n2\n0\n2\n5\n\nE\nr\na\ns\nm\nu\ns\n+\n\nP\ne\nr\ns\no\nn\ne\nl\n\nH\na\nr\ne\nk\ne\nt\nl\ni\nl\ni\nğ\ni\n\nDuyuru\n\n20.06.2025\n\nB\ne\ny\na\nz\n\nÖ\nn\nl\nü\nk\n\nG\ni\ny\nm\ne\n\nT\nö\nr\ne\nn\ni\n\nDuyuru\n\n20.06.2025\n\n\"\n\nK\na\nn\n\nV\ne\nr\ni\nn\n\nC\na\nn\n\nV\ne\nr\ni\nn\n\n\"\n\nK\nı\nz\nı\nl\na\ny\n\nG\nö\nn\nü\nl\nl\nü\n\nK\na\nn\n\nB\na\nğ\nı\nş\nı\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nDuyuru\n\n13.06.2025\n\nD\ne\np\nr\ne\nm\nz\ne\nd\ne\n\nÖ\nğ\nr\ne\nn\nc\ni\nl\ne\nr\ne\n\nD\ne\ns\nt\ne\nk\n\nv\ne\n\nY\na\nr\nd\nı\nm\n\nK\ne\nr\nm\ne\ns\ni\n\nDuyuru\n\n13.06.2025\n\nE\nn\ng\ne\nl\nl\ne\nr\ni\n\nA\nş\na\nn\n\nÇ\nö\nz\nü\nm\nl\ne\nr\n\nÇ\na\nl\nı\nş\nt\na\ny\nı\n\nDuyuru\n\n13.06.2025\n\nG\na\nz\ni\na\nn\nt\ne\np\n\nB\nü\ny\nü\nk\nş\ne\nh\ni\nr\n\nB\ne\nl\ne\nd\ni\ny\ne\ns\ni\n\nE\nn\ng\ne\nl\ns\ni\nz\n\nY\na\nş\na\nm\n\nM\ne\nr\nk\ne\nz\ni\n\nİ\nş\n\nB\ni\nr\nl\ni\nğ\ni\n\n1\n.\n\nB\ni\nl\ni\nm\n\nK\nu\nr\nu\nl\nu\n\nT\no\np\nl\na\nn\nt\nı\ns\nı\n\nDuyuru\n\n04.06.2025\n\n KATEGORİLER\r\n\nDuyuru\n\nHaber",
+      "char_count": 2777,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/frb/icerik/26571",
+      "title": "Bilimsel Etkinlikler",
+      "body_content": "2024-2025 Erasmus+ Personel Hareketliliği\n\nEngelleri Aşan Çözümler Çalıştayı",
+      "char_count": 76,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/frb/icerik/26572",
+      "title": "Sosyal Etkinlikler",
+      "body_content": "Türkiye Fizyoterapistleri Derneğinin Bölümümüze Ziyareti\n\n\" Kan Verin Can Verin \" Kızılay Gönüllü Kan Bağışı Etkinliği\n\nDepremzede Öğrencilere Destek ve Yardım Kermesi",
+      "char_count": 167,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=32",
+      "title": "Formlar",
+      "body_content": "Formlar\n\n Staj Defteri\r\n\n Staj Devam Çizelgesi\r\n\n Uygulama-staj Değerlendirme Formu",
+      "char_count": 83,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=32",
+      "title": "Galeri",
+      "body_content": "2026\n\n2025\n\nGİBTÜ FTR Klinik Uygulama Dış Paydaş Toplantısı",
+      "char_count": 59,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=32",
+      "title": "Mevzuatlar",
+      "body_content": "Mevzuatlar\n\n Fizyoterapi ve Rehabilitasyon Bölümü Klinik Uygulama ve Staj Yönergesi",
+      "char_count": 83,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=32",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=32",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\nfrb@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nArş. Gör. Hatice YILDIRIM\n\nhatice.yildirim@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 343,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=32",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nArş. Gör. Tuba GÜN KALKIN\n\nring_volume\n0000\n\nmail\ntuba.gun@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Demet GÖZAÇAN KARABULUT\n\nring_volume\n2417\n\nmail\ndemet.karabulut@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Çağtay MADEN\n\nring_volume\n2429\n\nmail\ncagtay.maden@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Gönül ELPEZE\n\nring_volume\n2435\n\nmail\ngonul.elpeze@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Hatice YILDIRIM\n\nring_volume\n2436\n\nmail\nhatice.yildirim@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Zekiye İpek KATIRCI KIRMACI\n\nring_volume\n2437\n\nmail\nipek.kirmaci@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Tuğba TEKEŞ\n\nring_volume\n2447\n\nmail\ntugba.tekes@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 728,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 21,
+      "total": 21,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 21,
+      "total": 21,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 21,
+      "total": 21,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 21,
+      "total": 21,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 21,
+      "total": 21,
+      "pct": 100
+    },
+    "title": {
+      "count": 21,
+      "total": 21,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 21,
+      "total": 21,
+      "pct": 100
+    },
+    "department": {
+      "count": 21,
+      "total": 21,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 21,
+      "total": 21,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 21,
+      "total": 21,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 5,
+    "yonetim": 1,
+    "tanitim": 6,
+    "personel": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "yonetmelik": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}
