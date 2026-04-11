@@ -1,0 +1,341 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:22:22Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\Güzel Sanatlar Tasarım ve Mimarlık Fakültesi\\Gastronomii_ve_Mutfak_Sanatları.html",
+    "birim_id": 105,
+    "birim_title": "Bölüm Bilgileri",
+    "category": "bolumler",
+    "department": "Gastronomi ve Mutfak Sanatlari Bolumu"
+  },
+  "summary": {
+    "total_blueprint_urls": 22,
+    "total_fetched": 22,
+    "total_valid": 22,
+    "total_failed": 0,
+    "total_skipped": 0,
+    "total_documents": 29,
+    "total_chars": 14633
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Amaçlar ve Hedefler",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240726155957_e5cc5712.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Olanaklar",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240726155405_b22aa768.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Bölüm Kataloğu",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240731162131_a619d0f3.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Oryantasyon Sunumu",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240726163414_a153f3de.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2024  /  2025 Yılı Akademik Takvimi",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20240726163729_e73061a7.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "2025-2026 Yeni Müfredat",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260218101733_d878250d.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=105",
+      "title": "Gastronomi ve Mutfak Sanatları Bölümü",
+      "body_content": "Gastronomi Öğrencileri Kişisel Hijyen Eğitimine Katıldı\n\nGİBTÜ Gastronomi Basında\n\nÜniversite Öğrencileri Osmanlı Yemeklerini Yenilebilir Parfümlerle Pazarlamak İstiyor\n\nTÜBİTAK 2209-A Projesi ile Gaziantep Mutfağı Yabancı Öğrencilerle Buluştu\n\nGastronomi ve Mutfak Sanatları Bölümümüzde Çikolata Atölyesi\n\nGastronomi ve Mutfak Sanatları Bölümünde Pasta Sıvama ve Süsleme Workshopu Gerçekleştirildi\n\nGastronomide Sürdürülebilirlik İlkeleri Semineri Gerçekleştirildi\n\nGastronomi ve Mutfak Sanatları Bölümü Sürdürülebilirlik Semineri\n\nHABERLER\n\nTÜMÜ\n\n10.03.2026 13:38\n\nGastronomi Öğrencileri Kişisel Hijyen Eğitimine Katıldı\n\nGastronomi ve Mutfak Sanatları lisans öğrencileri, 09 Mart 2026 tarihinde düzenlenen “Gıda Üretim ve Perakende İş Yerleri ile Su Sektöründe Çalışanlar İçin Kişisel Hijyen Eğitimi” programına katıldı.\n\nEğitim, Şehitkamil Halk Eğitim Merkezi’nde gerçekleştirilmiş olup, eğitmen Necip Nalçacı tarafından verilmiştir. Program kapsamında gıda güvenliği, kişisel hijyen kuralları ve çalışma ortamında hijyenin önemi hakkında bilgi paylaşılmıştır.\n\nEğitim, öğrencilerin mesleki gelişimlerine katkı sağlamayı ve gıda güvenliği konusunda farkındalıklarını artırmayı amaçlamıştır.\n\n Devamını Oku\r\n\n19.01.2026 10:53\n\nGİBTÜ Gastronomi Basında\n\nÜniversitemizin Gastronomi ve Mutfak Sanatları Bölümü tarafından düzenlenen \n“Çok Kültürlü Gastronomi Etkinliği”\n, farklı kültürlerin mutfak mirasını bir araya getirerek basında da geniş yer buldu. Akademi, kültür ve lezzetin buluştuğu bu özel etkinliğe gösterilen ilgi bizleri gururlandırdı.\n\n Devamını Oku\r\n\n23.12.2025 09:23\n\nÜniversite Öğrencileri Osmanlı Yemeklerini Yenilebilir Parfümlerle Pazarlamak İstiyor\n\nGaziantep İslam Bilim ve Teknoloji Üniversitesi (GİBTÜ) Gastronomi ve Mutfak Sanatları Bölümü öğrencileri, geleneksel \nOsmanlı mutfak kültürünü\n modern gastronomi anlayışıyla yeniden canlandırmak için dikkat çekici bir projeye imza attı. Öğrenciler, klasik Osmanlı yemeklerini sadece tat olarak değil, aromatik deneyimle de öne çıkarmak amacıyla \n“yenilebilir parfümler”\n geliştirdi. \n\nProjede yer alan öğrenciler, Osmanlı mutfağında yaygın olarak kullanılan \nşerbet, hoşaf, sakızlı macunlar, çiçek suları ve çeşitli baharat karışımlarından\n ilham alarak tamamen doğal içerikli ve bitkisel özlerle formüle edilmiş \naltı farklı yenilebilir parfüm\n üretti. Bu parfümler, tabakta yemeğin sunumunun son aşamasında çok az miktarda sıkılarak hem damakta hem de hafızada unutulmaz bir aromatik etki bırakmayı hedefliyor.\n\nGİBTÜ Rektörü \nProf. Dr. Şehmus Demir\n, AA muhabirine yaptığı açıklamada, projenin gastronomide \nkoku ve tat uyumuna\n dikkat çekmeyi amaçladığını vurguladı. Demir, parfümlerin tamamen doğal malzemelerle üretildiğini ve \nkimyasal madde içermediğini\n belirterek bu ürünlerin gönül rahatlığıyla tüketilebileceğini söyledi. \n\nProjenin akademik danışmanlarından \nDr. Erol Taşkın\n ise bu yenilebilir parfümlerin kozmetik ürünler olmadığını, alkolsüz ve \nata yadigarı tekniklerle\n üretildiğini ifade etti. Parfümlerin Osmanlı döneminde kullanılan doğal bileşenlerle hazırlanarak yenilebilir hale getirildiğini belirten Taşkın, bununla unutulmaya yüz tutan yemek tariflerinin \nkoku hafızasını\n canlandırmayı ve bu kültürü tekrar topluma sunmayı amaçladıklarını söyledi. \n\nProjede tasarlanan parfümler arasında; kırmızı et yemekleri için \nkaranfil ve kozalak şurubu içeren “Şah-ı Karanfil”\n, uzun pişirilen et yemeklerinde \nnane ve narenciyeli “Ruh-i Hünkari”\n, tavuk ve balık yemeklerinde \ngül ile kızılcık aromalı “Nareng-i Esrar”\n gibi özel aromatik seçenekler bulunuyor. Sebze yemekleri ile çorbalar için çiçeksi ve bitkisel aromalar tercih edilirken; sütlü tatlı ve salatalarda \n“Menekşe-i Hümayun”\n, meyve tatlılarında ise \n“Gül-i Kızılcık”\n ile \n“Hümayun Karadut-i Nareng-i”\n gibi daha meyvemsi ve baharatlı parfümler kullanılıyor. \n\nÖğrencilerden \nBurak Can Özdemir\n, projenin Osmanlı mutfağını yenilebilir parfümlerle yaşatmayı amaçladığını belirtirken, \nHayrunisa Biltekin\n ise Osmanlı ve modern mutfağı \naynı tabakta buluşturmanın\n hedeflendiğini ifade etti.\n\n Devamını Oku\r\n\n19.12.2025 14:48\n\nTÜBİTAK 2209-A Projesi ile Gaziantep Mutfağı Yabancı Öğrencilerle Buluştu\n\nTÜBİTAK 2209-A kapsamında yürütülen \n“Yabancı Uyruklu Öğrencilere Gaziantep Geleneksel Yemeklerinin Aktarımı ve Sürdürülebilirliğinin Sağlanması”\n başlıklı proje, öğrencimiz \nFatma Önüm\n ve danışmanı \nDoç. Dr. Adem Ademoğlu\n tarafından başarıyla gerçekleştirildi.\n\nProje kapsamında bölüm mutfağımızda ağırlanan yabancı öğrencilerle Gaziantep’in geleneksel yemekleri uygulamalı olarak tanıtıldı. Etkinlikte, Gaziantep mutfağının kültürel önemi, yerel ürünler ve geleneksel pişirme teknikleri paylaşılarak gastronomik mirasın sürdürülebilirliğine katkı sağlandı.\n\n Devamını Oku\r\n\n28.11.2025 15:46\n\nGastronomi ve Mutfak Sanatları Bölümümüzde Çikolata Atölyesi\n\nBugün öğrencilerimizle birlikte keyifli ve öğretici bir çikolata atölyesi gerçekleştirdik.\n\nÜretim sürecini deneyimleyerek kendi çikolatalarını hazırlayan öğrencilerimiz, hem teknik becerilerini geliştirdi hem de yaratıcı yönlerini ortaya koydu.\n\nEmek veren tüm öğrencilerimize teşekkür ederiz! 🤎✨\n\n Devamını Oku\r\n\n20.11.2025 09:05\n\nGastronomi ve Mutfak Sanatları Bölümünde Pasta Sıvama ve Süsleme Workshopu Gerçekleştirildi\n\nGastronomi ve Mutfak Sanatları Bölümü tarafından düzenlenen “Pasta Sıvama ve Süsleme Workshopu” 19 Kasım Çarşamba günü saat 13.00’te bölüm uygulama mutfağında başarıyla gerçekleştirildi. Etkinlik, pastacılık alanındaki deneyimiyle tanınan Pastahane Şefi \nTürkan COŞKUN\n tarafından yürütüldü.\n\nWorkshop boyunca katılımcılar, pasta sıvama tekniklerinden modern süsleme yöntemlerine kadar birçok profesyonel uygulamayı birebir deneyimleme fırsatı buldu. Şef Türkan COŞKUN, hem teorik bilgiler hem de pratik ipuçlarıyla öğrencilere kapsamlı bir eğitim sundu. Etkinlik sonunda öğrenciler kendi hazırladıkları pastaları süsleyerek çalışmalarını tamamlama şansı elde etti.\n\nKontenjanın sınırlı olması nedeniyle yoğun ilgi gören workshop, öğrenciler tarafından büyük beğeniyle karşılandı. Uygulamalı eğitimin alan deneyimine katkı sağladığını belirten katılımcılar, benzer etkinliklerin devam etmesini temenni ettiklerini ifade etti.\n\nGastronomi ve Mutfak Sanatları Bölümü, öğrencilerin mesleki becerilerini geliştirmelerine katkı sağlayacak nitelikli uygulama etkinliklerini sürdürmeye devam edeceğini duyurdu.\n\n Devamını Oku\r\n\nDUYURULAR\n\nTÜMÜ\n\n27\n\nMar\n\n 2025-2026 Bahar Dönemi Vize Programı\r\n\n19\n\nOca\n\n 2025-2026 Güz Dönemi Gastronomi ve Mutfak Sanatları Bölümü Bütünleme Sınavı Takvimi\r\n\n26\n\nAra\n\n 2025 / 2026 Güz Dönemi Gastronomi ve Mutfak Sanatları Bölümü Final Takvimi\r\n\n25\n\nKas\n\n Çikolata Atölyesi Etkinliği\r\n\n17\n\nKas\n\n Pasta Sıvama ve Süsleme Workshopu\r\n\n24\n\nEki\n\n 2025 / 2026 Güz Dönemi Gastronomi ve Mutfak Sanatları Bölümü Vize Programı\r\n\n17\n\nEki\n\n Gastronomi ve Mutfak Sanatları Bölümü Sürdürülebilirlik Semineri",
+      "char_count": 6858,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=105",
+      "title": "Yönetim",
+      "body_content": "Yönetim\r\n\nProf. Dr. Şehmus DEMİR\n\nDekan\n\nring_volume\n0000\n\nmail\nsehmus.demir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. İbrahim ÇEKİÇ\n\nBölüm Başkanı\n\nring_volume\n2611\n\nmail\nibrahim.cekic@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Adem ADEMOĞLU\n\nDekan Yrd.\n\nring_volume\n2612\n\nmail\nadem.ademoglu@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 320,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=105",
+      "title": "Hakkımızda",
+      "body_content": "Gastronomi ve Mutfak Sanatları\n, yemek ve yemek kültürünün bilimsel, sanatsal ve kültürel yönlerini inceleyen disiplinler arası bir alandır. Bu disiplin, yemek pişirme teknikleri, yiyecek ve içeceklerin hazırlanışı, sunumu, tadımı, tarihsel gelişimi ve kültürel bağlamları gibi geniş bir yelpazeyi kapsar. 2022 yılında eğitim-öğretim faaliyetlerine başlayan Gastronomi ve Mutfak Sanatları Bölümümüz, Güzel Sanatlar, Tasarım ve Mimarlık Fakültesi bünyesinde faaliyet göstermektedir. Eğitim dilimiz Türkçe olup, lisans eğitimi süresince İngilizce de yabancı dil olarak verilmektedir.\n\nBölüm programımız; temel mutfak bilgisi, beslenme, gıda hijyeni, gastronomide güncel konular ve teknikler, yöresel mutfak, Osmanlı mutfağı ve uluslararası mutfakta öne çıkan ülkelerin (İtalyan, Hint, Arap, Kore) mutfakları ile ilgili teorik ve uygulamalı dersleri içermektedir. Mezunların iş gücünü etkin ve verimli kullanabilmeleri ve hızlı değişen sektör ihtiyaçlarına daha kolay adapte olabilmeleri amacıyla öğretim programımız; bilimsel araştırma teknikleri, iş sağlığı ve güvenliği, kariyer planlama, insan kaynakları yönetimi, girişimcilik ve inovasyon yönetimi, iletişim becerileri, ziyafet organizasyonu ve yönetimi ve maliyet analizi gibi teorik derslerle desteklenmektedir. Öğrencilerimiz, eğitim sürecinde kapsamlı staj programları ile sektörün dinamiklerini ve yenilikleri yakından takip etme imkânına sahiptir. Bu kapsamda, dört yıllık lisans eğitimi süresince öğrencilere en temelden en ileri seviyeye kadar yemek sanatının incelikleri öğretilmekte, iş hayatında ihtiyaç duyacakları iletişim ve yönetim becerileri kazandırılmaktadır.\n\nGastronomi ve Mutfak Sanatları bölümümüz, gıda, güzel sanatlar, turizm ve işletme gibi çeşitli disiplinlerden beslenerek öğrencilere zengin ve çok yönlü bir müfredat sunar. Bölümümüz mezunları, kamu ve özel sektöre ait oteller, restoranlar, yatlar, uçaklar, catering firmaları ve özel amaçlı beslenme kuruluşlarında; gastronom, mutfak şefi, restoran yöneticisi ve gastronomi danışmanı olarak görev alabilirler. Ayrıca, mezunlarımız, yiyecek-içecek işletmelerinde yönetici pozisyonlarına gelebilir; gastronomi yazarlığı, yemek stilistliği ve yemek fotoğrafçılığı gibi yaratıcı alanlarda kariyer yapma imkanına sahiptirler. Akademik kariyer hedefleyen mezunlar için geniş bir yelpazede fırsatlar sunulmakta olup, bu sayede mezunlarımız, alanlarında en üst düzeyde bilgi ve beceri kazanma şansına sahip olurlar.",
+      "char_count": 2440,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=105",
+      "title": "Misyon",
+      "body_content": "Gaziantep İslam Bilim ve Üniversitesi Gastronomi ve Mutfak Sanatları Bölümü olarak misyonumuz\n, bilimsel ve mesleki gelişimde; yaratıcı ve eleştirel düşünebilen, bilgi ve teknolojiyi etkin kullanabilen, bilimsel, ekonomik ve kültürel zenginliğe katkı sağlayan, toplumsal faydayı gözeten ve etik değerleri benimsemiş gastronomi profesyonelleri yetiştirmektir.",
+      "char_count": 358,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=105",
+      "title": "Vizyon",
+      "body_content": "Gaziantep İslam Bilim ve Üniversitesi Gastronomi ve Mutfak Sanatları Bölümü olarak vizyonumuz\n, Gastronomi ve Mutfak Sanatları alanında, bilimsel gelişmişliğiyle, yerel kültüre bağlılığıyla, yenilikçi yaklaşımlara açıklığıyla ve evrensel etik ilkelere saygısıyla öne çıkan; eğitim, öğretim ve araştırma kalitesiyle tercih edilen; öğretim kadrosu ve öğrencileriyle lider bir eğitim kurumu olarak uluslararası alanda tanınmaktır.",
+      "char_count": 427,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimtarihce.aspx?id=105",
+      "title": "Tarihçe",
+      "body_content": "Tarihçe\n\nHazırlanıyor\n\nok",
+      "char_count": 25,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=105",
+      "title": "Akademik Personel",
+      "body_content": "Akademik\r\n\nDoç. Dr. Elif Esra OZTURK\n\nDoç. Dr.\n\nring_volume\n2610\n\nmail\nelifesra.ozturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Adem ADEMOĞLU\n\nDoç. Dr.\n\nring_volume\n2612\n\nmail\nadem.ademoglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. İbrahim ÇEKİÇ\n\nDoç. Dr.\n\nring_volume\n2611\n\nmail\nibrahim.cekic@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Erol TAŞKIN\n\nDr. Öğr. Üyesi\n\nring_volume\n2613\n\nmail\nerol.taskin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Aygül CAN\n\nDr. Öğr. Üyesi\n\nring_volume\n2615\n\nmail\naygul.can@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Çağlar BAYAR\n\nArş. Gör.\n\nring_volume\n2614\n\nmail\ncaglar.bayar@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 644,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=105",
+      "title": "İdari Personel",
+      "body_content": "İdari\r\n\n Ergün ÖZUSLU\n\nFakülte Sekreteri\n\nring_volume\n2206\n\nmail\nergun.ozuslu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Hakkı ŞAHİNALP\n\nBilgisayar İşletmeni\n\nring_volume\n2606\n\nmail\nhakki.sahinalp@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 217,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=105",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\n2025-2026 Bahar Dönemi Vize Programı\n\n27.03.2026\n\n2025-2026 Güz Dönemi Gastronomi ve Mutfak Sanatları Bölümü Bütünleme Sınavı Takvimi\n\n19.01.2026\n\n2025 / 2026 Güz Dönemi Gastronomi ve Mutfak Sanatları Bölümü Final Takvimi\n\n26.12.2025\n\nÇikolata Atölyesi Etkinliği\n\n25.11.2025\n\nPasta Sıvama ve Süsleme Workshopu\n\n17.11.2025\n\n2025 / 2026 Güz Dönemi Gastronomi ve Mutfak Sanatları Bölümü Vize Programı\n\n24.10.2025\n\nGastronomi ve Mutfak Sanatları Bölümü Sürdürülebilirlik Semineri\n\n17.10.2025",
+      "char_count": 512,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=105",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi\r\n\nGastronomi Öğrencileri Kişisel Hijyen Eğitimine Katıldı\n\n10.03.2026\n\nGİBTÜ Gastronomi Basında\n\n19.01.2026\n\nÜniversite Öğrencileri Osmanlı Yemeklerini Yenilebilir Parfümlerle Pazarlamak İstiyor\n\n23.12.2025\n\nTÜBİTAK 2209-A Projesi ile Gaziantep Mutfağı Yabancı Öğrencilerle Buluştu\n\n19.12.2025\n\nGastronomi ve Mutfak Sanatları Bölümümüzde Çikolata Atölyesi\n\n28.11.2025\n\nGastronomi ve Mutfak Sanatları Bölümünde Pasta Sıvama ve Süsleme Workshopu Gerçekleştirildi\n\n20.11.2025",
+      "char_count": 495,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=105",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nG\na\ns\nt\nr\no\nn\no\nm\ni\n\nv\ne\n\nM\nu\nt\nf\na\nk\n\nS\na\nn\na\nt\nl\na\nr\nı\n\nB\nö\nl\nü\nm\nü\nn\nd\ne\n\nP\na\ns\nt\na\n\nS\nı\nv\na\nm\na\n\nv\ne\n\nS\nü\ns\nl\ne\nm\ne\n\nW\no\nr\nk\ns\nh\no\np\nu\n\nG\ne\nr\nç\ne\nk\nl\ne\nş\nt\ni\nr\ni\nl\nd\ni\n\nHaber\n\n20.11.2025\n\nG\nİ\nB\nT\nÜ\n\nG\na\ns\nt\nr\no\nn\no\nm\ni\n\nB\nö\nl\nü\nm\nü\n\nD\nü\nn\ny\na\n\nK\na\nh\nv\ne\n\nG\nü\nn\nü\n\nE\nt\nk\ni\nn\nl\ni\nğ\ni\n\nDuyuru\n\n03.10.2024\n\n KATEGORİLER\r\n\nDuyuru\n\nHaber\n\nKonferans",
+      "char_count": 389,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gmsb/icerik/14815/2022-mufredat",
+      "title": "2022 Müfredat",
+      "body_content": "2022 Müfredat için \ntıklayınız!",
+      "char_count": 31,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gmsb/icerik/14816/2023-mufredat",
+      "title": "2023 Müfredat",
+      "body_content": "2023 Müfredat için \ntıklayınız!",
+      "char_count": 31,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gmsb/icerik/21802/2022-faaliyet-raporu",
+      "title": "2022 Faaliyet Raporu",
+      "body_content": "2022 Faaliyet Raporu",
+      "char_count": 20,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gmsb/icerik/21803/2023-faaliyet-raporu",
+      "title": "2023 Faaliyet Raporu",
+      "body_content": "2023 Faaliyet Raporu",
+      "char_count": 20,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gmsb/icerik/22833/2024-faaliyet-raporu",
+      "title": "2024 Faaliyet Raporu",
+      "body_content": "2024 Faaliyet raporuna ulaşmak için \ntıklayınız.",
+      "char_count": 48,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=105",
+      "title": "Formlar",
+      "body_content": "Formlar\n\nİş Yeri Eğitimi ( Staj )\n\n İş Yeri Eğitim ( Staj ) Yönergesi\r\n\n İş Yeri Eğitimi ( Staj ) Akış Şeması\r\n\n İş Yeri Eğitimi ( Staj ) Başvuru Formu\r\n\n İş Yeri Eğitimi ( Staj ) Defteri\r\n\n İş Yeri Eğitimi ( Staj ) Kabul Formu\r\n\n Stajyer Değerlendirme Formu\r\n\n Taahhütname",
+      "char_count": 273,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=105",
+      "title": "Galeri",
+      "body_content": "2026\n\n2025\n\nGastronomi ve Mutfak Sanatları Bölümünde Pasta Sıvama ve Süsleme Workshopu Gerçekleştirildi",
+      "char_count": 103,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=105",
+      "title": "Faydalı Linkler",
+      "body_content": "GİBTÜ Gastronomi ve Mutfak Sanatları Bölümü Resmi İnstagram Sayfası\r\n\n Güzel Sanatlar Tasarım ve Mimarlık Fakültesi\r\n\n Kurumsal Kimlik\r\n\n Mevzuat Bilgi Sistemi\r\n\n Öğrenci İşleri Daire Başkanlığı",
+      "char_count": 194,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 5,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=105",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 4,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=105",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\ngmsb@gibtu.edu.tr\n\nphone\n+90 342 909 75 00\n\nprint\n+90 342 909 75 00\n\nWeb Sorumlumuz\n\nHakkı ŞAHİNALP\n\nhakki.sahinalp@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 328,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=105",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nProf. Dr. Şehmus DEMİR\n\nring_volume\n0000\n\nmail\nsehmus.demir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Ergün ÖZUSLU\n\nring_volume\n2206\n\nmail\nergun.ozuslu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Hakkı ŞAHİNALP\n\nring_volume\n2606\n\nmail\nhakki.sahinalp@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Elif Esra OZTURK\n\nring_volume\n2610\n\nmail\nelifesra.ozturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. İbrahim ÇEKİÇ\n\nring_volume\n2611\n\nmail\nibrahim.cekic@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Adem ADEMOĞLU\n\nring_volume\n2612\n\nmail\nadem.ademoglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Erol TAŞKIN\n\nring_volume\n2613\n\nmail\nerol.taskin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Çağlar BAYAR\n\nring_volume\n2614\n\nmail\ncaglar.bayar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Aygül CAN\n\nring_volume\n2615\n\nmail\naygul.can@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 874,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 23,
+      "total": 23,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 23,
+      "total": 23,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 23,
+      "total": 23,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 23,
+      "total": 23,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 23,
+      "total": 23,
+      "pct": 100
+    },
+    "title": {
+      "count": 23,
+      "total": 23,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 23,
+      "total": 23,
+      "pct": 100
+    },
+    "department": {
+      "count": 23,
+      "total": 23,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 23,
+      "total": 23,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 23,
+      "total": 23,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 9,
+    "yonetim": 1,
+    "tanitim": 4,
+    "personel": 2,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}

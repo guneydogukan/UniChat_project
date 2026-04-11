@@ -1,0 +1,410 @@
+{
+  "meta": {
+    "task": "3.2.7.2",
+    "description": "Harita Güdümlü Canlı Scrape",
+    "timestamp": "2026-04-11T22:21:21Z",
+    "blueprint_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\Güzel Sanatlar Tasarım ve Mimarlık Fakültesi\\Güzel_Sanatlar_Tasarım_ve_Mimarlık_Fakültesi.html",
+    "birim_id": 24,
+    "birim_title": "Hakkımızda",
+    "category": "bolumler",
+    "department": "Guzel Sanatlar Tasarim ve Mimarlik Fakultesi"
+  },
+  "summary": {
+    "total_blueprint_urls": 29,
+    "total_fetched": 31,
+    "total_valid": 30,
+    "total_failed": 0,
+    "total_skipped": 1,
+    "total_documents": 33,
+    "total_chars": 12149
+  },
+  "discovered_pdfs": [
+    {
+      "text": "Akademik Takvim",
+      "url": "https://www.gibtu.edu.tr/medya/birim/dosya/20250717104152_907d4f82.pdf",
+      "type": "pdf"
+    },
+    {
+      "text": "Kalite Komisyonu",
+      "url": "https://www.gibtu.edu.tr/Medya/Birim/Dosya/20260218102414_68614c7a.pdf",
+      "type": "pdf"
+    }
+  ],
+  "external_links": [],
+  "failed_urls": [],
+  "skipped_urls": [
+    {
+      "url": "https://www.gibtu.edu.tr/birimidaribirimler.aspx?id=24",
+      "reason": "too_short (0 chars)",
+      "char_count": 0
+    }
+  ],
+  "page_results": [
+    {
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=24",
+      "title": "Güzel Sanatlar Tasarım ve Mimarlık Fakültesi",
+      "body_content": "GİBTÜ 'de Geleceğin Eğitim Modeli Konuşuldu\n\nGİBTÜ 'nün Kalite Yolculuğu ISO 9001 ile Taçlandı\n\nTürkiye Yüzyılı Maarif Modeli Konferansı\n\nGİBTÜ 'de Mehmet Akif ve Çanakkale Ruhu Konferansı Gerçekleştirildi\n\nUzun Yılların Hizmetine Teşekkür\n\nGİBTÜ, IKAF26 'da Gençlerin Kariyer Yolculuğuna Yön Veriyor\n\nRektörümüzden Ramazan Bayramı Mesajı\n\nGİBTÜ 'de Çanakkale Geçilmez Programı Duygu Dolu Anlara Sahne Oldu",
+      "char_count": 406,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 32,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=24",
+      "title": "Yönetim",
+      "body_content": "Dekanlık\r\n\nProf. Dr. Şehmus DEMİR\n\nProf. Dr.\n\nring_volume\n0000\n\nmail\nsehmus.demir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Dekan Yrd\r\n\nDoç. Dr. Adem ADEMOĞLU\n\nDoç. Dr.\n\nring_volume\n2612\n\nmail\nadem.ademoglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Fakülte Sekreteri\r\n\n Tuncay ŞAHAN\n\nFakülte Sekreteri\n\nring_volume\n3102\n\nmail\ntuncay.sahan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Fakülte Yönetim Kurulu\r\n\nProf. Dr. Osman BİLGİN\n\nProf. Dr.\n\nring_volume\n2201\n\nmail\nosman.bilgin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Ali AYTEK\n\nDoç. Dr.\n\nring_volume\n2203\n\nmail\nali.aytek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Adem ADEMOĞLU\n\nDoç. Dr.\n\nring_volume\n2612\n\nmail\nadem.ademoglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. İbrahim ÇEKİÇ\n\nDoç. Dr.\n\nring_volume\n2611\n\nmail\nibrahim.cekic@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Erol TAŞKIN\n\nDr. Öğr. Üyesi\n\nring_volume\n2613\n\nmail\nerol.taskin@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 893,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 31,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHakkimizda.aspx?id=24",
+      "title": "Hakkımızda",
+      "body_content": "18 Mayıs 2018 tarih ve 30425 sayılı Resmi Gazetede yayınlanan Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 09/05/2018 olan 7141 nolu Kanunla, 2809 sayılı kanuna yapılan ek maddeyle önce Gaziantep Bilim ve Teknoloji Üniversitesi adıyla, daha sonra ise 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan Vergi Kanunları ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 17/01/2019 olan 7161 nolu Kanunun 14.maddesi ile 2809 sayılı Kanunun ek 178.maddesi başlığının birinci fıkrasında yer alan “Gaziantep Bilim ve Teknoloji Üniversitesi” ibareleri, “Gaziantep İslam Bilim ve Teknoloji Üniversitesi” olarak değiştirilmesi ile kurulmuştur. Gaziantep İslam Bilim ve Teknoloji Üniversitesi Rektörlüğüne, 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan atama kararı ile 2547 sayılı Yükseköğretim Kanununun 13 maddesi ile 3 sayılı Cumhurbaşkanlığı Kararnamesinin 2., 3., ve 7. Maddeleri gereği Prof. Dr. Nihat HATİPOĞLU atanmıştır.",
+      "char_count": 1051,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 30,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMisyon.aspx?id=24",
+      "title": "Misyon",
+      "body_content": "Güzel Sanatlar, Tasarım ve Mimarlık Fakültesi olarak misyonumuz, öğrencilerimize sanatın, tasarımın ve mimarlığın çeşitli disiplinlerinde yüksek kalitede eğitim ve araştırma imkanları sunarak, alanlarında yenilikçi, etik değerlere bağlı ve sürdürülebilir çözümler üretebilen profesyoneller yetiştirmektir. Öğrencilerimizi, eleştirel düşünme, yaratıcılık ve disiplinlerarası işbirliği becerileri ile donatarak, kültürel, sosyal ve çevresel sorunlara duyarlı, estetik ve fonksiyonel değerleri harmanlayabilen projeler geliştirebilmeleri için ilham vermek ve desteklemektir.",
+      "char_count": 571,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 29,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimVizyon.aspx?id=24",
+      "title": "Vizyon",
+      "body_content": "Güzel Sanatlar, Tasarım ve Mimarlık Fakültesi olarak vizyonumuz, ulusal ve uluslararası alanda tanınan, sanat, tasarım ve mimarlık alanlarında öncü bir eğitim ve araştırma kurumu olmaktır. Yenilikçi eğitim anlayışımız, disiplinlerarası yaklaşımlarımız ve topluma katkıda bulunma arzumuz ile öğrencilerimizi, geleceğin sanat, tasarım ve mimarlık alanlarını şekillendirecek liderler olarak yetiştirmeyi hedefleriz. Sürdürülebilirlik, teknolojik gelişmeler ve kültürel mirasın korunması konularında duyarlı çalışmalar yaparak, sektöre ve topluma değer katan projeler üretmek ve böylece dünyayı daha yaşanabilir, estetik ve işlevsel bir yer haline getirmek için çabalarız.",
+      "char_count": 668,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 28,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTarihce.aspx?id=24",
+      "title": "Tarihçe",
+      "body_content": "18 Mayıs 2018 tarih ve 30425 sayılı Resmi Gazetede yayınlanan Yükseköğretim Kanunu ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 09/05/2018 olan 7141 nolu Kanunla, 2809 sayılı kanuna yapılan ek maddeyle önce Gaziantep Bilim ve Teknoloji Üniversitesi adıyla, daha sonra ise 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan Vergi Kanunları ile Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair, kabul tarihi 17/01/2019 olan 7161 nolu Kanunun 14.maddesi ile 2809 sayılı Kanunun ek 178.maddesi başlığının birinci fıkrasında yer alan “Gaziantep Bilim ve Teknoloji Üniversitesi” ibareleri, “Gaziantep İslam Bilim ve Teknoloji Üniversitesi” olarak değiştirilmesi ile kurulmuştur. Gaziantep İslam Bilim ve Teknoloji Üniversitesi Rektörlüğüne, 18 Ocak 2019 tarih ve 30659 sayılı Resmi Gazetede yayınlanan atama kararı ile 2547 sayılı Yükseköğretim Kanununun 13 maddesi ile 3 sayılı Cumhurbaşkanlığı Kararnamesinin 2., 3., ve 7. Maddeleri gereği Prof. Dr. Nihat HATİPOĞLU atanmıştır.",
+      "char_count": 1051,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 27,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/birimakademikbirimler.aspx?id=24",
+      "title": "Akademik Birimler",
+      "body_content": "Gastronomi ve Mutfak Sanatları",
+      "char_count": 30,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 26,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimAkademikPersonel.aspx?id=24",
+      "title": "Akademik Personel",
+      "body_content": "Gastronomi ve Mutfak Sanatları\r\n\nDoç. Dr. İbrahim ÇEKİÇ\n\nBölüm Başkanı\n\nring_volume\n2611\n\nmail\nibrahim.cekic@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Adem ADEMOĞLU\n\nDoç. Dr.\n\nring_volume\n2612\n\nmail\nadem.ademoglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Elif Esra OZTURK\n\nDoç. Dr.\n\nring_volume\n2610\n\nmail\nelifesra.ozturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Erol TAŞKIN\n\nDr. Öğr. Üyesi\n\nring_volume\n2613\n\nmail\nerol.taskin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Aygül CAN\n\nDr. Öğr. Üyesi\n\nring_volume\n2615\n\nmail\naygul.can@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Çağlar BAYAR\n\nArş. Gör.\n\nring_volume\n2614\n\nmail\ncaglar.bayar@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 671,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 24,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIdariPersonel.aspx?id=24",
+      "title": "İdari Personel",
+      "body_content": "Fakülte Sekreteri\r\n\n Tuncay ŞAHAN\n\nFakülte Sekreteri\n\nring_volume\n3102\n\nmail\ntuncay.sahan@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Bilgisayar İşletmeni\r\n\n Hakkı ŞAHİNALP\n\nBilgisayar İşletmeni\n\nring_volume\n2606\n\nmail\nhakki.sahinalp@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 253,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 23,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gsmf/icerik/30646/gastronomi-ve-mutfak-sanatlari-bolumu-ders-mufredati",
+      "title": "Gastronomi ve Mutfak Sanatları Bölümü Ders Müfredatı",
+      "body_content": "2022-2023 Müfredatı \n\n2023-2024 Müfredatı",
+      "char_count": 41,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 22,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gsmf/icerik/30650/ders-icerikleri",
+      "title": "Ders İçerikleri",
+      "body_content": "Ders İçerikleri (Yeni Müfredat)\n\nDers İçerikleri (2023-2024)",
+      "char_count": 60,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 21,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gsmf/icerik/30628/gorev-tanimlari",
+      "title": "Görev Tanımları",
+      "body_content": "DEKAN GÖREVİ TANIMI\n\nDEKAN YARDIMCISI GÖREV TANIMI\n\nBÖLÜM BAŞKANI GÖREV TANIMI\n\nÖĞRETİM ÜYESİ GÖREV TANIMI\n\nBÖLÜM BAŞKANI GÖREV TANIMI\n\nÖĞRETİM GÖREVLİSİ GÖREV TANIMI\n\nFAKÜLTE SEKRETERİ GÖREV TANIMI\n\nARAŞTIRMA GÖREVLİSİ GÖREV TANIMI\n\nBİRİM ÖĞRENCİ İŞLERİ PERSONELİ GÖREV TANIMI\n\nPERSONEL VE KAYIT KONTROL İŞLERİ GÖREV TANIMI",
+      "char_count": 324,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 20,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gsmf/icerik/30631/is-akis-semalari",
+      "title": "İş Akış Şemaları",
+      "body_content": "Ders Görevlendirme İş Akış Şeması\n\nDers Kayıt İşlemleri İş Akış Şeması\n\nDers Muafiyet ve İntibak İşlemleri İş Akış Şeması\n\nEk Ders İş Akış Şeması\n\nHaftalık Ders Programı Oluşturma İş Akış Şemas\nı\n\nMazeret Sınavı İş Akış Şeması\n\nMazeretli Kayıt Yenileme İş Akış Şeması\n\nÖğrenci Disiplin Soruşturması İş Akış Şeması\n\nÖğrenci Kayıt Dondurma İş Akış Şeması\n\nÖğrenci Kontenjanları Belirleme İş Akış Şeması\n\nÖğretim Elemenı Atanma İşlemleri İş Akış Şeması\n\nSınavlara İtiraz İş Akış Şeması\n\nTaşınır Mal İş Akış Şeması\n\nYönetim Kurul Kararları İş Akış Şeması\n\nYurtiçi ve Yurtdışı Harcırah Ödemeleri İş Akış Şeması",
+      "char_count": 605,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 19,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gsmf/icerik/30974/temizlik-talimati",
+      "title": "Temizlik Talimatı",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\nTemizlik Talimatı\n\ndate_range\nYayın Tarihi : \n12.09.2025 11:10\n\npeople\nOkunma : \n67\n\nGüzel Sanatlar Tasarım ve Mimarlık Fakültesi\n\nTemizlik Talimatı\n\nok",
+      "char_count": 185,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 18,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gsmf/icerik/30973/yangin-talimati",
+      "title": "Yangın Talimatı",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\nYangın Talimatı\n\ndate_range\nYayın Tarihi : \n12.09.2025 11:08\n\npeople\nOkunma : \n73\n\nGüzel Sanatlar Tasarım ve Mimarlık Fakültesi\n\nYangın Talimatı\n\nok",
+      "char_count": 181,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 17,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gsmf/icerik/30981/prosesler",
+      "title": "Prosesler",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\nProsesler\n\ndate_range\nYayın Tarihi : \n12.09.2025 15:27\n\npeople\nOkunma : \n83\n\nGüzel Sanatlar Tasarım ve Mimarlık Fakültesi\n\nProsesler\n\nok",
+      "char_count": 169,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 16,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gsmf/icerik/30995/performans-gostergeleri",
+      "title": "Performans Göstergeleri",
+      "body_content": "Performans Göstergeleri",
+      "char_count": 23,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 15,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gsmf/icerik/30996/ic-paydas-isbirligi-uygulama-protokolu",
+      "title": "İç Paydaş İşbirliği Uygulama Protokolü",
+      "body_content": "İç Paydaş İşbirliği Uygulama Protokolü, üniversitemiz İlahiyat Fakültesi ile bölümümüz arasındaki işbirliği kapsamında, Arapça derslerinin yürütülmesinde görev alacak öğretim üyeleri ve öğretim elemanlarının katkılarıyla gerçekleştirilen; eğitim hizmetlerinin kalitesini artırmayı, akademik süreçleri güçlendirmeyi ve bölüm içi işbirliğini yaygınlaştırmayı amaçlayan bir protokoldür.",
+      "char_count": 383,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 14,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=24",
+      "title": "Duyurular",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 13,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimHaber.aspx?id=24",
+      "title": "Haberler",
+      "body_content": "Başlık\r\n\n Yayın Tarihi",
+      "char_count": 22,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 12,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimDuyuruArsivi.aspx?id=24",
+      "title": "İçerik Arşivi",
+      "body_content": "Ara\n\n Başlık\r\n\n Kategori\r\n\n Yayın Tarihi\r\n\nG\na\ns\nt\nr\no\nn\no\nm\ni\n\nv\ne\n\nM\nu\nt\nf\na\nk\n\nS\na\nn\na\nt\nl\na\nr\nı\n\nB\nö\nl\nü\nm\nü\n\n2\n0\n2\n3\n-\n2\n0\n2\n4\n\nB\na\nh\na\nr\n\nD\nö\nn\ne\nm\ni\n\nF\ni\nn\na\nl\n\nS\nı\nn\na\nv\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n28.05.2024\n\nB\na\ns\nı\nn\nd\na\n\nG\nİ\nB\nT\nÜ\n\nG\na\ns\nt\nr\no\nn\no\nm\ni\n\nM\nu\nt\nf\na\nğ\nı\n\nA\nç\nı\nl\nı\nş\nı\n\nHaber\n\n12.03.2024\n\nF\na\nk\nü\nl\nt\ne\nm\ni\nz\nd\ne\n\nG\na\ns\nt\nr\no\nn\no\nm\ni\n\nv\ne\n\nM\nu\nt\nf\na\nk\n\nS\na\nn\na\nt\nl\na\nr\nı\n\nU\ny\ng\nu\nl\na\nm\na\n\nM\nu\nt\nf\na\nğ\nı\n\nA\nç\nı\nl\nd\nı\n\nDuyuru\n\n11.03.2024\n\nG\na\ns\nt\nr\no\nn\no\nm\ni\n\nv\ne\n\nM\nu\nt\nf\na\nk\n\nS\na\nn\na\nt\nl\na\nr\nı\n\nB\nö\nl\nü\nm\nü\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nB\nü\nt\nü\nn\nl\ne\nm\ne\n\nS\nı\nn\na\nv\nı\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n17.01.2023\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nG\nü\nz\n\nY\na\nr\nı\ny\nı\nl\nı\n\nF\ni\nn\na\nl\n\nS\nı\nn\na\nv\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n02.01.2023\n\nG\na\ns\nt\nr\no\nn\no\nm\ni\n\nv\ne\n\nM\nu\nt\nf\na\nk\n\nS\na\nn\na\nt\nl\na\nr\nı\n\nB\nö\nl\nü\nm\nü\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nA\nr\na\n\nS\nı\nn\na\nv\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n07.11.2022\n\nG\nü\nn\nc\ne\nl\n\n-\n\n2\n0\n2\n2\n-\n2\n0\n2\n3\n\nE\nğ\ni\nt\ni\nm\n-\nö\nğ\nr\ne\nt\ni\nm\n\nY\nı\nl\nı\n\nG\nü\nz\n\nD\nö\nn\ne\nm\ni\n\nD\ne\nr\ns\n\nP\nr\no\ng\nr\na\nm\nı\n\nDuyuru\n\n23.09.2022\n\n KATEGORİLER\r\n\nDuyuru\n\nHaber",
+      "char_count": 1073,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 11,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=24",
+      "title": "Formlar",
+      "body_content": "Formlar\n\nİş Yeri Eğitimi ( Staj )\n\n İş Yeri Eğitimi ( Staj ) Başvuru Formu\r\n\n İş Yeri Eğitimi ( Staj ) Defteri\r\n\n İş Yeri Eğitimi ( Staj ) Kabul Formu\r\n\n İşyeri Eğitimi ( Staj ) Yönergesi\r\n\n Staj Akış Şeması\r\n\n Stajyer Değerlendirme Formu\r\n\n Taahhütname\r\n\nÖğrenci\n\n Ders Ekleme - Çıkarma Dilekçesi\r\n\n Ders Muafiyeti Başvuru Dilekçesi\r\n\n İlişik Kesme Formu\r\n\n Kayıt Dondurma Formu\r\n\n Taahütname - Yatay Geçiş Başvuru Formu( Başarı Puanı ile Başvuracaklar İçin )\r\n\n Taahütname - Yatay Geçiş Başvuru Formu( Merkezi Yerleştirme Puanı ile Başvuracaklar İçin )\r\n\n Tek Ders Başvuru Dilekçesi\r\n\n Ders Telafi Formu\r\n\n Genel Dilekçe\r\n\n Kısmi Zamanlı Öğrenci Çalıştırma İş Başvuru Formu\r\n\n Mazeret Sınavı Başvuru Formu\r\n\n Not Düzeltme Formu\r\n\n Öğrencinin Yatay Geçiş Engel Durum Bildirim Formu\r\n\nPersonel\n\n Aile Durum Bildirimi Formu\r\n\n Doktor Öğretim Üyesi Kadrolarına Yeniden Atama Değerlendirme Komisyonu Tutanağı\r\n\n Eğitim Değerlendirme Formu\r\n\n Eğitim Katılım Formu\r\n\n Elektronik Posta İstek Şifre Değişikliği Formu\r\n\n Lavabo Temizlık Takip Formu\r\n\n Mal Bildirim Beyannamesi Formu\r\n\n Malzeme Talep Formu\r\n\n Tebliğ Tebellüğ Belgesi\r\n\n Yurt Dışı İzin Talebi Formu",
+      "char_count": 1155,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 10,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=24",
+      "title": "Galeri",
+      "body_content": "2024\n\n2023\n\nGastronomi ve Mutfak Sanatları Bölümü 2023-2024 Bahar Dönemi Final Sınav Programı\n\nProfesyonel Bıçak Eğitimi Konferansı\n\nBasında GİBTÜ Gastronomi Mutfağı Açılışı\n\nFakültemizde Gastronomi ve Mutfak Sanatları Uygulama Mutfağı Açıldı\n\nGastronomi Dünyası İçin GİBTÜ 'den Önemli Bir Çalışma",
+      "char_count": 297,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 9,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=24",
+      "title": "Mevzuatlar",
+      "body_content": "Mevzuatlar\n\n Gaziantep İslam Bilim ve Teknoloji Üniversitesi Önlisans ve Lisans Eğitim-öğretim ve Sınav Yönetmeliği",
+      "char_count": 115,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 8,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=24",
+      "title": "Faydalı Linkler",
+      "body_content": "CİMER\r\n\n E-Devlet\r\n\n Kütüphane\r\n\n KYK",
+      "char_count": 37,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 7,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimSss.aspx?id=24",
+      "title": "Sıkça Sorulan Sorular",
+      "body_content": "SSS\r\n\nkeyboard_arrow_right",
+      "char_count": 26,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 6,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=24",
+      "title": "İletişim",
+      "body_content": "İletişim Bilgilerimiz\n\nlocation_on\nBeştepe mah. 192180 nolu cadde 27010 Şahinbey/Gaziantep\n\nmail\ngsmf@gibtu.edu.tr\n\nphone\n+90 (342) 909 75 00\n\nprint\n+90 (342) 909 75 00\n\nWeb Sorumlumuz\n\nHakkı ŞAHİNALP\n\nhakki.sahinalp@gibtu.edu.tr\n\nBlog Sayfam\n\nMesaj Gönder\n\n Ad\r\n *\n\n Soyad\r\n *\n\n E-posta\r\n *\n\n Gsm\n\n Konu\r\n *\n\n Mesajınız\r\n *\n\nGönder",
+      "char_count": 332,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 3,
+      "placeholder": null
+    },
+    {
+      "url": "https://www.gibtu.edu.tr/BirimTelefonRehberi.aspx?id=24",
+      "title": "Telefon Rehberi",
+      "body_content": "Sıralama Dahili No, Ad, Soyad ' a göre yapılmıştır\n\nProf. Dr. Şehmus DEMİR\n\nring_volume\n0000\n\nmail\nsehmus.demir@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Osman BİLGİN\n\nring_volume\n2201\n\nmail\nosman.bilgin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nProf. Dr. Ali AYTEK\n\nring_volume\n2203\n\nmail\nali.aytek@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Hakkı ŞAHİNALP\n\nring_volume\n2606\n\nmail\nhakki.sahinalp@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Elif Esra OZTURK\n\nring_volume\n2610\n\nmail\nelifesra.ozturk@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. İbrahim ÇEKİÇ\n\nring_volume\n2611\n\nmail\nibrahim.cekic@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDoç. Dr. Adem ADEMOĞLU\n\nring_volume\n2612\n\nmail\nadem.ademoglu@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Erol TAŞKIN\n\nring_volume\n2613\n\nmail\nerol.taskin@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nArş. Gör. Çağlar BAYAR\n\nring_volume\n2614\n\nmail\ncaglar.bayar@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\nDr. Öğr. Üyesi Aygül CAN\n\nring_volume\n2615\n\nmail\naygul.can@gibtu.edu.tr\n\nlink\nBlog Sayfam\n\n Tuncay ŞAHAN\n\nring_volume\n3102\n\nmail\ntuncay.sahan@gibtu.edu.tr\n\nlink\nBlog Sayfam",
+      "char_count": 1052,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 2,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gsmf/icerik/33177/birim-faaliyet-raporu",
+      "title": "Birim Faaliyet Raporları",
+      "body_content": "2025 Eğitim Öğretim Yılı Birim Faaliyet Raporu İçin Tıklayınız...!\n\n2024 Eğitim Öğretim Yılı Birim Faaliyet Raporu İçin Tıklayınız...!\n\n2023 Eğitim Öğretim Yılı Birim Faaliyet Raporu İçin Tıklayınız...!\n\n2022 Eğitim Öğretim Yılı Birim Faaliyet Raporu İçin Tıklayınız...!",
+      "char_count": 270,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 1,
+      "placeholder": null
+    },
+    {
+      "url": "http://www.gibtu.edu.tr/gsmf/icerik/33278/kalite-el-kitabi",
+      "title": "Kalite El Kitabı",
+      "body_content": "print\n\ntext_format\n\ntext_format\n\nKalite El Kitabı\n\ndate_range\nYayın Tarihi : \n10.04.2026 08:51\n\npeople\nOkunma : \n4\n\nGüzel Sanatlar Tasarım ve Mimarlık Fakültesi\n\nKalite el Kitabı \n\nok",
+      "char_count": 183,
+      "is_valid": true,
+      "depth": 0,
+      "discovered_new_urls": 0,
+      "placeholder": null
+    }
+  ],
+  "metadata_completeness": {
+    "category": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "source_url": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "source_type": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "source_id": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "last_updated": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "title": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "doc_kind": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "department": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "contact_unit": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    },
+    "contact_info": {
+      "count": 31,
+      "total": 31,
+      "pct": 100
+    }
+  },
+  "doc_kind_distribution": {
+    "genel": 14,
+    "yonetim": 1,
+    "tanitim": 4,
+    "personel": 2,
+    "mufradat": 1,
+    "duyuru": 2,
+    "haber": 1,
+    "form": 1,
+    "yonetmelik": 1,
+    "iletisim": 2,
+    "rapor": 1,
+    "menu_haritasi": 1
+  }
+}

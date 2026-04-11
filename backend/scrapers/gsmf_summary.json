@@ -1,0 +1,49 @@
+{
+  "task": "3.2.8.6",
+  "description": "GSTMF Harita Gudumlu Deep Scrape",
+  "birimler": [
+    {
+      "department": "Guzel Sanatlar Tasarim ve Mimarlik Fakultesi",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\gsmf_guzel_sanatlar_tasarim_ve_mimarlik_fakultesi_output.json",
+      "total_documents": 33,
+      "total_valid": 30,
+      "total_failed": 0,
+      "total_chars": 12149,
+      "pdf_count": 2,
+      "doc_kind_distribution": {
+        "genel": 14,
+        "yonetim": 1,
+        "tanitim": 4,
+        "personel": 2,
+        "mufradat": 1,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "yonetmelik": 1,
+        "iletisim": 2,
+        "rapor": 1,
+        "menu_haritasi": 1
+      }
+    },
+    {
+      "department": "Gastronomi ve Mutfak Sanatlari Bolumu",
+      "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\gsmf_gastronomi_ve_mutfak_sanatlari_bolumu_output.json",
+      "total_documents": 29,
+      "total_valid": 22,
+      "total_failed": 0,
+      "total_chars": 14633,
+      "pdf_count": 6,
+      "doc_kind_distribution": {
+        "genel": 9,
+        "yonetim": 1,
+        "tanitim": 4,
+        "personel": 2,
+        "duyuru": 2,
+        "haber": 1,
+        "form": 1,
+        "iletisim": 2,
+        "menu_haritasi": 1
+      }
+    }
+  ]
+}
