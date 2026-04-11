@@ -1,0 +1,22 @@
+{
+  "task": "3.2.8.4",
+  "description": "Tip Fakultesi Harita Gudumlu Deep Scrape",
+  "department": "Tip Fakultesi",
+  "json_path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\scrapers\\tip_fakultesi_output.json",
+  "total_documents": 63,
+  "total_valid": 43,
+  "total_failed": 0,
+  "total_chars": 2153713,
+  "pdf_count": 20,
+  "doc_kind_distribution": {
+    "genel": 28,
+    "yonetim": 1,
+    "tanitim": 4,
+    "personel": 2,
+    "duyuru": 4,
+    "form": 1,
+    "yonetmelik": 1,
+    "iletisim": 2,
+    "menu_haritasi": 1
+  }
+}
