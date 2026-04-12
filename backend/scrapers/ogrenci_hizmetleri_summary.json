@@ -1,0 +1,9 @@
+{
+  "task": "3.2.15",
+  "description": "Ogrenci Hizmetleri Deep Scrape",
+  "egitim_docs": 3,
+  "yemek_docs": 3,
+  "aday_docs": 2,
+  "total_documents": 8,
+  "chunks_written": 6
+}
