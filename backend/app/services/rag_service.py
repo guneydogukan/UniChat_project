@@ -144,11 +144,14 @@ class RagService:
 
         logger.info("📩 Gelen soru: %s", question)
 
-        result = self._pipeline.run({
-            "text_embedder": {"text": question},
-            "keyword_retriever": {"query": question},
-            "prompt_builder": {"question": question},
-        })
+        result = self._pipeline.run(
+            data={
+                "text_embedder": {"text": question},
+                "keyword_retriever": {"query": question},
+                "prompt_builder": {"question": question},
+            },
+            include_outputs_from={"joiner"},
+        )
 
         logger.info("Pipeline tamamlandı. Anahtarlar: %s", list(result.keys()))
 
