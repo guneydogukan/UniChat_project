@@ -1,0 +1,14 @@
+{
+  "task": "3.3-C",
+  "description": "Dijital Hizmetler Rehber",
+  "total_documents": 6,
+  "total_written": 6,
+  "services": [
+    "OBS - Ogrenci Bilgi Sistemi Giris Rehberi",
+    "E-Posta Sistemi - Ogrenci ve Personel",
+    "Egitim Katalogu - Bologna Bilgi Sistemi",
+    "EBYS - Elektronik Belge Yonetim Sistemi",
+    "Basvuru Islemleri Portali",
+    "Diger Dijital Hizmetler ve Platformlar"
+  ]
+}
