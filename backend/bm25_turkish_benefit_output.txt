@@ -1,0 +1,178 @@
+====================================================================================================
+BOLUM 1: plainto_tsquery (AND) — english / simple / turkish
+====================================================================================================
+
+Sorgu                                        eng   sim   tur  tsquery (turkish)
+----------------------------------------------------------------------------------------------------
+  hangi fakülteler var                         0     0     2  'hangi' & 'fakülte' & 'var' <-- turkish kazandi
+  transkript almak istiyorum                   0     0     0  'transkript' & 'almak' & 'istiyor' <-- hepsi basarisiz
+  son duyurular neler                          0     0     0  'son' & 'duyuru' & 'ne' <-- hepsi basarisiz
+  sınav yönetmeliği ne diyor                   0     0     0  'sınav' & 'yönetmelik' & 'diyor' <-- hepsi basarisiz
+  hemşirelik mi ebelik mi                      0     0     0  'hemşirelik' & 'mi' & 'ebelik' & 'mi' <-- hepsi basarisiz
+
+====================================================================================================
+BOLUM 2: turkish plainto_tsquery — Detayli sonuc incelemeleri
+====================================================================================================
+
+  Sorgu: "hangi fakülteler var" --> 2 sonuc 
+  tsquery: 'hangi' & 'fakülte' & 'var'
+    token 'hangi' tek basina: 148 eslesme
+    token 'fakülte' tek basina: 463 eslesme
+    token 'var' tek basina: 258 eslesme
+    rank=0.1609 [bolumler] Sıkça Sorulan Sorular
+    rank=0.0962 [bolumler] Sıkça Sorulan Sorular
+
+  Sorgu: "transkript almak istiyorum" --> 0 sonuc (BASARISIZ)
+  tsquery: 'transkript' & 'almak' & 'istiyor'
+    token 'transkript' tek basina: 65 eslesme
+    token 'almak' tek basina: 406 eslesme
+    token 'istiyor' tek basina: 15 eslesme
+
+  Sorgu: "son duyurular neler" --> 0 sonuc (BASARISIZ)
+  tsquery: 'son' & 'duyuru' & 'ne'
+    token 'son' tek basina: 661 eslesme
+    token 'duyuru' tek basina: 112 eslesme
+    token 'ne' tek basina: 0 eslesme
+
+  Sorgu: "sınav yönetmeliği ne diyor" --> 0 sonuc (BASARISIZ)
+  tsquery: 'sınav' & 'yönetmelik' & 'diyor'
+    token 'sınav' tek basina: 903 eslesme
+    token 'yönetmelik' tek basina: 501 eslesme
+    token 'diyor' tek basina: 1 eslesme
+
+  Sorgu: "hemşirelik mi ebelik mi" --> 0 sonuc (BASARISIZ)
+  tsquery: 'hemşirelik' & 'mi' & 'ebelik' & 'mi'
+    token 'hemşirelik' tek basina: 141 eslesme
+    token 'mi' tek basina: 122 eslesme
+    token 'ebelik' tek basina: 145 eslesme
+    token 'mi' tek basina: 122 eslesme
+
+====================================================================================================
+BOLUM 3: websearch_to_tsquery (OR destekli) — turkish config
+  websearch_to_tsquery kelimeler arasi OR kullanabilir, daha esnek.
+====================================================================================================
+
+Sorgu                                      AND(plain)   AND(web)  websearch tsquery
+----------------------------------------------------------------------------------------------------
+  hangi fakülteler var                              2          2  'hangi' & 'fakülte' & 'var'
+  transkript almak istiyorum                        0          0  'transkript' & 'almak' & 'istiyor'
+  son duyurular neler                               0          0  'son' & 'duyuru' & 'ne'
+  sınav yönetmeliği ne diyor                        0          0  'sınav' & 'yönetmelik' & 'diyor'
+  hemşirelik mi ebelik mi                           0          0  'hemşirelik' & 'mi' & 'ebelik' & 'mi'
+
+====================================================================================================
+BOLUM 4: Manuel OR semantigi — turkish config
+  Kelimeleri | ile birlestirip to_tsquery kullanarak OR araması
+====================================================================================================
+
+  Sorgu: "hangi fakülteler var"
+  OR tsquery: 'hangi' | 'fakülte' | 'var'
+  Sonuc: 804 eslesme 
+    rank=0.0608 [ogrenci_isleri] Yükseköğretim Kurumları Için El Kitabı 2025 Sözleşme Dönemi
+    rank=0.0542 [ogrenci_isleri] Önlisans Ve Lisans Düzeyindeki Programlar Arasında Yatay Geç
+    rank=0.0521 [genel_bilgi] 2019 Yılı Faaliyet Raporu
+    rank=0.0521 [genel_bilgi] 2025 Yılı Faaliyet Raporu
+    rank=0.0520 [genel_bilgi] 2020 Yılı Faaliyet Raporu
+
+  Sorgu: "transkript almak istiyorum"
+  OR tsquery: 'transkript' | 'almak' | 'istiyor'
+  Sonuc: 478 eslesme 
+    rank=0.0478 [egitim] Önlisans Ve Lisans Eğitim   Öğretim Ve Sınav Yönetmeliği — M
+    rank=0.0456 [egitim] Önlisans Ve Lisans Eğitim   Öğretim Ve Sınav Yönetmeliği — M
+    rank=0.0405 [genel_bilgi] 2021 Yılı Kurum İç Değerlendirme Raporu
+    rank=0.0405 [ogrenci_isleri] Yükseköğretim Kurumları Için El Kitabı 2025 Sözleşme Dönemi
+    rank=0.0405 [bolumler] Sıkça Sorulan Sorular
+
+  Sorgu: "son duyurular neler"
+  OR tsquery: 'son' | 'duyuru' | 'ne'
+  Sonuc: 767 eslesme 
+    rank=0.0763 [genel_bilgi] Öğrenci İşleri Daire Başkanlığı Askerli̇k Kanunu — Madde 89 
+    rank=0.0718 [bolumler] Mesleki Gelişim ve Kariyer Koordinatörlüğü
+    rank=0.0684 [duyurular] GİBTÜ - İlahiyat Fakültesi
+    rank=0.0608 [bolumler] Gastronomi ve Mutfak Sanatları Bölümü
+    rank=0.0608 [duyurular] GİBTÜ - Sağlık Kültür ve Spor Daire Başkanlığı
+
+  Sorgu: "sınav yönetmeliği ne diyor"
+  OR tsquery: 'sınav' | 'yönetmelik' | 'diyor'
+  Sonuc: 1197 eslesme 
+    rank=0.0610 [bolumler] Mevzuatlar
+    rank=0.0601 [genel_bilgi] 2024 Yılı Kurum İç Değerlendirme Raporu
+    rank=0.0599 [bolumler] Kamu Hizmet Envanteri
+    rank=0.0599 [bolumler] Kamu Hizmet Envanteri
+    rank=0.0599 [kutuphane] Mevzuatlar
+
+  Sorgu: "hemşirelik mi ebelik mi"
+  OR tsquery: 'hemşirelik' | 'mi' | 'ebelik' | 'mi'
+  Sonuc: 363 eslesme 
+    rank=0.0635 [yonlendirme] Telefon Rehberi
+    rank=0.0552 [genel_bilgi] 2025 Yılı Faaliyet Raporu
+    rank=0.0552 [bolumler] Hakkımızda — Menü Haritası
+    rank=0.0552 [genel_bilgi] 2021 Yılı Faaliyet Raporu
+    rank=0.0552 [erasmus] Erasmus+ Koordinatörlüğü
+
+====================================================================================================
+BOLUM 5: Stopword temizleme + AND — turkish config
+  Turkce yaygın kelimeleri cikarip sadece anlamli terimleri AND ile arama
+====================================================================================================
+
+  Sorgu: "hangi fakülteler var"
+  Temizlenmis: "fakülteler" (cikarilan: ['hangi', 'var'])
+  AND sonuc: 410 eslesme | tsquery: 'fakülte'
+    rank=0.0942 [bolumler] Tanıtım
+    rank=0.0929 [genel_bilgi] 2020 Yılı Faaliyet Raporu
+    rank=0.0929 [genel_bilgi] 2022 Yılı Faaliyet Raporu
+    rank=0.0929 [genel_bilgi] 2023 Yılı Faaliyet Raporu
+    rank=0.0929 [genel_bilgi] 2024 Yılı Faaliyet Raporu
+
+  Sorgu: "transkript almak istiyorum"
+  Temizlenmis: "transkript" (cikarilan: ['almak', 'istiyorum'])
+  AND sonuc: 65 eslesme | tsquery: 'transkript'
+    rank=0.0865 [erasmus] 2024 Erasmus+ Uygulama El Kitabı
+    rank=0.0827 [erasmus] 2023 Dönemi El Kitapçığı
+    rank=0.0827 [egitim] Önlisans Ve Lisans Eğitim   Öğretim Ve Sınav Yönetmeliği — M
+    rank=0.0827 [ogrenci_isleri] Yükseköğretim Kurumları Için El Kitabı 2025 Sözleşme Dönemi
+    rank=0.0760 [egitim] Önlisans Ve Lisans Eğitim   Öğretim Ve Sınav Yönetmeliği — M
+
+  Sorgu: "son duyurular neler"
+  Temizlenmis: "duyurular" (cikarilan: ['son', 'neler'])
+  AND sonuc: 114 eslesme | tsquery: 'duyuru'
+    rank=0.0827 [yonlendirme] GİBTÜ - Kurumsal İletişim Koordinatörlüğü
+    rank=0.0827 [genel_bilgi] 2021 Yılı Kurum İç Değerlendirme Raporu
+    rank=0.0760 [yonlendirme] GİBTÜ - Kurumsal İletişim Koordinatörlüğü
+    rank=0.0760 [yonlendirme] GİBTÜ - Kurumsal İletişim Koordinatörlüğü
+    rank=0.0760 [yonlendirme] GİBTÜ - Kurumsal İletişim Koordinatörlüğü
+
+  Sorgu: "sınav yönetmeliği ne diyor"
+  Temizlenmis: "sınav yönetmeliği" (cikarilan: ['ne', 'diyor'])
+  AND sonuc: 208 eslesme | tsquery: 'sınav' & 'yönetmelik'
+    rank=0.4485 [bolumler] Mevzuatlar
+    rank=0.4023 [bolumler] Kamu Hizmet Envanteri
+    rank=0.3725 [genel_bilgi] Yönetmelikler
+    rank=0.3230 [egitim] Yönetmelik
+    rank=0.3166 [bolumler] Mevzuatlar
+
+  Sorgu: "hemşirelik mi ebelik mi"
+  Temizlenmis: "hemşirelik ebelik" (cikarilan: ['mi', 'mi'])
+  AND sonuc: 42 eslesme | tsquery: 'hemşirelik' & 'ebelik'
+    rank=0.2721 [erasmus] Erasmus+ Koordinatörlüğü
+    rank=0.2178 [genel_bilgi] Öğrenci İşleri Daire Başkanlığı Yükseköğreti̇m Kanunu — Madd
+    rank=0.1884 [erasmus] KA171 Anlaşmaları
+    rank=0.1884 [erasmus] KA131 Anlaşmaları
+    rank=0.1874 [duyurular] GİBTÜ - Sağlık Bilimleri Fakültesi
+
+====================================================================================================
+BOLUM 6: OZET KARSILASTIRMA TABLOSU — Tum Stratejiler
+====================================================================================================
+
+Sorgu                                eng+AND  tur+AND   tur+OR   tur+SW
+---------------------------------------------------------------------------
+  hangi fakülteler var                     0        2      804      410
+  transkript almak istiyorum               0        0      478       65
+  son duyurular neler                      0        0      767      114
+  sınav yönetmeliği ne diyor               0        0     1197      208
+  hemşirelik mi ebelik mi                  0        0      363       42
+
+  eng+AND = Mevcut durum (english config, plainto_tsquery AND)
+  tur+AND = Sadece language='turkish' degisikligi
+  tur+OR  = turkish config + tum kelimeler OR ile aranir
+  tur+SW  = turkish config + Turkce stopword temizleme + AND

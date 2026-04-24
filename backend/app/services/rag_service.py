@@ -21,6 +21,29 @@ from app.config import get_settings
 
 logger = logging.getLogger(__name__)
 
+# ── Türkçe Stopword Listesi ──
+# BM25 keyword aramasında plainto_tsquery AND semantiği kullanılır.
+# Doğal dil sorgularındaki düşük bilgi taşıyan kelimeler (soru edatları,
+# fiiller, bağlaçlar) AND koşuluna eklenince eşleşme sıfıra düşer.
+# Bu liste, sorgu keyword_retriever'a gönderilmeden önce temizlenir.
+TURKISH_STOPWORDS: frozenset[str] = frozenset({
+    # Soru edatları ve zamirleri
+    "hangi", "ne", "neler", "nedir", "nasıl", "nerede", "nereye", "nereden",
+    "kim", "kime", "kimin", "neden", "niçin", "niye", "kaç", "kadar",
+    # Soru ekleri
+    "mi", "mı", "mu", "mü",
+    # Yaygın fiiller ve yardımcı fiiller
+    "var", "yok", "olan", "olarak", "olmak", "olur", "olabilir",
+    "almak", "istiyorum", "istiyoruz", "ister", "istiyor",
+    "diyor", "eder", "yapar", "verir", "gelir", "gider",
+    # Zaman ve sıralama
+    "son", "ilk", "en", "bir", "birçok",
+    # Bağlaçlar ve edatlar
+    "ve", "veya", "ile", "için", "gibi", "kadar", "ama", "fakat",
+    # Hal ekleri ve işaret zamirleri
+    "de", "da", "den", "dan", "bu", "şu", "o",
+})
+
 # ── Prompt Şablonu ──
 PROMPT_TEMPLATE = """Sen GİBTÜ (Gebze İleri Teknoloji Üniversitesi) resmi yapay zeka asistanı UniChat'sin.
 
@@ -71,6 +94,7 @@ class RagService:
             connection_string=Secret.from_env_var("DATABASE_URL"),
             table_name=self._settings.HAYSTACK_TABLE_NAME,
             embedding_dimension=self._settings.EMBEDDING_DIMENSION,
+            language="turkish",
             keyword_index_name="unichat_keyword_index",
         )
 
@@ -133,6 +157,20 @@ class RagService:
             self._settings.RETRIEVER_KEYWORD_TOP_K,
         )
 
+    @staticmethod
+    def _clean_keyword_query(text: str) -> str:
+        """Türkçe stopword'leri çıkararak keyword araması için sorguyu temizler.
+
+        plainto_tsquery tüm kelimeleri AND ile birleştirir. Doğal dil
+        sorgularındaki 'hangi', 'var', 'mi' gibi kelimeler AND koşuluna
+        dahil olunca eşleşme sıfıra düşer. Bu metod yalnızca anlamlı
+        terimleri bırakır.
+        """
+        words = text.split()
+        meaningful = [w for w in words if w.lower() not in TURKISH_STOPWORDS]
+        cleaned = " ".join(meaningful) if meaningful else text
+        return cleaned
+
     def query(self, question: str) -> dict:
         """Kullanıcı sorusunu Hybrid Search RAG pipeline'dan geçirir.
 
@@ -144,10 +182,15 @@ class RagService:
 
         logger.info("📩 Gelen soru: %s", question)
 
+        # Keyword retriever için Türkçe stopword temizliği uygula
+        keyword_query = self._clean_keyword_query(question)
+        if keyword_query != question:
+            logger.info("🔤 Keyword sorgusu temizlendi: '%s' → '%s'", question, keyword_query)
+
         result = self._pipeline.run(
             data={
                 "text_embedder": {"text": question},
-                "keyword_retriever": {"query": question},
+                "keyword_retriever": {"query": keyword_query},
                 "prompt_builder": {"question": question},
             },
             include_outputs_from={"joiner"},
