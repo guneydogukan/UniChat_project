@@ -27,7 +27,9 @@ CATEGORIES = Literal[
     "duyurular",
     "aday_ogrenci",
     "mezunlar",
-    "yonlendirme"
+    "yonlendirme",
+    "kariyer",
+    "iletisim"
 ]
 
 # ── Belge Türleri (doc_kind) ──
@@ -48,7 +50,11 @@ DOC_KINDS = Literal[
     "takvim",
     "personel",
     "pdf_rapor",
-    "genel"
+    "genel",
+    "sss",
+    "program_listesi",
+    "birim_iletisim",
+    "birim_iletisim_tablosu"
 ]
 
 SOURCE_TYPES = Literal["pdf", "web", "manual"]

@@ -1,9 +1,12 @@
 {
   "task": "3.2.20",
-  "description": "Duyuru ve Haber Arsivleri Canli Scrape",
-  "archive_items": 338,
-  "documents_created": 338,
-  "chunks_written": 407,
+  "description": "Duyuru ve Haber Arsivleri Canli Scrape (delta)",
+  "mode": "delta",
+  "max_pages": 3,
+  "archive_items": 340,
+  "documents_created": 332,
+  "chunks_written": 332,
   "birim_count": 12,
-  "success": true
+  "success": true,
+  "timestamp": "2026-04-25T16:23:09.213107"
 }

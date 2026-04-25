@@ -1,0 +1,12 @@
+{
+  "task": "3.5_P4_birim_iletisim_tablosu",
+  "description": "Birim Iletisim Bilgilerinin Otomatik Birlestirme Tablosu",
+  "birim_count": 39,
+  "live_scrape_ok": 39,
+  "live_scrape_err": 0,
+  "blueprint_records": 7,
+  "documents_created": 40,
+  "chunks_written": 46,
+  "success": true,
+  "timestamp": "2026-04-25T16:19:09.628971"
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": "2026-04-25T16:11:31.069052",
+    "mode": "delta",
+    "dry_run": true,
+    "duration_seconds": 698.8,
+    "return_code": 0,
+    "success": true
+  }
+]

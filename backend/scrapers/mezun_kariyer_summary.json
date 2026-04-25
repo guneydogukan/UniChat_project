@@ -1,0 +1,19 @@
+{
+  "task": "3.5_P4_mezun_kariyer",
+  "description": "Mezun/Kariyer Merkezi (KAGIAM) Canli Scrape — BirimID=41",
+  "target_urls": 12,
+  "documents_created": 10,
+  "ok": 10,
+  "skip": 2,
+  "errors": 0,
+  "chunks_written": 11,
+  "doc_kinds": {
+    "tanitim": 6,
+    "yonetim": 1,
+    "iletisim": 1,
+    "personel": 1,
+    "duyuru": 1
+  },
+  "success": true,
+  "timestamp": "2026-04-25T16:16:18.574192"
+}

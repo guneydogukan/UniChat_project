@@ -15,6 +15,7 @@ Sayfalama kalıbı: &p=1, &p=2, ... (sayfa numarası)
   Eger sayfa bos gelirse veya duyuru yoksa dur.
 """
 import sys
+import argparse
 import json
 import hashlib
 import time
@@ -40,7 +41,9 @@ logger = logging.getLogger(__name__)
 
 BASE_URL = "https://www.gibtu.edu.tr"
 OUTPUT_DIR = Path(__file__).resolve().parent / "scrapers"
-MAX_PAGES = 15
+MAX_PAGES_FULL = 15
+MAX_PAGES_DELTA = 3
+MAX_PAGES = MAX_PAGES_FULL  # default, overridden by CLI
 RATE_LIMIT = 1.2  # seconds between requests
 USER_AGENT = "Mozilla/5.0 (compatible; UniChatBot/1.0)"
 
@@ -399,6 +402,24 @@ def phase4_validation(all_documents, chunks_written):
 
 
 def main():
+    global MAX_PAGES
+
+    parser = argparse.ArgumentParser(description="Duyuru ve Haber Arsivleri Canli Scrape")
+    parser.add_argument(
+        "--mode", choices=["full", "delta"], default="full",
+        help="full: tum arsiv (15 sayfa), delta: son 3 sayfa (periyodik guncelleme)"
+    )
+    parser.add_argument("--dry-run", action="store_true", help="DB'ye yazmadan calistir")
+    args = parser.parse_args()
+
+    # Mode'a gore MAX_PAGES ayarla
+    if args.mode == "delta":
+        MAX_PAGES = MAX_PAGES_DELTA
+        logger.info("DELTA modu: son %d sayfa taranacak", MAX_PAGES)
+    else:
+        MAX_PAGES = MAX_PAGES_FULL
+        logger.info("FULL modu: son %d sayfa taranacak", MAX_PAGES)
+
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT})
     
@@ -417,7 +438,11 @@ def main():
         return 1
     
     # Faz 3: DB'ye yaz
-    chunks = phase3_ingest(documents)
+    if args.dry_run:
+        logger.info("DRY-RUN: %d document olusturuldu, DB'ye yazilmadi.", len(documents))
+        chunks = len(documents)
+    else:
+        chunks = phase3_ingest(documents)
     
     # Faz 4: Dogrulama
     success = phase4_validation(documents, chunks)
@@ -425,17 +450,20 @@ def main():
     # Ozet
     logger.info("\n" + "=" * 65)
     status = "TAMAMLANDI" if success else "BASARISIZ"
-    logger.info(f"GOREV 3.2.20 -- Duyuru ve Haber Arsivleri {status}!")
+    logger.info(f"GOREV 3.2.20 -- Duyuru ve Haber Arsivleri ({args.mode.upper()}) {status}!")
     logger.info("=" * 65)
     
     summary = {
         "task": "3.2.20",
-        "description": "Duyuru ve Haber Arsivleri Canli Scrape",
+        "description": f"Duyuru ve Haber Arsivleri Canli Scrape ({args.mode})",
+        "mode": args.mode,
+        "max_pages": MAX_PAGES,
         "archive_items": len(items),
         "documents_created": len(documents),
         "chunks_written": chunks,
         "birim_count": len(DUYURU_BIRIMLERI),
         "success": success,
+        "timestamp": datetime.now().isoformat(),
     }
     summary_path = OUTPUT_DIR / "duyuru_haber_summary.json"
     with open(summary_path, "w", encoding="utf-8") as f:

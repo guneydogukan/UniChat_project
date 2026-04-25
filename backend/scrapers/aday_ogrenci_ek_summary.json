@@ -1,0 +1,15 @@
+{
+  "task": "3.5_P4_aday_ogrenci_ek",
+  "description": "Aday Ogrenci Ek Sayfalari — Blueprint + Canli Scrape",
+  "documents_created": 28,
+  "chunks_written": 45,
+  "doc_kinds": {
+    "sss": 7,
+    "tanitim": 16,
+    "program_listesi": 1,
+    "rehber": 3,
+    "iletisim": 1
+  },
+  "success": true,
+  "timestamp": "2026-04-25T16:15:27.298043"
+}
