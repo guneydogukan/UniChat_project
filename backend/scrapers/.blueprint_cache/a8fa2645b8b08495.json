@@ -1,0 +1,930 @@
+{
+ "mtime": 1774979877.5772953,
+ "parse_time_seconds": 0.007,
+ "source": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\İlahiyat Fakültesi\\İlahiyat-Türkçe-Arapca.html",
+ "cached_at": 1777287441.7328908,
+ "tree": {
+  "birim_id": 11,
+  "birim_title": "Hakkımızda",
+  "source_file": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\doc\\gibtu\\FAKÜLTELER\\İlahiyat Fakültesi\\İlahiyat-Türkçe-Arapca.html",
+  "items": [
+   {
+    "title": "Anasayfa",
+    "is_parent": false,
+    "link": {
+     "href": "https://www.gibtu.edu.tr/Birim.aspx?id=11",
+     "text": "Anasayfa",
+     "url": "https://www.gibtu.edu.tr/Birim.aspx?id=11",
+     "link_type": "page"
+    },
+    "children": [],
+    "all_links": [
+     {
+      "href": "https://www.gibtu.edu.tr/Birim.aspx?id=11",
+      "text": "Anasayfa",
+      "url": "https://www.gibtu.edu.tr/Birim.aspx?id=11",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Yönetim",
+    "is_parent": false,
+    "link": {
+     "href": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=11",
+     "text": "Yönetim",
+     "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=11",
+     "link_type": "page"
+    },
+    "children": [],
+    "all_links": [
+     {
+      "href": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=11",
+      "text": "Yönetim",
+      "url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=11",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Hakkımızda",
+    "is_parent": true,
+    "link": {
+     "href": "",
+     "text": "Hakkımızda",
+     "url": "",
+     "link_type": "parent"
+    },
+    "children": [
+     {
+      "href": "https://www.gibtu.edu.tr/birimhakkimizda.aspx?id=11",
+      "text": "Hakkımızda",
+      "url": "https://www.gibtu.edu.tr/birimhakkimizda.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31093/ilahiyat-fakultesi-organizasyon-semasi",
+      "text": "Organizasyon Şeması",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31093/ilahiyat-fakultesi-organizasyon-semasi",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimmisyon.aspx?id=11",
+      "text": "Misyon",
+      "url": "https://www.gibtu.edu.tr/birimmisyon.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimvizyon.aspx?id=11",
+      "text": "Vizyon",
+      "url": "https://www.gibtu.edu.tr/birimvizyon.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimtarihce.aspx?id=11",
+      "text": "Tarihçe",
+      "url": "https://www.gibtu.edu.tr/birimtarihce.aspx?id=11",
+      "link_type": "page"
+     }
+    ],
+    "all_links": [
+     {
+      "href": "",
+      "text": "Hakkımızda",
+      "url": "",
+      "link_type": "parent"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimhakkimizda.aspx?id=11",
+      "text": "Hakkımızda",
+      "url": "https://www.gibtu.edu.tr/birimhakkimizda.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31093/ilahiyat-fakultesi-organizasyon-semasi",
+      "text": "Organizasyon Şeması",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31093/ilahiyat-fakultesi-organizasyon-semasi",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimmisyon.aspx?id=11",
+      "text": "Misyon",
+      "url": "https://www.gibtu.edu.tr/birimmisyon.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimvizyon.aspx?id=11",
+      "text": "Vizyon",
+      "url": "https://www.gibtu.edu.tr/birimvizyon.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimtarihce.aspx?id=11",
+      "text": "Tarihçe",
+      "url": "https://www.gibtu.edu.tr/birimtarihce.aspx?id=11",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Kalite",
+    "is_parent": true,
+    "link": {
+     "href": "",
+     "text": "Kalite",
+     "url": "",
+     "link_type": "parent"
+    },
+    "children": [
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31100/kalite-politikalarimiz",
+      "text": "Kalite Politikalarımız",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31100/kalite-politikalarimiz",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31158/komisyon-ve-koordinatorlukler",
+      "text": "Komisyon ve Koordinatörlükler",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31158/komisyon-ve-koordinatorlukler",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31389/toplanti-tutanaklari",
+      "text": "Toplantı Tutanakları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31389/toplanti-tutanaklari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31453/bidr",
+      "text": "Birim İç Değerlendirme Raporu( Bidr )",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31453/bidr",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31605/anket-sonuclari",
+      "text": "Anket Sonuçları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31605/anket-sonuclari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31096/kalite-el-kitabi",
+      "text": "Kalite El Kitabı",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31096/kalite-el-kitabi",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31078/fakulte-danisma-kurulu",
+      "text": "Fakülte Danışma Kurulu",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31078/fakulte-danisma-kurulu",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31088/kalite-toplantilari",
+      "text": "Kalite Toplantıları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31088/kalite-toplantilari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/25239/birim-faaliyet-raporlari",
+      "text": "Birim Faaliyet Raporları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/25239/birim-faaliyet-raporlari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30901/is-akis-semalari",
+      "text": "İş Akış Şemaları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30901/is-akis-semalari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31091/risk-swot-pest-analizi",
+      "text": "Risk, Swot, Pest Analizi",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31091/risk-swot-pest-analizi",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30941/risk-haritasi",
+      "text": "Risk Haritası",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30941/risk-haritasi",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30940/hizmet-envanteri",
+      "text": "Hizmet Envanteri",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30940/hizmet-envanteri",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimform.aspx?id=11",
+      "text": "Formlar",
+      "url": "https://www.gibtu.edu.tr/birimform.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30647/gorev-tanimlari",
+      "text": "Görev Tanımları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30647/gorev-tanimlari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30649/talimatlar",
+      "text": "Talimatlar",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30649/talimatlar",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30648/prosesler",
+      "text": "Prosesler",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30648/prosesler",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31079/ic-ve-dis-paydaslar",
+      "text": "İç ve Dış Paydaşlar",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31079/ic-ve-dis-paydaslar",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31090/yillik-calisma-plani",
+      "text": "Yıllık Çalışma Planı",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31090/yillik-calisma-plani",
+      "link_type": "page"
+     }
+    ],
+    "all_links": [
+     {
+      "href": "",
+      "text": "Kalite",
+      "url": "",
+      "link_type": "parent"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31100/kalite-politikalarimiz",
+      "text": "Kalite Politikalarımız",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31100/kalite-politikalarimiz",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31158/komisyon-ve-koordinatorlukler",
+      "text": "Komisyon ve Koordinatörlükler",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31158/komisyon-ve-koordinatorlukler",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31389/toplanti-tutanaklari",
+      "text": "Toplantı Tutanakları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31389/toplanti-tutanaklari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31453/bidr",
+      "text": "Birim İç Değerlendirme Raporu( Bidr )",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31453/bidr",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31605/anket-sonuclari",
+      "text": "Anket Sonuçları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31605/anket-sonuclari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31096/kalite-el-kitabi",
+      "text": "Kalite El Kitabı",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31096/kalite-el-kitabi",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31078/fakulte-danisma-kurulu",
+      "text": "Fakülte Danışma Kurulu",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31078/fakulte-danisma-kurulu",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31088/kalite-toplantilari",
+      "text": "Kalite Toplantıları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31088/kalite-toplantilari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/25239/birim-faaliyet-raporlari",
+      "text": "Birim Faaliyet Raporları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/25239/birim-faaliyet-raporlari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30901/is-akis-semalari",
+      "text": "İş Akış Şemaları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30901/is-akis-semalari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31091/risk-swot-pest-analizi",
+      "text": "Risk, Swot, Pest Analizi",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31091/risk-swot-pest-analizi",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30941/risk-haritasi",
+      "text": "Risk Haritası",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30941/risk-haritasi",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30940/hizmet-envanteri",
+      "text": "Hizmet Envanteri",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30940/hizmet-envanteri",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimform.aspx?id=11",
+      "text": "Formlar",
+      "url": "https://www.gibtu.edu.tr/birimform.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30647/gorev-tanimlari",
+      "text": "Görev Tanımları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30647/gorev-tanimlari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30649/talimatlar",
+      "text": "Talimatlar",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30649/talimatlar",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30648/prosesler",
+      "text": "Prosesler",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/30648/prosesler",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31079/ic-ve-dis-paydaslar",
+      "text": "İç ve Dış Paydaşlar",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31079/ic-ve-dis-paydaslar",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31090/yillik-calisma-plani",
+      "text": "Yıllık Çalışma Planı",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31090/yillik-calisma-plani",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Birimlerimiz",
+    "is_parent": true,
+    "link": {
+     "href": "",
+     "text": "Birimlerimiz",
+     "url": "",
+     "link_type": "parent"
+    },
+    "children": [
+     {
+      "href": "https://www.gibtu.edu.tr/BirimAkademikBirimler.aspx?id=11",
+      "text": "Akademik Birimlerimiz",
+      "url": "https://www.gibtu.edu.tr/BirimAkademikBirimler.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=11",
+      "text": "İdari Birimlerimiz",
+      "url": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=11",
+      "link_type": "page"
+     }
+    ],
+    "all_links": [
+     {
+      "href": "",
+      "text": "Birimlerimiz",
+      "url": "",
+      "link_type": "parent"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/BirimAkademikBirimler.aspx?id=11",
+      "text": "Akademik Birimlerimiz",
+      "url": "https://www.gibtu.edu.tr/BirimAkademikBirimler.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=11",
+      "text": "İdari Birimlerimiz",
+      "url": "https://www.gibtu.edu.tr/BirimIdariBirimler.aspx?id=11",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Personel",
+    "is_parent": true,
+    "link": {
+     "href": "",
+     "text": "Personel",
+     "url": "",
+     "link_type": "parent"
+    },
+    "children": [
+     {
+      "href": "https://www.gibtu.edu.tr/birimakademikpersonel.aspx?id=11",
+      "text": "Akademik Personel",
+      "url": "https://www.gibtu.edu.tr/birimakademikpersonel.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimidaripersonel.aspx?id=11",
+      "text": "İdari Personel",
+      "url": "https://www.gibtu.edu.tr/birimidaripersonel.aspx?id=11",
+      "link_type": "page"
+     }
+    ],
+    "all_links": [
+     {
+      "href": "",
+      "text": "Personel",
+      "url": "",
+      "link_type": "parent"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimakademikpersonel.aspx?id=11",
+      "text": "Akademik Personel",
+      "url": "https://www.gibtu.edu.tr/birimakademikpersonel.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimidaripersonel.aspx?id=11",
+      "text": "İdari Personel",
+      "url": "https://www.gibtu.edu.tr/birimidaripersonel.aspx?id=11",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Öğrenci",
+    "is_parent": true,
+    "link": {
+     "href": "",
+     "text": "Öğrenci",
+     "url": "",
+     "link_type": "parent"
+    },
+    "children": [
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/25159/sinav-usul-ve-esaslari",
+      "text": "Sınav Usul ve Esasları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/25159/sinav-usul-ve-esaslari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31157/ders-programlari",
+      "text": "Ders Programları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31157/ders-programlari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31080/danismanlar",
+      "text": "Danışmanlar",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31080/danismanlar",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31388/aday-ogrenci-portali",
+      "text": "Aday Öğrenci Portalı",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31388/aday-ogrenci-portali",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31387/mezun-bilgi-sistemi",
+      "text": "Mezun Bilgi Sistemi",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31387/mezun-bilgi-sistemi",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31390/mufredatlar",
+      "text": "Müfredatlar ve Ders İçerikleri",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31390/mufredatlar",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31448/akademik-takvim",
+      "text": "Akademik Takvim",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31448/akademik-takvim",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31449/ogrenci-sayilari",
+      "text": "Öğrenci Sayıları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31449/ogrenci-sayilari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31635/ogrenci-ve-topluluk-etkinlikleri",
+      "text": "Öğrenci ve Topluluk Etkinlikleri",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31635/ogrenci-ve-topluluk-etkinlikleri",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/birimicerik.aspx?id=11&icid=516",
+      "text": "Bologna",
+      "url": "http://www.gibtu.edu.tr/birimicerik.aspx?id=11&icid=516",
+      "link_type": "page"
+     }
+    ],
+    "all_links": [
+     {
+      "href": "",
+      "text": "Öğrenci",
+      "url": "",
+      "link_type": "parent"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/25159/sinav-usul-ve-esaslari",
+      "text": "Sınav Usul ve Esasları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/25159/sinav-usul-ve-esaslari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31157/ders-programlari",
+      "text": "Ders Programları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31157/ders-programlari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31080/danismanlar",
+      "text": "Danışmanlar",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31080/danismanlar",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31388/aday-ogrenci-portali",
+      "text": "Aday Öğrenci Portalı",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31388/aday-ogrenci-portali",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31387/mezun-bilgi-sistemi",
+      "text": "Mezun Bilgi Sistemi",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31387/mezun-bilgi-sistemi",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31390/mufredatlar",
+      "text": "Müfredatlar ve Ders İçerikleri",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31390/mufredatlar",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31448/akademik-takvim",
+      "text": "Akademik Takvim",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31448/akademik-takvim",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31449/ogrenci-sayilari",
+      "text": "Öğrenci Sayıları",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31449/ogrenci-sayilari",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31635/ogrenci-ve-topluluk-etkinlikleri",
+      "text": "Öğrenci ve Topluluk Etkinlikleri",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31635/ogrenci-ve-topluluk-etkinlikleri",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/birimicerik.aspx?id=11&icid=516",
+      "text": "Bologna",
+      "url": "http://www.gibtu.edu.tr/birimicerik.aspx?id=11&icid=516",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Duyurular",
+    "is_parent": true,
+    "link": {
+     "href": "",
+     "text": "Duyurular",
+     "url": "",
+     "link_type": "parent"
+    },
+    "children": [
+     {
+      "href": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=11",
+      "text": "Duyurular",
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimhaber.aspx?id=11",
+      "text": "Haberler",
+      "url": "https://www.gibtu.edu.tr/birimhaber.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimduyuruarsivi.aspx?id=11",
+      "text": "Duyuru Arşivi",
+      "url": "https://www.gibtu.edu.tr/birimduyuruarsivi.aspx?id=11",
+      "link_type": "page"
+     }
+    ],
+    "all_links": [
+     {
+      "href": "",
+      "text": "Duyurular",
+      "url": "",
+      "link_type": "parent"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=11",
+      "text": "Duyurular",
+      "url": "https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimhaber.aspx?id=11",
+      "text": "Haberler",
+      "url": "https://www.gibtu.edu.tr/birimhaber.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimduyuruarsivi.aspx?id=11",
+      "text": "Duyuru Arşivi",
+      "url": "https://www.gibtu.edu.tr/birimduyuruarsivi.aspx?id=11",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Faaliyetler",
+    "is_parent": true,
+    "link": {
+     "href": "",
+     "text": "Faaliyetler",
+     "url": "",
+     "link_type": "parent"
+    },
+    "children": [
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31450/konferans",
+      "text": "Konferans",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31450/konferans",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31451/calistay",
+      "text": "Çalıştay",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31451/calistay",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31445/seminer",
+      "text": "Seminer",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31445/seminer",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31459/haber",
+      "text": "Haber",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31459/haber",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31457/yarisma",
+      "text": "Yarışma",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31457/yarisma",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31455/forum",
+      "text": "Forum",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31455/forum",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31456/soylesi",
+      "text": "Söyleşi",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31456/soylesi",
+      "link_type": "page"
+     }
+    ],
+    "all_links": [
+     {
+      "href": "",
+      "text": "Faaliyetler",
+      "url": "",
+      "link_type": "parent"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31450/konferans",
+      "text": "Konferans",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31450/konferans",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31451/calistay",
+      "text": "Çalıştay",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31451/calistay",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31445/seminer",
+      "text": "Seminer",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31445/seminer",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31459/haber",
+      "text": "Haber",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31459/haber",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31457/yarisma",
+      "text": "Yarışma",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31457/yarisma",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31455/forum",
+      "text": "Forum",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31455/forum",
+      "link_type": "page"
+     },
+     {
+      "href": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31456/soylesi",
+      "text": "Söyleşi",
+      "url": "http://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31456/soylesi",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Fakülte Etkinlikleri",
+    "is_parent": false,
+    "link": {
+     "href": "ilahiyatfakultesi/icerik/31452/fakulte-etkinlikleri",
+     "text": "Fakülte Etkinlikleri",
+     "url": "https://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31452/fakulte-etkinlikleri",
+     "link_type": "page"
+    },
+    "children": [],
+    "all_links": [
+     {
+      "href": "ilahiyatfakultesi/icerik/31452/fakulte-etkinlikleri",
+      "text": "Fakülte Etkinlikleri",
+      "url": "https://www.gibtu.edu.tr/ilahiyatfakultesi/icerik/31452/fakulte-etkinlikleri",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Formlar",
+    "is_parent": false,
+    "link": {
+     "href": "https://www.gibtu.edu.tr/BirimForm.aspx?id=11",
+     "text": "Formlar",
+     "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=11",
+     "link_type": "page"
+    },
+    "children": [],
+    "all_links": [
+     {
+      "href": "https://www.gibtu.edu.tr/BirimForm.aspx?id=11",
+      "text": "Formlar",
+      "url": "https://www.gibtu.edu.tr/BirimForm.aspx?id=11",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Galeri",
+    "is_parent": false,
+    "link": {
+     "href": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=11",
+     "text": "Galeri",
+     "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=11",
+     "link_type": "page"
+    },
+    "children": [],
+    "all_links": [
+     {
+      "href": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=11",
+      "text": "Galeri",
+      "url": "https://www.gibtu.edu.tr/BirimGaleri.aspx?id=11",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Mevzuatlar",
+    "is_parent": false,
+    "link": {
+     "href": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=11",
+     "text": "Mevzuatlar",
+     "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=11",
+     "link_type": "page"
+    },
+    "children": [],
+    "all_links": [
+     {
+      "href": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=11",
+      "text": "Mevzuatlar",
+      "url": "https://www.gibtu.edu.tr/BirimMevzuat.aspx?id=11",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "Faydalı Linkler",
+    "is_parent": false,
+    "link": {
+     "href": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=11",
+     "text": "Faydalı Linkler",
+     "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=11",
+     "link_type": "page"
+    },
+    "children": [],
+    "all_links": [
+     {
+      "href": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=11",
+      "text": "Faydalı Linkler",
+      "url": "https://www.gibtu.edu.tr/BirimFaydaliLink.aspx?id=11",
+      "link_type": "page"
+     }
+    ]
+   },
+   {
+    "title": "İletişim",
+    "is_parent": true,
+    "link": {
+     "href": "",
+     "text": "İletişim",
+     "url": "",
+     "link_type": "parent"
+    },
+    "children": [
+     {
+      "href": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=11",
+      "text": "İletişim",
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimiletisim.aspx?id=11#mesajgonder",
+      "text": "Mesaj Gönder",
+      "url": "https://www.gibtu.edu.tr/birimiletisim.aspx?id=11#mesajgonder",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimtelefonrehberi.aspx?id=11",
+      "text": "Telefon Rehberi",
+      "url": "https://www.gibtu.edu.tr/birimtelefonrehberi.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimiletisim.aspx?id=11#harita",
+      "text": "Harita",
+      "url": "https://www.gibtu.edu.tr/birimiletisim.aspx?id=11#harita",
+      "link_type": "page"
+     }
+    ],
+    "all_links": [
+     {
+      "href": "",
+      "text": "İletişim",
+      "url": "",
+      "link_type": "parent"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=11",
+      "text": "İletişim",
+      "url": "https://www.gibtu.edu.tr/BirimIletisim.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimiletisim.aspx?id=11#mesajgonder",
+      "text": "Mesaj Gönder",
+      "url": "https://www.gibtu.edu.tr/birimiletisim.aspx?id=11#mesajgonder",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimtelefonrehberi.aspx?id=11",
+      "text": "Telefon Rehberi",
+      "url": "https://www.gibtu.edu.tr/birimtelefonrehberi.aspx?id=11",
+      "link_type": "page"
+     },
+     {
+      "href": "https://www.gibtu.edu.tr/birimiletisim.aspx?id=11#harita",
+      "text": "Harita",
+      "url": "https://www.gibtu.edu.tr/birimiletisim.aspx?id=11#harita",
+      "link_type": "page"
+     }
+    ]
+   }
+  ]
+ }
+}

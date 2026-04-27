@@ -340,9 +340,14 @@ class MapGuidedScraper:
 
     # ── 1. Blueprint Yükleme ──
 
-    def load_blueprint(self) -> MenuTree:
+    def load_blueprint(self, use_cache: bool = True) -> MenuTree:
         """
         Lokal HTML dosyasından menü ağacını parse eder.
+        Cache mekanizması aktifse (varsayılan), daha önce parse edilmiş
+        MenuTree'yi cache'den okur.
+
+        Args:
+            use_cache: True ise BlueprintCache kullanılır (Faz 4.1.3).
 
         Returns:
             MenuTree yapısı (birim_id, items, vb. içerir).
@@ -351,7 +356,17 @@ class MapGuidedScraper:
             FileNotFoundError: Blueprint dosyası bulunamazsa.
         """
         logger.info("Blueprint yükleniyor: %s", self.blueprint_path.name)
-        self._menu_tree = parse_blueprint(self.blueprint_path)
+
+        if use_cache:
+            try:
+                from scrapers.blueprint_cache import get_cache
+                cache = get_cache()
+                self._menu_tree = cache.get_or_parse(self.blueprint_path)
+            except Exception as e:
+                logger.debug("Cache kullanılamadı, doğrudan parse: %s", e)
+                self._menu_tree = parse_blueprint(self.blueprint_path)
+        else:
+            self._menu_tree = parse_blueprint(self.blueprint_path)
 
         if not self._menu_tree.items:
             logger.warning("Blueprint menü ağacı boş: %s", self.blueprint_path)

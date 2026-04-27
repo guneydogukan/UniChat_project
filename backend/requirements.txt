@@ -12,3 +12,4 @@ requests
 pdfplumber
 beautifulsoup4
 lxml
+apscheduler
