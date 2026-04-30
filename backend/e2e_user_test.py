@@ -735,7 +735,7 @@ def generate_report(db_info, evaluations, results):
     report_lines.append(f"> **Tarih:** {timestamp}")
     report_lines.append(f"> **Test Sayısı:** {total_tests} senaryo")
     report_lines.append(f"> **Model:** gemma3:4b-it-qat (Ollama)")
-    report_lines.append(f"> **Embedding:** all-mpnet-base-v2")
+    report_lines.append(f"> **Embedding:** multilingual-e5-base")
     report_lines.append(f"> **Veritabanı:** {db_info['total_chunks']} chunk, {len(db_info.get('categories', {}))} kategori")
     report_lines.append(f"")
     

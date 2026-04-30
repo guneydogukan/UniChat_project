@@ -25,8 +25,11 @@ class Settings(BaseSettings):
     OLLAMA_MODEL: str = "gemma3:4b-it-qat"
 
     # Embedding
-    EMBEDDING_MODEL: str = "sentence-transformers/all-mpnet-base-v2"
+    EMBEDDING_MODEL: str = "intfloat/multilingual-e5-base"
     EMBEDDING_DIMENSION: int = 768
+    # E5 modelleri prefix gerektirir (query ↔ passage asimetrik arama)
+    EMBEDDING_QUERY_PREFIX: str = "query: "
+    EMBEDDING_PASSAGE_PREFIX: str = "passage: "
 
     # Haystack Document Store
     HAYSTACK_TABLE_NAME: str = "haystack_docs"
@@ -36,9 +39,9 @@ class Settings(BaseSettings):
     RETRIEVER_KEYWORD_TOP_K: int = 3   # BM25 kelime araması (PgvectorKeywordRetriever)
 
     # Chunking (yapıya duyarlı strateji parametreleri)
-    CHUNK_MAX_CHARS: int = 1200        # ~300 token (all-mpnet-base-v2 sınırına güvenli mesafe)
+    CHUNK_MAX_CHARS: int = 1200        # ~300 token (multilingual-e5-base 512 token sınırına güvenli mesafe)
     CHUNK_OVERLAP_CHARS: int = 200     # Bağlam koruma
-    CHUNK_MIN_CHARS: int = 80          # Bundan kısa parçalar birleştirilir
+    CHUNK_MIN_CHARS: int = 40          # Bundan kısa parçalar birleştirilir
 
     # Veri yükleme
     DATA_DIR: str = "data"

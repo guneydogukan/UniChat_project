@@ -54,7 +54,8 @@ def _get_embedder() -> SentenceTransformersDocumentEmbedder:
     if _embedder is None:
         settings = get_settings()
         _embedder = SentenceTransformersDocumentEmbedder(
-            model=settings.EMBEDDING_MODEL
+            model=settings.EMBEDDING_MODEL,
+            prefix=settings.EMBEDDING_PASSAGE_PREFIX,
         )
         _embedder.warm_up()
     return _embedder

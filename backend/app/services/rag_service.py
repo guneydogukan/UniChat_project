@@ -100,7 +100,8 @@ class RagService:
 
         # ── Bileşenler ──
         text_embedder = SentenceTransformersTextEmbedder(
-            model=self._settings.EMBEDDING_MODEL
+            model=self._settings.EMBEDDING_MODEL,
+            prefix=self._settings.EMBEDDING_QUERY_PREFIX,
         )
 
         vector_retriever = PgvectorEmbeddingRetriever(
