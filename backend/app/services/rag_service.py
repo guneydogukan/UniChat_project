@@ -2,8 +2,14 @@
 UniChat Backend — RAG Pipeline Servisi
 Hybrid search: PgvectorEmbeddingRetriever (vektör) + PgvectorKeywordRetriever (BM25)
 DocumentJoiner ile reciprocal_rank_fusion stratejisi uygulanır.
+
+Savunma katmanları:
+    1. Intent Classifier  — kapsam dışı sorguları pipeline öncesi reddeder
+    2. Prompt Güçlendirme  — pozitif kısıtlamalar ile LLM davranışını yönlendirir
+    3. Response Validator  — LLM çıktısındaki uydurma URL/telefon/e-posta'yı temizler
 """
 
+import hashlib
 import logging
 from haystack import Pipeline
 from haystack.components.embedders import SentenceTransformersTextEmbedder
@@ -18,6 +24,9 @@ from haystack_integrations.components.retrievers.pgvector import (
 )
 
 from app.config import get_settings
+from app.services.intent_classifier import classify_intent, REJECTION_RESPONSE
+from app.services.response_validator import validate_response
+from app.services.query_preprocessor import preprocess_query
 
 logger = logging.getLogger(__name__)
 
@@ -54,8 +63,14 @@ KESİN KURALLAR:
 4. Yanıtını markdown formatında yaz: başlıklar, maddeler, kalın metin ve bağlantılar kullan.
 5. Yanıtın açık, sade ve anlaşılır olsun. Uzun paragraflar yerine maddeli listeler tercih et.
 6. Kullanıcıyı doğru birime yönlendir: hangi sorunun hangi birime (öğrenci işleri, bölüm sekreterliği, Erasmus ofisi, kütüphane vb.) ait olduğunu belirt.
-7. Üniversite dışı konularda (siyaset, din, kişisel tavsiye vb.) cevap verme; kibarca üniversite konularıyla sınırlı olduğunu belirt.
+7. Üniversite dışı konularda (siyaset, din, kişisel tavsiye, programlama kodu yazma vb.) cevap verme; kibarca üniversite konularıyla sınırlı olduğunu belirt.
 8. Yanıtın sonunda, kullanıcının bu konuyla ilgili başvurabileceği birimi, telefon/e-posta bilgisini veya resmî web sayfası adresini belirt. Bu bilgi belgede varsa doğrudan kullan; yoksa en uygun birimi öner.
+
+YANITINDA KESİNLİKLE BULUNMAMASI GEREKENLER:
+- Belgede açıkça yazılı OLMAYAN telefon numarası, e-posta adresi veya URL. Sadece belgelerde geçen iletişim bilgilerini kullan.
+- Belgede olmayan bir URL tahmin etme veya oluşturma. URL bilgisi yoksa "Detaylı bilgi için www.gibtu.edu.tr adresini ziyaret ediniz" yaz.
+- Programlama kodu (Python, JavaScript, SQL vb.). Kullanıcı kod isterse kibarca reddet.
+- Üniversite ile ilgisi olmayan genel bilgiler (coğrafya, tarih, bilim, siyaset).
 
 Belgeler:
 {% for doc in documents %}
@@ -64,6 +79,7 @@ Belgeler:
 Kaynak: {{ doc.meta.source_url | default("belirtilmemiş") }}
 {% if doc.meta.contact_unit %}İlgili birim: {{ doc.meta.contact_unit }}{% endif %}
 {% if doc.meta.contact_info %}İletişim: {{ doc.meta.contact_info }}{% endif %}
+{% if doc.meta.last_updated %}Son güncelleme: {{ doc.meta.last_updated }}{% endif %}
 
 {{ doc.content }}
 {% endfor %}
@@ -175,6 +191,12 @@ class RagService:
     def query(self, question: str) -> dict:
         """Kullanıcı sorusunu Hybrid Search RAG pipeline'dan geçirir.
 
+        Savunma katmanları:
+            1. Intent Classifier  — kapsam dışı → sabit reddetme yanıtı
+            2. Pipeline (retrieval + LLM)
+            3. Response Validator  — uydurma URL/telefon/e-posta temizliği
+            4. Source Dedup        — aynı belgenin tekrar dönmesini önler
+
         Returns:
             dict: {"response": str, "sources": list[dict]}
         """
@@ -183,16 +205,38 @@ class RagService:
 
         logger.info("📩 Gelen soru: %s", question)
 
+        # ── Katman 1: Intent Classifier ──
+        intent = classify_intent(question)
+        if intent == "OUT_OF_SCOPE":
+            logger.info("🚫 Kapsam dışı sorgu reddedildi: %s", question[:80])
+            return {"response": REJECTION_RESPONSE, "sources": []}
+
+        # ── Katman 2: Query Preprocessing ──
+        pp = preprocess_query(question)
+        if pp.corrections:
+            logger.info("🔧 Sorgu ön-işleme: %s", ", ".join(pp.corrections))
+
         # Keyword retriever için Türkçe stopword temizliği uygula
-        keyword_query = self._clean_keyword_query(question)
-        if keyword_query != question:
-            logger.info("🔤 Keyword sorgusu temizlendi: '%s' → '%s'", question, keyword_query)
+        keyword_query = self._clean_keyword_query(pp.keyword_query)
+        if keyword_query != pp.keyword_query:
+            logger.info("🔤 Keyword sorgusu temizlendi: '%s' → '%s'", pp.keyword_query, keyword_query)
+
+        # Karşılaştırmalı sorgularda top_k'yı dinamik artır
+        vector_top_k = self._settings.RETRIEVER_VECTOR_TOP_K + pp.boost_top_k
+        keyword_top_k = self._settings.RETRIEVER_KEYWORD_TOP_K + pp.boost_top_k
+
+        # ── Katman 3: Pipeline ──
+        # Yönlendirme ipucu varsa soruya ekle (LLM doğru birime yönlendirsin)
+        prompt_question = question
+        if pp.routing_hint:
+            prompt_question = f"{question}\n\n[Sistem notu: Bu konu için yetkili birim: {pp.routing_hint}]"
 
         result = self._pipeline.run(
             data={
-                "text_embedder": {"text": question},
-                "keyword_retriever": {"query": keyword_query},
-                "prompt_builder": {"question": question},
+                "text_embedder": {"text": pp.vector_query},
+                "keyword_retriever": {"query": keyword_query, "top_k": keyword_top_k},
+                "vector_retriever": {"top_k": vector_top_k},
+                "prompt_builder": {"question": prompt_question},
             },
             include_outputs_from={"joiner"},
         )
@@ -221,7 +265,66 @@ class RagService:
             }
             sources.append(source)
 
+        # ── Katman 3: Response Validator ──
+        response_text = validate_response(response_text, sources)
+
+        # ── Katman 4: Source Dedup ──
+        sources = self._dedup_sources(sources)
+
+        # ── Katman 5: Routing Correction ──
+        if pp.routing_hint:
+            response_text = self._apply_routing_correction(
+                response_text, pp.routing_hint,
+            )
+
         return {"response": response_text, "sources": sources}
+
+    @staticmethod
+    def _dedup_sources(sources: list[dict]) -> list[dict]:
+        """Aynı içerikli kaynak belgeleri kaldırır (content hash bazlı)."""
+        seen_hashes: set[str] = set()
+        unique: list[dict] = []
+        for src in sources:
+            content_hash = hashlib.md5(src.get("content", "").encode()).hexdigest()
+            if content_hash not in seen_hashes:
+                seen_hashes.add(content_hash)
+                unique.append(src)
+        if len(unique) < len(sources):
+            logger.info(
+                "🔄 Source dedup: %d → %d kaynak belge",
+                len(sources), len(unique),
+            )
+        return unique
+
+    @staticmethod
+    def _apply_routing_correction(response: str, expected_unit: str) -> str:
+        """Yanıtta beklenen birim geçmiyorsa yönlendirme notu ekler.
+
+        Bazı sorgularda (ör. transkript) retrieval yanlış birimin belgelerini
+        döndürebilir. Bu metot, doğru birimi yanıtın sonuna ekler.
+        """
+        response_lower = response.lower()
+        expected_lower = expected_unit.lower()
+
+        # Beklenen birim zaten yanıtta geçiyorsa düzeltmeye gerek yok
+        # Öğrenci İşleri → "öğrenci işleri" kelimesini ara
+        unit_keywords = expected_lower.split()
+        # İlk iki anlamlı kelime yeterli ("öğrenci işleri", "sağlık kültür")
+        check_phrase = " ".join(unit_keywords[:2]) if len(unit_keywords) >= 2 else expected_lower
+        if check_phrase in response_lower:
+            return response
+
+        # Beklenen birim yanıtta yok → yönlendirme notu ekle
+        correction_note = (
+            f"\n\n> **📌 Yönlendirme:** Bu konuda yetkili birim "
+            f"**{expected_unit.title()}**'dır. Detaylı bilgi için "
+            f"bu birime başvurmanızı öneriyoruz."
+        )
+        logger.info(
+            "🏢 Routing correction: '%s' birim yanıtta eksik, not eklendi",
+            expected_unit,
+        )
+        return response + correction_note
 
     @property
     def document_store(self) -> PgvectorDocumentStore | None:
