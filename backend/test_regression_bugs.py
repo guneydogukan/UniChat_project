@@ -53,14 +53,13 @@ def _query(rag: RagService, question: str) -> dict:
 
 # ═══════════════════════════════════════════════════════════════════
 # GRUP 1: GUARDRAIL / KAPSAM DIŞI HATALARI
-# Beklenen: Sistem kapsam dışı sorulara cevap VERMEMELİ.
-# Mevcut durum: Sistem cevap veriyor → bu testler hataları yakalar.
+# Düzeltildi: Intent classifier (Faz 1) ile kapsam dışı sorgular reddediliyor.
 # ═══════════════════════════════════════════════════════════════════
 
 class TestGuardrailBugs:
     """Kapsam dışı sorulara verilen yanıtlardaki guardrail hataları."""
 
-    @pytest.mark.xfail(reason="BUG-G7-02: Sistem Python kodu yazıyor, guardrail çalışmıyor")
+    # FIXED: Intent classifier ile çözüldü (Faz 1)
     def test_python_code_rejected(self, rag):
         """G7-02: 'Python kodu yaz' sorusuna kod yazmamalı, reddetmeli."""
         result = _query(rag, "Bana bir Python kodu yazar mısın?")
@@ -95,7 +94,7 @@ class TestGuardrailBugs:
             f"Yanıt ilk 300 kar: {response[:300]}"
         )
 
-    @pytest.mark.xfail(reason="BUG-G7-01: Sistem başkent sorusuna 'Ankara' diyor")
+    # FIXED: Intent classifier ile çözüldü (Faz 1)
     def test_capital_city_rejected(self, rag):
         """G7-01: Genel kültür sorusuna cevap vermemeli."""
         result = _query(rag, "Türkiye'nin başkenti neresidir?")
@@ -131,8 +130,7 @@ class TestGuardrailBugs:
 
 # ═══════════════════════════════════════════════════════════════════
 # GRUP 2: HALÜSİNASYON — UYDURMA İLETİŞİM BİLGİSİ
-# Beklenen: Belgede olmayan URL/telefon/e-posta üretmemeli.
-# Mevcut durum: Uydurma bilgiler üretiliyor.
+# Düzeltildi: Response validator (Faz 2) ile uydurma bilgiler temizleniyor.
 # ═══════════════════════════════════════════════════════════════════
 
 class TestHallucinatedContactInfo:
@@ -170,7 +168,7 @@ class TestHallucinatedContactInfo:
         except (IndexError, AttributeError):
             return False
 
-    @pytest.mark.xfail(reason="BUG-G6-01: Uydurma URL üretiliyor (Muenfezlik.aspx)")
+    # FIXED: Response validator ile çözüldü (Faz 2)
     def test_no_hallucinated_urls_uzay(self, rag):
         """G6-01: Uzay mühendisliği sorusunda uydurma URL olmamalı."""
         result = _query(rag, "GİBTÜ'nün uzay mühendisliği bölümü var mı?")
@@ -184,7 +182,7 @@ class TestHallucinatedContactInfo:
             f"Yanıt ilk 500 kar: {response[:500]}"
         )
 
-    @pytest.mark.xfail(reason="BUG-G3-02: Uydurma telefon üretiliyor (032) 2523 4000")
+    # FIXED: Response validator ile çözüldü (Faz 2)
     def test_no_hallucinated_phone_hemsirelik(self, rag):
         """G3-02: Hemşirelik sorusunda uydurma telefon olmamalı."""
         result = _query(rag, "Hemşirelik mi ebelik mi daha iyi? Hangisini seçmeliyim?")
@@ -203,7 +201,7 @@ class TestHallucinatedContactInfo:
                 f"Yanıt ilk 500 kar: {response[:500]}"
             )
 
-    @pytest.mark.xfail(reason="BUG-G1-05: gantep.edu.tr (yanlış üniversite) domain'i üretiliyor")
+    # FIXED: Response validator + DB temizliği ile çözüldü (Faz 2)
     def test_no_wrong_domain_yemek(self, rag):
         """G1-05: Yemek sorusunda GİBTÜ dışı domain olmamalı.
 
@@ -223,14 +221,15 @@ class TestHallucinatedContactInfo:
 
 # ═══════════════════════════════════════════════════════════════════
 # GRUP 3: GÜNCELLİK HATALARI
-# Beklenen: Eski akademik yıl bilgisi güncel gibi sunulmamalı.
-# Mevcut durum: 2023-2024 sınav tarihleri döndürülüyor.
+# Kısmen düzeltildi: Prompt güçlendirme + metadata ile iyileştirildi.
 # ═══════════════════════════════════════════════════════════════════
 
 class TestStalenesseBugs:
-    """Eski bilgiyi güncel gibi sunma hataları."""
+    """Eski bilgilerin güncel gibi sunulması hataları."""
 
-    @pytest.mark.xfail(reason="BUG-G9-02: 2023-2024 sınav tarihleri güncel gibi sunuluyor")
+    # INTERMITTENT: DB'de eski tarih var + LLM bazen eski veriyi sunuyor
+    # academic_year metadata eklenene kadar tam çözülemez
+    @pytest.mark.xfail(strict=False, reason="INTERMITTENT: academic_year metadata olmadan eski tarih dönebilir")
     def test_exam_dates_not_outdated(self, rag):
         """G9-02: Sınav tarihleri sorgusu eski yıl tarihlerini döndürmemeli."""
         result = _query(rag, "Sınav tarihleri ne zaman açıklanacak?")
@@ -303,7 +302,7 @@ class TestRoutingBugs:
 class TestRetrievalBugs:
     """Retrieval başarısızlık hataları."""
 
-    @pytest.mark.xfail(reason="BUG-G2-01: 'bilgiyasar mühendsligi' yazım hatası tolere edilemiyor")
+    # FIXED: Query preprocessor typo correction ile çözüldü (Faz 2)
     def test_typo_bilgisayar(self, rag):
         """G2-01: Yazım hatalı sorgu doğru bölümü bulmalı."""
         result = _query(rag, "gibtüde bilgiyasar mühendsligi var mı?")
@@ -328,7 +327,8 @@ class TestRetrievalBugs:
             f"Yanıt ilk 500 kar: {response[:500]}"
         )
 
-    @pytest.mark.xfail(reason="BUG-G4-03: MDBF kısaltması tanınmıyor, SBF/İlahiyat SWOT dönüyor")
+    # INTERMITTENT: Abbreviation expansion çalışıyor ama LLM bazen MDBF içeriği döndüremiyor
+    @pytest.mark.xfail(strict=False, reason="INTERMITTENT: LLM 4B model kapasitesi — SWOT analizi bulanamayabiliyor")
     def test_abbreviation_mdbf(self, rag):
         """G4-03: MDBF kısaltması Mühendislik Fakültesi olarak çözülmeli."""
         result = _query(rag, "MDBF'nin kalite güvence süreçleri ve akreditasyon çalışmaları hakkında bilgi verin. SWOT analizi yapılmış mı?")
@@ -390,14 +390,13 @@ class TestRetrievalBugs:
 
 # ═══════════════════════════════════════════════════════════════════
 # GRUP 6: DUPLICATED SOURCES
-# Beklenen: Aynı belge birden fazla kez kaynak olarak dönmemeli.
-# Mevcut durum: Bazı sorgularda aynı belge 5 kez dönüyor.
+# Düzeltildi: URL + title + content hash bazlı dedup (Faz 3A).
 # ═══════════════════════════════════════════════════════════════════
 
 class TestDuplicateSourceBugs:
     """Kaynak belge tekrarı hataları."""
 
-    @pytest.mark.xfail(reason="BUG: Aynı kaynak belge birden fazla kez dönüyor (RRF dedup sorunu)")
+    # FIXED: URL-normalized dedup ile çözüldü (Faz 3A)
     def test_no_duplicate_sources(self, rag):
         """Kaynak listesinde aynı belge tekrar etmemeli."""
         # Bu sorgu E2E raporda 5 kez aynı belgeyi döndürmüştü (G8-02)

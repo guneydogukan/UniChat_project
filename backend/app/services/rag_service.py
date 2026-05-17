@@ -5,12 +5,15 @@ DocumentJoiner ile reciprocal_rank_fusion stratejisi uygulanır.
 
 Savunma katmanları:
     1. Intent Classifier  — kapsam dışı sorguları pipeline öncesi reddeder
-    2. Prompt Güçlendirme  — pozitif kısıtlamalar ile LLM davranışını yönlendirir
-    3. Response Validator  — LLM çıktısındaki uydurma URL/telefon/e-posta'yı temizler
+    2. Query Preprocessing — typo/abbreviation/comparison/routing
+    3. Prompt Güçlendirme  — pozitif kısıtlamalar ile LLM davranışını yönlendirir
+    4. Response Validator  — LLM çıktısındaki uydurma URL/telefon/e-posta'yı temizler
+    5. Source Dedup        — URL + title + content bazlı kaynak tekrarını engeller
 """
 
 import hashlib
 import logging
+import time
 from haystack import Pipeline
 from haystack.components.embedders import SentenceTransformersTextEmbedder
 from haystack.components.builders import PromptBuilder
@@ -31,25 +34,15 @@ from app.services.query_preprocessor import preprocess_query
 logger = logging.getLogger(__name__)
 
 # ── Türkçe Stopword Listesi ──
-# BM25 keyword aramasında plainto_tsquery AND semantiği kullanılır.
-# Doğal dil sorgularındaki düşük bilgi taşıyan kelimeler (soru edatları,
-# fiiller, bağlaçlar) AND koşuluna eklenince eşleşme sıfıra düşer.
-# Bu liste, sorgu keyword_retriever'a gönderilmeden önce temizlenir.
 TURKISH_STOPWORDS: frozenset[str] = frozenset({
-    # Soru edatları ve zamirleri
     "hangi", "ne", "neler", "nedir", "nasıl", "nerede", "nereye", "nereden",
     "kim", "kime", "kimin", "neden", "niçin", "niye", "kaç", "kadar",
-    # Soru ekleri
     "mi", "mı", "mu", "mü",
-    # Yaygın fiiller ve yardımcı fiiller
     "var", "yok", "olan", "olarak", "olmak", "olur", "olabilir",
     "almak", "istiyorum", "istiyoruz", "ister", "istiyor",
     "diyor", "eder", "yapar", "verir", "gelir", "gider",
-    # Zaman ve sıralama
     "son", "ilk", "en", "bir", "birçok",
-    # Bağlaçlar ve edatlar
     "ve", "veya", "ile", "için", "gibi", "kadar", "ama", "fakat",
-    # Hal ekleri ve işaret zamirleri
     "de", "da", "den", "dan", "bu", "şu", "o",
 })
 
@@ -130,10 +123,7 @@ class RagService:
             top_k=self._settings.RETRIEVER_KEYWORD_TOP_K,
         )
 
-        # reciprocal_rank_fusion: vektör + BM25 sonuçlarını birleştirir ve yeniden sıralar
-        joiner = DocumentJoiner(
-            join_mode="reciprocal_rank_fusion",
-        )
+        joiner = DocumentJoiner(join_mode="reciprocal_rank_fusion")
 
         prompt_builder = PromptBuilder(
             template=PROMPT_TEMPLATE,
@@ -155,12 +145,9 @@ class RagService:
         self._pipeline.add_component("llm", llm)
 
         # ── Bağlantılar ──
-        # Vektör kolu
         self._pipeline.connect("text_embedder.embedding", "vector_retriever.query_embedding")
         self._pipeline.connect("vector_retriever.documents", "joiner.documents")
-        # Keyword kolu (aynı soru metni doğrudan keyword_retriever'a gider)
         self._pipeline.connect("keyword_retriever.documents", "joiner.documents")
-        # Joiner → Prompt → LLM
         self._pipeline.connect("joiner.documents", "prompt_builder.documents")
         self._pipeline.connect("prompt_builder", "llm")
 
@@ -176,13 +163,7 @@ class RagService:
 
     @staticmethod
     def _clean_keyword_query(text: str) -> str:
-        """Türkçe stopword'leri çıkararak keyword araması için sorguyu temizler.
-
-        plainto_tsquery tüm kelimeleri AND ile birleştirir. Doğal dil
-        sorgularındaki 'hangi', 'var', 'mi' gibi kelimeler AND koşuluna
-        dahil olunca eşleşme sıfıra düşer. Bu metod yalnızca anlamlı
-        terimleri bırakır.
-        """
+        """Türkçe stopword'leri çıkararak keyword araması için sorguyu temizler."""
         words = text.split()
         meaningful = [w for w in words if w.lower() not in TURKISH_STOPWORDS]
         cleaned = " ".join(meaningful) if meaningful else text
@@ -193,9 +174,11 @@ class RagService:
 
         Savunma katmanları:
             1. Intent Classifier  — kapsam dışı → sabit reddetme yanıtı
-            2. Pipeline (retrieval + LLM)
-            3. Response Validator  — uydurma URL/telefon/e-posta temizliği
-            4. Source Dedup        — aynı belgenin tekrar dönmesini önler
+            2. Query Preprocessing — typo/abbreviation/comparison/routing
+            3. Pipeline (retrieval + LLM)
+            4. Response Validator  — uydurma URL/telefon/e-posta temizliği
+            5. Source Dedup        — URL + title + content bazlı dedup
+            6. Routing Correction  — eksik birim yönlendirmesi
 
         Returns:
             dict: {"response": str, "sources": list[dict]}
@@ -203,34 +186,43 @@ class RagService:
         if self._pipeline is None:
             raise RuntimeError("Pipeline henüz oluşturulmadı. build_pipeline() çağrılmalı.")
 
+        t_total = time.perf_counter()
         logger.info("📩 Gelen soru: %s", question)
 
         # ── Katman 1: Intent Classifier ──
+        t0 = time.perf_counter()
         intent = classify_intent(question)
+        t_intent = time.perf_counter() - t0
+
         if intent == "OUT_OF_SCOPE":
             logger.info("🚫 Kapsam dışı sorgu reddedildi: %s", question[:80])
+            logger.info(
+                "⏱️ [latency] intent=%.3fs total=%.3fs (rejected)",
+                t_intent, time.perf_counter() - t_total,
+            )
             return {"response": REJECTION_RESPONSE, "sources": []}
 
         # ── Katman 2: Query Preprocessing ──
+        t0 = time.perf_counter()
         pp = preprocess_query(question)
+        t_preprocess = time.perf_counter() - t0
+
         if pp.corrections:
             logger.info("🔧 Sorgu ön-işleme: %s", ", ".join(pp.corrections))
 
-        # Keyword retriever için Türkçe stopword temizliği uygula
         keyword_query = self._clean_keyword_query(pp.keyword_query)
         if keyword_query != pp.keyword_query:
             logger.info("🔤 Keyword sorgusu temizlendi: '%s' → '%s'", pp.keyword_query, keyword_query)
 
-        # Karşılaştırmalı sorgularda top_k'yı dinamik artır
         vector_top_k = self._settings.RETRIEVER_VECTOR_TOP_K + pp.boost_top_k
         keyword_top_k = self._settings.RETRIEVER_KEYWORD_TOP_K + pp.boost_top_k
 
         # ── Katman 3: Pipeline ──
-        # Yönlendirme ipucu varsa soruya ekle (LLM doğru birime yönlendirsin)
         prompt_question = question
         if pp.routing_hint:
             prompt_question = f"{question}\n\n[Sistem notu: Bu konu için yetkili birim: {pp.routing_hint}]"
 
+        t0 = time.perf_counter()
         result = self._pipeline.run(
             data={
                 "text_embedder": {"text": pp.vector_query},
@@ -240,19 +232,18 @@ class RagService:
             },
             include_outputs_from={"joiner"},
         )
-
-        logger.info("Pipeline tamamlandı. Anahtarlar: %s", list(result.keys()))
+        t_pipeline = time.perf_counter() - t0
 
         # Yanıtı al
         replies = result.get("llm", {}).get("replies")
         if not replies:
-            logger.warning("Pipeline sonucu boş döndü. result: %s", result)
+            logger.warning("Pipeline sonucu boş döndü.")
             return {"response": None, "sources": []}
 
         response_text = replies[0]
         logger.info("Yanıt alındı (%d karakter)", len(response_text))
 
-        # Joiner çıktısından kaynak belgelerini al (birleştirilmiş ve yeniden sıralanmış)
+        # Joiner çıktısından kaynak belgelerini al
         sources = []
         joined_docs = result.get("joiner", {}).get("documents", [])
         for doc in joined_docs:
@@ -265,30 +256,80 @@ class RagService:
             }
             sources.append(source)
 
-        # ── Katman 3: Response Validator ──
+        # ── Katman 4: Response Validator ──
+        t0 = time.perf_counter()
         response_text = validate_response(response_text, sources)
+        t_validator = time.perf_counter() - t0
 
-        # ── Katman 4: Source Dedup ──
+        # ── Katman 5: Source Dedup ──
+        t0 = time.perf_counter()
+        sources_before = len(sources)
         sources = self._dedup_sources(sources)
+        t_dedup = time.perf_counter() - t0
 
-        # ── Katman 5: Routing Correction ──
+        # ── Katman 6: Routing Correction ──
         if pp.routing_hint:
             response_text = self._apply_routing_correction(
                 response_text, pp.routing_hint,
             )
 
+        t_total_elapsed = time.perf_counter() - t_total
+
+        # ── Latency Summary ──
+        logger.info(
+            "⏱️ [latency] intent=%.3fs preprocess=%.3fs pipeline=%.3fs "
+            "validator=%.3fs dedup=%.3fs total=%.3fs "
+            "sources=%d→%d",
+            t_intent, t_preprocess, t_pipeline,
+            t_validator, t_dedup, t_total_elapsed,
+            sources_before, len(sources),
+        )
+
         return {"response": response_text, "sources": sources}
 
     @staticmethod
     def _dedup_sources(sources: list[dict]) -> list[dict]:
-        """Aynı içerikli kaynak belgeleri kaldırır (content hash bazlı)."""
-        seen_hashes: set[str] = set()
+        """Kaynak belgelerden tekrarlananları kaldırır.
+
+        Dedup sinyalleri (öncelik sırasıyla):
+            1. Aynı normalized URL → ilk chunk'ı tut, diğerlerini at
+            2. Aynı content hash → birebir aynı içerik
+            3. URL yok ama aynı title → ilkini tut
+        """
         unique: list[dict] = []
+        seen_urls: set[str] = set()
+        seen_hashes: set[str] = set()
+        seen_titles: set[str] = set()
+
         for src in sources:
-            content_hash = hashlib.md5(src.get("content", "").encode()).hexdigest()
-            if content_hash not in seen_hashes:
-                seen_hashes.add(content_hash)
-                unique.append(src)
+            raw_url = (src.get("source_url") or "").strip().rstrip("/").lower()
+            norm_url = raw_url.replace("https://", "http://")
+
+            raw_title = (src.get("title") or "").strip().lower()
+
+            content_hash = hashlib.md5(
+                (src.get("content") or "").encode()
+            ).hexdigest()
+
+            # Kural 1: Aynı URL zaten eklendiyse atla
+            if norm_url and norm_url in seen_urls:
+                continue
+
+            # Kural 2: Birebir aynı içerik zaten eklendiyse atla
+            if content_hash in seen_hashes:
+                continue
+
+            # Kural 3: URL yoksa ve aynı title zaten eklendiyse atla
+            if not norm_url and raw_title and raw_title in seen_titles:
+                continue
+
+            if norm_url:
+                seen_urls.add(norm_url)
+            seen_hashes.add(content_hash)
+            if raw_title:
+                seen_titles.add(raw_title)
+            unique.append(src)
+
         if len(unique) < len(sources):
             logger.info(
                 "🔄 Source dedup: %d → %d kaynak belge",
@@ -298,23 +339,15 @@ class RagService:
 
     @staticmethod
     def _apply_routing_correction(response: str, expected_unit: str) -> str:
-        """Yanıtta beklenen birim geçmiyorsa yönlendirme notu ekler.
-
-        Bazı sorgularda (ör. transkript) retrieval yanlış birimin belgelerini
-        döndürebilir. Bu metot, doğru birimi yanıtın sonuna ekler.
-        """
+        """Yanıtta beklenen birim geçmiyorsa yönlendirme notu ekler."""
         response_lower = response.lower()
         expected_lower = expected_unit.lower()
 
-        # Beklenen birim zaten yanıtta geçiyorsa düzeltmeye gerek yok
-        # Öğrenci İşleri → "öğrenci işleri" kelimesini ara
         unit_keywords = expected_lower.split()
-        # İlk iki anlamlı kelime yeterli ("öğrenci işleri", "sağlık kültür")
         check_phrase = " ".join(unit_keywords[:2]) if len(unit_keywords) >= 2 else expected_lower
         if check_phrase in response_lower:
             return response
 
-        # Beklenen birim yanıtta yok → yönlendirme notu ekle
         correction_note = (
             f"\n\n> **📌 Yönlendirme:** Bu konuda yetkili birim "
             f"**{expected_unit.title()}**'dır. Detaylı bilgi için "
