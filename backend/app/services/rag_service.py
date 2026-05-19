@@ -69,7 +69,9 @@ Belgeler:
 {% for doc in documents %}
 ---
 [{{ doc.meta.category | default("bilinmiyor") }}] {{ doc.meta.title | default("") }}
-Kaynak: {{ doc.meta.source_url | default("belirtilmemiş") }}
+{% set public_source = doc.meta.source_public_url | default("", true) %}
+{% set raw_source = doc.meta.source_url | default("", true) %}
+Kaynak: {% if public_source %}{{ public_source }}{% elif raw_source.startswith("http://") or raw_source.startswith("https://") %}{{ raw_source }}{% else %}{{ doc.meta.title | default("belirtilmemiş") }}{% endif %}
 {% if doc.meta.contact_unit %}İlgili birim: {{ doc.meta.contact_unit }}{% endif %}
 {% if doc.meta.contact_info %}İletişim: {{ doc.meta.contact_info }}{% endif %}
 {% if doc.meta.last_updated %}Son güncelleme: {{ doc.meta.last_updated }}{% endif %}
@@ -78,6 +80,29 @@ Kaynak: {{ doc.meta.source_url | default("belirtilmemiş") }}
 {% endfor %}
 
 Soru: {{ question }}"""
+
+
+def _is_http_url(value: str | None) -> bool:
+    """Kullanıcıya link olarak gösterilebilecek URL mi?"""
+    if not value:
+        return False
+    return value.strip().lower().startswith(("http://", "https://"))
+
+
+def _public_source_url(meta: dict | None) -> str | None:
+    """Metadata içinden güvenli kullanıcı kaynağını seçer."""
+    if not meta:
+        return None
+
+    source_public_url = meta.get("source_public_url")
+    if _is_http_url(source_public_url):
+        return source_public_url
+
+    source_url = meta.get("source_url")
+    if _is_http_url(source_url):
+        return source_url
+
+    return None
 
 
 class RagService:
@@ -247,9 +272,11 @@ class RagService:
         sources = []
         joined_docs = result.get("joiner", {}).get("documents", [])
         for doc in joined_docs:
+            public_url = _public_source_url(doc.meta)
             source = {
                 "content": doc.content[:200] + "..." if len(doc.content) > 200 else doc.content,
-                "source_url": doc.meta.get("source_url") if doc.meta else None,
+                "source_url": public_url,
+                "source_public_url": public_url,
                 "category": doc.meta.get("category") if doc.meta else None,
                 "title": doc.meta.get("title") if doc.meta else None,
                 "doc_kind": doc.meta.get("doc_kind") if doc.meta else None,

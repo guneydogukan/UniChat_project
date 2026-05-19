@@ -41,7 +41,9 @@
               "duyurular",
               "aday_ogrenci",
               "mezunlar",
-              "yonlendirme"
+              "yonlendirme",
+              "kariyer",
+              "iletisim"
             ]
           },
           "subcategory": {
@@ -67,6 +69,18 @@
             "type": "string",
             "default": "tr"
           },
+          "academic_year": {
+            "type": ["string", "null"]
+          },
+          "document_year": {
+            "type": ["string", "null"]
+          },
+          "source_public_url": {
+            "type": ["string", "null"]
+          },
+          "source_file_path": {
+            "type": ["string", "null"]
+          },
           "title": {
             "type": "string"
           },
@@ -84,7 +98,17 @@
               "form",
               "mufradat",
               "ders_plani",
-              "genel"
+              "yonetim",
+              "rapor",
+              "menu_haritasi",
+              "takvim",
+              "personel",
+              "pdf_rapor",
+              "genel",
+              "sss",
+              "program_listesi",
+              "birim_iletisim",
+              "birim_iletisim_tablosu"
             ]
           },
           "parent_doc_id": {

@@ -37,6 +37,7 @@ async def chat(request: ChatRequest):
             SourceDocument(
                 content=s["content"],
                 source_url=s.get("source_url"),
+                source_public_url=s.get("source_public_url"),
                 category=s.get("category"),
             )
             for s in result["sources"]

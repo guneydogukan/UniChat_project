@@ -78,6 +78,10 @@ class DocumentMetadata(BaseModel):
     subcategory: Optional[str] = Field(None, description="Opsiyonel alt kategori.")
     department: Optional[str] = Field(None, description="İlgili bölüm/fakülte adı.")
     language: str = Field(default="tr", description="Belgenin dili.")
+    academic_year: Optional[str] = Field(None, description="Akademik yıl aralığı (örn: 2025-2026).")
+    document_year: Optional[str] = Field(None, description="Tek yıllı rapor/doküman yılı (örn: 2024).")
+    source_public_url: Optional[str] = Field(None, description="Kullanıcıya gösterilecek HTTP/HTTPS kaynak URL'si.")
+    source_file_path: Optional[str] = Field(None, description="PDF gibi yerel dosya kaynaklarının dosya yolu.")
     
     parent_doc_id: Optional[str] = Field(None, description="Parçalanan orijinal belgenin source_id'si.")
     chunk_index: Optional[int] = Field(None, description="Parçalanan belgenin chunk sırası.")

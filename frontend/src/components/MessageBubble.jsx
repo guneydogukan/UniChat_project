@@ -66,6 +66,7 @@ export default function MessageBubble({ message }) {
 
 function SourceCard({ source }) {
   const label = source.category || 'Belge';
+  const publicUrl = isHttpUrl(source.source_public_url) ? source.source_public_url : null;
 
   return (
     <div className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs border transition-colors
@@ -74,17 +75,21 @@ function SourceCard({ source }) {
     >
       <FileText className="w-3 h-3 flex-shrink-0" />
       <span className="truncate max-w-[200px]">{label}</span>
-      {source.source_url && (
+      {publicUrl && (
         <a
-          href={source.source_url}
+          href={publicUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300"
-          title={source.source_url}
+          title={publicUrl}
         >
           <ExternalLink className="w-3 h-3" />
         </a>
       )}
     </div>
   );
+}
+
+function isHttpUrl(value) {
+  return typeof value === 'string' && /^https?:\/\//i.test(value.trim());
 }

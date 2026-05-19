@@ -15,6 +15,7 @@ class SourceDocument(BaseModel):
     """Yanıtta referans gösterilen belge kaynağı."""
     content: str = Field(..., description="Belge içeriği (kısaltılmış)")
     source_url: str | None = Field(None, description="Kaynak URL")
+    source_public_url: str | None = Field(None, description="Kullanıcıya gösterilecek kaynak URL")
     category: str | None = Field(None, description="Belge kategorisi")
 
 
