@@ -179,7 +179,7 @@ def phase2_yemek_listesi():
             content=menu_text,
             meta={
                 "category": "yemekhane",
-                "source_url": "https://www.gibtu.edu.tr/yemek",
+                "source_url": "https://www.gibtu.edu.tr/yemeklistesi",
                 "source_type": "web",
                 "source_id": "yemek_listesi",
                 "last_updated": datetime.now().strftime("%Y-%m-%d"),
@@ -194,7 +194,7 @@ def phase2_yemek_listesi():
 
     # Also scrape live page
     try:
-        resp = requests.get(f"{BASE_URL}/yemek", timeout=15, headers={"User-Agent": "UniChat/1.0"})
+        resp = requests.get(f"{BASE_URL}/yemeklistesi", timeout=10, headers={"User-Agent": "UniChat/1.0"})
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
         body = soup.find("div", class_="page_body") or soup.find("div", class_="container")
@@ -208,7 +208,7 @@ def phase2_yemek_listesi():
                     content=live_text[:50000],
                     meta={
                         "category": "yemekhane",
-                        "source_url": "https://www.gibtu.edu.tr/yemek",
+                        "source_url": "https://www.gibtu.edu.tr/yemeklistesi",
                         "source_type": "web",
                         "source_id": "yemek_canli",
                         "last_updated": datetime.now().strftime("%Y-%m-%d"),
@@ -228,7 +228,7 @@ def phase2_yemek_listesi():
     yemek_info = (
         "GIBTU Yemekhane Bilgileri\n\n"
         "Yemekhane rezervasyon sistemi: https://gibtukart.gibtu.edu.tr\n"
-        "Yemek listesi sayfasi: https://www.gibtu.edu.tr/yemek\n\n"
+        "Yemek listesi sayfasi: https://www.gibtu.edu.tr/yemeklistesi\n\n"
         "Gunluk menu icerigi: Genellikle 4 kalem yemek sunulmaktadir "
         "(ana yemek, pilav/makarna, corba, icecek/tatli).\n"
         "Hafta ici (Pazartesi-Cuma) yemek servisi yapilmaktadir."
@@ -238,7 +238,7 @@ def phase2_yemek_listesi():
         content=yemek_info,
         meta={
             "category": "yemekhane",
-            "source_url": "https://www.gibtu.edu.tr/yemek",
+            "source_url": "https://www.gibtu.edu.tr/yemeklistesi",
             "source_type": "web",
             "source_id": "yemekhane_bilgi",
             "last_updated": datetime.now().strftime("%Y-%m-%d"),

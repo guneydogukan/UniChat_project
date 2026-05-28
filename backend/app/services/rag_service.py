@@ -27,6 +27,7 @@ from haystack_integrations.components.retrievers.pgvector import (
 )
 
 from app.config import get_settings
+from app.services.food_menu_service import get_food_menu_service
 from app.services.intent_classifier import classify_intent, REJECTION_RESPONSE
 from app.services.response_validator import validate_response
 from app.services.query_preprocessor import preprocess_query
@@ -208,6 +209,11 @@ class RagService:
         Returns:
             dict: {"response": str, "sources": list[dict]}
         """
+        food_menu_answer = get_food_menu_service().answer_chat_query(question)
+        if food_menu_answer is not None:
+            logger.info("Yemekhane menüsü sorgusu deterministik servisle yanıtlandı.")
+            return food_menu_answer
+
         if self._pipeline is None:
             raise RuntimeError("Pipeline henüz oluşturulmadı. build_pipeline() çağrılmalı.")
 

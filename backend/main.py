@@ -12,7 +12,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import get_settings
-from app.routers import chat, health
+from app.routers import chat, food_menu, health
 from app.services.rag_service import rag_service
 
 
@@ -68,6 +68,7 @@ def create_app() -> FastAPI:
 
     # Router'ları dahil et
     app.include_router(chat.router)
+    app.include_router(food_menu.router)
     app.include_router(health.router)
 
     return app

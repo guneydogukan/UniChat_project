@@ -43,7 +43,6 @@ logger = logging.getLogger(__name__)
 
 BASE_URL = "https://www.gibtu.edu.tr"
 YEMEK_URL = f"{BASE_URL}/yemeklistesi"
-YEMEK_URL_ALT = f"{BASE_URL}/yemek"
 USER_AGENT = "Mozilla/5.0 (compatible; UniChatBot/1.0; +https://github.com/unichat-project)"
 
 # Diff cache dosyası
@@ -92,18 +91,21 @@ class MenuScraper:
         return self._session
 
     def _fetch(self, url: str) -> str | None:
+        if url != YEMEK_URL:
+            raise ValueError("Yemekhane scraper yalnızca sabit yemek listesi URL'sini kullanabilir.")
+
         session = self._get_session()
-        for attempt in range(1, 4):
+        for attempt in range(1, 3):
             try:
-                resp = session.get(url, timeout=20)
+                resp = session.get(url, timeout=10)
                 resp.raise_for_status()
                 if not resp.encoding or resp.encoding == "ISO-8859-1":
                     resp.encoding = resp.apparent_encoding or "utf-8"
                 return resp.text
             except Exception as e:
-                logger.warning("Fetch hata %d/3: %s", attempt, e)
-                if attempt < 3:
-                    time.sleep(2 * attempt)
+                logger.warning("Fetch hata %d/2: %s", attempt, e)
+                if attempt < 2:
+                    time.sleep(1)
         return None
 
     def _parse_menu_cards(self, html: str) -> tuple[str, int]:
@@ -176,11 +178,16 @@ class MenuScraper:
 
     def scrape(self, dry_run: bool = False, force: bool = False) -> MenuScrapeResult:
         """
-        Yemekhane menüsünü scrape eder.
+        Yemekhane menüsünü scrape eder ve yeni food_menus tablosuna yazar.
+
+        Not:
+            Bu sınıf geriye dönük CLI/scheduler uyumluluğu için korunur.
+            Yeni mimaride RAG dokümanı üretilmez; tarih bazlı kalıcı kaynak
+            food_menus tablosudur.
 
         Args:
             dry_run: True ise DB'ye yazmaz.
-            force: True ise diff kontrolü atlanır, her zaman günceller.
+            force: Geriye dönük uyumluluk için tutulur, yeni akışta kullanılmaz.
 
         Returns:
             MenuScrapeResult nesnesi.
@@ -192,77 +199,54 @@ class MenuScraper:
         logger.info("YEMEKHANE MENÜ SCRAPE")
         logger.info("=" * 65)
 
-        # 1. Canlı sayfayı çek
-        html = self._fetch(YEMEK_URL)
-        if not html:
-            html = self._fetch(YEMEK_URL_ALT)
-        if not html:
-            result.error = "Yemek sayfası erişilemedi"
-            result.duration_seconds = time.time() - start_time
-            logger.error("❌ Yemek sayfası erişilemedi")
-            return result
+        try:
+            from app.repositories.food_menu_repository import FoodMenuRepository
+            from scrapers.food_menu_scraper import FoodMenuScraper
 
-        # 2. Menü kartlarını parse et
-        menu_text, menu_count = self._parse_menu_cards(html)
-        result.content_length = len(menu_text)
-        result.menu_items_count = menu_count
+            scraper = FoodMenuScraper()
+            scrape_result = scraper.fetch_menus()
+            if not scrape_result.success:
+                result.error = scrape_result.error or "Yemek listesi alınamadı"
+                result.duration_seconds = time.time() - start_time
+                logger.error("❌ Yemek listesi alınamadı: %s", result.error)
+                return result
 
-        if not menu_text or len(menu_text) < 30:
-            result.error = "Menü içeriği boş veya çok kısa"
-            result.duration_seconds = time.time() - start_time
-            logger.warning("⚠️ Menü içeriği yetersiz: %d karakter", len(menu_text))
-            return result
+            result.menu_items_count = len(scrape_result.menus)
+            result.content_length = sum(len(menu.raw_text or "") for menu in scrape_result.menus)
+            result.documents_created = len(scrape_result.menus)
+            result.content_changed = bool(scrape_result.menus)
 
-        # 3. Diff kontrolü
-        content_changed = self._check_diff(menu_text) if not force else True
-        result.content_changed = content_changed
+            if dry_run:
+                result.chunks_written = 0
+                result.success = True
+                result.duration_seconds = time.time() - start_time
+                logger.info("DRY-RUN: %d günlük menü parse edildi, DB'ye yazılmadı.", len(scrape_result.menus))
+                return result
 
-        if not content_changed:
-            logger.info("ℹ️ Menü değişmemiş, güncelleme atlanıyor")
+            repository = FoodMenuRepository()
+            written_count = 0
+            for menu in scrape_result.menus:
+                repository.upsert_menu(
+                    menu_date=menu.date,
+                    menu_items=menu.menu_items,
+                    source_url=menu.source_url,
+                    raw_data=menu.raw_data,
+                    raw_text=menu.raw_text,
+                )
+                written_count += 1
+
+            result.chunks_written = written_count
             result.success = True
             result.duration_seconds = time.time() - start_time
-            return result
 
-        # 4. Document oluştur
-        from haystack import Document
-
-        now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-        doc = Document(
-            id=hashlib.sha256(menu_text.encode("utf-8")).hexdigest(),
-            content=menu_text,
-            meta={
-                "category": "yemekhane",
-                "source_url": YEMEK_URL,
-                "source_type": "web",
-                "source_id": "yemek_listesi_canli",
-                "last_updated": now,
-                "title": "GİBTÜ Yemekhane Günlük Menü Listesi",
-                "doc_kind": "genel",
-                "language": "tr",
-                "department": "Sağlık Kültür ve Spor Daire Başkanlığı",
-                "contact_unit": "Sağlık Kültür ve Spor Daire Başkanlığı",
-                "contact_info": "sks@gibtu.edu.tr",
-            },
-        )
-
-        documents = [doc]
-        result.documents_created = len(documents)
-
-        # 5. DB'ye yaz
-        if not dry_run:
-            from app.ingestion.loader import ingest_documents
-            from haystack.document_stores.types import DuplicatePolicy
-            result.chunks_written = ingest_documents(
-                documents, policy=DuplicatePolicy.OVERWRITE
+            logger.info(
+                "\n✅ Menü scrape tamamlandı: %d günlük menü, %d karakter, DB upsert: %d",
+                len(scrape_result.menus), result.content_length, written_count,
             )
-        else:
-            result.chunks_written = len(documents)
-
-        result.success = True
-        result.duration_seconds = time.time() - start_time
-
-        logger.info("\n✅ Menü scrape tamamlandı: %d öğe, %d karakter, değişiklik: %s",
-                     menu_count, len(menu_text), "EVET" if content_changed else "HAYIR")
+        except Exception as e:
+            result.error = str(e)
+            result.duration_seconds = time.time() - start_time
+            logger.error("❌ Yemek menüsü güncelleme hatası: %s", e, exc_info=True)
 
         return result
 

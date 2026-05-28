@@ -5,7 +5,7 @@ Tüm scraper modüllerini periyodik olarak çalıştıran merkezi zamanlayıcı.
 
 Job Tanımları:
   - Duyurular:            Günde 1 kez (saat 08:00)
-  - Yemekhane menüsü:     Günde 1 kez (saat 07:00)
+  - Yemekhane menüsü:     Günde 1 kez (saat 07:00, food_menus upsert)
   - Akademik kadro:       Haftada 1 kez (Pazartesi 03:00)
   - Tam yeniden indeks:   Ayda 1 kez (ayın 1'i, 02:00)
 
@@ -142,7 +142,7 @@ def job_duyuru_update():
 
 
 def job_yemek_update():
-    """Yemekhane menü güncelleme job'ı."""
+    """Yemekhane menüsünü food_menus tablosuna güncelleyen job."""
     start = time.time()
     job_name = "yemek_update"
     logger.info("🍽️ Job başlıyor: %s", job_name)
@@ -164,8 +164,8 @@ def job_yemek_update():
         })
 
         logger.info(
-            "✅ Job tamamlandı: %s — değişti: %s, %d öğe, %.1fs",
-            job_name, result.content_changed, result.menu_items_count, duration,
+            "✅ Job tamamlandı: %s — %d günlük menü, %d upsert, %.1fs",
+            job_name, result.menu_items_count, result.chunks_written, duration,
         )
 
     except Exception as e:
@@ -355,7 +355,7 @@ def list_jobs(scheduler=None):
         {"id": "duyuru_update", "name": "Duyuru Güncelleme",
          "schedule": "Her gün 08:00", "mode": "delta (3 sayfa)"},
         {"id": "yemek_update", "name": "Yemekhane Menü",
-         "schedule": "Her gün 07:00", "mode": "diff kontrolü ile"},
+         "schedule": "Her gün 07:00", "mode": "food_menus upsert"},
         {"id": "kadro_update", "name": "Akademik Kadro",
          "schedule": "Her Pazartesi 03:00", "mode": "yeni eklenenler"},
         {"id": "full_reindex", "name": "Tam Yeniden İndeks",
