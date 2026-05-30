@@ -39,6 +39,19 @@ MENU_EXCLUSION_PHRASES = (
     "kalori hesapla",
 )
 
+NON_MENU_INFO_PATTERNS = (
+    re.compile(r"\byemekhane(?:de|si|nin|ye|den)?\s+var\s+m[ıi]\b", re.IGNORECASE),
+    re.compile(
+        r"\b("
+        r"kapasite|kaç\s+kişilik|kac\s+kisilik|"
+        r"ücret|ucret|fiyat|kart|bakiye|rezervasyon|"
+        r"kural|hijyen|çalışma\s+saat|calisma\s+saat|"
+        r"açık\s+m[ıi]|acik\s+m[ıi]|nerede|konum"
+        r")\w*",
+        re.IGNORECASE,
+    ),
+)
+
 FOOD_MENU_PHRASES = (
     "yemekte ne var",
     "yemek listesi",
@@ -51,6 +64,11 @@ FOOD_MENU_PHRASES = (
     "yarinki menu",
     "haftalık menü",
     "haftalik menu",
+)
+
+QUESTION_SIGNAL_PATTERNS = (
+    re.compile(r"\bne\s+(?:var|çıkıyor|cikiyor|çıkacak|cikacak)\b", re.IGNORECASE),
+    re.compile(r"\b(?:çıkan|cikan|çıkacak|cikacak)\b", re.IGNORECASE),
 )
 
 DATE_ISO_RE = re.compile(r"\b(?P<year>\d{4})-(?P<month>\d{1,2})-(?P<day>\d{1,2})\b")
@@ -80,6 +98,8 @@ def is_food_menu_query(query: str) -> bool:
         return False
     if any(phrase in q for phrase in MENU_EXCLUSION_PHRASES):
         return False
+    if any(pattern.search(q) for pattern in NON_MENU_INFO_PATTERNS):
+        return False
     if any(phrase in q for phrase in FOOD_MENU_PHRASES):
         return True
 
@@ -98,7 +118,7 @@ def is_food_menu_query(query: str) -> bool:
             *TURKISH_WEEKDAYS.keys(),
         ]
     )
-    has_question_signal = any(token in q for token in ["ne var", "ne çıkıyor", "ne cikiyor", "çıkan", "cikan"])
+    has_question_signal = any(pattern.search(q) for pattern in QUESTION_SIGNAL_PATTERNS)
 
     if has_food_word and (has_menu_word or has_time_word or has_question_signal):
         return True

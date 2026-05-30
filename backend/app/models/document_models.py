@@ -91,6 +91,8 @@ class DocumentMetadata(BaseModel):
     document_year: Optional[str] = Field(None, description="Tek yıllı rapor/doküman yılı (örn: 2024).")
     source_public_url: Optional[str] = Field(None, description="Kullanıcıya gösterilecek HTTP/HTTPS kaynak URL'si.")
     source_file_path: Optional[str] = Field(None, description="PDF gibi yerel dosya kaynaklarının dosya yolu.")
+    metadata_version: Optional[str] = Field(None, description="Kaynak ailesine ait metadata standardı sürümü.")
+    load_batch_id: Optional[str] = Field(None, description="Toplu yükleme/yeniden yükleme çalışmasının izleme kimliği.")
     
     parent_doc_id: Optional[str] = Field(None, description="Parçalanan orijinal belgenin source_id'si.")
     chunk_index: Optional[int] = Field(None, description="Parçalanan belgenin chunk sırası.")

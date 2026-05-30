@@ -10,6 +10,10 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 
 from scrapers.candidate_portal_scraper import (  # noqa: E402
     BASE_URL,
+    EXPECTED_DOC_KINDS,
+    EXPECTED_SOURCE_ANCHORS,
+    REQUIRED_METADATA_FIELDS,
+    METADATA_VERSION,
     SCRAPER_NAME,
     CandidatePortalScraper,
     _decode_bytes,
@@ -138,6 +142,8 @@ class CandidatePortalParserTests(unittest.TestCase):
             "scraper_name",
             "content_hash",
             "last_fetched_at",
+            "load_batch_id",
+            "metadata_version",
             "is_official",
             "university",
             "dedup_key",
@@ -147,6 +153,8 @@ class CandidatePortalParserTests(unittest.TestCase):
         for doc in self.documents:
             self.assertTrue(required.issubset(doc.meta.keys()))
             self.assertEqual(doc.meta["scraper_name"], SCRAPER_NAME)
+            self.assertEqual(doc.meta["metadata_version"], METADATA_VERSION)
+            self.assertTrue(doc.meta["load_batch_id"].startswith(f"{SCRAPER_NAME}:"))
             self.assertTrue(doc.meta["source_url"].startswith(BASE_URL))
             self.assertTrue(doc.meta["is_official"])
 
@@ -184,6 +192,96 @@ class CandidatePortalFetchTests(unittest.TestCase):
         self.assertTrue(report.success)
         self.assertEqual(session.calls, [(BASE_URL, 20)])
         self.assertEqual(report.faq_count, 2)
+
+
+class CandidatePortalQualityTests(unittest.TestCase):
+    def _valid_quality_report(self):
+        total = 35
+        batch_id = f"{SCRAPER_NAME}:2026-05-30T13:11:12Z"
+        summary = {
+            "total_chunks": total,
+            "distinct_ids": total,
+            "embedded_chunks": total,
+            "metadata_version_chunks": total,
+            "scraper_chunks": total,
+            "load_batch_chunks": total,
+            "tr_language_chunks": total,
+            "official_chunks": total,
+            "old_doc_kind_chunks": 0,
+            "legacy_source_chunks": 0,
+        }
+        metadata_coverage = {
+            field_name: total for field_name in REQUIRED_METADATA_FIELDS
+        }
+        doc_kind_distribution = {
+            doc_kind: 1 for doc_kind in EXPECTED_DOC_KINDS
+        }
+        source_anchor_distribution = {
+            anchor: 1 for anchor in EXPECTED_SOURCE_ANCHORS
+        }
+        return CandidatePortalScraper._build_data_quality_report(
+            summary=summary,
+            metadata_coverage=metadata_coverage,
+            doc_kind_distribution=doc_kind_distribution,
+            source_anchor_distribution=source_anchor_distribution,
+            load_batch_distribution={batch_id: total},
+            expected_chunks=total,
+            expected_load_batch_id=batch_id,
+        )
+
+    def test_reload_sonrasi_kalite_raporu_basari_doner(self):
+        quality = self._valid_quality_report()
+
+        self.assertTrue(quality["success"])
+        self.assertEqual(quality["failures"], [])
+        self.assertEqual(quality["missing_doc_kinds"], [])
+        self.assertEqual(quality["missing_source_anchors"], [])
+        self.assertEqual(quality["missing_metadata_fields"], [])
+
+    def test_reload_sonrasi_kalite_raporu_eksikleri_yakalar(self):
+        total = 35
+        batch_id = f"{SCRAPER_NAME}:2026-05-30T13:11:12Z"
+        summary = {
+            "total_chunks": total,
+            "distinct_ids": total - 1,
+            "embedded_chunks": total - 1,
+            "metadata_version_chunks": total,
+            "scraper_chunks": total,
+            "load_batch_chunks": total - 1,
+            "tr_language_chunks": total,
+            "official_chunks": total,
+            "old_doc_kind_chunks": 1,
+            "legacy_source_chunks": 1,
+        }
+        metadata_coverage = {
+            field_name: total for field_name in REQUIRED_METADATA_FIELDS
+        }
+        metadata_coverage["source_anchor"] = total - 1
+        doc_kind_distribution = {
+            doc_kind: 1 for doc_kind in EXPECTED_DOC_KINDS
+            if doc_kind != "candidate_contact"
+        }
+        source_anchor_distribution = {
+            anchor: 1 for anchor in EXPECTED_SOURCE_ANCHORS
+            if anchor != "iletisim-bilgileri"
+        }
+
+        quality = CandidatePortalScraper._build_data_quality_report(
+            summary=summary,
+            metadata_coverage=metadata_coverage,
+            doc_kind_distribution=doc_kind_distribution,
+            source_anchor_distribution=source_anchor_distribution,
+            load_batch_distribution={batch_id: total - 1},
+            expected_chunks=total,
+            expected_load_batch_id=batch_id,
+        )
+
+        self.assertFalse(quality["success"])
+        self.assertIn("source_anchor", quality["missing_metadata_fields"])
+        self.assertIn("candidate_contact", quality["missing_doc_kinds"])
+        self.assertIn("iletisim-bilgileri", quality["missing_source_anchors"])
+        self.assertTrue(any("embedding eksik" in item for item in quality["failures"]))
+        self.assertTrue(any("eski aday doc_kind" in item for item in quality["failures"]))
 
 
 if __name__ == "__main__":

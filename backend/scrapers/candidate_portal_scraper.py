@@ -43,6 +43,7 @@ logger = logging.getLogger(__name__)
 BASE_URL = "https://adayogrenci.gibtu.edu.tr/"
 SOURCE_DOMAIN = "adayogrenci.gibtu.edu.tr"
 SCRAPER_NAME = "candidate_portal_scraper"
+METADATA_VERSION = "candidate.v1"
 UNIVERSITY_NAME = "Gaziantep İslam Bilim ve Teknoloji Üniversitesi"
 DEFAULT_DEPARTMENT = "Aday Öğrenci Portalı"
 
@@ -56,6 +57,67 @@ ENCODING_FALLBACKS = ("utf-8", "windows-1254", "iso-8859-9")
 EMAIL_RE = re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.IGNORECASE)
 URL_RE = re.compile(r"https?://[^\s<>\"]+")
 PHONE_RE = re.compile(r"(?:\+?90\s*)?(?:0?\(?\d{3}\)?[\s.-]*)\d{3}[\s.-]*\d{2}[\s.-]*\d{2}")
+
+REQUIRED_METADATA_FIELDS = (
+    "metadata_version",
+    "category",
+    "subcategory",
+    "sub_category",
+    "source_url",
+    "source_public_url",
+    "source_type",
+    "source_id",
+    "source_anchor",
+    "last_updated",
+    "last_fetched_at",
+    "load_batch_id",
+    "title",
+    "doc_kind",
+    "language",
+    "department",
+    "is_official",
+    "scraper_name",
+    "content_hash",
+    "dedup_key",
+    "university",
+    "parent_doc_id",
+    "chunk_index",
+)
+
+EXPECTED_DOC_KINDS = (
+    "candidate_faq",
+    "candidate_opportunity",
+    "candidate_program",
+    "candidate_transportation",
+    "candidate_housing",
+    "candidate_library",
+    "candidate_exchange",
+    "candidate_career",
+    "candidate_contact",
+)
+
+EXPECTED_SOURCE_ANCHORS = (
+    "sss",
+    "olanaklar",
+    "ogrenim",
+    "gibtu",
+    "kutuphane",
+    "erasmus",
+    "cbiko",
+    "ogrencibasarisi",
+    "konaklama",
+    "gaziantep",
+    "iletisim-bilgileri",
+)
+
+OLD_CANDIDATE_DOC_KINDS = (
+    "tanitim",
+    "sss",
+    "rehber",
+    "genel",
+    "iletisim",
+    "program_listesi",
+)
 
 
 def _has_class(class_name: str) -> str:
@@ -167,6 +229,7 @@ class CandidatePortalReport:
     section_count: int = 0
     doc_kind_distribution: dict[str, int] = field(default_factory=dict)
     sample_metadata: list[dict[str, Any]] = field(default_factory=list)
+    data_quality: dict[str, Any] = field(default_factory=dict)
     errors: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
@@ -187,6 +250,7 @@ class CandidatePortalReport:
             "section_count": self.section_count,
             "doc_kind_distribution": self.doc_kind_distribution,
             "sample_metadata": self.sample_metadata,
+            "data_quality": self.data_quality,
             "errors": self.errors,
         }
 
@@ -361,7 +425,18 @@ class CandidatePortalScraper:
 
         try:
             report.chunks_written = self._ingest(documents)
-            report.success = True
+            report.data_quality = self.validate_loaded_data(
+                expected_chunks=report.chunks_written,
+                expected_load_batch_id=f"{SCRAPER_NAME}:{fetched_at}",
+                require_exact_count=cleanup,
+            )
+            report.success = bool(report.data_quality.get("success"))
+            if not report.success:
+                failures = report.data_quality.get("failures") or []
+                report.errors.append(
+                    "Veri kalite kontrolü başarısız: "
+                    + ("; ".join(failures) if failures else "detay yok")
+                )
         except Exception as exc:  # noqa: BLE001 - production log + rapor
             report.errors.append(f"Ingestion hatası: {exc}")
 
@@ -388,11 +463,32 @@ class CandidatePortalScraper:
             conn = psycopg2.connect(database_url)
             cur = conn.cursor()
             where_sql = """
-                meta->>'scraper_name' = %s
-                OR meta->>'source_url' LIKE %s
-                OR meta->>'source_public_url' LIKE %s
+                meta->>'category' = %s
+                AND (
+                    meta->>'scraper_name' = %s
+                    OR lower(coalesce(meta->>'source_url', '')) = %s
+                    OR lower(coalesce(meta->>'source_url', '')) LIKE %s
+                    OR lower(coalesce(meta->>'source_url', '')) LIKE %s
+                    OR lower(coalesce(meta->>'source_url', '')) LIKE %s
+                    OR lower(coalesce(meta->>'source_public_url', '')) = %s
+                    OR lower(coalesce(meta->>'source_public_url', '')) LIKE %s
+                    OR lower(coalesce(meta->>'source_public_url', '')) LIKE %s
+                    OR lower(coalesce(meta->>'source_public_url', '')) LIKE %s
+                )
             """
-            params = (SCRAPER_NAME, f"{BASE_URL}%", f"{BASE_URL}%")
+            base_without_slash = BASE_URL.rstrip("/").lower()
+            params = (
+                "aday_ogrenci",
+                SCRAPER_NAME,
+                base_without_slash,
+                f"{base_without_slash}/%",
+                f"{base_without_slash}#%",
+                "https://www.gibtu.edu.tr/adayogrenci%",
+                base_without_slash,
+                f"{base_without_slash}/%",
+                f"{base_without_slash}#%",
+                "https://www.gibtu.edu.tr/adayogrenci%",
+            )
 
             cur.execute(f"SELECT COUNT(*) FROM haystack_docs WHERE {where_sql}", params)
             count = int(cur.fetchone()[0])
@@ -406,6 +502,217 @@ class CandidatePortalScraper:
             return count, None
         except Exception as exc:  # noqa: BLE001 - cleanup ana akışı bozmasın
             return 0, str(exc)
+
+    @staticmethod
+    def validate_loaded_data(
+        expected_chunks: int,
+        expected_load_batch_id: str,
+        require_exact_count: bool = True,
+    ) -> dict[str, Any]:
+        """Reload sonrası DB'deki aday portalı verisinin production kalite kapısını çalıştırır."""
+        try:
+            try:
+                from dotenv import load_dotenv
+
+                load_dotenv(Path(__file__).resolve().parents[2] / ".env")
+            except ImportError:
+                pass
+
+            import psycopg2
+
+            database_url = os.environ.get("DATABASE_URL")
+            if not database_url:
+                return {
+                    "success": False,
+                    "failures": ["DATABASE_URL tanımlı değil; veri kalite kontrolü yapılamadı."],
+                }
+
+            conn = psycopg2.connect(database_url)
+            cur = conn.cursor()
+
+            cur.execute(
+                """
+                SELECT
+                    COUNT(*) AS total_chunks,
+                    COUNT(DISTINCT id) AS distinct_ids,
+                    COUNT(*) FILTER (WHERE embedding IS NOT NULL) AS embedded_chunks,
+                    COUNT(*) FILTER (WHERE meta->>'metadata_version' = %s) AS metadata_version_chunks,
+                    COUNT(*) FILTER (WHERE meta->>'scraper_name' = %s) AS scraper_chunks,
+                    COUNT(*) FILTER (WHERE meta->>'load_batch_id' = %s) AS load_batch_chunks,
+                    COUNT(*) FILTER (WHERE meta->>'language' = 'tr') AS tr_language_chunks,
+                    COUNT(*) FILTER (WHERE meta->>'is_official' = 'true') AS official_chunks,
+                    COUNT(*) FILTER (WHERE meta->>'doc_kind' = ANY(%s)) AS old_doc_kind_chunks,
+                    COUNT(*) FILTER (
+                        WHERE lower(coalesce(meta->>'source_url', '')) LIKE 'https://www.gibtu.edu.tr/adayogrenci%%'
+                           OR lower(coalesce(meta->>'source_public_url', '')) LIKE 'https://www.gibtu.edu.tr/adayogrenci%%'
+                    ) AS legacy_source_chunks
+                FROM haystack_docs
+                WHERE meta->>'category' = 'aday_ogrenci'
+                """,
+                (
+                    METADATA_VERSION,
+                    SCRAPER_NAME,
+                    expected_load_batch_id,
+                    list(OLD_CANDIDATE_DOC_KINDS),
+                ),
+            )
+            summary_columns = [desc[0] for desc in cur.description]
+            summary = dict(zip(summary_columns, cur.fetchone()))
+
+            metadata_coverage: dict[str, int] = {}
+            for field_name in REQUIRED_METADATA_FIELDS:
+                cur.execute(
+                    """
+                    SELECT COUNT(*)
+                    FROM haystack_docs
+                    WHERE meta->>'category' = 'aday_ogrenci'
+                      AND coalesce(meta->>%s, '') != ''
+                    """,
+                    (field_name,),
+                )
+                metadata_coverage[field_name] = int(cur.fetchone()[0])
+
+            cur.execute(
+                """
+                SELECT meta->>'doc_kind' AS doc_kind, COUNT(*) AS count
+                FROM haystack_docs
+                WHERE meta->>'category' = 'aday_ogrenci'
+                GROUP BY 1
+                ORDER BY 1
+                """
+            )
+            doc_kind_distribution = {str(row[0]): int(row[1]) for row in cur.fetchall()}
+
+            cur.execute(
+                """
+                SELECT meta->>'source_anchor' AS source_anchor, COUNT(*) AS count
+                FROM haystack_docs
+                WHERE meta->>'category' = 'aday_ogrenci'
+                GROUP BY 1
+                ORDER BY 1
+                """
+            )
+            source_anchor_distribution = {str(row[0]): int(row[1]) for row in cur.fetchall()}
+
+            cur.execute(
+                """
+                SELECT meta->>'load_batch_id' AS load_batch_id, COUNT(*) AS count
+                FROM haystack_docs
+                WHERE meta->>'category' = 'aday_ogrenci'
+                GROUP BY 1
+                ORDER BY 2 DESC
+                """
+            )
+            load_batch_distribution = {
+                str(row[0]) if row[0] is not None else "NULL": int(row[1])
+                for row in cur.fetchall()
+            }
+
+            cur.close()
+            conn.close()
+
+            return CandidatePortalScraper._build_data_quality_report(
+                summary=summary,
+                metadata_coverage=metadata_coverage,
+                doc_kind_distribution=doc_kind_distribution,
+                source_anchor_distribution=source_anchor_distribution,
+                load_batch_distribution=load_batch_distribution,
+                expected_chunks=expected_chunks,
+                expected_load_batch_id=expected_load_batch_id,
+                require_exact_count=require_exact_count,
+            )
+        except Exception as exc:  # noqa: BLE001 - rapora açık kalite hatası yazılır
+            return {
+                "success": False,
+                "failures": [f"Veri kalite kontrolü çalıştırılamadı: {exc}"],
+            }
+
+    @staticmethod
+    def _build_data_quality_report(
+        summary: dict[str, Any],
+        metadata_coverage: dict[str, int],
+        doc_kind_distribution: dict[str, int],
+        source_anchor_distribution: dict[str, int],
+        load_batch_distribution: dict[str, int],
+        expected_chunks: int,
+        expected_load_batch_id: str,
+        require_exact_count: bool = True,
+    ) -> dict[str, Any]:
+        total_chunks = int(summary.get("total_chunks") or 0)
+        failures: list[str] = []
+
+        if total_chunks <= 0:
+            failures.append("aday_ogrenci kategorisinde kayıt yok")
+
+        if require_exact_count and total_chunks != expected_chunks:
+            failures.append(f"chunk sayısı beklenenden farklı: DB={total_chunks}, beklenen={expected_chunks}")
+
+        if int(summary.get("distinct_ids") or 0) != total_chunks:
+            failures.append("tekrarlı document id tespit edildi")
+
+        if int(summary.get("embedded_chunks") or 0) != total_chunks:
+            failures.append("embedding eksik aday chunk var")
+
+        if int(summary.get("metadata_version_chunks") or 0) != total_chunks:
+            failures.append(f"{METADATA_VERSION} metadata_version eksik chunk var")
+
+        if int(summary.get("scraper_chunks") or 0) != total_chunks:
+            failures.append(f"{SCRAPER_NAME} scraper_name eksik chunk var")
+
+        if int(summary.get("load_batch_chunks") or 0) != total_chunks:
+            failures.append(f"beklenen load_batch_id dışında chunk var: {expected_load_batch_id}")
+
+        if int(summary.get("tr_language_chunks") or 0) != total_chunks:
+            failures.append("language=tr olmayan aday chunk var")
+
+        if int(summary.get("official_chunks") or 0) != total_chunks:
+            failures.append("is_official=true olmayan aday chunk var")
+
+        if int(summary.get("old_doc_kind_chunks") or 0) > 0:
+            failures.append("eski aday doc_kind kalıntısı var")
+
+        if int(summary.get("legacy_source_chunks") or 0) > 0:
+            failures.append("eski www.gibtu.edu.tr/adayogrenci kaynak kalıntısı var")
+
+        missing_metadata_fields = [
+            field_name
+            for field_name, filled_count in metadata_coverage.items()
+            if int(filled_count) != total_chunks
+        ]
+        if missing_metadata_fields:
+            failures.append("metadata doluluğu eksik: " + ", ".join(missing_metadata_fields))
+
+        present_doc_kinds = set(doc_kind_distribution)
+        missing_doc_kinds = [
+            doc_kind for doc_kind in EXPECTED_DOC_KINDS
+            if doc_kind not in present_doc_kinds
+        ]
+        if missing_doc_kinds:
+            failures.append("eksik candidate doc_kind: " + ", ".join(missing_doc_kinds))
+
+        present_source_anchors = set(source_anchor_distribution)
+        missing_source_anchors = [
+            anchor for anchor in EXPECTED_SOURCE_ANCHORS
+            if anchor not in present_source_anchors
+        ]
+        if missing_source_anchors:
+            failures.append("eksik source_anchor: " + ", ".join(missing_source_anchors))
+
+        return {
+            "success": not failures,
+            "failures": failures,
+            "expected_chunks": expected_chunks,
+            "require_exact_count": require_exact_count,
+            "summary": summary,
+            "metadata_coverage": metadata_coverage,
+            "missing_metadata_fields": missing_metadata_fields,
+            "doc_kind_distribution": doc_kind_distribution,
+            "missing_doc_kinds": missing_doc_kinds,
+            "source_anchor_distribution": source_anchor_distribution,
+            "missing_source_anchors": missing_source_anchors,
+            "load_batch_distribution": load_batch_distribution,
+            "expected_load_batch_id": expected_load_batch_id,
+        }
 
     def _extract_faq_documents(self, root: Any) -> list[Document]:
         documents: list[Document] = []
@@ -558,6 +865,7 @@ class CandidatePortalScraper:
         dedup_key = source_id
 
         meta: dict[str, Any] = {
+            "metadata_version": METADATA_VERSION,
             "category": "aday_ogrenci",
             "subcategory": sub_category,
             "sub_category": sub_category,
@@ -568,6 +876,7 @@ class CandidatePortalScraper:
             "source_anchor": source_anchor,
             "last_updated": self._fetched_at,
             "last_fetched_at": self._fetched_at,
+            "load_batch_id": f"{SCRAPER_NAME}:{self._fetched_at}",
             "title": title,
             "doc_kind": doc_kind,
             "language": "tr",
@@ -680,6 +989,8 @@ class CandidatePortalScraper:
             "content_hash",
             "dedup_key",
             "scraper_name",
+            "metadata_version",
+            "load_batch_id",
         )
         return {field_name: meta.get(field_name) for field_name in fields if meta.get(field_name) is not None}
 
@@ -701,6 +1012,7 @@ class CandidatePortalScraper:
 
 __all__ = [
     "BASE_URL",
+    "METADATA_VERSION",
     "SCRAPER_NAME",
     "CandidatePortalReport",
     "CandidatePortalScraper",

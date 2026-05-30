@@ -1,0 +1,66 @@
+{
+  "success": true,
+  "dry_run": false,
+  "source_url": "https://adayogrenci.gibtu.edu.tr/",
+  "fetched_at": "2026-05-30T13:11:12Z",
+  "encoding": "iso-8859-9",
+  "documents_created": 30,
+  "chunks_written": 35,
+  "cleanup_deleted": 47,
+  "cleanup_error": null,
+  "faq_count": 7,
+  "opportunity_count": 12,
+  "program_card_count": 11,
+  "program_document_count": 3,
+  "section_count": 8,
+  "doc_kind_distribution": {
+    "candidate_faq": 7,
+    "candidate_opportunity": 14,
+    "candidate_transportation": 1,
+    "candidate_program": 3,
+    "candidate_library": 1,
+    "candidate_exchange": 1,
+    "candidate_career": 1,
+    "candidate_housing": 1,
+    "candidate_contact": 1
+  },
+  "sample_metadata": [
+    {
+      "title": "Aday Öğrenci SSS: Üniversitedeki Akademik Programlar Nelerdir?",
+      "doc_kind": "candidate_faq",
+      "source_url": "https://adayogrenci.gibtu.edu.tr/#sss",
+      "source_anchor": "sss",
+      "source_id": "candidate_portal/sss/universitedeki-akademik-programlar-nelerdir",
+      "content_hash": "8530ddec798da1106e850644c5c1de488eff535bf34a9818a76b0d0ace955d54",
+      "dedup_key": "candidate_portal/sss/universitedeki-akademik-programlar-nelerdir",
+      "scraper_name": "candidate_portal_scraper",
+      "metadata_version": "candidate.v1",
+      "load_batch_id": "candidate_portal_scraper:2026-05-30T13:11:12Z"
+    },
+    {
+      "title": "Aday Öğrenci SSS: Mezuniyet Sonrası Kariyer Olanakları Nelerdir?",
+      "doc_kind": "candidate_faq",
+      "source_url": "https://adayogrenci.gibtu.edu.tr/#sss",
+      "source_anchor": "sss",
+      "source_id": "candidate_portal/sss/mezuniyet-sonrasi-kariyer-olanaklari-nelerdir",
+      "content_hash": "da6840f5bf0d3df8178952bd64655f7101db912daabfa175c0d5bea6f5aee685",
+      "dedup_key": "candidate_portal/sss/mezuniyet-sonrasi-kariyer-olanaklari-nelerdir",
+      "scraper_name": "candidate_portal_scraper",
+      "metadata_version": "candidate.v1",
+      "load_batch_id": "candidate_portal_scraper:2026-05-30T13:11:12Z"
+    },
+    {
+      "title": "Aday Öğrenci SSS: Üniversite Kampüsü ve Öğrenci Yaşamı Nasıldır?",
+      "doc_kind": "candidate_faq",
+      "source_url": "https://adayogrenci.gibtu.edu.tr/#sss",
+      "source_anchor": "sss",
+      "source_id": "candidate_portal/sss/universite-kampusu-ve-ogrenci-yasami-nasildir",
+      "content_hash": "f847c5ce8d0ad9511092b2d459ce25f5165ed29d32aa6cfabcf6229749fcface",
+      "dedup_key": "candidate_portal/sss/universite-kampusu-ve-ogrenci-yasami-nasildir",
+      "scraper_name": "candidate_portal_scraper",
+      "metadata_version": "candidate.v1",
+      "load_batch_id": "candidate_portal_scraper:2026-05-30T13:11:12Z"
+    }
+  ],
+  "errors": []
+}

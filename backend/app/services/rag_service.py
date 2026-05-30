@@ -13,8 +13,10 @@ Savunma katmanları:
 
 import hashlib
 import logging
+import re
 import time
-from haystack import Pipeline
+import unicodedata
+from haystack import Document, Pipeline, component
 from haystack.components.embedders import SentenceTransformersTextEmbedder
 from haystack.components.builders import PromptBuilder
 from haystack.components.joiners import DocumentJoiner
@@ -46,6 +48,45 @@ TURKISH_STOPWORDS: frozenset[str] = frozenset({
     "ve", "veya", "ile", "için", "gibi", "kadar", "ama", "fakat",
     "de", "da", "den", "dan", "bu", "şu", "o",
 })
+
+# ── Aday Öğrenci Kaynak Önceliği ──
+# Aday portalı, aday deneyimiyle ilgili kritik konularda daha güncel ve bağlamsal
+# metadata taşıdığı için prompt'a giden belge sıralamasında kontrollü biçimde öne alınır.
+CANDIDATE_PRIORITY_TOP_K_BOOST = 2
+CANDIDATE_PORTAL_HOST = "adayogrenci.gibtu.edu.tr"
+CANDIDATE_METADATA_VERSION = "candidate.v1"
+CANDIDATE_SCRAPER_NAME = "candidate_portal_scraper"
+
+CANDIDATE_PRIORITY_BASE_TERMS: tuple[str, ...] = (
+    "aday öğrenci",
+    "aday portalı",
+)
+
+CANDIDATE_ANCHOR_QUERY_TERMS: dict[str, tuple[str, ...]] = {
+    "iletisim-bilgileri": ("iletişim", "telefon", "e-posta"),
+    "olanaklar": ("olanaklar", "öğrenci kulüpleri", "sosyal imkanlar", "yemekhane"),
+    "konaklama": ("yurt", "barınma", "konaklama"),
+    "erasmus": ("erasmus", "değişim programı", "uluslararası"),
+    "ogrenim": ("bölümler", "programlar", "öğrenim", "kontenjan"),
+    "sss": ("başvuru", "tercih", "kayıt", "sıkça sorulan sorular"),
+    "gibtu": ("gibtü", "üniversite", "kampüs"),
+    "kutuphane": ("kütüphane",),
+    "gaziantep": ("gaziantep", "şehir", "ulaşım"),
+    "cbiko": ("kariyer", "cbiko"),
+    "ogrencibasarisi": ("öğrenci başarısı", "akademik başarı"),
+}
+
+CANDIDATE_PRIORITY_RULES: tuple[tuple[re.Pattern[str], tuple[str, ...]], ...] = (
+    (re.compile(r"\b(iletisim|telefon|e\s?posta|mail|adres)\w*"), ("iletisim-bilgileri",)),
+    (re.compile(r"\b(kulup|kulupler|topluluk|sosyal|aktivite|etkinlik)\w*"), ("olanaklar",)),
+    (re.compile(r"\b(yurt|barinma|konaklama|kyk)\w*"), ("konaklama",)),
+    (re.compile(r"\b(erasmus|degisim|uluslararasi|yurtdisi)\w*"), ("erasmus",)),
+    (re.compile(r"\b(aday|tercih|yks|basvuru|kayit|kontenjan|program|bolum|lisans|onlisans)\w*"), ("ogrenim", "sss")),
+    (re.compile(r"\b(olanak|imkan|kampus|yasam|spor|yemekhane|kafeterya)\w*"), ("olanaklar", "gibtu")),
+    (re.compile(r"\b(kutuphane)\w*"), ("kutuphane",)),
+    (re.compile(r"\b(gaziantep|sehir|ulasim)\w*"), ("gaziantep",)),
+    (re.compile(r"\b(kariyer|cbiko|mezuniyet|akademik\s+basari)\w*"), ("cbiko", "ogrencibasarisi")),
+)
 
 # ── Prompt Şablonu ──
 PROMPT_TEMPLATE = """Sen GİBTÜ (Gaziantep İslam Bilim ve Teknoloji Üniversitesi) resmi yapay zeka asistanı UniChat'sin.
@@ -106,6 +147,128 @@ def _public_source_url(meta: dict | None) -> str | None:
     return None
 
 
+def _normalize_for_matching(text: str) -> str:
+    """Türkçe karakterleri sadeleştirerek regex eşleşmelerini kararlı hale getirir."""
+    normalized = unicodedata.normalize("NFKD", text.casefold())
+    normalized = "".join(ch for ch in normalized if not unicodedata.combining(ch))
+    return normalized.replace("ı", "i")
+
+
+def _candidate_priority_anchors(question: str) -> tuple[str, ...]:
+    """Sorgunun aday portalı kaynak önceliği gerektirdiği anchor'ları döndürür."""
+    normalized = _normalize_for_matching(question)
+    anchors: list[str] = []
+
+    for pattern, rule_anchors in CANDIDATE_PRIORITY_RULES:
+        if pattern.search(normalized):
+            for anchor in rule_anchors:
+                if anchor not in anchors:
+                    anchors.append(anchor)
+
+    return tuple(anchors)
+
+
+def _candidate_priority_query_suffix(question: str) -> str:
+    """Retriever'ın aday portalı chunk'larını kaçırmaması için kontrollü sorgu eki üretir."""
+    anchors = _candidate_priority_anchors(question)
+    if not anchors:
+        return ""
+
+    terms: list[str] = []
+    for term in CANDIDATE_PRIORITY_BASE_TERMS:
+        if term not in terms:
+            terms.append(term)
+
+    for anchor in anchors:
+        for term in CANDIDATE_ANCHOR_QUERY_TERMS.get(anchor, ()):
+            if term not in terms:
+                terms.append(term)
+
+    return " ".join(terms)
+
+
+def _is_candidate_portal_doc(meta: dict | None) -> bool:
+    """Belgenin aday portalı ailesine ait olup olmadığını metadata üzerinden belirler."""
+    if not meta:
+        return False
+
+    source_values = (
+        str(meta.get("source_url") or ""),
+        str(meta.get("source_public_url") or ""),
+    )
+    return (
+        meta.get("category") == "aday_ogrenci"
+        or meta.get("metadata_version") == CANDIDATE_METADATA_VERSION
+        or meta.get("scraper_name") == CANDIDATE_SCRAPER_NAME
+        or str(meta.get("doc_kind") or "").startswith("candidate_")
+        or any(CANDIDATE_PORTAL_HOST in value.lower() for value in source_values)
+    )
+
+
+def _candidate_priority_score(doc: Document, priority_anchors: tuple[str, ...]) -> int:
+    """Aday portalı belgeleri için topic uyumlu öncelik skoru üretir."""
+    meta = doc.meta or {}
+    if not _is_candidate_portal_doc(meta):
+        return 0
+
+    score = 100
+    source_anchor = str(meta.get("source_anchor") or "")
+    doc_kind = str(meta.get("doc_kind") or "")
+    source_values = (
+        str(meta.get("source_url") or ""),
+        str(meta.get("source_public_url") or ""),
+    )
+
+    if source_anchor in priority_anchors:
+        score += 80
+    elif priority_anchors:
+        score += 10
+
+    if meta.get("metadata_version") == CANDIDATE_METADATA_VERSION:
+        score += 30
+    if meta.get("scraper_name") == CANDIDATE_SCRAPER_NAME:
+        score += 25
+    if doc_kind.startswith("candidate_"):
+        score += 20
+    if meta.get("is_official") is True or str(meta.get("is_official")).lower() == "true":
+        score += 10
+    if any(CANDIDATE_PORTAL_HOST in value.lower() for value in source_values):
+        score += 10
+
+    return score
+
+
+def prioritize_candidate_documents(question: str, documents: list[Document]) -> list[Document]:
+    """Aday odaklı kritik sorgularda aday portalı kaynaklarını prompt sıralamasında öne alır."""
+    priority_anchors = _candidate_priority_anchors(question)
+    if not priority_anchors or not documents:
+        return documents
+
+    scored_documents = [
+        (_candidate_priority_score(doc, priority_anchors), index, doc)
+        for index, doc in enumerate(documents)
+    ]
+    if not any(score > 0 for score, _, _ in scored_documents):
+        return documents
+
+    return [
+        doc
+        for score, _, doc in sorted(
+            scored_documents,
+            key=lambda item: (-item[0], item[1]),
+        )
+    ]
+
+
+@component
+class CandidateSourcePrioritizer:
+    """Joiner sonrası belgeleri aday öğrenci kaynak önceliğine göre yeniden sıralar."""
+
+    @component.output_types(documents=list[Document])
+    def run(self, documents: list[Document], question: str = "") -> dict[str, list[Document]]:
+        return {"documents": prioritize_candidate_documents(question, documents)}
+
+
 class RagService:
     """RAG pipeline yönetim servisi — Hybrid Search (BM25 + vektör)."""
 
@@ -119,7 +282,7 @@ class RagService:
 
         Pipeline akışı:
           text_embedder → vector_retriever ──┐
-                                              ├→ joiner → prompt_builder → llm
+                                              ├→ joiner → candidate_source_prioritizer → prompt_builder → llm
           keyword_retriever ─────────────────┘
         """
         logger.info("Hybrid Search RAG pipeline oluşturuluyor...")
@@ -150,6 +313,7 @@ class RagService:
         )
 
         joiner = DocumentJoiner(join_mode="reciprocal_rank_fusion")
+        candidate_source_prioritizer = CandidateSourcePrioritizer()
 
         prompt_builder = PromptBuilder(
             template=PROMPT_TEMPLATE,
@@ -167,6 +331,7 @@ class RagService:
         self._pipeline.add_component("vector_retriever", vector_retriever)
         self._pipeline.add_component("keyword_retriever", keyword_retriever)
         self._pipeline.add_component("joiner", joiner)
+        self._pipeline.add_component("candidate_source_prioritizer", candidate_source_prioritizer)
         self._pipeline.add_component("prompt_builder", prompt_builder)
         self._pipeline.add_component("llm", llm)
 
@@ -174,7 +339,8 @@ class RagService:
         self._pipeline.connect("text_embedder.embedding", "vector_retriever.query_embedding")
         self._pipeline.connect("vector_retriever.documents", "joiner.documents")
         self._pipeline.connect("keyword_retriever.documents", "joiner.documents")
-        self._pipeline.connect("joiner.documents", "prompt_builder.documents")
+        self._pipeline.connect("joiner.documents", "candidate_source_prioritizer.documents")
+        self._pipeline.connect("candidate_source_prioritizer.documents", "prompt_builder.documents")
         self._pipeline.connect("prompt_builder", "llm")
 
         # Embedding modelini önceden yükle
@@ -245,8 +411,19 @@ class RagService:
         if keyword_query != pp.keyword_query:
             logger.info("🔤 Keyword sorgusu temizlendi: '%s' → '%s'", pp.keyword_query, keyword_query)
 
+        candidate_query_suffix = _candidate_priority_query_suffix(question)
+        vector_query = pp.vector_query
+        candidate_top_k_boost = 0
+        if candidate_query_suffix:
+            keyword_query = f"{keyword_query} {candidate_query_suffix}"
+            vector_query = f"{vector_query} {candidate_query_suffix}"
+            candidate_top_k_boost = CANDIDATE_PRIORITY_TOP_K_BOOST
+            logger.info("🎯 Aday kaynak önceliği aktif: %s", candidate_query_suffix)
+
         vector_top_k = self._settings.RETRIEVER_VECTOR_TOP_K + pp.boost_top_k
         keyword_top_k = self._settings.RETRIEVER_KEYWORD_TOP_K + pp.boost_top_k
+        vector_top_k += candidate_top_k_boost
+        keyword_top_k += candidate_top_k_boost
 
         # ── Katman 3: Pipeline ──
         prompt_question = question
@@ -256,12 +433,13 @@ class RagService:
         t0 = time.perf_counter()
         result = self._pipeline.run(
             data={
-                "text_embedder": {"text": pp.vector_query},
+                "text_embedder": {"text": vector_query},
                 "keyword_retriever": {"query": keyword_query, "top_k": keyword_top_k},
                 "vector_retriever": {"top_k": vector_top_k},
+                "candidate_source_prioritizer": {"question": question},
                 "prompt_builder": {"question": prompt_question},
             },
-            include_outputs_from={"joiner"},
+            include_outputs_from={"candidate_source_prioritizer"},
         )
         t_pipeline = time.perf_counter() - t0
 
@@ -276,9 +454,21 @@ class RagService:
 
         # Joiner çıktısından kaynak belgelerini al
         sources = []
-        joined_docs = result.get("joiner", {}).get("documents", [])
+        validator_sources = []
+        joined_docs = result.get("candidate_source_prioritizer", {}).get("documents", [])
         for doc in joined_docs:
             public_url = _public_source_url(doc.meta)
+            full_source = {
+                "content": doc.content or "",
+                "source_url": public_url,
+                "source_public_url": public_url,
+                "meta": doc.meta or {},
+            }
+            if doc.meta:
+                full_source["contact_info"] = doc.meta.get("contact_info")
+                full_source["contact_unit"] = doc.meta.get("contact_unit")
+            validator_sources.append(full_source)
+
             source = {
                 "content": doc.content[:200] + "..." if len(doc.content) > 200 else doc.content,
                 "source_url": public_url,
@@ -286,12 +476,13 @@ class RagService:
                 "category": doc.meta.get("category") if doc.meta else None,
                 "title": doc.meta.get("title") if doc.meta else None,
                 "doc_kind": doc.meta.get("doc_kind") if doc.meta else None,
+                "source_anchor": doc.meta.get("source_anchor") if doc.meta else None,
             }
             sources.append(source)
 
         # ── Katman 4: Response Validator ──
         t0 = time.perf_counter()
-        response_text = validate_response(response_text, sources)
+        response_text = validate_response(response_text, validator_sources)
         t_validator = time.perf_counter() - t0
 
         # ── Katman 5: Source Dedup ──

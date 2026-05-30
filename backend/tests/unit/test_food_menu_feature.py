@@ -125,6 +125,38 @@ class FoodMenuIntentTests(unittest.TestCase):
         self.assertFalse(is_food_menu_query("Yemekhane kuralları nelerdir?"))
         self.assertTrue(is_food_menu_query("Öğrenci yemekhanesinde bugün ne çıkıyor?"))
 
+    def test_yemekhane_bilgi_sorulari_menu_intenti_sayilmaz(self):
+        non_menu_queries = [
+            "Üniversitede yemekhane var mı?",
+            "Yemekhane kapasitesi nedir?",
+            "Yemekhane ücretleri nedir?",
+            "Yemekhane kart bakiyesi nasıl yüklenir?",
+            "Yemekhane çalışma saatleri nelerdir?",
+            "Yemekhane nerede?",
+            "Yemekhane açık mı?",
+        ]
+
+        for query in non_menu_queries:
+            with self.subTest(query=query):
+                self.assertFalse(is_food_menu_query(query))
+                self.assertFalse(extract_food_menu_request(query, BASE_DATE).is_food_menu)
+
+    def test_yemekhane_menu_sorulari_fast_path_olarak_kalir(self):
+        menu_queries = [
+            "Bugün yemekte ne var?",
+            "Yarın yemekte ne çıkıyor?",
+            "Öğrenci yemekhanesinde bugün ne çıkıyor?",
+            "Yemekhanede ne var?",
+            "Pazartesi yemekte ne var?",
+            "Bu hafta yemek listesi ne?",
+            "2026-06-01 yemek listesi ne?",
+        ]
+
+        for query in menu_queries:
+            with self.subTest(query=query):
+                self.assertTrue(is_food_menu_query(query))
+                self.assertTrue(extract_food_menu_request(query, BASE_DATE).is_food_menu)
+
 
 class FoodMenuServiceTests(unittest.TestCase):
     def test_db_kaydi_varsa_scraper_calismaz(self):
