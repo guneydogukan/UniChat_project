@@ -353,7 +353,7 @@ def split_documents(documents: List[Document]) -> List[Document]:
         if doc_kind in ("yonetmelik", "yonerge"):
             doc_chunks = _split_yonetmelik(doc)
 
-        elif doc_kind in ("iletisim", "form"):
+        elif doc_kind in ("iletisim", "form", "candidate_faq", "candidate_program", "candidate_contact"):
             # Bölünmez — tek chunk
             doc_chunks = [doc]
 
@@ -374,7 +374,7 @@ def split_documents(documents: List[Document]) -> List[Document]:
             doc_chunks = _split_semantic(doc)
 
         # 1.5 Kısa chunk birleştirme (bölünmez dışında)
-        if doc_kind not in ("iletisim", "form") and len(doc_chunks) > 1:
+        if doc_kind not in ("iletisim", "form", "candidate_faq", "candidate_program", "candidate_contact") and len(doc_chunks) > 1:
             doc_chunks = _merge_short_chunks(doc_chunks)
 
         # 2. Metadata Aktarımı (parent_doc_id ve chunk_index)

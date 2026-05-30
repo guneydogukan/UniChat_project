@@ -7,6 +7,7 @@ Job Tanımları:
   - Duyurular:            Günde 1 kez (saat 08:00)
   - Yemekhane menüsü:     Günde 1 kez (saat 07:00, food_menus upsert)
   - Akademik kadro:       Haftada 1 kez (Pazartesi 03:00)
+  - Aday öğrenci portalı: Dönem başlarında (1 Şubat ve 1 Eylül, 04:00)
   - Tam yeniden indeks:   Ayda 1 kez (ayın 1'i, 02:00)
 
 Güvenlik:
@@ -21,6 +22,7 @@ Kullanım:
     python -m scrapers.scheduler --run-now duyuru   # Belirli job'ı hemen çalıştır
     python -m scrapers.scheduler --run-now yemek
     python -m scrapers.scheduler --run-now kadro
+    python -m scrapers.scheduler --run-now aday_ogrenci
     python -m scrapers.scheduler --run-now full_reindex
 
 Bağımlılık:
@@ -219,6 +221,53 @@ def job_kadro_update():
         })
 
 
+def job_candidate_portal_update():
+    """Aday öğrenci portalını dönem başlarında güncelleyen job."""
+    start = time.time()
+    job_name = "candidate_portal_update"
+    logger.info("🎓 Job başlıyor: %s", job_name)
+
+    try:
+        from scrapers.candidate_portal_scraper import CandidatePortalScraper
+
+        scraper = CandidatePortalScraper()
+        result = scraper.scrape(dry_run=False, cleanup=True)
+
+        duration = time.time() - start
+        _append_job_log({
+            "job": job_name,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "success": result.success,
+            "documents": result.documents_created,
+            "chunks": result.chunks_written,
+            "faq_count": result.faq_count,
+            "opportunity_count": result.opportunity_count,
+            "duration_seconds": round(duration, 1),
+            "errors": result.errors,
+        })
+
+        logger.info(
+            "✅ Job tamamlandı: %s — %d doc, %d chunk, SSS=%d, olanak=%d, %.1fs",
+            job_name,
+            result.documents_created,
+            result.chunks_written,
+            result.faq_count,
+            result.opportunity_count,
+            duration,
+        )
+
+    except Exception as e:
+        duration = time.time() - start
+        logger.error("❌ Job hatası: %s — %s", job_name, e)
+        _append_job_log({
+            "job": job_name,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "success": False,
+            "error": str(e),
+            "duration_seconds": round(duration, 1),
+        })
+
+
 def job_full_reindex():
     """Tam yeniden indeksleme job'ı (aylık)."""
     start = time.time()
@@ -332,7 +381,17 @@ def create_scheduler():
         misfire_grace_time=7200,  # 2 saat tolerance
     )
 
-    # 4. Tam yeniden indeksleme: Ayda 1 kez (ayın 1'i, 02:00)
+    # 4. Aday öğrenci portalı: Dönem başlarında (1 Şubat ve 1 Eylül, 04:00)
+    scheduler.add_job(
+        job_candidate_portal_update,
+        trigger=CronTrigger(month="2,9", day=1, hour=4, minute=0),
+        id="candidate_portal_update",
+        name="Aday Öğrenci Portalı Dönemlik Güncelleme",
+        replace_existing=True,
+        misfire_grace_time=7200,
+    )
+
+    # 5. Tam yeniden indeksleme: Ayda 1 kez (ayın 1'i, 02:00)
     scheduler.add_job(
         job_full_reindex,
         trigger=CronTrigger(day=1, hour=2, minute=0),
@@ -358,6 +417,8 @@ def list_jobs(scheduler=None):
          "schedule": "Her gün 07:00", "mode": "food_menus upsert"},
         {"id": "kadro_update", "name": "Akademik Kadro",
          "schedule": "Her Pazartesi 03:00", "mode": "yeni eklenenler"},
+        {"id": "candidate_portal_update", "name": "Aday Öğrenci Portalı",
+         "schedule": "1 Şubat ve 1 Eylül 04:00", "mode": "dönemlik tek sayfa scrape"},
         {"id": "full_reindex", "name": "Tam Yeniden İndeks",
          "schedule": "Her ayın 1'i 02:00", "mode": "full (tüm kaynaklar)"},
     ]
@@ -395,6 +456,7 @@ def run_job_now(job_name: str):
         "duyuru": job_duyuru_update,
         "yemek": job_yemek_update,
         "kadro": job_kadro_update,
+        "aday_ogrenci": job_candidate_portal_update,
         "full_reindex": job_full_reindex,
     }
 
@@ -415,7 +477,7 @@ def main():
     parser.add_argument("--list", action="store_true",
                         help="Tanımlı job'ları listele")
     parser.add_argument("--run-now", type=str, default=None,
-                        help="Job'ı hemen çalıştır (duyuru/yemek/kadro/full_reindex)")
+                        help="Job'ı hemen çalıştır (duyuru/yemek/kadro/aday_ogrenci/full_reindex)")
     parser.add_argument("--start", action="store_true",
                         help="Scheduler'ı başlat (arka planda çalışır)")
     args = parser.parse_args()

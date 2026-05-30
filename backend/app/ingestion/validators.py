@@ -40,7 +40,7 @@ def validate_documents(documents: list[Document]) -> list[Document]:
     Kurallar:
     - content boş veya None → reddet
     - len(content) < MIN_CONTENT_LENGTH → reddet
-      (doc_kind == "iletisim" veya "form" ise istisna)
+      (doc_kind == "iletisim", "form" veya "candidate_contact" ise istisna)
     - Placeholder içerik → reddet
 
     Returns:
@@ -58,9 +58,9 @@ def validate_documents(documents: list[Document]) -> list[Document]:
 
         content = doc.content.strip()
 
-        # Minimum uzunluk kontrolü (iletişim/form istisna)
+        # Minimum uzunluk kontrolü (iletişim/form/contact istisna)
         doc_kind = doc.meta.get("doc_kind", "") if doc.meta else ""
-        if len(content) < MIN_CONTENT_LENGTH and doc_kind not in ("iletisim", "form"):
+        if len(content) < MIN_CONTENT_LENGTH and doc_kind not in ("iletisim", "form", "candidate_contact"):
             logger.warning(
                 "Belge #%d reddedildi: Çok kısa (%d karakter, min=%d). İlk 30 karakter: '%s'",
                 i, len(content), MIN_CONTENT_LENGTH, content[:30],

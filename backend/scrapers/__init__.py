@@ -17,9 +17,6 @@ Modüller:
   - utils                 — HTML temizleme, URL normalleştirme
 """
 
-from scrapers.base_scraper import BaseScraper
-from scrapers.utils import clean_html, extract_title, normalize_url, is_allowed_domain
-
 __all__ = [
     "BaseScraper",
     "clean_html",
@@ -27,3 +24,19 @@ __all__ = [
     "normalize_url",
     "is_allowed_domain",
 ]
+
+
+def __getattr__(name):
+    """Ağır scraper bağımlılıklarını paket import anında yükleme."""
+    if name == "BaseScraper":
+        from scrapers.base_scraper import BaseScraper
+
+        return BaseScraper
+
+    if name in {"clean_html", "extract_title", "normalize_url", "is_allowed_domain"}:
+        from importlib import import_module
+
+        utils = import_module("scrapers.utils")
+        return getattr(utils, name)
+
+    raise AttributeError(f"module 'scrapers' has no attribute {name!r}")

@@ -1,0 +1,46 @@
+﻿=== USER PATH BACKUP ===
+Timestamp: 20260530_001252
+
+=== FULL PATH STRING ===
+C:\Users\ASUS\.local\bin;C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ASUS\AppData\Local\Programs\Python\Python312\;C:\Users\ASUS\Masaüstü\unichat_project\venv\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Git\cmd;C:\src\flutter\bin;C:\Users\ASUS\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\ASUS\AppData\Local\Programs\Python\Python314\;C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps;C:\Users\ASUS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ASUS\.dotnet\tools;C:\Users\ASUS\AppData\Local\GitHubDesktop\bin;C:\src\flutter\bin;c:\Users\ASUS\.vscode\extensions\ms-python.debugpy-2025.14.1-win32-x64\bundled\scripts\noConfigScripts;C:\Users\ASUS\.pyenv\pyenv-win\bin;C:\Users\ASUS\.pyenv\pyenv-win\shims;C:\Users\ASUS\AppData\Roaming\npm;C:\Users\ASUS\AppData\Local\Programs\Ollama;C:\Users\ASUS\.dotnet\tools;C:\Users\ASUS\AppData\Local\Programs\Antigravity\bin;C:\Users\ASUS\AppData\Local\Programs\Antigravity IDE\bin
+
+=== PATH ENTRIES (one per line) ===
+C:\Users\ASUS\.local\bin
+C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Scripts\
+C:\Users\ASUS\AppData\Local\Programs\Python\Python312\
+C:\Users\ASUS\Masaüstü\unichat_project\venv\Scripts
+C:\Windows\system32
+C:\Windows
+C:\Windows\System32\Wbem
+C:\Windows\System32\WindowsPowerShell\v1.0\
+C:\Windows\System32\OpenSSH\
+C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+C:\Program Files\dotnet\
+C:\WINDOWS\system32
+C:\WINDOWS
+C:\WINDOWS\System32\Wbem
+C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+C:\WINDOWS\System32\OpenSSH\
+C:\Program Files\Microsoft SQL Server\150\Tools\Binn\
+C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\
+C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR
+C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\
+C:\Program Files\Microsoft SQL Server\160\Tools\Binn\
+C:\Program Files\Microsoft SQL Server\160\DTS\Binn\
+C:\Program Files\Git\cmd
+C:\src\flutter\bin
+C:\Users\ASUS\AppData\Local\Programs\Python\Python314\Scripts\
+C:\Users\ASUS\AppData\Local\Programs\Python\Python314\
+C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps
+C:\Users\ASUS\AppData\Local\Programs\Microsoft VS Code\bin
+C:\Users\ASUS\.dotnet\tools
+C:\Users\ASUS\AppData\Local\GitHubDesktop\bin
+C:\src\flutter\bin
+c:\Users\ASUS\.vscode\extensions\ms-python.debugpy-2025.14.1-win32-x64\bundled\scripts\noConfigScripts
+C:\Users\ASUS\.pyenv\pyenv-win\bin
+C:\Users\ASUS\.pyenv\pyenv-win\shims
+C:\Users\ASUS\AppData\Roaming\npm
+C:\Users\ASUS\AppData\Local\Programs\Ollama
+C:\Users\ASUS\.dotnet\tools
+C:\Users\ASUS\AppData\Local\Programs\Antigravity\bin
+C:\Users\ASUS\AppData\Local\Programs\Antigravity IDE\bin

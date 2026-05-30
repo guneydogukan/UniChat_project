@@ -54,7 +54,16 @@ DOC_KINDS = Literal[
     "sss",
     "program_listesi",
     "birim_iletisim",
-    "birim_iletisim_tablosu"
+    "birim_iletisim_tablosu",
+    "candidate_faq",
+    "candidate_opportunity",
+    "candidate_program",
+    "candidate_transportation",
+    "candidate_housing",
+    "candidate_library",
+    "candidate_exchange",
+    "candidate_career",
+    "candidate_contact"
 ]
 
 SOURCE_TYPES = Literal["pdf", "web", "manual"]
