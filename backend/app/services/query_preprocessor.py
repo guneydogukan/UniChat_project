@@ -20,6 +20,7 @@ Kullanım:
 import re
 import logging
 from dataclasses import dataclass, field
+from datetime import date
 from difflib import get_close_matches
 
 logger = logging.getLogger(__name__)
@@ -40,6 +41,8 @@ DOMAIN_TERMS: list[str] = [
     "erasmus", "akreditasyon", "devamsızlık", "yönetmelik",
     "koordinatörlük", "dekanlık", "rektörlük",
     "kontenjan", "başvuru", "kayıt", "mezuniyet",
+    "akademik", "takvim", "vize", "final", "bütünleme", "büt",
+    "yarıyıl", "güz", "bahar", "ders", "başlangıcı",
     # Yerleşke
     "kampüs", "yurt", "spor",
 ]
@@ -89,6 +92,39 @@ TOPIC_ROUTING_HINTS: list[tuple[re.Pattern, str, str]] = [
         re.IGNORECASE,
     ), "bölüm başkanlığı staj koordinatörlüğü", "Staj yönlendirmesi"),
 ]
+
+ACADEMIC_CALENDAR_QUERY_PATTERN = re.compile(
+    r"\b("
+    r"akademik\s*takvim|ders\s+başlangıcı|ders\s+baslangici|okul\s+ne\s+zaman\s+açılıyor|"
+    r"okul\s+ne\s+zaman\s+aciliyor|ders\s+kayıt|ders\s+kayit|kayıt\s+yenileme|kayit\s+yenileme|"
+    r"vize|ara\s+sınav|ara\s+sinav|final|yarıyıl\s+sonu\s+sınav|yariyil\s+sonu\s+sinav|"
+    r"bütünleme|butunleme|büt|tek\s+ders|güz\s+dönemi|guz\s+donemi|güz\s+yarıyılı|"
+    r"bahar\s+dönemi|bahar\s+donemi|bahar\s+yarıyılı|tıp\s+fakültesi\s+takvimi|"
+    r"tip\s+fakultesi\s+takvimi|lisansüstü\s+takvim|lisansustu\s+takvim|tömer\s+takvim|"
+    r"tomer\s+takvim|kaç\s+gün\s+kaldı|kac\s+gun\s+kaldi|geçti\s+mi|gecti\s+mi"
+    r")\b",
+    re.IGNORECASE,
+)
+
+ACADEMIC_CALENDAR_SYNONYMS: tuple[tuple[re.Pattern, str], ...] = (
+    (re.compile(r"\bfinal\w*", re.IGNORECASE), "yarıyıl sonu sınavı"),
+    (re.compile(r"\bbüt\b|\bbut\b|\bbütünleme\w*|\bbutunleme\w*", re.IGNORECASE), "bütünleme sınavı"),
+    (re.compile(r"\bvize\w*|\bara\s+sınav\w*|\bara\s+sinav\w*", re.IGNORECASE), "ara sınav"),
+    (re.compile(r"\bders\s+kayd\w*|\bders\s+kayit\w*", re.IGNORECASE), "kayıt yenileme ders kaydı"),
+    (re.compile(r"\bokul\s+ne\s+zaman\s+açılıyor|\bokul\s+ne\s+zaman\s+aciliyor", re.IGNORECASE), "ders başlangıcı"),
+    (re.compile(r"\bgüz\b|\bguz\b", re.IGNORECASE), "güz yarıyılı"),
+    (re.compile(r"\bbahar\b", re.IGNORECASE), "bahar yarıyılı"),
+    (re.compile(r"\btıp\b|\btip\b", re.IGNORECASE), "tıp fakültesi akademik takvimi"),
+    (re.compile(r"\blisansüstü\b|\blisansustu\b", re.IGNORECASE), "lisansüstü akademik takvim"),
+    (re.compile(r"\btömer\b|\btomer\b", re.IGNORECASE), "tömer akademik takvim"),
+)
+
+ACADEMIC_CALENDAR_TYPE_PATTERN = re.compile(
+    r"\b(tıp|tip|lisansüstü|lisansustu|tömer|tomer|yabancı\s+diller|yabanci\s+diller|hazırlık|hazirlik)\b",
+    re.IGNORECASE,
+)
+
+ACADEMIC_YEAR_PATTERN = re.compile(r"\b20\d{2}\s*[-–/]\s*20\d{2}\b")
 
 # ── Karşılaştırma Pattern'leri ──
 COMPARISON_PATTERNS: list[re.Pattern] = [
@@ -141,6 +177,7 @@ class PreprocessResult:
     comparison_terms: list[str] = field(default_factory=list)
     boost_top_k: int = 0                   # Ek top_k (karşılaştırma sorgularında)
     routing_hint: str | None = None        # Yönlendirme ipucu (birim adı)
+    system_note: str | None = None         # Prompt'a eklenecek kontrollü not
     corrections: list[str] = field(default_factory=list)  # Yapılan düzeltme logları
 
 
@@ -211,6 +248,50 @@ def _detect_comparison(query: str) -> tuple[bool, list[str]]:
     return False, []
 
 
+def _current_academic_year(today: date | None = None) -> str:
+    """Bugüne göre varsayılan akademik yılı döndürür."""
+    today = today or date.today()
+    if today.month >= 9:
+        return f"{today.year}-{today.year + 1}"
+    return f"{today.year - 1}-{today.year}"
+
+
+def _normalize_academic_year(value: str) -> str:
+    return re.sub(r"\s*[-–/]\s*", "-", value.strip())
+
+
+def _academic_calendar_expansion(query: str) -> tuple[str, str | None]:
+    """Akademik takvim sorguları için kontrollü eş anlamlı ve varsayım eki üretir."""
+    if not ACADEMIC_CALENDAR_QUERY_PATTERN.search(query):
+        return "", None
+
+    expansions = ["akademik takvim", "academic_calendar_event"]
+    for pattern, replacement in ACADEMIC_CALENDAR_SYNONYMS:
+        if pattern.search(query) and replacement not in expansions:
+            expansions.append(replacement)
+
+    explicit_year = ACADEMIC_YEAR_PATTERN.search(query)
+    if explicit_year:
+        expansions.append(_normalize_academic_year(explicit_year.group(0)))
+        year_note = None
+    else:
+        current_year = _current_academic_year()
+        expansions.append(current_year)
+        year_note = f"Kullanıcı akademik yıl belirtmedi; varsayılan akademik yıl {current_year} olarak ele alınmalıdır."
+
+    if not ACADEMIC_CALENDAR_TYPE_PATTERN.search(query):
+        expansions.extend(["genel/önlisans-lisans", "önlisans", "lisans"])
+        type_note = (
+            "Kullanıcı takvim türü belirtmedi; genel/önlisans-lisans akademik takvimi varsayılmalı "
+            "ve cevapta Tıp, lisansüstü veya TÖMER takvimlerinde tarihler farklı olabilir notu verilmelidir."
+        )
+    else:
+        type_note = None
+
+    notes = [note for note in (year_note, type_note) if note]
+    return " ".join(expansions), " ".join(notes) if notes else None
+
+
 def preprocess_query(query: str) -> PreprocessResult:
     """Sorguyu typo correction, abbreviation expansion ve comparison detection ile ön-işler.
 
@@ -264,5 +345,15 @@ def preprocess_query(query: str) -> PreprocessResult:
             result.corrections.append(f"🏢 {desc}")
             logger.info("🏢 Yönlendirme ipucu: %s → %s", query[:50], unit_name)
             break
+
+    # 5. Akademik takvim sorguları için eş anlamlı ve varsayılan akademik yıl genişletmesi
+    calendar_expansion, calendar_note = _academic_calendar_expansion(query)
+    if calendar_expansion:
+        result.keyword_query = f"{result.keyword_query} {calendar_expansion}"
+        result.vector_query = f"{result.vector_query} {calendar_expansion}"
+        result.boost_top_k += 2
+        result.system_note = calendar_note
+        result.corrections.append("akademik takvim sorgusu genişletildi")
+        logger.info("📅 Akademik takvim sorgu genişletmesi aktif: %s", calendar_expansion)
 
     return result

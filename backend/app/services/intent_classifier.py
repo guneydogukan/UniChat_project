@@ -85,6 +85,15 @@ OUT_OF_SCOPE_PATTERNS: list[tuple[re.Pattern, str]] = [
     ), "matematik"),
 ]
 
+ACADEMIC_CALENDAR_SCOPE_PATTERN = re.compile(
+    r"\b(akademik\s*takvim|okul\s+ne\s+zaman\s+açılıyor|okul\s+ne\s+zaman\s+aciliyor|"
+    r"ders\s+başlangıcı|ders\s+baslangici|ders\s+kayıt|ders\s+kayit|kayıt\s+yenileme|"
+    r"kayit\s+yenileme|vize|ara\s+sınav|ara\s+sinav|final|bütünleme|butunleme|büt|"
+    r"tek\s+ders|güz\s+dönemi|guz\s+donemi|bahar\s+dönemi|bahar\s+donemi|"
+    r"kaç\s+gün\s+kaldı|kac\s+gun\s+kaldi|geçti\s+mi|gecti\s+mi)\b",
+    re.IGNORECASE,
+)
+
 # ── Üniversite bağlamı sinyal kelimeleri ──
 UNIVERSITY_SIGNALS: frozenset[str] = frozenset({
     # Kurum
@@ -97,6 +106,10 @@ UNIVERSITY_SIGNALS: frozenset[str] = frozenset({
     "ders", "sınav", "sinav", "transkript", "diploma", "mezuniyet",
     "kayıt", "devamsızlık", "müfredat", "akts", "kredi",
     "kontenjan", "başarı", "not", "dönem",
+    "akademik takvim", "takvim", "vize", "final", "bütünleme", "büt",
+    "ara sınav", "yarıyıl", "güz", "bahar", "tek ders", "ders kaydı",
+    "kayıt yenileme", "okul açılıyor", "ders başlangıcı",
+    "okul",
     # Öğrenci yaşam
     "erasmus", "staj", "burs", "yurt", "yemekhane", "kütüphane",
     "kulüp", "topluluk", "öğrenci",
@@ -131,6 +144,10 @@ def classify_intent(query: str) -> str:
     """
     q_lower = query.lower().strip()
     q_words = set(q_lower.split())
+
+    if ACADEMIC_CALENDAR_SCOPE_PATTERN.search(q_lower):
+        logger.debug("✅ Intent: '%s' → IN_SCOPE (akademik takvim)", query[:60])
+        return "IN_SCOPE"
 
     # 1. Kapsam dışı pattern kontrolü
     for pattern, category in OUT_OF_SCOPE_PATTERNS:

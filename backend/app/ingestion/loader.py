@@ -110,9 +110,11 @@ def ingest_documents(
         logger.warning("Chunk işlemi sonrası elde edilen belge yok.")
         return 0
 
-    # Chunk'ların ID'lerini baştan üretelim ki içerik+metadata farklılığı yansısın
+    # Chunk'ların ID'lerini baştan üretelim ki aynı içerikli ama farklı kaynaklı
+    # structured event'ler birbirini ezmesin.
     for chunk in chunked_docs:
-        chunk.id = _generate_doc_id(chunk.content + str(chunk.meta.get("chunk_index", 0)))
+        source_identity = str(chunk.meta.get("source_id") or chunk.meta.get("source_url") or "")
+        chunk.id = _generate_doc_id(chunk.content + source_identity + str(chunk.meta.get("chunk_index", 0)))
 
     # 4. Dry-run modu
     if dry_run:

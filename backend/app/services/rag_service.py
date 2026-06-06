@@ -29,6 +29,7 @@ from haystack_integrations.components.retrievers.pgvector import (
 )
 
 from app.config import get_settings
+from app.services.academic_calendar_service import get_academic_calendar_service
 from app.services.food_menu_service import get_food_menu_service
 from app.services.intent_classifier import classify_intent, REJECTION_RESPONSE
 from app.services.response_validator import validate_response
@@ -100,6 +101,8 @@ KESİN KURALLAR:
 6. Kullanıcıyı doğru birime yönlendir: hangi sorunun hangi birime (öğrenci işleri, bölüm sekreterliği, Erasmus ofisi, kütüphane vb.) ait olduğunu belirt.
 7. Üniversite dışı konularda (siyaset, din, kişisel tavsiye, programlama kodu yazma vb.) cevap verme; kibarca üniversite konularıyla sınırlı olduğunu belirt.
 8. Yanıtın sonunda, kullanıcının bu konuyla ilgili başvurabileceği birimi, telefon/e-posta bilgisini veya resmî web sayfası adresini belirt. Bu bilgi belgede varsa doğrudan kullan; yoksa en uygun birimi öner.
+9. Akademik takvim cevaplarında yalnızca doc_kind=academic_calendar_event belgelerindeki structured metadata ve içerikte geçen tarihleri kullan. Kaynakta olmayan tarih, akademik yıl veya takvim türü üretme.
+10. Kullanıcı akademik yıl veya takvim türü belirtmediyse sistem notundaki varsayımı açıkça söyle: "Bu bilgi güncel akademik yıl için genel/önlisans-lisans akademik takvimine göredir. Tıp, lisansüstü veya TÖMER takvimlerinde tarihler farklı olabilir."
 
 YANITINDA KESİNLİKLE BULUNMAMASI GEREKENLER:
 - Belgede açıkça yazılı OLMAYAN telefon numarası, e-posta adresi veya URL. Sadece belgelerde geçen iletişim bilgilerini kullan.
@@ -380,6 +383,11 @@ class RagService:
             logger.info("Yemekhane menüsü sorgusu deterministik servisle yanıtlandı.")
             return food_menu_answer
 
+        academic_calendar_answer = get_academic_calendar_service().answer_chat_query(question)
+        if academic_calendar_answer is not None:
+            logger.info("Akademik takvim sorgusu deterministik servisle yanıtlandı.")
+            return academic_calendar_answer
+
         if self._pipeline is None:
             raise RuntimeError("Pipeline henüz oluşturulmadı. build_pipeline() çağrılmalı.")
 
@@ -429,6 +437,8 @@ class RagService:
         prompt_question = question
         if pp.routing_hint:
             prompt_question = f"{question}\n\n[Sistem notu: Bu konu için yetkili birim: {pp.routing_hint}]"
+        if pp.system_note:
+            prompt_question = f"{prompt_question}\n\n[Sistem notu: {pp.system_note}]"
 
         t0 = time.perf_counter()
         result = self._pipeline.run(

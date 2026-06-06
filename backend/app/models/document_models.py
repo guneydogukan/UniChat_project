@@ -29,7 +29,8 @@ CATEGORIES = Literal[
     "mezunlar",
     "yonlendirme",
     "kariyer",
-    "iletisim"
+    "iletisim",
+    "academic_calendar"
 ]
 
 # ── Belge Türleri (doc_kind) ──
@@ -63,7 +64,8 @@ DOC_KINDS = Literal[
     "candidate_library",
     "candidate_exchange",
     "candidate_career",
-    "candidate_contact"
+    "candidate_contact",
+    "academic_calendar_event"
 ]
 
 SOURCE_TYPES = Literal["pdf", "web", "manual"]

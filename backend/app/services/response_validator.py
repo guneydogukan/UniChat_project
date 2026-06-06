@@ -20,6 +20,7 @@ Neden gerekli:
 import logging
 import re
 from typing import Any, Iterable, Optional
+from datetime import date
 
 logger = logging.getLogger(__name__)
 
@@ -52,6 +53,21 @@ PHONE_PATTERN = re.compile(r'[\+]?\(?\d[\d\s\(\)\-]{8,}\d')
 EMAIL_PATTERN = re.compile(r'[\w.+-]+@[\w.-]+\.\w{2,}')
 LOCAL_PATH_PATTERN = re.compile(r'[A-Z]:\\[^\s\"]+', re.IGNORECASE)
 WORD_PATTERN = re.compile(r"\b[a-zA-ZçğıöşüÇĞİÖŞÜ]{2,}\b")
+ACADEMIC_YEAR_PATTERN = re.compile(r"\b20\d{2}\s*[-–/]\s*20\d{2}\b")
+ACADEMIC_DATE_PATTERN = re.compile(
+    r"\b\d{1,2}\s*(?:[-–—]\s*\d{1,2})?\s+"
+    r"(?:Ocak|Şubat|Subat|Mart|Nisan|Mayıs|Mayis|Haziran|Temmuz|Ağustos|Agustos|Eylül|Eylul|Ekim|Kasım|Kasim|Aralık|Aralik)"
+    r"\s+\d{2,4}\b"
+    r"|"
+    r"\b\d{1,2}\s+"
+    r"(?:Ocak|Şubat|Subat|Mart|Nisan|Mayıs|Mayis|Haziran|Temmuz|Ağustos|Agustos|Eylül|Eylul|Ekim|Kasım|Kasim|Aralık|Aralik)"
+    r"\s*[-–—]\s*\d{1,2}\s+"
+    r"(?:Ocak|Şubat|Subat|Mart|Nisan|Mayıs|Mayis|Haziran|Temmuz|Ağustos|Agustos|Eylül|Eylul|Ekim|Kasım|Kasim|Aralık|Aralik)"
+    r"\s+\d{2,4}\b"
+    r"|"
+    r"\b\d{1,2}[./]\d{1,2}[./]\d{2,4}(?:\s*[-–—]\s*\d{1,2}[./]\d{1,2}[./]\d{2,4})?\b",
+    re.IGNORECASE,
+)
 
 # ── Placeholder sabitler ──
 PLACEHOLDER_URL = "**www.gibtu.edu.tr** (resmi web sitesini ziyaret ediniz)"
@@ -59,6 +75,7 @@ PLACEHOLDER_URL_BLOCKED = "[GİBTÜ dışı kaynak kaldırıldı]"
 PLACEHOLDER_PHONE = "[iletişim bilgisi için ilgili birime başvurunuz]"
 PLACEHOLDER_EMAIL = "[e-posta bilgisi için ilgili birime başvurunuz]"
 PLACEHOLDER_PATH = "[kurum içi belge]"
+PLACEHOLDER_ACADEMIC_DATE = "[kaynakta doğrulanamayan akademik takvim tarihi]"
 LANGUAGE_FALLBACK_RESPONSE = (
     "Bu konuda elimdeki belgelerden Türkçe ve güvenilir bir cevap oluşturamadım. "
     "Detaylı bilgi için ilgili birime başvurmanızı öneriyorum."
@@ -93,6 +110,21 @@ TURKISH_SIGNAL_WORDS: frozenset[str] = frozenset({
     "kaynak", "iletişim", "iletisim", "detaylı", "detayli", "bulunuyor",
     "bulunmuyor", "başvur", "basvur", "öneriyorum", "oneriyorum",
 })
+
+MONTH_NAMES_TR = {
+    1: "Ocak",
+    2: "Şubat",
+    3: "Mart",
+    4: "Nisan",
+    5: "Mayıs",
+    6: "Haziran",
+    7: "Temmuz",
+    8: "Ağustos",
+    9: "Eylül",
+    10: "Ekim",
+    11: "Kasım",
+    12: "Aralık",
+}
 
 
 def _extract_domain(url: str) -> Optional[str]:
@@ -168,6 +200,99 @@ def _iter_source_values(value: Any) -> Iterable[str]:
 def _source_text(source_doc: dict) -> str:
     """Whitelist ve kaynak doğrulama için kaynak dokümanı tek metin haline getirir."""
     return "\n".join(_iter_source_values(source_doc))
+
+
+def _normalize_calendar_fragment(text: str) -> str:
+    value = " ".join((text or "").strip().split()).casefold()
+    value = value.replace("–", "-").replace("—", "-")
+    return value
+
+
+def _is_academic_calendar_source(source_doc: dict) -> bool:
+    meta = source_doc.get("meta") or {}
+    return (
+        meta.get("doc_kind") == "academic_calendar_event"
+        or meta.get("category") == "academic_calendar"
+        or source_doc.get("category") == "academic_calendar"
+    )
+
+
+def _format_iso_date(iso_value: str | None) -> str | None:
+    if not iso_value:
+        return None
+    try:
+        parsed = date.fromisoformat(str(iso_value))
+    except ValueError:
+        return str(iso_value)
+    return f"{parsed.day} {MONTH_NAMES_TR[parsed.month]} {parsed.year}"
+
+
+def _calendar_allowed_fragments(source_docs: list[dict]) -> set[str]:
+    """Akademik takvim kaynaklarından cevapta geçmesine izin verilen tarih parçalarını çıkarır."""
+    allowed: set[str] = set()
+
+    for doc in source_docs:
+        if not _is_academic_calendar_source(doc):
+            continue
+
+        source_text = _source_text(doc)
+        for match in ACADEMIC_DATE_PATTERN.findall(source_text):
+            allowed.add(_normalize_calendar_fragment(match))
+        for match in ACADEMIC_YEAR_PATTERN.findall(source_text):
+            allowed.add(_normalize_calendar_fragment(match))
+
+        meta = doc.get("meta") or {}
+        for field_name in ("academic_year", "original_date_text", "start_date", "end_date"):
+            value = meta.get(field_name)
+            if value:
+                allowed.add(_normalize_calendar_fragment(str(value)))
+
+        start_text = _format_iso_date(meta.get("start_date"))
+        end_text = _format_iso_date(meta.get("end_date"))
+        if start_text:
+            allowed.add(_normalize_calendar_fragment(start_text))
+        if end_text:
+            allowed.add(_normalize_calendar_fragment(end_text))
+        if start_text and end_text and start_text != end_text:
+            allowed.add(_normalize_calendar_fragment(f"{start_text} - {end_text}"))
+
+    return allowed
+
+
+def _academic_fragment_allowed(fragment: str, allowed_fragments: set[str], source_docs: list[dict]) -> bool:
+    normalized = _normalize_calendar_fragment(fragment)
+    if normalized in allowed_fragments:
+        return True
+
+    for doc in source_docs:
+        if not _is_academic_calendar_source(doc):
+            continue
+        if normalized and normalized in _normalize_calendar_fragment(_source_text(doc)):
+            return True
+    return False
+
+
+def _validate_academic_calendar_dates(response: str, source_docs: list[dict]) -> tuple[str, list[str]]:
+    """Akademik takvim cevaplarında kaynak dışı tarih/akademik yılı kaldırır."""
+    if not any(_is_academic_calendar_source(doc) for doc in source_docs):
+        return response, []
+
+    allowed_fragments = _calendar_allowed_fragments(source_docs)
+    if not allowed_fragments:
+        return response, []
+
+    cleaned = response
+    changes: list[str] = []
+
+    for pattern in (ACADEMIC_DATE_PATTERN, ACADEMIC_YEAR_PATTERN):
+        for match in list(pattern.finditer(cleaned)):
+            fragment = match.group(0)
+            if _academic_fragment_allowed(fragment, allowed_fragments, source_docs):
+                continue
+            cleaned = cleaned.replace(fragment, PLACEHOLDER_ACADEMIC_DATE, 1)
+            changes.append(f"Kaynak dışı akademik takvim tarihi kaldırıldı: {fragment}")
+
+    return cleaned, changes
 
 
 def _normalize_email(email: str) -> str:
@@ -377,7 +502,11 @@ def validate_response(response: str, source_docs: list[dict]) -> str:
             else:
                 changes.append(f"Whitelist dışı e-posta kaldırıldı: {email}")
 
-    # 5. Dil tutarlılığı kontrolü
+    # 5. Akademik takvim tarih doğrulama
+    cleaned, academic_changes = _validate_academic_calendar_dates(cleaned, source_docs)
+    changes.extend(academic_changes)
+
+    # 6. Dil tutarlılığı kontrolü
     language_checked = enforce_turkish_response(cleaned)
     if language_checked != cleaned:
         changes.append("Dil tutarlılığı düzeltildi")
