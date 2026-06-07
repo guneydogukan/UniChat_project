@@ -1,0 +1,143 @@
+{
+  "run_id": "yokatlas_gibtu_scraper:2026-06-06T21:53:28Z",
+  "summary": {
+    "critical": 0,
+    "warning": 19,
+    "info": 0
+  },
+  "results": [
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Tıp Fakültesi / Tıp",
+      "program_code": 111210046
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Mühendislik ve Doğa Bilimleri Fakültesi / Bilgisayar Mühendisliği",
+      "program_code": 111210012
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Mühendislik ve Doğa Bilimleri Fakültesi / Elektrik-Elektronik Mühendisliği",
+      "program_code": 111210011
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Mühendislik ve Doğa Bilimleri Fakültesi / Endüstri Mühendisliği (İngilizce)",
+      "program_code": 111210102
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Sağlık Bilimleri Fakültesi / Ebelik",
+      "program_code": 111210016
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Sağlık Bilimleri Fakültesi / Fizyoterapi ve Rehabilitasyon",
+      "program_code": 111210032
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Sağlık Bilimleri Fakültesi / Hemşirelik",
+      "program_code": 111210017
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Güzel Sanatlar Tasarım ve Mimarlık Fakültesi / Gastronomi ve Mutfak Sanatları",
+      "program_code": 111210039
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "İlahiyat Fakültesi / İlahiyat",
+      "program_code": 111210123
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "İlahiyat Fakültesi / İlahiyat (M.T.O.K.)",
+      "program_code": 111210130
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "İlahiyat Fakültesi / İlahiyat (Arapça)",
+      "program_code": 111210109
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "İlahiyat Fakültesi / İlahiyat (Arapça) (M.T.O.K.)",
+      "program_code": 111210116
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "İktisadi, İdari ve Sosyal Bilimler Fakültesi / Arapça Mütercim ve Tercümanlık",
+      "program_code": 111210074
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "İktisadi, İdari ve Sosyal Bilimler Fakültesi / İngilizce Mütercim ve Tercümanlık",
+      "program_code": 111210081
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Sağlık Hizmetleri Meslek Yüksekokulu / Ameliyathane Hizmetleri",
+      "program_code": 111210053
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Sağlık Hizmetleri Meslek Yüksekokulu / Tıbbi Laboratuvar Teknikleri",
+      "program_code": 111210022
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Sağlık Hizmetleri Meslek Yüksekokulu / İlk ve Acil Yardım",
+      "program_code": 111210021
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Teknik Bilimler Meslek Yüksekokulu / Bilgisayar Programcılığı",
+      "program_code": 111210023
+    },
+    {
+      "severity": "warning",
+      "code": "nets_not_available",
+      "message": "Son yerleşen netleri/ortalama netler API yanıtında yok; panel keşfi sırasında doğrulanmalı.",
+      "program_key": "Teknik Bilimler Meslek Yüksekokulu / Makine",
+      "program_code": 111210024
+    }
+  ]
+}

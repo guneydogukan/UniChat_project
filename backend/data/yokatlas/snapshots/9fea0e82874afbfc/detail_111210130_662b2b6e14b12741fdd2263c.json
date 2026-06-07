@@ -1,0 +1,106 @@
+{
+  "snapshot_id": "662b2b6e14b12741fdd2263c",
+  "snapshot_type": "detail_111210130",
+  "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+  "method": "POST",
+  "request_body": {
+    "filters": {
+      "kilavuzKodu": 111210130
+    },
+    "page": 0,
+    "size": 10,
+    "sortBy": "programKodu",
+    "sortDirection": "ASC"
+  },
+  "response_hash": "8b7d7bb36071013de82ccd6b11fcfb9da253953cba3f99c610411d19d5e224c4",
+  "fetched_at": "2026-06-06T21:52:56Z",
+  "response_payload": {
+    "content": [
+      {
+        "osymKilavuzId": 94161,
+        "sinav": "YKS     ",
+        "yil": 2025,
+        "donem": "1       ",
+        "tabloTuru": "TABLO 4",
+        "birimId": 466240,
+        "birimHiyerarsi": "384577|466220",
+        "kilavuzKodu": 111210130,
+        "universiteId": 384577,
+        "universiteAdi": "GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
+        "uniIlKodu": 27,
+        "uniIlAdi": "GAZİANTEP",
+        "uniIlceKodu": 1841,
+        "uniIlceAdi": "ŞAHİNBEY",
+        "fymkId": 466220,
+        "fymkAdi": "İlahiyat Fakültesi",
+        "fymkIlKodu": 27,
+        "fymkIlAdi": "GAZİANTEP",
+        "fymkIlceKodu": 1841,
+        "fymkIlceAdi": "ŞAHİNBEY",
+        "birimAdi": "İlahiyat (M.T.O.K.)",
+        "birimGrupId": 3367,
+        "birimGrupAdi": "İlahiyat",
+        "birimTuruId": 46,
+        "birimTuruAdi": "LISANS",
+        "ogrenimTuruId": 86,
+        "ogrenimTuruAdi": "Örgün Öğretim",
+        "ogrenimSuresi": 4,
+        "puanTuru": "SÖZ",
+        "ogrenimDiliId": 268,
+        "ogrenimDiliAdi": "Arapça (%30)",
+        "bursOraniId": 0,
+        "birimEkTuru": "M.T.O.K.",
+        "kontenjan": 9,
+        "kontenjanY34": 1,
+        "kontenjanDep": 1,
+        "gkY": 9,
+        "y34": 0,
+        "dprmY": 1,
+        "prof": 1,
+        "doc": 10,
+        "dou": 16,
+        "ogrGor": 3,
+        "arGor": 15,
+        "kosul": "1,22,24,152,153",
+        "ilKodu": 27,
+        "ilAdi": "GAZİANTEP",
+        "ilceKodu": 1841,
+        "ilceAdi": "ŞAHİNBEY",
+        "universiteTuru": "DEVLET",
+        "eskiBirimId": 458267,
+        "eskiKilavuzKodu": 111210095,
+        "minPuan": 265.28168,
+        "basariSirasi": 511978,
+        "kosulList": [
+          {
+            "1": "Bir mesleğe yönelik program uygulayan lise veya dengi meslek okulu çıkışlı adayların bu programla ilgili tercihlerini belirlemeden önce Tablo-6'yı dikkatle incelemeleri gerekir."
+          },
+          {
+            "22": "Bu programa kayıt yaptıran ve yabancı dil hazırlık sınıfına devam etmesine rağmen hazırlık sınıfını iki yıl içinde başarıyla tamamlayamayan öğrencilerin programdan ilişiği kesilir. Hazırlık sınıfında başarısız olarak programdan ilişiği kesilen öğrenciler, varsa kendi yükseköğretim kurumlarında öğretim dili Türkçe olan eşdeğer bir programa kayıt yaptırabilirler. Ancak bu öğrenciler, talep etmeleri durumunda Ölçme, Seçme ve Yerleştirme Merkezi Başkanlığı tarafından bir defaya mahsus olmak üzere kayıt yaptırdığı yıl itibarıyla, öğrencinin YKS puanlarından ilgili olan puanı, yerleştirileceği programa kayıt yaptırmak için aranan taban puanından düşük olmaması şartıyla öğretim dili Türkçe olan programlardan birine merkezî olarak yerleştirilebilirler."
+          },
+          {
+            "24": "Programın öğretim dilinde bir yıl süreli zorunlu Hazırlık Programı uygulanır, programın sonunda ilgili dilde yeterlik sınavını başaranların doğrudan birinci sınıfa kayıtları yapılır. Hazırlık sınıfı, öğretim süresi sütununda gösterilen yıllara dahil değildir.\r\r\nİlgili dil için üniversitece kabul edilen; a) Ulusal ve/veya Uluslararası yabancı dil sınavlarının birinden yine üniversitece belirlenen düzeyde başarılı olduğunu belgeleyen, b) Üniversitece öğretim yılı başında yapılacak ilgili dilde yeterlik sınavında başarılı olanlar doğrudan birinci sınıfa alınırlar. Öğrencilere, “Yükseköğretim Kurumlarında Yabancı Dil Öğretimi ve Yabancı Dille Öğretim Yapılmasında Uyulacak Esaslara İlişkin Yönetmelik\" hükümleri uygulanır."
+          },
+          {
+            "152": "Bu programdaki öğretim dili en az %30 Arapça'dır."
+          },
+          {
+            "153": "Bu programı, İmam Hatip Lisesi Hafızlık Projesinde öğrenim görenler (okul tür kodu 20065, 30069, 51023, 51015, 51048 veya 51031 olup alan kodu 6060 olan adaylar) ile İmam Hatip Lisesi Lisesinde öğrenim görüp (okul tür kodu 20065, 30069, 51023, 51015, 51048 veya 51031 olan adaylar) Hafızlık Belgesi’ne sahip olan adaylar tercih edebileceklerdir. \r\nHafızlık Belgesi’ne sahip olan adayların listesi, merkezi yerleştirme öncesinde Diyanet İşleri Başkanlığı tarafından Yükseköğretim Kurulu Başkanlığına ve ÖSYM'ye iletilecektir. Bu listede adı olmayan adaylar, ilgili programı tercih edemeyecek, tercih etmiş olsa da yerleştirilmeyeceklerdir."
+          }
+        ],
+        "minPuan1": "0",
+        "minPuan2": "0"
+      }
+    ],
+    "empty": false,
+    "first": true,
+    "last": true,
+    "number": 0,
+    "numberOfElements": 1,
+    "size": 10,
+    "totalElements": 1,
+    "totalPages": 1,
+    "yil": 2025,
+    "source": "snapshot"
+  }
+}

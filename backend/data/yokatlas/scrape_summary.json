@@ -1,0 +1,133 @@
+{
+  "success": true,
+  "run_id": "yokatlas_gibtu_scraper:2026-06-06T21:53:28Z",
+  "runtime": {
+    "started_at": "2026-06-06T21:53:28Z",
+    "finished_at": "2026-06-06T21:54:04Z",
+    "rate_limit_seconds": 1.0
+  },
+  "data_year": 2025,
+  "expected_program_count": 19,
+  "matched_program_count": 19,
+  "normalized_program_count": 19,
+  "missing_program_count": 0,
+  "unexpected_program_count": 0,
+  "critical_count": 0,
+  "warning_count": 19,
+  "info_count": 0,
+  "snapshot_count": 22,
+  "database": {
+    "write_db_requested": true,
+    "success": true,
+    "validation_status": "valid",
+    "program_write_allowed": true,
+    "critical_count": 0,
+    "warning_count": 19,
+    "info_count": 0,
+    "inserted": {
+      "snapshots": 22,
+      "programs": 19,
+      "program_years": 19,
+      "conditions": 33,
+      "validation_results": 19
+    },
+    "updated": {
+      "snapshots": 0,
+      "programs": 0,
+      "program_years": 0,
+      "quota_statistics": 19,
+      "score_statistics": 19
+    },
+    "skipped": {
+      "programs": 0
+    },
+    "db_counts": {
+      "yokatlas_scrape_runs": 1,
+      "yokatlas_raw_snapshots": 22,
+      "yokatlas_programs": 19,
+      "yokatlas_program_years": 19,
+      "yokatlas_quota_statistics": 19,
+      "yokatlas_score_statistics": 19,
+      "yokatlas_program_conditions": 33,
+      "yokatlas_validation_results": 19
+    },
+    "errors": []
+  },
+  "manual_check_samples": [
+    {
+      "academic_unit": "Tıp Fakültesi",
+      "program_name": "Tıp",
+      "program_code": 111210046,
+      "program_level": "lisans",
+      "data_year": 2025,
+      "score_type": "SAY",
+      "language": "Türkçe",
+      "general_quota": 75,
+      "general_placed": 75,
+      "base_score": "478.68376",
+      "base_rank": 23162,
+      "condition_count": 1,
+      "source_url": "https://yokatlas.yok.gov.tr/detay/111210046"
+    },
+    {
+      "academic_unit": "Mühendislik ve Doğa Bilimleri Fakültesi",
+      "program_name": "Endüstri Mühendisliği (İngilizce)",
+      "program_code": 111210102,
+      "program_level": "lisans",
+      "data_year": 2025,
+      "score_type": "SAY",
+      "language": "İngilizce",
+      "general_quota": 55,
+      "general_placed": 57,
+      "base_score": "317.76857",
+      "base_rank": 250517,
+      "condition_count": 4,
+      "source_url": "https://yokatlas.yok.gov.tr/detay/111210102"
+    },
+    {
+      "academic_unit": "İlahiyat Fakültesi",
+      "program_name": "İlahiyat (Arapça) (M.T.O.K.)",
+      "program_code": 111210116,
+      "program_level": "lisans",
+      "data_year": 2025,
+      "score_type": "SÖZ",
+      "language": "Arapça",
+      "general_quota": 4,
+      "general_placed": 4,
+      "base_score": "250.62776",
+      "base_rank": 652863,
+      "condition_count": 5,
+      "source_url": "https://yokatlas.yok.gov.tr/detay/111210116"
+    },
+    {
+      "academic_unit": "Sağlık Hizmetleri Meslek Yüksekokulu",
+      "program_name": "İlk ve Acil Yardım",
+      "program_code": 111210021,
+      "program_level": "onlisans",
+      "data_year": 2025,
+      "score_type": "TYT",
+      "language": "Türkçe",
+      "general_quota": 40,
+      "general_placed": 40,
+      "base_score": "356.23154",
+      "base_rank": 359865,
+      "condition_count": 0,
+      "source_url": "https://yokatlas.yok.gov.tr/detay/111210021"
+    },
+    {
+      "academic_unit": "Teknik Bilimler Meslek Yüksekokulu",
+      "program_name": "Makine",
+      "program_code": 111210024,
+      "program_level": "onlisans",
+      "data_year": 2025,
+      "score_type": "TYT",
+      "language": "Türkçe",
+      "general_quota": 40,
+      "general_placed": 41,
+      "base_score": "285.28566",
+      "base_rank": 1038265,
+      "condition_count": 0,
+      "source_url": "https://yokatlas.yok.gov.tr/detay/111210024"
+    }
+  ]
+}

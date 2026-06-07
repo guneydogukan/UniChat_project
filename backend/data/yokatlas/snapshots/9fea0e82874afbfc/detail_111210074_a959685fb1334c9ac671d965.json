@@ -1,0 +1,108 @@
+{
+  "snapshot_id": "a959685fb1334c9ac671d965",
+  "snapshot_type": "detail_111210074",
+  "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+  "method": "POST",
+  "request_body": {
+    "filters": {
+      "kilavuzKodu": 111210074
+    },
+    "page": 0,
+    "size": 10,
+    "sortBy": "programKodu",
+    "sortDirection": "ASC"
+  },
+  "response_hash": "e34f7131acc5fb65813ea2ffea2ca558f2714be1673a37f757e0d67d6f7e200d",
+  "fetched_at": "2026-06-06T21:53:03Z",
+  "response_payload": {
+    "content": [
+      {
+        "osymKilavuzId": 94158,
+        "sinav": "YKS     ",
+        "yil": 2025,
+        "donem": "1       ",
+        "tabloTuru": "TABLO 4",
+        "birimId": 456054,
+        "birimHiyerarsi": "384577|384587|456050",
+        "kilavuzKodu": 111210074,
+        "universiteId": 384577,
+        "universiteAdi": "GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
+        "uniIlKodu": 27,
+        "uniIlAdi": "GAZİANTEP",
+        "uniIlceKodu": 1841,
+        "uniIlceAdi": "ŞAHİNBEY",
+        "fymkId": 384587,
+        "fymkAdi": "İktisadi, İdari ve Sosyal Bilimler Fakültesi",
+        "fymkIlKodu": 27,
+        "fymkIlAdi": "GAZİANTEP",
+        "fymkIlceKodu": 1841,
+        "fymkIlceAdi": "ŞAHİNBEY",
+        "birimAdi": "Arapça Mütercim ve Tercümanlık",
+        "birimGrupId": 20036,
+        "birimGrupAdi": "Arapça Mütercim ve Tercümanlık",
+        "birimTuruId": 46,
+        "birimTuruAdi": "LISANS",
+        "ogrenimTuruId": 86,
+        "ogrenimTuruAdi": "Örgün Öğretim",
+        "ogrenimSuresi": 4,
+        "puanTuru": "DİL",
+        "ogrenimDiliId": 174,
+        "ogrenimDiliAdi": "Arapça",
+        "bursOraniId": 0,
+        "kontenjan": 35,
+        "kontenjanObs": 1,
+        "kontenjanY34": 1,
+        "kontenjanDep": 4,
+        "gkY": 36,
+        "obkY": 0,
+        "y34": 1,
+        "dprmY": 4,
+        "prof": 0,
+        "doc": 0,
+        "dou": 4,
+        "ogrGor": 0,
+        "arGor": 1,
+        "kosul": "22,24,14,159",
+        "ilKodu": 27,
+        "ilAdi": "GAZİANTEP",
+        "ilceKodu": 1841,
+        "ilceAdi": "ŞAHİNBEY",
+        "universiteTuru": "DEVLET",
+        "kpss1": "75.764635",
+        "kpss2": "64.677230",
+        "minPuan": 260.18402,
+        "basariSirasi": 88728,
+        "kosulList": [
+          {
+            "14": "Öğretim dili Arapça'dır."
+          },
+          {
+            "22": "Bu programa kayıt yaptıran ve yabancı dil hazırlık sınıfına devam etmesine rağmen hazırlık sınıfını iki yıl içinde başarıyla tamamlayamayan öğrencilerin programdan ilişiği kesilir. Hazırlık sınıfında başarısız olarak programdan ilişiği kesilen öğrenciler, varsa kendi yükseköğretim kurumlarında öğretim dili Türkçe olan eşdeğer bir programa kayıt yaptırabilirler. Ancak bu öğrenciler, talep etmeleri durumunda Ölçme, Seçme ve Yerleştirme Merkezi Başkanlığı tarafından bir defaya mahsus olmak üzere kayıt yaptırdığı yıl itibarıyla, öğrencinin YKS puanlarından ilgili olan puanı, yerleştirileceği programa kayıt yaptırmak için aranan taban puanından düşük olmaması şartıyla öğretim dili Türkçe olan programlardan birine merkezî olarak yerleştirilebilirler."
+          },
+          {
+            "24": "Programın öğretim dilinde bir yıl süreli zorunlu Hazırlık Programı uygulanır, programın sonunda ilgili dilde yeterlik sınavını başaranların doğrudan birinci sınıfa kayıtları yapılır. Hazırlık sınıfı, öğretim süresi sütununda gösterilen yıllara dahil değildir.\r\r\nİlgili dil için üniversitece kabul edilen; a) Ulusal ve/veya Uluslararası yabancı dil sınavlarının birinden yine üniversitece belirlenen düzeyde başarılı olduğunu belgeleyen, b) Üniversitece öğretim yılı başında yapılacak ilgili dilde yeterlik sınavında başarılı olanlar doğrudan birinci sınıfa alınırlar. Öğrencilere, “Yükseköğretim Kurumlarında Yabancı Dil Öğretimi ve Yabancı Dille Öğretim Yapılmasında Uyulacak Esaslara İlişkin Yönetmelik\" hükümleri uygulanır."
+          },
+          {
+            "159": "Yabancı Dil Sınavına; Almanca, Fransızca, Arapça, Rusça veya İngilizce dillerinin herhangi birinden girmek gerekir."
+          }
+        ],
+        "gk1": 35,
+        "minPuan1": "262.79138",
+        "basariSirasi1": 95258,
+        "minPuan2": "291.06976",
+        "basariSirasi2": 79246,
+        "minPuan3": "0"
+      }
+    ],
+    "empty": false,
+    "first": true,
+    "last": true,
+    "number": 0,
+    "numberOfElements": 1,
+    "size": 10,
+    "totalElements": 1,
+    "totalPages": 1,
+    "yil": 2025,
+    "source": "snapshot"
+  }
+}

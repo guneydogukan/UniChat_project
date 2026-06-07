@@ -1,0 +1,106 @@
+{
+  "snapshot_id": "c894c9653b7a052c465f287f",
+  "snapshot_type": "detail_111210102",
+  "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+  "method": "POST",
+  "request_body": {
+    "filters": {
+      "kilavuzKodu": 111210102
+    },
+    "page": 0,
+    "size": 10,
+    "sortBy": "programKodu",
+    "sortDirection": "ASC"
+  },
+  "response_hash": "17a233cb6b6c572904aac82e55ba74fd458dd258716502dadf64ae1e37acf475",
+  "fetched_at": "2026-06-06T21:52:49Z",
+  "response_payload": {
+    "content": [
+      {
+        "osymKilavuzId": 94166,
+        "sinav": "YKS     ",
+        "yil": 2025,
+        "donem": "1       ",
+        "tabloTuru": "TABLO 4",
+        "birimId": 458412,
+        "birimHiyerarsi": "384577|384580|386920",
+        "kilavuzKodu": 111210102,
+        "universiteId": 384577,
+        "universiteAdi": "GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
+        "uniIlKodu": 27,
+        "uniIlAdi": "GAZİANTEP",
+        "uniIlceKodu": 1841,
+        "uniIlceAdi": "ŞAHİNBEY",
+        "fymkId": 384580,
+        "fymkAdi": "Mühendislik ve Doğa Bilimleri Fakültesi",
+        "fymkIlKodu": 27,
+        "fymkIlAdi": "GAZİANTEP",
+        "fymkIlceKodu": 1841,
+        "fymkIlceAdi": "ŞAHİNBEY",
+        "birimAdi": "Endüstri Mühendisliği (İngilizce)",
+        "birimGrupId": 2704,
+        "birimGrupAdi": "Endüstri Mühendisliği",
+        "birimTuruId": 46,
+        "birimTuruAdi": "LISANS",
+        "ogrenimTuruId": 86,
+        "ogrenimTuruAdi": "Örgün Öğretim",
+        "ogrenimSuresi": 4,
+        "puanTuru": "SAY",
+        "ogrenimDiliId": 168,
+        "ogrenimDiliAdi": "İngilizce",
+        "bursOraniId": 0,
+        "kontenjan": 55,
+        "kontenjanObs": 2,
+        "kontenjanDep": 6,
+        "gkY": 57,
+        "obkY": 0,
+        "dprmY": 6,
+        "prof": 0,
+        "doc": 0,
+        "dou": 5,
+        "ogrGor": 0,
+        "arGor": 2,
+        "kosul": "144,22,23,24",
+        "ilKodu": 27,
+        "ilAdi": "GAZİANTEP",
+        "ilceKodu": 1841,
+        "ilceAdi": "ŞAHİNBEY",
+        "universiteTuru": "DEVLET",
+        "kpss1": "65.565010",
+        "minPuan": 317.76857,
+        "basariSirasi": 250517,
+        "minBasariSirasiKosul": "Bu programı tercih edebilmek için ilgili puan türünde en düşük başarı sırasının 300.000 olması gerekmektedir.",
+        "minBasariSirasi": "300000",
+        "kosulList": [
+          {
+            "22": "Bu programa kayıt yaptıran ve yabancı dil hazırlık sınıfına devam etmesine rağmen hazırlık sınıfını iki yıl içinde başarıyla tamamlayamayan öğrencilerin programdan ilişiği kesilir. Hazırlık sınıfında başarısız olarak programdan ilişiği kesilen öğrenciler, varsa kendi yükseköğretim kurumlarında öğretim dili Türkçe olan eşdeğer bir programa kayıt yaptırabilirler. Ancak bu öğrenciler, talep etmeleri durumunda Ölçme, Seçme ve Yerleştirme Merkezi Başkanlığı tarafından bir defaya mahsus olmak üzere kayıt yaptırdığı yıl itibarıyla, öğrencinin YKS puanlarından ilgili olan puanı, yerleştirileceği programa kayıt yaptırmak için aranan taban puanından düşük olmaması şartıyla öğretim dili Türkçe olan programlardan birine merkezî olarak yerleştirilebilirler."
+          },
+          {
+            "23": "Öğretim dili İngilizce'dir."
+          },
+          {
+            "24": "Programın öğretim dilinde bir yıl süreli zorunlu Hazırlık Programı uygulanır, programın sonunda ilgili dilde yeterlik sınavını başaranların doğrudan birinci sınıfa kayıtları yapılır. Hazırlık sınıfı, öğretim süresi sütununda gösterilen yıllara dahil değildir.\r\r\nİlgili dil için üniversitece kabul edilen; a) Ulusal ve/veya Uluslararası yabancı dil sınavlarının birinden yine üniversitece belirlenen düzeyde başarılı olduğunu belgeleyen, b) Üniversitece öğretim yılı başında yapılacak ilgili dilde yeterlik sınavında başarılı olanlar doğrudan birinci sınıfa alınırlar. Öğrencilere, “Yükseköğretim Kurumlarında Yabancı Dil Öğretimi ve Yabancı Dille Öğretim Yapılmasında Uyulacak Esaslara İlişkin Yönetmelik\" hükümleri uygulanır."
+          },
+          {
+            "144": "Mühendislik programlarına (Orman, Ziraat, Tarım Bilimleri ve Teknolojileri, Su Ürünleri/Su Bilimleri Fakülteleri programları ile Ağaç İşleri Endüstri Mühendisliği, Biyosistem Mühendisliği, Balıkçılık Teknolojisi Mühendisliği, Su Ürünleri Mühendisliği programları hariç; Ziraat Fakültelerinin Gıda Mühendisliği programları dâhil.); programın, yerleştirme puan türünde başarı sırası 300 bininci sırada olan adayın yerleştirme puanının altında yerleştirme puanına sahip adaylar yerleştirilmeyecektir (Ek puansız yerleştirme puanının başarı sırası dikkate alınır.). Bu şartı sağlamayan adaylar ilgili programı tercih edemeyeceklerdir. Bu şartı sağlayamayan adayların, tercih yapmış olsalar bile ilgili tercihleri yerleştirme işlemine alınmayacaktır (genel kontenjan ve diğer kontenjan türleri dâhil.)."
+          }
+        ],
+        "gk1": 55,
+        "minPuan1": "292.91577",
+        "basariSirasi1": 289654,
+        "minPuan2": "0",
+        "minPuan3": "0"
+      }
+    ],
+    "empty": false,
+    "first": true,
+    "last": true,
+    "number": 0,
+    "numberOfElements": 1,
+    "size": 10,
+    "totalElements": 1,
+    "totalPages": 1,
+    "yil": 2025,
+    "source": "snapshot"
+  }
+}

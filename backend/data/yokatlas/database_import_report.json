@@ -1,0 +1,37 @@
+{
+  "write_db_requested": true,
+  "success": true,
+  "validation_status": "valid",
+  "program_write_allowed": true,
+  "critical_count": 0,
+  "warning_count": 19,
+  "info_count": 0,
+  "inserted": {
+    "snapshots": 22,
+    "programs": 19,
+    "program_years": 19,
+    "conditions": 33,
+    "validation_results": 19
+  },
+  "updated": {
+    "snapshots": 0,
+    "programs": 0,
+    "program_years": 0,
+    "quota_statistics": 19,
+    "score_statistics": 19
+  },
+  "skipped": {
+    "programs": 0
+  },
+  "db_counts": {
+    "yokatlas_scrape_runs": 1,
+    "yokatlas_raw_snapshots": 22,
+    "yokatlas_programs": 19,
+    "yokatlas_program_years": 19,
+    "yokatlas_quota_statistics": 19,
+    "yokatlas_score_statistics": 19,
+    "yokatlas_program_conditions": 33,
+    "yokatlas_validation_results": 19
+  },
+  "errors": []
+}

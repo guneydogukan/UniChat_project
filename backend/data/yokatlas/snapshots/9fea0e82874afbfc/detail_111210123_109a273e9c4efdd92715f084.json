@@ -1,0 +1,104 @@
+{
+  "snapshot_id": "109a273e9c4efdd92715f084",
+  "snapshot_type": "detail_111210123",
+  "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+  "method": "POST",
+  "request_body": {
+    "filters": {
+      "kilavuzKodu": 111210123
+    },
+    "page": 0,
+    "size": 10,
+    "sortBy": "programKodu",
+    "sortDirection": "ASC"
+  },
+  "response_hash": "0277731a35f8d9e00e77d519c3c2cf8bb1f50314e05ddb587ef2bbc21a9e54fa",
+  "fetched_at": "2026-06-06T21:52:55Z",
+  "response_payload": {
+    "content": [
+      {
+        "osymKilavuzId": 94160,
+        "sinav": "YKS     ",
+        "yil": 2025,
+        "donem": "1       ",
+        "tabloTuru": "TABLO 4",
+        "birimId": 466239,
+        "birimHiyerarsi": "384577|466220",
+        "kilavuzKodu": 111210123,
+        "universiteId": 384577,
+        "universiteAdi": "GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
+        "uniIlKodu": 27,
+        "uniIlAdi": "GAZİANTEP",
+        "uniIlceKodu": 1841,
+        "uniIlceAdi": "ŞAHİNBEY",
+        "fymkId": 466220,
+        "fymkAdi": "İlahiyat Fakültesi",
+        "fymkIlKodu": 27,
+        "fymkIlAdi": "GAZİANTEP",
+        "fymkIlceKodu": 1841,
+        "fymkIlceAdi": "ŞAHİNBEY",
+        "birimAdi": "İlahiyat",
+        "birimGrupId": 3367,
+        "birimGrupAdi": "İlahiyat",
+        "birimTuruId": 46,
+        "birimTuruAdi": "LISANS",
+        "ogrenimTuruId": 86,
+        "ogrenimTuruAdi": "Örgün Öğretim",
+        "ogrenimSuresi": 4,
+        "puanTuru": "SÖZ",
+        "ogrenimDiliId": 268,
+        "ogrenimDiliAdi": "Arapça (%30)",
+        "bursOraniId": 0,
+        "kontenjan": 81,
+        "kontenjanObs": 3,
+        "kontenjanY34": 3,
+        "kontenjanDep": 8,
+        "gkY": 84,
+        "obkY": 0,
+        "y34": 3,
+        "dprmY": 8,
+        "prof": 1,
+        "doc": 10,
+        "dou": 16,
+        "ogrGor": 3,
+        "arGor": 15,
+        "kosul": "1,22,24,152",
+        "ilKodu": 27,
+        "ilAdi": "GAZİANTEP",
+        "ilceKodu": 1841,
+        "ilceAdi": "ŞAHİNBEY",
+        "universiteTuru": "DEVLET",
+        "eskiBirimId": 458266,
+        "eskiKilavuzKodu": 111210088,
+        "minPuan": 269.5113,
+        "basariSirasi": 473265,
+        "kosulList": [
+          {
+            "1": "Bir mesleğe yönelik program uygulayan lise veya dengi meslek okulu çıkışlı adayların bu programla ilgili tercihlerini belirlemeden önce Tablo-6'yı dikkatle incelemeleri gerekir."
+          },
+          {
+            "22": "Bu programa kayıt yaptıran ve yabancı dil hazırlık sınıfına devam etmesine rağmen hazırlık sınıfını iki yıl içinde başarıyla tamamlayamayan öğrencilerin programdan ilişiği kesilir. Hazırlık sınıfında başarısız olarak programdan ilişiği kesilen öğrenciler, varsa kendi yükseköğretim kurumlarında öğretim dili Türkçe olan eşdeğer bir programa kayıt yaptırabilirler. Ancak bu öğrenciler, talep etmeleri durumunda Ölçme, Seçme ve Yerleştirme Merkezi Başkanlığı tarafından bir defaya mahsus olmak üzere kayıt yaptırdığı yıl itibarıyla, öğrencinin YKS puanlarından ilgili olan puanı, yerleştirileceği programa kayıt yaptırmak için aranan taban puanından düşük olmaması şartıyla öğretim dili Türkçe olan programlardan birine merkezî olarak yerleştirilebilirler."
+          },
+          {
+            "24": "Programın öğretim dilinde bir yıl süreli zorunlu Hazırlık Programı uygulanır, programın sonunda ilgili dilde yeterlik sınavını başaranların doğrudan birinci sınıfa kayıtları yapılır. Hazırlık sınıfı, öğretim süresi sütununda gösterilen yıllara dahil değildir.\r\r\nİlgili dil için üniversitece kabul edilen; a) Ulusal ve/veya Uluslararası yabancı dil sınavlarının birinden yine üniversitece belirlenen düzeyde başarılı olduğunu belgeleyen, b) Üniversitece öğretim yılı başında yapılacak ilgili dilde yeterlik sınavında başarılı olanlar doğrudan birinci sınıfa alınırlar. Öğrencilere, “Yükseköğretim Kurumlarında Yabancı Dil Öğretimi ve Yabancı Dille Öğretim Yapılmasında Uyulacak Esaslara İlişkin Yönetmelik\" hükümleri uygulanır."
+          },
+          {
+            "152": "Bu programdaki öğretim dili en az %30 Arapça'dır."
+          }
+        ],
+        "minPuan1": "0",
+        "minPuan2": "0"
+      }
+    ],
+    "empty": false,
+    "first": true,
+    "last": true,
+    "number": 0,
+    "numberOfElements": 1,
+    "size": 10,
+    "totalElements": 1,
+    "totalPages": 1,
+    "yil": 2025,
+    "source": "snapshot"
+  }
+}

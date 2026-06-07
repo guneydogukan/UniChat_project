@@ -1,0 +1,400 @@
+{
+  "run_id": "yokatlas_gibtu_scraper:2026-06-06T21:53:28Z",
+  "snapshot_count": 22,
+  "snapshots": [
+    {
+      "snapshot_id": "dfef3a0a45da4cba30cbf640",
+      "snapshot_type": "universities",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/universiteler",
+      "method": "GET",
+      "request_body": null,
+      "response_hash": "e46073274a271c4c06951cf7926333725b19602e2de2461b4a994c900f7d302f",
+      "fetched_at": "2026-06-06T21:53:30Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\universities_dfef3a0a45da4cba30cbf640.json"
+    },
+    {
+      "snapshot_id": "29662e59081adb5e60558b53",
+      "snapshot_type": "catalog_lisans",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "universiteId": [
+            384577
+          ],
+          "birimTuruId": 46
+        },
+        "page": 0,
+        "size": 100,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "499c37eaf05ae743418cd167f12f49b7189d2d4d66f3cfe7337d6b5acd670f6c",
+      "fetched_at": "2026-06-06T21:53:32Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\catalog_lisans_29662e59081adb5e60558b53.json"
+    },
+    {
+      "snapshot_id": "3ec7ab46b996b2677cc5f293",
+      "snapshot_type": "catalog_onlisans",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "universiteId": [
+            384577
+          ],
+          "birimTuruId": 47
+        },
+        "page": 0,
+        "size": 100,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "4c8972ee041699211abe3a5bc48975b7197beef3f09e84283219c9102858fc38",
+      "fetched_at": "2026-06-06T21:53:33Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\catalog_onlisans_3ec7ab46b996b2677cc5f293.json"
+    },
+    {
+      "snapshot_id": "0f613f7a35e601383ab4674c",
+      "snapshot_type": "detail_111210046",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210046
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "a63f2a788f756dc72cbc1874098dfef81fa715dba0878542d04835e90a82c386",
+      "fetched_at": "2026-06-06T21:53:34Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210046_0f613f7a35e601383ab4674c.json"
+    },
+    {
+      "snapshot_id": "e20a7f61c31d51487051af15",
+      "snapshot_type": "detail_111210012",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210012
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "fde7c654ae522f475accdd217903ae9019a341b727dc3f113a454a19093d340e",
+      "fetched_at": "2026-06-06T21:53:36Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210012_e20a7f61c31d51487051af15.json"
+    },
+    {
+      "snapshot_id": "0b866d4ab9fb2f8ae5ac2627",
+      "snapshot_type": "detail_111210011",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210011
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "0a0b41597c3b3257de7f426d47e927ff24a52cfca87f8f55d112325cba3b4a67",
+      "fetched_at": "2026-06-06T21:53:37Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210011_0b866d4ab9fb2f8ae5ac2627.json"
+    },
+    {
+      "snapshot_id": "c894c9653b7a052c465f287f",
+      "snapshot_type": "detail_111210102",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210102
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "17a233cb6b6c572904aac82e55ba74fd458dd258716502dadf64ae1e37acf475",
+      "fetched_at": "2026-06-06T21:53:38Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210102_c894c9653b7a052c465f287f.json"
+    },
+    {
+      "snapshot_id": "02a9c5d812f4b724f70b6e21",
+      "snapshot_type": "detail_111210016",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210016
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "36796e761ae4c2fcca3cf16b92a7350a80619b419ca6e35153033c794b12a26e",
+      "fetched_at": "2026-06-06T21:53:42Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210016_02a9c5d812f4b724f70b6e21.json"
+    },
+    {
+      "snapshot_id": "673b02c774e90becea4920e4",
+      "snapshot_type": "detail_111210032",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210032
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "709ea14a7261162d2291b551de51ad9aea353056a41db4efd55bec0de9d9dc64",
+      "fetched_at": "2026-06-06T21:53:44Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210032_673b02c774e90becea4920e4.json"
+    },
+    {
+      "snapshot_id": "f2764dc654f49c50cfe3ea34",
+      "snapshot_type": "detail_111210017",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210017
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "348238bbabe48c3ec69764c7491206ab5af3a5da8b1446b8d241014b8d0d835e",
+      "fetched_at": "2026-06-06T21:53:48Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210017_f2764dc654f49c50cfe3ea34.json"
+    },
+    {
+      "snapshot_id": "6b18882cfad58c2dd9bd68ed",
+      "snapshot_type": "detail_111210039",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210039
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "227a8608cadd717423441bd983b660b9cd2eac579948e9e45e950d46b8739889",
+      "fetched_at": "2026-06-06T21:53:49Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210039_6b18882cfad58c2dd9bd68ed.json"
+    },
+    {
+      "snapshot_id": "109a273e9c4efdd92715f084",
+      "snapshot_type": "detail_111210123",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210123
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "0277731a35f8d9e00e77d519c3c2cf8bb1f50314e05ddb587ef2bbc21a9e54fa",
+      "fetched_at": "2026-06-06T21:53:50Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210123_109a273e9c4efdd92715f084.json"
+    },
+    {
+      "snapshot_id": "662b2b6e14b12741fdd2263c",
+      "snapshot_type": "detail_111210130",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210130
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "8b7d7bb36071013de82ccd6b11fcfb9da253953cba3f99c610411d19d5e224c4",
+      "fetched_at": "2026-06-06T21:53:52Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210130_662b2b6e14b12741fdd2263c.json"
+    },
+    {
+      "snapshot_id": "1f5a8faff95e3f8f0ab2e88c",
+      "snapshot_type": "detail_111210109",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210109
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "3abf0df6b2c2f72067f670b56f0799b3e9f0f7cb7c2561202adfc01a9b19a036",
+      "fetched_at": "2026-06-06T21:53:53Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210109_1f5a8faff95e3f8f0ab2e88c.json"
+    },
+    {
+      "snapshot_id": "26f5bd95513231887ab8c9ea",
+      "snapshot_type": "detail_111210116",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210116
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "e38dc987f26dead269d29209054f304294d1acb14a370740bb716a15530ba2fa",
+      "fetched_at": "2026-06-06T21:53:55Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210116_26f5bd95513231887ab8c9ea.json"
+    },
+    {
+      "snapshot_id": "a959685fb1334c9ac671d965",
+      "snapshot_type": "detail_111210074",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210074
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "e34f7131acc5fb65813ea2ffea2ca558f2714be1673a37f757e0d67d6f7e200d",
+      "fetched_at": "2026-06-06T21:53:56Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210074_a959685fb1334c9ac671d965.json"
+    },
+    {
+      "snapshot_id": "0868ea691fcd24b5b708c69a",
+      "snapshot_type": "detail_111210081",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210081
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "a2dbae9cf0447678f6f835a9293ad8d2d17d931f41ddd443b6887579902161c1",
+      "fetched_at": "2026-06-06T21:53:58Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210081_0868ea691fcd24b5b708c69a.json"
+    },
+    {
+      "snapshot_id": "b6e0e1f40ab230dfd49628b3",
+      "snapshot_type": "detail_111210053",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210053
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "3f63ad8387700acbd917fdf7f2636f50adb4d492a07a0dbd5c9d2a5e6f9b517e",
+      "fetched_at": "2026-06-06T21:53:59Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210053_b6e0e1f40ab230dfd49628b3.json"
+    },
+    {
+      "snapshot_id": "e72e5b692bb628ae5a680003",
+      "snapshot_type": "detail_111210022",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210022
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "a59cd68e82f755b52f333f1da9b8cdcc5254474a3fc1260588093113ff975ad0",
+      "fetched_at": "2026-06-06T21:54:00Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210022_e72e5b692bb628ae5a680003.json"
+    },
+    {
+      "snapshot_id": "4cf5d4bbe0e85957ce4c4159",
+      "snapshot_type": "detail_111210021",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210021
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "ffc22e9f39c6b406fdde5d93f4da0e1810489544737f5d580d2c4dd86ccfda1a",
+      "fetched_at": "2026-06-06T21:54:02Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210021_4cf5d4bbe0e85957ce4c4159.json"
+    },
+    {
+      "snapshot_id": "5edb7ed89edf6f1f30a62b8f",
+      "snapshot_type": "detail_111210023",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210023
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "57d5aed0434e95096d929ecac85175dad60a77bdc12875427734518a8612ec74",
+      "fetched_at": "2026-06-06T21:54:03Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210023_5edb7ed89edf6f1f30a62b8f.json"
+    },
+    {
+      "snapshot_id": "0371b7522feabab06baea258",
+      "snapshot_type": "detail_111210024",
+      "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+      "method": "POST",
+      "request_body": {
+        "filters": {
+          "kilavuzKodu": 111210024
+        },
+        "page": 0,
+        "size": 10,
+        "sortBy": "programKodu",
+        "sortDirection": "ASC"
+      },
+      "response_hash": "393b0a29f9a53856503a4e0d071d3895d2178dce78a674a7a03a61d7c560ce17",
+      "fetched_at": "2026-06-06T21:54:04Z",
+      "path": "C:\\Users\\ASUS\\Masaüstü\\unichat_proje\\backend\\data\\yokatlas\\snapshots\\4e95b32d39bb1ea7\\detail_111210024_0371b7522feabab06baea258.json"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "snapshot_id": "1f5a8faff95e3f8f0ab2e88c",
+  "snapshot_type": "detail_111210109",
+  "source_url": "https://yokatlas.yok.gov.tr/api/tercih-kilavuz/search",
+  "method": "POST",
+  "request_body": {
+    "filters": {
+      "kilavuzKodu": 111210109
+    },
+    "page": 0,
+    "size": 10,
+    "sortBy": "programKodu",
+    "sortDirection": "ASC"
+  },
+  "response_hash": "3abf0df6b2c2f72067f670b56f0799b3e9f0f7cb7c2561202adfc01a9b19a036",
+  "fetched_at": "2026-06-06T21:53:53Z",
+  "response_payload": {
+    "content": [
+      {
+        "osymKilavuzId": 94162,
+        "sinav": "YKS     ",
+        "yil": 2025,
+        "donem": "1       ",
+        "tabloTuru": "TABLO 4",
+        "birimId": 466237,
+        "birimHiyerarsi": "384577|466220",
+        "kilavuzKodu": 111210109,
+        "universiteId": 384577,
+        "universiteAdi": "GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
+        "uniIlKodu": 27,
+        "uniIlAdi": "GAZİANTEP",
+        "uniIlceKodu": 1841,
+        "uniIlceAdi": "ŞAHİNBEY",
+        "fymkId": 466220,
+        "fymkAdi": "İlahiyat Fakültesi",
+        "fymkIlKodu": 27,
+        "fymkIlAdi": "GAZİANTEP",
+        "fymkIlceKodu": 1841,
+        "fymkIlceAdi": "ŞAHİNBEY",
+        "birimAdi": "İlahiyat (Arapça)",
+        "birimGrupId": 3367,
+        "birimGrupAdi": "İlahiyat",
+        "birimTuruId": 46,
+        "birimTuruAdi": "LISANS",
+        "ogrenimTuruId": 86,
+        "ogrenimTuruAdi": "Örgün Öğretim",
+        "ogrenimSuresi": 4,
+        "puanTuru": "SÖZ",
+        "ogrenimDiliId": 174,
+        "ogrenimDiliAdi": "Arapça",
+        "bursOraniId": 0,
+        "kontenjan": 31,
+        "kontenjanObs": 1,
+        "kontenjanY34": 1,
+        "kontenjanDep": 3,
+        "gkY": 31,
+        "obkY": 1,
+        "y34": 1,
+        "dprmY": 3,
+        "prof": 1,
+        "doc": 10,
+        "dou": 16,
+        "ogrGor": 3,
+        "arGor": 15,
+        "kosul": "1,22,24,14",
+        "ilKodu": 27,
+        "ilAdi": "GAZİANTEP",
+        "ilceKodu": 1841,
+        "ilceAdi": "ŞAHİNBEY",
+        "universiteTuru": "DEVLET",
+        "eskiBirimId": 417499,
+        "eskiKilavuzKodu": 111210018,
+        "minPuan": 259.512,
+        "basariSirasi": 566326,
+        "kosulList": [
+          {
+            "1": "Bir mesleğe yönelik program uygulayan lise veya dengi meslek okulu çıkışlı adayların bu programla ilgili tercihlerini belirlemeden önce Tablo-6'yı dikkatle incelemeleri gerekir."
+          },
+          {
+            "14": "Öğretim dili Arapça'dır."
+          },
+          {
+            "22": "Bu programa kayıt yaptıran ve yabancı dil hazırlık sınıfına devam etmesine rağmen hazırlık sınıfını iki yıl içinde başarıyla tamamlayamayan öğrencilerin programdan ilişiği kesilir. Hazırlık sınıfında başarısız olarak programdan ilişiği kesilen öğrenciler, varsa kendi yükseköğretim kurumlarında öğretim dili Türkçe olan eşdeğer bir programa kayıt yaptırabilirler. Ancak bu öğrenciler, talep etmeleri durumunda Ölçme, Seçme ve Yerleştirme Merkezi Başkanlığı tarafından bir defaya mahsus olmak üzere kayıt yaptırdığı yıl itibarıyla, öğrencinin YKS puanlarından ilgili olan puanı, yerleştirileceği programa kayıt yaptırmak için aranan taban puanından düşük olmaması şartıyla öğretim dili Türkçe olan programlardan birine merkezî olarak yerleştirilebilirler."
+          },
+          {
+            "24": "Programın öğretim dilinde bir yıl süreli zorunlu Hazırlık Programı uygulanır, programın sonunda ilgili dilde yeterlik sınavını başaranların doğrudan birinci sınıfa kayıtları yapılır. Hazırlık sınıfı, öğretim süresi sütununda gösterilen yıllara dahil değildir.\r\r\nİlgili dil için üniversitece kabul edilen; a) Ulusal ve/veya Uluslararası yabancı dil sınavlarının birinden yine üniversitece belirlenen düzeyde başarılı olduğunu belgeleyen, b) Üniversitece öğretim yılı başında yapılacak ilgili dilde yeterlik sınavında başarılı olanlar doğrudan birinci sınıfa alınırlar. Öğrencilere, “Yükseköğretim Kurumlarında Yabancı Dil Öğretimi ve Yabancı Dille Öğretim Yapılmasında Uyulacak Esaslara İlişkin Yönetmelik\" hükümleri uygulanır."
+          }
+        ],
+        "minPuan1": "0",
+        "minPuan2": "268.07945",
+        "basariSirasi2": 620840,
+        "minPuan3": "282.53911",
+        "basariSirasi3": 490931
+      }
+    ],
+    "empty": false,
+    "first": true,
+    "last": true,
+    "number": 0,
+    "numberOfElements": 1,
+    "size": 10,
+    "totalElements": 1,
+    "totalPages": 1,
+    "yil": 2025,
+    "source": "snapshot"
+  }
+}
