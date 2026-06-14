@@ -7,6 +7,7 @@ Job Tanımları:
   - Duyurular:            Günde 1 kez (saat 08:00)
   - Yemekhane menüsü:     Günde 1 kez (saat 07:00, food_menus upsert)
   - Akademik takvim:      Yılda 1 kez eğitim-öğretim yılı başında (1 Eylül 05:30)
+  - Birim yönetimi:       Dönem başlarında (1 Şubat ve 1 Eylül, 02:30)
   - Akademik kadro:       Dönem başlarında (1 Şubat ve 1 Eylül, 03:00)
   - Aday öğrenci portalı: Dönem başlarında (1 Şubat ve 1 Eylül, 04:00)
   - Tam yeniden indeks:   Ayda 1 kez (ayın 1'i, 02:00)
@@ -23,6 +24,7 @@ Kullanım:
     python -m scrapers.scheduler --run-now duyuru   # Belirli job'ı hemen çalıştır
     python -m scrapers.scheduler --run-now yemek
     python -m scrapers.scheduler --run-now akademik_takvim
+    python -m scrapers.scheduler --run-now yonetim
     python -m scrapers.scheduler --run-now kadro
     python -m scrapers.scheduler --run-now aday_ogrenci
     python -m scrapers.scheduler --run-now full_reindex
@@ -62,6 +64,10 @@ KADRO_UPDATE_MONTHS = "2,9"
 KADRO_UPDATE_DAY = 1
 KADRO_UPDATE_HOUR = 3
 KADRO_UPDATE_MINUTE = 0
+UNIT_MANAGEMENT_UPDATE_MONTHS = "2,9"
+UNIT_MANAGEMENT_UPDATE_DAY = 1
+UNIT_MANAGEMENT_UPDATE_HOUR = 2
+UNIT_MANAGEMENT_UPDATE_MINUTE = 30
 
 
 def _acquire_pid_lock() -> bool:
@@ -285,6 +291,52 @@ def job_kadro_update():
         })
 
 
+def job_unit_management_update():
+    """GİBTÜ BirimYonetim yönetim bilgilerini dönem başında güncelleyen job."""
+    start = time.time()
+    job_name = "unit_management_update"
+    logger.info("🏛️ Job başlıyor: %s", job_name)
+
+    try:
+        from scrapers.unit_management_scraper import UnitManagementScraper
+
+        scraper = UnitManagementScraper()
+        result = scraper.scrape(dry_run=False, write_db=True)
+
+        duration = time.time() - start
+        _append_job_log({
+            "job": job_name,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "success": result.success,
+            "processed_urls": result.validation_report.get("processed_url_count"),
+            "groups": result.validation_report.get("group_count"),
+            "members": result.validation_report.get("member_count"),
+            "needs_review": len(result.validation_report.get("needs_review_records") or []),
+            "errors": result.errors,
+            "duration_seconds": round(duration, 1),
+        })
+
+        logger.info(
+            "✅ Job tamamlandı: %s — URL=%s, grup=%s, kişi=%s, %.1fs",
+            job_name,
+            result.validation_report.get("processed_url_count"),
+            result.validation_report.get("group_count"),
+            result.validation_report.get("member_count"),
+            duration,
+        )
+
+    except Exception as e:
+        duration = time.time() - start
+        logger.error("❌ Job hatası: %s — %s", job_name, e)
+        _append_job_log({
+            "job": job_name,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "success": False,
+            "error": str(e),
+            "duration_seconds": round(duration, 1),
+        })
+
+
 def job_candidate_portal_update():
     """Aday öğrenci portalını dönem başlarında güncelleyen job."""
     start = time.time()
@@ -372,6 +424,10 @@ def job_full_reindex():
                     "skipped": True,
                     "reason": "YÖK Akademik kadro yalnız dönem başı job'ında güncellenir.",
                 },
+                "yonetim": {
+                    "skipped": True,
+                    "reason": "Birim yönetim bilgileri yalnız dönem başı job'ında güncellenir.",
+                },
             },
             "duration_seconds": round(duration, 1),
         })
@@ -391,6 +447,17 @@ def job_full_reindex():
             "error": str(e),
             "duration_seconds": round(duration, 1),
         })
+
+
+JOB_RUNNERS = {
+    "duyuru": job_duyuru_update,
+    "yemek": job_yemek_update,
+    "akademik_takvim": job_academic_calendar_update,
+    "yonetim": job_unit_management_update,
+    "kadro": job_kadro_update,
+    "aday_ogrenci": job_candidate_portal_update,
+    "full_reindex": job_full_reindex,
+}
 
 
 # ── Scheduler Kurulumu ──
@@ -441,7 +508,22 @@ def create_scheduler():
         misfire_grace_time=86400,
     )
 
-    # 4. Akademik kadro: Dönem başlarında (1 Şubat ve 1 Eylül, 03:00)
+    # 4. Birim yönetimi: Dönem başlarında (1 Şubat ve 1 Eylül, 02:30)
+    scheduler.add_job(
+        job_unit_management_update,
+        trigger=CronTrigger(
+            month=UNIT_MANAGEMENT_UPDATE_MONTHS,
+            day=UNIT_MANAGEMENT_UPDATE_DAY,
+            hour=UNIT_MANAGEMENT_UPDATE_HOUR,
+            minute=UNIT_MANAGEMENT_UPDATE_MINUTE,
+        ),
+        id="unit_management_update",
+        name="Birim Yönetim Dönem Başı Güncelleme",
+        replace_existing=True,
+        misfire_grace_time=14400,
+    )
+
+    # 5. Akademik kadro: Dönem başlarında (1 Şubat ve 1 Eylül, 03:00)
     scheduler.add_job(
         job_kadro_update,
         trigger=CronTrigger(
@@ -456,7 +538,7 @@ def create_scheduler():
         misfire_grace_time=14400,  # 4 saat tolerance
     )
 
-    # 5. Aday öğrenci portalı: Dönem başlarında (1 Şubat ve 1 Eylül, 04:00)
+    # 6. Aday öğrenci portalı: Dönem başlarında (1 Şubat ve 1 Eylül, 04:00)
     scheduler.add_job(
         job_candidate_portal_update,
         trigger=CronTrigger(month="2,9", day=1, hour=4, minute=0),
@@ -466,7 +548,7 @@ def create_scheduler():
         misfire_grace_time=7200,
     )
 
-    # 6. Tam yeniden indeksleme: Ayda 1 kez (ayın 1'i, 02:00)
+    # 7. Tam yeniden indeksleme: Ayda 1 kez (ayın 1'i, 02:00)
     scheduler.add_job(
         job_full_reindex,
         trigger=CronTrigger(day=1, hour=2, minute=0),
@@ -492,6 +574,8 @@ def list_jobs(scheduler=None):
          "schedule": "Her gün 07:00", "mode": "food_menus upsert"},
         {"id": "academic_calendar_update", "name": "Akademik Takvim",
          "schedule": "Her yıl 1 Eylül 05:30", "mode": "ana URL hash kontrolü + değişen kaynak parse"},
+        {"id": "unit_management_update", "name": "Birim Yönetim",
+         "schedule": "1 Şubat ve 1 Eylül 02:30", "mode": "GİBTÜ BirimYonetim allowlist DB-first"},
         {"id": "kadro_update", "name": "Akademik Kadro",
          "schedule": "1 Şubat ve 1 Eylül 03:00", "mode": "YÖK Akademik filtered bölüm/program staff"},
         {"id": "candidate_portal_update", "name": "Aday Öğrenci Portalı",
@@ -529,21 +613,12 @@ def list_jobs(scheduler=None):
 
 def run_job_now(job_name: str):
     """Belirli bir job'ı hemen çalıştırır."""
-    job_map = {
-        "duyuru": job_duyuru_update,
-        "yemek": job_yemek_update,
-        "akademik_takvim": job_academic_calendar_update,
-        "kadro": job_kadro_update,
-        "aday_ogrenci": job_candidate_portal_update,
-        "full_reindex": job_full_reindex,
-    }
-
-    if job_name not in job_map:
-        logger.error("Bilinmeyen job: %s. Geçerli: %s", job_name, ", ".join(job_map.keys()))
+    if job_name not in JOB_RUNNERS:
+        logger.error("Bilinmeyen job: %s. Geçerli: %s", job_name, ", ".join(JOB_RUNNERS.keys()))
         return
 
     logger.info("⚡ Job hemen çalıştırılıyor: %s", job_name)
-    job_map[job_name]()
+    JOB_RUNNERS[job_name]()
 
 
 # ── CLI ───────────────────────────────────────────────────────────────────────
@@ -555,7 +630,7 @@ def main():
     parser.add_argument("--list", action="store_true",
                         help="Tanımlı job'ları listele")
     parser.add_argument("--run-now", type=str, default=None,
-                        help="Job'ı hemen çalıştır (duyuru/yemek/akademik_takvim/kadro/aday_ogrenci/full_reindex)")
+                        help="Job'ı hemen çalıştır (duyuru/yemek/akademik_takvim/yonetim/kadro/aday_ogrenci/full_reindex)")
     parser.add_argument("--start", action="store_true",
                         help="Scheduler'ı başlat (arka planda çalışır)")
     args = parser.parse_args()

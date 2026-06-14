@@ -458,6 +458,118 @@ CREATE TABLE IF NOT EXISTS academic_unit_management_snapshots (
     UNIQUE (unit_id, scrape_run_id)
 );
 
+-- GİBTÜ BirimYonetim.aspx yapılandırılmış yönetim bilgileri
+CREATE TABLE IF NOT EXISTS management_scrape_runs (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    scrape_run_id TEXT NOT NULL UNIQUE,
+    scraper_name TEXT NOT NULL,
+    metadata_version TEXT NOT NULL,
+    started_at TIMESTAMP,
+    finished_at TIMESTAMP,
+    status TEXT NOT NULL,
+    validation_status TEXT NOT NULL DEFAULT 'unknown',
+    target_url_count INTEGER NOT NULL DEFAULT 0,
+    processed_url_count INTEGER NOT NULL DEFAULT 0,
+    group_count INTEGER NOT NULL DEFAULT 0,
+    member_count INTEGER NOT NULL DEFAULT 0,
+    needs_review_count INTEGER NOT NULL DEFAULT 0,
+    config JSONB NOT NULL DEFAULT '{}'::jsonb,
+    summary JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS organizational_units (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    unit_name TEXT NOT NULL,
+    unit_name_normalized TEXT NOT NULL,
+    unit_type TEXT NOT NULL,
+    source_url TEXT NOT NULL UNIQUE,
+    source_birim_id INTEGER,
+    aliases JSONB NOT NULL DEFAULT '[]'::jsonb,
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    last_checked_at TIMESTAMP,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_organizational_units_source_birim_id
+ON organizational_units(source_birim_id)
+WHERE source_birim_id IS NOT NULL;
+
+CREATE INDEX IF NOT EXISTS idx_organizational_units_normalized
+ON organizational_units(unit_name_normalized);
+
+CREATE TABLE IF NOT EXISTS management_snapshots (
+    snapshot_id TEXT PRIMARY KEY,
+    scrape_run_id TEXT NOT NULL REFERENCES management_scrape_runs(scrape_run_id) ON DELETE CASCADE,
+    unit_id UUID REFERENCES organizational_units(id) ON DELETE SET NULL,
+    source_url TEXT NOT NULL,
+    http_status INTEGER,
+    content_hash TEXT NOT NULL,
+    fetched_at TIMESTAMP,
+    parse_status TEXT NOT NULL DEFAULT 'unknown',
+    group_count INTEGER NOT NULL DEFAULT 0,
+    member_count INTEGER NOT NULL DEFAULT 0,
+    raw_text TEXT,
+    raw_html TEXT,
+    validation_report JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_management_snapshots_run
+ON management_snapshots(scrape_run_id);
+
+CREATE TABLE IF NOT EXISTS unit_management_groups (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    unit_id UUID NOT NULL REFERENCES organizational_units(id) ON DELETE CASCADE,
+    snapshot_id TEXT REFERENCES management_snapshots(snapshot_id) ON DELETE SET NULL,
+    group_title TEXT NOT NULL,
+    group_key TEXT NOT NULL,
+    group_order INTEGER NOT NULL,
+    source_url TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (unit_id, source_url, group_key, group_order)
+);
+
+CREATE INDEX IF NOT EXISTS idx_unit_management_groups_unit
+ON unit_management_groups(unit_id, group_key);
+
+CREATE TABLE IF NOT EXISTS unit_management_members (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    unit_id UUID NOT NULL REFERENCES organizational_units(id) ON DELETE CASCADE,
+    group_id UUID NOT NULL REFERENCES unit_management_groups(id) ON DELETE CASCADE,
+    snapshot_id TEXT REFERENCES management_snapshots(snapshot_id) ON DELETE SET NULL,
+    stable_member_key TEXT NOT NULL,
+    full_name TEXT,
+    full_name_normalized TEXT NOT NULL DEFAULT '',
+    academic_title TEXT,
+    role TEXT,
+    phone_extension TEXT,
+    email TEXT,
+    profile_url TEXT,
+    source_url TEXT NOT NULL,
+    member_order INTEGER NOT NULL DEFAULT 0,
+    page_order INTEGER NOT NULL DEFAULT 0,
+    raw_text TEXT,
+    scrape_time TIMESTAMP,
+    content_hash TEXT NOT NULL,
+    parse_status TEXT NOT NULL DEFAULT 'unknown',
+    validation_issues JSONB NOT NULL DEFAULT '[]'::jsonb,
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (unit_id, group_id, stable_member_key)
+);
+
+CREATE INDEX IF NOT EXISTS idx_unit_management_members_unit_active
+ON unit_management_members(unit_id, is_active, parse_status);
+
+CREATE INDEX IF NOT EXISTS idx_unit_management_members_group_order
+ON unit_management_members(group_id, page_order);
+
 CREATE INDEX IF NOT EXISTS idx_yokatlas_program_years_program_code_year
 ON yokatlas_program_years(program_code, data_year);
 
