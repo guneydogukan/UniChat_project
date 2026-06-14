@@ -9,6 +9,7 @@ import unittest
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 
 from app.services.response_validator import (  # noqa: E402
+    ACADEMIC_STAFF_RAG_FALLBACK_RESPONSE,
     LANGUAGE_FALLBACK_RESPONSE,
     PLACEHOLDER_EMAIL,
     PLACEHOLDER_PHONE,
@@ -83,12 +84,53 @@ class ResponseLanguageConsistencyTests(unittest.TestCase):
 
         self.assertEqual(result, LANGUAGE_FALLBACK_RESPONSE)
 
+    def test_portekizce_baskin_yanit_guvenli_turkce_fallback_doner(self):
+        result = validate_response(
+            (
+                "Os professores do departamento segundo os documentos da universidade "
+                "fornecem informacoes sobre programas academicos."
+            ),
+            [],
+        )
+
+        self.assertEqual(result, LANGUAGE_FALLBACK_RESPONSE)
+
     def test_turkce_yanit_degisiklik_yapilmeden_kalir(self):
         response = "GİBTÜ aday öğrencileri için kampüs olanakları ve yurt bilgileri kaynaklarda yer almaktadır."
 
         result = enforce_turkish_response(response)
 
         self.assertEqual(result, response)
+
+
+class AcademicStaffResponseValidatorTests(unittest.TestCase):
+    def test_akademik_kadro_rag_yayin_tez_paragrafi_engellenir(self):
+        sources = [
+            {
+                "content": "Bilgisayar Mühendisliği Bölümü akademik kadro kaynağı.",
+                "category": "akademik_kadro",
+                "doc_kind": "yok_akademik_staff",
+            }
+        ]
+
+        result = validate_response(
+            "Bilgisayar alanındaki yayınlar, tezler, makaleler ve DOI bilgileri şöyledir.",
+            sources,
+        )
+
+        self.assertEqual(result, ACADEMIC_STAFF_RAG_FALLBACK_RESPONSE)
+
+    def test_akademik_kadro_rag_yonetim_tahmini_engellenir(self):
+        sources = [
+            {
+                "content": "Bilgisayar Mühendisliği Bölümü akademik kadro kaynağı.",
+                "meta": {"category": "akademik_kadro", "doc_kind": "yok_akademik_staff"},
+            }
+        ]
+
+        result = validate_response("Bu bölümün dekanı Ali Veli olarak görünmektedir.", sources)
+
+        self.assertEqual(result, ACADEMIC_STAFF_RAG_FALLBACK_RESPONSE)
 
 
 if __name__ == "__main__":

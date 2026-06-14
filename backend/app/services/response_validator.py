@@ -80,6 +80,11 @@ LANGUAGE_FALLBACK_RESPONSE = (
     "Bu konuda elimdeki belgelerden Türkçe ve güvenilir bir cevap oluşturamadım. "
     "Detaylı bilgi için ilgili birime başvurmanızı öneriyorum."
 )
+ACADEMIC_STAFF_RAG_FALLBACK_RESPONSE = (
+    "Akademik kadro soruları ÜniChat DB'deki YÖK Akademik kaynaklı bölüm/program "
+    "kadro kayıtlarından yanıtlanmalıdır. Bu konuda güvenilir DB-first akademik kadro "
+    "cevabı oluşturulamadığı için RAG metniyle tahmini yanıt verilmedi."
+)
 
 ENGLISH_TO_TURKISH_PHRASES: tuple[tuple[re.Pattern[str], str], ...] = (
     (re.compile(r"\bbased on (?:the )?(?:provided )?documents[:,]?", re.IGNORECASE), "Belgelerdeki bilgilere göre:"),
@@ -103,6 +108,13 @@ ENGLISH_SIGNAL_WORDS: frozenset[str] = frozenset({
     "program", "programs", "campus", "library", "dormitory", "international",
 })
 
+PORTUGUESE_SIGNAL_WORDS: frozenset[str] = frozenset({
+    "os", "as", "um", "uma", "para", "com", "sobre", "segundo",
+    "documentos", "universidade", "departamento", "professores",
+    "professor", "informacao", "informacoes", "contato", "fonte",
+    "fontes", "alunos", "programa", "programas", "academico",
+})
+
 TURKISH_SIGNAL_WORDS: frozenset[str] = frozenset({
     "ve", "veya", "ile", "için", "icin", "bu", "şu", "su", "öğrenci",
     "ogrenci", "üniversite", "universite", "bölüm", "bolum", "birim",
@@ -110,6 +122,15 @@ TURKISH_SIGNAL_WORDS: frozenset[str] = frozenset({
     "kaynak", "iletişim", "iletisim", "detaylı", "detayli", "bulunuyor",
     "bulunmuyor", "başvur", "basvur", "öneriyorum", "oneriyorum",
 })
+
+ACADEMIC_STAFF_PUBLICATION_OR_THESIS_RE = re.compile(
+    r"\b("
+    r"tez\w*|thesis|yayın\w*|yayin\w*|publication\w*|makale\w*|article\w*|journal\w*|"
+    r"doi|abstract|anahtar\s+kelime\w*|temel\s+alan|bilim\s+alan|öğrenim\s+bilg\w*|ogrenim\s+bilg\w*|"
+    r"dekan\w*|bölüm\s+başkan\w*|bolum\s+baskan\w*|rektör\w*|rektor\w*"
+    r")\b",
+    re.IGNORECASE,
+)
 
 MONTH_NAMES_TR = {
     1: "Ocak",
@@ -214,6 +235,36 @@ def _is_academic_calendar_source(source_doc: dict) -> bool:
         meta.get("doc_kind") == "academic_calendar_event"
         or meta.get("category") == "academic_calendar"
         or source_doc.get("category") == "academic_calendar"
+    )
+
+
+def _is_academic_staff_source(source_doc: dict) -> bool:
+    meta = source_doc.get("meta") or {}
+    category = meta.get("category") or source_doc.get("category")
+    doc_kind = meta.get("doc_kind") or source_doc.get("doc_kind")
+    return (
+        category == "akademik_kadro"
+        or doc_kind in {
+            "yok_akademik_staff",
+            "yok_akademik_profile",
+            "academic_unit_clarification",
+            "akademik_birim",
+            "personel",
+        }
+    )
+
+
+def _validate_academic_staff_rag_response(response: str, source_docs: list[dict]) -> tuple[str, list[str]]:
+    """Akademik kadro RAG çıktısında yayın/tez/yönetim tahmini sinyallerini keser."""
+    if not any(_is_academic_staff_source(doc) for doc in source_docs):
+        return response, []
+
+    if not ACADEMIC_STAFF_PUBLICATION_OR_THESIS_RE.search(response):
+        return response, []
+
+    return (
+        ACADEMIC_STAFF_RAG_FALLBACK_RESPONSE,
+        ["Akademik kadro RAG yanıtında yayın/tez/yönetim tahmini sinyali engellendi"],
     )
 
 
@@ -374,9 +425,12 @@ def _apply_turkish_phrase_fixes(response: str) -> str:
 
 
 def _language_signal_counts(response: str) -> tuple[int, int]:
-    """Basit kelime sinyalleriyle İngilizce/Türkçe ağırlığı ölçer."""
+    """Basit kelime sinyalleriyle yabancı dil/Türkçe ağırlığı ölçer."""
     words = [word.lower() for word in WORD_PATTERN.findall(response)]
-    english_count = sum(1 for word in words if word in ENGLISH_SIGNAL_WORDS)
+    english_count = sum(
+        1 for word in words
+        if word in ENGLISH_SIGNAL_WORDS or word in PORTUGUESE_SIGNAL_WORDS
+    )
     turkish_count = sum(1 for word in words if word in TURKISH_SIGNAL_WORDS)
     turkish_count += sum(1 for char in response if char in "çğıöşüÇĞİÖŞÜ")
     return english_count, turkish_count
@@ -390,11 +444,11 @@ def enforce_turkish_response(response: str) -> str:
     fixed = _apply_turkish_phrase_fixes(response)
     english_count, turkish_count = _language_signal_counts(fixed)
 
-    # Güçlü İngilizce baskınlığı varsa içerik uydurarak çevrilmez; güvenli Türkçe fallback döner.
+    # Güçlü Türkçe dışı baskınlık varsa içerik uydurarak çevrilmez; güvenli Türkçe fallback döner.
     if english_count >= 5 and english_count > turkish_count:
         logger.warning(
-            "🌐 Dil tutarlılığı kontrolü İngilizce baskın yanıtı güvenli Türkçe fallback ile değiştirdi "
-            "(english=%d, turkish=%d).",
+            "🌐 Dil tutarlılığı kontrolü Türkçe dışı baskın yanıtı güvenli Türkçe fallback ile değiştirdi "
+            "(foreign=%d, turkish=%d).",
             english_count,
             turkish_count,
         )
@@ -506,7 +560,11 @@ def validate_response(response: str, source_docs: list[dict]) -> str:
     cleaned, academic_changes = _validate_academic_calendar_dates(cleaned, source_docs)
     changes.extend(academic_changes)
 
-    # 6. Dil tutarlılığı kontrolü
+    # 6. Akademik kadro RAG güvenlik kontrolü
+    cleaned, staff_changes = _validate_academic_staff_rag_response(cleaned, source_docs)
+    changes.extend(staff_changes)
+
+    # 7. Dil tutarlılığı kontrolü
     language_checked = enforce_turkish_response(cleaned)
     if language_checked != cleaned:
         changes.append("Dil tutarlılığı düzeltildi")
