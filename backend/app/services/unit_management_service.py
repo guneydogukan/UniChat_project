@@ -35,16 +35,100 @@ UNIT_SUFFIXES: tuple[str, ...] = (
     " yuksekokulu",
 )
 
+FACULTY_UNIT_TYPES: frozenset[str] = frozenset({"faculty", "fakulte"})
+VOCATIONAL_SCHOOL_UNIT_TYPES: frozenset[str] = frozenset({"vocational school", "meslek yuksekokulu", "myo"})
+
 STATIC_UNIT_ALIASES: dict[str, tuple[str, ...]] = {
-    "ilahiyat fakultesi": ("ilahiyat",),
-    "muhendislik ve doga bilimleri fakultesi": ("mdbf", "muhendislik", "muhendislik fakultesi", "muhendislik ve doga bilimleri"),
-    "saglik bilimleri fakultesi": ("sbf", "saglik bilimleri"),
-    "tip fakultesi": ("tip",),
-    "iktisadi idari ve sosyal bilimler fakultesi": ("iisbf", "iktisadi idari sosyal bilimler"),
-    "guzel sanatlar tasarim ve mimarlik fakultesi": ("gstm", "gsmf", "guzel sanatlar", "mimarlik fakultesi"),
-    "saglik hizmetleri meslek yuksekokulu": ("shmyo", "saglik hizmetleri myo", "saglik hizmetleri"),
-    "teknik bilimler meslek yuksekokulu": ("tbmyo", "teknik bilimler myo", "teknik bilimler"),
-    "yabanci diller yuksekokulu": ("ydyo", "yabanci diller"),
+    "ilahiyat fakultesi": ("if", "i f", "ilahiyat", "ilahiyat fak", "ilahiyat fakultesi"),
+    "muhendislik ve doga bilimleri fakultesi": (
+        "mdbf",
+        "m d b f",
+        "mdb",
+        "m d b",
+        "mdb fak",
+        "muh doga bil",
+        "muhendislik",
+        "muhendislik fak",
+        "muhendislik fakultesi",
+        "muhendislik doga bilimleri",
+        "muhendislik doga bilimleri fak",
+        "muhendislik ve doga bilimleri",
+        "muhendislik ve doga bilimleri fak",
+        "doga bilimleri",
+    ),
+    "saglik bilimleri fakultesi": (
+        "sbf",
+        "s b f",
+        "saglik bilimleri",
+        "saglik bilimleri fak",
+        "saglik bilimleri fakultesi",
+    ),
+    "tip fakultesi": ("tf", "t f", "tip", "tip fak", "tip fakultesi"),
+    "iktisadi idari ve sosyal bilimler fakultesi": (
+        "iisbf",
+        "i i s b f",
+        "iibf",
+        "i i b f",
+        "iisbf fak",
+        "iibf fak",
+        "iktisadi",
+        "iktisadi idari",
+        "iktisadi ve idari",
+        "iktisadi ve idari bilimler",
+        "iktisadi idari sosyal bilimler",
+        "iktisadi idari ve sosyal bilimler",
+        "idari sosyal bilimler",
+        "sosyal bilimler fakultesi",
+    ),
+    "guzel sanatlar tasarim ve mimarlik fakultesi": (
+        "gstm",
+        "g s t m",
+        "gstmf",
+        "g s t m f",
+        "gsmf",
+        "g s m f",
+        "gsf",
+        "g s f",
+        "guzel sanatlar",
+        "guzel sanatlar fak",
+        "guzel sanatlar fakultesi",
+        "guzel sanatlar tasarim",
+        "guzel sanatlar tasarim mimarlik",
+        "sanat tasarim",
+        "tasarim",
+        "tasarim fakultesi",
+        "tasarim mimarlik",
+        "mimarlik",
+        "mimarlik fakultesi",
+    ),
+    "saglik hizmetleri meslek yuksekokulu": (
+        "shmyo",
+        "s h m y o",
+        "sh myo",
+        "saglik myo",
+        "saglik hizmetleri",
+        "saglik hizmetleri myo",
+        "saglik hizmetleri meslek yuksekokulu",
+    ),
+    "teknik bilimler meslek yuksekokulu": (
+        "tbmyo",
+        "t b m y o",
+        "tb myo",
+        "teknik myo",
+        "teknik bilimler",
+        "teknik bilimler myo",
+        "teknik bilimler meslek yuksekokulu",
+    ),
+    "yabanci diller yuksekokulu": (
+        "ydyo",
+        "y d y o",
+        "yd yo",
+        "yabanci dil",
+        "yabanci diller",
+        "yabanci diller yo",
+        "yabanci diller y o",
+        "yabanci diller yuksekokulu",
+    ),
 }
 
 
@@ -64,7 +148,7 @@ class UnitManagementService:
             if not unit:
                 return self._unit_required_response()
 
-            requested_filter = self._requested_filter(normalized_question)
+            requested_filter = self._requested_filter(normalized_question, unit)
             records = self._repository.get_management_members(str(unit["id"]))
             records = self._dedup_records(records)
             filtered = self._filter_records(records, requested_filter)
@@ -109,7 +193,7 @@ class UnitManagementService:
         for alias in aliases:
             if not alias:
                 continue
-            if len(alias) <= 4:
+            if len(alias) <= 4 and " " not in alias:
                 if alias in question_tokens:
                     best = max(best, 120 + len(alias))
                 continue
@@ -130,16 +214,27 @@ class UnitManagementService:
         aliases.update(STATIC_UNIT_ALIASES.get(normalized_name, ()))
         return tuple(alias for alias in aliases if alias)
 
-    @staticmethod
-    def _requested_filter(normalized_question: str) -> dict[str, Any]:
+    def _requested_filter(self, normalized_question: str, unit: dict[str, Any]) -> dict[str, Any]:
         if "yonetim kurulu" in normalized_question:
-            return {"label": "yönetim kurulu", "group_includes": ("yonetim kurulu",)}
+            return self._management_board_filter(unit)
         if "fakulte kurulu" in normalized_question:
-            return {"label": "fakülte kurulu", "group_includes": ("fakulte kurulu",)}
+            if self._is_faculty(unit):
+                return {
+                    "label": "fakülte kurulu",
+                    "group_includes": ("fakulte kurulu",),
+                    "group_excludes": ("yonetim kurulu",),
+                }
+            return self._management_board_filter(unit)
         if "yuksekokul kurulu" in normalized_question:
+            if self._is_faculty(unit):
+                return {
+                    "label": "fakülte kurulu",
+                    "group_includes": ("fakulte kurulu",),
+                    "group_excludes": ("yonetim kurulu",),
+                }
             return {
-                "label": "yüksekokul kurulu",
-                "group_includes": ("yuksekokul kurulu",),
+                "label": self._school_council_label(unit),
+                "group_includes": ("yuksekokul kurulu", "meslek yuksekokulu kurulu", "myo kurulu"),
                 "group_excludes": ("yonetim kurulu",),
             }
         if "bolum baskan" in normalized_question:
@@ -149,40 +244,73 @@ class UnitManagementService:
                 "role_includes": ("bolum baskan",),
             }
         if "dekan yard" in normalized_question or "dekan yrd" in normalized_question:
-            return {
-                "label": "dekan yardımcıları",
-                "group_includes": ("dekan yardim", "dekan yrd"),
-                "role_includes": ("dekan yardim", "dekan yrd"),
-            }
+            return self._assistant_role_filter(unit)
         if "dekan" in normalized_question:
+            return self._top_role_filter(unit)
+        if "mudur yard" in normalized_question or "mudur yrd" in normalized_question:
+            return self._assistant_role_filter(unit)
+        if "mudur" in normalized_question:
+            return self._top_role_filter(unit)
+        if "sekreter" in normalized_question:
             return {
-                "label": "dekanlık",
+                "label": self._secretary_label(unit),
+                "group_includes": ("sekreter",),
+                "role_includes": ("sekreter",),
+            }
+        return {"label": "yönetim bilgileri"}
+
+    def _top_role_filter(self, unit: dict[str, Any]) -> dict[str, Any]:
+        if self._is_faculty(unit):
+            return {
+                "label": "dekanı",
                 "group_includes": ("dekan", "dekanlik"),
                 "role_includes": ("dekan",),
                 "group_excludes": ("dekan yardim", "dekan yrd"),
                 "role_excludes": ("yardim", "yrd"),
             }
-        if "mudur yard" in normalized_question or "mudur yrd" in normalized_question:
+        return {
+            "label": "müdürü",
+            "group_includes": ("mudur",),
+            "role_includes": ("mudur",),
+            "group_excludes": ("mudur yardim", "mudur yrd"),
+            "role_excludes": ("yardim", "yrd"),
+        }
+
+    def _assistant_role_filter(self, unit: dict[str, Any]) -> dict[str, Any]:
+        if self._is_faculty(unit):
             return {
-                "label": "müdür yardımcıları",
-                "group_includes": ("mudur yardim", "mudur yrd"),
-                "role_includes": ("mudur yardim", "mudur yrd"),
+                "label": "dekan yardımcıları",
+                "group_includes": ("dekan yardim", "dekan yrd"),
+                "role_includes": ("dekan yardim", "dekan yrd"),
             }
-        if "mudur" in normalized_question:
-            return {
-                "label": "müdürlük",
-                "group_includes": ("mudur",),
-                "role_includes": ("mudur",),
-                "group_excludes": ("mudur yardim", "mudur yrd"),
-                "role_excludes": ("yardim", "yrd"),
-            }
-        if "sekreter" in normalized_question:
-            return {
-                "label": "sekreterlik",
-                "group_includes": ("sekreter",),
-                "role_includes": ("sekreter",),
-            }
-        return {"label": "yönetim bilgileri"}
+        return {
+            "label": "müdür yardımcıları",
+            "group_includes": ("mudur yardim", "mudur yrd"),
+            "role_includes": ("mudur yardim", "mudur yrd"),
+        }
+
+    def _management_board_filter(self, unit: dict[str, Any]) -> dict[str, Any]:
+        if self._is_faculty(unit):
+            return {"label": "fakülte yönetim kurulu", "group_includes": ("yonetim kurulu",)}
+        return {"label": "yönetim kurulu", "group_includes": ("yonetim kurulu",)}
+
+    def _secretary_label(self, unit: dict[str, Any]) -> str:
+        return "sekreteri"
+
+    def _school_council_label(self, unit: dict[str, Any]) -> str:
+        if self._is_vocational_school(unit):
+            return "MYO kurulu"
+        return "yüksekokul kurulu"
+
+    @staticmethod
+    def _unit_type(unit: dict[str, Any]) -> str:
+        return normalize_for_match(str(unit.get("unit_type") or ""))
+
+    def _is_faculty(self, unit: dict[str, Any]) -> bool:
+        return self._unit_type(unit) in FACULTY_UNIT_TYPES
+
+    def _is_vocational_school(self, unit: dict[str, Any]) -> bool:
+        return self._unit_type(unit) in VOCATIONAL_SCHOOL_UNIT_TYPES
 
     def _filter_records(self, records: list[dict[str, Any]], requested_filter: dict[str, Any]) -> list[dict[str, Any]]:
         if not requested_filter.get("group_includes") and not requested_filter.get("role_includes"):

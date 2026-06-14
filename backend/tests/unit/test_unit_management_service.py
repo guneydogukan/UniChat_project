@@ -15,6 +15,14 @@ class FakeUnitManagementRepository:
     def __init__(self) -> None:
         self.units = [
             {
+                "id": "ilahiyat",
+                "unit_name": "İlahiyat Fakültesi",
+                "unit_name_normalized": "ilahiyat fakultesi",
+                "unit_type": "faculty",
+                "source_url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=11",
+                "aliases": ["if"],
+            },
+            {
                 "id": "mdbf",
                 "unit_name": "Mühendislik ve Doğa Bilimleri Fakültesi",
                 "unit_name_normalized": "muhendislik ve doga bilimleri fakultesi",
@@ -31,6 +39,38 @@ class FakeUnitManagementRepository:
                 "aliases": ["tip"],
             },
             {
+                "id": "sbf",
+                "unit_name": "Sağlık Bilimleri Fakültesi",
+                "unit_name_normalized": "saglik bilimleri fakultesi",
+                "unit_type": "faculty",
+                "source_url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=21",
+                "aliases": ["sbf"],
+            },
+            {
+                "id": "iisbf",
+                "unit_name": "İktisadi İdari ve Sosyal Bilimler Fakültesi",
+                "unit_name_normalized": "iktisadi idari ve sosyal bilimler fakultesi",
+                "unit_type": "faculty",
+                "source_url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=22",
+                "aliases": ["iisbf"],
+            },
+            {
+                "id": "gstm",
+                "unit_name": "Güzel Sanatlar Tasarım ve Mimarlık Fakültesi",
+                "unit_name_normalized": "guzel sanatlar tasarim ve mimarlik fakultesi",
+                "unit_type": "faculty",
+                "source_url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=24",
+                "aliases": ["gstm"],
+            },
+            {
+                "id": "shmyo",
+                "unit_name": "Sağlık Hizmetleri Meslek Yüksekokulu",
+                "unit_name_normalized": "saglik hizmetleri meslek yuksekokulu",
+                "unit_type": "vocational_school",
+                "source_url": "https://www.gibtu.edu.tr/birimyonetim.aspx?id=31",
+                "aliases": ["shmyo"],
+            },
+            {
                 "id": "tbmyo",
                 "unit_name": "Teknik Bilimler Meslek Yüksekokulu",
                 "unit_name_normalized": "teknik bilimler meslek yuksekokulu",
@@ -38,8 +78,30 @@ class FakeUnitManagementRepository:
                 "source_url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=36",
                 "aliases": ["tbmyo", "teknik bilimler myo"],
             },
+            {
+                "id": "ydyo",
+                "unit_name": "Yabancı Diller Yüksekokulu",
+                "unit_name_normalized": "yabanci diller yuksekokulu",
+                "unit_type": "school",
+                "source_url": "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=34",
+                "aliases": ["ydyo"],
+            },
         ]
         self.members = {
+            "ilahiyat": [
+                self._member(
+                    "if1",
+                    "ilahiyat",
+                    "Dekanlık",
+                    "dekanlik",
+                    "Mahsum AYTEPE",
+                    "Prof. Dr.",
+                    "Dekan",
+                    "2100",
+                    "mahsum.aytepe@gibtu.edu.tr",
+                    1,
+                ),
+            ],
             "mdbf": [
                 self._member(
                     "m1",
@@ -141,7 +203,128 @@ class FakeUnitManagementRepository:
                     parse_status="partial",
                 ),
             ],
-            "tbmyo": [],
+            "sbf": [
+                self._member(
+                    "sbf1",
+                    "sbf",
+                    "Dekan",
+                    "dekan",
+                    "Reşit YILDIZ",
+                    "Prof. Dr.",
+                    "Dekan V.",
+                    "2401",
+                    "resit.yildiz@gibtu.edu.tr",
+                    1,
+                ),
+            ],
+            "iisbf": [
+                self._member(
+                    "iisbf1",
+                    "iisbf",
+                    "Dekan",
+                    "dekan",
+                    "Feridun BİLGİN",
+                    "Prof. Dr.",
+                    "Dekan V.",
+                    "0000",
+                    "fbilgin@gibtu.edu.tr",
+                    1,
+                    parse_status="partial",
+                ),
+            ],
+            "gstm": [
+                self._member(
+                    "gstm1",
+                    "gstm",
+                    "Dekanlık",
+                    "dekanlik",
+                    "Şehmus DEMİR",
+                    "Prof. Dr.",
+                    "Prof. Dr.",
+                    "0000",
+                    "sehmus.demir@gibtu.edu.tr",
+                    1,
+                    parse_status="partial",
+                ),
+            ],
+            "shmyo": [
+                self._member(
+                    "shmyo1",
+                    "shmyo",
+                    "Müdür",
+                    "mudur",
+                    "Hikmet DİNÇ",
+                    "Doç. Dr.",
+                    "Meslek Yüksekokul Müdürü",
+                    "3001",
+                    "hikmet.dinc@gibtu.edu.tr",
+                    1,
+                ),
+            ],
+            "tbmyo": [
+                self._member(
+                    "tbmyo1",
+                    "tbmyo",
+                    "Yüksekokul Müdürü",
+                    "yuksekokul muduru",
+                    "İpek ATİK",
+                    "Doç. Dr.",
+                    "Meslek Yüksekokul Müdürü",
+                    "3101",
+                    "ipek.atik@gibtu.edu.tr",
+                    1,
+                ),
+                self._member(
+                    "tbmyo2",
+                    "tbmyo",
+                    "Müdür Yardımcıları",
+                    "mudur yardimcilari",
+                    "Ayşe TOPRAK",
+                    "Dr. Öğr. Üyesi",
+                    "Müdür Yardımcısı",
+                    "3102",
+                    "ayse.toprak@gibtu.edu.tr",
+                    2,
+                ),
+                self._member(
+                    "tbmyo3",
+                    "tbmyo",
+                    "Yüksekokul Sekreteri",
+                    "yuksekokul sekreteri",
+                    "Ahmet DEMİR",
+                    None,
+                    "Meslek Yüksekokulu Sekreteri",
+                    "3106",
+                    "ahmet.demir@gibtu.edu.tr",
+                    3,
+                ),
+                self._member(
+                    "tbmyo4",
+                    "tbmyo",
+                    "Meslek Yüksekokulu Kurulu",
+                    "meslek yuksekokulu kurulu",
+                    "İpek ATİK",
+                    "Doç. Dr.",
+                    "Başkan",
+                    "3101",
+                    "ipek.atik@gibtu.edu.tr",
+                    4,
+                ),
+            ],
+            "ydyo": [
+                self._member(
+                    "ydyo1",
+                    "ydyo",
+                    "Yüksekokul Müdürü",
+                    "yuksekokul muduru",
+                    "Eyyüp TUNCER",
+                    "Doç. Dr.",
+                    "Yüksekokul Müdürü",
+                    "1052",
+                    "eyyup.tuncer@gibtu.edu.tr",
+                    1,
+                ),
+            ],
         }
 
     def list_units(self):
@@ -164,6 +347,17 @@ class FakeUnitManagementRepository:
         page_order,
         parse_status="ok",
     ):
+        source_ids = {
+            "ilahiyat": 11,
+            "mdbf": 15,
+            "tip": 20,
+            "sbf": 21,
+            "iisbf": 22,
+            "gstm": 24,
+            "shmyo": 31,
+            "tbmyo": 36,
+            "ydyo": 34,
+        }
         return {
             "member_id": member_id,
             "stable_member_key": f"email:{email}",
@@ -179,7 +373,7 @@ class FakeUnitManagementRepository:
             "phone_extension": phone,
             "email": email,
             "profile_url": None,
-            "source_url": f"https://www.gibtu.edu.tr/BirimYonetim.aspx?id={15 if unit_id == 'mdbf' else 20}",
+            "source_url": f"https://www.gibtu.edu.tr/BirimYonetim.aspx?id={source_ids[unit_id]}",
             "page_order": page_order,
             "scrape_time": "2026-06-14T12:00:00Z",
             "parse_status": parse_status,
@@ -219,6 +413,44 @@ class UnitManagementServiceTests(unittest.TestCase):
         self.assertIsNotNone(tip)
         self.assertIn("İbrahim Halil TÜRKBEYLER", tip["response"])
 
+    def test_yaygin_kisaltma_ve_kisa_adlar_yanitlanir(self):
+        service = UnitManagementService(FakeUnitManagementRepository())
+
+        cases = [
+            ("İ.F. dekanı kim?", "Mahsum AYTEPE"),
+            ("M.D.B.F. fakülte sekreteri kim?", "Ergün ÖZUSLU"),
+            ("SBF dekanı kim?", "Reşit YILDIZ"),
+            ("Sağlık bilimleri fak dekanı kim?", "Reşit YILDIZ"),
+            ("T.F. dekanı kim?", "İbrahim Halil TÜRKBEYLER"),
+            ("İİBF dekanı kim?", "Feridun BİLGİN"),
+            ("İ.İ.S.B.F. dekanı kim?", "Feridun BİLGİN"),
+            ("G.S.T.M.F. dekanı kim?", "Şehmus DEMİR"),
+            ("Güzel sanatlar dekanı kim?", "Şehmus DEMİR"),
+            ("Mimarlık dekanı kim?", "Şehmus DEMİR"),
+            ("SH MYO müdürü kim?", "Hikmet DİNÇ"),
+            ("S.H.M.Y.O. müdürü kim?", "Hikmet DİNÇ"),
+            ("Sağlık MYO müdürü kim?", "Hikmet DİNÇ"),
+            ("TB MYO müdürü kim?", "İpek ATİK"),
+            ("T.B.M.Y.O. müdürü kim?", "İpek ATİK"),
+            ("Teknik MYO müdürü kim?", "İpek ATİK"),
+            ("YD YO müdürü kim?", "Eyyüp TUNCER"),
+            ("Y.D.Y.O. müdürü kim?", "Eyyüp TUNCER"),
+            ("Yabancı dil müdürü kim?", "Eyyüp TUNCER"),
+        ]
+        for question, expected_name in cases:
+            with self.subTest(question=question):
+                result = service.answer_chat_query(question)
+                self.assertIsNotNone(result)
+                self.assertIn(expected_name, result["response"])
+
+    def test_belirsiz_saglik_kisa_adi_birim_ister(self):
+        service = UnitManagementService(FakeUnitManagementRepository())
+
+        result = service.answer_chat_query("Sağlık dekanı kim?")
+
+        self.assertIsNotNone(result)
+        self.assertIn("Hangi birimin", result["response"])
+
     def test_yonetim_kurulu_sorusu_kurul_uyelerini_listeler(self):
         service = UnitManagementService(FakeUnitManagementRepository())
 
@@ -226,14 +458,62 @@ class UnitManagementServiceTests(unittest.TestCase):
 
         self.assertIsNotNone(result)
         response = result["response"]
+        self.assertIn("fakülte yönetim kurulu", response)
         self.assertIn("İbrahim Halil TÜRKBEYLER", response)
         self.assertIn("Aliye BULUT", response)
         self.assertNotIn("Dahili: 0000", response)
 
+    def test_birim_turune_gore_ust_yonetici_unvani_yorumlanir(self):
+        service = UnitManagementService(FakeUnitManagementRepository())
+
+        myo_result = service.answer_chat_query("Teknik Bilimler MYO dekanı kim?")
+        school_result = service.answer_chat_query("Yabancı Diller Yüksekokulu dekanı kim?")
+        faculty_result = service.answer_chat_query("Mühendislik müdürü kim?")
+
+        self.assertIsNotNone(myo_result)
+        self.assertIn("Teknik Bilimler Meslek Yüksekokulu müdürü", myo_result["response"])
+        self.assertIn("İpek ATİK", myo_result["response"])
+        self.assertNotIn("dekanı", myo_result["response"].splitlines()[0])
+        self.assertIsNotNone(school_result)
+        self.assertIn("Yabancı Diller Yüksekokulu müdürü", school_result["response"])
+        self.assertIn("Eyyüp TUNCER", school_result["response"])
+        self.assertIsNotNone(faculty_result)
+        self.assertIn("Mühendislik ve Doğa Bilimleri Fakültesi dekanı", faculty_result["response"])
+        self.assertIn("Osman BİLGİN", faculty_result["response"])
+
+    def test_birim_turune_gore_yardimci_ve_sekreter_unvanlari_yorumlanir(self):
+        service = UnitManagementService(FakeUnitManagementRepository())
+
+        assistant_result = service.answer_chat_query("Teknik Bilimler MYO dekan yardımcısı kim?")
+        secretary_result = service.answer_chat_query("TBMYO fakülte sekreteri kim?")
+        faculty_assistant_result = service.answer_chat_query("Mühendislik müdür yardımcısı kim?")
+
+        self.assertIsNotNone(assistant_result)
+        self.assertIn("Teknik Bilimler Meslek Yüksekokulu müdür yardımcıları", assistant_result["response"])
+        self.assertIn("Ayşe TOPRAK", assistant_result["response"])
+        self.assertIsNotNone(secretary_result)
+        self.assertIn("Teknik Bilimler Meslek Yüksekokulu sekreteri", secretary_result["response"])
+        self.assertIn("Ahmet DEMİR", secretary_result["response"])
+        self.assertIsNotNone(faculty_assistant_result)
+        self.assertIn(
+            "Mühendislik ve Doğa Bilimleri Fakültesi dekan yardımcıları",
+            faculty_assistant_result["response"],
+        )
+        self.assertIn("Ali AYTEK", faculty_assistant_result["response"])
+
+    def test_myo_kurul_unvani_birim_turune_gore_yorumlanir(self):
+        service = UnitManagementService(FakeUnitManagementRepository())
+
+        result = service.answer_chat_query("Teknik Bilimler MYO yüksekokul kurulu kimlerden oluşur?")
+
+        self.assertIsNotNone(result)
+        self.assertIn("Teknik Bilimler Meslek Yüksekokulu MYO kurulu", result["response"])
+        self.assertIn("İpek ATİK", result["response"])
+
     def test_veri_yoksa_tahminsiz_not_found_doner(self):
         service = UnitManagementService(FakeUnitManagementRepository())
 
-        result = service.answer_chat_query("Teknik Bilimler MYO müdürü kim?")
+        result = service.answer_chat_query("Mühendislik bölüm başkanı kim?")
 
         self.assertIsNotNone(result)
         self.assertIn("mevcut kaynakta bulunamadı", result["response"])
