@@ -208,6 +208,256 @@ CREATE TABLE IF NOT EXISTS yokatlas_validation_results (
     created_at TIMESTAMP DEFAULT NOW()
 );
 
+-- GİBTÜ akademik kadro/yönetim yapılandırılmış veri tabloları
+CREATE TABLE IF NOT EXISTS academic_scrape_runs (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    scrape_run_id TEXT NOT NULL UNIQUE,
+    scraper_name TEXT NOT NULL,
+    metadata_version TEXT NOT NULL,
+    started_at TIMESTAMP,
+    finished_at TIMESTAMP,
+    status TEXT NOT NULL,
+    validation_status TEXT NOT NULL DEFAULT 'unknown',
+    target_unit_count INTEGER NOT NULL DEFAULT 0,
+    source_count INTEGER NOT NULL DEFAULT 0,
+    person_count INTEGER NOT NULL DEFAULT 0,
+    affiliation_count INTEGER NOT NULL DEFAULT 0,
+    management_role_count INTEGER NOT NULL DEFAULT 0,
+    candidate_count INTEGER NOT NULL DEFAULT 0,
+    config JSONB NOT NULL DEFAULT '{}'::jsonb,
+    summary JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS academic_universities (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    canonical_name TEXT NOT NULL UNIQUE,
+    display_name TEXT NOT NULL,
+    source_url TEXT,
+    last_checked_at TIMESTAMP,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS academic_units (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    university_id UUID NOT NULL REFERENCES academic_universities(id) ON DELETE CASCADE,
+    birim_id INTEGER,
+    unit_name TEXT NOT NULL,
+    unit_name_normalized TEXT NOT NULL,
+    unit_type TEXT NOT NULL,
+    parent_unit_id UUID REFERENCES academic_units(id) ON DELETE SET NULL,
+    slug TEXT,
+    source_url TEXT,
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    last_checked_at TIMESTAMP,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (university_id, birim_id)
+);
+
+ALTER TABLE academic_units
+DROP CONSTRAINT IF EXISTS academic_units_university_id_unit_name_normalized_key;
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_academic_units_root_name_unique
+ON academic_units(university_id, unit_name_normalized)
+WHERE parent_unit_id IS NULL;
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_academic_units_child_parent_name_unique
+ON academic_units(university_id, parent_unit_id, unit_name_normalized)
+WHERE parent_unit_id IS NOT NULL;
+
+CREATE TABLE IF NOT EXISTS academic_programs (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    unit_id UUID NOT NULL UNIQUE REFERENCES academic_units(id) ON DELETE CASCADE,
+    parent_unit_id UUID REFERENCES academic_units(id) ON DELETE SET NULL,
+    program_code BIGINT,
+    program_name TEXT NOT NULL,
+    program_name_normalized TEXT NOT NULL,
+    program_level TEXT,
+    yok_atlas_url TEXT,
+    source_url TEXT,
+    aliases JSONB NOT NULL DEFAULT '[]'::jsonb,
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    last_checked_at TIMESTAMP,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_academic_programs_program_code
+ON academic_programs(program_code)
+WHERE program_code IS NOT NULL;
+
+CREATE INDEX IF NOT EXISTS idx_academic_programs_parent
+ON academic_programs(parent_unit_id);
+
+CREATE TABLE IF NOT EXISTS academic_persons (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    full_name TEXT NOT NULL,
+    normalized_name TEXT NOT NULL,
+    title TEXT,
+    email TEXT,
+    pbs_profile_url TEXT,
+    source_status TEXT NOT NULL DEFAULT 'official',
+    needs_manual_review BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_academic_persons_pbs_url
+ON academic_persons(pbs_profile_url)
+WHERE pbs_profile_url IS NOT NULL AND pbs_profile_url <> '';
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_academic_persons_email
+ON academic_persons(email)
+WHERE email IS NOT NULL AND email <> '';
+
+CREATE INDEX IF NOT EXISTS idx_academic_persons_normalized_name
+ON academic_persons(normalized_name);
+
+CREATE TABLE IF NOT EXISTS academic_source_evidence (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    scrape_run_id TEXT REFERENCES academic_scrape_runs(scrape_run_id) ON DELETE SET NULL,
+    source_url TEXT NOT NULL,
+    source_type TEXT NOT NULL,
+    source_kind TEXT NOT NULL,
+    unit_id UUID REFERENCES academic_units(id) ON DELETE SET NULL,
+    person_id UUID REFERENCES academic_persons(id) ON DELETE SET NULL,
+    content_hash TEXT,
+    fetched_at TIMESTAMP,
+    field_names JSONB NOT NULL DEFAULT '[]'::jsonb,
+    raw_excerpt TEXT,
+    is_accessible BOOLEAN NOT NULL DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_academic_source_evidence_url
+ON academic_source_evidence(source_url);
+
+CREATE TABLE IF NOT EXISTS academic_affiliations (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    person_id UUID NOT NULL REFERENCES academic_persons(id) ON DELETE CASCADE,
+    unit_id UUID NOT NULL REFERENCES academic_units(id) ON DELETE CASCADE,
+    affiliation_type TEXT NOT NULL,
+    title TEXT,
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    source_status TEXT NOT NULL DEFAULT 'official',
+    confidence_status TEXT NOT NULL DEFAULT 'unknown',
+    confidence_score NUMERIC,
+    needs_manual_review BOOLEAN NOT NULL DEFAULT FALSE,
+    source_url TEXT,
+    evidence_ids JSONB NOT NULL DEFAULT '[]'::jsonb,
+    last_checked_at TIMESTAMP,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (person_id, unit_id, affiliation_type, source_url)
+);
+
+CREATE INDEX IF NOT EXISTS idx_academic_affiliations_unit
+ON academic_affiliations(unit_id, affiliation_type, is_active);
+
+CREATE TABLE IF NOT EXISTS academic_management_roles (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    person_id UUID NOT NULL REFERENCES academic_persons(id) ON DELETE CASCADE,
+    unit_id UUID NOT NULL REFERENCES academic_units(id) ON DELETE CASCADE,
+    role_name TEXT NOT NULL,
+    role_key TEXT NOT NULL,
+    source_priority INTEGER NOT NULL DEFAULT 100,
+    source_status TEXT NOT NULL DEFAULT 'official',
+    confidence_status TEXT NOT NULL DEFAULT 'unknown',
+    confidence_score NUMERIC,
+    needs_manual_review BOOLEAN NOT NULL DEFAULT FALSE,
+    source_url TEXT,
+    evidence_ids JSONB NOT NULL DEFAULT '[]'::jsonb,
+    last_checked_at TIMESTAMP,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (person_id, unit_id, role_key, source_url)
+);
+
+CREATE INDEX IF NOT EXISTS idx_academic_management_roles_unit
+ON academic_management_roles(unit_id, role_key);
+
+CREATE TABLE IF NOT EXISTS academic_external_profiles (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    person_id UUID NOT NULL REFERENCES academic_persons(id) ON DELETE CASCADE,
+    profile_type TEXT NOT NULL,
+    profile_url TEXT,
+    external_id TEXT,
+    match_status TEXT NOT NULL DEFAULT 'not_resolved',
+    confidence_score NUMERIC,
+    source_url TEXT,
+    raw_data JSONB NOT NULL DEFAULT '{}'::jsonb,
+    last_checked_at TIMESTAMP,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (person_id, profile_type, profile_url)
+);
+
+CREATE INDEX IF NOT EXISTS idx_academic_external_profiles_person
+ON academic_external_profiles(person_id, profile_type);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_academic_external_profiles_yok_url_unique
+ON academic_external_profiles(profile_url)
+WHERE profile_type = 'yok_akademik'
+  AND profile_url IS NOT NULL
+  AND profile_url <> '';
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_academic_external_profiles_yok_external_id_unique
+ON academic_external_profiles(external_id)
+WHERE profile_type = 'yok_akademik'
+  AND external_id IS NOT NULL
+  AND external_id <> '';
+
+CREATE TABLE IF NOT EXISTS academic_raw_snapshots (
+    snapshot_id TEXT PRIMARY KEY,
+    scrape_run_id TEXT NOT NULL REFERENCES academic_scrape_runs(scrape_run_id) ON DELETE CASCADE,
+    source_url TEXT NOT NULL,
+    source_kind TEXT NOT NULL,
+    unit_id UUID REFERENCES academic_units(id) ON DELETE SET NULL,
+    http_status INTEGER,
+    content_hash TEXT NOT NULL,
+    fetched_at TIMESTAMP,
+    response_text TEXT,
+    parse_status TEXT NOT NULL DEFAULT 'unknown',
+    extracted_fields JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS academic_unit_staff_snapshots (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    unit_id UUID NOT NULL REFERENCES academic_units(id) ON DELETE CASCADE,
+    scrape_run_id TEXT NOT NULL REFERENCES academic_scrape_runs(scrape_run_id) ON DELETE CASCADE,
+    source_urls JSONB NOT NULL DEFAULT '[]'::jsonb,
+    staff_count INTEGER NOT NULL DEFAULT 0,
+    person_ids JSONB NOT NULL DEFAULT '[]'::jsonb,
+    missing_fields JSONB NOT NULL DEFAULT '[]'::jsonb,
+    validation_status TEXT NOT NULL DEFAULT 'unknown',
+    last_checked_at TIMESTAMP,
+    raw_data JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (unit_id, scrape_run_id)
+);
+
+CREATE TABLE IF NOT EXISTS academic_unit_management_snapshots (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    unit_id UUID NOT NULL REFERENCES academic_units(id) ON DELETE CASCADE,
+    scrape_run_id TEXT NOT NULL REFERENCES academic_scrape_runs(scrape_run_id) ON DELETE CASCADE,
+    source_urls JSONB NOT NULL DEFAULT '[]'::jsonb,
+    role_count INTEGER NOT NULL DEFAULT 0,
+    role_ids JSONB NOT NULL DEFAULT '[]'::jsonb,
+    missing_fields JSONB NOT NULL DEFAULT '[]'::jsonb,
+    validation_status TEXT NOT NULL DEFAULT 'unknown',
+    last_checked_at TIMESTAMP,
+    raw_data JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (unit_id, scrape_run_id)
+);
+
 CREATE INDEX IF NOT EXISTS idx_yokatlas_program_years_program_code_year
 ON yokatlas_program_years(program_code, data_year);
 

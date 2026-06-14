@@ -30,6 +30,7 @@ from haystack_integrations.components.retrievers.pgvector import (
 
 from app.config import get_settings
 from app.services.academic_calendar_service import get_academic_calendar_service
+from app.services.academic_staff_service import get_academic_staff_service
 from app.services.food_menu_service import get_food_menu_service
 from app.services.intent_classifier import classify_intent, REJECTION_RESPONSE
 from app.services.response_validator import validate_response
@@ -387,6 +388,11 @@ class RagService:
         if academic_calendar_answer is not None:
             logger.info("Akademik takvim sorgusu deterministik servisle yanıtlandı.")
             return academic_calendar_answer
+
+        academic_staff_answer = get_academic_staff_service().answer_chat_query(question)
+        if academic_staff_answer is not None:
+            logger.info("Akademik kadro sorgusu deterministik servisle yanıtlandı.")
+            return academic_staff_answer
 
         if self._pipeline is None:
             raise RuntimeError("Pipeline henüz oluşturulmadı. build_pipeline() çağrılmalı.")

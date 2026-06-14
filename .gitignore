@@ -35,3 +35,6 @@ backend/data/pdfs/*
 
 # scraper runtime cache
 backend/scrapers/.academic_calendar_sources.json
+
+# local scraper reports/checkpoints
+.tmp/

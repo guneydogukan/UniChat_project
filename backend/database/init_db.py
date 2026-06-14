@@ -5,6 +5,7 @@ Tablolar ve gerekli extension'lar oluşturulur.
 
 import os
 import sys
+from pathlib import Path
 import psycopg2
 from dotenv import load_dotenv
 
@@ -18,6 +19,7 @@ except Exception:
 load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
 
 DATABASE_URL = os.getenv("DATABASE_URL")
+ROOT_INIT_SQL = Path(__file__).resolve().parents[2] / "database" / "init.sql"
 
 
 def init_database():
@@ -267,6 +269,8 @@ def init_database():
         conn.autocommit = True
         cur = conn.cursor()
         cur.execute(sql_commands)
+        if ROOT_INIT_SQL.exists():
+            cur.execute(ROOT_INIT_SQL.read_text(encoding="utf-8"))
         cur.close()
         conn.close()
         print("Tablolar başarıyla oluşturuldu!")

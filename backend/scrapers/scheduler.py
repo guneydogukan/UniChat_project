@@ -7,7 +7,7 @@ Job Tanımları:
   - Duyurular:            Günde 1 kez (saat 08:00)
   - Yemekhane menüsü:     Günde 1 kez (saat 07:00, food_menus upsert)
   - Akademik takvim:      Yılda 1 kez eğitim-öğretim yılı başında (1 Eylül 05:30)
-  - Akademik kadro:       Haftada 1 kez (Pazartesi 03:00)
+  - Akademik kadro:       Dönem başlarında (1 Şubat ve 1 Eylül, 03:00)
   - Aday öğrenci portalı: Dönem başlarında (1 Şubat ve 1 Eylül, 04:00)
   - Tam yeniden indeks:   Ayda 1 kez (ayın 1'i, 02:00)
 
@@ -58,6 +58,10 @@ logger = logging.getLogger("unichat.scheduler")
 # ── PID Kontrolü ──
 LOCK_FILE = Path(__file__).resolve().parent / ".scheduler.lock"
 LOG_FILE = Path(__file__).resolve().parent / "scheduler_log.json"
+KADRO_UPDATE_MONTHS = "2,9"
+KADRO_UPDATE_DAY = 1
+KADRO_UPDATE_HOUR = 3
+KADRO_UPDATE_MINUTE = 0
 
 
 def _acquire_pid_lock() -> bool:
@@ -234,30 +238,39 @@ def job_academic_calendar_update():
 
 
 def job_kadro_update():
-    """Akademik kadro güncelleme job'ı (haftalık)."""
+    """YÖK Akademik bölüm/program akademik kadro güncelleme job'ı (dönem başı)."""
     start = time.time()
     job_name = "kadro_update"
     logger.info("👥 Job başlıyor: %s", job_name)
 
     try:
-        from scrapers.staff_scraper import StaffScraper
+        from scrapers.yok_academic_staff_scraper import YokAcademicStaffScraper
 
-        scraper = StaffScraper()
-        result = scraper.scrape(dry_run=False, force=False)
+        scraper = YokAcademicStaffScraper()
+        result = scraper.scrape(dry_run=False, write_db=True)
 
         duration = time.time() - start
         _append_job_log({
             "job": job_name,
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "success": result.success,
-            "new_documents": result.new_documents,
-            "chunks": result.chunks_written,
+            "targets": len(result.targets),
+            "persons": len(result.persons),
+            "staff_snapshots": len(result.staff_snapshots),
+            "answer_chunks": len(result.answer_documents),
+            "validation_results": len(result.validation_results),
+            "errors": result.errors,
             "duration_seconds": round(duration, 1),
         })
 
         logger.info(
-            "✅ Job tamamlandı: %s — %d yeni, %d chunk, %.1fs",
-            job_name, result.new_documents, result.chunks_written, duration,
+            "✅ Job tamamlandı: %s — hedef=%d, kişi=%d, bölüm/program_snapshot=%d, answer_chunk=%d, %.1fs",
+            job_name,
+            len(result.targets),
+            len(result.persons),
+            len(result.staff_snapshots),
+            len(result.answer_documents),
+            duration,
         )
 
     except Exception as e:
@@ -336,21 +349,14 @@ def job_full_reindex():
         menu_scraper = MenuScraper()
         menu_result = menu_scraper.scrape(dry_run=False, force=True)
 
-        # Kadro force güncelle
-        from scrapers.staff_scraper import StaffScraper
-        staff_scraper = StaffScraper()
-        staff_result = staff_scraper.scrape(dry_run=False, force=True)
-
         duration = time.time() - start
         total_docs = (
             ann_result.documents_created
             + menu_result.documents_created
-            + staff_result.new_documents
         )
         total_chunks = (
             ann_result.chunks_written
             + menu_result.chunks_written
-            + staff_result.chunks_written
         )
 
         _append_job_log({
@@ -362,7 +368,10 @@ def job_full_reindex():
             "sub_jobs": {
                 "duyuru": {"docs": ann_result.documents_created, "chunks": ann_result.chunks_written},
                 "yemek": {"changed": menu_result.content_changed, "chunks": menu_result.chunks_written},
-                "kadro": {"new": staff_result.new_documents, "chunks": staff_result.chunks_written},
+                "kadro": {
+                    "skipped": True,
+                    "reason": "YÖK Akademik kadro yalnız dönem başı job'ında güncellenir.",
+                },
             },
             "duration_seconds": round(duration, 1),
         })
@@ -432,14 +441,19 @@ def create_scheduler():
         misfire_grace_time=86400,
     )
 
-    # 4. Akademik kadro: Haftada 1 kez (Pazartesi 03:00)
+    # 4. Akademik kadro: Dönem başlarında (1 Şubat ve 1 Eylül, 03:00)
     scheduler.add_job(
         job_kadro_update,
-        trigger=CronTrigger(day_of_week="mon", hour=3, minute=0),
+        trigger=CronTrigger(
+            month=KADRO_UPDATE_MONTHS,
+            day=KADRO_UPDATE_DAY,
+            hour=KADRO_UPDATE_HOUR,
+            minute=KADRO_UPDATE_MINUTE,
+        ),
         id="kadro_update",
-        name="Akademik Kadro Haftalık Güncelleme",
+        name="Akademik Kadro Dönem Başı Güncelleme",
         replace_existing=True,
-        misfire_grace_time=7200,  # 2 saat tolerance
+        misfire_grace_time=14400,  # 4 saat tolerance
     )
 
     # 5. Aday öğrenci portalı: Dönem başlarında (1 Şubat ve 1 Eylül, 04:00)
@@ -479,7 +493,7 @@ def list_jobs(scheduler=None):
         {"id": "academic_calendar_update", "name": "Akademik Takvim",
          "schedule": "Her yıl 1 Eylül 05:30", "mode": "ana URL hash kontrolü + değişen kaynak parse"},
         {"id": "kadro_update", "name": "Akademik Kadro",
-         "schedule": "Her Pazartesi 03:00", "mode": "yeni eklenenler"},
+         "schedule": "1 Şubat ve 1 Eylül 03:00", "mode": "YÖK Akademik filtered bölüm/program staff"},
         {"id": "candidate_portal_update", "name": "Aday Öğrenci Portalı",
          "schedule": "1 Şubat ve 1 Eylül 04:00", "mode": "dönemlik tek sayfa scrape"},
         {"id": "full_reindex", "name": "Tam Yeniden İndeks",
