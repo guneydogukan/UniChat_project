@@ -104,6 +104,18 @@ class FakeUnitManagementRepository:
             ],
             "tip": [
                 self._member(
+                    "t0",
+                    "tip",
+                    "Dekan",
+                    "dekan",
+                    "İbrahim Halil TÜRKBEYLER",
+                    "Prof. Dr.",
+                    "Dekan V.",
+                    "2301",
+                    "ihalil.turkbeyler@gibtu.edu.tr",
+                    0,
+                ),
+                self._member(
                     "t1",
                     "tip",
                     "Fakülte Yönetim Kurulu",
@@ -195,6 +207,17 @@ class UnitManagementServiceTests(unittest.TestCase):
         self.assertIsNotNone(result)
         self.assertIn("Ergün ÖZUSLU", result["response"])
         self.assertIn("Fakülte Sekreteri", result["response"])
+
+    def test_kisa_fakulte_adi_ile_dekan_sorusu_yanitlanir(self):
+        service = UnitManagementService(FakeUnitManagementRepository())
+
+        muhendislik = service.answer_chat_query("Mühendislik dekanı kim?")
+        tip = service.answer_chat_query("Tıp dekanı kim?")
+
+        self.assertIsNotNone(muhendislik)
+        self.assertIn("Osman BİLGİN", muhendislik["response"])
+        self.assertIsNotNone(tip)
+        self.assertIn("İbrahim Halil TÜRKBEYLER", tip["response"])
 
     def test_yonetim_kurulu_sorusu_kurul_uyelerini_listeler(self):
         service = UnitManagementService(FakeUnitManagementRepository())

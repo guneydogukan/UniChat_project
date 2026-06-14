@@ -80,7 +80,7 @@ DEFAULT_TARGET_UNITS: tuple[UnitManagementTarget, ...] = (
         "faculty",
         "https://www.gibtu.edu.tr/BirimYonetim.aspx?id=15",
         15,
-        ("mdbf", "mühendislik fakültesi", "mühendislik ve doğa bilimleri"),
+        ("mdbf", "mühendislik", "mühendislik fakültesi", "mühendislik ve doğa bilimleri"),
     ),
     UnitManagementTarget(
         "Sağlık Bilimleri Fakültesi",

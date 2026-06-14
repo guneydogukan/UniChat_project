@@ -37,7 +37,7 @@ UNIT_SUFFIXES: tuple[str, ...] = (
 
 STATIC_UNIT_ALIASES: dict[str, tuple[str, ...]] = {
     "ilahiyat fakultesi": ("ilahiyat",),
-    "muhendislik ve doga bilimleri fakultesi": ("mdbf", "muhendislik fakultesi", "muhendislik ve doga bilimleri"),
+    "muhendislik ve doga bilimleri fakultesi": ("mdbf", "muhendislik", "muhendislik fakultesi", "muhendislik ve doga bilimleri"),
     "saglik bilimleri fakultesi": ("sbf", "saglik bilimleri"),
     "tip fakultesi": ("tip",),
     "iktisadi idari ve sosyal bilimler fakultesi": ("iisbf", "iktisadi idari sosyal bilimler"),
