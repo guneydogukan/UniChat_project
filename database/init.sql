@@ -570,6 +570,147 @@ ON unit_management_members(unit_id, is_active, parse_status);
 CREATE INDEX IF NOT EXISTS idx_unit_management_members_group_order
 ON unit_management_members(group_id, page_order);
 
+-- GİBTÜ idari birim/personel yapılandırılmış veri hattı
+CREATE TABLE IF NOT EXISTS administrative_scrape_runs (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    scrape_run_id TEXT NOT NULL UNIQUE,
+    scraper_name TEXT NOT NULL,
+    metadata_version TEXT NOT NULL,
+    started_at TIMESTAMP,
+    finished_at TIMESTAMP,
+    status TEXT NOT NULL,
+    validation_status TEXT NOT NULL DEFAULT 'unknown',
+    target_url_count INTEGER NOT NULL DEFAULT 0,
+    processed_url_count INTEGER NOT NULL DEFAULT 0,
+    administrative_unit_count INTEGER NOT NULL DEFAULT 0,
+    staff_count INTEGER NOT NULL DEFAULT 0,
+    warning_count INTEGER NOT NULL DEFAULT 0,
+    critical_count INTEGER NOT NULL DEFAULT 0,
+    config JSONB NOT NULL DEFAULT '{}'::jsonb,
+    summary JSONB NOT NULL DEFAULT '{}'::jsonb,
+    diff_summary JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS administrative_source_pages (
+    snapshot_id TEXT PRIMARY KEY,
+    scrape_run_id TEXT NOT NULL REFERENCES administrative_scrape_runs(scrape_run_id) ON DELETE CASCADE,
+    parent_unit_name TEXT NOT NULL,
+    parent_unit_type TEXT NOT NULL,
+    website_unit_id INTEGER NOT NULL,
+    source_url TEXT NOT NULL,
+    normalized_source_url TEXT NOT NULL,
+    page_type TEXT NOT NULL,
+    http_status INTEGER,
+    source_hash TEXT NOT NULL,
+    fetched_at TIMESTAMP,
+    parse_status TEXT NOT NULL DEFAULT 'unknown',
+    administrative_unit_count INTEGER NOT NULL DEFAULT 0,
+    staff_count INTEGER NOT NULL DEFAULT 0,
+    raw_text TEXT,
+    raw_html TEXT,
+    validation_report JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (scrape_run_id, normalized_source_url)
+);
+
+CREATE INDEX IF NOT EXISTS idx_administrative_source_pages_url
+ON administrative_source_pages(normalized_source_url);
+
+CREATE TABLE IF NOT EXISTS administrative_units (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    parent_unit_name TEXT NOT NULL,
+    parent_unit_type TEXT NOT NULL,
+    website_unit_id INTEGER NOT NULL,
+    source_url TEXT NOT NULL,
+    normalized_source_url TEXT NOT NULL,
+    page_type TEXT NOT NULL,
+    administrative_unit_name TEXT NOT NULL,
+    administrative_unit_key TEXT NOT NULL,
+    aliases JSONB NOT NULL DEFAULT '[]'::jsonb,
+    description TEXT,
+    order_index INTEGER NOT NULL DEFAULT 0,
+    raw_text TEXT,
+    normalized_text TEXT,
+    search_text TEXT,
+    source_hash TEXT NOT NULL,
+    snapshot_id TEXT REFERENCES administrative_source_pages(snapshot_id) ON DELETE SET NULL,
+    last_seen_at TIMESTAMP,
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (website_unit_id, normalized_source_url, administrative_unit_key)
+);
+
+CREATE INDEX IF NOT EXISTS idx_administrative_units_parent_active
+ON administrative_units(parent_unit_name, is_active);
+
+CREATE INDEX IF NOT EXISTS idx_administrative_units_key
+ON administrative_units(administrative_unit_key);
+
+CREATE TABLE IF NOT EXISTS administrative_staff (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    administrative_unit_id UUID NOT NULL REFERENCES administrative_units(id) ON DELETE CASCADE,
+    parent_unit_name TEXT NOT NULL,
+    parent_unit_type TEXT NOT NULL,
+    website_unit_id INTEGER NOT NULL,
+    source_url TEXT NOT NULL,
+    normalized_source_url TEXT NOT NULL,
+    page_type TEXT NOT NULL,
+    administrative_unit_name TEXT NOT NULL,
+    stable_staff_key TEXT NOT NULL,
+    person_name TEXT,
+    person_name_normalized TEXT NOT NULL DEFAULT '',
+    title_or_role TEXT,
+    email TEXT,
+    phone TEXT,
+    internal_extension TEXT,
+    office_location TEXT,
+    description TEXT,
+    order_index INTEGER NOT NULL DEFAULT 0,
+    raw_text TEXT,
+    normalized_text TEXT,
+    search_text TEXT,
+    aliases JSONB NOT NULL DEFAULT '[]'::jsonb,
+    source_hash TEXT NOT NULL,
+    snapshot_id TEXT REFERENCES administrative_source_pages(snapshot_id) ON DELETE SET NULL,
+    last_seen_at TIMESTAMP,
+    parse_status TEXT NOT NULL DEFAULT 'unknown',
+    validation_issues JSONB NOT NULL DEFAULT '[]'::jsonb,
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (website_unit_id, administrative_unit_id, stable_staff_key)
+);
+
+CREATE INDEX IF NOT EXISTS idx_administrative_staff_unit_active
+ON administrative_staff(administrative_unit_id, is_active, parse_status);
+
+CREATE INDEX IF NOT EXISTS idx_administrative_staff_parent_active
+ON administrative_staff(parent_unit_name, is_active);
+
+CREATE INDEX IF NOT EXISTS idx_administrative_staff_search
+ON administrative_staff(person_name_normalized, administrative_unit_name);
+
+CREATE TABLE IF NOT EXISTS administrative_aliases (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    alias_text TEXT NOT NULL,
+    alias_normalized TEXT NOT NULL,
+    canonical_name TEXT NOT NULL,
+    canonical_type TEXT NOT NULL,
+    website_unit_id INTEGER,
+    source_url TEXT,
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (alias_normalized, canonical_type, canonical_name)
+);
+
+CREATE INDEX IF NOT EXISTS idx_administrative_aliases_lookup
+ON administrative_aliases(alias_normalized, is_active);
+
 CREATE INDEX IF NOT EXISTS idx_yokatlas_program_years_program_code_year
 ON yokatlas_program_years(program_code, data_year);
 

@@ -45,6 +45,8 @@ DOMAIN_TERMS: list[str] = [
     "yarıyıl", "güz", "bahar", "ders", "başlangıcı",
     # Yerleşke
     "kampüs", "yurt", "spor",
+    "idari", "personel", "sekreter", "sekreterlik", "memur",
+    "öğrenci", "işleri", "mali", "dahili", "telefon", "eposta",
 ]
 
 # ── Kısaltma Sözlüğü ──
@@ -53,6 +55,8 @@ ABBREVIATION_MAP: dict[str, str] = {
     "sbf": "sağlık bilimleri fakültesi",
     "shmyo": "sağlık hizmetleri meslek yüksekokulu",
     "tbmyo": "teknik bilimler meslek yüksekokulu",
+    "tf": "tıp fakültesi",
+    "iibf": "iktisadi idari ve sosyal bilimler fakültesi",
     "iisbf": "iktisadi idari ve sosyal bilimler fakültesi",
     "iii": "iktisadi idari ve sosyal bilimler fakültesi",
     "gsmf": "güzel sanatlar tasarım ve mimarlık fakültesi",

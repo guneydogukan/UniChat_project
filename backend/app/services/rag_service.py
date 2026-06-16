@@ -29,6 +29,7 @@ from haystack_integrations.components.retrievers.pgvector import (
 )
 
 from app.config import get_settings
+from app.services.administrative_staff_service import get_administrative_staff_service
 from app.services.academic_calendar_service import get_academic_calendar_service
 from app.services.academic_staff_service import get_academic_staff_service
 from app.services.food_menu_service import get_food_menu_service
@@ -390,6 +391,11 @@ class RagService:
         if academic_calendar_answer is not None:
             logger.info("Akademik takvim sorgusu deterministik servisle yanıtlandı.")
             return academic_calendar_answer
+
+        administrative_staff_answer = get_administrative_staff_service().answer_chat_query(question)
+        if administrative_staff_answer is not None:
+            logger.info("İdari birim/personel sorgusu deterministik servisle yanıtlandı.")
+            return administrative_staff_answer
 
         yokatlas_answer = get_yokatlas_query_service().answer_chat_query(question)
         if yokatlas_answer is not None:

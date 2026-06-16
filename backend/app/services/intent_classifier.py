@@ -114,11 +114,13 @@ UNIVERSITY_SIGNALS: frozenset[str] = frozenset({
     "erasmus", "staj", "burs", "yurt", "yemekhane", "kütüphane",
     "kulüp", "topluluk", "öğrenci",
     # İdari
-    "öğrenci işleri", "obs", "ubys", "lms", "harç",
+    "öğrenci işleri", "idari personel", "idari birim", "sekreterlik",
+    "fakülte sekreteri", "yüksekokul sekreteri", "memur",
+    "obs", "ubys", "lms", "harç",
     "duyuru", "akademik takvim", "yönetmelik", "yönerge",
     # Birimler
-    "mdbf", "sbf", "shmyo", "tbmyo", "ydyo", "gsmf", "sks",
-    "ilahiyat", "tıp",
+    "mdbf", "sbf", "shmyo", "tbmyo", "ydyo", "gsmf", "iibf", "iisbf", "sks",
+    "ilahiyat", "tıp", "tip",
 })
 
 # ── Sabit reddetme yanıtı ──
