@@ -29,6 +29,11 @@ from scrapers.yokatlas_gibtu_scraper import (
     YokatlasGibtuScraper,
     select_allowlist,
 )
+from yokatlas.reporting.reports import (
+    build_report_bundle,
+    build_validation_report,
+    severity_counts as domain_severity_counts,
+)
 
 
 DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent / "data" / "yokatlas"
@@ -48,6 +53,8 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--snapshot-dir", default=None, help="Snapshot ana klasörü.")
     parser.add_argument("--report-dir", default=None, help="Rapor dosyalarının yazılacağı klasör.")
     parser.add_argument("--export-report", action="store_true", help="Detaylı rapor paketini üret; temel raporlar zaten yazılır.")
+    parser.add_argument("--previous-report", default=None, help="Diff için önceki yıl birleşik JSON raporu.")
+    parser.add_argument("--replay-report", default=None, help="Ağ/DB kullanmadan mevcut birleşik JSON raporundan rapor paketini yeniden üret.")
     parser.add_argument("--output", default=str(DEFAULT_REPORT_PATH), help="Birleşik JSON rapor çıktı yolu.")
     parser.add_argument("--output-dir", default=None, help="Geriye dönük alias: snapshot ve rapor ana klasörü.")
     parser.add_argument("--verbose", action="store_true", help="Ayrıntılı log yaz.")
@@ -58,6 +65,8 @@ def main() -> int:
     args = _build_parser().parse_args()
     if args.write_db and args.dry_run:
         raise SystemExit("--write-db ile --dry-run birlikte kullanılamaz.")
+    if args.replay_report and args.write_db:
+        raise SystemExit("--replay-report ile --write-db birlikte kullanılamaz.")
     if args.limit is not None and args.limit <= 0:
         raise SystemExit("--limit pozitif olmalıdır.")
 
@@ -74,6 +83,14 @@ def main() -> int:
     snapshot_dir.mkdir(parents=True, exist_ok=True)
     report_dir.mkdir(parents=True, exist_ok=True)
     output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    if args.replay_report:
+        return replay_report_bundle(
+            replay_report_path=Path(args.replay_report),
+            output_path=output_path,
+            report_dir=report_dir,
+            previous_report_path=Path(args.previous_report) if args.previous_report else None,
+        )
 
     allowlist = select_allowlist(args.limit)
     dry_run = bool(args.dry_run or not args.write_db)
@@ -100,7 +117,8 @@ def main() -> int:
         dry_run=dry_run,
         allowlist_limit=args.limit,
     )
-    report_dict = report.to_dict()
+    report_dict = _with_quality_validation_results(report.to_dict())
+    _write_json(output_path, report_dict)
 
     import_service = YokatlasImportService()
     db_report = import_service.import_report(
@@ -117,7 +135,8 @@ def main() -> int:
         },
     )
 
-    write_report_bundle(report_dict, db_report.to_dict(), report_dir)
+    previous_report = _read_json(Path(args.previous_report)) if args.previous_report else None
+    write_report_bundle(report_dict, db_report.to_dict(), report_dir, previous_report=previous_report)
 
     severity_counts = _severity_counts(report_dict)
     print("\n" + "=" * 72)
@@ -147,8 +166,49 @@ def main() -> int:
     return 0 if report.success and db_report.success else 1
 
 
-def write_report_bundle(report: dict[str, Any], db_report: dict[str, Any], report_dir: Path) -> None:
+def replay_report_bundle(
+    replay_report_path: Path,
+    output_path: Path,
+    report_dir: Path,
+    previous_report_path: Path | None = None,
+) -> int:
+    report_dict = _with_quality_validation_results(_read_json(replay_report_path))
+    previous_report = _read_json(previous_report_path) if previous_report_path else None
+
+    import_service = YokatlasImportService()
+    db_report = import_service.import_report(
+        report_dict,
+        write_db=False,
+        ensure_schema=False,
+        config={"replay_report": str(replay_report_path), "write_db": False},
+    )
+
+    output_path.write_text(json.dumps(report_dict, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_report_bundle(report_dict, db_report.to_dict(), report_dir, previous_report=previous_report)
+
+    import_ready = _read_json(report_dir / "import_ready_report.json")
+    print("=" * 72)
+    print("GİBTÜ YÖK Atlas Replay Raporu")
+    print("=" * 72)
+    print(f"Kaynak rapor: {replay_report_path}")
+    print(f"Birleşik çıktı: {output_path}")
+    print(f"Rapor klasörü: {report_dir}")
+    print(f"Veri yılı: {report_dict.get('data_year')}")
+    print(f"Program sayısı: {len(report_dict.get('programs') or [])}")
+    print(f"Snapshot sayısı: {report_dict.get('snapshot_count')}")
+    print(f"Import-ready: {import_ready.get('ready_for_db_write')}")
+    print(f"Manual review: {import_ready.get('manual_review_count')}")
+    return 0 if db_report.success else 1
+
+
+def write_report_bundle(
+    report: dict[str, Any],
+    db_report: dict[str, Any],
+    report_dir: Path,
+    previous_report: dict[str, Any] | None = None,
+) -> None:
     severity_counts = _severity_counts(report)
+    domain_bundle = build_report_bundle(report, db_report, previous_report)
     runtime = {
         "started_at": report.get("started_at"),
         "finished_at": report.get("finished_at"),
@@ -171,11 +231,7 @@ def write_report_bundle(report: dict[str, Any], db_report: dict[str, Any], repor
         "database": db_report,
         "manual_check_samples": report.get("manual_check_samples") or [],
     }
-    validation_report = {
-        "run_id": report.get("run_id"),
-        "summary": severity_counts,
-        "results": report.get("validation_results") or [],
-    }
+    validation_report = domain_bundle["validation_report"]
     snapshot_manifest = {
         "run_id": report.get("run_id"),
         "snapshot_count": report.get("snapshot_count"),
@@ -190,14 +246,31 @@ def write_report_bundle(report: dict[str, Any], db_report: dict[str, Any], repor
     _write_json(report_dir / "unmatched_programs.json", report.get("missing_programs") or [])
     _write_json(report_dir / "unexpected_programs.json", report.get("unexpected_programs") or [])
     _write_json(report_dir / "snapshot_manifest.json", snapshot_manifest)
+    _write_json(report_dir / "crawl_run_manifest.json", domain_bundle["crawl_run_manifest"])
+    _write_json(report_dir / "diff_report.json", domain_bundle["diff_report"])
+    _write_json(report_dir / "manual_review_items.json", domain_bundle["manual_review_items"])
+    _write_json(report_dir / "import_ready_report.json", domain_bundle["import_ready_report"])
 
 
 def _severity_counts(report: dict[str, Any]) -> dict[str, int]:
-    counts = {"critical": 0, "warning": 0, "info": 0}
-    for issue in report.get("validation_results") or []:
-        severity = str(issue.get("severity") or "info")
-        counts[severity] = counts.get(severity, 0) + 1
-    return counts
+    return domain_severity_counts(report)
+
+
+def _with_quality_validation_results(report: dict[str, Any]) -> dict[str, Any]:
+    validation_report = build_validation_report(report)
+    quality_results = validation_report.get("quality_rule_results") or []
+    if not quality_results:
+        return report
+    enriched = dict(report)
+    enriched["validation_results"] = [
+        *(report.get("validation_results") or []),
+        *quality_results,
+    ]
+    return enriched
+
+
+def _read_json(path: Path) -> dict[str, Any]:
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _write_json(path: Path, payload: Any) -> None:
