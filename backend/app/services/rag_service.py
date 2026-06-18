@@ -33,6 +33,7 @@ from app.services.administrative_staff_service import get_administrative_staff_s
 from app.services.academic_calendar_service import get_academic_calendar_service
 from app.services.academic_staff_service import get_academic_staff_service
 from app.services.food_menu_service import get_food_menu_service
+from app.services.subunit_management_service import get_subunit_management_service
 from app.services.unit_management_service import get_unit_management_service
 from app.services.yokatlas_query_service import get_yokatlas_query_service
 from app.services.intent_classifier import classify_intent, REJECTION_RESPONSE
@@ -401,6 +402,11 @@ class RagService:
         if yokatlas_answer is not None:
             logger.info("YÖK Atlas tercih/yerleşme sorgusu deterministik servisle yanıtlandı.")
             return yokatlas_answer
+
+        subunit_management_answer = get_subunit_management_service().answer_chat_query(question)
+        if subunit_management_answer is not None:
+            logger.info("Bölüm/program yönetim sorgusu deterministik servisle yanıtlandı.")
+            return subunit_management_answer
 
         unit_management_answer = get_unit_management_service().answer_chat_query(question)
         if unit_management_answer is not None:

@@ -38,6 +38,7 @@ backend/scrapers/.academic_calendar_sources.json
 
 # local scraper reports/checkpoints
 .tmp/
+backend/reports/subunit_management/
 
 # YÖK Atlas local dry-run/replay/import artifacts
 backend/data/yokatlas/db_backups/
