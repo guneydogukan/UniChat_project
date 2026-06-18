@@ -33,6 +33,7 @@ from app.services.administrative_staff_service import get_administrative_staff_s
 from app.services.academic_calendar_service import get_academic_calendar_service
 from app.services.academic_staff_service import get_academic_staff_service
 from app.services.food_menu_service import get_food_menu_service
+from app.services.program_catalog_service import get_program_catalog_service
 from app.services.subunit_management_service import get_subunit_management_service
 from app.services.unit_management_service import get_unit_management_service
 from app.services.yokatlas_query_service import get_yokatlas_query_service
@@ -398,11 +399,6 @@ class RagService:
             logger.info("İdari birim/personel sorgusu deterministik servisle yanıtlandı.")
             return administrative_staff_answer
 
-        yokatlas_answer = get_yokatlas_query_service().answer_chat_query(question)
-        if yokatlas_answer is not None:
-            logger.info("YÖK Atlas tercih/yerleşme sorgusu deterministik servisle yanıtlandı.")
-            return yokatlas_answer
-
         subunit_management_answer = get_subunit_management_service().answer_chat_query(question)
         if subunit_management_answer is not None:
             logger.info("Bölüm/program yönetim sorgusu deterministik servisle yanıtlandı.")
@@ -417,6 +413,16 @@ class RagService:
         if academic_staff_answer is not None:
             logger.info("Akademik kadro sorgusu deterministik servisle yanıtlandı.")
             return academic_staff_answer
+
+        yokatlas_answer = get_yokatlas_query_service().answer_chat_query(question)
+        if yokatlas_answer is not None:
+            logger.info("YÖK Atlas tercih/yerleşme sorgusu deterministik servisle yanıtlandı.")
+            return yokatlas_answer
+
+        program_catalog_answer = get_program_catalog_service().answer_chat_query(question)
+        if program_catalog_answer is not None:
+            logger.info("Bölüm/program katalog sorgusu deterministik servisle yanıtlandı.")
+            return program_catalog_answer
 
         if self._pipeline is None:
             raise RuntimeError("Pipeline henüz oluşturulmadı. build_pipeline() çağrılmalı.")

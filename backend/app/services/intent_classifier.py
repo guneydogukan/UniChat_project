@@ -94,6 +94,27 @@ ACADEMIC_CALENDAR_SCOPE_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
+PROGRAM_CATALOG_METRIC_PATTERN = re.compile(
+    r"\b("
+    r"taban\s+puan\w*|kaç\s+puan\w*|kac\s+puan\w*|puan\s+tür\w*|puan\s+tur\w*|"
+    r"başarı\s+sıra\w*|basari\s+sira\w*|sıralama\w*|siralama\w*|"
+    r"kontenjan\w*|kontejan\w*|yerleş\w*|yerles\w*|ösym|osym|"
+    r"özel\s+koşul\w*|ozel\s+kosul\w*|netleri"
+    r")\b",
+    re.IGNORECASE,
+)
+
+PROGRAM_CATALOG_SCOPE_PATTERN = re.compile(
+    r"\b("
+    r"akademik\s+birim|fakülte\w*|fakulte\w*|yüksekokul\w*|yuksekokul\w*|"
+    r"meslek\s+yüksekokul\w*|meslek\s+yuksekokul\w*|myo|enstitü\w*|enstitu\w*|"
+    r"bölüm\w*|bolum\w*|program\w*|lisans|ön\s*lisans|on\s*lisans|onlisans|"
+    r"hangi\s+birim|hangi\s+fakülte|hangi\s+fakulte|bünyesinde|bunyesinde|"
+    r"var\s+mi|var\s+mı"
+    r")\b",
+    re.IGNORECASE,
+)
+
 # ── Üniversite bağlamı sinyal kelimeleri ──
 UNIVERSITY_SIGNALS: frozenset[str] = frozenset({
     # Kurum
@@ -177,3 +198,53 @@ def classify_intent(query: str) -> str:
     # 3. Belirsiz — pipeline'a gönder, LLM güçlendirilmiş prompt ile karar versin
     logger.debug("❓ Intent: '%s' → NEEDS_CHECK", query[:60])
     return "NEEDS_CHECK"
+
+
+def classify_program_catalog_intent(query: str) -> str | None:
+    """Bölüm/program katalog sorguları için dar intent sınıflandırması.
+
+    YÖK Atlas metrik sorguları bu yardımcı tarafından bilinçli olarak
+    sınıflandırılmaz; mevcut YokatlasQueryService akışında kalır.
+    """
+    if PROGRAM_CATALOG_METRIC_PATTERN.search(query):
+        return None
+
+    q_lower = query.lower()
+    q_norm = (
+        q_lower
+        .replace("ı", "i")
+        .replace("ğ", "g")
+        .replace("ü", "u")
+        .replace("ş", "s")
+        .replace("ö", "o")
+        .replace("ç", "c")
+    )
+    has_list_word = bool(re.search(r"\b(hangi|neler|nelerdir|liste|listesi|goster|göster)\b", q_lower))
+
+    if "meslek yuksekokul" in q_norm or "myo" in q_norm:
+        return "vocational_school_programs_query" if "program" in q_norm else "vocational_school_list_query"
+    if "yuksekokul" in q_norm and "meslek" not in q_norm:
+        return "school_list_query"
+    if "fakulte" in q_norm and "bolum" in q_norm:
+        return "faculty_departments_query"
+    if "fakulte" in q_norm:
+        return "faculty_list_query"
+    if "enstitu" in q_norm:
+        return "institute_list_query"
+    if "akademik birim" in q_norm:
+        return "academic_unit_list_query"
+    if ("on lisans" in q_norm or "onlisans" in q_norm) and has_list_word:
+        return "associate_degree_programs_query"
+    if "lisans" in q_norm and "onlisans" not in q_norm and "on lisans" not in q_norm and has_list_word:
+        return "undergraduate_programs_query"
+    if "program" in q_norm and has_list_word:
+        return "program_list_query"
+    if "bolum" in q_norm and has_list_word:
+        return "department_list_query"
+    if re.search(r"\b(var\s+mi|var\s+mı|mevcut\s+mu|bulunuyor\s+mu|yok\s+mu)\b", q_lower):
+        return "program_exists_query"
+    if re.search(r"\b(hangi\s+fakulte|hangi\s+fakülte|hangi\s+birim|nerede|bunyesinde|bünyesinde)\b", q_lower):
+        return "program_faculty_query"
+    if PROGRAM_CATALOG_SCOPE_PATTERN.search(query):
+        return "ambiguous_program_query"
+    return None
