@@ -41,6 +41,8 @@ DOMAIN_TERMS: list[str] = [
     "erasmus", "akreditasyon", "devamsızlık", "yönetmelik",
     "koordinatörlük", "dekanlık", "rektörlük",
     "kontenjan", "başvuru", "kayıt", "mezuniyet",
+    "aday", "portal", "öğrenim", "soru", "sorular", "sorulan",
+    "sıkça", "sss", "faq", "tercih",
     "akademik", "takvim", "vize", "final", "bütünleme", "büt",
     "yarıyıl", "güz", "bahar", "ders", "başlangıcı",
     # Yerleşke

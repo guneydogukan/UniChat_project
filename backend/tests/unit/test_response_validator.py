@@ -10,12 +10,14 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 
 from app.services.response_validator import (  # noqa: E402
     ACADEMIC_STAFF_RAG_FALLBACK_RESPONSE,
+    GENERAL_CONTACT_EMAIL,
     LANGUAGE_FALLBACK_RESPONSE,
     PLACEHOLDER_EMAIL,
     PLACEHOLDER_PHONE,
     enforce_turkish_response,
     validate_response,
 )
+from app.services.rag_service import _append_general_contact_if_needed, _strip_contradictory_fallback  # noqa: E402
 
 
 class ResponseValidatorWhitelistTests(unittest.TestCase):
@@ -61,6 +63,72 @@ class ResponseValidatorWhitelistTests(unittest.TestCase):
         result = validate_response("Başvuru: info@example.org", sources)
 
         self.assertIn("info@example.org", result)
+
+    def test_kutuphane_sorusunda_alakasiz_kaynak_maili_kaldirilir(self):
+        sources = [
+            {
+                "content": "Kütüphane ve Dokümantasyon Daire Başkanlığı çalışma saatleri.",
+                "meta": {"category": "kutuphane", "title": "Kütüphane"},
+            },
+            {
+                "content": "Sağlık Bilimleri Fakültesi iletişim: sbf@gibtu.edu.tr",
+                "meta": {"category": "bolumler", "title": "Sağlık Bilimleri Fakültesi"},
+            },
+        ]
+
+        result = validate_response(
+            "Kütüphane için e-posta: sbf@gibtu.edu.tr",
+            sources,
+            question="Kütüphane hafta sonu açık mı?",
+        )
+
+        self.assertNotIn("sbf@gibtu.edu.tr", result)
+        self.assertIn(PLACEHOLDER_EMAIL, result)
+
+    def test_konuya_ozel_mail_yoksa_genel_mail_whitelisttedir(self):
+        sources = [
+            {
+                "content": "Kütüphane ve Dokümantasyon Daire Başkanlığı çalışma saatleri.",
+                "meta": {"category": "kutuphane", "title": "Kütüphane"},
+            }
+        ]
+
+        result = validate_response(
+            f"Genel iletişim: {GENERAL_CONTACT_EMAIL}",
+            sources,
+            question="Kütüphane hafta sonu açık mı?",
+        )
+
+        self.assertIn(GENERAL_CONTACT_EMAIL, result)
+
+
+class RagResponsePostProcessTests(unittest.TestCase):
+    def test_context_varken_frankenstein_fallback_temizlenir(self):
+        response = (
+            "Ders kaydı işlemleri akademik takvimde belirtilen tarihlerde öğrenci bilgi sistemi üzerinden yapılır.\n\n"
+            "Bu konuda elimde yeterli bilgi bulunmuyor. Detaylı bilgi için Öğrenci İşleri birimine başvurmanızı öneriyorum."
+        )
+        sources = [{"content": "Ders kaydı işlemleri öğrenci bilgi sistemi üzerinden yapılır."}]
+
+        result = _strip_contradictory_fallback(response, sources)
+
+        self.assertIn("Ders kaydı işlemleri", result)
+        self.assertNotIn("yeterli bilgi bulunmuyor", result.lower())
+
+    def test_fallback_only_yanit_korunur(self):
+        response = "Bu konuda elimde yeterli bilgi bulunmuyor. Detaylı bilgi için ilgili birime başvurmanızı öneriyorum."
+
+        result = _strip_contradictory_fallback(response, [{"content": "Kısa kaynak"}])
+
+        self.assertEqual(result, response)
+
+    def test_konuya_ozel_mail_yoksa_genel_mail_eklenir(self):
+        response = "Kütüphane çalışma saatleri için güncel duyurular takip edilmelidir."
+        sources = [{"content": "Kütüphane ve Dokümantasyon Daire Başkanlığı çalışma saatleri."}]
+
+        result = _append_general_contact_if_needed(response, "Kütüphane hafta sonu açık mı?", sources)
+
+        self.assertIn(GENERAL_CONTACT_EMAIL, result)
 
 
 class ResponseLanguageConsistencyTests(unittest.TestCase):

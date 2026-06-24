@@ -28,20 +28,63 @@ METRIC_QUERY_RE = re.compile(
     re.IGNORECASE,
 )
 
+EXPLICIT_CATALOG_SIGNAL_RE = re.compile(
+    r"\b("
+    r"fakülte\w*|fakulte\w*|yüksekokul\w*|yuksekokul\w*|myo|"
+    r"meslek\s+yüksekokul\w*|meslek\s+yuksekokul\w*|enstitü\w*|enstitu\w*|"
+    r"bölüm\w*|bolum\w*|program\w*|lisans|ön\s*lisans|on\s*lisans|onlisans|"
+    r"hangi\s+birim\w*|hangi\s+fakülte\w*|hangi\s+fakulte\w*|hangi\s+myo\w*|"
+    r"hangi\s+okul\w*|hangi\s+yüksekokul\w*|hangi\s+yuksekokul\w*|"
+    r"bağlı|bagli|bünyesinde|bunyesinde"
+    r")\b",
+    re.IGNORECASE,
+)
+
 CATALOG_SIGNAL_RE = re.compile(
     r"\b("
     r"fakülte\w*|fakulte\w*|yüksekokul\w*|yuksekokul\w*|myo|"
     r"meslek\s+yüksekokul\w*|meslek\s+yuksekokul\w*|enstitü\w*|enstitu\w*|"
     r"bölüm\w*|bolum\w*|program\w*|lisans|ön\s*lisans|on\s*lisans|onlisans|"
-    r"hangi\s+birim|hangi\s+fakülte|hangi\s+fakulte|bünyesinde|bunyesinde|"
-    r"var\s+mi|var\s+mı|yok\s+mu"
+    r"hangi\s+birim\w*|hangi\s+fakülte\w*|hangi\s+fakulte\w*|hangi\s+myo\w*|"
+    r"hangi\s+okul\w*|hangi\s+yüksekokul\w*|hangi\s+yuksekokul\w*|"
+    r"bağlı|bagli|bünyesinde|bunyesinde|"
+    r"var\s*m[ıi]|varm[ıi]|mevcut\s*m[ıiuü]|mevcutm[ıiuü]|"
+    r"bulun(?:uyor|ur)\s*m[ıiuü]|yok\s*m[ıiuü]|yokm[ıiuü]|"
+    r"aç(?:ıl(?:dı|di|mış|mis)|ık)\s*m[ıi]|ac(?:il(?:di|mis)|ik)\s*m[ıi]|"
+    r"aç(?:ıldı|ildi|ılmış|ilmis)m[ıi]|ac(?:ildi|ilmis)m[ıi]|aktif\s*m[ıi]|aktifm[ıi]"
     r")\b",
     re.IGNORECASE,
 )
 
-LIST_WORD_RE = re.compile(r"\b(hangi|neler|nelerdir|liste|listesi|say|göster|goster)\b", re.IGNORECASE)
-EXISTS_RE = re.compile(r"\b(var\s+mi|var\s+mı|mevcut\s+mu|bulunuyor\s+mu|yok\s+mu)\b", re.IGNORECASE)
-UNIT_LOOKUP_RE = re.compile(r"\b(hangi\s+fakulte|hangi\s+fakülte|hangi\s+birim|nerede|nereye\s+bagli|nereye\s+bağlı|bünyesinde|bunyesinde)\b", re.IGNORECASE)
+LIST_WORD_RE = re.compile(r"\b(hangi|hangileri|neler|nelerdir|liste|listesi|listele\w*|say|göster|goster)\b", re.IGNORECASE)
+EXISTS_RE = re.compile(
+    r"\b("
+    r"var\s*m[ıi]|varm[ıi]|"
+    r"mevcut\s*m[ıiuü]|mevcutm[ıiuü]|"
+    r"bulun(?:uyor|ur)\s*m[ıiuü]|"
+    r"yok\s*m[ıiuü]|yokm[ıiuü]|"
+    r"aç(?:ıl(?:dı|di|mış|mis)|ık)\s*m[ıi]|ac(?:il(?:di|mis)|ik)\s*m[ıi]|"
+    r"aç(?:ıldı|ildi|ılmış|ilmis)m[ıi]|ac(?:ildi|ilmis)m[ıi]|"
+    r"aktif\s*m[ıi]|aktifm[ıi]"
+    r")\b",
+    re.IGNORECASE,
+)
+UNIT_LOOKUP_RE = re.compile(
+    r"\b("
+    r"hangi\s+fakulte\w*|hangi\s+fakülte\w*|hangi\s+birim\w*|"
+    r"hangi\s+myo\w*|hangi\s+okul\w*|hangi\s+yüksekokul\w*|hangi\s+yuksekokul\w*|"
+    r"nerede|nereye\s+bagli|nereye\s+bağlı|"
+    r"hangi\s+birime\s+bagli|hangi\s+birime\s+bağlı|bagli|bağlı|"
+    r"bünyesinde|bunyesinde"
+    r")\b",
+    re.IGNORECASE,
+)
+
+NAMED_CATALOG_EXISTS_RE = re.compile(
+    r"\b(\w+\s+){0,5}(muhendisligi|fakultesi|bolumu|programi|hekimligi)\b|"
+    r"\b(tip|ebelik|hemsirelik|fizyoterapi|eczacilik|veteriner|psikoloji|mimarlik|gastronomi|tercumanlik|ilahiyat)\b",
+    re.IGNORECASE,
+)
 
 CATALOG_HARD_BLOCKER_RE = re.compile(
     r"\b("
@@ -54,11 +97,16 @@ CATALOG_HARD_BLOCKER_RE = re.compile(
     r"öğretim\s+üye\w*|ogretim\s+uye\w*|"
     r"öğretim\s+eleman\w*|ogretim\s+eleman\w*|"
     r"personel\s+kadro\w*|kadro\w*|"
+    r"idari\s+birim\w*|idari\s+personel\w*|öğrenci\s+iş\w*|ogrenci\s+is\w*|"
     r"taban\s+puan\w*|kaç\s+puan\w*|kac\s+puan\w*|"
     r"başarı\s+sıra\w*|basari\s+sira\w*|sıralama\w*|siralama\w*|"
     r"puan\s+tür\w*|puan\s+tur\w*|ösym|osym|kontenjan\w*|"
     r"ders\s+kayd\w*|ders\s+kayit\w*|akademik\s+takvim|"
-    r"yemek\w*|yemekhane\w*|ulaşım\w*|ulasim\w*|yurt\w*"
+    r"yemek\w*|yemekhane\w*|ulaşım\w*|ulasim\w*|yurt\w*|"
+    r"erasmus|değişim\w*|degisim\w*|burs\w*|staj\w*|"
+    r"kütüphane\w*|kutuphane\w*|kampüs\w*|kampus\w*|"
+    r"imkan\w*|olanak\w*|kulüp\w*|kulup\w*|topluluk\w*|"
+    r"sıkça\s+sorulan|sikca\s+sorulan|sık\s+sorulan|sik\s+sorulan|sss|faq"
     r")\b",
     re.IGNORECASE,
 )
@@ -84,7 +132,7 @@ CANDIDATE_OGRENIM_CONTEXT_NORMALIZED_RE = re.compile(
 
 CANDIDATE_NON_OGRENIM_RE = re.compile(
     r"\b("
-    r"sık\s+sorulan|sik\s+sorulan|sss|"
+    r"sıkça\s+sorulan|sikca\s+sorulan|sık\s+sorulan|sik\s+sorulan|sss|"
     r"olanak\w*|imkan\w*|burs\w*|yurt\w*|barınma\w*|barinma\w*|"
     r"kampüs\w*|kampus\w*|ulaşım\w*|ulasim\w*|kayıt\s+hakk|kayit\s+hakk|"
     r"kayıt\s+bilg|kayit\s+bilg|tercih\s+rehber\w*|"
@@ -127,6 +175,8 @@ QUERY_NOISE_TOKENS: frozenset[str] = frozenset({
     "te",
     "ta",
     "hangi",
+    "hangisi",
+    "hangileri",
     "neler",
     "nelerdir",
     "nedir",
@@ -135,7 +185,25 @@ QUERY_NOISE_TOKENS: frozenset[str] = frozenset({
     "mu",
     "mü",
     "var",
+    "varmi",
     "yok",
+    "yokmu",
+    "mevcut",
+    "mevcutmu",
+    "bulunuyor",
+    "bulunur",
+    "bulunuyormu",
+    "bulunurmu",
+    "mudur",
+    "midir",
+    "acik",
+    "acikmi",
+    "acildi",
+    "acildimi",
+    "acilmis",
+    "acilmismi",
+    "aktif",
+    "aktifmi",
     "bolum",
     "bolumu",
     "bolumler",
@@ -154,6 +222,54 @@ QUERY_NOISE_TOKENS: frozenset[str] = frozenset({
     "on",
     "myo",
 })
+
+LIST_DESCRIPTOR_TOKENS: frozenset[str] = frozenset({
+    "birimler",
+    "birimleri",
+    "bolumler",
+    "bolumleri",
+    "enstituler",
+    "enstituleri",
+    "fakulteler",
+    "fakulteleri",
+    "programlar",
+    "programlari",
+    "yuksekokullar",
+    "yuksekokullari",
+})
+
+CHILD_LIST_TOKENS: frozenset[str] = frozenset({
+    "bolum",
+    "bolumu",
+    "bolumler",
+    "bolumleri",
+    "program",
+    "programi",
+    "programlar",
+    "programlari",
+})
+
+CATALOG_TYPE_SUFFIXES: tuple[str, ...] = (
+    "meslek yuksekokulu",
+    "meslek yuksekokul",
+    "yuksekokulu",
+    "yuksekokul",
+    "fakultesi",
+    "fakulte",
+    "enstitusu",
+    "enstitu",
+    "bolumu",
+    "bolum",
+    "programi",
+    "program",
+)
+
+ACRONYM_STOPWORDS: frozenset[str] = frozenset({"ve", "ile", "the", "of"})
+
+COMMON_RUNTIME_ALIASES: dict[str, set[str]] = {
+    "fizyoterapi": {"ftr", "fizik tedavi", "fizik tedavi rehabilitasyon"},
+    "fizyoterapi ve rehabilitasyon": {"ftr", "fizik tedavi", "fizik tedavi rehabilitasyon"},
+}
 
 CANDIDATE_CONTEXT_NOISE_TOKENS: frozenset[str] = frozenset({
     "aday",
@@ -196,6 +312,138 @@ EDUCATION_LABELS = {
 
 MIN_ENTRY_MATCH_SCORE = 76
 AMBIGUOUS_SCORE_GAP = 10
+
+
+def _has_list_signal(value: str) -> bool:
+    normalized = normalize_for_match(value)
+    tokens = set(normalized.split())
+    return bool(
+        LIST_WORD_RE.search(value)
+        or LIST_WORD_RE.search(normalized)
+        or tokens.intersection(LIST_DESCRIPTOR_TOKENS)
+    )
+
+
+def _strip_catalog_type_suffix(value: str) -> str:
+    text = normalize_for_match(value)
+    previous = None
+    while previous != text:
+        previous = text
+        for suffix in CATALOG_TYPE_SUFFIXES:
+            if text == suffix:
+                return ""
+            if text.endswith(f" {suffix}"):
+                text = text[: -(len(suffix) + 1)].strip()
+                break
+    return text
+
+
+def _compact_alias(value: str) -> str:
+    return re.sub(r"\s+", "", normalize_for_match(value))
+
+
+def _acronym(tokens: list[str]) -> str:
+    return "".join(token[0] for token in tokens if token and token not in ACRONYM_STOPWORDS)
+
+
+def _generated_acronyms(normalized_value: str) -> set[str]:
+    tokens = [token for token in normalized_value.split() if token]
+    useful_tokens = [token for token in tokens if token not in ACRONYM_STOPWORDS]
+    aliases: set[str] = set()
+    base = _acronym(useful_tokens)
+    if 2 <= len(base) <= 10:
+        aliases.add(base)
+
+    if len(tokens) >= 2 and tokens[-2:] in (["meslek", "yuksekokulu"], ["meslek", "yuksekokul"]):
+        content = [token for token in tokens[:-2] if token not in ACRONYM_STOPWORDS]
+        content_base = _acronym(content)
+        if content_base:
+            aliases.add(f"{content_base}myo")
+    if tokens and tokens[-1] in {"yuksekokulu", "yuksekokul"}:
+        content = [token for token in tokens[:-1] if token not in ACRONYM_STOPWORDS]
+        content_base = _acronym(content)
+        if content_base:
+            aliases.add(f"{content_base}yo")
+    if tokens and tokens[-1] in {"enstitusu", "enstitu"}:
+        content = [token for token in tokens[:-1] if token not in ACRONYM_STOPWORDS]
+        content_base = _acronym(content)
+        if content_base:
+            aliases.add(f"{content_base}e")
+    return aliases
+
+
+def _generated_shorthand_aliases(normalized_value: str) -> set[str]:
+    tokens = [token for token in normalized_value.split() if token]
+    aliases: set[str] = set()
+    if len(tokens) >= 3 and tokens[-2:] in (["meslek", "yuksekokulu"], ["meslek", "yuksekokul"]):
+        content = [token for token in tokens[:-2] if token not in ACRONYM_STOPWORDS]
+        if content:
+            first = content[0]
+            aliases.add(f"{first} meslek yuksekokulu")
+            aliases.add(f"{first} meslek yuksekokul")
+            aliases.add(f"{first} myo")
+    return aliases
+
+
+def _generated_leading_aliases(normalized_value: str, allow_single_token: bool) -> set[str]:
+    stripped = _strip_catalog_type_suffix(normalized_value)
+    tokens = [token for token in stripped.split() if token and token not in ACRONYM_STOPWORDS]
+    aliases: set[str] = set()
+    if not tokens:
+        return aliases
+
+    max_phrase_len = min(3, len(tokens))
+    for size in range(2, max_phrase_len + 1):
+        aliases.add(" ".join(tokens[:size]))
+
+    connector_based_single = any(connector in normalized_value.split() for connector in ACRONYM_STOPWORDS)
+    if allow_single_token or connector_based_single:
+        first = tokens[0]
+        if len(first) >= 4:
+            aliases.add(first)
+    return aliases
+
+
+def _catalog_aliases(
+    name: Any,
+    aliases: list[Any],
+    allow_single_token_alias: bool = False,
+) -> set[str]:
+    alias_values: set[str] = set()
+
+    def add_generated(candidate: str, include_stripped: bool) -> None:
+        candidate = candidate.strip()
+        if not candidate:
+            return
+        alias_values.add(candidate)
+        compact = _compact_alias(candidate)
+        if len(compact) >= 4:
+            alias_values.add(compact)
+        if include_stripped:
+            stripped = _strip_catalog_type_suffix(candidate)
+            if stripped:
+                alias_values.add(stripped)
+                stripped_compact = _compact_alias(stripped)
+                if len(stripped_compact) >= 4:
+                    alias_values.add(stripped_compact)
+        alias_values.update(_generated_acronyms(candidate))
+        alias_values.update(_generated_shorthand_aliases(candidate))
+        alias_values.update(_generated_leading_aliases(candidate, allow_single_token_alias))
+
+    normalized_names = {normalize_for_match(name), normalize_program_name(name)}
+    for candidate in normalized_names:
+        add_generated(candidate, include_stripped=True)
+    for candidate in normalized_names:
+        for catalog_name, common_aliases in COMMON_RUNTIME_ALIASES.items():
+            if candidate == catalog_name or catalog_name in candidate:
+                for common_alias in common_aliases:
+                    add_generated(common_alias, include_stripped=False)
+    for alias in aliases:
+        normalized_alias = normalize_for_match(alias)
+        add_generated(normalized_alias, include_stripped=False)
+
+    alias_values.discard("")
+    return alias_values
 
 
 class ProgramCatalogInMemoryRepository:
@@ -265,6 +513,7 @@ class ProgramCatalogService:
         candidate_context = self._is_candidate_ogrenim_context(question, normalized_question)
         if not self._looks_like_catalog_query(question, normalized_question, candidate_context):
             return None
+        has_exists_query = self._has_existence_signal(normalized_question)
 
         try:
             units = self._repository.list_units()
@@ -279,8 +528,19 @@ class ProgramCatalogService:
                 "db_unavailable",
             )
 
-        units = self._visible_units(units, candidate_context=candidate_context)
-        entries = self._visible_entries(entries, candidate_context=candidate_context)
+        raw_units = units
+        raw_entries = entries
+        units = self._visible_units(raw_units, candidate_context=candidate_context)
+        entries = self._visible_entries(raw_entries, candidate_context=candidate_context)
+
+        if not candidate_context:
+            fallback_units = self._candidate_fallback_units(raw_units)
+            fallback_entries = self._candidate_fallback_entries(raw_entries)
+            if not entries and fallback_entries:
+                entries = fallback_entries
+                units = self._merge_units(units, fallback_units)
+            elif not units and fallback_units:
+                units = fallback_units
 
         if not units and not entries:
             if not candidate_context:
@@ -324,12 +584,21 @@ class ProgramCatalogService:
             child_kind = "program" if unit.get("unit_type") == "vocational_school" else "department"
             return self._format_unit_children(unit, entries, child_kind, normalized_question)
 
+        if unit and self._is_entry_unit_lookup(normalized_question):
+            return self._unit_type_response(unit, normalized_question)
+
         if entry and self._is_entry_unit_lookup(normalized_question):
             return self._entry_unit_response(entry, normalized_question)
 
-        if EXISTS_RE.search(normalized_question):
+        if has_exists_query:
+            if unit and self._is_unit_existence_query(normalized_question):
+                return self._unit_type_response(unit, normalized_question)
             if entry:
                 return self._entry_exists_response(entry, normalized_question)
+            if unit and not self._is_program_field_existence_query(normalized_question):
+                return self._unit_type_response(unit, normalized_question)
+            if not self._should_return_negative_exists(question, normalized_question, candidate_context):
+                return None
             requested_name = self._extract_requested_name(normalized_question)
             return self._not_found_exists_response(
                 requested_name,
@@ -365,7 +634,11 @@ class ProgramCatalogService:
 
     @staticmethod
     def _has_catalog_hard_blocker(original_question: str) -> bool:
-        return bool(CATALOG_HARD_BLOCKER_RE.search(original_question))
+        normalized_question = normalize_for_match(original_question)
+        return bool(
+            CATALOG_HARD_BLOCKER_RE.search(original_question)
+            or CATALOG_HARD_BLOCKER_RE.search(normalized_question)
+        )
 
     @staticmethod
     def _is_candidate_ogrenim_context(original_question: str, normalized_question: str) -> bool:
@@ -386,13 +659,41 @@ class ProgramCatalogService:
             return False
         if candidate_context:
             return True
-        if CATALOG_SIGNAL_RE.search(original_question):
+        if self._has_explicit_catalog_signal(original_question, normalized_question):
             return True
-        return bool(EXISTS_RE.search(normalized_question) and self._contains_nonexistent_guard(normalized_question))
+        return self._has_existence_signal(normalized_question)
+
+    @staticmethod
+    def _has_explicit_catalog_signal(original_question: str, normalized_question: str) -> bool:
+        return bool(
+            EXPLICIT_CATALOG_SIGNAL_RE.search(original_question)
+            or EXPLICIT_CATALOG_SIGNAL_RE.search(normalized_question)
+        )
+
+    @staticmethod
+    def _has_existence_signal(normalized_question: str) -> bool:
+        return bool(EXISTS_RE.search(normalized_question))
+
+    def _should_return_negative_exists(
+        self,
+        original_question: str,
+        normalized_question: str,
+        candidate_context: bool,
+    ) -> bool:
+        return (
+            candidate_context
+            or self._contains_nonexistent_guard(normalized_question)
+            or self._has_explicit_catalog_signal(original_question, normalized_question)
+            or self._has_named_catalog_exists_hint(normalized_question)
+        )
 
     @staticmethod
     def _contains_nonexistent_guard(normalized_question: str) -> bool:
         return any(f" {guard} " in f" {normalized_question} " for guard in NON_EXISTENT_PROGRAMS)
+
+    @staticmethod
+    def _has_named_catalog_exists_hint(normalized_question: str) -> bool:
+        return bool(NAMED_CATALOG_EXISTS_RE.search(normalized_question))
 
     @staticmethod
     def _visible_units(units: list[dict[str, Any]], candidate_context: bool = False) -> list[dict[str, Any]]:
@@ -413,12 +714,69 @@ class ProgramCatalogService:
         ]
 
     @staticmethod
+    def _candidate_fallback_units(units: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        return [
+            ProgramCatalogService._candidate_record_as_general(unit)
+            for unit in units
+            if unit.get("match_status") != "candidate_only"
+            and unit.get("db_first_answerable", True) is not False
+            and ProgramCatalogService._is_candidate_unit(unit)
+        ]
+
+    @staticmethod
+    def _candidate_fallback_entries(entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        return [
+            ProgramCatalogService._candidate_record_as_general(entry)
+            for entry in entries
+            if entry.get("match_status") != "candidate_only"
+            and entry.get("db_first_answerable", True) is not False
+            and ProgramCatalogService._is_candidate_entry(entry)
+            and not ProgramCatalogService._candidate_entry_is_unit_card(entry)
+        ]
+
+    @staticmethod
+    def _candidate_record_as_general(record: dict[str, Any]) -> dict[str, Any]:
+        general_record = dict(record)
+        general_record["source_type"] = "candidate_page_general_catalog_fallback"
+        general_record["answer_scope"] = "general_catalog_fallback"
+        general_record["candidate_general_fallback"] = True
+        return general_record
+
+    @staticmethod
+    def _candidate_entry_is_unit_card(entry: dict[str, Any]) -> bool:
+        program_name = normalize_for_match(entry.get("program_name") or "")
+        unit_name = normalize_for_match(entry.get("unit_name") or "")
+        return bool(
+            program_name
+            and unit_name
+            and program_name == unit_name
+            and entry.get("unit_type") in {"faculty", "school", "vocational_school", "institute"}
+        )
+
+    @staticmethod
+    def _merge_units(primary: list[dict[str, Any]], fallback: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        merged = list(primary)
+        seen = {
+            normalize_for_match(unit.get("normalized_unit_name") or unit.get("unit_name") or "")
+            for unit in primary
+        }
+        for unit in fallback:
+            key = normalize_for_match(unit.get("normalized_unit_name") or unit.get("unit_name") or "")
+            if not key or key in seen:
+                continue
+            seen.add(key)
+            merged.append(unit)
+        return merged
+
+    @staticmethod
     def _is_ambiguous_health_query(normalized_question: str) -> bool:
+        if any(token in normalized_question for token in ("meslek", "myo", "yuksekokul")):
+            return False
         return (
             "saglik" in normalized_question
             and "bilimleri" not in normalized_question
             and "hizmetleri" not in normalized_question
-            and ("bolum" in normalized_question or "program" in normalized_question or "neler" in normalized_question)
+            and bool(set(normalized_question.split()).intersection(CHILD_LIST_TOKENS) or _has_list_signal(normalized_question))
         )
 
     @staticmethod
@@ -427,25 +785,56 @@ class ProgramCatalogService:
 
     @staticmethod
     def _is_unit_children_query(normalized_question: str) -> bool:
-        return bool(LIST_WORD_RE.search(normalized_question)) and (
-            "bolum" in normalized_question or "program" in normalized_question or "neler" in normalized_question
+        return _has_list_signal(normalized_question) and bool(
+            set(normalized_question.split()).intersection(CHILD_LIST_TOKENS)
         )
 
     @staticmethod
     def _is_entry_unit_lookup(normalized_question: str) -> bool:
         return bool(UNIT_LOOKUP_RE.search(normalized_question)) or (
             "hangi" in normalized_question
-            and ("fak" in normalized_question or "birim" in normalized_question)
+            and ("fak" in normalized_question or "birim" in normalized_question or "myo" in normalized_question or "okul" in normalized_question)
         )
 
+    @staticmethod
+    def _is_unit_existence_query(normalized_question: str) -> bool:
+        return bool(
+            re.search(
+                r"\b(fakulte\w*|myo\w*|meslek\s+yuksekokul\w*|yuksekokul\w*|enstitu\w*)\b",
+                normalized_question,
+            )
+        )
+
+    @staticmethod
+    def _is_program_field_existence_query(normalized_question: str) -> bool:
+        return bool(re.search(r"\b(muhendisligi|hekimligi)\b", normalized_question))
+
     def _resolve_unit(self, normalized_question: str, units: list[dict[str, Any]]) -> dict[str, Any]:
-        scored: list[tuple[int, dict[str, Any]]] = []
+        strong_scored: list[tuple[int, dict[str, Any]]] = []
+        weak_scored: list[tuple[int, dict[str, Any]]] = []
         query_tokens = self._query_tokens(normalized_question)
         for unit in units:
-            score = self._name_score(unit.get("unit_name"), unit.get("aliases") or [], normalized_question, query_tokens)
-            if score >= MIN_ENTRY_MATCH_SCORE:
-                scored.append((score, unit))
-        return self._resolve_scored(scored, "unit")
+            strong_score = self._name_score(
+                unit.get("unit_name"),
+                unit.get("aliases") or [],
+                normalized_question,
+                query_tokens,
+                allow_single_token_alias=False,
+            )
+            if strong_score >= MIN_ENTRY_MATCH_SCORE:
+                strong_scored.append((strong_score, unit))
+                continue
+
+            weak_score = self._name_score(
+                unit.get("unit_name"),
+                unit.get("aliases") or [],
+                normalized_question,
+                query_tokens,
+                allow_single_token_alias=True,
+            )
+            if weak_score >= MIN_ENTRY_MATCH_SCORE:
+                weak_scored.append((weak_score, unit))
+        return self._resolve_scored(strong_scored or weak_scored, "unit")
 
     def _resolve_entry(self, normalized_question: str, entries: list[dict[str, Any]]) -> dict[str, Any]:
         if self._contains_nonexistent_guard(normalized_question):
@@ -453,10 +842,62 @@ class ProgramCatalogService:
         scored: list[tuple[int, dict[str, Any]]] = []
         query_tokens = self._query_tokens(normalized_question)
         for entry in entries:
+            if not self._entry_matches_field_suffix_context(entry, normalized_question, query_tokens):
+                continue
+            if self._single_token_entry_is_overextended(entry, normalized_question):
+                continue
             score = self._name_score(entry.get("program_name"), entry.get("aliases") or [], normalized_question, query_tokens)
             if score >= MIN_ENTRY_MATCH_SCORE:
                 scored.append((score, entry))
         return self._resolve_scored(scored, "entry")
+
+    @staticmethod
+    def _entry_matches_field_suffix_context(
+        entry: dict[str, Any],
+        normalized_question: str,
+        query_tokens: list[str],
+    ) -> bool:
+        suffix_tokens = {"muhendisligi", "hekimligi"}
+        active_suffixes = set(normalized_question.split()).intersection(suffix_tokens)
+        if not active_suffixes:
+            return True
+
+        entry_tokens = [
+            token
+            for token in normalize_for_match(entry.get("program_name") or "").split()
+            if token not in ACRONYM_STOPWORDS
+        ]
+        query_specific_tokens = [
+            token
+            for token in query_tokens
+            if token not in suffix_tokens and token not in ACRONYM_STOPWORDS
+        ]
+        entry_specific_tokens = [token for token in entry_tokens if token not in suffix_tokens]
+
+        for suffix in active_suffixes:
+            if suffix not in entry_tokens:
+                return False
+        if not query_specific_tokens:
+            return True
+        return any(
+            ProgramCatalogService._token_score(query_token, entry_token) >= 20
+            for query_token in query_specific_tokens
+            for entry_token in entry_specific_tokens
+        )
+
+    @staticmethod
+    def _single_token_entry_is_overextended(entry: dict[str, Any], normalized_question: str) -> bool:
+        entry_name = normalize_for_match(entry.get("program_name") or "")
+        entry_tokens = entry_name.split()
+        if len(entry_tokens) != 1:
+            return False
+        query_tokens = normalized_question.split()
+        entry_token = entry_tokens[0]
+        if entry_token not in query_tokens:
+            return False
+        index = query_tokens.index(entry_token)
+        suffix_window = set(query_tokens[index + 1:index + 3])
+        return bool(suffix_window.intersection({"muhendisligi", "fakultesi", "hekimligi"}))
 
     @staticmethod
     def _resolve_scored(scored: list[tuple[int, dict[str, Any]]], result_key: str) -> dict[str, Any]:
@@ -479,20 +920,30 @@ class ProgramCatalogService:
         aliases: list[Any],
         normalized_question: str,
         query_tokens: list[str],
+        allow_single_token_alias: bool = False,
     ) -> int:
-        alias_values = {normalize_program_name(name), normalize_for_match(name)}
-        alias_values.update(normalize_for_match(alias) for alias in aliases)
-        alias_values.discard("")
+        alias_values = _catalog_aliases(name, aliases, allow_single_token_alias=allow_single_token_alias)
         question_tokens = set(normalized_question.split())
+        compact_question = _compact_alias(normalized_question)
         best = 0
         for alias in alias_values:
             tokens = alias.split()
-            if len(tokens) == 1 and len(alias) <= 4:
+            if len(tokens) == 1 and len(alias) <= 3:
                 if alias in question_tokens:
                     best = max(best, 150 + len(alias))
                 continue
+            if len(tokens) == 1 and len(alias) <= 5:
+                if alias in question_tokens:
+                    best = max(best, 150 + len(alias))
+                    continue
+                if any(token.startswith(alias) and len(token) - len(alias) <= 4 for token in question_tokens):
+                    best = max(best, 128 + len(alias))
+                    continue
             if f" {alias} " in f" {normalized_question} ":
                 best = max(best, 140 + min(len(alias), 40))
+                continue
+            if " " not in alias and len(alias) >= 4 and alias in compact_question:
+                best = max(best, 130 + min(len(alias), 40))
                 continue
             best = max(best, ProgramCatalogService._fuzzy_score(tokens, query_tokens))
         return best
@@ -534,7 +985,7 @@ class ProgramCatalogService:
         if len(query_token) < 4 or len(alias_token) < 4:
             return 0
         ratio = SequenceMatcher(None, query_token, alias_token).ratio()
-        return int(ratio * 24) if ratio >= 0.86 else 0
+        return int(ratio * 24) if ratio >= 0.80 else 0
 
     @staticmethod
     def _query_tokens(normalized_question: str) -> list[str]:
@@ -854,31 +1305,36 @@ class ProgramCatalogService:
 
 def classify_program_catalog_intent(original_question: str, normalized_question: str | None = None) -> str | None:
     normalized = normalized_question or normalize_for_match(original_question)
+    has_list_signal = _has_list_signal(original_question) or _has_list_signal(normalized)
+    if re.search(r"\b(2|iki)\s*yillik\b", normalized) and has_list_signal:
+        return "associate_degree_programs_query"
+    if re.search(r"\b(4|dort)\s*yillik\b", normalized) and has_list_signal:
+        return "undergraduate_programs_query"
     if "meslek yuksekokul" in normalized or "myo" in normalized:
-        if LIST_WORD_RE.search(original_question) and "program" not in normalized:
+        if has_list_signal and "program" not in normalized:
             return "vocational_school_list_query"
     if "yuksekokul" in normalized and "meslek" not in normalized:
-        if LIST_WORD_RE.search(original_question) and "program" not in normalized and "bolum" not in normalized:
+        if has_list_signal and "program" not in normalized and "bolum" not in normalized:
             return "school_list_query"
-    if "fakulte" in normalized and LIST_WORD_RE.search(original_question) and "bolum" not in normalized:
+    if "fakulte" in normalized and has_list_signal and "bolum" not in normalized:
         return "faculty_list_query"
-    if "enstitu" in normalized and LIST_WORD_RE.search(original_question):
+    if "enstitu" in normalized and has_list_signal:
         return "institute_list_query"
     if "akademik birim" in normalized:
         return "academic_unit_list_query"
-    if ("onlisans" in normalized or "on lisans" in normalized) and LIST_WORD_RE.search(original_question):
+    if ("onlisans" in normalized or "on lisans" in normalized) and has_list_signal:
         return "associate_degree_programs_query"
-    if "lisans" in normalized and "onlisans" not in normalized and "on lisans" not in normalized and LIST_WORD_RE.search(original_question):
+    if "lisans" in normalized and "onlisans" not in normalized and "on lisans" not in normalized and has_list_signal:
         return "undergraduate_programs_query"
-    if "program" in normalized and LIST_WORD_RE.search(original_question):
+    if "program" in normalized and has_list_signal:
         return "program_list_query"
-    if "bolum" in normalized and LIST_WORD_RE.search(original_question):
+    if "bolum" in normalized and has_list_signal:
         return "department_list_query"
-    if EXISTS_RE.search(original_question):
+    if EXISTS_RE.search(original_question) or EXISTS_RE.search(normalized):
         return "program_exists_query"
-    if UNIT_LOOKUP_RE.search(original_question):
+    if UNIT_LOOKUP_RE.search(original_question) or UNIT_LOOKUP_RE.search(normalized):
         return "program_faculty_query"
-    if CATALOG_SIGNAL_RE.search(original_question):
+    if EXPLICIT_CATALOG_SIGNAL_RE.search(original_question) or EXPLICIT_CATALOG_SIGNAL_RE.search(normalized):
         return "ambiguous_program_query"
     return None
 

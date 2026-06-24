@@ -43,6 +43,7 @@ BLOCKED_DOMAINS: frozenset[str] = frozenset({
 # Yalnızca bu domain'lerden gelen e-postalar source_docs kontrolü ile kabul edilir.
 # gantep.edu.tr e-postaları her zaman reddedilir.
 GIBTU_EMAIL_DOMAIN = "gibtu.edu.tr"
+GENERAL_CONTACT_EMAIL = "info@gibtu.edu.tr"
 BLOCKED_EMAIL_DOMAINS: frozenset[str] = frozenset({
     "gantep.edu.tr",
 })
@@ -147,6 +148,25 @@ MONTH_NAMES_TR = {
     12: "Aralık",
 }
 
+CONTACT_TOPIC_RULES: tuple[tuple[re.Pattern[str], tuple[str, ...]], ...] = (
+    (
+        re.compile(r"\b(kutuphane)\w*"),
+        ("kutuphane", "dokumantasyon", "candidate library"),
+    ),
+    (
+        re.compile(r"\b(ogrenci\s+is\w*|ders\s+kayd\w*|ders\s+kayit\w*|transkript|harc|diploma)\b"),
+        ("ogrenci isleri", "ogrenciisleri", "academic calendar", "akademik takvim", "ders kay"),
+    ),
+    (
+        re.compile(r"\b(erasmus|degisim\w*|uluslararasi)\b"),
+        ("erasmus", "dis iliskiler", "uluslararasi"),
+    ),
+    (
+        re.compile(r"\b(yemek\w*|yemekhane\w*|sks|burs\w*|yurt\w*|barinma\w*|spor)\b"),
+        ("sks", "saglik kultur spor", "yemekhane", "yurt", "barinma", "burs"),
+    ),
+)
+
 
 def _extract_domain(url: str) -> Optional[str]:
     """URL'den domain'i çıkarır."""
@@ -221,6 +241,41 @@ def _iter_source_values(value: Any) -> Iterable[str]:
 def _source_text(source_doc: dict) -> str:
     """Whitelist ve kaynak doğrulama için kaynak dokümanı tek metin haline getirir."""
     return "\n".join(_iter_source_values(source_doc))
+
+
+def _normalize_topic_text(text: str) -> str:
+    value = (text or "").casefold()
+    for src, dst in {"ı": "i", "ğ": "g", "ü": "u", "ş": "s", "ö": "o", "ç": "c"}.items():
+        value = value.replace(src, dst)
+    value = re.sub(r"[^a-z0-9@._+-]+", " ", value)
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def _contact_source_terms_for_question(question: str | None) -> tuple[str, ...]:
+    if not question:
+        return ()
+    normalized_question = _normalize_topic_text(question)
+    terms: list[str] = []
+    for pattern, source_terms in CONTACT_TOPIC_RULES:
+        if not pattern.search(normalized_question):
+            continue
+        for term in source_terms:
+            normalized_term = _normalize_topic_text(term)
+            if normalized_term and normalized_term not in terms:
+                terms.append(normalized_term)
+    return tuple(terms)
+
+
+def _contact_relevant_sources(source_docs: list[dict], question: str | None) -> tuple[list[dict], bool]:
+    source_terms = _contact_source_terms_for_question(question)
+    if not source_terms:
+        return source_docs, False
+
+    relevant_docs = [
+        doc for doc in source_docs
+        if any(term in _normalize_topic_text(_source_text(doc)) for term in source_terms)
+    ]
+    return relevant_docs, True
 
 
 def _normalize_calendar_fragment(text: str) -> str:
@@ -460,7 +515,7 @@ def enforce_turkish_response(response: str) -> str:
     return fixed
 
 
-def validate_response(response: str, source_docs: list[dict]) -> str:
+def validate_response(response: str, source_docs: list[dict], question: str | None = None) -> str:
     """LLM yanıtındaki iletişim bilgilerini kaynak belgelerle çapraz doğrular.
 
     Doğrulama kuralları:
@@ -482,6 +537,7 @@ def validate_response(response: str, source_docs: list[dict]) -> str:
     Args:
         response: LLM'in ürettiği yanıt metni.
         source_docs: Pipeline'dan dönen kaynak belgeler listesi.
+        question: Opsiyonel kullanıcı sorusu; verilirse iletişim whitelist'i konuya göre daraltılır.
 
     Returns:
         Doğrulanmış/temizlenmiş yanıt metni.
@@ -491,8 +547,11 @@ def validate_response(response: str, source_docs: list[dict]) -> str:
 
     cleaned = response
     changes = []
-    allowed_emails = _email_whitelist(source_docs)
-    allowed_phones = _phone_whitelist(source_docs)
+    contact_source_docs, topic_contact_filter_active = _contact_relevant_sources(source_docs, question)
+    allowed_emails = _email_whitelist(contact_source_docs)
+    if topic_contact_filter_active and not allowed_emails:
+        allowed_emails.add(GENERAL_CONTACT_EMAIL)
+    allowed_phones = _phone_whitelist(contact_source_docs)
 
     # 1. URL doğrulama — en kritik katman
     for url_match in URL_PATTERN.finditer(cleaned):

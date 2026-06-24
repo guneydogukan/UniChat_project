@@ -38,7 +38,7 @@ from app.services.subunit_management_service import get_subunit_management_servi
 from app.services.unit_management_service import get_unit_management_service
 from app.services.yokatlas_query_service import get_yokatlas_query_service
 from app.services.intent_classifier import classify_intent, REJECTION_RESPONSE
-from app.services.response_validator import validate_response
+from app.services.response_validator import GENERAL_CONTACT_EMAIL, validate_response
 from app.services.query_preprocessor import preprocess_query
 
 logger = logging.getLogger(__name__)
@@ -60,9 +60,95 @@ TURKISH_STOPWORDS: frozenset[str] = frozenset({
 # Aday portalı, aday deneyimiyle ilgili kritik konularda daha güncel ve bağlamsal
 # metadata taşıdığı için prompt'a giden belge sıralamasında kontrollü biçimde öne alınır.
 CANDIDATE_PRIORITY_TOP_K_BOOST = 2
+CANDIDATE_FAQ_TOP_K_BOOST = 4
 CANDIDATE_PORTAL_HOST = "adayogrenci.gibtu.edu.tr"
 CANDIDATE_METADATA_VERSION = "candidate.v1"
 CANDIDATE_SCRAPER_NAME = "candidate_portal_scraper"
+
+FAQ_QUERY_RE = re.compile(r"\b(sikca\s+sorulan|sik\s+sorulan|sss|faq)\b", re.IGNORECASE)
+
+PROGRAM_CATALOG_ROUTE_SIGNAL_RE = re.compile(
+    r"\b("
+    r"fakulte\w*|yuksekokul\w*|myo|meslek\s+yuksekokul\w*|enstitu\w*|"
+    r"bolum\w*|program\w*|lisans|on\s*lisans|onlisans|"
+    r"hangi\s+birim|hangi\s+fakulte|bunyesinde|"
+    r"var\s*mi|varmi|mevcut\s*mu|mevcutmu|"
+    r"bulun(?:uyor|ur)\s*mu|yok\s*mu|yokmu|"
+    r"ac(?:il(?:di|mis)|ik)\s*mi|ac(?:ildi|ilmis)mi|aktif\s*mi|aktifmi"
+    r")\b",
+    re.IGNORECASE,
+)
+
+PROGRAM_CATALOG_ROUTE_BLOCK_RE = re.compile(
+    r"\b("
+    r"bolum\s+baskan\w*|program\s+baskan\w*|baskan\w*|"
+    r"dekan\w*|mudur\w*|yonetim\w*|danisman\w*|kurul\w*|sekreter\w*|"
+    r"akademik\s+kadro\w*|akademik\s+personel\w*|akademisyen\w*|hoca\w*|"
+    r"ogretim\s+uye\w*|ogretim\s+eleman\w*|kadro\w*|"
+    r"kontenjan\w*|kontejan\w*|puan\w*|siralama\w*|osym|"
+    r"yemek\w*|yemekhane\w*|yurt\w*|barinma\w*|ulasim\w*|"
+    r"erasmus|degisim\w*|burs\w*|staj\w*|kutuphane\w*|"
+    r"kampus\w*|imkan\w*|olanak\w*|kulup\w*|topluluk\w*|"
+    r"idari\s+birim\w*|idari\s+personel\w*|ogrenci\s+is\w*|"
+    r"sikca\s+sorulan|sik\s+sorulan|sss|faq"
+    r")\b",
+    re.IGNORECASE,
+)
+
+YOKATLAS_ROUTE_SIGNAL_RE = re.compile(
+    r"\b("
+    r"kontenjan\w*|kontejan\w*|birincilik\s+kontejan\w*|"
+    r"taban\s+puan\w*|kac\s+puan\w*|puan\s+tur\w*|"
+    r"basari\s+sira\w*|siralama\w*|yerlesen\w*|"
+    r"osym|ozel\s+kosul\w*|netleri|ogretim\s+dili|ogrenim\s+dili"
+    r")\b",
+    re.IGNORECASE,
+)
+
+ACADEMIC_PERSON_ROUTE_RE = re.compile(
+    r"\b(hangi\s+bolum\w*|hangi\s+birim\w*|nerede)\b",
+    re.IGNORECASE,
+)
+
+CAPITALIZED_NAME_TOKEN = r"(?:[A-ZÇĞİÖŞÜ][a-zçğıöşü]+|[A-ZÇĞİÖŞÜ]{2,})"
+CAPITALIZED_PERSON_NAME_RE = re.compile(
+    rf"\b{CAPITALIZED_NAME_TOKEN}(?:\s+{CAPITALIZED_NAME_TOKEN}){{1,3}}\b"
+)
+
+EMAIL_RE = re.compile(r"[\w.+-]+@[\w.-]+\.\w{2,}")
+
+NO_INFO_FALLBACK_RE = re.compile(
+    r"\b("
+    r"bu\s+konuda\s+elimde\s+yeterli\s+bilgi\s+bulunmuyor|"
+    r"elimde\s+yeterli\s+bilgi\s+bulunmuyor|"
+    r"belgelerde\s+yeterli\s+bilgi\s+bulunmuyor"
+    r")\b",
+    re.IGNORECASE,
+)
+
+CONTACT_FALLBACK_RE = re.compile(
+    r"\b(detayli\s+bilgi\s+icin|ilgili\s+birim|birimine\s+basvur|basvurmanizi\s+oner)",
+    re.IGNORECASE,
+)
+
+CONTACT_TOPIC_RULES: tuple[tuple[re.Pattern[str], tuple[str, ...]], ...] = (
+    (
+        re.compile(r"\b(kutuphane)\w*"),
+        ("kutuphane", "dokumantasyon", "candidate library"),
+    ),
+    (
+        re.compile(r"\b(ogrenci\s+is\w*|ders\s+kayd\w*|ders\s+kayit\w*|transkript|harc|diploma)\b"),
+        ("ogrenci isleri", "ogrenciisleri", "academic calendar", "akademik takvim", "ders kay"),
+    ),
+    (
+        re.compile(r"\b(erasmus|degisim\w*|uluslararasi)\b"),
+        ("erasmus", "dis iliskiler", "uluslararasi"),
+    ),
+    (
+        re.compile(r"\b(yemek\w*|yemekhane\w*|sks|burs\w*|yurt\w*|barinma\w*|spor)\b"),
+        ("sks", "saglik kultur spor", "yemekhane", "yurt", "barinma", "burs"),
+    ),
+)
 
 CANDIDATE_PRIORITY_BASE_TERMS: tuple[str, ...] = (
     "aday öğrenci",
@@ -84,6 +170,7 @@ CANDIDATE_ANCHOR_QUERY_TERMS: dict[str, tuple[str, ...]] = {
 }
 
 CANDIDATE_PRIORITY_RULES: tuple[tuple[re.Pattern[str], tuple[str, ...]], ...] = (
+    (FAQ_QUERY_RE, ("sss",)),
     (re.compile(r"\b(iletisim|telefon|e\s?posta|mail|adres)\w*"), ("iletisim-bilgileri",)),
     (re.compile(r"\b(kulup|kulupler|topluluk|sosyal|aktivite|etkinlik)\w*"), ("olanaklar",)),
     (re.compile(r"\b(yurt|barinma|konaklama|kyk)\w*"), ("konaklama",)),
@@ -109,6 +196,8 @@ KESİN KURALLAR:
 8. Yanıtın sonunda, kullanıcının bu konuyla ilgili başvurabileceği birimi, telefon/e-posta bilgisini veya resmî web sayfası adresini belirt. Bu bilgi belgede varsa doğrudan kullan; yoksa en uygun birimi öner.
 9. Akademik takvim cevaplarında yalnızca doc_kind=academic_calendar_event belgelerindeki structured metadata ve içerikte geçen tarihleri kullan. Kaynakta olmayan tarih, akademik yıl veya takvim türü üretme.
 10. Kullanıcı akademik yıl veya takvim türü belirtmediyse sistem notundaki varsayımı açıkça söyle: "Bu bilgi güncel akademik yıl için genel/önlisans-lisans akademik takvimine göredir. Tıp, lisansüstü veya TÖMER takvimlerinde tarihler farklı olabilir."
+11. Kullanıcı SSS, FAQ veya sık sorulan sorular sorarsa yalnızca doc_kind=candidate_faq olan aday öğrenci SSS belgelerini kullan. Bu belgeler yoksa başka konuya geçme; "Bu konuda elimde yeterli bilgi bulunmuyor." de.
+12. Siyaset, uluslararası ilişkiler, savaş, ülke gündemi, Birleşmiş Milletler veya benzeri üniversite dışı konulara geçme. Belgelerde bu tür metinler görünse bile soru GİBTÜ/eğitim/kampüs bağlamı taşımıyorsa cevap verme.
 
 YANITINDA KESİNLİKLE BULUNMAMASI GEREKENLER:
 - Belgede açıkça yazılı OLMAYAN telefon numarası, e-posta adresi veya URL. Sadece belgelerde geçen iletişim bilgilerini kullan.
@@ -177,6 +266,46 @@ def _candidate_priority_anchors(question: str) -> tuple[str, ...]:
     return tuple(anchors)
 
 
+def _is_faq_query(question: str) -> bool:
+    """SSS/FAQ sorgularını yazım ve Türkçe karakter farklarından bağımsız algılar."""
+    return bool(FAQ_QUERY_RE.search(_normalize_for_matching(question)))
+
+
+def _is_candidate_faq_doc(meta: dict | None) -> bool:
+    """Belgenin aday öğrenci SSS kaynağı olup olmadığını metadata ile belirler."""
+    if not meta:
+        return False
+    doc_kind = str(meta.get("doc_kind") or "")
+    source_anchor = str(meta.get("source_anchor") or "")
+    title = _normalize_for_matching(str(meta.get("title") or ""))
+    return (
+        doc_kind == "candidate_faq"
+        or (_is_candidate_portal_doc(meta) and source_anchor == "sss")
+        or (_is_candidate_portal_doc(meta) and "sik" in title and "sorulan" in title)
+    )
+
+
+def _should_try_program_catalog_route(question: str) -> bool:
+    """Ucuz routing kapısı: yalnız akademik katalog olabilecek sorularda DB servisini dener."""
+    normalized = _normalize_for_matching(question)
+    if PROGRAM_CATALOG_ROUTE_BLOCK_RE.search(normalized):
+        return False
+    return bool(PROGRAM_CATALOG_ROUTE_SIGNAL_RE.search(normalized))
+
+
+def _should_try_yokatlas_route(question: str) -> bool:
+    """YÖK Atlas DB servisini yalnız tercih/metrik sinyali olan sorgularda dener."""
+    return bool(YOKATLAS_ROUTE_SIGNAL_RE.search(_normalize_for_matching(question)))
+
+
+def _should_try_academic_person_route(question: str) -> bool:
+    """Kişi adı + bölüm/birim sorgularını subunit yönetim regex'inden önce akademik kadroya alır."""
+    normalized = _normalize_for_matching(question)
+    if not ACADEMIC_PERSON_ROUTE_RE.search(normalized):
+        return False
+    return bool(CAPITALIZED_PERSON_NAME_RE.search(question))
+
+
 def _candidate_priority_query_suffix(question: str) -> str:
     """Retriever'ın aday portalı chunk'larını kaçırmaması için kontrollü sorgu eki üretir."""
     anchors = _candidate_priority_anchors(question)
@@ -212,6 +341,115 @@ def _is_candidate_portal_doc(meta: dict | None) -> bool:
         or str(meta.get("doc_kind") or "").startswith("candidate_")
         or any(CANDIDATE_PORTAL_HOST in value.lower() for value in source_values)
     )
+
+
+def _source_text_for_matching(source_doc: dict) -> str:
+    values: list[str] = []
+
+    def walk(value: object) -> None:
+        if isinstance(value, str):
+            values.append(value)
+        elif isinstance(value, dict):
+            for nested in value.values():
+                walk(nested)
+        elif isinstance(value, (list, tuple, set)):
+            for nested in value:
+                walk(nested)
+
+    walk(source_doc)
+    return _normalize_for_matching("\n".join(values))
+
+
+def _contact_source_terms_for_question(question: str) -> tuple[str, ...]:
+    normalized = _normalize_for_matching(question)
+    terms: list[str] = []
+    for pattern, source_terms in CONTACT_TOPIC_RULES:
+        if not pattern.search(normalized):
+            continue
+        for term in source_terms:
+            normalized_term = _normalize_for_matching(term)
+            if normalized_term and normalized_term not in terms:
+                terms.append(normalized_term)
+    return tuple(terms)
+
+
+def _source_matches_contact_topic(source_doc: dict, source_terms: tuple[str, ...]) -> bool:
+    if not source_terms:
+        return False
+    source_text = _source_text_for_matching(source_doc)
+    return any(term in source_text for term in source_terms)
+
+
+def _topic_specific_email_exists(question: str, source_docs: list[dict]) -> bool:
+    source_terms = _contact_source_terms_for_question(question)
+    if not source_terms:
+        return True
+    for source_doc in source_docs:
+        if not _source_matches_contact_topic(source_doc, source_terms):
+            continue
+        if EMAIL_RE.search(_source_text_for_matching(source_doc)):
+            return True
+    return False
+
+
+def _append_general_contact_if_needed(response: str, question: str, source_docs: list[dict]) -> str:
+    """Konuya özel e-posta yoksa alakasız mail yerine resmi genel maili ekler."""
+    if not response or EMAIL_RE.search(response):
+        return response
+    if not _contact_source_terms_for_question(question):
+        return response
+    if _topic_specific_email_exists(question, source_docs):
+        return response
+
+    note = (
+        "Konuya özel iletişim bilgisi kaynaklarda net geçmiyor. "
+        f"Genel iletişim: {GENERAL_CONTACT_EMAIL}"
+    )
+    if note in response:
+        return response
+    return f"{response.rstrip()}\n\n{note}"
+
+
+def _is_fallback_block(text: str) -> bool:
+    return bool(NO_INFO_FALLBACK_RE.search(_normalize_for_matching(text)))
+
+
+def _looks_like_contact_fallback(text: str) -> bool:
+    return bool(CONTACT_FALLBACK_RE.search(_normalize_for_matching(text)))
+
+
+def _strip_contradictory_fallback(response: str, source_docs: list[dict]) -> str:
+    """Kaynak/context varken cevaba karışan 'bilgi yok' fallback parçalarını temizler."""
+    if not response or not source_docs or not _is_fallback_block(response):
+        return response
+
+    blocks = [block.strip() for block in re.split(r"\n\s*\n", response) if block.strip()]
+    if len(blocks) > 1:
+        kept_blocks = [block for block in blocks if not _is_fallback_block(block)]
+        if kept_blocks and sum(len(block) for block in kept_blocks) >= 40:
+            return "\n\n".join(kept_blocks)
+
+    sentences = [part.strip() for part in re.split(r"(?<=[.!?])\s+", response) if part.strip()]
+    if len(sentences) <= 1:
+        return response
+
+    kept_sentences: list[str] = []
+    removed_previous = False
+    for sentence in sentences:
+        if _is_fallback_block(sentence):
+            removed_previous = True
+            continue
+        if removed_previous and _looks_like_contact_fallback(sentence):
+            removed_previous = False
+            continue
+        kept_sentences.append(sentence)
+        removed_previous = False
+
+    cleaned = " ".join(kept_sentences).strip()
+    if cleaned and len(cleaned) >= 40:
+        logger.info("RAG yanıtındaki çelişkili fallback parçası temizlendi.")
+        return cleaned
+    return response
 
 
 def _candidate_priority_score(doc: Document, priority_anchors: tuple[str, ...]) -> int:
@@ -275,7 +513,11 @@ class CandidateSourcePrioritizer:
 
     @component.output_types(documents=list[Document])
     def run(self, documents: list[Document], question: str = "") -> dict[str, list[Document]]:
-        return {"documents": prioritize_candidate_documents(question, documents)}
+        prioritized = prioritize_candidate_documents(question, documents)
+        if _is_faq_query(question):
+            faq_documents = [doc for doc in prioritized if _is_candidate_faq_doc(doc.meta)]
+            return {"documents": faq_documents}
+        return {"documents": prioritized}
 
 
 class RagService:
@@ -399,6 +641,24 @@ class RagService:
             logger.info("İdari birim/personel sorgusu deterministik servisle yanıtlandı.")
             return administrative_staff_answer
 
+        if _should_try_academic_person_route(question):
+            academic_staff_answer = get_academic_staff_service().answer_chat_query(question)
+            if academic_staff_answer is not None:
+                logger.info("Akademik kadro kişi/birim sorgusu deterministik servisle yanıtlandı.")
+                return academic_staff_answer
+
+        if _should_try_program_catalog_route(question):
+            program_catalog_answer = get_program_catalog_service().answer_chat_query(question)
+            if program_catalog_answer is not None:
+                logger.info("Bölüm/program katalog sorgusu deterministik servisle yanıtlandı.")
+                return program_catalog_answer
+
+        if _should_try_yokatlas_route(question):
+            yokatlas_answer = get_yokatlas_query_service().answer_chat_query(question)
+            if yokatlas_answer is not None:
+                logger.info("YÖK Atlas tercih/yerleşme sorgusu deterministik servisle yanıtlandı.")
+                return yokatlas_answer
+
         subunit_management_answer = get_subunit_management_service().answer_chat_query(question)
         if subunit_management_answer is not None:
             logger.info("Bölüm/program yönetim sorgusu deterministik servisle yanıtlandı.")
@@ -413,16 +673,6 @@ class RagService:
         if academic_staff_answer is not None:
             logger.info("Akademik kadro sorgusu deterministik servisle yanıtlandı.")
             return academic_staff_answer
-
-        yokatlas_answer = get_yokatlas_query_service().answer_chat_query(question)
-        if yokatlas_answer is not None:
-            logger.info("YÖK Atlas tercih/yerleşme sorgusu deterministik servisle yanıtlandı.")
-            return yokatlas_answer
-
-        program_catalog_answer = get_program_catalog_service().answer_chat_query(question)
-        if program_catalog_answer is not None:
-            logger.info("Bölüm/program katalog sorgusu deterministik servisle yanıtlandı.")
-            return program_catalog_answer
 
         if self._pipeline is None:
             raise RuntimeError("Pipeline henüz oluşturulmadı. build_pipeline() çağrılmalı.")
@@ -462,6 +712,8 @@ class RagService:
             keyword_query = f"{keyword_query} {candidate_query_suffix}"
             vector_query = f"{vector_query} {candidate_query_suffix}"
             candidate_top_k_boost = CANDIDATE_PRIORITY_TOP_K_BOOST
+            if _is_faq_query(question):
+                candidate_top_k_boost = CANDIDATE_FAQ_TOP_K_BOOST
             logger.info("🎯 Aday kaynak önceliği aktif: %s", candidate_query_suffix)
 
         vector_top_k = self._settings.RETRIEVER_VECTOR_TOP_K + pp.boost_top_k
@@ -473,6 +725,13 @@ class RagService:
         prompt_question = question
         if pp.routing_hint:
             prompt_question = f"{question}\n\n[Sistem notu: Bu konu için yetkili birim: {pp.routing_hint}]"
+        if _is_faq_query(question):
+            prompt_question = (
+                f"{prompt_question}\n\n"
+                "[Sistem notu: Kullanıcı SSS/FAQ/sık sorulan sorular istiyor. "
+                "Yalnız aday öğrenci SSS (doc_kind=candidate_faq) kaynaklarından yanıt ver; "
+                "aday SSS kaynağı yoksa bilgi bulunmadığını söyle.]"
+            )
         if pp.system_note:
             prompt_question = f"{prompt_question}\n\n[Sistem notu: {pp.system_note}]"
 
@@ -528,7 +787,7 @@ class RagService:
 
         # ── Katman 4: Response Validator ──
         t0 = time.perf_counter()
-        response_text = validate_response(response_text, validator_sources)
+        response_text = validate_response(response_text, validator_sources, question=question)
         t_validator = time.perf_counter() - t0
 
         # ── Katman 5: Source Dedup ──
@@ -542,6 +801,9 @@ class RagService:
             response_text = self._apply_routing_correction(
                 response_text, pp.routing_hint,
             )
+
+        response_text = _strip_contradictory_fallback(response_text, validator_sources)
+        response_text = _append_general_contact_if_needed(response_text, question, validator_sources)
 
         t_total_elapsed = time.perf_counter() - t_total
 

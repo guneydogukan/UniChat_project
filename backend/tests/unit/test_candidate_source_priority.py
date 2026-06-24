@@ -78,6 +78,7 @@ class CandidateSourcePriorityTests(unittest.TestCase):
     def test_retriever_sorgu_eki_sadece_aday_kritik_sinyalde_uretilir(self):
         self.assertIn("aday öğrenci", _candidate_priority_query_suffix("Yurt ve konaklama imkanı var mı?"))
         self.assertIn("kayıt", _candidate_priority_query_suffix("Kayıt ve tercih süreci nasıl ilerliyor?"))
+        self.assertIn("sıkça sorulan sorular", _candidate_priority_query_suffix("Sık sorulan sorular neler?"))
         self.assertEqual(_candidate_priority_query_suffix("Transkript nasıl alınır?"), "")
 
     def test_haystack_bileseni_oncelikli_siralama_dondurur(self):
@@ -92,6 +93,21 @@ class CandidateSourcePriorityTests(unittest.TestCase):
         )
 
         self.assertEqual(result["documents"][0].meta["title"], "Aday Portalı Kulüpler")
+
+    def test_sss_sorgusunda_sadece_aday_faq_belgesi_prompta_gider(self):
+        documents = [
+            _doc("Genel Duyuru", "duyuru", "news"),
+            _doc("Aday Portalı Olanaklar", "aday_ogrenci", "candidate_opportunity", "olanaklar"),
+            _doc("Aday Portalı SSS", "aday_ogrenci", "candidate_faq", "sss"),
+        ]
+
+        result = CandidateSourcePrioritizer().run(
+            documents=documents,
+            question="Sık sorulan sorular neler?",
+        )
+
+        self.assertEqual(len(result["documents"]), 1)
+        self.assertEqual(result["documents"][0].meta["doc_kind"], "candidate_faq")
 
 
 if __name__ == "__main__":

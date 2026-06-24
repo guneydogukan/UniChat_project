@@ -16,8 +16,10 @@ Kullanım:
         return REJECTION_RESPONSE
 """
 
-import re
 import logging
+import re
+import unicodedata
+from difflib import SequenceMatcher
 
 logger = logging.getLogger(__name__)
 
@@ -58,6 +60,16 @@ OUT_OF_SCOPE_PATTERNS: list[tuple[re.Pattern, str]] = [
         re.IGNORECASE,
     ), "guncel_bilgi"),
 
+    # Siyaset / uluslararası gündem
+    (re.compile(
+        r"\b("
+        r"israil|filistin|birleşmiş\s+milletler|birlesmis\s+milletler|"
+        r"nato|savaş|savas|ateşkes|ateskes|seçim|secim|siyasi|siyaset|"
+        r"politik|hükümet|hukumet|meclis|bakanlar|abd|rusya|ukrayna|suriye"
+        r")\b",
+        re.IGNORECASE,
+    ), "siyaset_uluslararasi"),
+
     # Yemek tarifi / diyet
     (re.compile(
         r"\b(yemek\s+tarif|diyet\s+liste|kalori\s+hesapla)\w*",
@@ -94,6 +106,11 @@ ACADEMIC_CALENDAR_SCOPE_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
+FAQ_SCOPE_PATTERN = re.compile(
+    r"\b(sikca\s+sorulan|sik\s+sorulan|sss|faq)\b",
+    re.IGNORECASE,
+)
+
 PROGRAM_CATALOG_METRIC_PATTERN = re.compile(
     r"\b("
     r"taban\s+puan\w*|kaç\s+puan\w*|kac\s+puan\w*|puan\s+tür\w*|puan\s+tur\w*|"
@@ -110,7 +127,8 @@ PROGRAM_CATALOG_SCOPE_PATTERN = re.compile(
     r"meslek\s+yüksekokul\w*|meslek\s+yuksekokul\w*|myo|enstitü\w*|enstitu\w*|"
     r"bölüm\w*|bolum\w*|program\w*|lisans|ön\s*lisans|on\s*lisans|onlisans|"
     r"hangi\s+birim|hangi\s+fakülte|hangi\s+fakulte|bünyesinde|bunyesinde|"
-    r"var\s+mi|var\s+mı"
+    r"var\s+mi|var\s+mı|varmi|mevcut\s+mu|mevcutmu|"
+    r"açıldı\s+mı|acildi\s+mi|açıldımı|acildimi|açık\s+mı|acik\s+mi|aktif\s+mi|aktifmi"
     r")\b",
     re.IGNORECASE,
 )
@@ -120,6 +138,8 @@ UNIVERSITY_SIGNALS: frozenset[str] = frozenset({
     # Kurum
     "gibtu", "gibtü", "gıbtu", "üniversite", "universite",
     "gaziantep islam", "gaziantep İslam",
+    "aday", "aday öğrenci", "aday ogrenci", "tercih", "başvuru", "basvuru",
+    "sık sorulan", "sıkça sorulan", "sik sorulan", "sikca sorulan", "sss", "faq",
     # Akademik birimler
     "fakülte", "fakulte", "bölüm", "bolum", "enstitü", "myo",
     "yüksekokul", "rektör", "dekan", "dekanlık",
@@ -144,6 +164,63 @@ UNIVERSITY_SIGNALS: frozenset[str] = frozenset({
     "ilahiyat", "tıp", "tip",
 })
 
+
+def _normalize_for_intent(text: str) -> str:
+    normalized = unicodedata.normalize("NFKD", text.casefold())
+    normalized = "".join(ch for ch in normalized if not unicodedata.combining(ch))
+    for src, dst in {"ı": "i", "ğ": "g", "ü": "u", "ş": "s", "ö": "o", "ç": "c"}.items():
+        normalized = normalized.replace(src, dst)
+    normalized = re.sub(r"[^a-z0-9]+", " ", normalized)
+    return re.sub(r"\s+", " ", normalized).strip()
+
+
+UNIVERSITY_SIGNALS_NORMALIZED: frozenset[str] = frozenset(
+    _normalize_for_intent(signal) for signal in UNIVERSITY_SIGNALS
+)
+
+UNIVERSITY_FUZZY_ROOTS: frozenset[str] = frozenset({
+    "gibtu",
+    "universite",
+    "fakulte",
+    "bolum",
+    "enstitu",
+    "yuksekokul",
+    "ogrenci",
+    "aday",
+    "basvuru",
+    "kayit",
+    "kontenjan",
+    "kampus",
+    "kutuphane",
+    "yemekhane",
+    "erasmus",
+    "transkript",
+    "diploma",
+    "mezuniyet",
+    "akademik",
+})
+
+
+def _has_university_context(normalized_query: str) -> bool:
+    tokens = set(normalized_query.split())
+    for signal in UNIVERSITY_SIGNALS_NORMALIZED:
+        if not signal:
+            continue
+        if " " in signal and signal in normalized_query:
+            return True
+        if signal in tokens:
+            return True
+
+    for token in tokens:
+        if len(token) < 4:
+            continue
+        for root in UNIVERSITY_FUZZY_ROOTS:
+            if token.startswith(root) or root.startswith(token):
+                return True
+            if SequenceMatcher(None, token, root).ratio() >= 0.86:
+                return True
+    return False
+
 # ── Sabit reddetme yanıtı ──
 REJECTION_RESPONSE = (
     "Bu soru GİBTÜ (Gaziantep İslam Bilim ve Teknoloji Üniversitesi) ile ilgili değil. "
@@ -166,17 +243,21 @@ def classify_intent(query: str) -> str:
         "NEEDS_CHECK"   — Belirsiz, pipeline'a gönder (LLM karar versin)
     """
     q_lower = query.lower().strip()
-    q_words = set(q_lower.split())
+    q_norm = _normalize_for_intent(query)
 
-    if ACADEMIC_CALENDAR_SCOPE_PATTERN.search(q_lower):
+    if ACADEMIC_CALENDAR_SCOPE_PATTERN.search(q_lower) or ACADEMIC_CALENDAR_SCOPE_PATTERN.search(q_norm):
         logger.debug("✅ Intent: '%s' → IN_SCOPE (akademik takvim)", query[:60])
+        return "IN_SCOPE"
+
+    if FAQ_SCOPE_PATTERN.search(q_norm):
+        logger.debug("✅ Intent: '%s' → IN_SCOPE (SSS/FAQ)", query[:60])
         return "IN_SCOPE"
 
     # 1. Kapsam dışı pattern kontrolü
     for pattern, category in OUT_OF_SCOPE_PATTERNS:
-        if pattern.search(q_lower):
+        if pattern.search(q_lower) or pattern.search(q_norm):
             # Üniversite bağlamı var mı? (ör: "üniversitede Python dersi var mı?")
-            has_university_context = bool(q_words & UNIVERSITY_SIGNALS)
+            has_university_context = _has_university_context(q_norm)
             if has_university_context:
                 logger.info(
                     "🔍 Intent: '%s' kapsam dışı pattern (%s) eşleşti AMA üniversite bağlamı var → IN_SCOPE",
@@ -191,7 +272,7 @@ def classify_intent(query: str) -> str:
             return "OUT_OF_SCOPE"
 
     # 2. Üniversite sinyal kelimesi varsa kesin kapsam içi
-    if q_words & UNIVERSITY_SIGNALS:
+    if _has_university_context(q_norm):
         logger.debug("✅ Intent: '%s' → IN_SCOPE (sinyal kelimesi)", query[:60])
         return "IN_SCOPE"
 
@@ -241,7 +322,14 @@ def classify_program_catalog_intent(query: str) -> str | None:
         return "program_list_query"
     if "bolum" in q_norm and has_list_word:
         return "department_list_query"
-    if re.search(r"\b(var\s+mi|var\s+mı|mevcut\s+mu|bulunuyor\s+mu|yok\s+mu)\b", q_lower):
+    if re.search(
+        r"\b("
+        r"var\s+mi|var\s+mı|varmi|mevcut\s+mu|mevcutmu|"
+        r"bulunuyor\s+mu|bulunur\s+mu|yok\s+mu|yokmu|"
+        r"açıldı\s+mı|acildi\s+mi|açıldımı|acildimi|açık\s+mı|acik\s+mi|aktif\s+mi|aktifmi"
+        r")\b",
+        q_lower,
+    ):
         return "program_exists_query"
     if re.search(r"\b(hangi\s+fakulte|hangi\s+fakülte|hangi\s+birim|nerede|bunyesinde|bünyesinde)\b", q_lower):
         return "program_faculty_query"
