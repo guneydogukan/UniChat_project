@@ -71,7 +71,8 @@ PROGRAM_CATALOG_ROUTE_SIGNAL_RE = re.compile(
     r"\b("
     r"fakulte\w*|yuksekokul\w*|myo|meslek\s+yuksekokul\w*|enstitu\w*|"
     r"bolum\w*|program\w*|lisans|on\s*lisans|onlisans|"
-    r"hangi\s+birim|hangi\s+fakulte|bunyesinde|"
+    r"hangi\s+birim\w*|hangi\s+fakulte\w*|hangi\s+myo\w*|hangi\s+okul\w*|"
+    r"hangi\s+yuksekokul\w*|bagli|bunyesinde|"
     r"var\s*mi|varmi|mevcut\s*mu|mevcutmu|"
     r"bulun(?:uyor|ur)\s*mu|yok\s*mu|yokmu|"
     r"ac(?:il(?:di|mis)|ik)\s*mi|ac(?:ildi|ilmis)mi|aktif\s*mi|aktifmi"
@@ -107,6 +108,15 @@ YOKATLAS_ROUTE_SIGNAL_RE = re.compile(
 
 ACADEMIC_PERSON_ROUTE_RE = re.compile(
     r"\b(hangi\s+bolum\w*|hangi\s+birim\w*|nerede)\b",
+    re.IGNORECASE,
+)
+
+ACADEMIC_PERSON_CATALOG_FALSE_POSITIVE_RE = re.compile(
+    r"\b("
+    r"fakulte\w*|yuksekokul\w*|myo|meslek\s+yuksekokul\w*|enstitu\w*|"
+    r"bolumler\w*|bolumleri\w*|programlar\w*|programlari\w*|"
+    r"muhendisligi|hekimligi|bilimleri|ilimler"
+    r")\b",
     re.IGNORECASE,
 )
 
@@ -302,6 +312,8 @@ def _should_try_academic_person_route(question: str) -> bool:
     """Kişi adı + bölüm/birim sorgularını subunit yönetim regex'inden önce akademik kadroya alır."""
     normalized = _normalize_for_matching(question)
     if not ACADEMIC_PERSON_ROUTE_RE.search(normalized):
+        return False
+    if ACADEMIC_PERSON_CATALOG_FALSE_POSITIVE_RE.search(normalized):
         return False
     return bool(CAPITALIZED_PERSON_NAME_RE.search(question))
 

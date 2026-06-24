@@ -569,12 +569,6 @@ class ProgramCatalogService:
         unit = unit_match.get("unit")
 
         entry_match = self._resolve_entry(normalized_question, entries)
-        if entry_match["status"] == "ambiguous":
-            if EXISTS_RE.search(normalized_question):
-                candidate_multi = self._candidate_same_name_exists_response(entry_match["candidates"], normalized_question)
-                if candidate_multi:
-                    return candidate_multi
-            return self._ambiguous_entries(entry_match["candidates"], normalized_question)
         entry = entry_match.get("entry")
 
         if unit and self._asks_if_unit_is_department(normalized_question):
@@ -584,11 +578,18 @@ class ProgramCatalogService:
             child_kind = "program" if unit.get("unit_type") == "vocational_school" else "department"
             return self._format_unit_children(unit, entries, child_kind, normalized_question)
 
+        if entry and self._is_entry_unit_lookup(normalized_question):
+            return self._entry_unit_response(entry, normalized_question)
+
         if unit and self._is_entry_unit_lookup(normalized_question):
             return self._unit_type_response(unit, normalized_question)
 
-        if entry and self._is_entry_unit_lookup(normalized_question):
-            return self._entry_unit_response(entry, normalized_question)
+        if entry_match["status"] == "ambiguous":
+            if EXISTS_RE.search(normalized_question):
+                candidate_multi = self._candidate_same_name_exists_response(entry_match["candidates"], normalized_question)
+                if candidate_multi:
+                    return candidate_multi
+            return self._ambiguous_entries(entry_match["candidates"], normalized_question)
 
         if has_exists_query:
             if unit and self._is_unit_existence_query(normalized_question):

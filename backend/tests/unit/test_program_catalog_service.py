@@ -215,8 +215,10 @@ class ProgramCatalogServiceTests(unittest.TestCase):
             ("bilgiyasar mühendsligi varmı?", "program_exists_query", "Bilgisayar Mühendisliği"),
             ("Fizyoterapi mevcutmu", "program_exists_query", "Fizyoterapi ve Rehabilitasyon"),
             ("FTR var mı?", "program_exists_query", "Fizyoterapi ve Rehabilitasyon"),
+            ("Bilgisayar Mühendisliği hangi fakültede?", "program_faculty_query", "Mühendislik ve Doğa Bilimleri Fakültesi"),
             ("FTR hangi fakültede?", "program_faculty_query", "Sağlık Bilimleri Fakültesi"),
             ("Tıp hangi fakültede?", "academic_unit_list_query", "Tıp Fakültesi"),
+            ("Tıp Fakültesinde hangi bölümler bulunuyor?", "faculty_departments_query", "bölümler bulunamadı"),
             ("Hemşirelik hangi birimde?", "program_faculty_query", "Sağlık Bilimleri Fakültesi"),
             ("Bilgisayar Programcılığı hangi MYO'da?", "program_faculty_query", "Teknik Bilimler Meslek Yüksekokulu"),
             ("Makine programı hangi okulda?", "program_faculty_query", "Teknik Bilimler Meslek Yüksekokulu"),
@@ -326,6 +328,7 @@ class CandidateOgrenimRoutingTests(unittest.TestCase):
             ("GİBTÜ'de hangi fakülteler var?", "faculty_list_query", "MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ"),
             ("SHMYO'da hangi programlar var?", "vocational_school_programs_query", "İlk ve Acil Yardım"),
             ("Ön lisans programları neler?", "associate_degree_programs_query", "Tıbbi Laboratuvar Teknikleri"),
+            ("İslami İlimler Fakültesindeki bölümler neler?", "faculty_departments_query", "İslami İlimler (Türkçe)"),
         ]
 
         for question, expected_intent, expected_text in cases:
@@ -341,6 +344,7 @@ class CandidateOgrenimRoutingTests(unittest.TestCase):
                 self.assertNotIn("Kaynak: aday öğrenci öğrenim verisi", result["response"])
                 self.assertNotIn("Bu akademisyen için", result["response"])
                 self.assertNotIn("elimdeki belgelerden", result["response"])
+                self.assertNotIn("birden fazla bölüm/programla eşleşiyor", result["response"])
 
     def test_explicit_aday_ogrenim_sorgusu_candidate_kaynakla_cevaplanir(self) -> None:
         result = self.service.answer_chat_query("Aday öğrenci öğrenim sayfasında Bilgisayar Mühendisliği var mı?")
@@ -672,6 +676,34 @@ class RagServiceProgramCatalogRoutingTests(unittest.TestCase):
 
                 self.assertEqual(result["metadata"]["service"], "program_catalog_service")
                 self.assertEqual(result["metadata"]["intent"], "program_exists_query")
+
+    def test_fakulte_bolum_ve_birim_sorulari_akademik_kadroya_sizmaz(self) -> None:
+        catalog_service = ProgramCatalogService(FakeProgramCatalogRepository())
+        rag = RagService()
+        cases = [
+            ("Mühendislik ve Doğa Bilimleri Fakültesinde hangi bölümler var?", "faculty_departments_query"),
+            ("Sağlık Bilimleri Fakültesinde hangi bölümler bulunuyor?", "faculty_departments_query"),
+            ("Hemşirelik hangi birimde?", "program_faculty_query"),
+            ("Bilgisayar Mühendisliği hangi fakültede?", "program_faculty_query"),
+        ]
+
+        for question, expected_intent in cases:
+            with self.subTest(question=question):
+                with (
+                    patch("app.services.rag_service.get_food_menu_service", return_value=NullService()),
+                    patch("app.services.rag_service.get_academic_calendar_service", return_value=NullService()),
+                    patch("app.services.rag_service.get_administrative_staff_service", return_value=NullService()),
+                    patch("app.services.rag_service.get_program_catalog_service", return_value=catalog_service),
+                    patch("app.services.rag_service.get_subunit_management_service", return_value=RaisingService("subunit_management_service")),
+                    patch("app.services.rag_service.get_unit_management_service", return_value=RaisingService("unit_management_service")),
+                    patch("app.services.rag_service.get_academic_staff_service", return_value=RaisingService("academic_staff_service")),
+                    patch("app.services.rag_service.get_yokatlas_query_service", return_value=RaisingService("yokatlas_query_service")),
+                ):
+                    result = rag.query(question)
+
+                self.assertEqual(result["metadata"]["service"], "program_catalog_service")
+                self.assertEqual(result["metadata"]["intent"], expected_intent)
+                self.assertNotIn("Bu akademisyen için", result["response"])
 
     def test_mock_routing_smoke_report(self) -> None:
         rag = RagService()
