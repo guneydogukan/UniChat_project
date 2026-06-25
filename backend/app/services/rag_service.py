@@ -32,6 +32,7 @@ from app.config import get_settings
 from app.services.administrative_staff_service import get_administrative_staff_service
 from app.services.academic_calendar_service import get_academic_calendar_service
 from app.services.academic_staff_service import get_academic_staff_service
+from app.services.classroom_location_service import get_classroom_location_service
 from app.services.food_menu_service import get_food_menu_service
 from app.services.program_catalog_service import get_program_catalog_service
 from app.services.subunit_management_service import get_subunit_management_service
@@ -674,6 +675,11 @@ class RagService:
         Returns:
             dict: {"response": str, "sources": list[dict]}
         """
+        classroom_answer = get_classroom_location_service().answer_chat_query(question)
+        if classroom_answer is not None:
+            logger.info("Derslik konum sorgusu deterministik servisle yanıtlandı.")
+            return classroom_answer
+
         food_menu_answer = get_food_menu_service().answer_chat_query(question)
         if food_menu_answer is not None:
             logger.info("Yemekhane menüsü sorgusu deterministik servisle yanıtlandı.")

@@ -111,6 +111,19 @@ FAQ_SCOPE_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
+CLASSROOM_SCOPE_PATTERN = re.compile(
+    r"\b("
+    r"derslik\w*|sınıf\w*|sinif\w*|amfi\w*|laboratuvar\w*|lab\b|"
+    r"konferans\s+salon\w*|hangi\s+kat\w*|katta|nolu|numaralı|numarali|"
+    r"idari\s+ofis\w*|öğrenci\s+iş\w*|ogrenci\s+is\w*|"
+    r"fakülte\s+sekreterliğ\w*|fakulte\s+sekreterlig\w*|"
+    r"dekanlık\w*|dekanlik\w*|bölüm\s+başkanlığ\w*|bolum\s+baskanlig\w*|"
+    r"mdbf|mühendislik\s+fakülte\w*|muhendislik\s+fakulte\w*|"
+    r"mühendislik\s+bina\w*|muhendislik\s+bina\w*"
+    r")\b",
+    re.IGNORECASE,
+)
+
 PROGRAM_CATALOG_METRIC_PATTERN = re.compile(
     r"\b("
     r"taban\s+puan\w*|kaç\s+puan\w*|kac\s+puan\w*|puan\s+tür\w*|puan\s+tur\w*|"
@@ -145,6 +158,7 @@ UNIVERSITY_SIGNALS: frozenset[str] = frozenset({
     "yüksekokul", "rektör", "dekan", "dekanlık",
     # Eğitim
     "ders", "sınav", "sinav", "transkript", "diploma", "mezuniyet",
+    "derslik", "sınıf", "sinif", "amfi", "laboratuvar", "lab",
     "kayıt", "devamsızlık", "müfredat", "akts", "kredi",
     "kontenjan", "başarı", "not", "dönem",
     "akademik takvim", "takvim", "vize", "final", "bütünleme", "büt",
@@ -155,7 +169,7 @@ UNIVERSITY_SIGNALS: frozenset[str] = frozenset({
     "erasmus", "staj", "burs", "yurt", "yemekhane", "kütüphane",
     "kulüp", "topluluk", "öğrenci",
     # İdari
-    "öğrenci işleri", "idari personel", "idari birim", "sekreterlik",
+    "öğrenci işleri", "idari ofis", "idari personel", "idari birim", "sekreterlik",
     "fakülte sekreteri", "yüksekokul sekreteri", "memur",
     "obs", "ubys", "lms", "harç",
     "duyuru", "akademik takvim", "yönetmelik", "yönerge",
@@ -191,6 +205,10 @@ UNIVERSITY_FUZZY_ROOTS: frozenset[str] = frozenset({
     "kayit",
     "kontenjan",
     "kampus",
+    "derslik",
+    "sinif",
+    "amfi",
+    "laboratuvar",
     "kutuphane",
     "yemekhane",
     "erasmus",
@@ -251,6 +269,10 @@ def classify_intent(query: str) -> str:
 
     if FAQ_SCOPE_PATTERN.search(q_norm):
         logger.debug("✅ Intent: '%s' → IN_SCOPE (SSS/FAQ)", query[:60])
+        return "IN_SCOPE"
+
+    if CLASSROOM_SCOPE_PATTERN.search(q_lower) or CLASSROOM_SCOPE_PATTERN.search(q_norm):
+        logger.debug("✅ Intent: '%s' → IN_SCOPE (derslik konumu)", query[:60])
         return "IN_SCOPE"
 
     # 1. Kapsam dışı pattern kontrolü

@@ -15,8 +15,85 @@ CREATE TABLE IF NOT EXISTS food_menus (
     updated_at TIMESTAMP DEFAULT NOW()
 );
 
+CREATE TABLE IF NOT EXISTS campus_buildings (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    building_name TEXT NOT NULL,
+    normalized_building_name TEXT NOT NULL UNIQUE,
+    aliases JSONB NOT NULL DEFAULT '[]'::jsonb,
+    normalized_aliases JSONB NOT NULL DEFAULT '[]'::jsonb,
+    source_file TEXT,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS classrooms (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    building_name TEXT NOT NULL,
+    floor_label TEXT,
+    room_code TEXT NOT NULL,
+    room_type TEXT,
+    capacity INTEGER,
+    department_name TEXT,
+    department_code TEXT,
+    is_shared BOOLEAN NOT NULL DEFAULT FALSE,
+    normalized_room_code TEXT NOT NULL,
+    normalized_building_name TEXT NOT NULL,
+    search_text TEXT,
+    source_file TEXT,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS campus_spaces (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    building_name TEXT NOT NULL,
+    floor_label TEXT,
+    space_name TEXT NOT NULL,
+    space_type TEXT,
+    department_name TEXT,
+    department_code TEXT,
+    aliases JSONB NOT NULL DEFAULT '[]'::jsonb,
+    normalized_space_name TEXT NOT NULL,
+    normalized_aliases JSONB NOT NULL DEFAULT '[]'::jsonb,
+    normalized_building_name TEXT NOT NULL,
+    search_text TEXT,
+    source_file TEXT,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
 CREATE UNIQUE INDEX IF NOT EXISTS idx_food_menus_date
 ON food_menus(date);
+
+CREATE INDEX IF NOT EXISTS idx_campus_buildings_normalized_name
+ON campus_buildings(normalized_building_name);
+
+CREATE INDEX IF NOT EXISTS idx_classrooms_room_code
+ON classrooms(normalized_room_code);
+
+CREATE INDEX IF NOT EXISTS idx_classrooms_building_room
+ON classrooms(normalized_building_name, normalized_room_code);
+
+CREATE INDEX IF NOT EXISTS idx_classrooms_department_room
+ON classrooms(department_code, normalized_room_code);
+
+CREATE INDEX IF NOT EXISTS idx_classrooms_source_file
+ON classrooms(source_file);
+
+CREATE INDEX IF NOT EXISTS idx_campus_spaces_name
+ON campus_spaces(normalized_space_name);
+
+CREATE INDEX IF NOT EXISTS idx_campus_spaces_building
+ON campus_spaces(normalized_building_name);
+
+CREATE INDEX IF NOT EXISTS idx_campus_spaces_department
+ON campus_spaces(department_code);
+
+CREATE INDEX IF NOT EXISTS idx_campus_spaces_source_file
+ON campus_spaces(source_file);
+
+CREATE INDEX IF NOT EXISTS idx_campus_spaces_aliases
+ON campus_spaces USING GIN(normalized_aliases);
 
 -- YÖK Atlas GİBTÜ yapılandırılmış veri tabloları
 CREATE TABLE IF NOT EXISTS yokatlas_scrape_runs (
