@@ -1138,3 +1138,107 @@ CREATE TABLE IF NOT EXISTS program_catalog_quality_issues (
 
 CREATE INDEX IF NOT EXISTS idx_program_catalog_quality_issues_run
 ON program_catalog_quality_issues(scrape_run_id, severity, issue_code);
+
+-- MDBF öğrenci işleri workflow/form DB-first entegrasyonu
+CREATE TABLE IF NOT EXISTS workflow_scrape_runs (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    scrape_run_id TEXT NOT NULL UNIQUE,
+    scraper_name TEXT NOT NULL,
+    metadata_version TEXT NOT NULL,
+    unit_code TEXT NOT NULL,
+    source_workflows_url TEXT NOT NULL,
+    source_forms_url TEXT NOT NULL,
+    started_at TIMESTAMP,
+    finished_at TIMESTAMP,
+    status TEXT NOT NULL,
+    workflow_count INTEGER NOT NULL DEFAULT 0,
+    form_count INTEGER NOT NULL DEFAULT 0,
+    mapping_count INTEGER NOT NULL DEFAULT 0,
+    validation_report JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS unit_forms (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    unit_code TEXT NOT NULL,
+    unit_name TEXT NOT NULL,
+    unit_type TEXT NOT NULL DEFAULT 'fakülte',
+    process_key TEXT,
+    form_name TEXT NOT NULL,
+    normalized_form_name TEXT NOT NULL,
+    download_url TEXT NOT NULL,
+    file_extension TEXT NOT NULL,
+    http_status INTEGER,
+    checksum TEXT,
+    fetched_at TIMESTAMP,
+    source_page_url TEXT NOT NULL,
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    needs_review BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (unit_code, normalized_form_name)
+);
+
+CREATE INDEX IF NOT EXISTS idx_unit_forms_process
+ON unit_forms(unit_code, process_key, is_active);
+
+CREATE INDEX IF NOT EXISTS idx_unit_forms_download_url
+ON unit_forms(download_url);
+
+CREATE TABLE IF NOT EXISTS workflows (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    unit_code TEXT NOT NULL,
+    unit_name TEXT NOT NULL,
+    unit_type TEXT NOT NULL DEFAULT 'fakülte',
+    process_key TEXT NOT NULL,
+    title TEXT NOT NULL,
+    normalized_title TEXT NOT NULL,
+    source_page_url TEXT NOT NULL,
+    pdf_url TEXT NOT NULL,
+    pdf_checksum TEXT,
+    pdf_size_bytes INTEGER,
+    pdf_http_status INTEGER,
+    workflow_summary TEXT,
+    first_action_for_student TEXT,
+    final_outcome TEXT,
+    related_documents JSONB NOT NULL DEFAULT '[]'::jsonb,
+    decision_points JSONB NOT NULL DEFAULT '[]'::jsonb,
+    confidence_score NUMERIC,
+    needs_review BOOLEAN NOT NULL DEFAULT FALSE,
+    extraction_method TEXT NOT NULL DEFAULT 'deterministic',
+    raw_text TEXT,
+    fetched_at TIMESTAMP,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (unit_code, process_key)
+);
+
+CREATE INDEX IF NOT EXISTS idx_workflows_process
+ON workflows(unit_code, process_key, needs_review);
+
+CREATE TABLE IF NOT EXISTS workflow_steps (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    workflow_id UUID NOT NULL REFERENCES workflows(id) ON DELETE CASCADE,
+    step_order INTEGER NOT NULL,
+    actor TEXT,
+    action_text TEXT NOT NULL,
+    next_step_order INTEGER,
+    needs_review BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE (workflow_id, step_order)
+);
+
+CREATE INDEX IF NOT EXISTS idx_workflow_steps_workflow
+ON workflow_steps(workflow_id, step_order);
+
+CREATE TABLE IF NOT EXISTS workflow_forms_mapping (
+    workflow_id UUID NOT NULL REFERENCES workflows(id) ON DELETE CASCADE,
+    form_id UUID NOT NULL REFERENCES unit_forms(id) ON DELETE CASCADE,
+    match_method TEXT NOT NULL DEFAULT 'rule',
+    confidence_score NUMERIC,
+    needs_review BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT NOW(),
+    PRIMARY KEY (workflow_id, form_id)
+);

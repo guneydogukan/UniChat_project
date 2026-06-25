@@ -36,6 +36,7 @@ from app.services.food_menu_service import get_food_menu_service
 from app.services.program_catalog_service import get_program_catalog_service
 from app.services.subunit_management_service import get_subunit_management_service
 from app.services.unit_management_service import get_unit_management_service
+from app.services.workflow_service import get_workflow_service
 from app.services.yokatlas_query_service import get_yokatlas_query_service
 from app.services.intent_classifier import classify_intent, REJECTION_RESPONSE
 from app.services.response_validator import GENERAL_CONTACT_EMAIL, validate_response
@@ -643,10 +644,22 @@ class RagService:
             logger.info("Yemekhane menüsü sorgusu deterministik servisle yanıtlandı.")
             return food_menu_answer
 
+        workflow_service = get_workflow_service()
+        if workflow_service.should_preempt_calendar(question):
+            workflow_answer = workflow_service.answer_chat_query(question)
+            if workflow_answer is not None:
+                logger.info("MDBF workflow/form sorgusu akademik takvimden önce deterministik servisle yanıtlandı.")
+                return workflow_answer
+
         academic_calendar_answer = get_academic_calendar_service().answer_chat_query(question)
         if academic_calendar_answer is not None:
             logger.info("Akademik takvim sorgusu deterministik servisle yanıtlandı.")
             return academic_calendar_answer
+
+        workflow_answer = workflow_service.answer_chat_query(question)
+        if workflow_answer is not None:
+            logger.info("MDBF workflow/form sorgusu deterministik servisle yanıtlandı.")
+            return workflow_answer
 
         administrative_staff_answer = get_administrative_staff_service().answer_chat_query(question)
         if administrative_staff_answer is not None:

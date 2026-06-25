@@ -43,6 +43,7 @@ DOC_KINDS = Literal[
     "rehber",
     "iletisim",
     "form",
+    "workflow",
     "mufradat",
     "ders_plani",
     "yonetim",

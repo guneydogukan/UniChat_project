@@ -10,6 +10,7 @@ sqlalchemy
 pydantic-settings
 requests
 pdfplumber
+PyMuPDF
 beautifulsoup4
 lxml
 apscheduler

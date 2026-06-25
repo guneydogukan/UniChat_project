@@ -713,7 +713,7 @@ class RagServiceProgramCatalogRoutingTests(unittest.TestCase):
             ("Tıp Fakültesi Dekanı kim?", "unit_management_service"),
             ("Ahmet Yılmaz hangi bölümde?", "academic_staff_service"),
             ("Kütüphane hafta sonu açık mı?", "rag_service"),
-            ("Ders kaydı nasıl yapılır?", "rag_service"),
+            ("Ders kaydı nasıl yapılır?", "workflow_service"),
         ]
         report = []
 

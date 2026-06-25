@@ -72,6 +72,7 @@ def ingest_documents(
     documents: list[Document],
     policy: DuplicatePolicy = DuplicatePolicy.SKIP,
     dry_run: bool = False,
+    replace_source_ids: list[str] | None = None,
 ) -> int:
     """
     Belge listesini doğrula → ID ata → embed → veritabanına yaz.
@@ -82,6 +83,7 @@ def ingest_documents(
         documents: Haystack Document listesi.
         policy: Duplicate politikası (SKIP veya OVERWRITE).
         dry_run: True ise veritabanına yazmadan rapor ver.
+        replace_source_ids: Verildiyse yazmadan önce bu source_id'lere ait eski chunk'lar silinir.
 
     Returns:
         Yazılan belge sayısı.
@@ -90,8 +92,10 @@ def ingest_documents(
         logger.warning("Boş belge listesi, işlem atlanıyor.")
         return 0
 
-    logger.info("Ingestion başlıyor: %d belge, policy=%s, dry_run=%s",
-                len(documents), policy.name, dry_run)
+    source_ids_to_replace = sorted({str(source_id) for source_id in (replace_source_ids or []) if source_id})
+
+    logger.info("Ingestion başlıyor: %d belge, policy=%s, dry_run=%s, replace_source_ids=%d",
+                len(documents), policy.name, dry_run, len(source_ids_to_replace))
 
     # 1. Doğrulama
     valid_docs = validate_documents(documents)
@@ -119,6 +123,8 @@ def ingest_documents(
     # 4. Dry-run modu
     if dry_run:
         logger.info("DRY-RUN: %d chunk yüklenecek (veritabanına yazılmadı).", len(chunked_docs))
+        if source_ids_to_replace:
+            logger.info("DRY-RUN: %d source_id için eski chunk temizlenecek.", len(source_ids_to_replace))
         for i, doc in enumerate(chunked_docs):
             meta_summary = {k: v for k, v in (doc.meta or {}).items()
                            if k in ("category", "doc_kind", "title", "chunk_index")}
@@ -134,6 +140,14 @@ def ingest_documents(
 
     # 6. Veritabanına yazma
     store = _get_document_store()
+    if source_ids_to_replace:
+        deleted = store.delete_by_filter({
+            "field": "meta.source_id",
+            "operator": "in",
+            "value": source_ids_to_replace,
+        })
+        logger.info("Source_id bazlı eski chunk temizliği: %d belge silindi.", deleted)
+
     written = store.write_documents(embedded_docs, policy=policy)
     logger.info("✅ Ingestion tamamlandı: %d belge yazıldı (policy=%s).",
                 written, policy.name)
