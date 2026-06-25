@@ -27,6 +27,8 @@ ACADEMIC_QUERY_RE = re.compile(
     r"\b(akademik\s*takvim|ders\s+başlang\w*|ders\s+baslang\w*|okul\s+ne\s+zaman|"
     r"ders\s+kay\w*|ders\s+kayı\w*|kayıt\s+yenile\w*|kayit\s+yenile\w*|vize\w*|ara\s+sınav\w*|"
     r"ara\s+sinav\w*|final\w*|bütünleme\w*|butunleme\w*|büt\w*|tek\s+ders|güz|guz|bahar|"
+    r"mazeretli\s+kayıt\w*|mazeretli\s+kayit\w*|kayıt\s+dondur\w*|kayit\s+dondur\w*|"
+    r"kayıt\s+başvuru\w*|kayit\s+basvuru\w*|son\s+başvuru|son\s+basvuru|"
     r"kaç\s+gün\s+kaldı|kac\s+gun\s+kaldi|geçti\s+mi|gecti\s+mi)\b",
     re.IGNORECASE,
 )
@@ -106,9 +108,30 @@ def _requested_academic_year(query: str) -> str | None:
 
 def _requested_event_category(query: str) -> str | None:
     normalized = _normalize(query)
+    if "kayit dondur" in normalized:
+        return "application"
+    if (
+        "mazeretli kayit" in normalized
+        or ("mazeret" in normalized and ("ders kay" in normalized or "kayit yenile" in normalized))
+    ):
+        return "course_registration"
+    if "kayit" in normalized and "basvuru" in normalized:
+        return "registration"
     for category, needles in EVENT_RULES:
         if any(_normalize(needle) in normalized for needle in needles):
             return category
+    return None
+
+
+def _requested_event_variant(query: str) -> str | None:
+    normalized = _normalize(query)
+    if "kayit dondur" in normalized:
+        return "freeze_registration"
+    if (
+        "mazeretli kayit" in normalized
+        or ("mazeret" in normalized and ("ders kay" in normalized or "kayit yenile" in normalized))
+    ):
+        return "late_course_registration"
     return None
 
 
@@ -191,6 +214,44 @@ def _is_preferred_title(category: str, title: str) -> bool:
     return True
 
 
+def _event_text(event: CalendarEventRecord) -> str:
+    return _normalize(f"{event.content} {event.meta.get('event_title', '')} {event.meta.get('title', '')}")
+
+
+def _event_matches_variant(event: CalendarEventRecord, requested_variant: str | None) -> bool:
+    if not requested_variant:
+        return True
+    event_text = _event_text(event)
+    if requested_variant == "late_course_registration":
+        return "mazeret" in event_text and "ders kay" in event_text
+    if requested_variant == "freeze_registration":
+        return "kayit dondurma" in event_text or "kayit dondur" in event_text
+    return True
+
+
+def _has_deadline_intent(query: str) -> bool:
+    normalized = _normalize(query)
+    return any(token in normalized for token in ("bitiyor", "biter", "son gun", "son basvuru", "hangi gun"))
+
+
+def _deadline_note(question: str, events: list[CalendarEventRecord]) -> str:
+    if not _has_deadline_intent(question) or not events:
+        return ""
+
+    def end_text(event: CalendarEventRecord) -> str:
+        return _format_iso_date(str(event.meta.get("end_date") or event.meta.get("start_date") or ""))
+
+    if len(events) == 1:
+        return f"\n\nSon gün: {end_text(events[0])}."
+
+    lines = ["\n\nSon günler:"]
+    for event in events:
+        title = event.meta.get("event_title") or event.meta.get("title") or "Akademik takvim etkinliği"
+        term = f" ({event.meta.get('term')})" if event.meta.get("term") else ""
+        lines.append(f"- {title}{term}: {end_text(event)}")
+    return "\n".join(lines)
+
+
 class AcademicCalendarService:
     """Structured akademik takvim event'lerinden deterministik cevap üretir."""
 
@@ -209,6 +270,7 @@ class AcademicCalendarService:
         effective_year = requested_year or _current_academic_year()
         requested_type = _requested_calendar_type(question)
         requested_term = _requested_term(question)
+        requested_variant = _requested_event_variant(question)
 
         events = self._load_events()
         if not events:
@@ -226,6 +288,7 @@ class AcademicCalendarService:
             ranked=ranked,
             requested_category=requested_category,
             requested_term=requested_term,
+            requested_variant=requested_variant,
         )
         if not answer_events:
             return None
@@ -255,9 +318,11 @@ class AcademicCalendarService:
             lines.extend(self._format_event_line(event, bullet=True) for event in answer_events)
             body = "\n".join(lines)
 
+        special_note = self._special_scope_note(question, requested_category, answer_events)
+        deadline_note = _deadline_note(question, answer_events)
         response = (
             f"{' '.join(assumption_parts)}\n\n"
-            f"{body}{status_text}\n\n"
+            f"{body}{status_text}{deadline_note}{special_note}\n\n"
             f"Kaynak: {source_url}"
         ).strip()
 
@@ -304,6 +369,7 @@ class AcademicCalendarService:
         ranked: list[tuple[int, CalendarEventRecord]],
         requested_category: str,
         requested_term: str | None,
+        requested_variant: str | None = None,
     ) -> list[CalendarEventRecord]:
         eligible = [
             event for score, event in ranked
@@ -311,6 +377,19 @@ class AcademicCalendarService:
         ]
         if not eligible:
             return []
+
+        if requested_variant:
+            variant_events = [event for event in eligible if _event_matches_variant(event, requested_variant)]
+            if variant_events:
+                eligible = variant_events
+                if requested_term:
+                    term_events = [event for event in eligible if event.meta.get("term") == requested_term]
+                    return (term_events or eligible)[:1]
+                unique_by_term: dict[str, CalendarEventRecord] = {}
+                for event in sorted(eligible, key=lambda item: (_event_start(item.meta), str(item.meta.get("term") or ""))):
+                    term = str(event.meta.get("term") or event.meta.get("event_title") or len(unique_by_term))
+                    unique_by_term.setdefault(term, event)
+                return list(unique_by_term.values())[:4]
 
         if requested_term:
             term_events = [event for event in eligible if event.meta.get("term") == requested_term]
@@ -351,6 +430,24 @@ class AcademicCalendarService:
         date_text = _format_event_dates(meta)
         prefix = "- " if bullet else ""
         return f"{prefix}**{title}{term}:** {date_text}."
+
+    @staticmethod
+    def _special_scope_note(
+        question: str,
+        requested_category: str,
+        answer_events: list[CalendarEventRecord],
+    ) -> str:
+        normalized_question = _normalize(question)
+        if "mazeret" not in normalized_question or requested_category not in {"registration", "course_registration"}:
+            return ""
+
+        event_text = _normalize(" ".join(
+            f"{event.content} {event.meta.get('event_title', '')}"
+            for event in answer_events
+        ))
+        if "mazeret" in event_text:
+            return ""
+        return "\n\nNot: Akademik takvimde mazeretli kayıt yenileme için ayrı bir tarih satırı bulunmadığından genel kayıt/kayıt yenileme tarihleri gösterilmiştir."
 
     def _score_event(
         self,
@@ -401,10 +498,21 @@ class AcademicCalendarService:
                 score -= 25
 
         if requested_category == "course_registration":
-            if normalized_title == "ogrenci ders kayitlari":
+            if "mazeret" in normalized_question:
+                if "mazeret" in normalized_title and "ders kay" in normalized_title:
+                    score += 35
+                elif normalized_title == "ogrenci ders kayitlari":
+                    score -= 20
+            elif normalized_title == "ogrenci ders kayitlari":
                 score += 25
             elif "danisman" in normalized_title or "mazeret" in normalized_title:
                 score -= 10
+
+        if requested_category == "application" and "kayit dondur" in normalized_question:
+            if "kayit dondurma" in normalized_title or "kayit dondur" in normalized_title:
+                score += 35
+            else:
+                score -= 15
 
         for token in normalized_question.split():
             if len(token) >= 4 and token in normalized_content:

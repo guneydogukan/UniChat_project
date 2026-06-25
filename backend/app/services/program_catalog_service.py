@@ -147,6 +147,7 @@ NON_EXISTENT_PROGRAMS: frozenset[str] = frozenset({
     "dis hekimligi",
     "diş hekimliği",
     "psikoloji",
+    "yapay zeka muhendisligi",
 })
 
 NON_EXISTENT_PROGRAM_DISPLAY = {
@@ -155,6 +156,7 @@ NON_EXISTENT_PROGRAM_DISPLAY = {
     "dis hekimligi": "Diş Hekimliği",
     "diş hekimliği": "Diş Hekimliği",
     "psikoloji": "Psikoloji",
+    "yapay zeka muhendisligi": "Yapay Zeka Mühendisliği",
 }
 
 QUERY_NOISE_TOKENS: frozenset[str] = frozenset({
@@ -592,6 +594,15 @@ class ProgramCatalogService:
             return self._ambiguous_entries(entry_match["candidates"], normalized_question)
 
         if has_exists_query:
+            if self._is_program_target_exists_query(normalized_question):
+                if entry:
+                    return self._entry_exists_response(entry, normalized_question)
+                requested_name = self._extract_requested_name(normalized_question)
+                return self._not_found_exists_response(
+                    requested_name,
+                    normalized_question,
+                    candidate_scope=candidate_context,
+                )
             if unit and self._is_unit_existence_query(normalized_question):
                 return self._unit_type_response(unit, normalized_question)
             if entry:
@@ -809,6 +820,16 @@ class ProgramCatalogService:
     @staticmethod
     def _is_program_field_existence_query(normalized_question: str) -> bool:
         return bool(re.search(r"\b(muhendisligi|hekimligi)\b", normalized_question))
+
+    @staticmethod
+    def _is_program_target_exists_query(normalized_question: str) -> bool:
+        if not EXISTS_RE.search(normalized_question):
+            return False
+        if ProgramCatalogService._is_program_field_existence_query(normalized_question):
+            return True
+        if ProgramCatalogService._asks_if_unit_is_department(normalized_question):
+            return False
+        return bool(re.search(r"\b(bolum\w*|program\w*)\b", normalized_question))
 
     def _resolve_unit(self, normalized_question: str, units: list[dict[str, Any]]) -> dict[str, Any]:
         strong_scored: list[tuple[int, dict[str, Any]]] = []
@@ -1198,13 +1219,48 @@ class ProgramCatalogService:
 
     @staticmethod
     def _extract_requested_name(normalized_question: str) -> str:
-        tokens = [
-            token for token in normalized_question.split()
+        tokens = ProgramCatalogService._requested_program_tokens(normalized_question)
+        return " ".join(tokens).strip()
+
+    @staticmethod
+    def _requested_program_tokens(normalized_question: str) -> list[str]:
+        tokens = normalized_question.split()
+        field_suffixes = {"muhendisligi", "hekimligi"}
+        context_tokens = {
+            "fakulte",
+            "fakultesi",
+            "fakultesinde",
+            "fakultede",
+            "fakultesindeki",
+            "mdbf",
+            "muhendislik",
+            "muhendislikte",
+            "muhendislikteki",
+            "universite",
+            "universitede",
+            "universitedeki",
+            "gibtu",
+            "gibtude",
+        }
+        suffix_indexes = [index for index, token in enumerate(tokens) if token in field_suffixes]
+        if suffix_indexes:
+            end = suffix_indexes[-1]
+            start = 0
+            for index in range(end - 1, -1, -1):
+                if tokens[index] in context_tokens:
+                    start = index + 1
+                    break
+            selected = tokens[start:end + 1]
+        else:
+            selected = tokens
+
+        return [
+            token for token in selected
             if token not in QUERY_NOISE_TOKENS
             and token not in CANDIDATE_CONTEXT_NOISE_TOKENS
+            and token not in context_tokens
             and token not in {"var", "yok"}
         ]
-        return " ".join(tokens).strip()
 
     def _ambiguous_units(self, units: list[dict[str, Any]], normalized_query: str) -> dict[str, Any]:
         options = ", ".join(str(unit.get("unit_name")) for unit in units[:5])

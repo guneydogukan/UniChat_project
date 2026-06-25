@@ -107,6 +107,19 @@ YOKATLAS_ROUTE_SIGNAL_RE = re.compile(
     re.IGNORECASE,
 )
 
+STUDENT_COUNT_QUERY_RE = re.compile(
+    r"\b("
+    r"kac\s+ogrenci|ogrenci\s+sayisi|okuyan\s+kac\s+(?:ogrenci|kisi)|"
+    r"kac\s+(?:ogrenci|kisi)\s+okuyor|aktif\s+ogrenci\s+sayisi"
+    r")\b",
+    re.IGNORECASE,
+)
+
+STUDENT_COUNT_METRIC_EXCLUSION_RE = re.compile(
+    r"\b(kontenjan\w*|kontejan\w*|yerlesen\w*|puan\w*|siralama\w*|osym|yok\s*atlas)\b",
+    re.IGNORECASE,
+)
+
 ACADEMIC_PERSON_ROUTE_RE = re.compile(
     r"\b(hangi\s+bolum\w*|hangi\s+birim\w*|nerede)\b",
     re.IGNORECASE,
@@ -307,6 +320,28 @@ def _should_try_program_catalog_route(question: str) -> bool:
 def _should_try_yokatlas_route(question: str) -> bool:
     """YÖK Atlas DB servisini yalnız tercih/metrik sinyali olan sorgularda dener."""
     return bool(YOKATLAS_ROUTE_SIGNAL_RE.search(_normalize_for_matching(question)))
+
+
+def _unsupported_student_count_answer(question: str) -> dict | None:
+    """Doğrulanmış öğrenci sayısı verisi olmayan sayım sorularını RAG'e düşürmez."""
+    normalized = _normalize_for_matching(question)
+    if STUDENT_COUNT_METRIC_EXCLUSION_RE.search(normalized):
+        return None
+    if not STUDENT_COUNT_QUERY_RE.search(normalized):
+        return None
+    return {
+        "response": (
+            "Bu soru doğrulanmış öğrenci sayısı verisi gerektiriyor. "
+            "ÜniChat DB'de MDBF/program bazlı aktif öğrenci sayısı için resmi ve güncel bir kayıt bulunmadığından "
+            "tahmini sayı veremem."
+        ),
+        "sources": [],
+        "metadata": {
+            "service": "deterministic_guard",
+            "intent": "unsupported_student_count",
+            "rag_fallback_used": False,
+        },
+    }
 
 
 def _should_try_academic_person_route(question: str) -> bool:
@@ -683,6 +718,11 @@ class RagService:
             if yokatlas_answer is not None:
                 logger.info("YÖK Atlas tercih/yerleşme sorgusu deterministik servisle yanıtlandı.")
                 return yokatlas_answer
+
+        unsupported_student_count_answer = _unsupported_student_count_answer(question)
+        if unsupported_student_count_answer is not None:
+            logger.info("Doğrulanmış öğrenci sayısı bulunmayan sorgu RAG'e düşürülmeden yanıtlandı.")
+            return unsupported_student_count_answer
 
         subunit_management_answer = get_subunit_management_service().answer_chat_query(question)
         if subunit_management_answer is not None:

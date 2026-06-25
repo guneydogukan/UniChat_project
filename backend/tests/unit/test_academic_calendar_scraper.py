@@ -427,6 +427,105 @@ class AcademicCalendarEventTests(unittest.TestCase):
 
 
 class AcademicCalendarServiceSelectionTests(unittest.TestCase):
+    def test_mazeretli_kayit_yenileme_tarih_sorgusu_mazeret_muracaat_tarihini_doner(self):
+        service = AcademicCalendarService()
+        service._load_events = lambda: [  # type: ignore[method-assign]
+            CalendarEventRecord(
+                content="2025-2026 genel akademik takvim öğrenci ders kayıtları",
+                meta={
+                    "doc_kind": "academic_calendar_event",
+                    "category": "academic_calendar",
+                    "academic_year": "2025-2026",
+                    "calendar_type": "genel/önlisans-lisans",
+                    "event_category": "course_registration",
+                    "event_title": "Öğrenci Ders Kayıtları",
+                    "term": "güz yarıyılı",
+                    "start_date": "2025-09-08",
+                    "end_date": "2025-09-14",
+                    "original_date_text": "8 Eylül 2025 - 14 Eylül 2025",
+                    "source_file_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/takvim.pdf",
+                    "confidence_score": 1.0,
+                },
+            ),
+            CalendarEventRecord(
+                content="Mazeretleri Nedeniyle Ders Kaydı Yaptıramayan Öğrencilerin Birimlerine Müracaat Tarihleri",
+                meta={
+                    "doc_kind": "academic_calendar_event",
+                    "category": "academic_calendar",
+                    "academic_year": "2025-2026",
+                    "calendar_type": "genel/önlisans-lisans",
+                    "event_category": "course_registration",
+                    "event_title": "Mazeretleri Nedeniyle Ders Kaydı Yaptıramayan Öğrencilerin Birimlerine Müracaat Tarihleri",
+                    "term": "güz yarıyılı",
+                    "start_date": "2025-09-15",
+                    "end_date": "2025-09-17",
+                    "original_date_text": "15 Eylül 2025 - 17 Eylül 2025",
+                    "source_file_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/takvim.pdf",
+                    "confidence_score": 1.0,
+                },
+            )
+        ]
+
+        result = service.answer_chat_query("Mazeretli kayıt yenileme tarihleri hangi gün bitiyor?")
+
+        self.assertIsNotNone(result)
+        self.assertIn("Mazeretleri Nedeniyle Ders Kaydı Yaptıramayan", result["response"])
+        self.assertIn("15 Eylül 2025 - 17 Eylül 2025", result["response"])
+        self.assertIn("Son gün: 17 Eylül 2025", result["response"])
+        self.assertEqual(result["sources"][0]["doc_kind"], "academic_calendar_event")
+
+    def test_kayit_dondurma_son_basvuru_tarihi_application_eventini_doner(self):
+        service = AcademicCalendarService()
+        service._load_events = lambda: [  # type: ignore[method-assign]
+            CalendarEventRecord(
+                content="Erasmus başvuru tarihleri",
+                meta={
+                    "doc_kind": "academic_calendar_event",
+                    "category": "academic_calendar",
+                    "academic_year": "2025-2026",
+                    "calendar_type": "genel/önlisans-lisans",
+                    "event_category": "application",
+                    "event_title": "Erasmus Başvuru Tarihleri",
+                    "term": "güz yarıyılı",
+                    "start_date": "2025-08-01",
+                    "end_date": "2025-08-10",
+                    "original_date_text": "1 Ağustos 2025 - 10 Ağustos 2025",
+                    "source_file_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/takvim.pdf",
+                    "confidence_score": 1.0,
+                },
+            ),
+            CalendarEventRecord(
+                content="Kayıt Dondurma Tarihleri",
+                meta={
+                    "doc_kind": "academic_calendar_event",
+                    "category": "academic_calendar",
+                    "academic_year": "2025-2026",
+                    "calendar_type": "genel/önlisans-lisans",
+                    "event_category": "application",
+                    "event_title": "Kayıt Dondurma Tarihleri (Müracaatlar İlgili MYO/YO/Fakülte’ye yapılacaktır.)",
+                    "term": "bahar yarıyılı",
+                    "start_date": "2026-02-16",
+                    "end_date": "2026-03-02",
+                    "original_date_text": "16 Şubat 2026 - 2 Mart 2026",
+                    "source_file_url": "https://www.gibtu.edu.tr/Medya/GibtuDosya/takvim.pdf",
+                    "confidence_score": 1.0,
+                },
+            ),
+        ]
+
+        result = service.answer_chat_query("Kayıt dondurma işlemi için son başvuru tarihi nedir?")
+
+        self.assertIsNotNone(result)
+        self.assertIn("Kayıt Dondurma Tarihleri", result["response"])
+        self.assertIn("16 Şubat 2026 - 2 Mart 2026", result["response"])
+        self.assertIn("Son gün: 2 Mart 2026", result["response"])
+        self.assertNotIn("Erasmus", result["response"])
+
+    def test_genel_basvuru_tarihleri_takvim_servisine_cekilmez(self):
+        service = AcademicCalendarService()
+
+        self.assertIsNone(service.answer_chat_query("Erasmus başvuru tarihleri ne zaman bitiyor?"))
+
     def test_belirsiz_final_sorgusunda_sonuc_ilani_yerine_ana_sinavlari_secer(self):
         service = AcademicCalendarService()
         main_exam = CalendarEventRecord(
