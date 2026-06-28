@@ -12,7 +12,11 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import get_settings
-from app.routers import chat, food_menu, health
+from app.repositories.department_announcement_repository import (
+    classify_department_announcement_db_error,
+    ensure_department_announcement_schema,
+)
+from app.routers import chat, department_announcements, food_menu, health
 from app.services.rag_service import rag_service
 
 
@@ -34,6 +38,12 @@ async def lifespan(app: FastAPI):
     logger = logging.getLogger(__name__)
 
     logger.info("🚀 UniChat API başlatılıyor...")
+
+    try:
+        ensure_department_announcement_schema(settings.DATABASE_URL, connect_timeout=3)
+    except Exception as e:  # noqa: BLE001 - duyuru DB hazırlığı API açılışını kırmamalı
+        error_type = classify_department_announcement_db_error(e)
+        logger.warning("Duyuru tabloları doğrulanamadı/oluşturulamadı (%s): %s", error_type, e)
 
     # RAG pipeline'ı oluştur ve modeli yükle
     try:
@@ -68,6 +78,7 @@ def create_app() -> FastAPI:
 
     # Router'ları dahil et
     app.include_router(chat.router)
+    app.include_router(department_announcements.router)
     app.include_router(food_menu.router)
     app.include_router(health.router)
 

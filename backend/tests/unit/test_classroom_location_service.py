@@ -220,6 +220,11 @@ class ClassroomLocationServiceTests(unittest.TestCase):
         self.assertIn("202", result["response"])
         self.assertIn("z-114", result["response"])
 
+    def test_program_hangi_fakultede_sorusu_classroom_tarafindan_sahiplenilmez(self):
+        result = _service().answer_chat_query("Bilgisayar Mühendisliği hangi fakültede?")
+
+        self.assertIsNone(result)
+
     def test_olmayan_derslik_rage_dusmeden_guvenli_yanit_doner(self):
         result = _service().answer_chat_query("olmayan derslik 999 nerede")
 

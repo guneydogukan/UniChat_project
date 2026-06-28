@@ -33,6 +33,7 @@ from app.services.administrative_staff_service import get_administrative_staff_s
 from app.services.academic_calendar_service import get_academic_calendar_service
 from app.services.academic_staff_service import get_academic_staff_service
 from app.services.classroom_location_service import get_classroom_location_service
+from app.services.department_announcement_service import get_department_announcement_service
 from app.services.food_menu_service import get_food_menu_service
 from app.services.program_catalog_service import get_program_catalog_service
 from app.services.subunit_management_service import get_subunit_management_service
@@ -684,6 +685,11 @@ class RagService:
         if food_menu_answer is not None:
             logger.info("Yemekhane menüsü sorgusu deterministik servisle yanıtlandı.")
             return food_menu_answer
+
+        department_announcement_answer = get_department_announcement_service().answer_chat_query(question)
+        if department_announcement_answer is not None:
+            logger.info("Mühendislik bölüm duyurusu sorgusu deterministik DB servisiyle yanıtlandı.")
+            return department_announcement_answer
 
         workflow_service = get_workflow_service()
         if workflow_service.should_preempt_calendar(question):

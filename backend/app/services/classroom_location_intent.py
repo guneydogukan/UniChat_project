@@ -108,7 +108,7 @@ def extract_classroom_location_request(query: str) -> ClassroomLocationRequest:
         is_classroom_query = True
     elif space_query and has_location_signal:
         is_classroom_query = True
-    elif wants_list and has_classroom_signal and department_code:
+    elif wants_list and has_classroom_signal and department_code and room_type:
         is_classroom_query = True
 
     return ClassroomLocationRequest(

@@ -5,6 +5,7 @@ Tüm scraper modüllerini periyodik olarak çalıştıran merkezi zamanlayıcı.
 
 Job Tanımları:
   - Duyurular:            Günde 1 kez (saat 08:00)
+  - Bölüm duyuruları:     Haftada 1 kez (Pazartesi 08:30, staging)
   - Yemekhane menüsü:     Günde 1 kez (saat 07:00, food_menus upsert)
   - Akademik takvim:      Yılda 1 kez eğitim-öğretim yılı başında (1 Eylül 05:30)
   - Birim yönetimi:       Dönem başlarında (1 Şubat ve 1 Eylül, 02:30)
@@ -23,6 +24,7 @@ Kullanım:
     python -m scrapers.scheduler                    # Tüm job'ları başlat
     python -m scrapers.scheduler --list             # Mevcut job'ları listele
     python -m scrapers.scheduler --run-now duyuru   # Belirli job'ı hemen çalıştır
+    python -m scrapers.scheduler --run-now bolum_duyuru
     python -m scrapers.scheduler --run-now yemek
     python -m scrapers.scheduler --run-now akademik_takvim
     python -m scrapers.scheduler --run-now yonetim
@@ -147,6 +149,50 @@ def job_duyuru_update():
         logger.info(
             "✅ Job tamamlandı: %s — %d doc, %d chunk, %.1fs",
             job_name, result.documents_created, result.chunks_written, duration,
+        )
+
+    except Exception as e:
+        duration = time.time() - start
+        logger.error("❌ Job hatası: %s — %s", job_name, e)
+        _append_job_log({
+            "job": job_name,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "success": False,
+            "error": str(e),
+            "duration_seconds": round(duration, 1),
+        })
+
+
+def job_department_announcement_staging():
+    """Mühendislik bölüm duyurularını staging'e alan haftalık job."""
+    start = time.time()
+    job_name = "department_announcement_staging"
+    logger.info("🔔 Job başlıyor: %s", job_name)
+
+    try:
+        from app.services.department_announcement_service import get_department_announcement_service
+
+        result = get_department_announcement_service().scrape_to_staging()
+
+        duration = time.time() - start
+        _append_job_log({
+            "job": job_name,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "success": result.get("success", False),
+            "scrape_run_id": result.get("scrape_run_id"),
+            "fetched": result.get("fetched", 0),
+            "staged": result.get("staged", 0),
+            "duplicates": result.get("duplicates", 0),
+            "duration_seconds": round(duration, 1),
+        })
+
+        logger.info(
+            "✅ Job tamamlandı: %s — %d fetched, %d staged, %d duplicate, %.1fs",
+            job_name,
+            result.get("fetched", 0),
+            result.get("staged", 0),
+            result.get("duplicates", 0),
+            duration,
         )
 
     except Exception as e:
@@ -508,6 +554,7 @@ def job_full_reindex():
 
 JOB_RUNNERS = {
     "duyuru": job_duyuru_update,
+    "bolum_duyuru": job_department_announcement_staging,
     "yemek": job_yemek_update,
     "akademik_takvim": job_academic_calendar_update,
     "yonetim": job_unit_management_update,
@@ -546,7 +593,17 @@ def create_scheduler():
         misfire_grace_time=3600,  # 1 saat tolerance
     )
 
-    # 2. Yemekhane: Günde 1 kez (07:00)
+    # 2. Bölüm duyuruları: Haftada 1 kez, staging'e alır (Pazartesi 08:30)
+    scheduler.add_job(
+        job_department_announcement_staging,
+        trigger=CronTrigger(day_of_week="mon", hour=8, minute=30),
+        id="department_announcement_staging",
+        name="Mühendislik Bölüm Duyuruları Staging",
+        replace_existing=True,
+        misfire_grace_time=7200,
+    )
+
+    # 3. Yemekhane: Günde 1 kez (07:00)
     scheduler.add_job(
         job_yemek_update,
         trigger=CronTrigger(hour=7, minute=0),
@@ -556,7 +613,7 @@ def create_scheduler():
         misfire_grace_time=3600,
     )
 
-    # 3. Akademik takvim: Yılda 1 kez eğitim-öğretim yılı başında (1 Eylül 05:30)
+    # 4. Akademik takvim: Yılda 1 kez eğitim-öğretim yılı başında (1 Eylül 05:30)
     scheduler.add_job(
         job_academic_calendar_update,
         trigger=CronTrigger(month=9, day=1, hour=5, minute=30),
@@ -566,7 +623,7 @@ def create_scheduler():
         misfire_grace_time=86400,
     )
 
-    # 4. Birim yönetimi: Dönem başlarında (1 Şubat ve 1 Eylül, 02:30)
+    # 5. Birim yönetimi: Dönem başlarında (1 Şubat ve 1 Eylül, 02:30)
     scheduler.add_job(
         job_unit_management_update,
         trigger=CronTrigger(
@@ -581,7 +638,7 @@ def create_scheduler():
         misfire_grace_time=14400,
     )
 
-    # 5. İdari personel: Dönem başlarında (1 Şubat ve 1 Eylül, 02:45)
+    # 6. İdari personel: Dönem başlarında (1 Şubat ve 1 Eylül, 02:45)
     scheduler.add_job(
         job_administrative_staff_update,
         trigger=CronTrigger(
@@ -596,7 +653,7 @@ def create_scheduler():
         misfire_grace_time=14400,
     )
 
-    # 6. Akademik kadro: Dönem başlarında (1 Şubat ve 1 Eylül, 03:00)
+    # 7. Akademik kadro: Dönem başlarında (1 Şubat ve 1 Eylül, 03:00)
     scheduler.add_job(
         job_kadro_update,
         trigger=CronTrigger(
@@ -611,7 +668,7 @@ def create_scheduler():
         misfire_grace_time=14400,  # 4 saat tolerance
     )
 
-    # 7. Aday öğrenci portalı: Dönem başlarında (1 Şubat ve 1 Eylül, 04:00)
+    # 8. Aday öğrenci portalı: Dönem başlarında (1 Şubat ve 1 Eylül, 04:00)
     scheduler.add_job(
         job_candidate_portal_update,
         trigger=CronTrigger(month="2,9", day=1, hour=4, minute=0),
@@ -621,7 +678,7 @@ def create_scheduler():
         misfire_grace_time=7200,
     )
 
-    # 8. Tam yeniden indeksleme: Ayda 1 kez (ayın 1'i, 02:00)
+    # 9. Tam yeniden indeksleme: Ayda 1 kez (ayın 1'i, 02:00)
     scheduler.add_job(
         job_full_reindex,
         trigger=CronTrigger(day=1, hour=2, minute=0),
@@ -643,6 +700,8 @@ def list_jobs(scheduler=None):
     jobs_info = [
         {"id": "duyuru_update", "name": "Duyuru Güncelleme",
          "schedule": "Her gün 08:00", "mode": "delta (3 sayfa)"},
+        {"id": "department_announcement_staging", "name": "Bölüm Duyuruları",
+         "schedule": "Her Pazartesi 08:30", "mode": "mühendislik duyuruları staging/onay"},
         {"id": "yemek_update", "name": "Yemekhane Menü",
          "schedule": "Her gün 07:00", "mode": "food_menus upsert"},
         {"id": "academic_calendar_update", "name": "Akademik Takvim",
@@ -705,7 +764,7 @@ def main():
     parser.add_argument("--list", action="store_true",
                         help="Tanımlı job'ları listele")
     parser.add_argument("--run-now", type=str, default=None,
-                        help="Job'ı hemen çalıştır (duyuru/yemek/akademik_takvim/yonetim/idari_personel/kadro/aday_ogrenci/full_reindex)")
+                        help="Job'ı hemen çalıştır (duyuru/bolum_duyuru/yemek/akademik_takvim/yonetim/idari_personel/kadro/aday_ogrenci/full_reindex)")
     parser.add_argument("--start", action="store_true",
                         help="Scheduler'ı başlat (arka planda çalışır)")
     args = parser.parse_args()

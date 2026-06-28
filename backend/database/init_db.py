@@ -51,6 +51,92 @@ def init_database():
         updated_at TIMESTAMP DEFAULT NOW()
     );
 
+    -- Mühendislik bölüm duyuruları: staging onaylı DB-first kaynak
+    CREATE TABLE IF NOT EXISTS department_announcement_sources (
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        unit_id INTEGER NOT NULL UNIQUE,
+        department_code TEXT NOT NULL UNIQUE,
+        department_name TEXT NOT NULL,
+        source_url TEXT NOT NULL,
+        is_active BOOLEAN NOT NULL DEFAULT TRUE,
+        created_at TIMESTAMP DEFAULT NOW(),
+        updated_at TIMESTAMP DEFAULT NOW()
+    );
+
+    CREATE TABLE IF NOT EXISTS department_announcement_scrape_runs (
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        scrape_run_id TEXT NOT NULL UNIQUE,
+        scraper_name TEXT NOT NULL DEFAULT 'department_announcement_scraper',
+        started_at TIMESTAMP,
+        finished_at TIMESTAMP,
+        status TEXT NOT NULL DEFAULT 'pending',
+        validation_status TEXT NOT NULL DEFAULT 'unknown',
+        source_count INTEGER NOT NULL DEFAULT 0,
+        fetched_count INTEGER NOT NULL DEFAULT 0,
+        staged_count INTEGER NOT NULL DEFAULT 0,
+        duplicate_count INTEGER NOT NULL DEFAULT 0,
+        error_count INTEGER NOT NULL DEFAULT 0,
+        valid_count INTEGER NOT NULL DEFAULT 0,
+        invalid_count INTEGER NOT NULL DEFAULT 0,
+        config JSONB NOT NULL DEFAULT '{}'::jsonb,
+        summary JSONB NOT NULL DEFAULT '{}'::jsonb,
+        created_at TIMESTAMP DEFAULT NOW(),
+        updated_at TIMESTAMP DEFAULT NOW()
+    );
+
+    CREATE TABLE IF NOT EXISTS department_announcement_staging (
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        scrape_run_id TEXT NOT NULL REFERENCES department_announcement_scrape_runs(scrape_run_id) ON DELETE CASCADE,
+        source_id UUID REFERENCES department_announcement_sources(id) ON DELETE SET NULL,
+        unit_id INTEGER NOT NULL,
+        department_code TEXT NOT NULL,
+        department_name TEXT NOT NULL,
+        title TEXT NOT NULL,
+        announcement_date DATE,
+        published_at TIMESTAMP,
+        detail_url TEXT NOT NULL,
+        content TEXT NOT NULL,
+        attachments JSONB NOT NULL DEFAULT '[]'::jsonb,
+        content_hash TEXT NOT NULL,
+        search_text TEXT,
+        intent_tags JSONB NOT NULL DEFAULT '[]'::jsonb,
+        validation_status TEXT NOT NULL DEFAULT 'unknown',
+        validation_issues JSONB NOT NULL DEFAULT '[]'::jsonb,
+        status TEXT NOT NULL DEFAULT 'pending',
+        approved_at TIMESTAMP,
+        rejected_at TIMESTAMP,
+        reviewed_by TEXT,
+        review_note TEXT,
+        production_announcement_id UUID,
+        raw_data JSONB NOT NULL DEFAULT '{}'::jsonb,
+        created_at TIMESTAMP DEFAULT NOW(),
+        updated_at TIMESTAMP DEFAULT NOW(),
+        UNIQUE (scrape_run_id, detail_url)
+    );
+
+    CREATE TABLE IF NOT EXISTS department_announcements (
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        unit_id INTEGER NOT NULL,
+        department_code TEXT NOT NULL,
+        department_name TEXT NOT NULL,
+        title TEXT NOT NULL,
+        announcement_date DATE,
+        published_at TIMESTAMP,
+        detail_url TEXT NOT NULL UNIQUE,
+        content TEXT NOT NULL,
+        attachments JSONB NOT NULL DEFAULT '[]'::jsonb,
+        content_hash TEXT NOT NULL,
+        search_text TEXT NOT NULL,
+        intent_tags JSONB NOT NULL DEFAULT '[]'::jsonb,
+        source_staging_id UUID REFERENCES department_announcement_staging(id) ON DELETE SET NULL,
+        first_seen_at TIMESTAMP DEFAULT NOW(),
+        approved_at TIMESTAMP DEFAULT NOW(),
+        last_seen_at TIMESTAMP DEFAULT NOW(),
+        is_active BOOLEAN NOT NULL DEFAULT TRUE,
+        created_at TIMESTAMP DEFAULT NOW(),
+        updated_at TIMESTAMP DEFAULT NOW()
+    );
+
     -- Derslik/bina konum envanteri: RAG öncesi DB-first cevap kaynağı
     CREATE TABLE IF NOT EXISTS campus_buildings (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -301,6 +387,36 @@ def init_database():
 
     CREATE UNIQUE INDEX IF NOT EXISTS idx_food_menus_date
     ON food_menus(date);
+
+    CREATE INDEX IF NOT EXISTS idx_department_announcement_sources_active
+    ON department_announcement_sources(is_active, unit_id);
+
+    CREATE INDEX IF NOT EXISTS idx_department_announcement_staging_run_status
+    ON department_announcement_staging(scrape_run_id, status, validation_status);
+
+    CREATE INDEX IF NOT EXISTS idx_department_announcement_staging_detail
+    ON department_announcement_staging(detail_url);
+
+    CREATE INDEX IF NOT EXISTS idx_department_announcements_department_date
+    ON department_announcements(department_code, announcement_date DESC);
+
+    CREATE INDEX IF NOT EXISTS idx_department_announcements_tags
+    ON department_announcements USING GIN(intent_tags);
+
+    CREATE INDEX IF NOT EXISTS idx_department_announcements_search
+    ON department_announcements USING GIN (to_tsvector('simple', search_text));
+
+    INSERT INTO department_announcement_sources (unit_id, department_code, department_name, source_url, is_active)
+    VALUES
+        (18, 'bilgisayar_muhendisligi', 'Bilgisayar Mühendisliği', 'https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=18', TRUE),
+        (16, 'elektrik_elektronik_muhendisligi', 'Elektrik-Elektronik Mühendisliği', 'https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=16', TRUE),
+        (19, 'endustri_muhendisligi', 'Endüstri Mühendisliği', 'https://www.gibtu.edu.tr/BirimDuyuru.aspx?id=19', TRUE)
+    ON CONFLICT (unit_id) DO UPDATE SET
+        department_code = EXCLUDED.department_code,
+        department_name = EXCLUDED.department_name,
+        source_url = EXCLUDED.source_url,
+        is_active = EXCLUDED.is_active,
+        updated_at = NOW();
 
     CREATE INDEX IF NOT EXISTS idx_campus_buildings_normalized_name
     ON campus_buildings(normalized_building_name);

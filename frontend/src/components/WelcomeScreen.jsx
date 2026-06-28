@@ -4,10 +4,10 @@
  */
 
 const QUICK_QUESTIONS = [
-  'Yemekhane kuralları nelerdir?',
-  'Bitirme projesi teslim tarihi ne zaman?',
-  'Bir dönemde kaç kredi alabilirim?',
-  'Yaz okulu başvuruları ne zaman?',
+  'Bugün yemekte ne var?',
+  "GİBTÜ'ye nasıl gidebilirim?",
+  "GİBTÜ'de hangi fakülteler var?",
+  'Yurt imkanları nelerdir?',
 ];
 
 export default function WelcomeScreen({ onQuestionClick }) {
