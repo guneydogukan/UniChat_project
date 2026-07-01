@@ -46,3 +46,8 @@ backend/data/yokatlas/dry_run*/
 backend/data/yokatlas/live_dry_run*/
 backend/data/yokatlas/replay*/
 backend/data/yokatlas/scope_review*/
+
+# Database dumps and backups
+database/*.dump
+database/*backup*
+*.backup
