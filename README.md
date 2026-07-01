@@ -174,7 +174,7 @@ Kurulum komutları **Windows (PowerShell)** için yazılmıştır.
 ### 1 · Projeyi Klonlama ve Ortam Değişkenleri
 
 ```powershell
-git clone <repo-url> unichat_proje
+git clone https://github.com/guneydogukan/UniChat_project.git unichat_proje
 cd unichat_proje
 ```
 
